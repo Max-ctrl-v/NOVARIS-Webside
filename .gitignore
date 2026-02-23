@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+
+# Temporary screenshots (dev tool output)
+temporary screenshots/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+*.swp
+*.swo
+
+# PowerShell scripts (dev tools, not needed for deployment)
+*.ps1

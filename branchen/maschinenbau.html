@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maschinenbau &amp; Anlagenbau – FZulG-Förderung | NOVARIS Consulting</title>
+  <meta name="description" content="Maschinenbau- und Anlagenbauprojekte erhalten bis zu 25 % ihrer F&E-Kosten zurück. NOVARIS zeigt, welche Projekte in Automatisierung, Werkstofftechnik und Maschinenentwicklung förderfähig sind." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <script>tailwind.config={theme:{extend:{fontFamily:{display:['Montserrat','sans-serif'],body:['Inter','sans-serif']}}}};</script>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth;font-size:16px}
+    body{font-family:'Inter',sans-serif;background:#fff;color:#0D1B3E;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+    h1,h2,h3,h4{font-family:'Montserrat',sans-serif;letter-spacing:-0.03em;line-height:1.13}
+    .hero-bg{background:radial-gradient(ellipse 110% 60% at 55% -5%,rgba(30,86,181,0.30) 0%,transparent 62%),radial-gradient(ellipse 55% 55% at 95% 45%,rgba(77,174,229,0.14) 0%,transparent 58%),radial-gradient(ellipse 65% 70% at 0% 100%,rgba(13,27,62,0.25) 0%,transparent 60%),linear-gradient(160deg,#04091a 0%,#0D1B3E 50%,#122244 100%)}
+    .bg-tinted{background:radial-gradient(ellipse 80% 60% at 90% 10%,rgba(30,86,181,0.055) 0%,transparent 60%),radial-gradient(ellipse 60% 60% at 5% 90%,rgba(77,174,229,0.04) 0%,transparent 55%),var(--bg-raised)}
+    .nav-blur{backdrop-filter:blur(20px) saturate(160%);-webkit-backdrop-filter:blur(20px) saturate(160%)}
+    .nav-link{font-family:'Inter',sans-serif;font-size:0.875rem;font-weight:500;color:rgba(255,255,255,0.70);text-decoration:none;padding:0.4rem 0.8rem;border-radius:8px;transition:background 0.14s ease,color 0.14s ease}
+    .nav-link:hover{color:#fff;background:rgba(255,255,255,0.09)}
+    .nav-dropdown-wrap{position:relative;display:flex;align-items:center}.nav-dropdown-wrap::after{content:'';position:absolute;top:100%;left:0;right:0;height:14px}
+    .nav-dropdown-trigger{display:flex;align-items:center;gap:2px}
+    .dd-caret{transition:transform 0.22s cubic-bezier(0.16,1,0.3,1);opacity:0.5;flex-shrink:0}
+    .nav-dropdown-wrap:hover .dd-caret{transform:rotate(180deg)}
+    .nav-dropdown{position:absolute;top:calc(100% + 10px);left:50%;transform:translateX(-50%) translateY(-8px);min-width:230px;background:rgba(6,13,40,0.98);backdrop-filter:blur(24px) saturate(160%);-webkit-backdrop-filter:blur(24px) saturate(160%);border:1px solid rgba(255,255,255,0.09);border-radius:14px;padding:0.45rem;opacity:0;visibility:hidden;pointer-events:none;transition:opacity 0.18s ease,transform 0.22s cubic-bezier(0.16,1,0.3,1),visibility 0s linear 0.18s;z-index:200;box-shadow:0 24px 56px rgba(0,0,0,0.65)}
+    .nav-dropdown::before{content:'';position:absolute;top:-5px;left:50%;transform:translateX(-50%) rotate(45deg);width:10px;height:10px;background:rgba(6,13,40,0.98);border-left:1px solid rgba(255,255,255,0.09);border-top:1px solid rgba(255,255,255,0.09);border-radius:2px 0 0 0}
+    .nav-dropdown-wrap:hover .nav-dropdown,.nav-dropdown-wrap:focus-within .nav-dropdown{opacity:1;visibility:visible;pointer-events:auto;transform:translateX(-50%) translateY(0);transition:opacity 0.18s ease,transform 0.22s cubic-bezier(0.16,1,0.3,1),visibility 0s}
+    .nav-dd-item{display:flex;align-items:center;gap:0.65rem;padding:0.55rem 0.85rem;border-radius:9px;font-size:0.82rem;color:rgba(195,215,245,0.72);text-decoration:none;font-family:'Inter',sans-serif;font-weight:500;transition:background 0.12s ease,color 0.12s ease;white-space:nowrap}
+    .nav-dd-item:hover{background:rgba(255,255,255,0.09);color:#fff}
+    .nav-dd-item.current{background:rgba(77,174,229,0.15);color:#4DAEE5}
+    .nav-dd-icon{width:22px;height:22px;border-radius:6px;flex-shrink:0;background:linear-gradient(135deg,rgba(30,86,181,0.32),rgba(77,174,229,0.20));display:flex;align-items:center;justify-content:center}
+    .btn-primary{display:inline-flex;align-items:center;justify-content:center;gap:0.5rem;padding:0.875rem 2rem;background:linear-gradient(135deg,#1E56B5 0%,#1A3462 100%);color:#fff;font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.9rem;border-radius:10px;border:none;cursor:pointer;text-decoration:none;white-space:nowrap;box-shadow:0 4px 14px rgba(30,86,181,0.38);transition:transform 0.2s cubic-bezier(0.34,1.56,0.64,1),box-shadow 0.2s ease}
+    .btn-primary:hover{transform:translateY(-2px) scale(1.025);box-shadow:0 8px 24px rgba(30,86,181,0.48)}
+    .badge{display:inline-flex;align-items:center;gap:0.35rem;padding:0.28rem 0.85rem;border-radius:999px;background:rgba(30,86,181,0.09);border:1px solid rgba(30,86,181,0.20);color:#1E56B5;font-family:'Montserrat',sans-serif;font-size:0.72rem;font-weight:700;letter-spacing:0.07em;text-transform:uppercase}
+    .badge-dark{background:rgba(77,174,229,0.13);border-color:rgba(77,174,229,0.30);color:#7ECEF5}
+    .badge-green{background:rgba(16,185,129,0.10);border-color:rgba(16,185,129,0.28);color:#059669}
+    .project-card{background:var(--bg-card);border-radius:20px;border:1px solid rgba(30,86,181,0.09);box-shadow:0 4px 22px rgba(30,86,181,0.07),0 1px 4px rgba(0,0,0,0.04);padding:2rem;position:relative;overflow:hidden;transition:transform 0.22s cubic-bezier(0.34,1.56,0.64,1),box-shadow 0.22s ease;height:100%}
+    .project-card::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 0 0,rgba(30,86,181,0.04),transparent 60%);pointer-events:none}
+    .project-card:hover{transform:translateY(-6px);box-shadow:0 14px 36px rgba(30,86,181,0.14),0 2px 8px rgba(0,0,0,0.06)}
+    .project-icon{width:52px;height:52px;border-radius:15px;background:linear-gradient(135deg,rgba(30,86,181,0.12),rgba(77,174,229,0.10));border:1px solid rgba(30,86,181,0.18);display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem;flex-shrink:0}
+    .faq-wrap{border:1.5px solid var(--bdr);border-radius:12px;overflow:hidden;margin-bottom:0.75rem}
+    .faq-btn{width:100%;text-align:left;background:var(--bg-faq-btn);border:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.25rem 1.5rem;font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.93rem;color:var(--clr-h,#0D1B3E);transition:background 0.14s ease,color 0.14s ease}
+    .faq-btn:hover{background:var(--bg-faq-hov)}
+    .faq-icon{width:26px;height:26px;border-radius:999px;flex-shrink:0;background:#edf2fb;color:#1E56B5;display:flex;align-items:center;justify-content:center;font-size:1rem;font-weight:700;transition:transform 0.25s cubic-bezier(0.34,1.56,0.64,1),background 0.15s ease,color 0.15s ease}
+    .faq-wrap.open .faq-icon{transform:rotate(45deg);background:#1E56B5;color:#fff}
+    .faq-body{max-height:0;overflow:hidden;opacity:0;transition:max-height 0.35s cubic-bezier(0.16,1,0.3,1),opacity 0.25s ease}
+    .faq-wrap.open .faq-body{max-height:500px;opacity:1}
+    .faq-content{padding:1rem 1.5rem 1.25rem;border-top:1px solid var(--bdr-faq);font-size:0.875rem;color:#4a5870;line-height:1.75;transition:color 0.2s ease,border-top-color 0.2s ease}
+    .check-dot{width:20px;height:20px;border-radius:999px;flex-shrink:0;background:linear-gradient(135deg,#1E56B5,#4DAEE5);display:flex;align-items:center;justify-content:center;margin-top:2px}
+    .reveal{opacity:0;transform:translateY(24px);transition:opacity 0.55s ease,transform 0.55s cubic-bezier(0.16,1,0.3,1)}
+    .reveal.visible{opacity:1;transform:translateY(0)} @keyframes reveal-safe{to{opacity:1;transform:translateY(0)}} .reveal{animation:reveal-safe 0.6s 3s forwards}
+    @keyframes spin-slow{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+    @keyframes pulse-beat{0%,100%{transform:scale(1)}50%{transform:scale(1.14)}}
+    @keyframes float-y{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+    .anim-spin{animation:spin-slow 4s linear infinite}
+    .au{animation:fadeUp 0.6s cubic-bezier(0.16,1,0.3,1) both}
+    .d1{animation-delay:0.07s}.d2{animation-delay:0.14s}.d3{animation-delay:0.21s}.d4{animation-delay:0.28s}
+    .hero-icon-bg{width:110px;height:110px;border-radius:30px;background:linear-gradient(135deg,rgba(30,86,181,0.22),rgba(77,174,229,0.16));border:1px solid rgba(77,174,229,0.48);display:flex;align-items:center;justify-content:center;box-shadow:0 0 50px rgba(77,174,229,0.18),inset 0 1px 0 rgba(255,255,255,0.09)}
+    .stat-pill{display:inline-flex;align-items:center;gap:0.4rem;padding:0.4rem 1rem;border-radius:999px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.13);font-family:'Inter',sans-serif;font-size:0.78rem;font-weight:500;color:rgba(195,215,245,0.85)}
+    .lang-toggle{display:flex;align-items:center;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:8px;overflow:hidden;flex-shrink:0}
+    .lang-btn{padding:0.28rem 0.62rem;border:none;background:transparent;cursor:pointer;font-family:'Montserrat',sans-serif;font-weight:600;font-size:0.71rem;color:rgba(255,255,255,0.48);letter-spacing:0.06em;transition:background 0.15s ease,color 0.15s ease}
+    .lang-btn.active{background:rgba(255,255,255,0.16);color:#fff}
+    .lang-divider{width:1px;height:16px;background:rgba(255,255,255,0.12);flex-shrink:0}
+    #mob-menu{max-height:0;overflow:hidden;opacity:0;transition:max-height 0.3s cubic-bezier(0.16,1,0.3,1),opacity 0.22s ease}
+    #mob-menu.open{max-height:420px;opacity:1}
+    html{overflow-y:scroll}::-webkit-scrollbar{width:8px}::-webkit-scrollbar-track{background:transparent}::-webkit-scrollbar-thumb{background:rgba(77,174,229,0.38);border-radius:999px}::-webkit-scrollbar-thumb:hover{background:rgba(77,174,229,0.55)}html{scrollbar-width:thin;scrollbar-color:rgba(77,174,229,0.38) transparent}html.dark ::-webkit-scrollbar-thumb{background:rgba(77,174,229,0.30)}html.dark ::-webkit-scrollbar-thumb:hover{background:rgba(77,174,229,0.48)}html.dark{scrollbar-color:rgba(77,174,229,0.30) transparent}
+    :root{--bg-base:#ffffff;--bg-raised:#f5f8fe;--bg-card:#ffffff;--bg-faq-btn:#ffffff;--bg-faq-hov:#f5f8fe;--clr-h:#0D1B3E;--bdr:#dde5f4;--bdr-faq:#edf2fb}
+    html.dark{--bg-base:#0a1428;--bg-raised:#0D1B3E;--bg-card:#122244;--bg-faq-btn:#0D1B3E;--bg-faq-hov:#122244;--clr-h:#e8f0fa;--bdr:rgba(77,174,229,0.18);--bdr-faq:rgba(77,174,229,0.10)}
+    html.dark section.bg-white{background:var(--bg-base)!important}html.dark .bg-tinted{background:var(--bg-raised)!important}
+    html.dark .faq-content{color:#8aaac8;border-top-color:var(--bdr-faq)}.logo-light{display:none}html.dark .logo-dark{display:none!important}html.dark .logo-light{display:inline!important}
+    html.dark section.bg-white [style*="color:#0D1B3E"],html.dark .bg-tinted [style*="color:#0D1B3E"]{color:#e8f0fa!important}
+    html.dark section.bg-white [style*="color:#5a6e8c"],html.dark .bg-tinted [style*="color:#5a6e8c"]{color:#8aaac8!important}
+    html.dark section.bg-white [style*="color:#374151"],html.dark .bg-tinted [style*="color:#374151"]{color:#a8c0d8!important}
+    html.dark section.bg-white .badge:not(.badge-dark),html.dark .bg-tinted .badge:not(.badge-dark){background:rgba(30,86,181,0.20)!important}
+    #dark-toggle:hover,#dark-toggle-mob:hover{background:rgba(255,255,255,0.14)!important;color:#fff!important}
+  </style>
+  <link rel="stylesheet" href="/page-transition.css" />
+  <script src="/page-transition.js" defer></script>
+</head>
+<body>
+
+<!-- NAV -->
+<header id="nav" class="fixed inset-x-0 top-0 z-50 nav-blur" style="background:rgba(4,9,26,0.85);border-bottom:1px solid rgba(255,255,255,0.07)">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between gap-4" style="height:68px">
+    <a href="../" aria-label="NOVARIS Consulting" class="hover:opacity-90" style="text-decoration:none;flex-shrink:0;display:flex;align-items:center;transition:opacity 0.15s ease">
+      <img src="../brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto" />
+    </a>
+    <nav class="hidden lg:flex items-center gap-0.5">
+      <a href="../index.html#was-ist-fzulg" class="nav-link" data-t="nav.fzulg">Das FZulG</a>
+      <div class="nav-dropdown-wrap">
+        <span class="nav-link nav-dropdown-trigger" style="cursor:default">
+          <span data-t="nav.branchen">Branchen</span>
+          <svg class="dd-caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </span>
+        <div class="nav-dropdown" role="menu">
+          <a href="software-it.html" class="nav-dd-item" role="menuitem"><span class="nav-dd-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4DAEE5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span>Software &amp; IT</a>
+          <a href="maschinenbau.html" class="nav-dd-item current" role="menuitem"><span class="nav-dd-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4DAEE5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg></span>Maschinenbau</a>
+          <a href="pharma.html" class="nav-dd-item" role="menuitem"><span class="nav-dd-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4DAEE5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6"/><path d="M14 3v5.5l4 7.5H6l4-7.5V3"/></svg></span>Pharma &amp; Life Sciences</a>
+          <a href="automotive.html" class="nav-dd-item" role="menuitem"><span class="nav-dd-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4DAEE5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17H3a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h13l3 5v4a2 2 0 0 1-2 2h-1"/><circle cx="7" cy="17" r="2"/><circle cx="15" cy="17" r="2"/></svg></span>Automotive &amp; Mobilität</a>
+          <a href="medizintechnik.html" class="nav-dd-item" role="menuitem"><span class="nav-dd-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4DAEE5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></span>Medizintechnik</a>
+          <a href="energie.html" class="nav-dd-item" role="menuitem"><span class="nav-dd-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4DAEE5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></span>Energie &amp; Cleantech</a>
+          <a href="luft-raumfahrt.html" class="nav-dd-item" role="menuitem"><span class="nav-dd-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4DAEE5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/></svg></span>Luft- &amp; Raumfahrt</a>
+          <a href="agrar-foodtech.html" class="nav-dd-item" role="menuitem"><span class="nav-dd-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4DAEE5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/></svg></span>Agrar &amp; Foodtech</a>
+          <a href="bauindustrie.html" class="nav-dd-item" role="menuitem"><span class="nav-dd-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4DAEE5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="1"/><path d="M9 22V12h6v10"/></svg></span>Bauindustrie</a>
+        </div>
+      </div>
+      <a href="../index.html#prozess" class="nav-link" data-t="nav.prozess">Prozess</a>
+      <a href="../index.html#vorteile" class="nav-link" data-t="nav.vorteile">Vorteile</a>
+      <a href="../index.html#faq" class="nav-link" data-t="nav.faq">FAQ</a>
+      <a href="../index.html#kontakt" class="nav-link" data-t="nav.kontakt">Kontakt</a>
+    </nav>
+    <div class="flex items-center gap-3">
+            <div class="lang-toggle hidden sm:flex">
+        <button id="lang-de" class="lang-btn active" onclick="setLang('de')">DE</button><div class="lang-divider"></div><button id="lang-en" class="lang-btn" onclick="setLang('en')">EN</button>
+      </div>
+      <button id="dark-toggle" onclick="toggleDark()" aria-label="Toggle dark mode"
+        class="hidden sm:flex" style="width:32px;height:32px;border-radius:8px;border:1px solid rgba(255,255,255,0.12);background:rgba(255,255,255,0.07);cursor:pointer;align-items:center;justify-content:center;color:rgba(255,255,255,0.7);transition:background 0.15s ease,color 0.15s ease">
+        <svg id="icon-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg id="icon-sun"   width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
+      <a href="../index.html#kontakt" class="btn-primary hidden sm:inline-flex" style="padding:0.55rem 1.35rem;font-size:0.83rem">
+        <span data-t="nav.cta">Kostenlos prüfen</span>
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+      <button id="ham-btn" onclick="toggleMob()" aria-label="Menü" class="lg:hidden flex flex-col justify-center gap-1.5 w-9 h-9 rounded-lg hover:bg-white/10">
+        <span style="width:20px;height:2px;background:#fff;border-radius:2px;margin:auto;display:block"></span>
+        <span style="width:20px;height:2px;background:#fff;border-radius:2px;margin:auto;display:block"></span>
+        <span style="width:14px;height:2px;background:#fff;border-radius:2px;margin:auto;display:block"></span>
+      </button>
+    </div>
+  </div>
+  <div id="mob-menu" style="border-top:1px solid rgba(255,255,255,0.07)">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex flex-col gap-0.5">
+      <a href="../index.html#was-ist-fzulg" class="nav-link py-2.5" data-t="nav.fzulg" onclick="toggleMob()">Das FZulG</a>
+      <a href="../index.html#branchen" class="nav-link py-2.5" data-t="nav.branchen" onclick="toggleMob()">Branchen</a>
+      <a href="../index.html#prozess" class="nav-link py-2.5" data-t="nav.prozess" onclick="toggleMob()">Prozess</a>
+      <a href="../index.html#kontakt" class="nav-link py-2.5" data-t="nav.kontakt" onclick="toggleMob()">Kontakt</a>
+            <a href="../index.html#kontakt" class="btn-primary mt-2 w-full" style="font-size:0.88rem;padding:0.75rem 1rem" onclick="toggleMob()" data-t="mob.cta">Kostenlos prüfen →</a>
+      <div class="flex items-center gap-2 mt-2">
+        <button id="dark-toggle-mob" onclick="toggleDark()" aria-label="Toggle dark mode"
+          style="width:32px;height:32px;border-radius:8px;border:1px solid rgba(255,255,255,0.12);background:rgba(255,255,255,0.07);cursor:pointer;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.7);transition:background 0.15s ease,color 0.15s ease">
+          <svg id="icon-moon-mob" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg id="icon-sun-mob"   width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero-bg relative overflow-hidden" style="padding-top:130px;padding-bottom:100px">
+  <div aria-hidden="true" style="position:absolute;pointer-events:none;inset:0;overflow:hidden">
+    <div style="position:absolute;top:-160px;right:-160px;width:700px;height:700px;border-radius:50%;border:1px solid rgba(30,86,181,0.12)"></div>
+    <div style="position:absolute;top:-80px;right:-80px;width:480px;height:480px;border-radius:50%;border:1px solid rgba(77,174,229,0.08)"></div>
+    <div style="position:absolute;bottom:-100px;left:-120px;width:550px;height:550px;border-radius:50%;border:1px solid rgba(30,86,181,0.07)"></div>
+    <div style="position:absolute;top:60px;right:6%;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,rgba(77,174,229,0.15),transparent 70%)"></div>
+  </div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 relative" style="z-index:3">
+    <a href="../index.html#branchen" class="au inline-flex items-center gap-2 mb-8" style="color:rgba(195,215,245,0.55);text-decoration:none;font-size:0.83rem;font-weight:500;transition:color 0.15s ease" onmouseover="this.style.color='rgba(195,215,245,0.9)'" onmouseout="this.style.color='rgba(195,215,245,0.55)'">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+      <span data-t="hero.back">Alle Branchen</span>
+    </a>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <div class="badge badge-dark au mb-5" data-t="hero.badge">Maschinenbau · FZulG-berechtigt</div>
+        <div class="au d1 flex items-center gap-5 mb-6">
+          <div class="hero-icon-bg">
+            <div class="anim-spin" style="color:#4DAEE5">
+              <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+            </div>
+          </div>
+          <h1 class="text-4xl sm:text-5xl font-black text-white">Maschinen<br/><span style="background:linear-gradient(125deg,#4DAEE5,#7ECEF5);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">bau</span></h1>
+        </div>
+        <p class="au d2" data-t="hero.body" style="color:rgba(195,215,245,0.80);font-size:1.05rem;line-height:1.72;margin-bottom:1.75rem">
+          Der Maschinen- und Anlagenbau ist eine der innovationsstärksten Branchen Deutschlands. Unternehmen, die neue Maschinenkonzepte, Automatisierungslösungen oder Fertigungsverfahren entwickeln, erhalten <strong style="color:#7ECEF5;font-weight:600">bis zu 25 % der F&amp;E-Personalkosten</strong> steuerlich erstattet.
+        </p>
+        <div class="au d3 flex flex-wrap gap-2.5 mb-8">
+          <span class="stat-pill"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span data-t="hero.pill1">Förderquote bis 25 %</span></span>
+          <span class="stat-pill"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span data-t="hero.pill2">Prototypen &amp; Versuchsreihen förderfähig</span></span>
+          <span class="stat-pill"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span data-t="hero.pill3">Rückwirkend bis 2020</span></span>
+        </div>
+        <div class="au d4 flex flex-wrap gap-3">
+          <a href="../index.html#kontakt" class="btn-primary" style="padding:0.95rem 2.25rem;font-size:0.95rem">
+            <span data-t="hero.btn">Förderung prüfen</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </div>
+      <!-- Hero decorative spec card -->
+      <div class="hidden lg:block" style="position:relative">
+        <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.09);border-radius:20px;padding:1.75rem;backdrop-filter:blur(10px)">
+          <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:1.25rem">
+            <div style="width:10px;height:10px;border-radius:50%;background:#ff5f56"></div>
+            <div style="width:10px;height:10px;border-radius:50%;background:#ffbd2e"></div>
+            <div style="width:10px;height:10px;border-radius:50%;background:#27c93f"></div>
+            <span style="margin-left:0.5rem;font-size:0.72rem;color:rgba(195,215,245,0.4);font-family:'Inter',sans-serif">fzulg-projekt.spec</span>
+          </div>
+          <div style="font-family:'Courier New',monospace;font-size:0.8rem;line-height:1.9;color:rgba(195,215,245,0.75)">
+            <div><span style="color:#4DAEE5" data-t="hero.code.label1">PROJEKT</span>: <span data-t="hero.code.val1">Adaptive Roboterzelle Gen-3</span></div>
+            <div><span style="color:#4DAEE5" data-t="hero.code.label2">STATUS</span>: <span style="color:#27c93f" data-t="hero.code.status">FÖRDERFÄHIG</span></div>
+            <div><span style="color:#4DAEE5" data-t="hero.code.label3">BEGINN</span>: 01.01.2023</div>
+            <div style="margin-top:0.5rem"><span style="color:#4DAEE5" data-t="hero.code.label4">KOSTEN</span>:</div>
+            <div style="padding-left:1.5rem"><span data-t="hero.code.cost1">Personalaufwand</span>: <span style="color:#7ECEF5">420.000 €</span></div>
+            <div style="padding-left:1.5rem"><span data-t="hero.code.cost2">Auftragsforschung</span>: <span style="color:#7ECEF5">80.000 €</span></div>
+            <div style="margin-top:0.75rem;padding:0.6rem 0.85rem;background:rgba(39,201,63,0.12);border-radius:8px;border:1px solid rgba(39,201,63,0.22);color:#27c93f;font-size:0.76rem" data-t="hero.code.result">
+              ✓ Erstattung: <strong>~123.000 € / Jahr</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="bg-white py-20 sm:py-28">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="max-w-xl mx-auto text-center mb-14 reveal">
+      <div class="badge mb-4" data-t="proj.badge">Förderfähige Projekte</div>
+      <h2 class="text-3xl sm:text-4xl font-black mb-4" data-t="proj.h2" style="color:#0D1B3E">Was wird im Maschinenbau<br/>gefördert?</h2>
+      <p data-t="proj.intro" style="color:#5a6e8c;font-size:0.95rem;line-height:1.78">Diese Projekttypen sind typischerweise nach FZulG §2 förderfähig – sofern technische Unsicherheit vorlag und das Ziel nicht mit Standardmitteln erreichbar war.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="reveal" style="transition-delay:0.08s">
+        <div class="project-card">
+          <div class="project-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1E56B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
+          </div>
+          <div class="badge-green mb-3" data-t="proj.eligible" style="display:inline-flex;padding:0.2rem 0.65rem;font-size:0.65rem">Typischerweise förderfähig</div>
+          <h3 data-t="c1.h3" style="font-family:'Montserrat',sans-serif;font-weight:800;font-size:1.05rem;color:#0D1B3E;margin-bottom:0.6rem;letter-spacing:-0.02em">Neue Maschinenkonzepte &amp; Prototypen</h3>
+          <p data-t="c1.body" style="font-size:0.85rem;color:#5a6e8c;line-height:1.72;margin-bottom:1.1rem">Entwicklung neuartiger Maschinenkinematiken, innovativer Antriebskonzepte oder Prototypen, die über den aktuellen Stand der Technik hinausgehen.</p>
+          <div style="display:flex;flex-direction:column;gap:0.6rem">
+            <div style="display:flex;align-items:flex-start;gap:0.6rem"><div class="check-dot"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><span data-t="c1.b1" style="font-size:0.82rem;color:#374151">Neuartige Kinematiken &amp; Antriebssysteme</span></div>
+            <div style="display:flex;align-items:flex-start;gap:0.6rem"><div class="check-dot"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><span data-t="c1.b2" style="font-size:0.82rem;color:#374151">Modulare Maschinenplattformen mit neuen Schnittstellen</span></div>
+            <div style="display:flex;align-items:flex-start;gap:0.6rem"><div class="check-dot"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><span data-t="c1.b3" style="font-size:0.82rem;color:#374151">Energieeffiziente Maschinenkonzepte</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal" style="transition-delay:0.16s">
+        <div class="project-card">
+          <div class="project-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1E56B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <div class="badge-green mb-3" data-t="proj.eligible" style="display:inline-flex;padding:0.2rem 0.65rem;font-size:0.65rem">Typischerweise förderfähig</div>
+          <h3 data-t="c2.h3" style="font-family:'Montserrat',sans-serif;font-weight:800;font-size:1.05rem;color:#0D1B3E;margin-bottom:0.6rem;letter-spacing:-0.02em">Prozessautomatisierung &amp; Robotik</h3>
+          <p data-t="c2.body" style="font-size:0.85rem;color:#5a6e8c;line-height:1.72;margin-bottom:1.1rem">Entwicklung automatisierter Fertigungszellen, kollaborativer Robotersysteme oder intelligenter Produktionssteuerung, die neuartige Automatisierungsgrade erreichen.</p>
+          <div style="display:flex;flex-direction:column;gap:0.6rem">
+            <div style="display:flex;align-items:flex-start;gap:0.6rem"><div class="check-dot"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><span data-t="c2.b1" style="font-size:0.82rem;color:#374151">Kollaborative Robotik (Cobot) mit neuen Sicherheitskonzepten</span></div>
+            <div style="display:flex;align-items:flex-start;gap:0.6rem"><div class="check-dot"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><span data-t="c2.b2" style="font-size:0.82rem;color:#374151">KI-gestützte Bildverarbeitung in der Qualitätssicherung</span></div>
+            <div style="display:flex;align-items:flex-start;gap:0.6rem"><div class="check-dot"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><span data-t="c2.b3" style="font-size:0.82rem;color:#374151">Adaptive Steuerungsalgorithmen für flexible Fertigung</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal" style="transition-delay:0.24s">
+        <div class="project-card">
+          <div class="project-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1E56B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <div class="badge-green mb-3" data-t="proj.eligible" style="display:inline-flex;padding:0.2rem 0.65rem;font-size:0.65rem">Typischerweise förderfähig</div>
+          <h3 data-t="c3.h3" style="font-family:'Montserrat',sans-serif;font-weight:800;font-size:1.05rem;color:#0D1B3E;margin-bottom:0.6rem;letter-spacing:-0.02em">Werkstofftechnik &amp; neue Fertigungsverfahren</h3>
+          <p data-t="c3.body" style="font-size:0.85rem;color:#5a6e8c;line-height:1.72;margin-bottom:1.1rem">Erforschung neuer Werkstoffe, additiver Fertigungsverfahren oder innovativer Oberflächentechnologien für industrielle Anwendungen.</p>
+          <div style="display:flex;flex-direction:column;gap:0.6rem">
+            <div style="display:flex;align-items:flex-start;gap:0.6rem"><div class="check-dot"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><span data-t="c3.b1" style="font-size:0.82rem;color:#374151">Additive Fertigung (3D-Druck) für Funktionsbauteile</span></div>
+            <div style="display:flex;align-items:flex-start;gap:0.6rem"><div class="check-dot"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><span data-t="c3.b2" style="font-size:0.82rem;color:#374151">Neue Beschichtungsverfahren &amp; Oberflächenbehandlung</span></div>
+            <div style="display:flex;align-items:flex-start;gap:0.6rem"><div class="check-dot"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><span data-t="c3.b3" style="font-size:0.82rem;color:#374151">Hochleistungswerkstoffe für Extrembedingungen</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ELIGIBILITY -->
+<section class="bg-tinted py-16 sm:py-20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div class="reveal">
+        <div class="badge mb-5" data-t="elig.badge">Wann qualifiziert sich Ihr Projekt?</div>
+        <h2 class="text-2xl sm:text-3xl font-black mb-6" data-t="elig.h2" style="color:#0D1B3E">FZulG-Kriterien für<br/>Maschinenbau-Projekte</h2>
+        <div style="display:flex;flex-direction:column;gap:1rem">
+          <div style="display:flex;gap:0.85rem;align-items:flex-start"><div class="check-dot" style="background:linear-gradient(135deg,#1E56B5,#4DAEE5)"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><div><strong data-t="elig.c1.title" style="font-family:'Montserrat',sans-serif;font-size:0.9rem;color:#0D1B3E">Technische Neuheit</strong><p data-t="elig.c1.body" style="font-size:0.83rem;color:#5a6e8c;margin-top:0.2rem">Das Maschinenkonzept oder Verfahren geht über den aktuellen Stand der Technik hinaus.</p></div></div>
+          <div style="display:flex;gap:0.85rem;align-items:flex-start"><div class="check-dot" style="background:linear-gradient(135deg,#1E56B5,#4DAEE5)"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><div><strong data-t="elig.c2.title" style="font-family:'Montserrat',sans-serif;font-size:0.9rem;color:#0D1B3E">Technische Unsicherheit</strong><p data-t="elig.c2.body" style="font-size:0.83rem;color:#5a6e8c;margin-top:0.2rem">Der Erfolg war zu Projektbeginn nicht garantiert – Versuche und Iterationen waren erforderlich.</p></div></div>
+          <div style="display:flex;gap:0.85rem;align-items:flex-start"><div class="check-dot" style="background:linear-gradient(135deg,#1E56B5,#4DAEE5)"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><div><strong data-t="elig.c3.title" style="font-family:'Montserrat',sans-serif;font-size:0.9rem;color:#0D1B3E">Systematische Vorgehensweise</strong><p data-t="elig.c3.body" style="font-size:0.83rem;color:#5a6e8c;margin-top:0.2rem">Strukturierter Entwicklungsprozess, dokumentiert in Versuchsprotokollen, CAD-Daten und Berichten.</p></div></div>
+          <div style="display:flex;gap:0.85rem;align-items:flex-start"><div class="check-dot" style="background:linear-gradient(135deg,#1E56B5,#4DAEE5)"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><div><strong data-t="elig.c4.title" style="font-family:'Montserrat',sans-serif;font-size:0.9rem;color:#0D1B3E">Übertragbarkeit</strong><p data-t="elig.c4.body" style="font-size:0.83rem;color:#5a6e8c;margin-top:0.2rem">Die Erkenntnisse sind für andere Projekte oder Anwendungsfälle nutzbar, kein reiner Kundenauftrag.</p></div></div>
+        </div>
+      </div>
+      <div class="reveal" style="transition-delay:0.1s">
+        <div style="background:linear-gradient(135deg,#04091a,#0D1B3E);border-radius:20px;padding:2rem;border:1px solid rgba(77,174,229,0.18);box-shadow:0 24px 56px rgba(0,0,0,0.3)">
+          <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1.25rem">
+            <div style="width:42px;height:42px;border-radius:12px;background:rgba(77,174,229,0.15);border:1px solid rgba(77,174,229,0.25);display:flex;align-items:center;justify-content:center">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4DAEE5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+            </div>
+            <span data-t="elig.box.title" style="font-family:'Montserrat',sans-serif;font-weight:700;color:#fff;font-size:0.9rem">Wichtig zu wissen</span>
+          </div>
+          <p data-t="elig.box.p1" style="color:rgba(195,215,245,0.80);font-size:0.88rem;line-height:1.75;margin-bottom:1.25rem">Auch <strong style="color:#4DAEE5">Prototypen, die später zu Kundenprodukten werden</strong>, können förderfähig sein – entscheidend ist die F&amp;E-Phase, nicht das Endprodukt.</p>
+          <p data-t="elig.box.p2" style="color:rgba(195,215,245,0.80);font-size:0.88rem;line-height:1.75;margin-bottom:1.25rem">Förderfähig sind: <strong style="color:#7ECEF5">Konstrukteure, Versuchsingenieure, Simulationsexperten</strong> und externe Auftragnehmer (60 % der Vergütung).</p>
+          <div style="background:rgba(77,174,229,0.10);border:1px solid rgba(77,174,229,0.30);border-radius:10px;padding:0.85rem 1rem">
+            <p data-t="elig.box.highlight" style="color:#4DAEE5;font-size:0.82rem;font-weight:600;font-family:'Montserrat',sans-serif">Typische Förderung pro Maschinenbau-Projekt: <span style="font-size:1rem;color:#7ECEF5">40.000 – 150.000 €/Jahr</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="bg-white py-16 sm:py-20">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-10 reveal"><div class="badge mb-4">FAQ</div><h2 class="text-2xl sm:text-3xl font-black" data-t="faq.h2" style="color:#0D1B3E">Häufige Fragen</h2></div>
+    <div class="reveal" style="transition-delay:0.05s">
+      <div class="faq-wrap">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          <span data-t="faq.q1">Sind Prototypen und physische Muster vollständig förderfähig?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-body"><div class="faq-content" data-t="faq.a1">Prototypen sind als Instrument der experimentellen Entwicklung förderfähig, soweit sie der Erkenntnisgewinnung dienen. Der direkte Materialaufwand für den Prototyp kann jedoch nicht geltend gemacht werden – förderfähig sind ausschließlich die Personalkosten der beteiligten Mitarbeiter sowie Auftragsforschungskosten. Das fertige Serienprodukt ist nicht Teil der Förderung.</div></div>
+      </div>
+    </div>
+    <div class="reveal" style="transition-delay:0.1s">
+      <div class="faq-wrap">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          <span data-t="faq.q2">Können Zulieferer ihre Komponenten-Entwicklung fördern lassen?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-body"><div class="faq-content" data-t="faq.a2">Ja, Zulieferer können die F&amp;E-Arbeit für neue Komponenten und Systeme fördern lassen – auch wenn diese später in Fahrzeugen oder Maschinen von OEMs verbaut werden. Entscheidend ist, dass das Zulieferunternehmen selbst die technische Unsicherheit trägt und die Entwicklungsleistung erbringt. Reine Lohnfertigung ohne eigene Entwicklung ist hingegen nicht förderfähig.</div></div>
+      </div>
+    </div>
+    <div class="reveal" style="transition-delay:0.15s">
+      <div class="faq-wrap">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          <span data-t="faq.q3">Ist Simulationssoftware (FEM, CFD) als F&amp;E-Aufwand förderfähig?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-body"><div class="faq-content" data-t="faq.a3">Die Personalkosten der Ingenieure, die Simulationen durchführen, sind vollständig förderfähig. Lizenzkosten für Simulationssoftware selbst sind nicht direkt als förderfähige Aufwendungen im FZulG vorgesehen – sie können aber bei anderen Förderprogrammen (z.B. ZIM) berücksichtigt werden. NOVARIS prüft, welche Kombination für Ihr Projekt optimal ist.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="hero-bg py-20 sm:py-28">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 text-center">
+    <div class="badge badge-dark mb-6" data-t="cta.badge" style="margin:0 auto 1.5rem">Jetzt starten</div>
+    <h2 class="text-3xl sm:text-4xl font-black text-white mb-5" data-t="cta.h2">Prüfen Sie Ihr<br/>Maschinenbau-Projekt kostenlos</h2>
+    <p data-t="cta.body" style="color:rgba(195,215,245,0.78);font-size:1rem;line-height:1.75;margin-bottom:2.25rem">NOVARIS analysiert Ihre F&amp;E-Tätigkeiten, schätzt das Förderpotenzial ein und übernimmt die gesamte Antragstellung. Kein Erfolg – kein Honorar.</p>
+    <a href="../index.html#kontakt" class="btn-primary" style="padding:1.1rem 2.75rem;font-size:1rem">
+      <span data-t="cta.btn">Kostenlose Erstanalyse anfordern</span>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background:#04091a;border-top:1px solid rgba(255,255,255,0.07);padding:2.5rem 0">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+    <a href="../" style="text-decoration:none;display:flex;align-items:center"><img src="../brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:52px;width:auto" /></a>
+    <div style="display:flex;gap:1.5rem;flex-wrap:wrap;justify-content:center">
+      <a href="../index.html#was-ist-fzulg" data-t="foot.fzulg" style="color:rgba(195,215,245,0.45);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.45)'">Das FZulG</a>
+      <a href="../index.html#branchen" data-t="foot.branchen" style="color:rgba(195,215,245,0.45);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.45)'">Branchen</a>
+      <a href="../index.html#prozess" data-t="foot.prozess" style="color:rgba(195,215,245,0.45);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.45)'">Prozess</a>
+      <a href="../index.html#kontakt" data-t="foot.kontakt" style="color:rgba(195,215,245,0.45);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.45)'">Kontakt</a>
+      <a href="../datenschutz.html" style="color:rgba(195,215,245,0.45);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.45)'" data-t="foot.datenschutz">Datenschutz</a>
+    </div>
+    <p style="color:rgba(195,215,245,0.28);font-size:0.75rem">© 2025 NOVARIS Consulting GmbH</p>
+  </div>
+</footer>
+
+<script>
+    (function(){if(localStorage.getItem('theme')==='dark'){document.documentElement.classList.add('dark');}})();
+  function toggleDark(){var dark=document.documentElement.classList.toggle('dark');localStorage.setItem('theme',dark?'dark':'light');_updateDarkBtn();}
+  function _updateDarkBtn(){var dark=document.documentElement.classList.contains('dark');var moon=document.getElementById('icon-moon');var sun=document.getElementById('icon-sun');var moonM=document.getElementById('icon-moon-mob');var sunM=document.getElementById('icon-sun-mob');if(moon)moon.style.display=dark?'none':'block';if(sun)sun.style.display=dark?'block':'none';if(moonM)moonM.style.display=dark?'none':'block';if(sunM)sunM.style.display=dark?'block':'none';}
+  window.addEventListener("DOMContentLoaded",_updateDarkBtn);
+  function toggleMob(){var m=document.getElementById('mob-menu');m.classList.toggle('open')}
+  function toggleFaq(btn){var wrap=btn.closest('.faq-wrap');wrap.classList.toggle('open')}
+  (function(){var els=document.querySelectorAll('.reveal');var io=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}});},{threshold:0.1});els.forEach(function(el){if(el.getBoundingClientRect().top<window.innerHeight){el.classList.add('visible')}else{io.observe(el)}});})();
+
+  // i18n
+  var T = {
+    de: {
+      'nav.fzulg':'Das FZulG','nav.branchen':'Branchen','nav.prozess':'Prozess','nav.vorteile':'Vorteile','nav.faq':'FAQ','nav.kontakt':'Kontakt','nav.cta':'Kostenlos prüfen','nav.mob.cta':'Kostenlos prüfen →',
+      'hero.back':'Alle Branchen','hero.badge':'Maschinenbau · FZulG-berechtigt',
+      'hero.body':'Der Maschinen- und Anlagenbau ist eine der innovationsstärksten Branchen Deutschlands. Unternehmen, die neue Maschinenkonzepte, Automatisierungslösungen oder Fertigungsverfahren entwickeln, erhalten <strong style="color:#7ECEF5;font-weight:600">bis zu 25 % der F&amp;E-Personalkosten</strong> steuerlich erstattet.',
+      'hero.pill1':'Förderquote bis 25 %','hero.pill2':'Prototypen &amp; Versuchsreihen förderfähig','hero.pill3':'Rückwirkend bis 2020','hero.btn':'Förderung prüfen',
+      'hero.code.label1':'PROJEKT','hero.code.val1':'Adaptive Roboterzelle Gen-3','hero.code.label2':'STATUS','hero.code.status':'FÖRDERFÄHIG','hero.code.label3':'BEGINN','hero.code.label4':'KOSTEN',
+      'hero.code.cost1':'Personalaufwand','hero.code.cost2':'Auftragsforschung',
+      'hero.code.result':'✓ Erstattung: <strong>~123.000 € / Jahr</strong>',
+      'proj.badge':'Förderfähige Projekte','proj.h2':'Was wird im Maschinenbau<br/>gefördert?',
+      'proj.intro':'Diese Projekttypen sind typischerweise nach FZulG §2 förderfähig – sofern technische Unsicherheit vorlag und das Ziel nicht mit Standardmitteln erreichbar war.',
+      'proj.eligible':'Typischerweise förderfähig',
+      'c1.h3':'Neue Maschinenkonzepte &amp; Prototypen','c1.body':'Entwicklung neuartiger Maschinenkinematiken, innovativer Antriebskonzepte oder Prototypen, die über den aktuellen Stand der Technik hinausgehen.',
+      'c1.b1':'Neuartige Kinematiken &amp; Antriebssysteme','c1.b2':'Modulare Maschinenplattformen mit neuen Schnittstellen','c1.b3':'Energieeffiziente Maschinenkonzepte',
+      'c2.h3':'Prozessautomatisierung &amp; Robotik','c2.body':'Entwicklung automatisierter Fertigungszellen, kollaborativer Robotersysteme oder intelligenter Produktionssteuerung, die neuartige Automatisierungsgrade erreichen.',
+      'c2.b1':'Kollaborative Robotik (Cobot) mit neuen Sicherheitskonzepten','c2.b2':'KI-gestützte Bildverarbeitung in der Qualitätssicherung','c2.b3':'Adaptive Steuerungsalgorithmen für flexible Fertigung',
+      'c3.h3':'Werkstofftechnik &amp; neue Fertigungsverfahren','c3.body':'Erforschung neuer Werkstoffe, additiver Fertigungsverfahren oder innovativer Oberflächentechnologien für industrielle Anwendungen.',
+      'c3.b1':'Additive Fertigung (3D-Druck) für Funktionsbauteile','c3.b2':'Neue Beschichtungsverfahren &amp; Oberflächenbehandlung','c3.b3':'Hochleistungswerkstoffe für Extrembedingungen',
+      'elig.badge':'Wann qualifiziert sich Ihr Projekt?','elig.h2':'FZulG-Kriterien für<br/>Maschinenbau-Projekte',
+      'elig.c1.title':'Technische Neuheit','elig.c1.body':'Das Maschinenkonzept oder Verfahren geht über den aktuellen Stand der Technik hinaus.',
+      'elig.c2.title':'Technische Unsicherheit','elig.c2.body':'Der Erfolg war zu Projektbeginn nicht garantiert – Versuche und Iterationen waren erforderlich.',
+      'elig.c3.title':'Systematische Vorgehensweise','elig.c3.body':'Strukturierter Entwicklungsprozess, dokumentiert in Versuchsprotokollen, CAD-Daten und Berichten.',
+      'elig.c4.title':'Übertragbarkeit','elig.c4.body':'Die Erkenntnisse sind für andere Projekte oder Anwendungsfälle nutzbar, kein reiner Kundenauftrag.',
+      'elig.box.title':'Wichtig zu wissen',
+      'elig.box.p1':'Auch <strong style="color:#4DAEE5">Prototypen, die später zu Kundenprodukten werden</strong>, können förderfähig sein – entscheidend ist die F&amp;E-Phase, nicht das Endprodukt.',
+      'elig.box.p2':'Förderfähig sind: <strong style="color:#7ECEF5">Konstrukteure, Versuchsingenieure, Simulationsexperten</strong> und externe Auftragnehmer (60 % der Vergütung).',
+      'elig.box.highlight':'Typische Förderung pro Maschinenbau-Projekt: <span style="font-size:1rem;color:#7ECEF5">40.000 – 150.000 €/Jahr</span>',
+      'faq.h2':'Häufige Fragen',
+      'faq.q1':'Sind Prototypen und physische Muster vollständig förderfähig?',
+      'faq.a1':'Prototypen sind als Instrument der experimentellen Entwicklung förderfähig, soweit sie der Erkenntnisgewinnung dienen. Der direkte Materialaufwand für den Prototyp kann jedoch nicht geltend gemacht werden – förderfähig sind ausschließlich die Personalkosten der beteiligten Mitarbeiter sowie Auftragsforschungskosten. Das fertige Serienprodukt ist nicht Teil der Förderung.',
+      'faq.q2':'Können Zulieferer ihre Komponenten-Entwicklung fördern lassen?',
+      'faq.a2':'Ja, Zulieferer können die F&amp;E-Arbeit für neue Komponenten und Systeme fördern lassen – auch wenn diese später in Fahrzeugen oder Maschinen von OEMs verbaut werden. Entscheidend ist, dass das Zulieferunternehmen selbst die technische Unsicherheit trägt und die Entwicklungsleistung erbringt. Reine Lohnfertigung ohne eigene Entwicklung ist hingegen nicht förderfähig.',
+      'faq.q3':'Ist Simulationssoftware (FEM, CFD) als F&amp;E-Aufwand förderfähig?',
+      'faq.a3':'Die Personalkosten der Ingenieure, die Simulationen durchführen, sind vollständig förderfähig. Lizenzkosten für Simulationssoftware selbst sind nicht direkt als förderfähige Aufwendungen im FZulG vorgesehen – sie können aber bei anderen Förderprogrammen (z.B. ZIM) berücksichtigt werden. NOVARIS prüft, welche Kombination für Ihr Projekt optimal ist.',
+      'cta.badge':'Jetzt starten','cta.h2':'Prüfen Sie Ihr<br/>Maschinenbau-Projekt kostenlos',
+      'cta.body':'NOVARIS analysiert Ihre F&amp;E-Tätigkeiten, schätzt das Förderpotenzial ein und übernimmt die gesamte Antragstellung. Kein Erfolg – kein Honorar.',
+      'cta.btn':'Kostenlose Erstanalyse anfordern',
+      'foot.fzulg':'Das FZulG','foot.branchen':'Branchen','foot.prozess':'Prozess','foot.kontakt':'Kontakt','foot.datenschutz':'Datenschutz'
+    },
+    en: {
+      'nav.fzulg':'The FZulG Act','nav.branchen':'Industries','nav.prozess':'Process','nav.vorteile':'Benefits','nav.faq':'FAQ','nav.kontakt':'Contact','nav.cta':'Free eligibility check','nav.mob.cta':'Free eligibility check →',
+      'hero.back':'All Industries','hero.badge':'Mechanical Engineering · FZulG-eligible',
+      'hero.body':'Mechanical and plant engineering is one of Germany\'s most innovation-driven sectors. Companies developing new machine concepts, automation solutions or manufacturing processes receive <strong style="color:#7ECEF5;font-weight:600">up to 25% of R&amp;D staff costs</strong> refunded through the tax authority.',
+      'hero.pill1':'Subsidy rate up to 25%','hero.pill2':'Prototypes &amp; test series eligible','hero.pill3':'Retroactive to 2020','hero.btn':'Check eligibility',
+      'hero.code.label1':'PROJECT','hero.code.val1':'Adaptive Robot Cell Gen-3','hero.code.label2':'STATUS','hero.code.status':'ELIGIBLE','hero.code.label3':'START','hero.code.label4':'COSTS',
+      'hero.code.cost1':'Staff expenditure','hero.code.cost2':'Contract research',
+      'hero.code.result':'✓ Refund: <strong>~€123,000 / year</strong>',
+      'proj.badge':'Eligible Projects','proj.h2':'What is funded in<br/>Mechanical Engineering?',
+      'proj.intro':'These project types are typically eligible under FZulG §2 – provided technical uncertainty existed and the objective could not be achieved with standard means.',
+      'proj.eligible':'Typically eligible',
+      'c1.h3':'New Machine Concepts &amp; Prototypes','c1.body':'Development of novel machine kinematics, innovative drive concepts or prototypes that go beyond the current state of the art.',
+      'c1.b1':'Novel kinematics &amp; drive systems','c1.b2':'Modular machine platforms with new interfaces','c1.b3':'Energy-efficient machine concepts',
+      'c2.h3':'Process Automation &amp; Robotics','c2.body':'Development of automated production cells, collaborative robot systems or intelligent production control that achieve novel levels of automation.',
+      'c2.b1':'Collaborative robotics (cobot) with new safety concepts','c2.b2':'AI-based image processing for quality assurance','c2.b3':'Adaptive control algorithms for flexible manufacturing',
+      'c3.h3':'Materials Technology &amp; New Manufacturing Processes','c3.body':'Research into new materials, additive manufacturing processes or innovative surface technologies for industrial applications.',
+      'c3.b1':'Additive manufacturing (3D printing) for functional components','c3.b2':'New coating processes &amp; surface treatment','c3.b3':'High-performance materials for extreme conditions',
+      'elig.badge':'When does your project qualify?','elig.h2':'FZulG Criteria for<br/>Mechanical Engineering Projects',
+      'elig.c1.title':'Technical Novelty','elig.c1.body':'The machine concept or process goes beyond the current state of the art.',
+      'elig.c2.title':'Technical Uncertainty','elig.c2.body':'Success was not guaranteed at the start of the project – trials and iterations were required.',
+      'elig.c3.title':'Systematic Approach','elig.c3.body':'Structured development process, documented in test protocols, CAD data and reports.',
+      'elig.c4.title':'Transferability','elig.c4.body':'The findings are applicable to other projects or use cases – not a pure customer order.',
+      'elig.box.title':'Important to Know',
+      'elig.box.p1':'Even <strong style="color:#4DAEE5">prototypes that later become customer products</strong> can be eligible – what matters is the R&amp;D phase, not the final product.',
+      'elig.box.p2':'Eligible costs include: <strong style="color:#7ECEF5">design engineers, test engineers, simulation experts</strong> and external contractors (60% of remuneration).',
+      'elig.box.highlight':'Typical funding per mechanical engineering project: <span style="font-size:1rem;color:#7ECEF5">€40,000 – €150,000/year</span>',
+      'faq.h2':'Frequently Asked Questions',
+      'faq.q1':'Are prototypes and physical samples fully eligible for funding?',
+      'faq.a1':'Prototypes are eligible as an instrument of experimental development, to the extent that they serve the generation of knowledge. However, the direct material costs of the prototype cannot be claimed – only the staff costs of the employees involved and contract research costs are eligible. The finished series product is not part of the funding.',
+      'faq.q2':'Can suppliers have their component development funded?',
+      'faq.a2':'Yes, suppliers can have R&amp;D work for new components and systems funded – even if these are later installed in vehicles or machines by OEMs. The key requirement is that the supplier company itself bears the technical uncertainty and performs the development work. Pure contract manufacturing without own development is not eligible.',
+      'faq.q3':'Is simulation software (FEM, CFD) eligible as an R&amp;D expense?',
+      'faq.a3':'The staff costs of engineers who carry out simulations are fully eligible. Licence costs for the simulation software itself are not directly covered as eligible expenditure under the FZulG – but they may be considered under other funding programmes (e.g. ZIM). NOVARIS checks which combination is optimal for your project.',
+      'cta.badge':'Get Started','cta.h2':'Check Your<br/>Mechanical Engineering Project for Free',
+      'cta.body':'NOVARIS analyses your R&amp;D activities, estimates the funding potential and handles the entire application process. No success – no fee.',
+      'cta.btn':'Request Free Initial Analysis',
+      'foot.fzulg':'The FZulG Act','foot.branchen':'Industries','foot.prozess':'Process','foot.kontakt':'Contact','foot.datenschutz':'Privacy Policy'
+    }
+  };
+
+  function setLang(lang) {
+    document.documentElement.lang = lang;
+    document.title = lang === 'en'
+      ? 'Mechanical Engineering – FZulG Funding | NOVARIS Consulting'
+      : 'Maschinenbau & Anlagenbau – FZulG-Förderung | NOVARIS Consulting';
+    document.querySelectorAll('[data-t]').forEach(function(el) {
+      var key = el.getAttribute('data-t');
+      if (T[lang][key] !== undefined) el.innerHTML = T[lang][key];
+    });
+    var de = document.getElementById('lang-de');
+    var en = document.getElementById('lang-en');
+    if (de) de.classList.toggle('active', lang === 'de');
+    if (en) en.classList.toggle('active', lang === 'en');
+  }
+</script>
+<script src="/scroll-animations.js"></script>
+</body>
+</html>

@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Automotive &amp; Mobilität – FZulG-Förderung | NOVARIS Consulting</title>
+  <meta name="description" content="Automotive-Unternehmen erhalten bis zu 25 % ihrer F&E-Kosten zurück. NOVARIS zeigt, welche Projekte in Elektrifizierung, autonomem Fahren und Leichtbau förderfähig sind." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <script>tailwind.config={theme:{extend:{fontFamily:{display:['Montserrat','sans-serif'],body:['Inter','sans-serif']}}}};</script>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth;font-size:16px}
+    body{font-family:'Inter',sans-serif;background:#fff;color:#0D1B3E;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+    h1,h2,h3,h4{font-family:'Montserrat',sans-serif;letter-spacing:-0.03em;line-height:1.13}
+    .hero-bg{background:radial-gradient(ellipse 110% 60% at 55% -5%,rgba(30,86,181,0.30) 0%,transparent 62%),radial-gradient(ellipse 55% 55% at 95% 45%,rgba(77,174,229,0.14) 0%,transparent 58%),radial-gradient(ellipse 65% 70% at 0% 100%,rgba(13,27,62,0.25) 0%,transparent 60%),linear-gradient(160deg,#04091a 0%,#0D1B3E 50%,#122244 100%)}
+    .bg-tinted{background:radial-gradient(ellipse 80% 60% at 90% 10%,rgba(30,86,181,0.055) 0%,transparent 60%),radial-gradient(ellipse 60% 60% at 5% 90%,rgba(77,174,229,0.04) 0%,transparent 55%),var(--bg-raised)}
+    .nav-blur{backdrop-filter:blur(20px) saturate(160%);-webkit-backdrop-filter:blur(20px) saturate(160%)}
+    .nav-link{font-family:'Inter',sans-serif;font-size:0.875rem;font-weight:500;color:rgba(255,255,255,0.70);text-decoration:none;padding:0.4rem 0.8rem;border-radius:8px;transition:background 0.14s ease,color 0.14s ease}
+    .nav-link:hover{color:#fff;background:rgba(255,255,255,0.09)}
+    .nav-dropdown-wrap{position:relative;display:flex;align-items:center}.nav-dropdown-wrap::after{content:'';position:absolute;top:100%;left:0;right:0;height:14px}
+    .nav-dropdown-trigger{display:flex;align-items:center;gap:2px}
+    .dd-caret{transition:transform 0.22s cubic-bezier(0.16,1,0.3,1);opacity:0.5;flex-shrink:0}
+    .nav-dropdown-wrap:hover .dd-caret{transform:rotate(180deg)}
+    .nav-dropdown{position:absolute;top:calc(100% + 10px);left:50%;transform:translateX(-50%) translateY(-8px);min-width:230px;background:rgba(6,13,40,0.98);backdrop-filter:blur(24px) saturate(160%);-webkit-backdrop-filter:blur(24px) saturate(160%);border:1px solid rgba(255,255,255,0.09);border-radius:14px;padding:0.45rem;opacity:0;visibility:hidden;pointer-events:none;transition:opacity 0.18s ease,transform 0.22s cubic-bezier(0.16,1,0.3,1),visibility 0s linear 0.18s;z-index:200;box-shadow:0 24px 56px rgba(0,0,0,0.65)}
+    .nav-dropdown::before{content:'';position:absolute;top:-5px;left:50%;transform:translateX(-50%) rotate(45deg);width:10px;height:10px;background:rgba(6,13,40,0.98);border-left:1px solid rgba(255,255,255,0.09);border-top:1px solid rgba(255,255,255,0.09);border-radius:2px 0 0 0}
+    .nav-dropdown-wrap:hover .nav-dropdown,.nav-dropdown-wrap:focus-within .nav-dropdown{opacity:1;visibility:visible;pointer-events:auto;transform:translateX(-50%) translateY(0);transition:opacity 0.18s ease,transform 0.22s cubic-bezier(0.16,1,0.3,1),visibility 0s}
+    .nav-dd-item{display:flex;align-items:center;gap:0.65rem;padding:0.55rem 0.85rem;border-radius:9px;font-size:0.82rem;color:rgba(195,215,245,0.72);text-decoration:none;font-family:'Inter',sans-serif;font-weight:500;transition:background 0.12s ease,color 0.12s ease;white-space:nowrap}
+    .nav-dd-item:hover{background:rgba(255,255,255,0.09);color:#fff}
+    .nav-dd-item.current{background:rgba(77,174,229,0.15);color:#4DAEE5}
+    .nav-dd-icon{width:22px;height:22px;border-radius:6px;flex-shrink:0;background:linear-gradient(135deg,rgba(30,86,181,0.32),rgba(77,174,229,0.20));display:flex;align-items:center;justify-content:center}
+    .btn-primary{display:inline-flex;align-items:center;justify-content:center;gap:0.5rem;padding:0.875rem 2rem;background:linear-gradient(135deg,#1E56B5 0%,#1A3462 100%);color:#fff;font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.9rem;border-radius:10px;border:none;cursor:pointer;text-decoration:none;white-space:nowrap;box-shadow:0 4px 14px rgba(30,86,181,0.38);transition:transform 0.2s cubic-bezier(0.34,1.56,0.64,1),box-shadow 0.2s ease}
+    .btn-primary:hover{transform:translateY(-2px) scale(1.025);box-shadow:0 8px 24px rgba(30,86,181,0.48)}
+    .badge{display:inline-flex;align-items:center;gap:0.35rem;padding:0.28rem 0.85rem;border-radius:999px;background:rgba(30,86,181,0.09);border:1px solid rgba(30,86,181,0.20);color:#1E56B5;font-family:'Montserrat',sans-serif;font-size:0.72rem;font-weight:700;letter-spacing:0.07em;text-transform:uppercase}
+    .badge-dark{background:rgba(77,174,229,0.13);border-color:rgba(77,174,229,0.30);color:#7ECEF5}
+    .badge-green{background:rgba(16,185,129,0.10);border-color:rgba(16,185,129,0.28);color:#059669}
+    .project-card{background:var(--bg-card);border-radius:20px;border:1px solid rgba(30,86,181,0.09);box-shadow:0 4px 22px rgba(30,86,181,0.07),0 1px 4px rgba(0,0,0,0.04);padding:2rem;position:relative;overflow:hidden;transition:transform 0.22s cubic-bezier(0.34,1.56,0.64,1),box-shadow 0.22s ease;height:100%}
+    .project-card::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 0 0,rgba(30,86,181,0.04),transparent 60%);pointer-events:none}
+    .project-card:hover{transform:translateY(-6px);box-shadow:0 14px 36px rgba(30,86,181,0.14),0 2px 8px rgba(0,0,0,0.06)}
+    .project-icon{width:52px;height:52px;border-radius:15px;background:linear-gradient(135deg,rgba(30,86,181,0.12),rgba(77,174,229,0.10));border:1px solid rgba(30,86,181,0.18);display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem;flex-shrink:0}
+    .faq-wrap{border:1.5px solid var(--bdr);border-radius:12px;overflow:hidden;margin-bottom:0.75rem}
+    .faq-btn{width:100%;text-align:left;background:var(--bg-faq-btn);border:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.25rem 1.5rem;font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.93rem;color:var(--clr-h,#0D1B3E);transition:background 0.14s ease,color 0.14s ease}
+    .faq-btn:hover{background:var(--bg-faq-hov)}
+    .faq-icon{width:26px;height:26px;border-radius:999px;flex-shrink:0;background:#edf2fb;color:#1E56B5;display:flex;align-items:center;justify-content:center;font-size:1rem;font-weight:700;transition:transform 0.25s cubic-bezier(0.34,1.56,0.64,1),background 0.15s ease,color 0.15s ease}
+    .faq-wrap.open .faq-icon{transform:rotate(45deg);background:#1E56B5;color:#fff}
+    .faq-body{max-height:0;overflow:hidden;opacity:0;transition:max-height 0.35s cubic-bezier(0.16,1,0.3,1),opacity 0.25s ease}
+    .faq-wrap.open .faq-body{max-height:500px;opacity:1}
+    .faq-content{padding:1rem 1.5rem 1.25rem;border-top:1px solid var(--bdr-faq);font-size:0.875rem;color:#4a5870;line-height:1.75;transition:color 0.2s ease,border-top-color 0.2s ease}
+    .check-dot{width:20px;height:20px;border-radius:999px;flex-shrink:0;background:linear-gradient(135deg,#1E56B5,#4DAEE5);display:flex;align-items:center;justify-content:center;margin-top:2px}
+    .reveal{opacity:0;transform:translateY(24px);transition:opacity 0.55s ease,transform 0.55s cubic-bezier(0.16,1,0.3,1)}
+    .reveal.visible{opacity:1;transform:translateY(0)} @keyframes reveal-safe{to{opacity:1;transform:translateY(0)}} .reveal{animation:reveal-safe 0.6s 3s forwards}
+    @keyframes spin-slow{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+    @keyframes pulse-beat{0%,100%{transform:scale(1)}50%{transform:scale(1.14)}}
+    @keyframes float-y{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+    @keyframes glow-flash{0%,100%{filter:drop-shadow(0 0 0 rgba(77,174,229,0))}50%{filter:drop-shadow(0 0 14px rgba(77,174,229,0.9))}}
+    @keyframes bounce-side{0%,100%{transform:translateX(0)}40%{transform:translateX(6px)}60%{transform:translateX(-3px)}}
+    @keyframes sway-leaf{0%,100%{transform:rotate(0deg)}33%{transform:rotate(-10deg)}66%{transform:rotate(10deg)}}
+    @keyframes heartbeat{0%,100%{transform:scale(1)}14%{transform:scale(1.18)}28%{transform:scale(1)}42%{transform:scale(1.12)}56%{transform:scale(1)}}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+    .anim-pulse{animation:pulse-beat 1.8s ease-in-out infinite}
+    .anim-spin{animation:spin-slow 4s linear infinite}
+    .anim-float{animation:float-y 2.2s ease-in-out infinite}
+    .anim-glow{animation:glow-flash 1.6s ease-in-out infinite}
+    .anim-bounce{animation:bounce-side 2.2s ease-in-out infinite}
+    .anim-sway{animation:sway-leaf 3s ease-in-out infinite;transform-origin:bottom center}
+    .anim-heartbeat{animation:heartbeat 1.4s ease-in-out infinite}
+    .au{animation:fadeUp 0.6s cubic-bezier(0.16,1,0.3,1) both}
+    .d1{animation-delay:0.07s}.d2{animation-delay:0.14s}.d3{animation-delay:0.21s}.d4{animation-delay:0.28s}
+    .hero-icon-bg{width:110px;height:110px;border-radius:30px;background:linear-gradient(135deg,rgba(30,86,181,0.22),rgba(77,174,229,0.16));border:1px solid rgba(77,174,229,0.48);display:flex;align-items:center;justify-content:center;box-shadow:0 0 50px rgba(77,174,229,0.18),inset 0 1px 0 rgba(255,255,255,0.09)}
+    .stat-pill{display:inline-flex;align-items:center;gap:0.4rem;padding:0.4rem 1rem;border-radius:999px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.13);font-family:'Inter',sans-serif;font-size:0.78rem;font-weight:500;color:rgba(195,215,245,0.85)}
+    .lang-toggle{display:flex;align-items:center;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:8px;overflow:hidden;flex-shrink:0}
+    .lang-btn{padding:0.28rem 0.62rem;border:none;background:transparent;cursor:pointer;font-family:'Montserrat',sans-serif;font-weight:600;font-size:0.71rem;color:rgba(255,255,255,0.48);letter-spacing:0.06em;transition:background 0.15s ease,color 0.15s ease}
+    .lang-btn.active{background:rgba(255,255,255,0.16);color:#fff}
+    .lang-divider{width:1px;height:16px;background:rgba(255,255,255,0.12);flex-shrink:0}
+    #mob-menu{max-height:0;overflow:hidden;opacity:0;transition:max-height 0.3s cubic-bezier(0.16,1,0.3,1),opacity 0.22s ease}
+    #mob-menu.open{max-height:420px;opacity:1}
+    html{overflow-y:scroll}::-webkit-scrollbar{width:8px}::-webkit-scrollbar-track{background:transparent}::-webkit-scrollbar-thumb{background:rgba(77,174,229,0.38);border-radius:999px}::-webkit-scrollbar-thumb:hover{background:rgba(77,174,229,0.55)}html{scrollbar-width:thin;scrollbar-color:rgba(77,174,229,0.38) transparent}html.dark ::-webkit-scrollbar-thumb{background:rgba(77,174,229,0.30)}html.dark ::-webkit-scrollbar-thumb:hover{background:rgba(77,174,229,0.48)}html.dark{scrollbar-color:rgba(77,174,229,0.30) transparent}
+    :root{--bg-base:#ffffff;--bg-raised:#f5f8fe;--bg-card:#ffffff;--bg-faq-btn:#ffffff;--bg-faq-hov:#f5f8fe;--clr-h:#0D1B3E;--bdr:#dde5f4;--bdr-faq:#edf2fb}
+    html.dark{--bg-base:#0a1428;--bg-raised:#0D1B3E;--bg-card:#122244;--bg-faq-btn:#0D1B3E;--bg-faq-hov:#122244;--clr-h:#e8f0fa;--bdr:rgba(77,174,229,0.18);--bdr-faq:rgba(77,174,229,0.10)}
+    html.dark section.bg-white{background:var(--bg-base)!important}html.dark .bg-tinted{background:var(--bg-raised)!important}
+    html.dark .faq-content{color:#8aaac8;border-top-color:var(--bdr-faq)}.logo-light{display:none}html.dark .logo-dark{display:none!important}html.dark .logo-light{display:inline!important}
+    html.dark section.bg-white [style*="color:#0D1B3E"],html.dark .bg-tinted [style*="color:#0D1B3E"]{color:#e8f0fa!important}
+    html.dark section.bg-white [style*="color:#5a6e8c"],html.dark .bg-tinted [style*="color:#5a6e8c"]{color:#8aaac8!important}
+    html.dark section.bg-white [style*="color:#374151"],html.dark .bg-tinted [style*="color:#374151"]{color:#a8c0d8!important}
+    html.dark section.bg-white .badge:not(.badge-dark),html.dark .bg-tinted .badge:not(.badge-dark){background:rgba(30,86,181,0.20)!important}
+    #dark-toggle:hover,#dark-toggle-mob:hover{background:rgba(255,255,255,0.14)!important;color:#fff!important}
+  </style>
+  <link rel="stylesheet" href="/page-transition.css" />
+  <script src="/page-transition.js" defer></script>
+</head>
+<body>
+
+<!-- NAV -->
+<header id="nav" class="fixed inset-x-0 top-0 z-50 nav-blur" style="background:rgba(4,9,26,0.85);border-bottom:1px solid rgba(255,255,255,0.07)">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between gap-4" style="height:68px">
+    <a href="../" aria-label="NOVARIS Consulting" class="hover:opacity-90" style="text-decoration:none;flex-shrink:0;display:flex;align-items:center;transition:opacity 0.15s ease">
+      <img src="../brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto" />
+    </a>
+    <nav class="hidden lg:flex items-center gap-0.5">
+      <a href="../index.html#was-ist-fzulg" class="nav-link" data-t="nav-fzulg">Das FZulG</a>
+      <div class="nav-dropdown-wrap">
+        <span class="nav-link nav-dropdown-trigger" style="cursor:default"><span data-t="nav-branchen">Branchen</span>
+          <svg class="dd-caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </span>
+        <div class="nav-dropdown" role="menu">
+          <a href="software-it.html" class="nav-dd-item" role="menuitem"><span class="nav-dd-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4DAEE5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span>Software &amp; IT</a>
+          <a href="maschinenbau.html" class="nav-dd-item" role="menuitem"><span class="nav-dd-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4DAEE5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg></span>Maschinenbau</a>
+          <a href="pharma.html" class="nav-dd-item" role="menuitem"><span class="nav-dd-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4DAEE5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6"/><path d="M14 3v5.5l4 7.5H6l4-7.5V3"/></svg></span>Pharma &amp; Life Sciences</a>
+          <a href="automotive.html" class="nav-dd-item current" role="menuitem"><span class="nav-dd-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4DAEE5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17H3a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h13l3 5v4a2 2 0 0 1-2 2h-1"/><circle cx="7" cy="17" r="2"/><circle cx="15" cy="17" r="2"/></svg></span>Automotive &amp; Mobilität</a>
+          <a href="medizintechnik.html" class="nav-dd-item" role="menuitem"><span class="nav-dd-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4DAEE5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></span>Medizintechnik</a>
+          <a href="energie.html" class="nav-dd-item" role="menuitem"><span class="nav-dd-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4DAEE5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></span>Energie &amp; Cleantech</a>
+          <a href="luft-raumfahrt.html" class="nav-dd-item" role="menuitem"><span class="nav-dd-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4DAEE5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/></svg></span>Luft- &amp; Raumfahrt</a>
+          <a href="agrar-foodtech.html" class="nav-dd-item" role="menuitem"><span class="nav-dd-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4DAEE5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/></svg></span>Agrar &amp; Foodtech</a>
+          <a href="bauindustrie.html" class="nav-dd-item" role="menuitem"><span class="nav-dd-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4DAEE5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="1"/><path d="M9 22V12h6v10"/></svg></span>Bauindustrie</a>
+        </div>
+      </div>
+      <a href="../index.html#prozess" class="nav-link" data-t="nav-prozess">Prozess</a>
+      <a href="../index.html#vorteile" class="nav-link" data-t="nav-vorteile">Vorteile</a>
+      <a href="../index.html#faq" class="nav-link" data-t="nav-faq">FAQ</a>
+      <a href="../index.html#kontakt" class="nav-link" data-t="nav-kontakt">Kontakt</a>
+    </nav>
+    <div class="flex items-center gap-3">
+            <div class="lang-toggle hidden sm:flex">
+        <button id="lang-de" class="lang-btn active" onclick="setLang('de')">DE</button><div class="lang-divider"></div><button id="lang-en" class="lang-btn" onclick="setLang('en')">EN</button>
+      </div>
+      <button id="dark-toggle" onclick="toggleDark()" aria-label="Toggle dark mode"
+        class="hidden sm:flex" style="width:32px;height:32px;border-radius:8px;border:1px solid rgba(255,255,255,0.12);background:rgba(255,255,255,0.07);cursor:pointer;align-items:center;justify-content:center;color:rgba(255,255,255,0.7);transition:background 0.15s ease,color 0.15s ease">
+        <svg id="icon-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg id="icon-sun"   width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
+      <a href="../index.html#kontakt" class="btn-primary hidden sm:inline-flex" style="padding:0.55rem 1.35rem;font-size:0.83rem"><span data-t="nav-cta">Kostenlos prüfen</span> <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      <button id="ham-btn" onclick="toggleMob()" aria-label="Menü" class="lg:hidden flex flex-col justify-center gap-1.5 w-9 h-9 rounded-lg hover:bg-white/10">
+        <span style="width:20px;height:2px;background:#fff;border-radius:2px;margin:auto;display:block"></span>
+        <span style="width:20px;height:2px;background:#fff;border-radius:2px;margin:auto;display:block"></span>
+        <span style="width:14px;height:2px;background:#fff;border-radius:2px;margin:auto;display:block"></span>
+      </button>
+    </div>
+  </div>
+  <div id="mob-menu" style="border-top:1px solid rgba(255,255,255,0.07)">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex flex-col gap-0.5">
+      <a href="../index.html#was-ist-fzulg" class="nav-link py-2.5" onclick="toggleMob()" data-t="nav-fzulg">Das FZulG</a>
+      <a href="../index.html#branchen" class="nav-link py-2.5" onclick="toggleMob()" data-t="nav-branchen">Branchen</a>
+      <a href="../index.html#prozess" class="nav-link py-2.5" onclick="toggleMob()" data-t="nav-prozess">Prozess</a>
+      <a href="../index.html#kontakt" class="nav-link py-2.5" onclick="toggleMob()" data-t="nav-kontakt">Kontakt</a>
+            <a href="../index.html#kontakt" class="btn-primary mt-2 w-full" style="font-size:0.88rem;padding:0.75rem 1rem" onclick="toggleMob()" data-t="mob.cta">Kostenlos prüfen →</a>
+      <div class="flex items-center gap-2 mt-2">
+        <button id="dark-toggle-mob" onclick="toggleDark()" aria-label="Toggle dark mode"
+          style="width:32px;height:32px;border-radius:8px;border:1px solid rgba(255,255,255,0.12);background:rgba(255,255,255,0.07);cursor:pointer;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.7);transition:background 0.15s ease,color 0.15s ease">
+          <svg id="icon-moon-mob" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg id="icon-sun-mob"   width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero-bg relative overflow-hidden" style="padding-top:130px;padding-bottom:100px">
+  <div aria-hidden="true" style="position:absolute;pointer-events:none;inset:0;overflow:hidden">
+    <div style="position:absolute;top:-160px;right:-160px;width:700px;height:700px;border-radius:50%;border:1px solid rgba(30,86,181,0.12)"></div>
+    <div style="position:absolute;top:-80px;right:-80px;width:480px;height:480px;border-radius:50%;border:1px solid rgba(77,174,229,0.08)"></div>
+    <div style="position:absolute;bottom:-100px;left:-120px;width:550px;height:550px;border-radius:50%;border:1px solid rgba(30,86,181,0.07)"></div>
+    <div style="position:absolute;top:60px;right:6%;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,rgba(77,174,229,0.15),transparent 70%)"></div>
+  </div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 relative" style="z-index:3">
+    <a href="../index.html#branchen" class="au inline-flex items-center gap-2 mb-8" style="color:rgba(195,215,245,0.55);text-decoration:none;font-size:0.83rem;font-weight:500;transition:color 0.15s ease" onmouseover="this.style.color='rgba(195,215,245,0.9)'" onmouseout="this.style.color='rgba(195,215,245,0.55)'">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+      <span data-t="back-link">Alle Branchen</span>
+    </a>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <div class="badge badge-dark au mb-5" data-t="hero-badge">Automotive &amp; Mobilität · FZulG-berechtigt</div>
+        <div class="au d1 flex items-center gap-5 mb-6">
+          <div class="hero-icon-bg">
+            <div class="anim-bounce" style="color:#4DAEE5">
+              <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17H3a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h13l3 5v4a2 2 0 0 1-2 2h-1"/><circle cx="7" cy="17" r="2"/><circle cx="15" cy="17" r="2"/><path d="M9 7V3"/></svg>
+            </div>
+          </div>
+          <h1 class="text-4xl sm:text-5xl font-black text-white">Automotive<br/><span style="background:linear-gradient(125deg,#4DAEE5,#7ECEF5);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">&amp; Mobilität</span></h1>
+        </div>
+        <p class="au d2" data-t="hero-body" style="color:rgba(195,215,245,0.80);font-size:1.05rem;line-height:1.72;margin-bottom:1.75rem">
+          Die Automobilindustrie befindet sich im größten Wandel ihrer Geschichte. OEMs und Zulieferer, die an Elektrifizierung, autonomem Fahren oder neuen Antriebskonzepten arbeiten, können <strong style="color:#7ECEF5;font-weight:600">bis zu 25 % der F&amp;E-Personalkosten</strong> steuerlich erstattet bekommen.
+        </p>
+        <div class="au d3 flex flex-wrap gap-2.5 mb-8">
+          <span class="stat-pill"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span data-t="pill1">Förderquote bis 25 %</span></span>
+          <span class="stat-pill"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span data-t="pill2">OEM &amp; Zulieferer förderfähig</span></span>
+          <span class="stat-pill"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span data-t="pill3">Rückwirkend bis 2020</span></span>
+        </div>
+        <div class="au d4 flex flex-wrap gap-3">
+          <a href="../index.html#kontakt" class="btn-primary" style="padding:0.95rem 2.25rem;font-size:0.95rem">
+            <span data-t="hero-btn">Förderung prüfen</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </div>
+      <!-- Hero decorative dashboard card -->
+      <div class="hidden lg:block" style="position:relative">
+        <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.09);border-radius:20px;padding:1.75rem;backdrop-filter:blur(10px)">
+          <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:1.25rem">
+            <div style="width:10px;height:10px;border-radius:50%;background:#ff5f56"></div>
+            <div style="width:10px;height:10px;border-radius:50%;background:#ffbd2e"></div>
+            <div style="width:10px;height:10px;border-radius:50%;background:#27c93f"></div>
+            <span style="margin-left:0.5rem;font-size:0.72rem;color:rgba(195,215,245,0.4);font-family:'Inter',sans-serif">fzulg-dashboard.json</span>
+          </div>
+          <div style="font-family:'Courier New',monospace;font-size:0.8rem;line-height:1.9;color:rgba(195,215,245,0.75)">
+            <div><span style="color:#4DAEE5">"<span data-t="cc-label-projekt">projekt</span>"</span>: <span style="color:#7ECEF5">"<span data-t="cc-val-projekt">BMS-Entwicklung Gen4</span>"</span>,</div>
+            <div><span style="color:#4DAEE5">"<span data-t="cc-label-kat">kategorie</span>"</span>: <span style="color:#7ECEF5">"<span data-t="cc-val-kat">E-Antriebssysteme</span>"</span>,</div>
+            <div><span style="color:#4DAEE5">"ingenieure"</span>: <span style="color:#27c93f">12</span>,</div>
+            <div><span style="color:#4DAEE5">"personal_pa"</span>: <span style="color:#27c93f">1.440.000</span>,</div>
+            <div><span style="color:#4DAEE5">"fzulg_basis"</span>: <span style="color:#27c93f">4.000.000</span> <span style="color:rgba(195,215,245,0.35)">// cap</span>,</div>
+            <div style="margin-top:0.75rem;padding:0.6rem 0.85rem;background:rgba(39,201,63,0.12);border-radius:8px;border:1px solid rgba(39,201,63,0.22);color:#27c93f;font-size:0.76rem">
+              <span data-t="cc-result">✓ Max. Erstattung: <strong>1.000.000 € / Jahr</strong></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="bg-white py-20 sm:py-28">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="max-w-xl mx-auto text-center mb-14 reveal">
+      <div class="badge mb-4" data-t="proj-badge">Förderfähige Projekte</div>
+      <h2 class="text-3xl sm:text-4xl font-black mb-4" data-t="proj-h2" style="color:#0D1B3E">Was wird in Automotive<br/>&amp; Mobilität gefördert?</h2>
+      <p data-t="proj-intro" style="color:#5a6e8c;font-size:0.95rem;line-height:1.78">Diese Projekttypen sind typischerweise nach FZulG §2 förderfähig – sofern technische Unsicherheit vorlag und das Ziel nicht mit Standardlösungen erreichbar war.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <!-- Card 1 -->
+      <div class="reveal" style="transition-delay:0.08s">
+        <div class="project-card">
+          <div class="project-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1E56B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </div>
+          <div class="badge-green mb-3" data-t="card-eligible" style="display:inline-flex;padding:0.2rem 0.65rem;font-size:0.65rem">Typischerweise förderfähig</div>
+          <h3 data-t="card1-h3" style="font-family:'Montserrat',sans-serif;font-weight:800;font-size:1.05rem;color:#0D1B3E;margin-bottom:0.6rem;letter-spacing:-0.02em">Elektrifizierung &amp; E-Antriebe</h3>
+          <p data-t="card1-body" style="font-size:0.85rem;color:#5a6e8c;line-height:1.72;margin-bottom:1.1rem">Entwicklung neuer Elektromotoren, Batteriemanagement-Systeme, Leistungselektronik oder Ladetechnologien, die bestehende Lösungen in Reichweite oder Effizienz übertreffen.</p>
+          <div style="display:flex;flex-direction:column;gap:0.6rem">
+            <div style="display:flex;align-items:flex-start;gap:0.6rem"><div class="check-dot"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><span data-t="card1-b1" style="font-size:0.82rem;color:#374151">Neue Batteriemanagement-Algorithmen (BMS)</span></div>
+            <div style="display:flex;align-items:flex-start;gap:0.6rem"><div class="check-dot"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><span data-t="card1-b2" style="font-size:0.82rem;color:#374151">Hocheffizienz-Inverter &amp; Leistungselektronik</span></div>
+            <div style="display:flex;align-items:flex-start;gap:0.6rem"><div class="check-dot"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><span data-t="card1-b3" style="font-size:0.82rem;color:#374151">Bidirektionales Laden (V2G/V2H-Technologie)</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="reveal" style="transition-delay:0.16s">
+        <div class="project-card">
+          <div class="project-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1E56B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          </div>
+          <div class="badge-green mb-3" data-t="card-eligible" style="display:inline-flex;padding:0.2rem 0.65rem;font-size:0.65rem">Typischerweise förderfähig</div>
+          <h3 data-t="card2-h3" style="font-family:'Montserrat',sans-serif;font-weight:800;font-size:1.05rem;color:#0D1B3E;margin-bottom:0.6rem;letter-spacing:-0.02em">Autonomes Fahren &amp; ADAS</h3>
+          <p data-t="card2-body" style="font-size:0.85rem;color:#5a6e8c;line-height:1.72;margin-bottom:1.1rem">Entwicklung von Fahrerassistenzsystemen, Sensorfusion-Algorithmen oder vollautonomen Steuerungssystemen, die über den aktuellen SAE-Level hinausgehen.</p>
+          <div style="display:flex;flex-direction:column;gap:0.6rem">
+            <div style="display:flex;align-items:flex-start;gap:0.6rem"><div class="check-dot"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><span data-t="card2-b1" style="font-size:0.82rem;color:#374151">LiDAR/Radar/Kamera-Sensorfusion</span></div>
+            <div style="display:flex;align-items:flex-start;gap:0.6rem"><div class="check-dot"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><span data-t="card2-b2" style="font-size:0.82rem;color:#374151">Neue Perception-Algorithmen &amp; neuronale Netze</span></div>
+            <div style="display:flex;align-items:flex-start;gap:0.6rem"><div class="check-dot"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><span data-t="card2-b3" style="font-size:0.82rem;color:#374151">Fahrdynamikregelung &amp; Trajektorienplanung</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="reveal" style="transition-delay:0.24s">
+        <div class="project-card">
+          <div class="project-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1E56B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+          </div>
+          <div class="badge-green mb-3" data-t="card-eligible" style="display:inline-flex;padding:0.2rem 0.65rem;font-size:0.65rem">Typischerweise förderfähig</div>
+          <h3 data-t="card3-h3" style="font-family:'Montserrat',sans-serif;font-weight:800;font-size:1.05rem;color:#0D1B3E;margin-bottom:0.6rem;letter-spacing:-0.02em">Leichtbau &amp; neue Materialien</h3>
+          <p data-t="card3-body" style="font-size:0.85rem;color:#5a6e8c;line-height:1.72;margin-bottom:1.1rem">Erforschung und Entwicklung neuer Leichtbaustrukturen, Faserverbundwerkstoffe oder innovativer Fügetechnologien zur Gewichtsreduktion bei gleichzeitig hoher Crashsicherheit.</p>
+          <div style="display:flex;flex-direction:column;gap:0.6rem">
+            <div style="display:flex;align-items:flex-start;gap:0.6rem"><div class="check-dot"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><span data-t="card3-b1" style="font-size:0.82rem;color:#374151">CFK/GFK-Strukturoptimierung für Karosserie</span></div>
+            <div style="display:flex;align-items:flex-start;gap:0.6rem"><div class="check-dot"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><span data-t="card3-b2" style="font-size:0.82rem;color:#374151">Multi-Material-Design &amp; neue Fügetechnologien</span></div>
+            <div style="display:flex;align-items:flex-start;gap:0.6rem"><div class="check-dot"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><span data-t="card3-b3" style="font-size:0.82rem;color:#374151">Topologieoptimierung durch Simulation &amp; KI</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ELIGIBILITY -->
+<section class="bg-tinted py-16 sm:py-20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div class="reveal">
+        <div class="badge mb-5" data-t="elig-badge">Wann qualifiziert sich Ihr Projekt?</div>
+        <h2 class="text-2xl sm:text-3xl font-black mb-6" data-t="elig-h2" style="color:#0D1B3E">FZulG-Kriterien für<br/>Automotive-Projekte</h2>
+        <div style="display:flex;flex-direction:column;gap:1rem">
+          <div style="display:flex;gap:0.85rem;align-items:flex-start"><div class="check-dot" style="background:linear-gradient(135deg,#1E56B5,#4DAEE5)"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><div><strong data-t="elig1-title" style="font-family:'Montserrat',sans-serif;font-size:0.9rem;color:#0D1B3E">Eigenentwicklung</strong><p data-t="elig1-desc" style="font-size:0.83rem;color:#5a6e8c;margin-top:0.2rem">Das Unternehmen entwickelt eigene Technologien – kein reiner Nachbau oder Lizenznehmer bestehender Lösungen.</p></div></div>
+          <div style="display:flex;gap:0.85rem;align-items:flex-start"><div class="check-dot" style="background:linear-gradient(135deg,#1E56B5,#4DAEE5)"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><div><strong data-t="elig2-title" style="font-family:'Montserrat',sans-serif;font-size:0.9rem;color:#0D1B3E">Technische Unsicherheit</strong><p data-t="elig2-desc" style="font-size:0.83rem;color:#5a6e8c;margin-top:0.2rem">Fahrzeugbau-Iterationen, Prüfstand-Testzyklen und technische Rückschläge dokumentieren die Unsicherheit.</p></div></div>
+          <div style="display:flex;gap:0.85rem;align-items:flex-start"><div class="check-dot" style="background:linear-gradient(135deg,#1E56B5,#4DAEE5)"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><div><strong data-t="elig3-title" style="font-family:'Montserrat',sans-serif;font-size:0.9rem;color:#0D1B3E">F&amp;E abgrenzbar von Serienentwicklung</strong><p data-t="elig3-desc" style="font-size:0.83rem;color:#5a6e8c;margin-top:0.2rem">Die F&amp;E-Tätigkeiten müssen klar von Serienanlauf und Produktionsvorbereitung getrennt sein.</p></div></div>
+          <div style="display:flex;gap:0.85rem;align-items:flex-start"><div class="check-dot" style="background:linear-gradient(135deg,#1E56B5,#4DAEE5)"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><div><strong data-t="elig4-title" style="font-family:'Montserrat',sans-serif;font-size:0.9rem;color:#0D1B3E">Systematische Dokumentation</strong><p data-t="elig4-desc" style="font-size:0.83rem;color:#5a6e8c;margin-top:0.2rem">Prüfberichte, Simulationsdaten, Versuchsprotokolle und Projektberichte belegen die F&amp;E-Tätigkeit.</p></div></div>
+        </div>
+      </div>
+      <div class="reveal" style="transition-delay:0.1s">
+        <div style="background:linear-gradient(135deg,#04091a,#0D1B3E);border-radius:20px;padding:2rem;border:1px solid rgba(77,174,229,0.18);box-shadow:0 24px 56px rgba(0,0,0,0.3)">
+          <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1.25rem">
+            <div style="width:42px;height:42px;border-radius:12px;background:rgba(77,174,229,0.15);border:1px solid rgba(77,174,229,0.25);display:flex;align-items:center;justify-content:center">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4DAEE5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+            </div>
+            <span data-t="box-title" style="font-family:'Montserrat',sans-serif;font-weight:700;color:#fff;font-size:0.9rem">Wichtig zu wissen</span>
+          </div>
+          <p data-t="box-p1" style="color:rgba(195,215,245,0.80);font-size:0.88rem;line-height:1.75;margin-bottom:1.25rem">Sowohl <strong style="color:#4DAEE5">OEMs als auch Tier-1- und Tier-2-Zulieferer</strong> sind förderfähig – entscheidend ist, wer die technische Unsicherheit und das wirtschaftliche Risiko trägt.</p>
+          <p data-t="box-p2" style="color:rgba(195,215,245,0.80);font-size:0.88rem;line-height:1.75;margin-bottom:1.25rem">Förderfähig sind: <strong style="color:#7ECEF5">Entwicklungsingenieure, Testingenieure, Simulationsexperten</strong> und Auftragsforschung (60 % der Vergütung).</p>
+          <div style="background:rgba(77,174,229,0.10);border:1px solid rgba(77,174,229,0.30);border-radius:10px;padding:0.85rem 1rem">
+            <p data-t="box-highlight" style="color:#4DAEE5;font-size:0.82rem;font-weight:600;font-family:'Montserrat',sans-serif">Typische Förderung pro Automotive-Projekt: <span style="font-size:1rem;color:#7ECEF5">200.000 – 1.000.000 €/Jahr</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="bg-white py-16 sm:py-20">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-10 reveal"><div class="badge mb-4" data-t="faq-badge">FAQ</div><h2 class="text-2xl sm:text-3xl font-black" data-t="faq-h2" style="color:#0D1B3E">Häufige Fragen</h2></div>
+    <div class="reveal" style="transition-delay:0.05s">
+      <div class="faq-wrap">
+        <button class="faq-btn" onclick="toggleFaq(this)"><span data-t="faq1-q">Können Zulieferer FZulG beantragen, auch wenn OEMs die Spezifikation vorgeben?</span><span class="faq-icon">+</span></button>
+        <div class="faq-body"><div class="faq-content" data-t="faq1-a">Ja, sofern der Zulieferer selbst die F&amp;E-Tätigkeit erbringt und die technische Unsicherheit trägt. Reine Lohnentwicklung nach detaillierter OEM-Vorgabe ohne eigenen Entwicklungsspielraum ist problematisch. Sobald der Zulieferer aber eigene Lösungskonzepte erarbeitet, ist die Förderfähigkeit gegeben – auch bei Rahmenverträgen mit OEMs. NOVARIS grenzt das klar ab.</div></div>
+      </div>
+    </div>
+    <div class="reveal" style="transition-delay:0.1s">
+      <div class="faq-wrap">
+        <button class="faq-btn" onclick="toggleFaq(this)"><span data-t="faq2-q">Ist Software-Entwicklung für ADAS- und autonome Fahrsysteme förderfähig?</span><span class="faq-icon">+</span></button>
+        <div class="faq-body"><div class="faq-content" data-t="faq2-a">Ja, ausdrücklich. Algorithmen für Perzeption, Entscheidungsfindung, Pfadplanung oder Fahrdynamikregelung sind als experimentelle Entwicklung nach FZulG §2 förderfähig. Die Software muss eigene technische Neuartigkeit aufweisen – der reine Einsatz von Standard-Bibliotheken ohne eigene Weiterentwicklung zählt nicht. Der F&amp;E-Anteil wird sauber vom Integrations- und Testanteil abgegrenzt.</div></div>
+      </div>
+    </div>
+    <div class="reveal" style="transition-delay:0.15s">
+      <div class="faq-wrap">
+        <button class="faq-btn" onclick="toggleFaq(this)"><span data-t="faq3-q">Kann FZulG mit EU-Förderprogrammen (Horizon Europe, IPCEI) kombiniert werden?</span><span class="faq-icon">+</span></button>
+        <div class="faq-body"><div class="faq-content" data-t="faq3-a">Eine Kombination ist grundsätzlich möglich, solange keine Doppelförderung derselben Aufwendungen entsteht. FZulG und EU-Projektförderung können für unterschiedliche Kostenpositionen oder Projekte nebeneinander genutzt werden. Bei EU-geförderten Projekten mit Personalkostenzuschuss sind die förderfähigen FZulG-Aufwendungen entsprechend zu kürzen. NOVARIS koordiniert die optimale Förderstrategie.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="hero-bg py-20 sm:py-28">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 text-center">
+    <div class="badge badge-dark mb-6" data-t="cta-badge" style="margin:0 auto 1.5rem">Jetzt starten</div>
+    <h2 class="text-3xl sm:text-4xl font-black text-white mb-5" data-t="cta-h2">Prüfen Sie Ihr<br/>Automotive-Projekt kostenlos</h2>
+    <p data-t="cta-body" style="color:rgba(195,215,245,0.78);font-size:1rem;line-height:1.75;margin-bottom:2.25rem">NOVARIS analysiert Ihre F&amp;E-Tätigkeiten, schätzt das Förderpotenzial ein und übernimmt die gesamte Antragstellung. Kein Erfolg – kein Honorar.</p>
+    <a href="../index.html#kontakt" class="btn-primary" style="padding:1.1rem 2.75rem;font-size:1rem"><span data-t="cta-btn">Kostenlose Erstanalyse anfordern</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background:#04091a;border-top:1px solid rgba(255,255,255,0.07);padding:2.5rem 0">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+    <a href="../" style="text-decoration:none;display:flex;align-items:center"><img src="../brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:52px;width:auto" /></a>
+    <div style="display:flex;gap:1.5rem;flex-wrap:wrap;justify-content:center">
+      <a href="../index.html#was-ist-fzulg" data-t="footer-fzulg" style="color:rgba(195,215,245,0.45);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.45)'">Das FZulG</a>
+      <a href="../index.html#branchen" data-t="footer-branchen" style="color:rgba(195,215,245,0.45);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.45)'">Branchen</a>
+      <a href="../index.html#prozess" data-t="footer-prozess" style="color:rgba(195,215,245,0.45);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.45)'">Prozess</a>
+      <a href="../index.html#kontakt" data-t="footer-kontakt" style="color:rgba(195,215,245,0.45);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.45)'">Kontakt</a>
+      <a href="../datenschutz.html" style="color:rgba(195,215,245,0.45);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.45)'" data-t="footer-datenschutz">Datenschutz</a>
+    </div>
+    <p style="color:rgba(195,215,245,0.28);font-size:0.75rem">© 2025 NOVARIS Consulting GmbH</p>
+  </div>
+</footer>
+
+<script>
+  var T = {
+    de: {
+      'title': 'Automotive &amp; Mobilit\u00e4t \u2013 FZulG-F\u00f6rderung | NOVARIS Consulting',
+      'nav-fzulg': 'Das FZulG',
+      'nav-branchen': 'Branchen',
+      'nav-prozess': 'Prozess',
+      'nav-vorteile': 'Vorteile',
+      'nav-faq': 'FAQ',
+      'nav-kontakt': 'Kontakt',
+      'nav-cta': 'Kostenlos pr\u00fcfen',
+      'mob-cta': 'Kostenlos pr\u00fcfen \u2192',
+      'back-link': 'Alle Branchen',
+      'hero-badge': 'Automotive &amp; Mobilit\u00e4t \u00b7 FZulG-berechtigt',
+      'hero-body': 'Die Automobilindustrie befindet sich im gr\u00f6\u00dften Wandel ihrer Geschichte. OEMs und Zulieferer, die an Elektrifizierung, autonomem Fahren oder neuen Antriebskonzepten arbeiten, k\u00f6nnen <strong style="color:#7ECEF5;font-weight:600">bis zu 25\u202f% der F&amp;E-Personalkosten</strong> steuerlich erstattet bekommen.',
+      'pill1': 'F\u00f6rderquote bis 25\u202f%',
+      'pill2': 'OEM &amp; Zulieferer f\u00f6rderf\u00e4hig',
+      'pill3': 'R\u00fcckwirkend bis 2020',
+      'hero-btn': 'F\u00f6rderung pr\u00fcfen',
+      'cc-label-projekt': 'projekt',
+      'cc-val-projekt': 'BMS-Entwicklung Gen4',
+      'cc-label-kat': 'kategorie',
+      'cc-val-kat': 'E-Antriebssysteme',
+      'cc-result': '\u2713 Max. Erstattung: <strong>1.000.000\u202f\u20ac\u202f/\u202fJahr</strong>',
+      'proj-badge': 'F\u00f6rderf\u00e4hige Projekte',
+      'proj-h2': 'Was wird in Automotive<br/>&amp; Mobilit\u00e4t gef\u00f6rdert?',
+      'proj-intro': 'Diese Projekttypen sind typischerweise nach FZulG \u00a72 f\u00f6rderf\u00e4hig \u2013 sofern technische Unsicherheit vorlag und das Ziel nicht mit Standardl\u00f6sungen erreichbar war.',
+      'card-eligible': 'Typischerweise f\u00f6rderf\u00e4hig',
+      'card1-h3': 'Elektrifizierung &amp; E-Antriebe',
+      'card1-body': 'Entwicklung neuer Elektromotoren, Batteriemanagement-Systeme, Leistungselektronik oder Ladetechnologien, die bestehende L\u00f6sungen in Reichweite oder Effizienz \u00fcbertreffen.',
+      'card1-b1': 'Neue Batteriemanagement-Algorithmen (BMS)',
+      'card1-b2': 'Hocheffizienz-Inverter &amp; Leistungselektronik',
+      'card1-b3': 'Bidirektionales Laden (V2G/V2H-Technologie)',
+      'card2-h3': 'Autonomes Fahren &amp; ADAS',
+      'card2-body': 'Entwicklung von Fahrerassistenzsystemen, Sensorfusion-Algorithmen oder vollautonomen Steuerungssystemen, die \u00fcber den aktuellen SAE-Level hinausgehen.',
+      'card2-b1': 'LiDAR/Radar/Kamera-Sensorfusion',
+      'card2-b2': 'Neue Perception-Algorithmen &amp; neuronale Netze',
+      'card2-b3': 'Fahrdynamikregelung &amp; Trajektorienplanung',
+      'card3-h3': 'Leichtbau &amp; neue Materialien',
+      'card3-body': 'Erforschung und Entwicklung neuer Leichtbaustrukturen, Faserverbundwerkstoffe oder innovativer F\u00fcgetechnologien zur Gewichtsreduktion bei gleichzeitig hoher Crashsicherheit.',
+      'card3-b1': 'CFK/GFK-Strukturoptimierung f\u00fcr Karosserie',
+      'card3-b2': 'Multi-Material-Design &amp; neue F\u00fcgetechnologien',
+      'card3-b3': 'Topologieoptimierung durch Simulation &amp; KI',
+      'elig-badge': 'Wann qualifiziert sich Ihr Projekt?',
+      'elig-h2': 'FZulG-Kriterien f\u00fcr<br/>Automotive-Projekte',
+      'elig1-title': 'Eigenentwicklung',
+      'elig1-desc': 'Das Unternehmen entwickelt eigene Technologien \u2013 kein reiner Nachbau oder Lizenznehmer bestehender L\u00f6sungen.',
+      'elig2-title': 'Technische Unsicherheit',
+      'elig2-desc': 'Fahrzeugbau-Iterationen, Pr\u00fcfstand-Testzyklen und technische R\u00fcckschl\u00e4ge dokumentieren die Unsicherheit.',
+      'elig3-title': 'F&amp;E abgrenzbar von Serienentwicklung',
+      'elig3-desc': 'Die F&amp;E-T\u00e4tigkeiten m\u00fcssen klar von Serienanlauf und Produktionsvorbereitung getrennt sein.',
+      'elig4-title': 'Systematische Dokumentation',
+      'elig4-desc': 'Pr\u00fcfberichte, Simulationsdaten, Versuchsprotokolle und Projektberichte belegen die F&amp;E-T\u00e4tigkeit.',
+      'box-title': 'Wichtig zu wissen',
+      'box-p1': 'Sowohl <strong style="color:#4DAEE5">OEMs als auch Tier-1- und Tier-2-Zulieferer</strong> sind f\u00f6rderf\u00e4hig \u2013 entscheidend ist, wer die technische Unsicherheit und das wirtschaftliche Risiko tr\u00e4gt.',
+      'box-p2': 'F\u00f6rderf\u00e4hig sind: <strong style="color:#7ECEF5">Entwicklungsingenieure, Testingenieure, Simulationsexperten</strong> und Auftragsforschung (60\u202f% der Verg\u00fctung).',
+      'box-highlight': 'Typische F\u00f6rderung pro Automotive-Projekt: <span style="font-size:1rem;color:#7ECEF5">200.000 \u2013 1.000.000\u202f\u20ac/Jahr</span>',
+      'faq-badge': 'FAQ',
+      'faq-h2': 'H\u00e4ufige Fragen',
+      'faq1-q': 'K\u00f6nnen Zulieferer FZulG beantragen, auch wenn OEMs die Spezifikation vorgeben?',
+      'faq1-a': 'Ja, sofern der Zulieferer selbst die F&amp;E-T\u00e4tigkeit erbringt und die technische Unsicherheit tr\u00e4gt. Reine Lohnentwicklung nach detaillierter OEM-Vorgabe ohne eigenen Entwicklungsspielraum ist problematisch. Sobald der Zulieferer aber eigene L\u00f6sungskonzepte erarbeitet, ist die F\u00f6rderf\u00e4higkeit gegeben \u2013 auch bei Rahmenvertr\u00e4gen mit OEMs. NOVARIS grenzt das klar ab.',
+      'faq2-q': 'Ist Software-Entwicklung f\u00fcr ADAS- und autonome Fahrsysteme f\u00f6rderf\u00e4hig?',
+      'faq2-a': 'Ja, ausdr\u00fccklich. Algorithmen f\u00fcr Perzeption, Entscheidungsfindung, Pfadplanung oder Fahrdynamikregelung sind als experimentelle Entwicklung nach FZulG \u00a72 f\u00f6rderf\u00e4hig. Die Software muss eigene technische Neuartigkeit aufweisen \u2013 der reine Einsatz von Standard-Bibliotheken ohne eigene Weiterentwicklung z\u00e4hlt nicht. Der F&amp;E-Anteil wird sauber vom Integrations- und Testanteil abgegrenzt.',
+      'faq3-q': 'Kann FZulG mit EU-F\u00f6rderprogrammen (Horizon Europe, IPCEI) kombiniert werden?',
+      'faq3-a': 'Eine Kombination ist grunds\u00e4tzlich m\u00f6glich, solange keine Doppelf\u00f6rderung derselben Aufwendungen entsteht. FZulG und EU-Projektf\u00f6rderung k\u00f6nnen f\u00fcr unterschiedliche Kostenpositionen oder Projekte nebeneinander genutzt werden. Bei EU-gef\u00f6rderten Projekten mit Personalkostenzuschuss sind die f\u00f6rderf\u00e4higen FZulG-Aufwendungen entsprechend zu k\u00fcrzen. NOVARIS koordiniert die optimale F\u00f6rderstrategie.',
+      'cta-badge': 'Jetzt starten',
+      'cta-h2': 'Pr\u00fcfen Sie Ihr<br/>Automotive-Projekt kostenlos',
+      'cta-body': 'NOVARIS analysiert Ihre F&amp;E-T\u00e4tigkeiten, sch\u00e4tzt das F\u00f6rderpotenzial ein und \u00fcbernimmt die gesamte Antragstellung. Kein Erfolg \u2013 kein Honorar.',
+      'cta-btn': 'Kostenlose Erstanalyse anfordern',
+      'footer-fzulg': 'Das FZulG',
+      'footer-branchen': 'Branchen',
+      'footer-prozess': 'Prozess',
+      'footer-kontakt': 'Kontakt',
+      'footer-datenschutz': 'Datenschutz'
+    },
+    en: {
+      'title': 'Automotive &amp; Mobility \u2013 R&D Tax Credit | NOVARIS Consulting',
+      'nav-fzulg': 'The FZulG',
+      'nav-branchen': 'Industries',
+      'nav-prozess': 'Process',
+      'nav-vorteile': 'Benefits',
+      'nav-faq': 'FAQ',
+      'nav-kontakt': 'Contact',
+      'nav-cta': 'Check for free',
+      'mob-cta': 'Check for free \u2192',
+      'back-link': 'All Industries',
+      'hero-badge': 'Automotive &amp; Mobility \u00b7 FZulG-eligible',
+      'hero-body': 'The automotive industry is undergoing the biggest transformation in its history. OEMs and suppliers working on electrification, autonomous driving, or new powertrain concepts can reclaim <strong style="color:#7ECEF5;font-weight:600">up to 25\u202f% of R&amp;D staff costs</strong> in tax credits.',
+      'pill1': 'Funding rate up to 25\u202f%',
+      'pill2': 'OEM &amp; suppliers eligible',
+      'pill3': 'Retroactive to 2020',
+      'hero-btn': 'Check eligibility',
+      'cc-label-projekt': 'project',
+      'cc-val-projekt': 'BMS Development Gen4',
+      'cc-label-kat': 'category',
+      'cc-val-kat': 'E-Drive Systems',
+      'cc-result': '\u2713 Max. reimbursement: <strong>1,000,000\u202f\u20ac\u202f/\u202fyear</strong>',
+      'proj-badge': 'Eligible Projects',
+      'proj-h2': 'What is funded in Automotive<br/>&amp; Mobility?',
+      'proj-intro': 'These project types are typically eligible under FZulG \u00a72 \u2013 provided technical uncertainty existed and the goal was not achievable with standard solutions.',
+      'card-eligible': 'Typically eligible',
+      'card1-h3': 'Electrification &amp; E-Drives',
+      'card1-body': 'Development of new electric motors, battery management systems, power electronics, or charging technologies that outperform existing solutions in range or efficiency.',
+      'card1-b1': 'New battery management algorithms (BMS)',
+      'card1-b2': 'High-efficiency inverters &amp; power electronics',
+      'card1-b3': 'Bidirectional charging (V2G/V2H technology)',
+      'card2-h3': 'Autonomous Driving &amp; ADAS',
+      'card2-body': 'Development of driver assistance systems, sensor fusion algorithms, or fully autonomous control systems that go beyond the current SAE level.',
+      'card2-b1': 'LiDAR/radar/camera sensor fusion',
+      'card2-b2': 'New perception algorithms &amp; neural networks',
+      'card2-b3': 'Vehicle dynamics control &amp; trajectory planning',
+      'card3-h3': 'Lightweight Design &amp; New Materials',
+      'card3-body': 'Research and development of new lightweight structures, fibre composite materials, or innovative joining technologies for weight reduction with high crash safety.',
+      'card3-b1': 'CFRP/GFRP structural optimisation for bodywork',
+      'card3-b2': 'Multi-material design &amp; new joining technologies',
+      'card3-b3': 'Topology optimisation through simulation &amp; AI',
+      'elig-badge': 'When does your project qualify?',
+      'elig-h2': 'FZulG Criteria for<br/>Automotive Projects',
+      'elig1-title': 'Proprietary Development',
+      'elig1-desc': 'The company develops its own technologies \u2013 not a mere copy or licensee of existing solutions.',
+      'elig2-title': 'Technical Uncertainty',
+      'elig2-desc': 'Vehicle engineering iterations, test bench cycles, and technical setbacks document the uncertainty.',
+      'elig3-title': 'R&amp;D separable from series development',
+      'elig3-desc': 'R&amp;D activities must be clearly separated from series launch and production preparation.',
+      'elig4-title': 'Systematic Documentation',
+      'elig4-desc': 'Test reports, simulation data, experimental logs, and project reports document the R&amp;D activity.',
+      'box-title': 'Important to know',
+      'box-p1': 'Both <strong style="color:#4DAEE5">OEMs and Tier-1 and Tier-2 suppliers</strong> are eligible \u2013 the decisive factor is who bears the technical uncertainty and the economic risk.',
+      'box-p2': 'Eligible roles include: <strong style="color:#7ECEF5">development engineers, test engineers, simulation experts</strong> and contract research (60\u202f% of remuneration).',
+      'box-highlight': 'Typical funding per automotive project: <span style="font-size:1rem;color:#7ECEF5">\u20ac200,000 \u2013 1,000,000\u202f/\u202fyear</span>',
+      'faq-badge': 'FAQ',
+      'faq-h2': 'Frequently Asked Questions',
+      'faq1-q': 'Can suppliers apply for FZulG even if OEMs specify the requirements?',
+      'faq1-a': 'Yes, provided the supplier itself carries out the R&amp;D activity and bears the technical uncertainty. Pure contract development based on detailed OEM specifications without any development latitude is problematic. However, once the supplier develops its own solution concepts, eligibility is established \u2013 even under framework agreements with OEMs. NOVARIS draws this line clearly.',
+      'faq2-q': 'Is software development for ADAS and autonomous driving systems eligible?',
+      'faq2-a': 'Yes, explicitly. Algorithms for perception, decision-making, path planning, or vehicle dynamics control are eligible as experimental development under FZulG \u00a72. The software must demonstrate its own technical novelty \u2013 mere use of standard libraries without further development does not qualify. The R&amp;D share is cleanly separated from integration and testing.',
+      'faq3-q': 'Can FZulG be combined with EU funding programmes (Horizon Europe, IPCEI)?',
+      'faq3-a': 'Combination is generally possible as long as no double-funding of the same expenditure occurs. FZulG and EU project funding can be used in parallel for different cost items or projects. For EU-funded projects with staff cost subsidies, the eligible FZulG expenditure must be reduced accordingly. NOVARIS coordinates the optimal funding strategy.',
+      'cta-badge': 'Get started',
+      'cta-h2': 'Check your Automotive<br/>Project for free',
+      'cta-body': 'NOVARIS analyses your R&amp;D activities, assesses the funding potential, and handles the entire application process. No success \u2013 no fee.',
+      'cta-btn': 'Request free initial analysis',
+      'footer-fzulg': 'The FZulG',
+      'footer-branchen': 'Industries',
+      'footer-prozess': 'Process',
+      'footer-kontakt': 'Contact',
+      'footer-datenschutz': 'Privacy Policy'
+    }
+  };
+
+  function setLang(lang) {
+    document.documentElement.lang = lang;
+    document.title = T[lang]['title'];
+    document.querySelectorAll('[data-t]').forEach(function(el) {
+      var key = el.getAttribute('data-t');
+      if (T[lang][key] !== undefined) el.innerHTML = T[lang][key];
+    });
+    var de = document.getElementById('lang-de');
+    var en = document.getElementById('lang-en');
+    if (de) de.classList.toggle('active', lang === 'de');
+    if (en) en.classList.toggle('active', lang === 'en');
+  }
+
+    (function(){if(localStorage.getItem('theme')==='dark'){document.documentElement.classList.add('dark');}})();
+  function toggleDark(){var dark=document.documentElement.classList.toggle('dark');localStorage.setItem('theme',dark?'dark':'light');_updateDarkBtn();}
+  function _updateDarkBtn(){var dark=document.documentElement.classList.contains('dark');var moon=document.getElementById('icon-moon');var sun=document.getElementById('icon-sun');var moonM=document.getElementById('icon-moon-mob');var sunM=document.getElementById('icon-sun-mob');if(moon)moon.style.display=dark?'none':'block';if(sun)sun.style.display=dark?'block':'none';if(moonM)moonM.style.display=dark?'none':'block';if(sunM)sunM.style.display=dark?'block':'none';}
+  window.addEventListener("DOMContentLoaded",_updateDarkBtn);
+  function toggleMob(){var m=document.getElementById('mob-menu');m.classList.toggle('open')}
+  function toggleFaq(btn){var wrap=btn.closest('.faq-wrap');wrap.classList.toggle('open')}
+  (function(){var els=document.querySelectorAll('.reveal');var io=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}});},{threshold:0.1});els.forEach(function(el){if(el.getBoundingClientRect().top<window.innerHeight){el.classList.add('visible')}else{io.observe(el)}});})();
+</script>
+<script src="/scroll-animations.js"></script>
+</body>
+</html>

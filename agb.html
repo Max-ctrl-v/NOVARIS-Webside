@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Allgemeine Geschäftsbedingungen – NOVARIS Consulting</title>
+  <meta name="robots" content="noindex, follow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --bg-base:    #ffffff;
+      --bg-raised:  #f5f8fe;
+      --bg-card:    #ffffff;
+      --clr-h:      #0D1B3E;
+      --clr-b:      #5a6e8c;
+      --clr-muted:  #4a5870;
+      --bdr:        #dde5f4;
+    }
+    html.dark {
+      --bg-base:    #0a1428;
+      --bg-raised:  #0D1B3E;
+      --bg-card:    #122244;
+      --clr-h:      #e8f0fa;
+      --clr-b:      #8aaac8;
+      --clr-muted:  #6888a8;
+      --bdr:        rgba(77,174,229,0.18);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg-base);
+      color: var(--clr-h);
+      transition: background 0.25s ease, color 0.25s ease;
+      line-height: 1.7;
+    }
+
+    .nav-blur { backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); }
+    .logo-img { height: 52px; width: auto; display: block; }
+
+    .nav-link {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.84rem;
+      font-weight: 500;
+      color: rgba(195,215,245,0.70);
+      text-decoration: none;
+      padding: 0.42rem 0.85rem;
+      border-radius: 8px;
+      transition: color 0.15s ease, background 0.15s ease;
+      letter-spacing: 0.01em;
+    }
+    .nav-link:hover { color: #fff; background: rgba(255,255,255,0.07); }
+    .nav-link:focus-visible { outline: 2px solid #4DAEE5; outline-offset: 2px; }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background: #1E56B5;
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 0.84rem;
+      border: none;
+      border-radius: 10px;
+      text-decoration: none;
+      cursor: pointer;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.3), 0 4px 12px rgba(30,86,181,0.35);
+      transition: background 0.15s ease, transform 0.12s ease, box-shadow 0.15s ease;
+    }
+    .btn-primary:hover  { background: #2563c4; box-shadow: 0 2px 4px rgba(0,0,0,0.3), 0 6px 18px rgba(30,86,181,0.45); transform: translateY(-1px); }
+    .btn-primary:active { transform: translateY(0); }
+    .btn-primary:focus-visible { outline: 2px solid #4DAEE5; outline-offset: 2px; }
+
+    .content-wrap {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 6rem 1.5rem 5rem;
+    }
+
+    .ds-breadcrumb {
+      font-size: 0.78rem;
+      color: var(--clr-b);
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .ds-breadcrumb a {
+      color: #4DAEE5;
+      text-decoration: none;
+      transition: color 0.14s ease;
+    }
+    .ds-breadcrumb a:hover { color: #7ec8f0; }
+
+    .ds-eyebrow {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #4DAEE5;
+      margin-bottom: 0.9rem;
+    }
+
+    .ds-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: var(--clr-h);
+      line-height: 1.15;
+      margin-bottom: 0.5rem;
+    }
+
+    .ds-updated {
+      font-size: 0.78rem;
+      color: var(--clr-b);
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--bdr);
+    }
+
+    .ds-section {
+      margin-bottom: 2.8rem;
+    }
+    .ds-section h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.12rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: var(--clr-h);
+      margin-bottom: 0.9rem;
+      padding-bottom: 0.55rem;
+      border-bottom: 1px solid var(--bdr);
+    }
+    .ds-section h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--clr-h);
+      margin-top: 1.4rem;
+      margin-bottom: 0.5rem;
+    }
+    .ds-section p {
+      font-size: 0.9rem;
+      color: var(--clr-b);
+      line-height: 1.75;
+      margin-bottom: 0.85rem;
+    }
+    .ds-section ul, .ds-section ol {
+      margin: 0.5rem 0 0.85rem 1.1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+    .ds-section ul li, .ds-section ol li {
+      font-size: 0.9rem;
+      color: var(--clr-b);
+      line-height: 1.65;
+    }
+    .ds-section a {
+      color: #4DAEE5;
+      text-decoration: none;
+      transition: color 0.14s ease;
+    }
+    .ds-section a:hover { color: #7ec8f0; text-decoration: underline; }
+
+    .ds-box {
+      background: var(--bg-raised);
+      border: 1px solid var(--bdr);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      font-size: 0.88rem;
+      color: var(--clr-b);
+      line-height: 1.7;
+      transition: background 0.25s ease, border-color 0.25s ease;
+    }
+    .ds-box strong {
+      color: var(--clr-h);
+      font-weight: 600;
+    }
+
+    footer { background: #04091a; border-top: 1px solid rgba(255,255,255,0.07); }
+
+    html.dark .ds-box { background: var(--bg-card); }
+    .logo-light { display: none; }
+    html.dark .logo-dark  { display: none !important; }
+    html.dark .logo-light { display: inline !important; }
+
+    html { overflow-y: scroll; }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: rgba(77,174,229,0.38); border-radius: 999px; }
+    ::-webkit-scrollbar-thumb:hover { background: rgba(77,174,229,0.55); }
+    html { scrollbar-width: thin; scrollbar-color: rgba(77,174,229,0.38) transparent; }
+    html.dark ::-webkit-scrollbar-thumb { background: rgba(77,174,229,0.30); }
+    html.dark ::-webkit-scrollbar-thumb:hover { background: rgba(77,174,229,0.48); }
+    html.dark { scrollbar-color: rgba(77,174,229,0.30) transparent; }
+  </style>
+  <link rel="stylesheet" href="/page-transition.css" />
+  <script src="/page-transition.js" defer></script>
+</head>
+<body>
+
+<header id="nav" class="fixed inset-x-0 top-0 z-50 nav-blur"
+        style="background:rgba(4,9,26,0.88);border-bottom:1px solid rgba(255,255,255,0.07)">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between gap-4" style="height:68px">
+    <a href="/" aria-label="NOVARIS Consulting"
+       style="text-decoration:none;flex-shrink:0;display:flex;align-items:center;transition:opacity 0.15s ease"
+       class="hover:opacity-90 focus-visible:outline-none">
+      <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:52px" />
+    </a>
+    <nav class="hidden lg:flex items-center gap-0.5">
+      <a href="/#was-ist-fzulg" class="nav-link">Das FZulG</a>
+      <a href="/#branchen"      class="nav-link">Branchen</a>
+      <a href="/#prozess"       class="nav-link">Prozess</a>
+      <a href="/#vorteile"      class="nav-link">Vorteile</a>
+      <a href="/#faq"           class="nav-link">FAQ</a>
+      <a href="/#kontakt"       class="nav-link">Kontakt</a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <button id="dark-toggle" onclick="toggleDark()" aria-label="Toggle dark mode"
+        class="hidden sm:flex" style="width:32px;height:32px;border-radius:8px;border:1px solid rgba(255,255,255,0.12);
+               background:rgba(255,255,255,0.07);cursor:pointer;align-items:center;
+               justify-content:center;color:rgba(255,255,255,0.7);
+               transition:background 0.15s ease,color 0.15s ease">
+        <svg id="icon-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg id="icon-sun"  width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
+      <a href="/#kontakt" class="btn-primary hidden sm:inline-flex" style="padding:0.55rem 1.35rem;font-size:0.83rem">
+        Kostenlos prüfen
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="content-wrap">
+
+    <div class="ds-breadcrumb">
+      <a href="/">Startseite</a>
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      <span>AGB</span>
+    </div>
+
+    <div class="ds-eyebrow">Rechtliches</div>
+    <h1 class="ds-title">Allgemeine Geschäftsbedingungen</h1>
+    <p class="ds-updated">Stand: Februar 2026</p>
+
+    <!-- § 1 -->
+    <div class="ds-section">
+      <h2>§ 1 Geltungsbereich</h2>
+      <p>Diese Allgemeinen Geschäftsbedingungen (nachfolgend „AGB") gelten für alle Geschäftsbeziehungen zwischen der NOVARIS Consulting GmbH, Musterstraße 12, 80331 München (nachfolgend „NOVARIS" oder „Auftragnehmer") und dem Auftraggeber (nachfolgend „Kunde").</p>
+      <p>Abweichende, entgegenstehende oder ergänzende AGB des Kunden werden nur dann Vertragsbestandteil, wenn und soweit NOVARIS ihrer Geltung ausdrücklich schriftlich zugestimmt hat. Dieses Zustimmungserfordernis gilt in jedem Fall, beispielsweise auch dann, wenn NOVARIS in Kenntnis der AGB des Kunden die Leistung vorbehaltlos erbringt.</p>
+    </div>
+
+    <!-- § 2 -->
+    <div class="ds-section">
+      <h2>§ 2 Vertragsgegenstand</h2>
+      <p>NOVARIS erbringt Beratungsdienstleistungen im Bereich der steuerlichen Forschungszulage nach dem Forschungszulagengesetz (FZulG). Der genaue Leistungsumfang ergibt sich aus dem individuellen Angebot bzw. der Leistungsbeschreibung.</p>
+      <p>Die Leistungen umfassen insbesondere:</p>
+      <ul>
+        <li>Analyse und Identifikation förderfähiger Forschungs- und Entwicklungsprojekte</li>
+        <li>Erstellung und Einreichung des Antrags auf Bescheinigung bei der Bescheinigungsstelle Forschungszulage (BSFZ)</li>
+        <li>Unterstützung bei der Antragstellung beim zuständigen Finanzamt</li>
+        <li>Begleitung und Kommunikation im Bescheinigungsverfahren</li>
+        <li>Dokumentation der F&E-Aktivitäten gemäß den Anforderungen des FZulG</li>
+      </ul>
+      <p>NOVARIS schuldet keinen bestimmten Erfolg (insbesondere nicht die Bewilligung der Forschungszulage), sondern die fachgerechte Erbringung der vereinbarten Beratungsleistungen.</p>
+    </div>
+
+    <!-- § 3 -->
+    <div class="ds-section">
+      <h2>§ 3 Vergütung und Zahlungsbedingungen</h2>
+
+      <h3>3.1 Erfolgsbasierte Vergütung</h3>
+      <p>Sofern nicht im Einzelvertrag abweichend vereinbart, erfolgt die Vergütung von NOVARIS erfolgsbasiert. Die Vergütung wird erst fällig, wenn der Kunde eine positive Bescheinigung der BSFZ und/oder einen Forschungszulagenbescheid des Finanzamts erhalten hat.</p>
+
+      <h3>3.2 Vergütungshöhe</h3>
+      <p>Die genaue Vergütungshöhe (prozentualer Anteil der bewilligten Forschungszulage oder Festpreis) wird im individuellen Angebot festgelegt.</p>
+
+      <h3>3.3 Fälligkeit</h3>
+      <p>Rechnungen sind innerhalb von 14 Tagen nach Rechnungsdatum ohne Abzug zur Zahlung fällig, sofern nicht anders vereinbart.</p>
+
+      <h3>3.4 Mehrwertsteuer</h3>
+      <p>Alle Preise verstehen sich zuzüglich der gesetzlichen Mehrwertsteuer in der jeweils gültigen Höhe.</p>
+    </div>
+
+    <!-- § 4 -->
+    <div class="ds-section">
+      <h2>§ 4 Mitwirkungspflichten des Kunden</h2>
+      <p>Der Kunde ist verpflichtet, NOVARIS alle für die Durchführung des Auftrags erforderlichen Unterlagen, Informationen und Daten rechtzeitig, vollständig und wahrheitsgemäß zur Verfügung zu stellen. Dazu gehören insbesondere:</p>
+      <ul>
+        <li>Projektbeschreibungen und technische Dokumentationen der F&E-Vorhaben</li>
+        <li>Personalkosten- und Sachkostenaufstellungen</li>
+        <li>Bestehende Förderbescheide oder Ablehnungen</li>
+        <li>Ansprechpartner für Rückfragen zu technischen und kaufmännischen Details</li>
+      </ul>
+      <p>Verzögerungen, die durch eine nicht rechtzeitige oder unvollständige Mitwirkung des Kunden entstehen, gehen nicht zulasten von NOVARIS. Mehraufwand, der durch fehlerhafte oder unvollständige Angaben des Kunden entsteht, kann gesondert berechnet werden.</p>
+    </div>
+
+    <!-- § 5 -->
+    <div class="ds-section">
+      <h2>§ 5 Vertraulichkeit und Datenschutz</h2>
+      <p>Beide Parteien verpflichten sich, alle im Rahmen der Zusammenarbeit erlangten vertraulichen Informationen der jeweils anderen Partei streng vertraulich zu behandeln und nur für die Zwecke der vertraglichen Zusammenarbeit zu verwenden.</p>
+      <p>NOVARIS verarbeitet personenbezogene Daten des Kunden ausschließlich im Rahmen der geltenden Datenschutzbestimmungen (DSGVO, BDSG). Näheres regelt unsere <a href="/datenschutz.html">Datenschutzerklärung</a>.</p>
+      <p>Die Vertraulichkeitsverpflichtung besteht auch nach Beendigung des Vertragsverhältnisses fort.</p>
+    </div>
+
+    <!-- § 6 -->
+    <div class="ds-section">
+      <h2>§ 6 Haftung</h2>
+
+      <h3>6.1 Haftungsbeschränkung</h3>
+      <p>NOVARIS haftet bei leicht fahrlässiger Verletzung unwesentlicher Vertragspflichten nicht. Bei leicht fahrlässiger Verletzung wesentlicher Vertragspflichten (Kardinalpflichten) ist die Haftung auf den vertragstypisch vorhersehbaren Schaden begrenzt.</p>
+
+      <h3>6.2 Keine Garantie auf Förderzusage</h3>
+      <p>NOVARIS übernimmt keine Garantie für die Bewilligung der Forschungszulage durch die BSFZ oder das zuständige Finanzamt. Die Entscheidung über die Gewährung der Forschungszulage liegt ausschließlich bei den zuständigen Behörden.</p>
+
+      <h3>6.3 Unberührte Haftung</h3>
+      <p>Die vorstehenden Haftungsbeschränkungen gelten nicht für Schäden aus der Verletzung des Lebens, des Körpers oder der Gesundheit, bei vorsätzlichem oder grob fahrlässigem Handeln sowie für Ansprüche nach dem Produkthaftungsgesetz.</p>
+    </div>
+
+    <!-- § 7 -->
+    <div class="ds-section">
+      <h2>§ 7 Laufzeit und Kündigung</h2>
+
+      <h3>7.1 Vertragsbeginn</h3>
+      <p>Der Vertrag kommt durch Annahme des Angebots von NOVARIS durch den Kunden zustande (schriftlich, per E-Mail oder durch Unterzeichnung des Beratungsvertrags).</p>
+
+      <h3>7.2 Laufzeit</h3>
+      <p>Der Vertrag gilt für die Dauer des im Angebot bezeichneten Projekts. Er endet automatisch mit Abschluss der vereinbarten Leistungen und vollständiger Vergütung.</p>
+
+      <h3>7.3 Ordentliche Kündigung</h3>
+      <p>Beide Parteien können den Vertrag mit einer Frist von 4 Wochen zum Monatsende schriftlich kündigen. Im Fall der Kündigung durch den Kunden nach bereits erfolgter Antragstellung hat NOVARIS Anspruch auf Vergütung der bis dahin erbrachten Leistungen.</p>
+
+      <h3>7.4 Außerordentliche Kündigung</h3>
+      <p>Das Recht zur außerordentlichen Kündigung aus wichtigem Grund bleibt beiden Parteien vorbehalten.</p>
+    </div>
+
+    <!-- § 8 -->
+    <div class="ds-section">
+      <h2>§ 8 Geistiges Eigentum</h2>
+      <p>Alle von NOVARIS im Rahmen der Auftragserfüllung erstellten Unterlagen, Analysen, Anträge und Dokumentationen sind urheberrechtlich geschützt. Der Kunde erhält ein einfaches, nicht übertragbares Nutzungsrecht für den vertraglich vereinbarten Zweck.</p>
+      <p>Eine Weitergabe an Dritte bedarf der vorherigen schriftlichen Zustimmung von NOVARIS, es sei denn, die Weitergabe erfolgt an die zuständigen Behörden im Rahmen des Antragsverfahrens.</p>
+    </div>
+
+    <!-- § 9 -->
+    <div class="ds-section">
+      <h2>§ 9 Schlussbestimmungen</h2>
+
+      <h3>9.1 Schriftform</h3>
+      <p>Änderungen und Ergänzungen dieser AGB bedürfen der Schriftform. Dies gilt auch für die Aufhebung dieses Schriftformerfordernisses.</p>
+
+      <h3>9.2 Anwendbares Recht</h3>
+      <p>Es gilt das Recht der Bundesrepublik Deutschland unter Ausschluss des UN-Kaufrechts (CISG).</p>
+
+      <h3>9.3 Gerichtsstand</h3>
+      <p>Ist der Kunde Kaufmann, juristische Person des öffentlichen Rechts oder öffentlich-rechtliches Sondervermögen, ist ausschließlicher Gerichtsstand für alle Streitigkeiten aus diesem Vertrag München.</p>
+
+      <h3>9.4 Salvatorische Klausel</h3>
+      <p>Sollte eine Bestimmung dieser AGB unwirksam oder undurchführbar sein oder werden, bleibt die Wirksamkeit der übrigen Bestimmungen unberührt. Die Parteien verpflichten sich, die unwirksame oder undurchführbare Bestimmung durch eine Regelung zu ersetzen, die dem wirtschaftlichen Zweck der unwirksamen oder undurchführbaren Bestimmung am nächsten kommt.</p>
+    </div>
+
+    <!-- Kontakt -->
+    <div class="ds-section">
+      <h2>Fragen zu unseren AGB?</h2>
+      <div class="ds-box">
+        <strong>NOVARIS Consulting GmbH</strong><br />
+        E-Mail: <a href="mailto:info@novaris-consulting.de">info@novaris-consulting.de</a><br />
+        Telefon: +49 89 123456-0
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer style="background:#04091a;border-top:1px solid rgba(255,255,255,0.07)">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
+      <div class="lg:col-span-2">
+        <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:52px;width:auto;margin-bottom:1rem" />
+        <p style="font-size:0.82rem;color:rgba(195,215,245,0.38);line-height:1.72;max-width:320px">
+          NOVARIS Consulting ist Ihr spezialisierter Full-Service-Partner für die staatliche
+          Forschungszulage nach dem FZulG – erfolgsbasiert, transparent und ohne Risiko.
+        </p>
+      </div>
+      <div>
+        <div style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.75rem;letter-spacing:0.09em;text-transform:uppercase;color:rgba(195,215,245,0.3);margin-bottom:1rem">Navigation</div>
+        <div style="display:flex;flex-direction:column;gap:0.55rem">
+          <a href="/#was-ist-fzulg" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Das FZulG</a>
+          <a href="/#prozess"       style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Prozess</a>
+          <a href="/#vorteile"      style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Vorteile</a>
+          <a href="/#faq"           style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">FAQ</a>
+          <a href="/#kontakt"       style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Kontakt</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.75rem;letter-spacing:0.09em;text-transform:uppercase;color:rgba(195,215,245,0.3);margin-bottom:1rem">Rechtliches</div>
+        <div style="display:flex;flex-direction:column;gap:0.55rem">
+          <a href="/impressum.html"  style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Impressum</a>
+          <a href="/datenschutz.html" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Datenschutz</a>
+          <a href="/agb.html"        style="font-size:0.82rem;color:rgba(195,215,245,0.70);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">AGB</a>
+        </div>
+      </div>
+    </div>
+    <div style="height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.08) 25%,rgba(255,255,255,0.08) 75%,transparent);margin-bottom:1.5rem"></div>
+    <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem">
+      <p style="font-size:0.73rem;color:rgba(195,215,245,0.25)">© 2026 NOVARIS Consulting · Alle Rechte vorbehalten.</p>
+      <p style="font-size:0.73rem;color:rgba(195,215,245,0.18)">Diese Website stellt keine Steuer- oder Rechtsberatung dar.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function() {
+    if (localStorage.getItem('theme') === 'dark') {
+      document.documentElement.classList.add('dark');
+    }
+  })();
+
+  function toggleDark() {
+    const dark = document.documentElement.classList.toggle('dark');
+    localStorage.setItem('theme', dark ? 'dark' : 'light');
+    _updateDarkBtn();
+  }
+
+  function _updateDarkBtn() {
+    const dark = document.documentElement.classList.contains('dark');
+    const moon = document.getElementById('icon-moon');
+    const sun  = document.getElementById('icon-sun');
+    if (moon) moon.style.display = dark ? 'none'  : 'block';
+    if (sun)  sun.style.display  = dark ? 'block' : 'none';
+  }
+
+  window.addEventListener('DOMContentLoaded', _updateDarkBtn);
+</script>
+
+</body>
+</html>

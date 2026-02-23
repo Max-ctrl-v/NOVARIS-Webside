@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pharma &amp; Life Sciences – FZulG-Förderung | NOVARIS Consulting</title>
+  <meta name="description" content="Pharma- und Life-Sciences-Unternehmen erhalten bis zu 25 % ihrer F&E-Kosten zurück. NOVARIS zeigt, welche Projekte in Wirkstoffentwicklung, Bioprozessen und Analytik förderfähig sind." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <script>tailwind.config={theme:{extend:{fontFamily:{display:['Montserrat','sans-serif'],body:['Inter','sans-serif']}}}};</script>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth;font-size:16px}
+    body{font-family:'Inter',sans-serif;background:#fff;color:#0D1B3E;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+    h1,h2,h3,h4{font-family:'Montserrat',sans-serif;letter-spacing:-0.03em;line-height:1.13}
+    .hero-bg{background:radial-gradient(ellipse 110% 60% at 55% -5%,rgba(30,86,181,0.30) 0%,transparent 62%),radial-gradient(ellipse 55% 55% at 95% 45%,rgba(77,174,229,0.14) 0%,transparent 58%),radial-gradient(ellipse 65% 70% at 0% 100%,rgba(13,27,62,0.25) 0%,transparent 60%),linear-gradient(160deg,#04091a 0%,#0D1B3E 50%,#122244 100%)}
+    .bg-tinted{background:radial-gradient(ellipse 80% 60% at 90% 10%,rgba(30,86,181,0.055) 0%,transparent 60%),radial-gradient(ellipse 60% 60% at 5% 90%,rgba(77,174,229,0.04) 0%,transparent 55%),var(--bg-raised)}
+    .nav-blur{backdrop-filter:blur(20px) saturate(160%);-webkit-backdrop-filter:blur(20px) saturate(160%)}
+    .nav-link{font-family:'Inter',sans-serif;font-size:0.875rem;font-weight:500;color:rgba(255,255,255,0.70);text-decoration:none;padding:0.4rem 0.8rem;border-radius:8px;transition:background 0.14s ease,color 0.14s ease}
+    .nav-link:hover{color:#fff;background:rgba(255,255,255,0.09)}
+    .nav-dropdown-wrap{position:relative;display:flex;align-items:center}.nav-dropdown-wrap::after{content:'';position:absolute;top:100%;left:0;right:0;height:14px}
+    .nav-dropdown-trigger{display:flex;align-items:center;gap:2px}
+    .dd-caret{transition:transform 0.22s cubic-bezier(0.16,1,0.3,1);opacity:0.5;flex-shrink:0}
+    .nav-dropdown-wrap:hover .dd-caret{transform:rotate(180deg)}
+    .nav-dropdown{position:absolute;top:calc(100% + 10px);left:50%;transform:translateX(-50%) translateY(-8px);min-width:230px;background:rgba(6,13,40,0.98);backdrop-filter:blur(24px) saturate(160%);-webkit-backdrop-filter:blur(24px) saturate(160%);border:1px solid rgba(255,255,255,0.09);border-radius:14px;padding:0.45rem;opacity:0;visibility:hidden;pointer-events:none;transition:opacity 0.18s ease,transform 0.22s cubic-bezier(0.16,1,0.3,1),visibility 0s linear 0.18s;z-index:200;box-shadow:0 24px 56px rgba(0,0,0,0.65)}
+    .nav-dropdown::before{content:'';position:absolute;top:-5px;left:50%;transform:translateX(-50%) rotate(45deg);width:10px;height:10px;background:rgba(6,13,40,0.98);border-left:1px solid rgba(255,255,255,0.09);border-top:1px solid rgba(255,255,255,0.09);border-radius:2px 0 0 0}
+    .nav-dropdown-wrap:hover .nav-dropdown,.nav-dropdown-wrap:focus-within .nav-dropdown{opacity:1;visibility:visible;pointer-events:auto;transform:translateX(-50%) translateY(0);transition:opacity 0.18s ease,transform 0.22s cubic-bezier(0.16,1,0.3,1),visibility 0s}
+    .nav-dd-item{display:flex;align-items:center;gap:0.65rem;padding:0.55rem 0.85rem;border-radius:9px;font-size:0.82rem;color:rgba(195,215,245,0.72);text-decoration:none;font-family:'Inter',sans-serif;font-weight:500;transition:background 0.12s ease,color 0.12s ease;white-space:nowrap}
+    .nav-dd-item:hover{background:rgba(255,255,255,0.09);color:#fff}
+    .nav-dd-item.current{background:rgba(77,174,229,0.15);color:#4DAEE5}
+    .nav-dd-icon{width:22px;height:22px;border-radius:6px;flex-shrink:0;background:linear-gradient(135deg,rgba(30,86,181,0.32),rgba(77,174,229,0.20));display:flex;align-items:center;justify-content:center}
+    .btn-primary{display:inline-flex;align-items:center;justify-content:center;gap:0.5rem;padding:0.875rem 2rem;background:linear-gradient(135deg,#1E56B5 0%,#1A3462 100%);color:#fff;font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.9rem;border-radius:10px;border:none;cursor:pointer;text-decoration:none;white-space:nowrap;box-shadow:0 4px 14px rgba(30,86,181,0.38);transition:transform 0.2s cubic-bezier(0.34,1.56,0.64,1),box-shadow 0.2s ease}
+    .btn-primary:hover{transform:translateY(-2px) scale(1.025);box-shadow:0 8px 24px rgba(30,86,181,0.48)}
+    .badge{display:inline-flex;align-items:center;gap:0.35rem;padding:0.28rem 0.85rem;border-radius:999px;background:rgba(30,86,181,0.09);border:1px solid rgba(30,86,181,0.20);color:#1E56B5;font-family:'Montserrat',sans-serif;font-size:0.72rem;font-weight:700;letter-spacing:0.07em;text-transform:uppercase}
+    .badge-dark{background:rgba(77,174,229,0.13);border-color:rgba(77,174,229,0.30);color:#7ECEF5}
+    .badge-green{background:rgba(16,185,129,0.10);border-color:rgba(16,185,129,0.28);color:#059669}
+    .project-card{background:var(--bg-card);border-radius:20px;border:1px solid rgba(30,86,181,0.09);box-shadow:0 4px 22px rgba(30,86,181,0.07),0 1px 4px rgba(0,0,0,0.04);padding:2rem;position:relative;overflow:hidden;transition:transform 0.22s cubic-bezier(0.34,1.56,0.64,1),box-shadow 0.22s ease;height:100%}
+    .project-card::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 0 0,rgba(30,86,181,0.04),transparent 60%);pointer-events:none}
+    .project-card:hover{transform:translateY(-6px);box-shadow:0 14px 36px rgba(30,86,181,0.14),0 2px 8px rgba(0,0,0,0.06)}
+    .project-icon{width:52px;height:52px;border-radius:15px;background:linear-gradient(135deg,rgba(30,86,181,0.12),rgba(77,174,229,0.10));border:1px solid rgba(30,86,181,0.18);display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem;flex-shrink:0}
+    .faq-wrap{border:1.5px solid var(--bdr);border-radius:12px;overflow:hidden;margin-bottom:0.75rem}
+    .faq-btn{width:100%;text-align:left;background:var(--bg-faq-btn);border:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.25rem 1.5rem;font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.93rem;color:var(--clr-h,#0D1B3E);transition:background 0.14s ease,color 0.14s ease}
+    .faq-btn:hover{background:var(--bg-faq-hov)}
+    .faq-icon{width:26px;height:26px;border-radius:999px;flex-shrink:0;background:#edf2fb;color:#1E56B5;display:flex;align-items:center;justify-content:center;font-size:1rem;font-weight:700;transition:transform 0.25s cubic-bezier(0.34,1.56,0.64,1),background 0.15s ease,color 0.15s ease}
+    .faq-wrap.open .faq-icon{transform:rotate(45deg);background:#1E56B5;color:#fff}
+    .faq-body{max-height:0;overflow:hidden;opacity:0;transition:max-height 0.35s cubic-bezier(0.16,1,0.3,1),opacity 0.25s ease}
+    .faq-wrap.open .faq-body{max-height:500px;opacity:1}
+    .faq-content{padding:1rem 1.5rem 1.25rem;border-top:1px solid var(--bdr-faq);font-size:0.875rem;color:#4a5870;line-height:1.75;transition:color 0.2s ease,border-top-color 0.2s ease}
+    .check-dot{width:20px;height:20px;border-radius:999px;flex-shrink:0;background:linear-gradient(135deg,#1E56B5,#4DAEE5);display:flex;align-items:center;justify-content:center;margin-top:2px}
+    .reveal{opacity:0;transform:translateY(24px);transition:opacity 0.55s ease,transform 0.55s cubic-bezier(0.16,1,0.3,1)}
+    .reveal.visible{opacity:1;transform:translateY(0)} @keyframes reveal-safe{to{opacity:1;transform:translateY(0)}} .reveal{animation:reveal-safe 0.6s 3s forwards}
+    @keyframes spin-slow{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+    @keyframes pulse-beat{0%,100%{transform:scale(1)}50%{transform:scale(1.14)}}
+    @keyframes float-y{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+    @keyframes glow-flash{0%,100%{filter:drop-shadow(0 0 0 rgba(77,174,229,0))}50%{filter:drop-shadow(0 0 14px rgba(77,174,229,0.9))}}
+    @keyframes bounce-side{0%,100%{transform:translateX(0)}40%{transform:translateX(6px)}60%{transform:translateX(-3px)}}
+    @keyframes sway-leaf{0%,100%{transform:rotate(0deg)}33%{transform:rotate(-10deg)}66%{transform:rotate(10deg)}}
+    @keyframes heartbeat{0%,100%{transform:scale(1)}14%{transform:scale(1.18)}28%{transform:scale(1)}42%{transform:scale(1.12)}56%{transform:scale(1)}}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+    .anim-pulse{animation:pulse-beat 1.8s ease-in-out infinite}
+    .anim-spin{animation:spin-slow 4s linear infinite}
+    .anim-float{animation:float-y 2.2s ease-in-out infinite}
+    .anim-glow{animation:glow-flash 1.6s ease-in-out infinite}
+    .anim-bounce{animation:bounce-side 2.2s ease-in-out infinite}
+    .anim-sway{animation:sway-leaf 3s ease-in-out infinite;transform-origin:bottom center}
+    .anim-heartbeat{animation:heartbeat 1.4s ease-in-out infinite}
+    .au{animation:fadeUp 0.6s cubic-bezier(0.16,1,0.3,1) both}
+    .d1{animation-delay:0.07s}.d2{animation-delay:0.14s}.d3{animation-delay:0.21s}.d4{animation-delay:0.28s}
+    .hero-icon-bg{width:110px;height:110px;border-radius:30px;background:linear-gradient(135deg,rgba(30,86,181,0.22),rgba(77,174,229,0.16));border:1px solid rgba(77,174,229,0.48);display:flex;align-items:center;justify-content:center;box-shadow:0 0 50px rgba(77,174,229,0.18),inset 0 1px 0 rgba(255,255,255,0.09)}
+    .stat-pill{display:inline-flex;align-items:center;gap:0.4rem;padding:0.4rem 1rem;border-radius:999px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.13);font-family:'Inter',sans-serif;font-size:0.78rem;font-weight:500;color:rgba(195,215,245,0.85)}
+    .lang-toggle{display:flex;align-items:center;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:8px;overflow:hidden;flex-shrink:0}
+    .lang-btn{padding:0.28rem 0.62rem;border:none;background:transparent;cursor:pointer;font-family:'Montserrat',sans-serif;font-weight:600;font-size:0.71rem;color:rgba(255,255,255,0.48);letter-spacing:0.06em;transition:background 0.15s ease,color 0.15s ease}
+    .lang-btn.active{background:rgba(255,255,255,0.16);color:#fff}
+    .lang-divider{width:1px;height:16px;background:rgba(255,255,255,0.12);flex-shrink:0}
+    #mob-menu{max-height:0;overflow:hidden;opacity:0;transition:max-height 0.3s cubic-bezier(0.16,1,0.3,1),opacity 0.22s ease}
+    #mob-menu.open{max-height:420px;opacity:1}
+    html{overflow-y:scroll}::-webkit-scrollbar{width:8px}::-webkit-scrollbar-track{background:transparent}::-webkit-scrollbar-thumb{background:rgba(77,174,229,0.38);border-radius:999px}::-webkit-scrollbar-thumb:hover{background:rgba(77,174,229,0.55)}html{scrollbar-width:thin;scrollbar-color:rgba(77,174,229,0.38) transparent}html.dark ::-webkit-scrollbar-thumb{background:rgba(77,174,229,0.30)}html.dark ::-webkit-scrollbar-thumb:hover{background:rgba(77,174,229,0.48)}html.dark{scrollbar-color:rgba(77,174,229,0.30) transparent}
+    :root{--bg-base:#ffffff;--bg-raised:#f5f8fe;--bg-card:#ffffff;--bg-faq-btn:#ffffff;--bg-faq-hov:#f5f8fe;--clr-h:#0D1B3E;--bdr:#dde5f4;--bdr-faq:#edf2fb}
+    html.dark{--bg-base:#0a1428;--bg-raised:#0D1B3E;--bg-card:#122244;--bg-faq-btn:#0D1B3E;--bg-faq-hov:#122244;--clr-h:#e8f0fa;--bdr:rgba(77,174,229,0.18);--bdr-faq:rgba(77,174,229,0.10)}
+    html.dark section.bg-white{background:var(--bg-base)!important}html.dark .bg-tinted{background:var(--bg-raised)!important}
+    html.dark .faq-content{color:#8aaac8;border-top-color:var(--bdr-faq)}.logo-light{display:none}html.dark .logo-dark{display:none!important}html.dark .logo-light{display:inline!important}
+    html.dark section.bg-white [style*="color:#0D1B3E"],html.dark .bg-tinted [style*="color:#0D1B3E"]{color:#e8f0fa!important}
+    html.dark section.bg-white [style*="color:#5a6e8c"],html.dark .bg-tinted [style*="color:#5a6e8c"]{color:#8aaac8!important}
+    html.dark section.bg-white [style*="color:#374151"],html.dark .bg-tinted [style*="color:#374151"]{color:#a8c0d8!important}
+    html.dark section.bg-white .badge:not(.badge-dark),html.dark .bg-tinted .badge:not(.badge-dark){background:rgba(30,86,181,0.20)!important}
+    #dark-toggle:hover,#dark-toggle-mob:hover{background:rgba(255,255,255,0.14)!important;color:#fff!important}
+  </style>
+  <link rel="stylesheet" href="/page-transition.css" />
+  <script src="/page-transition.js" defer></script>
+</head>
+<body>
+
+<!-- NAV -->
+<header id="nav" class="fixed inset-x-0 top-0 z-50 nav-blur" style="background:rgba(4,9,26,0.85);border-bottom:1px solid rgba(255,255,255,0.07)">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between gap-4" style="height:68px">
+    <a href="../" aria-label="NOVARIS Consulting" class="hover:opacity-90" style="text-decoration:none;flex-shrink:0;display:flex;align-items:center;transition:opacity 0.15s ease">
+      <img src="../brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto" />
+    </a>
+    <nav class="hidden lg:flex items-center gap-0.5">
+      <a href="../index.html#was-ist-fzulg" class="nav-link" data-t="nav-fzulg">Das FZulG</a>
+      <div class="nav-dropdown-wrap">
+        <span class="nav-link nav-dropdown-trigger" style="cursor:default"><span data-t="nav-branchen">Branchen</span>
+          <svg class="dd-caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </span>
+        <div class="nav-dropdown" role="menu">
+          <a href="software-it.html" class="nav-dd-item" role="menuitem"><span class="nav-dd-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4DAEE5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span>Software &amp; IT</a>
+          <a href="maschinenbau.html" class="nav-dd-item" role="menuitem"><span class="nav-dd-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4DAEE5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg></span>Maschinenbau</a>
+          <a href="pharma.html" class="nav-dd-item current" role="menuitem"><span class="nav-dd-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4DAEE5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6"/><path d="M14 3v5.5l4 7.5H6l4-7.5V3"/></svg></span>Pharma &amp; Life Sciences</a>
+          <a href="automotive.html" class="nav-dd-item" role="menuitem"><span class="nav-dd-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4DAEE5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17H3a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h13l3 5v4a2 2 0 0 1-2 2h-1"/><circle cx="7" cy="17" r="2"/><circle cx="15" cy="17" r="2"/></svg></span>Automotive &amp; Mobilität</a>
+          <a href="medizintechnik.html" class="nav-dd-item" role="menuitem"><span class="nav-dd-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4DAEE5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></span>Medizintechnik</a>
+          <a href="energie.html" class="nav-dd-item" role="menuitem"><span class="nav-dd-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4DAEE5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></span>Energie &amp; Cleantech</a>
+          <a href="luft-raumfahrt.html" class="nav-dd-item" role="menuitem"><span class="nav-dd-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4DAEE5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/></svg></span>Luft- &amp; Raumfahrt</a>
+          <a href="agrar-foodtech.html" class="nav-dd-item" role="menuitem"><span class="nav-dd-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4DAEE5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/></svg></span>Agrar &amp; Foodtech</a>
+          <a href="bauindustrie.html" class="nav-dd-item" role="menuitem"><span class="nav-dd-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4DAEE5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="1"/><path d="M9 22V12h6v10"/></svg></span>Bauindustrie</a>
+        </div>
+      </div>
+      <a href="../index.html#prozess" class="nav-link" data-t="nav-prozess">Prozess</a>
+      <a href="../index.html#vorteile" class="nav-link" data-t="nav-vorteile">Vorteile</a>
+      <a href="../index.html#faq" class="nav-link" data-t="nav-faq">FAQ</a>
+      <a href="../index.html#kontakt" class="nav-link" data-t="nav-kontakt">Kontakt</a>
+    </nav>
+    <div class="flex items-center gap-3">
+            <div class="lang-toggle hidden sm:flex">
+        <button id="lang-de" class="lang-btn active" onclick="setLang('de')">DE</button><div class="lang-divider"></div><button id="lang-en" class="lang-btn" onclick="setLang('en')">EN</button>
+      </div>
+      <button id="dark-toggle" onclick="toggleDark()" aria-label="Toggle dark mode"
+        class="hidden sm:flex" style="width:32px;height:32px;border-radius:8px;border:1px solid rgba(255,255,255,0.12);background:rgba(255,255,255,0.07);cursor:pointer;align-items:center;justify-content:center;color:rgba(255,255,255,0.7);transition:background 0.15s ease,color 0.15s ease">
+        <svg id="icon-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg id="icon-sun"   width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
+      <a href="../index.html#kontakt" class="btn-primary hidden sm:inline-flex" style="padding:0.55rem 1.35rem;font-size:0.83rem"><span data-t="nav-cta">Kostenlos prüfen</span> <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      <button id="ham-btn" onclick="toggleMob()" aria-label="Menü" class="lg:hidden flex flex-col justify-center gap-1.5 w-9 h-9 rounded-lg hover:bg-white/10">
+        <span style="width:20px;height:2px;background:#fff;border-radius:2px;margin:auto;display:block"></span>
+        <span style="width:20px;height:2px;background:#fff;border-radius:2px;margin:auto;display:block"></span>
+        <span style="width:14px;height:2px;background:#fff;border-radius:2px;margin:auto;display:block"></span>
+      </button>
+    </div>
+  </div>
+  <div id="mob-menu" style="border-top:1px solid rgba(255,255,255,0.07)">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex flex-col gap-0.5">
+      <a href="../index.html#was-ist-fzulg" class="nav-link py-2.5" onclick="toggleMob()" data-t="nav-fzulg">Das FZulG</a>
+      <a href="../index.html#branchen" class="nav-link py-2.5" onclick="toggleMob()" data-t="nav-branchen">Branchen</a>
+      <a href="../index.html#prozess" class="nav-link py-2.5" onclick="toggleMob()" data-t="nav-prozess">Prozess</a>
+      <a href="../index.html#kontakt" class="nav-link py-2.5" onclick="toggleMob()" data-t="nav-kontakt">Kontakt</a>
+            <a href="../index.html#kontakt" class="btn-primary mt-2 w-full" style="font-size:0.88rem;padding:0.75rem 1rem" onclick="toggleMob()" data-t="mob.cta">Kostenlos prüfen →</a>
+      <div class="flex items-center gap-2 mt-2">
+        <button id="dark-toggle-mob" onclick="toggleDark()" aria-label="Toggle dark mode"
+          style="width:32px;height:32px;border-radius:8px;border:1px solid rgba(255,255,255,0.12);background:rgba(255,255,255,0.07);cursor:pointer;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.7);transition:background 0.15s ease,color 0.15s ease">
+          <svg id="icon-moon-mob" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg id="icon-sun-mob"   width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero-bg relative overflow-hidden" style="padding-top:130px;padding-bottom:100px">
+  <div aria-hidden="true" style="position:absolute;pointer-events:none;inset:0;overflow:hidden">
+    <div style="position:absolute;top:-160px;right:-160px;width:700px;height:700px;border-radius:50%;border:1px solid rgba(30,86,181,0.12)"></div>
+    <div style="position:absolute;top:-80px;right:-80px;width:480px;height:480px;border-radius:50%;border:1px solid rgba(77,174,229,0.08)"></div>
+    <div style="position:absolute;bottom:-100px;left:-120px;width:550px;height:550px;border-radius:50%;border:1px solid rgba(30,86,181,0.07)"></div>
+    <div style="position:absolute;top:60px;right:6%;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,rgba(77,174,229,0.15),transparent 70%)"></div>
+  </div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 relative" style="z-index:3">
+    <a href="../index.html#branchen" class="au inline-flex items-center gap-2 mb-8" style="color:rgba(195,215,245,0.55);text-decoration:none;font-size:0.83rem;font-weight:500;transition:color 0.15s ease" onmouseover="this.style.color='rgba(195,215,245,0.9)'" onmouseout="this.style.color='rgba(195,215,245,0.55)'">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+      <span data-t="back-link">Alle Branchen</span>
+    </a>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <div class="badge badge-dark au mb-5" data-t="hero-badge">Pharma &amp; Life Sciences · FZulG-berechtigt</div>
+        <div class="au d1 flex items-center gap-5 mb-6">
+          <div class="hero-icon-bg">
+            <div class="anim-float" style="color:#4DAEE5">
+              <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6"/><path d="M14 3v5.5l4 7.5H6l4-7.5V3"/><path d="M6 16h12"/></svg>
+            </div>
+          </div>
+          <h1 class="text-4xl sm:text-5xl font-black text-white">Pharma &amp;<br/><span style="background:linear-gradient(125deg,#4DAEE5,#7ECEF5);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Life Sciences</span></h1>
+        </div>
+        <p class="au d2" data-t="hero-body" style="color:rgba(195,215,245,0.80);font-size:1.05rem;line-height:1.72;margin-bottom:1.75rem">
+          Pharma- und Biotech-Unternehmen gehören zu den F&amp;E-intensivsten Branchen. Wer neue Wirkstoffe, Bioprozesse oder analytische Methoden entwickelt, kann <strong style="color:#7ECEF5;font-weight:600">bis zu 25 % der Personalkosten</strong> steuerlich erstattet bekommen – unabhängig vom Zulassungsstatus.
+        </p>
+        <div class="au d3 flex flex-wrap gap-2.5 mb-8">
+          <span class="stat-pill"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span data-t="pill1">Förderquote bis 25 %</span></span>
+          <span class="stat-pill"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span data-t="pill2">Kein Patent erforderlich</span></span>
+          <span class="stat-pill"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span data-t="pill3">Rückwirkend bis 2020</span></span>
+        </div>
+        <div class="au d4 flex flex-wrap gap-3">
+          <a href="../index.html#kontakt" class="btn-primary" style="padding:0.95rem 2.25rem;font-size:0.95rem">
+            <span data-t="hero-btn">Förderung prüfen</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </div>
+      <!-- Hero decorative lab card -->
+      <div class="hidden lg:block" style="position:relative">
+        <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.09);border-radius:20px;padding:1.75rem;backdrop-filter:blur(10px)">
+          <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:1.25rem">
+            <div style="width:10px;height:10px;border-radius:50%;background:#ff5f56"></div>
+            <div style="width:10px;height:10px;border-radius:50%;background:#ffbd2e"></div>
+            <div style="width:10px;height:10px;border-radius:50%;background:#27c93f"></div>
+            <span style="margin-left:0.5rem;font-size:0.72rem;color:rgba(195,215,245,0.4);font-family:'Inter',sans-serif">fzulg-analyse.log</span>
+          </div>
+          <div style="font-family:'Courier New',monospace;font-size:0.8rem;line-height:1.9;color:rgba(195,215,245,0.75)">
+            <div><span style="color:#4DAEE5"><span data-t="cc-label-projekt">PROJEKT</span></span>: <span data-t="cc-val-projekt">Wirkstoff-Optimierung XR-42</span></div>
+            <div><span style="color:#4DAEE5"><span data-t="cc-label-phase">PHASE</span></span>: <span data-t="cc-val-phase">Präklinische Entwicklung</span></div>
+            <div><span style="color:#4DAEE5"><span data-t="cc-label-klass">KLASSIFIKATION</span></span>: <span style="color:#27c93f"><span data-t="cc-val-klass">Ind. Forschung §2(3)</span></span></div>
+            <div style="margin-top:0.5rem"><span style="color:#4DAEE5"><span data-t="cc-label-personal">PERSONAL</span></span>:</div>
+            <div style="padding-left:1.5rem"><span data-t="cc-p1">Forschungschemiker (3 VZÄ)</span>: <span style="color:#7ECEF5">360.000 €</span></div>
+            <div style="padding-left:1.5rem"><span data-t="cc-p2">CRO-Auftragsforschung</span>: <span style="color:#7ECEF5">200.000 €</span></div>
+            <div style="margin-top:0.75rem;padding:0.6rem 0.85rem;background:rgba(39,201,63,0.12);border-radius:8px;border:1px solid rgba(39,201,63,0.22);color:#27c93f;font-size:0.76rem">
+              <span data-t="cc-result">✓ Erstattung: <strong>~210.000 € / Jahr</strong></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="bg-white py-20 sm:py-28">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="max-w-xl mx-auto text-center mb-14 reveal">
+      <div class="badge mb-4" data-t="proj-badge">Förderfähige Projekte</div>
+      <h2 class="text-3xl sm:text-4xl font-black mb-4" data-t="proj-h2" style="color:#0D1B3E">Was wird in Pharma &amp;<br/>Life Sciences gefördert?</h2>
+      <p data-t="proj-intro" style="color:#5a6e8c;font-size:0.95rem;line-height:1.78">Diese Projekttypen sind typischerweise nach FZulG §2 förderfähig – sofern technische Unsicherheit vorlag und das Ziel nicht mit Standardmethoden erreichbar war.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <!-- Card 1 -->
+      <div class="reveal" style="transition-delay:0.08s">
+        <div class="project-card">
+          <div class="project-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1E56B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M2 12h3M19 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12"/></svg>
+          </div>
+          <div class="badge-green mb-3" data-t="card-eligible" style="display:inline-flex;padding:0.2rem 0.65rem;font-size:0.65rem">Typischerweise förderfähig</div>
+          <h3 data-t="card1-h3" style="font-family:'Montserrat',sans-serif;font-weight:800;font-size:1.05rem;color:#0D1B3E;margin-bottom:0.6rem;letter-spacing:-0.02em">Wirkstoffentwicklung &amp; Drug Discovery</h3>
+          <p data-t="card1-body" style="font-size:0.85rem;color:#5a6e8c;line-height:1.72;margin-bottom:1.1rem">Entwicklung und Optimierung neuer Wirkstoffkandidaten, neuartiger Synthesewege oder innovativer Formulierungskonzepte in der präklinischen Phase.</p>
+          <div style="display:flex;flex-direction:column;gap:0.6rem">
+            <div style="display:flex;align-items:flex-start;gap:0.6rem"><div class="check-dot"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><span data-t="card1-b1" style="font-size:0.82rem;color:#374151">Neue Syntheserouten für Wirkstoffkandidaten</span></div>
+            <div style="display:flex;align-items:flex-start;gap:0.6rem"><div class="check-dot"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><span data-t="card1-b2" style="font-size:0.82rem;color:#374151">Formulierungsentwicklung (Nanopartikel, Liposomen)</span></div>
+            <div style="display:flex;align-items:flex-start;gap:0.6rem"><div class="check-dot"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><span data-t="card1-b3" style="font-size:0.82rem;color:#374151">KI-gestütztes Molecular Modeling &amp; Drug Design</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="reveal" style="transition-delay:0.16s">
+        <div class="project-card">
+          <div class="project-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1E56B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h7v7H3zM14 3h7v7h-7zM14 14h7v7h-7zM3 14h7v7H3z"/></svg>
+          </div>
+          <div class="badge-green mb-3" data-t="card-eligible" style="display:inline-flex;padding:0.2rem 0.65rem;font-size:0.65rem">Typischerweise förderfähig</div>
+          <h3 data-t="card2-h3" style="font-family:'Montserrat',sans-serif;font-weight:800;font-size:1.05rem;color:#0D1B3E;margin-bottom:0.6rem;letter-spacing:-0.02em">Bioprozess-Entwicklung &amp; Scale-Up</h3>
+          <p data-t="card2-body" style="font-size:0.85rem;color:#5a6e8c;line-height:1.72;margin-bottom:1.1rem">Entwicklung und Optimierung biotechnologischer Herstellungsprozesse, von der Fermentation über Aufreinigung bis zur Maßstabsvergrößerung.</p>
+          <div style="display:flex;flex-direction:column;gap:0.6rem">
+            <div style="display:flex;align-items:flex-start;gap:0.6rem"><div class="check-dot"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><span data-t="card2-b1" style="font-size:0.82rem;color:#374151">Fermentationsoptimierung &amp; neue Nährmedien</span></div>
+            <div style="display:flex;align-items:flex-start;gap:0.6rem"><div class="check-dot"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><span data-t="card2-b2" style="font-size:0.82rem;color:#374151">Upstream/Downstream-Prozessentwicklung</span></div>
+            <div style="display:flex;align-items:flex-start;gap:0.6rem"><div class="check-dot"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><span data-t="card2-b3" style="font-size:0.82rem;color:#374151">mRNA- &amp; Vektortechnologie-Entwicklung</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="reveal" style="transition-delay:0.24s">
+        <div class="project-card">
+          <div class="project-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1E56B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h20M2 12c0-5.5 4.5-10 10-10s10 4.5 10 10"/><path d="M12 22V12"/><circle cx="12" cy="12" r="2"/></svg>
+          </div>
+          <div class="badge-green mb-3" data-t="card-eligible" style="display:inline-flex;padding:0.2rem 0.65rem;font-size:0.65rem">Typischerweise förderfähig</div>
+          <h3 data-t="card3-h3" style="font-family:'Montserrat',sans-serif;font-weight:800;font-size:1.05rem;color:#0D1B3E;margin-bottom:0.6rem;letter-spacing:-0.02em">Analytische Methoden &amp; Qualitätskontrolle</h3>
+          <p data-t="card3-body" style="font-size:0.85rem;color:#5a6e8c;line-height:1.72;margin-bottom:1.1rem">Entwicklung neuer Analysemethoden, Charakterisierungsverfahren oder In-process-Kontrollen, die über den Stand der Technik hinausgehen.</p>
+          <div style="display:flex;flex-direction:column;gap:0.6rem">
+            <div style="display:flex;align-items:flex-start;gap:0.6rem"><div class="check-dot"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><span data-t="card3-b1" style="font-size:0.82rem;color:#374151">Neue spektroskopische Charakterisierungsverfahren</span></div>
+            <div style="display:flex;align-items:flex-start;gap:0.6rem"><div class="check-dot"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><span data-t="card3-b2" style="font-size:0.82rem;color:#374151">PAT (Process Analytical Technology) Entwicklung</span></div>
+            <div style="display:flex;align-items:flex-start;gap:0.6rem"><div class="check-dot"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><span data-t="card3-b3" style="font-size:0.82rem;color:#374151">Biomarker-Assay-Entwicklung &amp; Validierung</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ELIGIBILITY -->
+<section class="bg-tinted py-16 sm:py-20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div class="reveal">
+        <div class="badge mb-5" data-t="elig-badge">Wann qualifiziert sich Ihr Projekt?</div>
+        <h2 class="text-2xl sm:text-3xl font-black mb-6" data-t="elig-h2" style="color:#0D1B3E">FZulG-Kriterien für<br/>Pharma-Projekte</h2>
+        <div style="display:flex;flex-direction:column;gap:1rem">
+          <div style="display:flex;gap:0.85rem;align-items:flex-start"><div class="check-dot" style="background:linear-gradient(135deg,#1E56B5,#4DAEE5)"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><div><strong data-t="elig1-title" style="font-family:'Montserrat',sans-serif;font-size:0.9rem;color:#0D1B3E">Wissenschaftliche Neuheit</strong><p data-t="elig1-desc" style="font-size:0.83rem;color:#5a6e8c;margin-top:0.2rem">Der Wirkstoff, Bioprozess oder die Methode geht über den aktuellen Stand der Wissenschaft hinaus.</p></div></div>
+          <div style="display:flex;gap:0.85rem;align-items:flex-start"><div class="check-dot" style="background:linear-gradient(135deg,#1E56B5,#4DAEE5)"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><div><strong data-t="elig2-title" style="font-family:'Montserrat',sans-serif;font-size:0.9rem;color:#0D1B3E">Technische Unsicherheit</strong><p data-t="elig2-desc" style="font-size:0.83rem;color:#5a6e8c;margin-top:0.2rem">Erfolg war zu Beginn ungewiss – Screening, Iterationen und Fehlversuche dokumentieren dies.</p></div></div>
+          <div style="display:flex;gap:0.85rem;align-items:flex-start"><div class="check-dot" style="background:linear-gradient(135deg,#1E56B5,#4DAEE5)"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><div><strong data-t="elig3-title" style="font-family:'Montserrat',sans-serif;font-size:0.9rem;color:#0D1B3E">Systematisches Vorgehen</strong><p data-t="elig3-desc" style="font-size:0.83rem;color:#5a6e8c;margin-top:0.2rem">Laborbücher, SOPs, Versuchspläne und wissenschaftliche Berichte belegen die strukturierte Vorgehensweise.</p></div></div>
+          <div style="display:flex;gap:0.85rem;align-items:flex-start"><div class="check-dot" style="background:linear-gradient(135deg,#1E56B5,#4DAEE5)"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><div><strong data-t="elig4-title" style="font-family:'Montserrat',sans-serif;font-size:0.9rem;color:#0D1B3E">Kein laufender klinischer Betrieb</strong><p data-t="elig4-desc" style="font-size:0.83rem;color:#5a6e8c;margin-top:0.2rem">Routine-Analytik und GMP-Produktion ohne Entwicklungscharakter sind nicht förderfähig.</p></div></div>
+        </div>
+      </div>
+      <div class="reveal" style="transition-delay:0.1s">
+        <div style="background:linear-gradient(135deg,#04091a,#0D1B3E);border-radius:20px;padding:2rem;border:1px solid rgba(77,174,229,0.18);box-shadow:0 24px 56px rgba(0,0,0,0.3)">
+          <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1.25rem">
+            <div style="width:42px;height:42px;border-radius:12px;background:rgba(77,174,229,0.15);border:1px solid rgba(77,174,229,0.25);display:flex;align-items:center;justify-content:center">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4DAEE5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+            </div>
+            <span data-t="box-title" style="font-family:'Montserrat',sans-serif;font-weight:700;color:#fff;font-size:0.9rem">Wichtig zu wissen</span>
+          </div>
+          <p data-t="box-p1" style="color:rgba(195,215,245,0.80);font-size:0.88rem;line-height:1.75;margin-bottom:1.25rem">Auch <strong style="color:#4DAEE5">präklinische Forschung ohne Zulassungsziel</strong> ist förderfähig. Es ist <em>kein Patent und keine Marktzulassung</em> erforderlich – allein der F&amp;E-Charakter zählt.</p>
+          <p data-t="box-p2" style="color:rgba(195,215,245,0.80);font-size:0.88rem;line-height:1.75;margin-bottom:1.25rem">Förderfähig sind: <strong style="color:#7ECEF5">Forschungschemiker, Biologen, Prozessingenieure</strong> sowie CRO-Beauftragungen (60 % der Vergütung).</p>
+          <div style="background:rgba(77,174,229,0.10);border:1px solid rgba(77,174,229,0.30);border-radius:10px;padding:0.85rem 1rem">
+            <p data-t="box-highlight" style="color:#4DAEE5;font-size:0.82rem;font-weight:600;font-family:'Montserrat',sans-serif">Typische Förderung pro Pharma-Projekt: <span style="font-size:1rem;color:#7ECEF5">80.000 – 300.000 €/Jahr</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="bg-white py-16 sm:py-20">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-10 reveal"><div class="badge mb-4" data-t="faq-badge">FAQ</div><h2 class="text-2xl sm:text-3xl font-black" data-t="faq-h2" style="color:#0D1B3E">Häufige Fragen</h2></div>
+    <div class="reveal" style="transition-delay:0.05s">
+      <div class="faq-wrap">
+        <button class="faq-btn" onclick="toggleFaq(this)"><span data-t="faq1-q">Sind klinische Studien (Phase I–III) nach FZulG förderfähig?</span><span class="faq-icon">+</span></button>
+        <div class="faq-body"><div class="faq-content" data-t="faq1-a">Klinische Studien können teilweise förderfähig sein, soweit sie dem FZulG-Begriff der experimentellen Entwicklung entsprechen. Phase-I- und frühe Phase-II-Studien, bei denen noch wesentliche technische Unsicherheiten bestehen, haben gute Aussichten. Reine Zulassungsstudien ohne wissenschaftlichen Erkenntnisgewinn sind hingegen nicht förderfähig. NOVARIS analysiert den F&amp;E-Anteil Ihrer klinischen Tätigkeiten präzise.</div></div>
+      </div>
+    </div>
+    <div class="reveal" style="transition-delay:0.1s">
+      <div class="faq-wrap">
+        <button class="faq-btn" onclick="toggleFaq(this)"><span data-t="faq2-q">Können CRO- und CMO-Beauftragungen (Auftragsforschung) einbezogen werden?</span><span class="faq-icon">+</span></button>
+        <div class="faq-body"><div class="faq-content" data-t="faq2-a">Ja. Bei Auftragsforschung an CROs oder CMOs können 60 % der gezahlten Vergütung als förderfähige Aufwendungen angesetzt werden. Voraussetzung ist, dass das beauftragende Unternehmen das wirtschaftliche Risiko trägt und Inhaber der Forschungsergebnisse bleibt. Reine Lohnherstellung ohne F&amp;E-Charakter ist ausgenommen.</div></div>
+      </div>
+    </div>
+    <div class="reveal" style="transition-delay:0.15s">
+      <div class="faq-wrap">
+        <button class="faq-btn" onclick="toggleFaq(this)"><span data-t="faq3-q">Ist Regulatory-Arbeit (Zulassungsdossiers, Behördenkommunikation) förderfähig?</span><span class="faq-icon">+</span></button>
+        <div class="faq-body"><div class="faq-content" data-t="faq3-a">Regulatory Affairs-Tätigkeiten sind als solche nicht förderfähig, da sie keine F&amp;E im Sinne des FZulG darstellen. Jedoch kann die wissenschaftliche Auswertung und Datenerhebung, die dem Dossier zugrunde liegt, sehr wohl förderfähig sein. NOVARIS grenzt förderfähige F&amp;E-Anteile sauber von administrativen Tätigkeiten ab.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="hero-bg py-20 sm:py-28">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 text-center">
+    <div class="badge badge-dark mb-6" data-t="cta-badge" style="margin:0 auto 1.5rem">Jetzt starten</div>
+    <h2 class="text-3xl sm:text-4xl font-black text-white mb-5" data-t="cta-h2">Prüfen Sie Ihr<br/>Pharma-Projekt kostenlos</h2>
+    <p data-t="cta-body" style="color:rgba(195,215,245,0.78);font-size:1rem;line-height:1.75;margin-bottom:2.25rem">NOVARIS analysiert Ihre F&amp;E-Tätigkeiten, schätzt das Förderpotenzial ein und übernimmt die gesamte Antragstellung. Kein Erfolg – kein Honorar.</p>
+    <a href="../index.html#kontakt" class="btn-primary" style="padding:1.1rem 2.75rem;font-size:1rem"><span data-t="cta-btn">Kostenlose Erstanalyse anfordern</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background:#04091a;border-top:1px solid rgba(255,255,255,0.07);padding:2.5rem 0">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+    <a href="../" style="text-decoration:none;display:flex;align-items:center"><img src="../brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:52px;width:auto" /></a>
+    <div style="display:flex;gap:1.5rem;flex-wrap:wrap;justify-content:center">
+      <a href="../index.html#was-ist-fzulg" data-t="footer-fzulg" style="color:rgba(195,215,245,0.45);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.45)'">Das FZulG</a>
+      <a href="../index.html#branchen" data-t="footer-branchen" style="color:rgba(195,215,245,0.45);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.45)'">Branchen</a>
+      <a href="../index.html#prozess" data-t="footer-prozess" style="color:rgba(195,215,245,0.45);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.45)'">Prozess</a>
+      <a href="../index.html#kontakt" data-t="footer-kontakt" style="color:rgba(195,215,245,0.45);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.45)'">Kontakt</a>
+      <a href="../datenschutz.html" style="color:rgba(195,215,245,0.45);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.45)'" data-t="footer-datenschutz">Datenschutz</a>
+    </div>
+    <p style="color:rgba(195,215,245,0.28);font-size:0.75rem">© 2025 NOVARIS Consulting GmbH</p>
+  </div>
+</footer>
+
+<script>
+  var T = {
+    de: {
+      'title': 'Pharma & Life Sciences \u2013 FZulG-F\u00f6rderung | NOVARIS Consulting',
+      'nav-fzulg': 'Das FZulG',
+      'nav-branchen': 'Branchen',
+      'nav-prozess': 'Prozess',
+      'nav-vorteile': 'Vorteile',
+      'nav-faq': 'FAQ',
+      'nav-kontakt': 'Kontakt',
+      'nav-cta': 'Kostenlos pr\u00fcfen',
+      'mob-cta': 'Kostenlos pr\u00fcfen \u2192',
+      'back-link': 'Alle Branchen',
+      'hero-badge': 'Pharma &amp; Life Sciences \u00b7 FZulG-berechtigt',
+      'hero-body': 'Pharma- und Biotech-Unternehmen geh\u00f6ren zu den F&amp;E-intensivsten Branchen. Wer neue Wirkstoffe, Bioprozesse oder analytische Methoden entwickelt, kann <strong style="color:#7ECEF5;font-weight:600">bis zu 25\u202f% der Personalkosten</strong> steuerlich erstattet bekommen \u2013 unabh\u00e4ngig vom Zulassungsstatus.',
+      'pill1': 'F\u00f6rderquote bis 25\u202f%',
+      'pill2': 'Kein Patent erforderlich',
+      'pill3': 'R\u00fcckwirkend bis 2020',
+      'hero-btn': 'F\u00f6rderung pr\u00fcfen',
+      'cc-label-projekt': 'PROJEKT',
+      'cc-val-projekt': 'Wirkstoff-Optimierung XR-42',
+      'cc-label-phase': 'PHASE',
+      'cc-val-phase': 'Pr\u00e4klinische Entwicklung',
+      'cc-label-klass': 'KLASSIFIKATION',
+      'cc-val-klass': 'Ind. Forschung \u00a72(3)',
+      'cc-label-personal': 'PERSONAL',
+      'cc-p1': 'Forschungschemiker (3 VZ\u00c4)',
+      'cc-p2': 'CRO-Auftragsforschung',
+      'cc-result': '\u2713 Erstattung: <strong>~210.000\u202f\u20ac\u202f/\u202fJahr</strong>',
+      'proj-badge': 'F\u00f6rderf\u00e4hige Projekte',
+      'proj-h2': 'Was wird in Pharma &amp;<br/>Life Sciences gef\u00f6rdert?',
+      'proj-intro': 'Diese Projekttypen sind typischerweise nach FZulG \u00a72 f\u00f6rderf\u00e4hig \u2013 sofern technische Unsicherheit vorlag und das Ziel nicht mit Standardmethoden erreichbar war.',
+      'card-eligible': 'Typischerweise f\u00f6rderf\u00e4hig',
+      'card1-h3': 'Wirkstoffentwicklung &amp; Drug Discovery',
+      'card1-body': 'Entwicklung und Optimierung neuer Wirkstoffkandidaten, neuartiger Synthesewege oder innovativer Formulierungskonzepte in der pr\u00e4klinischen Phase.',
+      'card1-b1': 'Neue Syntheserouten f\u00fcr Wirkstoffkandidaten',
+      'card1-b2': 'Formulierungsentwicklung (Nanopartikel, Liposomen)',
+      'card1-b3': 'KI-gest\u00fctztes Molecular Modeling &amp; Drug Design',
+      'card2-h3': 'Bioprozess-Entwicklung &amp; Scale-Up',
+      'card2-body': 'Entwicklung und Optimierung biotechnologischer Herstellungsprozesse, von der Fermentation \u00fcber Aufreinigung bis zur Ma\u00dfstabsvergr\u00f6\u00dferung.',
+      'card2-b1': 'Fermentationsoptimierung &amp; neue N\u00e4hrmedien',
+      'card2-b2': 'Upstream/Downstream-Prozessentwicklung',
+      'card2-b3': 'mRNA- &amp; Vektortechnologie-Entwicklung',
+      'card3-h3': 'Analytische Methoden &amp; Qualit\u00e4tskontrolle',
+      'card3-body': 'Entwicklung neuer Analysemethoden, Charakterisierungsverfahren oder In-process-Kontrollen, die \u00fcber den Stand der Technik hinausgehen.',
+      'card3-b1': 'Neue spektroskopische Charakterisierungsverfahren',
+      'card3-b2': 'PAT (Process Analytical Technology) Entwicklung',
+      'card3-b3': 'Biomarker-Assay-Entwicklung &amp; Validierung',
+      'elig-badge': 'Wann qualifiziert sich Ihr Projekt?',
+      'elig-h2': 'FZulG-Kriterien f\u00fcr<br/>Pharma-Projekte',
+      'elig1-title': 'Wissenschaftliche Neuheit',
+      'elig1-desc': 'Der Wirkstoff, Bioprozess oder die Methode geht \u00fcber den aktuellen Stand der Wissenschaft hinaus.',
+      'elig2-title': 'Technische Unsicherheit',
+      'elig2-desc': 'Erfolg war zu Beginn ungewiss \u2013 Screening, Iterationen und Fehlversuche dokumentieren dies.',
+      'elig3-title': 'Systematisches Vorgehen',
+      'elig3-desc': 'Laborb\u00fccher, SOPs, Versuchspl\u00e4ne und wissenschaftliche Berichte belegen die strukturierte Vorgehensweise.',
+      'elig4-title': 'Kein laufender klinischer Betrieb',
+      'elig4-desc': 'Routine-Analytik und GMP-Produktion ohne Entwicklungscharakter sind nicht f\u00f6rderf\u00e4hig.',
+      'box-title': 'Wichtig zu wissen',
+      'box-p1': 'Auch <strong style="color:#4DAEE5">pr\u00e4klinische Forschung ohne Zulassungsziel</strong> ist f\u00f6rderf\u00e4hig. Es ist <em>kein Patent und keine Marktzulassung</em> erforderlich \u2013 allein der F&amp;E-Charakter z\u00e4hlt.',
+      'box-p2': 'F\u00f6rderf\u00e4hig sind: <strong style="color:#7ECEF5">Forschungschemiker, Biologen, Prozessingenieure</strong> sowie CRO-Beauftragungen (60\u202f% der Verg\u00fctung).',
+      'box-highlight': 'Typische F\u00f6rderung pro Pharma-Projekt: <span style="font-size:1rem;color:#7ECEF5">80.000 \u2013 300.000\u202f\u20ac/Jahr</span>',
+      'faq-badge': 'FAQ',
+      'faq-h2': 'H\u00e4ufige Fragen',
+      'faq1-q': 'Sind klinische Studien (Phase I\u2013III) nach FZulG f\u00f6rderf\u00e4hig?',
+      'faq1-a': 'Klinische Studien k\u00f6nnen teilweise f\u00f6rderf\u00e4hig sein, soweit sie dem FZulG-Begriff der experimentellen Entwicklung entsprechen. Phase-I- und fr\u00fche Phase-II-Studien, bei denen noch wesentliche technische Unsicherheiten bestehen, haben gute Aussichten. Reine Zulassungsstudien ohne wissenschaftlichen Erkenntnisgewinn sind hingegen nicht f\u00f6rderf\u00e4hig. NOVARIS analysiert den F&amp;E-Anteil Ihrer klinischen T\u00e4tigkeiten pr\u00e4zise.',
+      'faq2-q': 'K\u00f6nnen CRO- und CMO-Beauftragungen (Auftragsforschung) einbezogen werden?',
+      'faq2-a': 'Ja. Bei Auftragsforschung an CROs oder CMOs k\u00f6nnen 60\u202f% der gezahlten Verg\u00fctung als f\u00f6rderf\u00e4hige Aufwendungen angesetzt werden. Voraussetzung ist, dass das beauftragende Unternehmen das wirtschaftliche Risiko tr\u00e4gt und Inhaber der Forschungsergebnisse bleibt. Reine Lohnherstellung ohne F&amp;E-Charakter ist ausgenommen.',
+      'faq3-q': 'Ist Regulatory-Arbeit (Zulassungsdossiers, Beh\u00f6rdenkommunikation) f\u00f6rderf\u00e4hig?',
+      'faq3-a': 'Regulatory Affairs-T\u00e4tigkeiten sind als solche nicht f\u00f6rderf\u00e4hig, da sie keine F&amp;E im Sinne des FZulG darstellen. Jedoch kann die wissenschaftliche Auswertung und Datenerhebung, die dem Dossier zugrunde liegt, sehr wohl f\u00f6rderf\u00e4hig sein. NOVARIS grenzt f\u00f6rderf\u00e4hige F&amp;E-Anteile sauber von administrativen T\u00e4tigkeiten ab.',
+      'cta-badge': 'Jetzt starten',
+      'cta-h2': 'Pr\u00fcfen Sie Ihr<br/>Pharma-Projekt kostenlos',
+      'cta-body': 'NOVARIS analysiert Ihre F&amp;E-T\u00e4tigkeiten, sch\u00e4tzt das F\u00f6rderpotenzial ein und \u00fcbernimmt die gesamte Antragstellung. Kein Erfolg \u2013 kein Honorar.',
+      'cta-btn': 'Kostenlose Erstanalyse anfordern',
+      'footer-fzulg': 'Das FZulG',
+      'footer-branchen': 'Branchen',
+      'footer-prozess': 'Prozess',
+      'footer-kontakt': 'Kontakt',
+      'footer-datenschutz': 'Datenschutz'
+    },
+    en: {
+      'title': 'Pharma & Life Sciences \u2013 R&D Tax Credit | NOVARIS Consulting',
+      'nav-fzulg': 'The FZulG',
+      'nav-branchen': 'Industries',
+      'nav-prozess': 'Process',
+      'nav-vorteile': 'Benefits',
+      'nav-faq': 'FAQ',
+      'nav-kontakt': 'Contact',
+      'nav-cta': 'Check for free',
+      'mob-cta': 'Check for free \u2192',
+      'back-link': 'All Industries',
+      'hero-badge': 'Pharma &amp; Life Sciences \u00b7 FZulG-eligible',
+      'hero-body': 'Pharma and biotech companies are among the most R&amp;D-intensive industries. Those developing new active ingredients, bioprocesses, or analytical methods can reclaim <strong style="color:#7ECEF5;font-weight:600">up to 25\u202f% of staff costs</strong> in tax credits \u2013 regardless of approval status.',
+      'pill1': 'Funding rate up to 25\u202f%',
+      'pill2': 'No patent required',
+      'pill3': 'Retroactive to 2020',
+      'hero-btn': 'Check eligibility',
+      'cc-label-projekt': 'PROJECT',
+      'cc-val-projekt': 'Active Ingredient Optimisation XR-42',
+      'cc-label-phase': 'PHASE',
+      'cc-val-phase': 'Preclinical Development',
+      'cc-label-klass': 'CLASSIFICATION',
+      'cc-val-klass': 'Ind. Research \u00a72(3)',
+      'cc-label-personal': 'STAFF',
+      'cc-p1': 'Research Chemists (3 FTEs)',
+      'cc-p2': 'CRO Contract Research',
+      'cc-result': '\u2713 Reimbursement: <strong>~210,000\u202f\u20ac\u202f/\u202fyear</strong>',
+      'proj-badge': 'Eligible Projects',
+      'proj-h2': 'What is funded in Pharma &amp;<br/>Life Sciences?',
+      'proj-intro': 'These project types are typically eligible under FZulG \u00a72 \u2013 provided technical uncertainty existed and the goal was not achievable with standard methods.',
+      'card-eligible': 'Typically eligible',
+      'card1-h3': 'Active Ingredient Development &amp; Drug Discovery',
+      'card1-body': 'Development and optimisation of new drug candidates, novel synthesis routes, or innovative formulation concepts in the preclinical phase.',
+      'card1-b1': 'New synthesis routes for drug candidates',
+      'card1-b2': 'Formulation development (nanoparticles, liposomes)',
+      'card1-b3': 'AI-supported molecular modelling &amp; drug design',
+      'card2-h3': 'Bioprocess Development &amp; Scale-Up',
+      'card2-body': 'Development and optimisation of biotechnological manufacturing processes, from fermentation and purification through to scale-up.',
+      'card2-b1': 'Fermentation optimisation &amp; new culture media',
+      'card2-b2': 'Upstream/downstream process development',
+      'card2-b3': 'mRNA &amp; vector technology development',
+      'card3-h3': 'Analytical Methods &amp; Quality Control',
+      'card3-body': 'Development of new analytical methods, characterisation procedures, or in-process controls that go beyond the current state of the art.',
+      'card3-b1': 'New spectroscopic characterisation methods',
+      'card3-b2': 'PAT (Process Analytical Technology) development',
+      'card3-b3': 'Biomarker assay development &amp; validation',
+      'elig-badge': 'When does your project qualify?',
+      'elig-h2': 'FZulG Criteria for<br/>Pharma Projects',
+      'elig1-title': 'Scientific Novelty',
+      'elig1-desc': 'The active ingredient, bioprocess, or method goes beyond the current state of scientific knowledge.',
+      'elig2-title': 'Technical Uncertainty',
+      'elig2-desc': 'Success was uncertain at the outset \u2013 screening, iterations, and failed attempts document this.',
+      'elig3-title': 'Systematic Approach',
+      'elig3-desc': 'Lab notebooks, SOPs, experimental plans, and scientific reports demonstrate the structured methodology.',
+      'elig4-title': 'No Routine Clinical Operations',
+      'elig4-desc': 'Routine analytics and GMP production without a development character are not eligible.',
+      'box-title': 'Important to know',
+      'box-p1': 'Even <strong style="color:#4DAEE5">preclinical research without an approval objective</strong> is eligible. <em>No patent or market authorisation</em> is required \u2013 only the R&amp;D character matters.',
+      'box-p2': 'Eligible roles include: <strong style="color:#7ECEF5">research chemists, biologists, process engineers</strong> and CRO contract research (60\u202f% of remuneration).',
+      'box-highlight': 'Typical funding per pharma project: <span style="font-size:1rem;color:#7ECEF5">\u20ac80,000 \u2013 300,000\u202f/\u202fyear</span>',
+      'faq-badge': 'FAQ',
+      'faq-h2': 'Frequently Asked Questions',
+      'faq1-q': 'Are clinical trials (Phase I\u2013III) eligible under FZulG?',
+      'faq1-a': 'Clinical trials may be partly eligible insofar as they fall within the FZulG definition of experimental development. Phase I and early Phase II trials with significant technical uncertainties have good prospects. Pure registration trials without scientific knowledge gain are, however, not eligible. NOVARIS analyses the R&amp;D share of your clinical activities precisely.',
+      'faq2-q': 'Can CRO and CMO commissions (contract research) be included?',
+      'faq2-a': 'Yes. For contract research commissioned to CROs or CMOs, 60\u202f% of the remuneration paid can be counted as eligible expenditure. The commissioning company must bear the economic risk and retain ownership of the research results. Pure contract manufacturing without R&amp;D character is excluded.',
+      'faq3-q': 'Is regulatory work (approval dossiers, authority communication) eligible?',
+      'faq3-a': 'Regulatory affairs activities as such are not eligible, as they do not constitute R&amp;D within the meaning of FZulG. However, the scientific evaluation and data collection underlying the dossier may well be eligible. NOVARIS cleanly separates eligible R&amp;D components from administrative activities.',
+      'cta-badge': 'Get started',
+      'cta-h2': 'Check your Pharma<br/>Project for free',
+      'cta-body': 'NOVARIS analyses your R&amp;D activities, assesses the funding potential, and handles the entire application process. No success \u2013 no fee.',
+      'cta-btn': 'Request free initial analysis',
+      'footer-fzulg': 'The FZulG',
+      'footer-branchen': 'Industries',
+      'footer-prozess': 'Process',
+      'footer-kontakt': 'Contact',
+      'footer-datenschutz': 'Privacy Policy'
+    }
+  };
+
+  function setLang(lang) {
+    document.documentElement.lang = lang;
+    document.title = T[lang]['title'];
+    document.querySelectorAll('[data-t]').forEach(function(el) {
+      var key = el.getAttribute('data-t');
+      if (T[lang][key] !== undefined) el.innerHTML = T[lang][key];
+    });
+    var de = document.getElementById('lang-de');
+    var en = document.getElementById('lang-en');
+    if (de) de.classList.toggle('active', lang === 'de');
+    if (en) en.classList.toggle('active', lang === 'en');
+  }
+
+    (function(){if(localStorage.getItem('theme')==='dark'){document.documentElement.classList.add('dark');}})();
+  function toggleDark(){var dark=document.documentElement.classList.toggle('dark');localStorage.setItem('theme',dark?'dark':'light');_updateDarkBtn();}
+  function _updateDarkBtn(){var dark=document.documentElement.classList.contains('dark');var moon=document.getElementById('icon-moon');var sun=document.getElementById('icon-sun');var moonM=document.getElementById('icon-moon-mob');var sunM=document.getElementById('icon-sun-mob');if(moon)moon.style.display=dark?'none':'block';if(sun)sun.style.display=dark?'block':'none';if(moonM)moonM.style.display=dark?'none':'block';if(sunM)sunM.style.display=dark?'block':'none';}
+  window.addEventListener("DOMContentLoaded",_updateDarkBtn);
+  function toggleMob(){var m=document.getElementById('mob-menu');m.classList.toggle('open')}
+  function toggleFaq(btn){var wrap=btn.closest('.faq-wrap');wrap.classList.toggle('open')}
+  (function(){var els=document.querySelectorAll('.reveal');var io=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}});},{threshold:0.1});els.forEach(function(el){if(el.getBoundingClientRect().top<window.innerHeight){el.classList.add('visible')}else{io.observe(el)}});})();
+</script>
+<script src="/scroll-animations.js"></script>
+</body>
+</html>

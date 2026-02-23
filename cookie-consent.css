@@ -1,0 +1,186 @@
+/* ═══════════════════════════════════════════════════════
+   Cookie Consent Banner — NOVARIS Design System
+   ═══════════════════════════════════════════════════════ */
+
+/* ── Banner container ── */
+.cc-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  padding: 0 1rem 1rem;
+  pointer-events: none;
+  /* hidden until JS adds .cc-visible */
+  transform: translateY(110%);
+  opacity: 0;
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+              opacity  0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cc-banner.cc-visible {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* ── Inner card ── */
+.cc-card {
+  max-width: 520px;
+  margin: 0 auto;
+  background: rgba(13, 27, 62, 0.92);
+  backdrop-filter: blur(20px) saturate(160%);
+  -webkit-backdrop-filter: blur(20px) saturate(160%);
+  border: 1px solid rgba(30, 86, 181, 0.22);
+  border-radius: 16px;
+  padding: 1.5rem 1.75rem;
+  box-shadow:
+    0 2px 4px rgba(4, 9, 26, 0.25),
+    0 8px 18px rgba(4, 9, 26, 0.20),
+    0 24px 48px rgba(4, 9, 26, 0.15),
+    0 0 0 1px rgba(77, 174, 229, 0.06) inset;
+  font-family: 'Inter', sans-serif;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.7;
+}
+
+/* ── Icon row ── */
+.cc-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #1E56B5, #4DAEE5);
+  margin-bottom: 0.75rem;
+  flex-shrink: 0;
+}
+
+.cc-icon svg {
+  width: 18px;
+  height: 18px;
+  color: #fff;
+}
+
+/* ── Text ── */
+.cc-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: -0.03em;
+  color: #fff;
+  margin: 0 0 0.35rem;
+}
+
+.cc-text {
+  font-size: 0.82rem;
+  color: rgba(200, 218, 248, 0.75);
+  margin: 0 0 1.1rem;
+}
+
+.cc-text a {
+  color: #4DAEE5;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color 0.14s ease;
+}
+
+.cc-text a:hover {
+  color: #7ECEF5;
+}
+
+.cc-text a:focus-visible {
+  outline: 2px solid #4DAEE5;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.cc-text a:active {
+  color: #3A7FD4;
+}
+
+/* ── Button row ── */
+.cc-actions {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+/* shared button base */
+.cc-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 0.82rem;
+  letter-spacing: -0.01em;
+  border-radius: 10px;
+  padding: 0.6rem 1.25rem;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1),
+              opacity  0.14s ease,
+              box-shadow 0.14s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.cc-btn:active {
+  transform: scale(0.97) translateY(1px);
+}
+
+/* ── Accept button (primary) ── */
+.cc-btn-accept {
+  background: linear-gradient(135deg, #1E56B5, #1A3462);
+  color: #fff;
+  box-shadow:
+    0 2px 6px rgba(30, 86, 181, 0.38),
+    0 0 0 1px rgba(255, 255, 255, 0.06) inset;
+}
+
+.cc-btn-accept:hover {
+  transform: translateY(-2px) scale(1.025);
+  box-shadow:
+    0 4px 14px rgba(30, 86, 181, 0.45),
+    0 0 0 1px rgba(255, 255, 255, 0.10) inset;
+}
+
+.cc-btn-accept:focus-visible {
+  outline: 2px solid #4DAEE5;
+  outline-offset: 2px;
+}
+
+/* ── Decline button (ghost) ── */
+.cc-btn-decline {
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.70);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.cc-btn-decline:hover {
+  background: rgba(255, 255, 255, 0.10);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.cc-btn-decline:focus-visible {
+  outline: 2px solid #4DAEE5;
+  outline-offset: 2px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 480px) {
+  .cc-card {
+    padding: 1.25rem 1.25rem;
+    border-radius: 14px;
+  }
+
+  .cc-actions {
+    flex-direction: column;
+  }
+
+  .cc-btn {
+    width: 100%;
+  }
+}
