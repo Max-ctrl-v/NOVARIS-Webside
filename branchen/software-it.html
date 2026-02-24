@@ -520,6 +520,7 @@
   };
 
   function setLang(lang) {
+    localStorage.setItem('lang', lang);
     document.documentElement.lang = lang;
     document.title = lang === 'en'
       ? 'Software & IT – FZulG Funding | NOVARIS Consulting'
@@ -533,6 +534,7 @@
     if (de) de.classList.toggle('active', lang === 'de');
     if (en) en.classList.toggle('active', lang === 'en');
   }
+  (function(){ var s = localStorage.getItem('lang'); if (s && s !== 'de') setLang(s); })();
 </script>
 <script src="/scroll-animations.js"></script>
 </body>

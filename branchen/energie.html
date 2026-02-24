@@ -505,6 +505,7 @@
 
   function setLang(lang) {
     _lang = lang;
+    localStorage.setItem('lang', lang);
     const t = T[lang];
     document.querySelectorAll('[data-t]').forEach(function(el) {
       var val = t[el.getAttribute('data-t')];
@@ -520,6 +521,7 @@
     if (enm) { enm.classList.toggle('active', lang === 'en'); }
     document.documentElement.lang = lang;
   }
+  (function(){ var s = localStorage.getItem('lang'); if (s && s !== 'de') setLang(s); })();
 </script>
 <script src="/scroll-animations.js"></script>
 </body>

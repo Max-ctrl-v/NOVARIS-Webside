@@ -902,8 +902,8 @@
               <span id="cost-label" style="font-family:'Montserrat',sans-serif;font-weight:800;font-size:0.95rem;color:#fff">€ 2.000.000</span>
             </div>
             <div style="position:relative;height:6px;background:rgba(255,255,255,0.10);border-radius:999px;margin-bottom:0.38rem">
-              <div id="range-fill" style="height:100%;border-radius:999px;background:linear-gradient(90deg,#1E56B5,#4DAEE5,#7ECEF5);width:17%;transition:width 0.08s linear;box-shadow:0 0 10px rgba(77,174,229,0.55)"></div>
-              <div id="range-thumb" style="position:absolute;top:50%;width:15px;height:15px;border-radius:50%;background:#fff;border:2.5px solid #4DAEE5;transform:translate(-50%,-50%);box-shadow:0 0 14px rgba(77,174,229,0.9);left:17%;transition:left 0.08s linear;pointer-events:none"></div>
+              <div id="range-fill" style="height:100%;border-radius:999px;background:linear-gradient(90deg,#1E56B5,#4DAEE5,#7ECEF5);width:17%;box-shadow:0 0 10px rgba(77,174,229,0.55)"></div>
+              <div id="range-thumb" style="position:absolute;top:50%;width:15px;height:15px;border-radius:50%;background:#fff;border:2.5px solid #4DAEE5;transform:translate(-50%,-50%);box-shadow:0 0 14px rgba(77,174,229,0.9);left:17%;pointer-events:none"></div>
               <input type="range" id="cost-range" min="100000" max="12000000" step="100000" value="2000000"
                      oninput="updateCalc()"
                      style="position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer;margin:0" />
@@ -1734,41 +1734,47 @@
     updateCalc();
   }
 
-  function updateCalc() {
-    const input  = document.getElementById('cost-range');
-    const fill   = document.getElementById('range-fill');
-    const thumb  = document.getElementById('range-thumb');
-    const label  = document.getElementById('cost-label');
-    const result = document.getElementById('result-val');
-    const cap    = document.getElementById('cap-label');
-    const maxLbl = document.getElementById('max-label');
-    const pill   = document.getElementById('rate-pill');
-    const box    = document.getElementById('result-box');
+  // Cache DOM refs once
+  const _$input  = document.getElementById('cost-range');
+  const _$fill   = document.getElementById('range-fill');
+  const _$thumb  = document.getElementById('range-thumb');
+  const _$label  = document.getElementById('cost-label');
+  const _$result = document.getElementById('result-val');
+  const _$cap    = document.getElementById('cap-label');
+  const _$maxLbl = document.getElementById('max-label');
+  const _$pill   = document.getElementById('rate-pill');
+  const _$box    = document.getElementById('result-box');
+  let _pulseTimer = null;
 
+  function updateCalc() {
     const MAX_BASE = 12000000;
     const rate     = _calcIsKMU ? 0.35 : 0.25;
-    const val      = parseInt(input.value);
+    const val      = parseInt(_$input.value);
     const pct      = (val - 100000) / (MAX_BASE - 100000) * 100;
     const capped   = Math.min(val, MAX_BASE);
     const zulage   = Math.round(capped * rate);
 
-    fill.style.width  = pct + '%';
-    thumb.style.left  = pct + '%';
-    label.textContent = '€ ' + val.toLocaleString('de-DE');
-    cap.textContent   = '€ ' + capped.toLocaleString('de-DE');
-    pill.textContent  = (_calcIsKMU ? 35 : 25) + ' %';
-    maxLbl.textContent = _calcIsKMU ? '€ 4,2 Mio.' : '€ 3 Mio.';
+    _$fill.style.width  = pct + '%';
+    _$thumb.style.left  = pct + '%';
+    _$label.textContent = '€ ' + val.toLocaleString('de-DE');
+    _$cap.textContent   = '€ ' + capped.toLocaleString('de-DE');
+    _$pill.textContent  = (_calcIsKMU ? 35 : 25) + ' %';
+    _$maxLbl.textContent = _calcIsKMU ? '€ 4,2 Mio.' : '€ 3 Mio.';
 
-    animateValue(result, _prevZulage, zulage);
+    // Update result number directly during drag — no animation lag
+    _$result.textContent = '€ ' + zulage.toLocaleString('de-DE');
     _prevZulage = zulage;
 
-    // Pulse glow on result box
-    box.classList.remove('calc-pulsing');
-    void box.offsetWidth; // reflow to restart animation
-    box.classList.add('calc-pulsing');
-    result.classList.remove('result-popping');
-    void result.offsetWidth;
-    result.classList.add('result-popping');
+    // Debounce pulse glow so it only fires after dragging stops
+    clearTimeout(_pulseTimer);
+    _pulseTimer = setTimeout(() => {
+      _$box.classList.remove('calc-pulsing');
+      void _$box.offsetWidth;
+      _$box.classList.add('calc-pulsing');
+      _$result.classList.remove('result-popping');
+      void _$result.offsetWidth;
+      _$result.classList.add('result-popping');
+    }, 150);
   }
 
   // ── Form submission ──
@@ -2084,6 +2090,7 @@
 
   function setLang(lang) {
     _currentLang = lang;
+    localStorage.setItem('lang', lang);
     const t = T[lang];
     document.querySelectorAll('[data-t]').forEach(el => {
       const val = t[el.getAttribute('data-t')];
@@ -2101,6 +2108,12 @@
     if (enm) { enm.classList.toggle('active', lang === 'en'); }
     document.documentElement.lang = lang;
   }
+
+  // Restore saved language on load
+  (function() {
+    const saved = localStorage.getItem('lang');
+    if (saved && saved !== 'de') setLang(saved);
+  })();
 
   // ── Highlight active nav section on scroll ──
   const secs = document.querySelectorAll('section[id]');

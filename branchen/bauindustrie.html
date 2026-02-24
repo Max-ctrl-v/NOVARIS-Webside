@@ -524,6 +524,7 @@
   };
 
   function setLang(lang) {
+    localStorage.setItem('lang', lang);
     document.documentElement.lang = lang;
     document.title = T[lang]['title'];
     document.querySelectorAll('[data-t]').forEach(function(el) {
@@ -535,6 +536,7 @@
     if (de) de.classList.toggle('active', lang === 'de');
     if (en) en.classList.toggle('active', lang === 'en');
   }
+  (function(){ var s = localStorage.getItem('lang'); if (s && s !== 'de') setLang(s); })();
 
     (function(){if(localStorage.getItem('theme')==='dark'){document.documentElement.classList.add('dark');}})();
   function toggleDark(){var dark=document.documentElement.classList.toggle('dark');localStorage.setItem('theme',dark?'dark':'light');_updateDarkBtn();}
