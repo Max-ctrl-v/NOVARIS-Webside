@@ -248,6 +248,10 @@
     /* ═══════════════════════════════════════
        FORM ELEMENTS
     ═══════════════════════════════════════ */
+    .cal-event-card:hover  { transform: translateY(-2px); background: rgba(30,86,181,0.22) !important; border-color: rgba(77,174,229,0.4) !important; }
+    .cal-event-card:active { transform: translateY(0) scale(0.98); opacity: 0.9; }
+    .cal-event-card:focus-visible { outline: 2px solid #4DAEE5; outline-offset: 2px; }
+
     .field-label {
       display: block; font-family: 'Montserrat', sans-serif; font-weight: 600;
       font-size: 0.775rem; letter-spacing: 0.025em; color: rgba(200,218,248,0.75);
@@ -958,11 +962,11 @@
   <div class="max-w-7xl mx-auto px-4 sm:px-6 py-9">
     <div class="grid grid-cols-2 sm:grid-cols-4 gap-5 text-center">
       <div>
-        <div class="stat-gradient text-3xl sm:text-4xl" data-count-to="30" data-count-prefix="€ " data-count-suffix=" Mio.">€&nbsp;30&nbsp;Mio.</div>
+        <div class="stat-gradient text-3xl sm:text-4xl" data-count-to="15" data-count-prefix="€ " data-count-suffix=" Mio.+">€&nbsp;15&nbsp;Mio.+</div>
         <p style="font-size:0.78rem;color:rgba(200,218,248,0.52);margin-top:0.2rem" data-t="trust.stat1">erfolgreich gesichert</p>
       </div>
       <div>
-        <div class="stat-gradient text-3xl sm:text-4xl" data-count-to="60" data-count-suffix="+">60+</div>
+        <div class="stat-gradient text-3xl sm:text-4xl" data-count-to="25" data-count-suffix="+">25+</div>
         <p style="font-size:0.78rem;color:rgba(200,218,248,0.52);margin-top:0.2rem" data-t="trust.stat2">betreute Mandate</p>
       </div>
       <div>
@@ -1372,7 +1376,7 @@
 <!-- ══════════════════════════════════════════════
      CLIENT LOGO TICKER
 ══════════════════════════════════════════════ -->
-<section id="kunden" class="bg-white py-16 sm:py-20" style="border-top:1px solid #edf2fb">
+<section id="kunden" class="bg-white py-16 sm:py-20" style="border-top:1px solid #edf2fb;display:none">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 mb-10 text-center">
     <div class="badge mb-4" data-t="clients.badge">Unsere Kunden</div>
     <h2 class="text-3xl sm:text-4xl font-black mb-3" style="color:#0D1B3E" data-t="clients.h2">
@@ -1508,56 +1512,59 @@
         </div>
       </div>
 
-      <!-- Right: contact form -->
+      <!-- Right: Cal.com booking -->
       <div class="card-z3" style="background:rgba(255,255,255,0.05);backdrop-filter:blur(24px);border:1px solid rgba(255,255,255,0.10);border-radius:20px;padding:2.25rem">
-        <p style="font-family:'Montserrat',sans-serif;font-weight:800;font-size:1.1rem;color:#fff;margin-bottom:0.35rem" data-t="kontakt.form.title">Kostenlose Erstanalyse anfragen</p>
-        <p style="font-size:0.78rem;color:rgba(195,215,245,0.45);margin-bottom:1.75rem;line-height:1.6" data-t="kontakt.form.sub">Wir melden uns innerhalb von 24 Stunden.</p>
+        <p style="font-family:'Montserrat',sans-serif;font-weight:800;font-size:1.1rem;color:#fff;margin-bottom:0.35rem" data-t="kontakt.form.title">Termin direkt buchen</p>
+        <p style="font-size:0.82rem;color:rgba(195,215,245,0.58);margin-bottom:1.5rem;line-height:1.7" data-t="kontakt.form.sub">Persönliches Gespräch mit unseren Experten. Wir klären Ihre Fragen und bewerten Ihr Förderpotenzial – unverbindlich und kostenfrei.</p>
 
-        <form onsubmit="submitForm(event)" style="display:flex;flex-direction:column;gap:1rem">
-          <div class="grid grid-cols-2 gap-3">
-            <div>
-              <label class="field-label" data-t="kontakt.lbl.firstname">Vorname *</label>
-              <input class="field-input" type="text" placeholder="Max" required />
+        <!-- Event type cards — open Cal.com popup on click -->
+        <div style="display:flex;flex-direction:column;gap:0.75rem">
+          <button data-cal-link="max-nodes-heycvh/erstgesprach-fzulg" data-cal-config='{"theme":"dark"}'
+             class="cal-event-card" style="display:flex;align-items:flex-start;gap:1rem;padding:1.15rem 1.3rem;border-radius:14px;background:rgba(30,86,181,0.12);border:1px solid rgba(77,174,229,0.2);text-decoration:none;cursor:pointer;transition:transform 0.2s cubic-bezier(0.34,1.56,0.64,1),opacity 0.2s;width:100%;text-align:left">
+            <div style="width:46px;height:46px;border-radius:13px;background:linear-gradient(135deg,#1E56B5,#4DAEE5);display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 4px 16px rgba(30,86,181,0.35);margin-top:2px">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
             </div>
-            <div>
-              <label class="field-label" data-t="kontakt.lbl.lastname">Nachname *</label>
-              <input class="field-input" type="text" placeholder="Mustermann" required />
+            <div style="flex:1;min-width:0">
+              <p style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.95rem;color:#fff;margin:0" data-t="kontakt.ev1.title">Erstgespräch FZulG</p>
+              <p style="font-size:0.75rem;color:rgba(195,215,245,0.45);margin:0.15rem 0 0" data-t="kontakt.ev1.time">30 Min. · Video-Call</p>
+              <p style="font-size:0.78rem;color:rgba(195,215,245,0.58);margin:0.4rem 0 0;line-height:1.55" data-t="kontakt.ev1.desc">Wir prüfen gemeinsam, ob Ihre F&E-Projekte förderfähig sind, und schätzen Ihr Rückerstattungspotenzial ein.</p>
             </div>
-          </div>
-          <div>
-            <label class="field-label" data-t="kontakt.lbl.email">E-Mail-Adresse *</label>
-            <input class="field-input" type="email" placeholder="max@unternehmen.de" required />
-          </div>
-          <div>
-            <label class="field-label" data-t="kontakt.lbl.company">Unternehmen</label>
-            <input class="field-input" type="text" placeholder="Mustermann GmbH" />
-          </div>
-          <div>
-            <label class="field-label" data-t="kontakt.lbl.costs">Geschätzte F&E-Personalkosten p.a.</label>
-            <select class="field-input">
-              <option value="" data-t="kontakt.opt0">Bitte wählen…</option>
-              <option data-t="kontakt.opt1">Unter € 100.000</option>
-              <option data-t="kontakt.opt2">€ 100.000 – € 500.000</option>
-              <option data-t="kontakt.opt3">€ 500.000 – € 2 Mio.</option>
-              <option data-t="kontakt.opt4">Über € 2 Mio.</option>
-            </select>
-          </div>
-          <div>
-            <label class="field-label" data-t="kontakt.lbl.msg">Nachricht (optional)</label>
-            <textarea class="field-input" rows="3" placeholder="Kurze Beschreibung Ihrer F&E-Aktivitäten…" style="resize:vertical"></textarea>
-          </div>
-          <label style="display:flex;gap:0.6rem;align-items:flex-start;cursor:pointer">
-            <input type="checkbox" required style="margin-top:4px;accent-color:#4DAEE5;flex-shrink:0" />
-            <span style="font-size:0.77rem;color:rgba(195,215,245,0.48);line-height:1.6" data-t="kontakt.privacy">
-              Ich stimme der Verarbeitung meiner Daten gemäß der
-              <a href="/datenschutz.html" target="_blank" style="color:#4DAEE5;text-decoration:underline">Datenschutzerklärung</a> zu.
-            </span>
-          </label>
-          <button type="submit" id="submit-btn" class="btn-primary w-full" style="padding:0.95rem;font-size:0.9rem;margin-top:0.25rem">
-            <span data-t="kontakt.cta">Jetzt kostenfrei anfragen</span>
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            <svg style="flex-shrink:0;margin-top:14px" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(195,215,245,0.4)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
           </button>
-        </form>
+
+          <button data-cal-link="max-nodes-heycvh/kennenlernen-der-fzulg" data-cal-config='{"theme":"dark"}'
+             class="cal-event-card" style="display:flex;align-items:flex-start;gap:1rem;padding:1.15rem 1.3rem;border-radius:14px;background:rgba(30,86,181,0.12);border:1px solid rgba(77,174,229,0.2);text-decoration:none;cursor:pointer;transition:transform 0.2s cubic-bezier(0.34,1.56,0.64,1),opacity 0.2s;width:100%;text-align:left">
+            <div style="width:46px;height:46px;border-radius:13px;background:linear-gradient(135deg,#1E56B5,#4DAEE5);display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 4px 16px rgba(30,86,181,0.35);margin-top:2px">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            </div>
+            <div style="flex:1;min-width:0">
+              <p style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.95rem;color:#fff;margin:0" data-t="kontakt.ev2.title">Kennenlernen des FZulG</p>
+              <p style="font-size:0.75rem;color:rgba(195,215,245,0.45);margin:0.15rem 0 0" data-t="kontakt.ev2.time">60 Min. · Video-Call</p>
+              <p style="font-size:0.78rem;color:rgba(195,215,245,0.58);margin:0.4rem 0 0;line-height:1.55" data-t="kontakt.ev2.desc">Ausführliche Analyse Ihrer Forschungsvorhaben mit konkreter Förderstrategie und den nächsten Schritten.</p>
+            </div>
+            <svg style="flex-shrink:0;margin-top:14px" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(195,215,245,0.4)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+        </div>
+
+        <!-- Stats bar -->
+        <div style="display:flex;justify-content:space-between;margin-top:1.5rem;padding-top:1.25rem;border-top:1px solid rgba(77,174,229,0.12)">
+          <div style="text-align:center;flex:1">
+            <p style="font-family:'Montserrat',sans-serif;font-weight:800;font-size:1.05rem;color:#4DAEE5;margin:0" data-t="kontakt.stat1.val">25+</p>
+            <p style="font-size:0.68rem;color:rgba(195,215,245,0.4);margin:0.15rem 0 0" data-t="kontakt.stat1.label">Projekte begleitet</p>
+          </div>
+          <div style="width:1px;background:rgba(77,174,229,0.12)"></div>
+          <div style="text-align:center;flex:1">
+            <p style="font-family:'Montserrat',sans-serif;font-weight:800;font-size:1.05rem;color:#4DAEE5;margin:0" data-t="kontakt.stat2.val">15 Mio. €+</p>
+            <p style="font-size:0.68rem;color:rgba(195,215,245,0.4);margin:0.15rem 0 0" data-t="kontakt.stat2.label">Fördervolumen</p>
+          </div>
+          <div style="width:1px;background:rgba(77,174,229,0.12)"></div>
+          <div style="text-align:center;flex:1">
+            <p style="font-family:'Montserrat',sans-serif;font-weight:800;font-size:1.05rem;color:#4DAEE5;margin:0" data-t="kontakt.stat3.val">100 %</p>
+            <p style="font-size:0.68rem;color:rgba(195,215,245,0.4);margin:0.15rem 0 0" data-t="kontakt.stat3.label">Erfolgsquote</p>
+          </div>
+        </div>
+
+        <p style="font-size:0.7rem;color:rgba(195,215,245,0.3);margin-top:1.25rem;text-align:center;line-height:1.5" data-t="kontakt.cal.hint">Klicken Sie auf einen Termin-Typ, um den Kalender zu öffnen und einen freien Slot zu wählen.</p>
       </div>
 
     </div>
@@ -1780,16 +1787,6 @@
     }, 150);
   }
 
-  // ── Form submission ──
-  function submitForm(e) {
-    e.preventDefault();
-    const btn = document.getElementById('submit-btn');
-    btn.innerHTML = '✓ Anfrage gesendet – wir melden uns innerhalb von 24 h!';
-    btn.style.background = 'linear-gradient(135deg,#16a34a,#15803d)';
-    btn.style.boxShadow  = '0 4px 14px rgba(22,163,74,0.4)';
-    btn.disabled = true;
-    btn.style.transform  = 'none';
-  }
 
 
   // ── Process steps scroll animation ──
@@ -1916,21 +1913,21 @@
       'kontakt.b1':      'Antwort innerhalb von 24 Stunden',
       'kontakt.b2':      'Erstgespräch vollständig kostenlos',
       'kontakt.b3':      'DSGVO-konforme Datenverarbeitung',
-      'kontakt.form.title':'Kostenlose Erstanalyse anfragen',
-      'kontakt.form.sub':  'Wir melden uns innerhalb von 24 Stunden.',
-      'kontakt.lbl.firstname':'Vorname *',
-      'kontakt.lbl.lastname': 'Nachname *',
-      'kontakt.lbl.email':    'E-Mail-Adresse *',
-      'kontakt.lbl.company':  'Unternehmen',
-      'kontakt.lbl.costs':    'Geschätzte F&E-Personalkosten p.a.',
-      'kontakt.opt0':    'Bitte wählen…',
-      'kontakt.opt1':    'Unter € 100.000',
-      'kontakt.opt2':    '€ 100.000 – € 500.000',
-      'kontakt.opt3':    '€ 500.000 – € 2 Mio.',
-      'kontakt.opt4':    'Über € 2 Mio.',
-      'kontakt.lbl.msg': 'Nachricht (optional)',
-      'kontakt.privacy': 'Ich stimme der Verarbeitung meiner Daten gemäß der <a href="/datenschutz.html" target="_blank" style="color:#4DAEE5;text-decoration:underline">Datenschutzerklärung</a> zu.',
-      'kontakt.cta':     'Jetzt kostenfrei anfragen',
+      'kontakt.form.title':'Termin direkt buchen',
+      'kontakt.form.sub':  'Persönliches Gespräch mit unseren Experten. Wir klären Ihre Fragen und bewerten Ihr Förderpotenzial – unverbindlich und kostenfrei.',
+      'kontakt.ev1.title': 'Erstgespräch FZulG',
+      'kontakt.ev1.time':  '30 Min. · Video-Call',
+      'kontakt.ev1.desc':  'Wir prüfen gemeinsam, ob Ihre F&E-Projekte förderfähig sind, und schätzen Ihr Rückerstattungspotenzial ein.',
+      'kontakt.ev2.title': 'Kennenlernen des FZulG',
+      'kontakt.ev2.time':  '60 Min. · Video-Call',
+      'kontakt.ev2.desc':  'Ausführliche Analyse Ihrer Forschungsvorhaben mit konkreter Förderstrategie und den nächsten Schritten.',
+      'kontakt.stat1.val': '25+',
+      'kontakt.stat1.label':'Projekte begleitet',
+      'kontakt.stat2.val': '15 Mio. €+',
+      'kontakt.stat2.label':'Fördervolumen',
+      'kontakt.stat3.val': '100 %',
+      'kontakt.stat3.label':'Erfolgsquote',
+      'kontakt.cal.hint': 'Klicken Sie auf einen Termin-Typ, um den Kalender zu öffnen und einen freien Slot zu wählen.',
       'footer.desc':     'NOVARIS Consulting ist Ihr spezialisierter Full-Service-Partner für die staatliche Forschungszulage nach dem FZulG – erfolgsbasiert, transparent und ohne Risiko.',
       'footer.nav.heading':  'Navigation',
       'footer.nav.fzulg':    'Das FZulG',
@@ -2047,21 +2044,21 @@
       'kontakt.b1':      'Response within 24 hours',
       'kontakt.b2':      'Initial consultation completely free',
       'kontakt.b3':      'GDPR-compliant data processing',
-      'kontakt.form.title':'Request free initial analysis',
-      'kontakt.form.sub':  'We will get back to you within 24 hours.',
-      'kontakt.lbl.firstname':'First Name *',
-      'kontakt.lbl.lastname': 'Last Name *',
-      'kontakt.lbl.email':    'Email Address *',
-      'kontakt.lbl.company':  'Company',
-      'kontakt.lbl.costs':    'Estimated R&D personnel costs p.a.',
-      'kontakt.opt0':    'Please select…',
-      'kontakt.opt1':    'Under € 100,000',
-      'kontakt.opt2':    '€ 100,000 – € 500,000',
-      'kontakt.opt3':    '€ 500,000 – € 2M',
-      'kontakt.opt4':    'Over € 2M',
-      'kontakt.lbl.msg': 'Message (optional)',
-      'kontakt.privacy': 'I agree to the processing of my data in accordance with the <a href="/datenschutz.html" target="_blank" style="color:#4DAEE5;text-decoration:underline">Privacy Policy</a>.',
-      'kontakt.cta':     'Request free analysis',
+      'kontakt.form.title':'Book an appointment',
+      'kontakt.form.sub':  'Personal consultation with our experts. We answer your questions and assess your funding potential – no obligation, completely free.',
+      'kontakt.ev1.title': 'FZulG Initial Call',
+      'kontakt.ev1.time':  '30 min · Video call',
+      'kontakt.ev1.desc':  'We assess whether your R&D projects qualify and estimate your tax refund potential.',
+      'kontakt.ev2.title': 'Getting to know FZulG',
+      'kontakt.ev2.time':  '60 min · Video call',
+      'kontakt.ev2.desc':  'In-depth analysis of your research activities with a concrete funding strategy and next steps.',
+      'kontakt.stat1.val': '25+',
+      'kontakt.stat1.label':'Projects guided',
+      'kontakt.stat2.val': '€15M+',
+      'kontakt.stat2.label':'Funding volume',
+      'kontakt.stat3.val': '100%',
+      'kontakt.stat3.label':'Success rate',
+      'kontakt.cal.hint': 'Click an appointment type to open the calendar and choose a free slot.',
       'footer.desc':     'NOVARIS Consulting is your specialised full-service partner for the government Research Allowance Act (FZulG) – performance-based, transparent and risk-free.',
       'footer.nav.heading':  'Navigation',
       'footer.nav.fzulg':    'The FZulG Act',
@@ -2132,6 +2129,17 @@
     });
   }, { threshold: 0.45 });
   secs.forEach(s => io.observe(s));
+</script>
+<!-- Cal.com embed script -->
+<script type="text/javascript">
+  (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+  Cal("init", {origin:"https://cal.com"});
+  Cal("ui", {
+    theme:"dark",
+    styles:{branding:{brandColor:"#1E56B5"}},
+    hideEventTypeDetails:false,
+    layout:"month_view"
+  });
 </script>
 <script src="/cookie-consent.js"></script>
 <script src="/scroll-animations.js"></script>
