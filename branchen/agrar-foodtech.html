@@ -5,12 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Agrar &amp; Foodtech – FZulG-Förderung | NOVARIS Consulting</title>
   <meta name="description" content="Agrar- und Foodtech-Unternehmen erhalten bis zu 25 % ihrer F&E-Kosten zurück. NOVARIS zeigt, welche Projekte in Precision Farming, Lebensmitteltechnologie und Indoor Farming förderfähig sind." />
+  <link rel="canonical" href="https://novaris-consulting.com/branchen/agrar-foodtech.html" />
     <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <script>tailwind.config={theme:{extend:{fontFamily:{display:['Montserrat','sans-serif'],body:['Inter','sans-serif']}}}};</script>
+  <link rel="stylesheet" href="/cookie-consent.css" />
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     html{scroll-behavior:smooth;font-size:16px}
@@ -102,7 +106,7 @@
     <nav class="hidden lg:flex items-center gap-0.5">
       <a href="../index.html#was-ist-fzulg" class="nav-link" data-t="nav-fzulg">Das FZulG</a>
       <div class="nav-dropdown-wrap">
-        <span class="nav-link nav-dropdown-trigger" style="cursor:default"><span data-t="nav-branchen">Branchen</span>
+        <span class="nav-link nav-dropdown-trigger" style="cursor:default" role="button" aria-haspopup="true" aria-expanded="false" tabindex="0"><span data-t="nav-branchen">Branchen</span>
           <svg class="dd-caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
         </span>
         <div class="nav-dropdown" role="menu">
@@ -124,9 +128,9 @@
     </nav>
     <div class="flex items-center gap-3">
       <div class="lang-toggle hidden sm:flex">
-        <button id="lang-de" class="lang-btn active" onclick="setLang('de')">DE</button>
+        <button id="lang-de" class="lang-btn active" onclick="setLang('de')" aria-label="Sprache: Deutsch">DE</button>
         <div class="lang-divider"></div>
-        <button id="lang-en" class="lang-btn" onclick="setLang('en')">EN</button>
+        <button id="lang-en" class="lang-btn" onclick="setLang('en')" aria-label="Sprache: English">EN</button>
       </div>
       <button id="dark-toggle" onclick="toggleDark()" aria-label="Toggle dark mode"
         class="hidden sm:flex" style="width:32px;height:32px;border-radius:8px;border:1px solid rgba(255,255,255,0.12);background:rgba(255,255,255,0.07);cursor:pointer;align-items:center;justify-content:center;color:rgba(255,255,255,0.7);transition:background 0.15s ease,color 0.15s ease">
@@ -134,7 +138,7 @@
         <svg id="icon-sun"  width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
       </button>
       <a href="../index.html#kontakt" class="btn-primary hidden sm:inline-flex" style="padding:0.55rem 1.35rem;font-size:0.83rem"><span data-t="nav-cta">Kostenlos prüfen</span> <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
-      <button id="ham-btn" onclick="toggleMob()" aria-label="Menü" class="lg:hidden flex flex-col justify-center gap-1.5 w-9 h-9 rounded-lg hover:bg-white/10">
+      <button id="ham-btn" onclick="toggleMob()" aria-label="Menü" aria-expanded="false" aria-controls="mob-menu" class="lg:hidden flex flex-col justify-center gap-1.5 w-9 h-9 rounded-lg hover:bg-white/10">
         <span style="width:20px;height:2px;background:#fff;border-radius:2px;margin:auto;display:block"></span>
         <span style="width:20px;height:2px;background:#fff;border-radius:2px;margin:auto;display:block"></span>
         <span style="width:14px;height:2px;background:#fff;border-radius:2px;margin:auto;display:block"></span>
@@ -158,9 +162,30 @@
     </div>
   </div>
 </header>
+<main id="main-content">
+<nav aria-label="Breadcrumb" style="padding-top:80px;position:relative;z-index:10">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <ol itemscope itemtype="https://schema.org/BreadcrumbList" style="display:flex;align-items:center;gap:0.4rem;list-style:none;margin:0;padding:0.5rem 0">
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="/" style="color:rgba(195,215,245,0.55);font-size:0.78rem;text-decoration:none;font-family:Inter,sans-serif;transition:color 0.15s" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.55)'"><span itemprop="name" data-t="bc.home">Startseite</span></a>
+        <meta itemprop="position" content="1" />
+      </li>
+      <li style="color:rgba(195,215,245,0.3);font-size:0.7rem" aria-hidden="true">&rsaquo;</li>
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="/#branchen" style="color:rgba(195,215,245,0.55);font-size:0.78rem;text-decoration:none;font-family:Inter,sans-serif;transition:color 0.15s" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.55)'"><span itemprop="name" data-t="bc.branchen">Branchen</span></a>
+        <meta itemprop="position" content="2" />
+      </li>
+      <li style="color:rgba(195,215,245,0.3);font-size:0.7rem" aria-hidden="true">&rsaquo;</li>
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <span itemprop="name" style="color:rgba(195,215,245,0.85);font-size:0.78rem;font-family:Inter,sans-serif;font-weight:500" data-t="bc.current">Agrar &amp; Foodtech</span>
+        <meta itemprop="position" content="3" />
+      </li>
+    </ol>
+  </div>
+</nav>
 
 <!-- HERO -->
-<section class="hero-bg relative overflow-hidden" style="padding-top:130px;padding-bottom:100px">
+<section class="hero-bg relative overflow-hidden" style="padding-top:60px;padding-bottom:100px">
   <div aria-hidden="true" style="position:absolute;pointer-events:none;inset:0;overflow:hidden">
     <div style="position:absolute;top:-160px;right:-160px;width:700px;height:700px;border-radius:50%;border:1px solid rgba(30,86,181,0.12)"></div>
     <div style="position:absolute;top:-80px;right:-80px;width:480px;height:480px;border-radius:50%;border:1px solid rgba(77,174,229,0.08)"></div>
@@ -355,6 +380,7 @@
   </div>
 </section>
 
+</main>
 <!-- FOOTER -->
 <footer style="background:#04091a;border-top:1px solid rgba(255,255,255,0.07);padding:2.5rem 0">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
@@ -364,9 +390,11 @@
       <a href="../index.html#branchen" style="color:rgba(195,215,245,0.45);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.45)'" data-t="footer-branchen">Branchen</a>
       <a href="../index.html#prozess" style="color:rgba(195,215,245,0.45);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.45)'" data-t="footer-prozess">Prozess</a>
       <a href="../index.html#kontakt" style="color:rgba(195,215,245,0.45);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.45)'" data-t="footer-kontakt">Kontakt</a>
+      <a href="../impressum.html" style="color:rgba(195,215,245,0.45);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.45)'">Impressum</a>
       <a href="../datenschutz.html" style="color:rgba(195,215,245,0.45);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.45)'" data-t="footer-datenschutz">Datenschutz</a>
+      <a href="javascript:void(0)" onclick="CookieConsent.reset();CookieConsent.request(function(){});" style="color:rgba(195,215,245,0.45);font-size:0.82rem;text-decoration:none;transition:color 0.15s" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.45)'" data-t="foot.cookies">Cookie-Einstellungen</a>
     </div>
-    <p style="color:rgba(195,215,245,0.28);font-size:0.75rem">© 2025 NOVARIS Consulting GmbH</p>
+    <p style="color:rgba(195,215,245,0.28);font-size:0.75rem">© 2026 NOVARIS Consulting GmbH</p>
   </div>
 </footer>
 
@@ -448,7 +476,7 @@
       'footer-branchen': 'Branchen',
       'footer-prozess': 'Prozess',
       'footer-kontakt': 'Kontakt',
-      'footer-datenschutz': 'Datenschutz'
+      'footer-datenschutz': 'Datenschutz', 'foot.cookies': 'Cookie-Einstellungen', 'bc.home': 'Startseite', 'bc.branchen': 'Branchen', 'bc.current': 'Agrar &amp; Foodtech'
     },
     en: {
       'title': 'Agri & Foodtech – R&D Tax Credit | NOVARIS Consulting',
@@ -526,7 +554,7 @@
       'footer-branchen': 'Sectors',
       'footer-prozess': 'Process',
       'footer-kontakt': 'Contact',
-      'footer-datenschutz': 'Privacy Policy'
+      'footer-datenschutz': 'Privacy Policy', 'foot.cookies': 'Cookie Settings', 'bc.home': 'Home', 'bc.branchen': 'Industries', 'bc.current': 'Agriculture &amp; Foodtech'
     }
   };
 
@@ -549,10 +577,11 @@
   function toggleDark(){var dark=document.documentElement.classList.toggle('dark');localStorage.setItem('theme',dark?'dark':'light');_updateDarkBtn();}
   function _updateDarkBtn(){var dark=document.documentElement.classList.contains('dark');var moon=document.getElementById('icon-moon');var sun=document.getElementById('icon-sun');var moonM=document.getElementById('icon-moon-mob');var sunM=document.getElementById('icon-sun-mob');if(moon)moon.style.display=dark?'none':'block';if(sun)sun.style.display=dark?'block':'none';if(moonM)moonM.style.display=dark?'none':'block';if(sunM)sunM.style.display=dark?'block':'none';}
   window.addEventListener('DOMContentLoaded',_updateDarkBtn);
-  function toggleMob(){var m=document.getElementById('mob-menu');m.classList.toggle('open')}
+  function toggleMob(){var m=document.getElementById('mob-menu');var open=m.classList.toggle('open');document.getElementById('ham-btn').setAttribute('aria-expanded',open)}document.querySelectorAll('.nav-dropdown-wrap').forEach(function(w){var t=w.querySelector('.nav-dropdown-trigger');if(!t)return;w.addEventListener('mouseenter',function(){t.setAttribute('aria-expanded','true')});w.addEventListener('mouseleave',function(){t.setAttribute('aria-expanded','false')})})
   function toggleFaq(btn){var wrap=btn.closest('.faq-wrap');wrap.classList.toggle('open')}
   (function(){var els=document.querySelectorAll('.reveal');var io=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}});},{threshold:0.1});els.forEach(function(el){if(el.getBoundingClientRect().top<window.innerHeight){el.classList.add('visible')}else{io.observe(el)}});})();
 </script>
 <script src="/scroll-animations.js"></script>
+<script src="/cookie-consent.js"></script>
 </body>
 </html>

@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Impressum – NOVARIS Consulting</title>
   <meta name="robots" content="noindex, follow" />
+  <link rel="canonical" href="https://novaris-consulting.com/impressum.html" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -206,6 +207,7 @@
     html.dark { scrollbar-color: rgba(77,174,229,0.30) transparent; }
   </style>
   <link rel="stylesheet" href="/page-transition.css" />
+  <link rel="stylesheet" href="/cookie-consent.css" />
   <script src="/page-transition.js" defer></script>
 </head>
 <body>
@@ -366,6 +368,7 @@
           <a href="/impressum.html"  style="font-size:0.82rem;color:rgba(195,215,245,0.70);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Impressum</a>
           <a href="/datenschutz.html" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Datenschutz</a>
           <a href="/agb.html"        style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">AGB</a>
+          <a href="javascript:void(0)" onclick="CookieConsent.reset();CookieConsent.request(function(){});" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Cookie-Einstellungen</a>
         </div>
       </div>
     </div>
@@ -401,5 +404,6 @@
   window.addEventListener('DOMContentLoaded', _updateDarkBtn);
 </script>
 
+<script src="/cookie-consent.js"></script>
 </body>
 </html>

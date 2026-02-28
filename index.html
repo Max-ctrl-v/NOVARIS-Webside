@@ -5,10 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>NOVARIS Consulting – FZulG Steuererstattung für F&E</title>
   <meta name="description" content="Bis zu 25 % Ihrer Forschungskosten zurück – risikolos & erfolgsbasiert. NOVARIS Consulting begleitet Sie durch das gesamte FZulG-Verfahren." />
+  <link rel="canonical" href="https://novaris-consulting.com/" />
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/cookie-consent.css" />
   <script>
@@ -268,7 +271,7 @@
       outline: none;
       transition: border-color 0.15s ease, box-shadow 0.15s ease;
     }
-    .field-input::placeholder { color: rgba(255,255,255,0.25); }
+    .field-input::placeholder { color: rgba(255,255,255,0.45); }
     .field-input:focus {
       border-color: #4DAEE5;
       box-shadow: 0 0 0 3px rgba(77,174,229,0.18);
@@ -676,6 +679,25 @@
   </style>
   <link rel="stylesheet" href="/page-transition.css" />
   <script src="/page-transition.js" defer></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "NOVARIS Consulting GmbH",
+    "url": "https://novaris-consulting.com",
+    "logo": "https://novaris-consulting.com/brand_assets/Logo V5-light.svg",
+    "description": "NOVARIS Consulting ist Ihr spezialisierter Full-Service-Partner für die staatliche Forschungszulage nach dem FZulG – erfolgsbasiert, transparent und ohne Risiko.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Musterstraße 12",
+      "postalCode": "80331",
+      "addressLocality": "München",
+      "addressCountry": "DE"
+    },
+    "telephone": "+49 89 123456-0",
+    "email": "info@novaris-consulting.de"
+  }
+  </script>
 </head>
 <body>
 
@@ -696,7 +718,7 @@
     <nav class="hidden lg:flex items-center gap-0.5">
       <a href="#was-ist-fzulg" class="nav-link" data-t="nav.fzulg">Das FZulG</a>
       <div class="nav-dropdown-wrap">
-        <a href="#branchen" class="nav-link nav-dropdown-trigger" data-t="nav.branchen">
+        <a href="#branchen" class="nav-link nav-dropdown-trigger" data-t="nav.branchen" aria-haspopup="true" aria-expanded="false">
           Branchen
           <svg class="dd-caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
         </a>
@@ -748,9 +770,9 @@
     <div class="flex items-center gap-3">
       <!-- Language toggle -->
       <div class="lang-toggle hidden sm:flex">
-        <button id="lang-de" class="lang-btn active" onclick="setLang('de')">DE</button>
+        <button id="lang-de" class="lang-btn active" onclick="setLang('de')" aria-label="Sprache: Deutsch">DE</button>
         <div class="lang-divider"></div>
-        <button id="lang-en" class="lang-btn" onclick="setLang('en')">EN</button>
+        <button id="lang-en" class="lang-btn" onclick="setLang('en')" aria-label="Sprache: English">EN</button>
       </div>
       <!-- Dark mode toggle -->
       <button id="dark-toggle" onclick="toggleDark()" aria-label="Toggle dark mode"
@@ -765,7 +787,7 @@
         <span data-t="nav.cta">Kostenlos prüfen</span>
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
       </a>
-      <button id="ham-btn" onclick="toggleMob()" aria-label="Menü"
+      <button id="ham-btn" onclick="toggleMob()" aria-label="Menü" aria-expanded="false" aria-controls="mob-menu"
               class="lg:hidden flex flex-col justify-center gap-1.5 w-9 h-9 rounded-lg hover:bg-white/10 active:bg-white/15
                      focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-navy-300">
         <span id="hb1" style="width:20px;height:2px;background:#fff;border-radius:2px;margin:auto;display:block;transition:transform 0.2s ease,opacity 0.2s ease"></span>
@@ -786,9 +808,9 @@
       <!-- Mobile lang toggle + dark toggle -->
       <div class="flex items-center gap-2 mt-1">
         <div class="lang-toggle self-start">
-          <button id="lang-de-mob" class="lang-btn active" onclick="setLang('de')">DE</button>
+          <button id="lang-de-mob" class="lang-btn active" onclick="setLang('de')" aria-label="Sprache: Deutsch">DE</button>
           <div class="lang-divider"></div>
-          <button id="lang-en-mob" class="lang-btn" onclick="setLang('en')">EN</button>
+          <button id="lang-en-mob" class="lang-btn" onclick="setLang('en')" aria-label="Sprache: English">EN</button>
         </div>
         <button id="dark-toggle-mob" onclick="toggleDark()" aria-label="Toggle dark mode"
           style="width:32px;height:32px;border-radius:8px;border:1px solid rgba(255,255,255,0.12);
@@ -804,6 +826,7 @@
   </div>
 </header>
 
+<main id="main-content">
 
 <!-- ══════════════════════════════════════════════
      HERO
@@ -1572,6 +1595,8 @@
 </section>
 
 
+</main>
+
 <!-- ══════════════════════════════════════════════
      FOOTER
 ══════════════════════════════════════════════ -->
@@ -1604,6 +1629,7 @@
           <a href="/impressum.html" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white" data-t="footer.legal.impressum">Impressum</a>
           <a href="/datenschutz.html" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white" data-t="footer.legal.datenschutz">Datenschutz</a>
           <a href="/agb.html" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white" data-t="footer.legal.agb">AGB</a>
+          <a href="javascript:void(0)" onclick="CookieConsent.reset();CookieConsent.request(function(){});" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white" data-t="footer.legal.cookies">Cookie-Einstellungen</a>
         </div>
       </div>
     </div>
@@ -1698,11 +1724,20 @@
     const b2 = document.getElementById('hb2');
     const b3 = document.getElementById('hb3');
     const open = m.classList.toggle('open');
+    document.getElementById('ham-btn').setAttribute('aria-expanded', open);
     b1.style.transform  = open ? 'translateY(6.5px) rotate(45deg)' : '';
     b2.style.opacity    = open ? '0' : '';
     b3.style.transform  = open ? 'translateY(-6.5px) rotate(-45deg)' : '';
     b3.style.width      = open ? '20px' : '';
   }
+
+  // ── Dropdown aria-expanded on hover ──
+  document.querySelectorAll('.nav-dropdown-wrap').forEach(function(wrap) {
+    var trigger = wrap.querySelector('.nav-dropdown-trigger');
+    if (!trigger) return;
+    wrap.addEventListener('mouseenter', function() { trigger.setAttribute('aria-expanded', 'true'); });
+    wrap.addEventListener('mouseleave', function() { trigger.setAttribute('aria-expanded', 'false'); });
+  });
 
   // ── FAQ accordion (one open at a time) ──
   function toggleFaq(el) {
@@ -1939,6 +1974,7 @@
       'footer.legal.impressum':  'Impressum',
       'footer.legal.datenschutz':'Datenschutz',
       'footer.legal.agb':        'AGB',
+      'footer.legal.cookies':    'Cookie-Einstellungen',
       'footer.copyright': '© 2026 NOVARIS Consulting · Alle Rechte vorbehalten.',
       'footer.disclaimer':'Diese Website stellt keine Steuer- oder Rechtsberatung dar.',
       'fzulg.sub':       'Eine staatliche Steuerförderung, die Unternehmen jeder Größe und Branche zusteht – wenn sie F&E betreiben.',
@@ -2070,6 +2106,7 @@
       'footer.legal.impressum':  'Imprint',
       'footer.legal.datenschutz':'Privacy Policy',
       'footer.legal.agb':        'T&amp;C',
+      'footer.legal.cookies':    'Cookie Settings',
       'footer.copyright': '© 2026 NOVARIS Consulting · All rights reserved.',
       'footer.disclaimer':'This website does not constitute tax or legal advice.',
       'fzulg.sub':       'A government tax incentive available to companies of any size and sector – if they conduct R&D.',

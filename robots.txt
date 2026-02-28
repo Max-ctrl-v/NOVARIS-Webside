@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://novaris-consulting.com/sitemap.xml
