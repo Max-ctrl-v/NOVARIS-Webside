@@ -140,7 +140,6 @@
   <div id="mob-menu" style="border-top:1px solid rgba(255,255,255,0.07)">
     <div class="max-w-7xl mx-auto px-4 py-3 flex flex-col gap-0.5">
       <a href="../index.html#was-ist-fzulg" class="nav-link py-2.5" data-t="nav.fzulg" onclick="toggleMob()">Das FZulG</a>
-      <a href="../index.html#branchen" class="nav-link py-2.5" data-t="nav.branchen" onclick="toggleMob()">Branchen</a>
       <a href="../index.html#prozess" class="nav-link py-2.5" data-t="nav.prozess" onclick="toggleMob()">Prozess</a>
       <a href="../index.html#kontakt" class="nav-link py-2.5" data-t="nav.kontakt" onclick="toggleMob()">Kontakt</a>
             <a href="../index.html#kontakt" class="btn-primary mt-2 w-full" style="font-size:0.88rem;padding:0.75rem 1rem" onclick="toggleMob()" data-t="mob.cta">Kostenlos prüfen →</a>
@@ -155,29 +154,8 @@
   </div>
 </header>
 <main id="main-content">
-<nav aria-label="Breadcrumb" style="padding-top:80px;position:relative;z-index:10">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6">
-    <ol itemscope itemtype="https://schema.org/BreadcrumbList" style="display:flex;align-items:center;gap:0.4rem;list-style:none;margin:0;padding:0.5rem 0">
-      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-        <a itemprop="item" href="/" style="color:rgba(195,215,245,0.55);font-size:0.78rem;text-decoration:none;font-family:Inter,sans-serif;transition:color 0.15s" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.55)'"><span itemprop="name" data-t="bc.home">Startseite</span></a>
-        <meta itemprop="position" content="1" />
-      </li>
-      <li style="color:rgba(195,215,245,0.3);font-size:0.7rem" aria-hidden="true">&rsaquo;</li>
-      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-        <a itemprop="item" href="/#branchen" style="color:rgba(195,215,245,0.55);font-size:0.78rem;text-decoration:none;font-family:Inter,sans-serif;transition:color 0.15s" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.55)'"><span itemprop="name" data-t="bc.branchen">Branchen</span></a>
-        <meta itemprop="position" content="2" />
-      </li>
-      <li style="color:rgba(195,215,245,0.3);font-size:0.7rem" aria-hidden="true">&rsaquo;</li>
-      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-        <span itemprop="name" style="color:rgba(195,215,245,0.85);font-size:0.78rem;font-family:Inter,sans-serif;font-weight:500" data-t="bc.current">Maschinenbau</span>
-        <meta itemprop="position" content="3" />
-      </li>
-    </ol>
-  </div>
-</nav>
-
 <!-- HERO -->
-<section class="hero-bg relative overflow-hidden" style="padding-top:60px;padding-bottom:100px">
+<section class="hero-bg relative overflow-hidden" style="padding-top:130px;padding-bottom:100px">
   <div aria-hidden="true" style="position:absolute;pointer-events:none;inset:0;overflow:hidden">
     <div style="position:absolute;top:-160px;right:-160px;width:700px;height:700px;border-radius:50%;border:1px solid rgba(30,86,181,0.12)"></div>
     <div style="position:absolute;top:-80px;right:-80px;width:480px;height:480px;border-radius:50%;border:1px solid rgba(77,174,229,0.08)"></div>
@@ -185,10 +163,28 @@
     <div style="position:absolute;top:60px;right:6%;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,rgba(77,174,229,0.15),transparent 70%)"></div>
   </div>
   <div class="max-w-7xl mx-auto px-4 sm:px-6 relative" style="z-index:3">
-    <a href="../index.html#branchen" class="au inline-flex items-center gap-2 mb-8" style="color:rgba(195,215,245,0.55);text-decoration:none;font-size:0.83rem;font-weight:500;transition:color 0.15s ease" onmouseover="this.style.color='rgba(195,215,245,0.9)'" onmouseout="this.style.color='rgba(195,215,245,0.55)'">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
-      <span data-t="hero.back">Alle Branchen</span>
-    </a>
+    <nav aria-label="Breadcrumb" style="margin-bottom:1.5rem">
+      <ol itemscope itemtype="https://schema.org/BreadcrumbList" style="display:flex;align-items:center;gap:0.5rem;list-style:none;margin:0;padding:0">
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a itemprop="item" href="/" style="color:rgba(195,215,245,0.50);font-size:0.82rem;text-decoration:none;font-family:'Inter',sans-serif;transition:color 0.15s" onmouseover="this.style.color='rgba(195,215,245,0.9)'" onmouseout="this.style.color='rgba(195,215,245,0.50)'"><span itemprop="name" data-t="bc.home">Startseite</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <li style="color:rgba(195,215,245,0.25);font-size:0.72rem;line-height:1" aria-hidden="true">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </li>
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a itemprop="item" href="/#branchen" style="color:rgba(195,215,245,0.50);font-size:0.82rem;text-decoration:none;font-family:'Inter',sans-serif;transition:color 0.15s" onmouseover="this.style.color='rgba(195,215,245,0.9)'" onmouseout="this.style.color='rgba(195,215,245,0.50)'"><span itemprop="name" data-t="bc.branchen">Branchen</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
+        <li style="color:rgba(195,215,245,0.25);font-size:0.72rem;line-height:1" aria-hidden="true">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </li>
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <span itemprop="name" style="color:rgba(195,215,245,0.80);font-size:0.82rem;font-family:'Inter',sans-serif;font-weight:500" data-t="bc.current">Maschinenbau</span>
+          <meta itemprop="position" content="3" />
+        </li>
+      </ol>
+    </nav>
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
       <div>
         <div class="badge badge-dark au mb-5" data-t="hero.badge">Maschinenbau · FZulG-berechtigt</div>
@@ -410,7 +406,7 @@
   var T = {
     de: {
       'nav.fzulg':'Das FZulG','nav.branchen':'Branchen','nav.prozess':'Prozess','nav.vorteile':'Vorteile','nav.faq':'FAQ','nav.kontakt':'Kontakt','nav.cta':'Kostenlos prüfen','nav.mob.cta':'Kostenlos prüfen →',
-      'hero.back':'Alle Branchen','hero.badge':'Maschinenbau · FZulG-berechtigt',
+      'hero.badge':'Maschinenbau · FZulG-berechtigt',
       'hero.body':'Der Maschinen- und Anlagenbau ist eine der innovationsstärksten Branchen Deutschlands. Unternehmen, die neue Maschinenkonzepte, Automatisierungslösungen oder Fertigungsverfahren entwickeln, erhalten <strong style="color:#7ECEF5;font-weight:600">bis zu 25 % der F&amp;E-Personalkosten</strong> steuerlich erstattet.',
       'hero.pill1':'Förderquote bis 25 %','hero.pill2':'Prototypen &amp; Versuchsreihen förderfähig','hero.pill3':'Rückwirkend bis 2020','hero.btn':'Förderung prüfen',
       'hero.code.label1':'PROJEKT','hero.code.val1':'Adaptive Roboterzelle Gen-3','hero.code.label2':'STATUS','hero.code.status':'FÖRDERFÄHIG','hero.code.label3':'BEGINN','hero.code.label4':'KOSTEN',
@@ -448,7 +444,7 @@
     },
     en: {
       'nav.fzulg':'The FZulG Act','nav.branchen':'Industries','nav.prozess':'Process','nav.vorteile':'Benefits','nav.faq':'FAQ','nav.kontakt':'Contact','nav.cta':'Free eligibility check','nav.mob.cta':'Free eligibility check →',
-      'hero.back':'All Industries','hero.badge':'Mechanical Engineering · FZulG-eligible',
+      'hero.badge':'Mechanical Engineering · FZulG-eligible',
       'hero.body':'Mechanical and plant engineering is one of Germany\'s most innovation-driven sectors. Companies developing new machine concepts, automation solutions or manufacturing processes receive <strong style="color:#7ECEF5;font-weight:600">up to 25% of R&amp;D staff costs</strong> refunded through the tax authority.',
       'hero.pill1':'Subsidy rate up to 25%','hero.pill2':'Prototypes &amp; test series eligible','hero.pill3':'Retroactive to 2020','hero.btn':'Check eligibility',
       'hero.code.label1':'PROJECT','hero.code.val1':'Adaptive Robot Cell Gen-3','hero.code.label2':'STATUS','hero.code.status':'ELIGIBLE','hero.code.label3':'START','hero.code.label4':'COSTS',
