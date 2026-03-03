@@ -347,6 +347,144 @@
     }
 
     /* ═══════════════════════════════════════
+       COMPETITIVE EDGE CARDS
+    ═══════════════════════════════════════ */
+    @property --border-angle {
+      syntax: '<angle>';
+      initial-value: 0deg;
+      inherits: false;
+    }
+    @keyframes edgeReveal {
+      from { opacity: 0; transform: translateY(40px) scale(0.92) rotateX(8deg); }
+      to   { opacity: 1; transform: translateY(0) scale(1) rotateX(0deg); }
+    }
+    @keyframes edgePulse {
+      0%, 100% { opacity: 0.5; }
+      50%      { opacity: 1; }
+    }
+    @keyframes edgeCountUp {
+      from { opacity: 0; transform: scale(0.7); }
+      to   { opacity: 1; transform: scale(1); }
+    }
+    @keyframes borderRotate {
+      0%   { --border-angle: 0deg; }
+      100% { --border-angle: 360deg; }
+    }
+    @keyframes shimmer {
+      0%   { background-position: -200% center; }
+      100% { background-position: 200% center; }
+    }
+    @keyframes floatOrb {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      25%  { transform: translate(30px, -20px) scale(1.1); }
+      50%  { transform: translate(-10px, -40px) scale(0.95); }
+      75%  { transform: translate(-25px, -10px) scale(1.05); }
+    }
+    @keyframes featuredPulse {
+      0%, 100% { box-shadow: 0 0 20px rgba(77,174,229,0.15), 0 0 60px rgba(30,86,181,0.10); }
+      50%      { box-shadow: 0 0 30px rgba(77,174,229,0.30), 0 0 80px rgba(30,86,181,0.20); }
+    }
+    /* Floating orbs */
+    .edge-orb {
+      position: absolute; border-radius: 50%; pointer-events: none;
+      filter: blur(40px); opacity: 0.5;
+      animation: floatOrb 12s ease-in-out infinite;
+    }
+    .edge-card {
+      position: relative; border-radius: 18px; overflow: visible;
+      background: rgba(13,27,62,0.70);
+      border: 1px solid rgba(77,174,229,0.15);
+      backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+      transition: transform 0.35s cubic-bezier(0.34,1.56,0.64,1), border-color 0.3s ease, box-shadow 0.3s ease;
+      opacity: 0;
+      perspective: 600px;
+    }
+    .edge-card.revealed {
+      animation: edgeReveal 0.8s cubic-bezier(0.16,1,0.3,1) both;
+    }
+    .edge-card::before {
+      content: ''; position: absolute; inset: -1px; border-radius: 19px; padding: 1px;
+      background: conic-gradient(from var(--border-angle, 0deg), transparent 40%, rgba(77,174,229,0.4) 50%, transparent 60%);
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor; mask-composite: exclude;
+      pointer-events: none; opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+    .edge-card:hover::before {
+      opacity: 1;
+      animation: borderRotate 3s linear infinite;
+    }
+    .edge-card:hover {
+      transform: translateY(-8px) scale(1.03);
+      border-color: rgba(77,174,229,0.35);
+      box-shadow:
+        0 4px 15px rgba(30,86,181,0.20),
+        0 12px 40px rgba(30,86,181,0.25),
+        0 0 0 1px rgba(77,174,229,0.12) inset;
+    }
+    .edge-card:focus-visible { outline: 2px solid #4DAEE5; outline-offset: 3px; }
+    .edge-card:active { transform: translateY(-2px) scale(0.99); }
+    .edge-card-glow {
+      position: absolute; inset: 0; pointer-events: none; opacity: 0;
+      transition: opacity 0.4s ease; border-radius: 18px;
+    }
+    .edge-card:hover .edge-card-glow { opacity: 1; }
+    .edge-card-inner {
+      position: relative; z-index: 1; padding: 2rem 1.5rem 1.75rem;
+    }
+    .edge-icon {
+      width: 48px; height: 48px; border-radius: 14px; display: flex;
+      align-items: center; justify-content: center; margin-bottom: 1.25rem;
+      box-shadow: 0 4px 14px rgba(30,86,181,0.35), 0 0 20px rgba(30,86,181,0.15);
+    }
+    .edge-stat {
+      font-family: 'Montserrat', sans-serif; font-weight: 900;
+      font-size: 2.4rem; letter-spacing: -0.03em; line-height: 1.1;
+      color: #fff; margin-bottom: 0.2rem;
+    }
+    .edge-stat-shimmer {
+      background: linear-gradient(90deg, #fff 0%, #fff 40%, #4DAEE5 50%, #fff 60%, #fff 100%);
+      background-size: 200% auto;
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+      animation: shimmer 4s linear infinite;
+    }
+    .edge-stat-highlight {
+      font-size: 2.8rem;
+      background: linear-gradient(135deg, #4DAEE5, #7ECEF5, #fff, #7ECEF5, #4DAEE5);
+      background-size: 300% auto;
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+      animation: shimmer 3s linear infinite;
+    }
+    .edge-stat.revealed-num { animation: edgeCountUp 0.5s cubic-bezier(0.16,1,0.3,1) both; }
+    .edge-stat-label {
+      font-family: 'Inter', sans-serif; font-size: 0.78rem; font-weight: 600;
+      color: rgba(195,215,245,0.55); text-transform: uppercase; letter-spacing: 0.08em;
+      margin-bottom: 1rem;
+    }
+    .edge-title {
+      font-family: 'Montserrat', sans-serif; font-weight: 700;
+      font-size: 0.95rem; color: #e8f0fc; margin-bottom: 0.5rem;
+      letter-spacing: -0.01em;
+    }
+    .edge-desc {
+      font-size: 0.82rem; color: rgba(195,215,245,0.55); line-height: 1.65;
+    }
+    /* Featured card (100%) */
+    .edge-card.edge-featured {
+      border-color: rgba(77,174,229,0.25);
+      background: linear-gradient(160deg, rgba(13,27,62,0.80), rgba(30,86,181,0.15));
+      animation-name: edgeReveal;
+    }
+    .edge-card.edge-featured.revealed {
+      animation: edgeReveal 0.8s cubic-bezier(0.16,1,0.3,1) both, featuredPulse 3s ease-in-out 1s infinite;
+    }
+    .edge-card.edge-featured::after {
+      content: ''; position: absolute; inset: 0; border-radius: 18px;
+      background: radial-gradient(ellipse at 50% 0%, rgba(77,174,229,0.12), transparent 60%);
+      pointer-events: none;
+    }
+
+    /* ═══════════════════════════════════════
        FAQ ACCORDION
     ═══════════════════════════════════════ */
     .faq-wrap {
@@ -1397,6 +1535,100 @@
 
 
 <!-- ══════════════════════════════════════════════
+     WHY CHOOSE US – COMPETITIVE EDGE
+══════════════════════════════════════════════ -->
+<section id="warum-wir" class="grain relative overflow-hidden" style="background:linear-gradient(170deg,#04091a 0%,#0D1B3E 45%,#122244 100%);padding:5rem 0 5.5rem;overflow:hidden">
+  <!-- Decorative bg -->
+  <div aria-hidden="true" style="position:absolute;inset:0;pointer-events:none;overflow:hidden">
+    <div style="position:absolute;top:-120px;left:-10%;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(30,86,181,0.22),transparent 70%)"></div>
+    <div style="position:absolute;bottom:-80px;right:-5%;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(77,174,229,0.14),transparent 65%)"></div>
+    <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:900px;height:2px;background:linear-gradient(90deg,transparent,rgba(77,174,229,0.10) 30%,rgba(77,174,229,0.10) 70%,transparent)"></div>
+    <!-- Floating orbs -->
+    <div class="edge-orb" style="width:80px;height:80px;background:rgba(30,86,181,0.35);top:15%;left:8%;animation-delay:0s;animation-duration:14s"></div>
+    <div class="edge-orb" style="width:60px;height:60px;background:rgba(77,174,229,0.25);top:65%;right:12%;animation-delay:-4s;animation-duration:11s"></div>
+    <div class="edge-orb" style="width:45px;height:45px;background:rgba(77,174,229,0.20);top:30%;right:25%;animation-delay:-7s;animation-duration:16s"></div>
+    <div class="edge-orb" style="width:35px;height:35px;background:rgba(30,86,181,0.25);bottom:20%;left:20%;animation-delay:-2s;animation-duration:13s"></div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 relative" style="z-index:2">
+
+    <!-- Heading -->
+    <div class="text-center" style="margin-bottom:3.5rem">
+      <div style="display:inline-block;padding:0.35rem 1rem;border-radius:999px;font-family:'Montserrat',sans-serif;font-weight:800;font-size:0.68rem;letter-spacing:0.14em;text-transform:uppercase;color:#4DAEE5;background:rgba(77,174,229,0.10);border:1px solid rgba(77,174,229,0.18);margin-bottom:1.25rem" data-t="edge.badge">Unser Versprechen</div>
+      <h2 style="font-family:'Montserrat',sans-serif;font-weight:900;font-size:clamp(1.7rem,4vw,2.6rem);color:#fff;letter-spacing:-0.03em;line-height:1.15;margin:0 0 1rem" data-t="edge.h2">
+        Warum Unternehmen<br/>
+        <span style="background:linear-gradient(135deg,#4DAEE5,#7ECEF5);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">uns vertrauen</span>
+      </h2>
+      <p style="color:rgba(195,215,245,0.60);font-size:0.95rem;line-height:1.72;max-width:560px;margin:0 auto" data-t="edge.sub">
+        Wir liefern Ergebnisse, wo andere nur versprechen. Vier Gründe, die uns vom Wettbewerb abheben.
+      </p>
+    </div>
+
+    <!-- 4 USP Cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
+
+      <!-- Card 1: Erfolgsbasiert -->
+      <div class="edge-card" style="animation-delay:0s">
+        <div class="edge-card-glow" style="background:radial-gradient(circle at 30% 20%,rgba(30,86,181,0.40),transparent 70%)"></div>
+        <div class="edge-card-inner">
+          <div class="edge-icon" style="background:linear-gradient(135deg,#1E56B5,#3A7FD4)">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M9 12l2 2 4-4"/></svg>
+          </div>
+          <div class="edge-stat edge-stat-shimmer" data-t="edge.c1.stat">0 €</div>
+          <div class="edge-stat-label" data-t="edge.c1.label">Vorabkosten</div>
+          <h3 class="edge-title" data-t="edge.c1.title">Erfolgsbasiertes Arbeiten</h3>
+          <p class="edge-desc" data-t="edge.c1.desc">Sie zahlen nur bei erfolgreicher Bewilligung. Kein Honorar, keine versteckten Gebühren – Ihr finanzielles Risiko ist null.</p>
+        </div>
+      </div>
+
+      <!-- Card 2: GoBD -->
+      <div class="edge-card" style="animation-delay:0.1s">
+        <div class="edge-card-glow" style="background:radial-gradient(circle at 70% 20%,rgba(77,174,229,0.35),transparent 70%)"></div>
+        <div class="edge-card-inner">
+          <div class="edge-icon" style="background:linear-gradient(135deg,#1A6FB5,#4DAEE5)">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </div>
+          <div class="edge-stat edge-stat-shimmer" data-t="edge.c2.stat">GoBD</div>
+          <div class="edge-stat-label" data-t="edge.c2.label">konform</div>
+          <h3 class="edge-title" data-t="edge.c2.title">Softwarebasierte GoBD-konforme Doku</h3>
+          <p class="edge-desc" data-t="edge.c2.desc">Unsere Software erstellt Ihre Dokumentation automatisch – GoBD-konform, prüfungssicher und ohne Papierchaos.</p>
+        </div>
+      </div>
+
+      <!-- Card 3: 100% Bewilligungsquote — FEATURED -->
+      <div class="edge-card edge-featured" style="animation-delay:0.2s">
+        <div class="edge-card-glow" style="background:radial-gradient(circle at 50% 10%,rgba(77,174,229,0.45),transparent 65%)"></div>
+        <div class="edge-card-inner">
+          <div class="edge-icon" style="background:linear-gradient(135deg,#1E56B5,#4DAEE5)">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/><path d="M6 3l6 6 6-6"/><line x1="6" y1="21" x2="18" y2="21"/></svg>
+          </div>
+          <div class="edge-stat edge-stat-highlight">100 %</div>
+          <div class="edge-stat-label" data-t="edge.c3.label">Bewilligungsquote</div>
+          <h3 class="edge-title" data-t="edge.c3.title">Einziger Anbieter mit 100 %</h3>
+          <p class="edge-desc" data-t="edge.c3.desc">Kein anderer FZulG-Dienstleister erreicht eine hundertprozentige Erfolgsquote. Jeder Antrag, den wir stellen, wird bewilligt.</p>
+        </div>
+      </div>
+
+      <!-- Card 4: Günstigster Anbieter -->
+      <div class="edge-card" style="animation-delay:0.3s">
+        <div class="edge-card-glow" style="background:radial-gradient(circle at 60% 30%,rgba(30,86,181,0.35),transparent 70%)"></div>
+        <div class="edge-card-inner">
+          <div class="edge-icon" style="background:linear-gradient(135deg,#1A3462,#1E56B5)">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <div class="edge-stat edge-stat-shimmer" data-t="edge.c4.stat">Bis zu 40 %</div>
+          <div class="edge-stat-label" data-t="edge.c4.label">günstiger</div>
+          <h3 class="edge-title" data-t="edge.c4.title">Bis zu 40 % günstiger</h3>
+          <p class="edge-desc" data-t="edge.c4.desc">Vergleichen Sie selbst: Unser Honorar liegt deutlich unter dem Branchendurchschnitt – bei gleichzeitig höchster Qualität.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════
      CLIENT LOGO TICKER
 ══════════════════════════════════════════════ -->
 <section id="kunden" class="bg-white py-16 sm:py-20" style="border-top:1px solid #edf2fb;display:none">
@@ -1855,6 +2087,54 @@
     if (grid.getBoundingClientRect().top < window.innerHeight) trigger();
   })();
 
+  // ── Edge cards: staggered reveal + counter animation ──
+  (function () {
+    var cards = document.querySelectorAll('.edge-card');
+    if (!cards.length) return;
+    var triggered = false;
+    var reveal = function () {
+      if (triggered) return;
+      triggered = true;
+      cards.forEach(function (c, i) {
+        setTimeout(function () {
+          c.style.animationDelay = '0s';
+          c.classList.add('revealed');
+        }, i * 180);
+      });
+      // Counter animation for stat numbers
+      setTimeout(function () {
+        var targets = [
+          { sel: 0, end: 0, prefix: '', suffix: ' €', de: '0 €', en: '$0' },
+          { sel: 2, end: 100, prefix: '', suffix: ' %', de: '100 %', en: '100%' },
+          { sel: 3, end: 40, prefix: 'Bis zu ', suffix: ' %', de: 'Bis zu 40 %', en: 'Up to 40%' }
+        ];
+        targets.forEach(function (t) {
+          var card = cards[t.sel];
+          if (!card) return;
+          var statEl = card.querySelector('.edge-stat');
+          if (!statEl) return;
+          var start = 0;
+          var duration = 1200;
+          var startTime = null;
+          function animate(ts) {
+            if (!startTime) startTime = ts;
+            var progress = Math.min((ts - startTime) / duration, 1);
+            var eased = 1 - Math.pow(1 - progress, 3);
+            var current = Math.round(start + (t.end - start) * eased);
+            statEl.textContent = t.prefix + current + t.suffix;
+            if (progress < 1) requestAnimationFrame(animate);
+          }
+          if (t.end > 0) requestAnimationFrame(animate);
+        });
+      }, 300);
+    };
+    var ioE = new IntersectionObserver(function (entries) {
+      if (entries[0].isIntersecting) { reveal(); ioE.disconnect(); }
+    }, { threshold: 0.15 });
+    ioE.observe(cards[0]);
+    if (cards[0].getBoundingClientRect().top < window.innerHeight) reveal();
+  })();
+
   // ── i18n: language toggle ──
   const T = {
     de: {
@@ -1924,6 +2204,24 @@
       'vorteile.r3b':    'Ca. 5 Stunden',
       'vorteile.r4a':    'Ihr Potenzial',
       'vorteile.r4b':    'Bis € 4,2 Mio./Jahr',
+      'edge.badge':      'Unser Versprechen',
+      'edge.h2':         'Warum Unternehmen<br/><span style="background:linear-gradient(135deg,#4DAEE5,#7ECEF5);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">uns vertrauen</span>',
+      'edge.sub':        'Wir liefern Ergebnisse, wo andere nur versprechen. Vier Gründe, die uns vom Wettbewerb abheben.',
+      'edge.c1.stat':    '0 €',
+      'edge.c1.label':   'Vorabkosten',
+      'edge.c1.title':   'Erfolgsbasiertes Arbeiten',
+      'edge.c1.desc':    'Sie zahlen nur bei erfolgreicher Bewilligung. Kein Honorar, keine versteckten Gebühren – Ihr finanzielles Risiko ist null.',
+      'edge.c2.stat':    'GoBD',
+      'edge.c2.label':   'konform',
+      'edge.c2.title':   'Softwarebasierte GoBD-konforme Doku',
+      'edge.c2.desc':    'Unsere Software erstellt Ihre Dokumentation automatisch – GoBD-konform, prüfungssicher und ohne Papierchaos.',
+      'edge.c3.label':   'Bewilligungsquote',
+      'edge.c3.title':   'Einziger Anbieter mit 100 %',
+      'edge.c3.desc':    'Kein anderer FZulG-Dienstleister erreicht eine hundertprozentige Erfolgsquote. Jeder Antrag, den wir stellen, wird bewilligt.',
+      'edge.c4.stat':    'Bis zu 40 %',
+      'edge.c4.label':   'günstiger',
+      'edge.c4.title':   'Bis zu 40 % günstiger',
+      'edge.c4.desc':    'Vergleichen Sie selbst: Unser Honorar liegt deutlich unter dem Branchendurchschnitt – bei gleichzeitig höchster Qualität.',
       'clients.badge':   'Unsere Kunden',
       'clients.h2':      'Unternehmen, die auf NOVARIS vertrauen',
       'clients.sub':     'Erfolgreiche FZulG-Anträge aus über 9 Branchen.',
@@ -2056,6 +2354,24 @@
       'vorteile.r3b':    'Approx. 5 Hours',
       'vorteile.r4a':    'Your Potential',
       'vorteile.r4b':    'Up to € 4.2M / Year',
+      'edge.badge':      'Our Promise',
+      'edge.h2':         'Why companies<br/><span style="background:linear-gradient(135deg,#4DAEE5,#7ECEF5);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">trust us</span>',
+      'edge.sub':        'We deliver results where others only make promises. Four reasons that set us apart.',
+      'edge.c1.stat':    '€ 0',
+      'edge.c1.label':   'Upfront costs',
+      'edge.c1.title':   'Performance-Based Fees',
+      'edge.c1.desc':    'You only pay when your application is approved. No retainer, no hidden fees – your financial risk is zero.',
+      'edge.c2.stat':    'GoBD',
+      'edge.c2.label':   'compliant',
+      'edge.c2.title':   'Software-Based GoBD-Compliant Docs',
+      'edge.c2.desc':    'Our software generates your documentation automatically – GoBD-compliant, audit-proof and no paperwork chaos.',
+      'edge.c3.label':   'Approval rate',
+      'edge.c3.title':   'Only provider with 100%',
+      'edge.c3.desc':    'No other FZulG provider achieves a perfect approval rate. Every application we submit gets approved.',
+      'edge.c4.stat':    'Up to 40%',
+      'edge.c4.label':   'cheaper',
+      'edge.c4.title':   'Up to 40% cheaper',
+      'edge.c4.desc':    'See for yourself: our fees are significantly below industry average – while delivering the highest quality.',
       'clients.badge':   'Our Clients',
       'clients.h2':      'Companies that trust NOVARIS',
       'clients.sub':     'Successful FZulG applications across more than 9 sectors.',
