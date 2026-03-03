@@ -370,7 +370,7 @@
       0%   { --border-angle: 0deg; }
       100% { --border-angle: 360deg; }
     }
-    @keyframes shimmer {
+    @keyframes edge-shimmer {
       0%   { background-position: -200% center; }
       100% { background-position: 200% center; }
     }
@@ -446,14 +446,14 @@
       background: linear-gradient(90deg, #fff 0%, #fff 40%, #4DAEE5 50%, #fff 60%, #fff 100%);
       background-size: 200% auto;
       -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
-      animation: shimmer 4s linear infinite;
+      animation: edge-shimmer 4s linear infinite;
     }
     .edge-stat-highlight {
       font-size: 2.8rem;
       background: linear-gradient(135deg, #4DAEE5, #7ECEF5, #fff, #7ECEF5, #4DAEE5);
       background-size: 300% auto;
       -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
-      animation: shimmer 3s linear infinite;
+      animation: edge-shimmer 3s linear infinite;
     }
     .edge-stat.revealed-num { animation: edgeCountUp 0.5s cubic-bezier(0.16,1,0.3,1) both; }
     .edge-stat-label {
@@ -511,7 +511,7 @@
     }
     .faq-wrap.open .faq-icon { transform: rotate(45deg); background: #1E56B5; color: #fff; }
     .faq-body { max-height: 0; overflow: hidden; opacity: 0; transition: max-height 0.35s cubic-bezier(0.16,1,0.3,1), opacity 0.25s ease; }
-    .faq-wrap.open .faq-body { max-height: 260px; opacity: 1; }
+    .faq-wrap.open .faq-body { max-height: 500px; opacity: 1; }
     .faq-content {
       padding: 0 1.5rem 1.25rem; border-top: 1px solid var(--bdr-faq); padding-top: 1rem;
       font-size: 0.875rem; color: #4a5870; line-height: 1.75;
@@ -846,7 +846,7 @@
         style="background:rgba(4,9,26,0.82);border-bottom:1px solid rgba(255,255,255,0.07)">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between gap-4" style="height:68px">
 
-    <a href="#" aria-label="NOVARIS Consulting"
+    <a href="/" aria-label="NOVARIS Consulting"
        style="text-decoration:none;flex-shrink:0;display:flex;align-items:center;
               transition:opacity 0.15s ease"
        class="hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-navy-300">
@@ -1050,11 +1050,11 @@
             <div style="font-size:0.7rem;color:rgba(200,218,248,0.45);margin-bottom:0.5rem;font-family:'Inter',sans-serif;letter-spacing:0.03em">Unternehmenstyp</div>
             <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px;background:rgba(255,255,255,0.06);border-radius:11px;padding:4px">
               <button id="btn-kmu" onclick="setKMU(true)"
-                style="padding:0.48rem 0;font-size:0.78rem;font-weight:700;font-family:'Montserrat',sans-serif;border:none;cursor:pointer;border-radius:8px;transition:all 0.22s cubic-bezier(0.34,1.56,0.64,1);background:linear-gradient(135deg,#1E56B5,#4DAEE5);color:#fff;box-shadow:0 2px 10px rgba(30,86,181,0.45)">
+                style="padding:0.48rem 0;font-size:0.78rem;font-weight:700;font-family:'Montserrat',sans-serif;border:none;cursor:pointer;border-radius:8px;transition:background 0.22s cubic-bezier(0.34,1.56,0.64,1),color 0.22s cubic-bezier(0.34,1.56,0.64,1),box-shadow 0.22s cubic-bezier(0.34,1.56,0.64,1);background:linear-gradient(135deg,#1E56B5,#4DAEE5);color:#fff;box-shadow:0 2px 10px rgba(30,86,181,0.45)">
                 KMU
               </button>
               <button id="btn-gro" onclick="setKMU(false)"
-                style="padding:0.48rem 0;font-size:0.78rem;font-weight:700;font-family:'Montserrat',sans-serif;border:none;cursor:pointer;border-radius:8px;transition:all 0.22s cubic-bezier(0.34,1.56,0.64,1);background:transparent;color:rgba(200,218,248,0.5);box-shadow:none">
+                style="padding:0.48rem 0;font-size:0.78rem;font-weight:700;font-family:'Montserrat',sans-serif;border:none;cursor:pointer;border-radius:8px;transition:background 0.22s cubic-bezier(0.34,1.56,0.64,1),color 0.22s cubic-bezier(0.34,1.56,0.64,1),box-shadow 0.22s cubic-bezier(0.34,1.56,0.64,1);background:transparent;color:rgba(200,218,248,0.5);box-shadow:none">
                 Großunternehmen
               </button>
             </div>
@@ -1066,7 +1066,7 @@
           <!-- Slider -->
           <div style="margin-bottom:1.5rem">
             <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:0.5rem">
-              <label style="font-size:0.74rem;color:rgba(200,218,248,0.6);font-family:'Inter',sans-serif">F&E-Personalkosten p.a.</label>
+              <label for="cost-range" style="font-size:0.74rem;color:rgba(200,218,248,0.6);font-family:'Inter',sans-serif">F&E-Personalkosten p.a.</label>
               <span id="cost-label" style="font-family:'Montserrat',sans-serif;font-weight:800;font-size:0.95rem;color:#fff">€ 2.000.000</span>
             </div>
             <div style="position:relative;height:6px;background:rgba(255,255,255,0.10);border-radius:999px;margin-bottom:0.38rem">
@@ -1154,8 +1154,7 @@
         Was ist das Forschungs&shy;zulagen&shy;gesetz?
       </h2>
       <p style="color:#5a6e8c;font-size:0.95rem;line-height:1.78" data-t="fzulg.sub">
-        Eine staatliche Steuerförderung, die Unternehmen jeder Größe für Investitionen in
-        eigene Forschung &amp; Entwicklung entlastet – branchenunabhängig und auch bei Verlust wirksam.
+        Eine staatliche Steuerförderung, die Unternehmen jeder Größe und Branche zusteht – wenn sie F&amp;E betreiben.
       </p>
     </div>
 
@@ -1170,8 +1169,7 @@
         </div>
         <h3 style="font-size:1rem;font-weight:800;color:#0D1B3E;margin-bottom:0.5rem" data-t="fzulg.c1.title">25 % Steuererstattung</h3>
         <p style="font-size:0.85rem;color:#5a6e8c;line-height:1.72" data-t="fzulg.c1.body">
-          Der Staat erstattet 25 % der förderfähigen F&E-Personalkosten direkt von Ihrer Steuerschuld –
-          oder als Barauszahlung bei Verlusten.
+          Der Staat erstattet 25 % Ihrer förderfähigen F&amp;E-Personalkosten direkt als Steuerbonus – KMU erhalten sogar 35 %.
         </p>
       </div>
 
@@ -1183,8 +1181,7 @@
         </div>
         <h3 style="font-size:1rem;font-weight:800;color:#0D1B3E;margin-bottom:0.5rem" data-t="fzulg.c2.title">Alle Branchen &amp; Größen</h3>
         <p style="font-size:0.85rem;color:#5a6e8c;line-height:1.72" data-t="fzulg.c2.body">
-          Ob Maschinenbau, Software, Pharma oder Handwerk – das FZulG gilt für alle steuerpflichtigen
-          Unternehmen in Deutschland, unabhängig von Größe oder Rechtsform.
+          Ob Maschinenbau, Software, Pharma oder Agrar – das FZulG gilt branchenunabhängig für Unternehmen aller Rechtsformen.
         </p>
       </div>
 
@@ -1196,8 +1193,7 @@
         </div>
         <h3 style="font-size:1rem;font-weight:800;color:#0D1B3E;margin-bottom:0.5rem" data-t="fzulg.c3.title">Rückwirkend ab 2020</h3>
         <p style="font-size:0.85rem;color:#5a6e8c;line-height:1.72" data-t="fzulg.c3.body">
-          Das Gesetz gilt seit dem 01.01.2020. Viele Unternehmen haben noch offene
-          Förderansprüche aus mehreren Jahren, die wir für Sie nachträglich sichern.
+          Das Gesetz gilt seit dem 01.01.2020. Noch offene Steuerjahre können rückwirkend geltend gemacht werden.
         </p>
       </div>
     </div>
@@ -1211,8 +1207,7 @@
           Bis zu € 4,2 Mio. jährlich
         </h3>
         <p style="font-size:0.84rem;color:rgba(195,215,245,0.62);line-height:1.7" data-t="fzulg.b1.body">
-          Die maximale förderfähige Bemessungsgrundlage beträgt € 12 Mio. pro Jahr
-          – das entspricht einer Forschungszulage von bis zu <strong style="color:#7ECEF5">€ 4,2 Mio.</strong> für KMU
+          Die maximale förderfähige Bemessungsgrundlage beträgt € 12 Mio. p.a. – daraus ergibt sich eine Zulage von bis zu <strong style="color:#7ECEF5">€ 4,2 Mio.</strong> für KMU.
         </p>
       </div>
       <div class="relative overflow-hidden rounded-2xl p-7" style="background:linear-gradient(135deg,#0D1B3E,#1A3462)">
@@ -1222,9 +1217,7 @@
           Wirksam auch bei Verlust
         </h3>
         <p style="font-size:0.84rem;color:rgba(195,215,245,0.62);line-height:1.7" data-t="fzulg.b2.body">
-          Unternehmen ohne Steuerschuld erhalten die Forschungszulage als
-          <strong style="color:#7ECEF5">direkte Barauszahlung</strong> vom Finanzamt –
-          ein einzigartiger Vorteil gegenüber anderen Förderprogrammen.
+          Unternehmen ohne Steuerschuld erhalten die Zulage als <strong style="color:#7ECEF5">direkte Auszahlung</strong> vom Finanzamt – ein echter Cash-Vorteil.
         </p>
       </div>
     </div>
@@ -1682,33 +1675,33 @@
 
     <div style="display:flex;flex-direction:column;gap:0.65rem">
 
-      <div class="faq-wrap open" onclick="toggleFaq(this)">
-        <button class="faq-btn"><span data-t="faq.q1">Wer ist berechtigt, einen FZulG-Antrag zu stellen?</span> <span class="faq-icon">+</span></button>
+      <div class="faq-wrap open">
+        <button class="faq-btn" aria-expanded="true" onclick="toggleFaq(this.parentElement)"><span data-t="faq.q1">Wer ist berechtigt, einen FZulG-Antrag zu stellen?</span> <span class="faq-icon">+</span></button>
         <div class="faq-body"><div class="faq-content" data-t="faq.a1">Alle in Deutschland körperschafts- oder einkommensteuerpflichtigen Unternehmen – unabhängig von Größe, Rechtsform oder Branche – sofern sie eigene Forschungs- und Entwicklungsvorhaben nach § 2 FZulG durchführen (systematisch, neuartig, mit technischer Unsicherheit).</div></div>
       </div>
 
-      <div class="faq-wrap" onclick="toggleFaq(this)">
-        <button class="faq-btn"><span data-t="faq.q2">Welche Aufwendungen sind förderfähig?</span> <span class="faq-icon">+</span></button>
+      <div class="faq-wrap">
+        <button class="faq-btn" aria-expanded="false" onclick="toggleFaq(this.parentElement)"><span data-t="faq.q2">Welche Aufwendungen sind förderfähig?</span> <span class="faq-icon">+</span></button>
         <div class="faq-body"><div class="faq-content" data-t="faq.a2">Primär Personalkosten von Mitarbeitern, die nachweislich an F&E-Projekten beteiligt sind. Auch Eigenleistungen von Einzelunternehmen/Gesellschaftern und externe Auftragsforschung (zu 60 % anrechenbar) können gefördert werden. Sachkosten wie Material sind aktuell nicht direkt förderfähig.</div></div>
       </div>
 
-      <div class="faq-wrap" onclick="toggleFaq(this)">
-        <button class="faq-btn"><span data-t="faq.q3">Können vergangene Jahre rückwirkend beantragt werden?</span> <span class="faq-icon">+</span></button>
+      <div class="faq-wrap">
+        <button class="faq-btn" aria-expanded="false" onclick="toggleFaq(this.parentElement)"><span data-t="faq.q3">Können vergangene Jahre rückwirkend beantragt werden?</span> <span class="faq-icon">+</span></button>
         <div class="faq-body"><div class="faq-content" data-t="faq.a3">Ja – das FZulG gilt rückwirkend ab dem 01.01.2020. Solange die Steuerfestsetzung des jeweiligen Jahres noch offen (nicht bestandskräftig) ist, können Ansprüche nachträglich geltend gemacht werden. Wir prüfen in der Erstanalyse alle offenen Förderjahre.</div></div>
       </div>
 
-      <div class="faq-wrap" onclick="toggleFaq(this)">
-        <button class="faq-btn"><span data-t="faq.q4">Wie arbeitet NOVARIS mit meinem Steuerberater zusammen?</span> <span class="faq-icon">+</span></button>
+      <div class="faq-wrap">
+        <button class="faq-btn" aria-expanded="false" onclick="toggleFaq(this.parentElement)"><span data-t="faq.q4">Wie arbeitet NOVARIS mit meinem Steuerberater zusammen?</span> <span class="faq-icon">+</span></button>
         <div class="faq-body"><div class="faq-content" data-t="faq.a4">Wir liefern Ihrem Steuerberater alle notwendigen Unterlagen (BSFZ-Bescheinigung, Anlagendokumentation), die direkt in die Steuererklärung einfließen. Ihr Steuerberater behält die volle Kontrolle – wir ergänzen ihn um spezialisiertes FZulG-Know-how.</div></div>
       </div>
 
-      <div class="faq-wrap" onclick="toggleFaq(this)">
-        <button class="faq-btn"><span data-t="faq.q5">Was kostet die Beratung durch NOVARIS?</span> <span class="faq-icon">+</span></button>
+      <div class="faq-wrap">
+        <button class="faq-btn" aria-expanded="false" onclick="toggleFaq(this.parentElement)"><span data-t="faq.q5">Was kostet die Beratung durch NOVARIS?</span> <span class="faq-icon">+</span></button>
         <div class="faq-body"><div class="faq-content" data-t="faq.a5">Die Erstanalyse ist vollständig kostenlos und unverbindlich. Unser Honorar ist rein erfolgsbasiert: Es entsteht ausschließlich dann, wenn die Forschungszulage vom Finanzamt ausgezahlt oder mit Ihrer Steuerschuld verrechnet wird. Kein Erfolg – kein Honorar. Garantiert.</div></div>
       </div>
 
-      <div class="faq-wrap" onclick="toggleFaq(this)">
-        <button class="faq-btn"><span data-t="faq.q6">Kann ich F&amp;E auch dann beantragen, wenn ich Teile der Entwicklung auslagere?</span> <span class="faq-icon">+</span></button>
+      <div class="faq-wrap">
+        <button class="faq-btn" aria-expanded="false" onclick="toggleFaq(this.parentElement)"><span data-t="faq.q6">Kann ich F&amp;E auch dann beantragen, wenn ich Teile der Entwicklung auslagere?</span> <span class="faq-icon">+</span></button>
         <div class="faq-body"><div class="faq-content" data-t="faq.a6">Ja – die Vergabe von Forschungs- und Entwicklungsaufträgen an externe Auftragnehmer ist förderfähig, sofern der Auftragnehmer im <strong>Europäischen Wirtschaftsraum (EWR)</strong> ansässig ist. Wichtig: Für ausgelagerte Auftragsforschung gilt ein reduzierter Fördersatz – anstelle der vollen Personalkosten werden nur <strong>60 % der tatsächlich gezahlten Vergütung</strong> als Bemessungsgrundlage anerkannt. Außerhalb des EWR vergebene Aufträge sind vollständig von der Förderung ausgeschlossen. Für Unternehmen, die intern und extern entwickeln, empfiehlt sich eine genaue Aufteilung – wir ermitteln in der Erstanalyse das maximale Potenzial aus beiden Komponenten.</div></div>
       </div>
 
@@ -1974,8 +1967,14 @@
   // ── FAQ accordion (one open at a time) ──
   function toggleFaq(el) {
     const wasOpen = el.classList.contains('open');
-    document.querySelectorAll('.faq-wrap').forEach(f => f.classList.remove('open'));
-    if (!wasOpen) el.classList.add('open');
+    document.querySelectorAll('.faq-wrap').forEach(f => {
+      f.classList.remove('open');
+      f.querySelector('.faq-btn').setAttribute('aria-expanded', 'false');
+    });
+    if (!wasOpen) {
+      el.classList.add('open');
+      el.querySelector('.faq-btn').setAttribute('aria-expanded', 'true');
+    }
   }
 
   // ── Förderpotenzial calculator ──
