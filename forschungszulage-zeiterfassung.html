@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zeiterfassung für die Forschungszulage: So dokumentieren Sie F&amp;E korrekt | NOVARIS</title>
+  <meta name="description" content="Zeiterfassung Forschungszulage: Wie Sie F&E-Personalkosten revisionssicher dokumentieren. Anforderungen, Tools & häufige Fehler – jetzt informieren." />
+  <meta name="keywords" content="Forschungszulage Zeiterfassung, FZulG Dokumentation, F&E Personalkosten Nachweis, Zeiterfassung F&E Projekte, Forschungszulage Dokumentationspflicht" />
+  <link rel="canonical" href="https://novaris-consulting.com/forschungszulage-zeiterfassung.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Zeiterfassung für die Forschungszulage: So dokumentieren Sie F&amp;E korrekt | NOVARIS" />
+  <meta property="og:description" content="Zeiterfassung Forschungszulage: Wie Sie F&E-Personalkosten revisionssicher dokumentieren. Anforderungen, Tools & häufige Fehler." />
+  <meta property="og:url" content="https://novaris-consulting.com/forschungszulage-zeiterfassung.html" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:site_name" content="NOVARIS Consulting" />
+  <meta property="og:image" content="https://novaris-consulting.com/brand_assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Zeiterfassung für die Forschungszulage | NOVARIS" />
+  <meta name="twitter:description" content="F&E-Personalkosten revisionssicher dokumentieren. Anforderungen, Tools & häufige Fehler." />
+  <meta name="twitter:image" content="https://novaris-consulting.com/brand_assets/og-image.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --bg-base:    #ffffff;
+      --bg-raised:  #f5f8fe;
+      --bg-card:    #ffffff;
+      --clr-h:      #0D1B3E;
+      --clr-b:      #5a6e8c;
+      --clr-muted:  #4a5870;
+      --bdr:        #dde5f4;
+    }
+    html.dark {
+      --bg-base:    #0a1428;
+      --bg-raised:  #0D1B3E;
+      --bg-card:    #122244;
+      --clr-h:      #e8f0fa;
+      --clr-b:      #8aaac8;
+      --clr-muted:  #6888a8;
+      --bdr:        rgba(77,174,229,0.18);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg-base);
+      color: var(--clr-h);
+      transition: background 0.25s ease, color 0.25s ease;
+      line-height: 1.7;
+    }
+
+    .nav-blur { backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); }
+    .logo-img { height: 52px; width: auto; display: block; }
+
+    .nav-link {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.84rem;
+      font-weight: 500;
+      color: rgba(195,215,245,0.70);
+      text-decoration: none;
+      padding: 0.42rem 0.85rem;
+      border-radius: 8px;
+      transition: color 0.15s ease, background 0.15s ease;
+      letter-spacing: 0.01em;
+    }
+    .nav-link:hover { color: #fff; background: rgba(255,255,255,0.07); }
+    .nav-link:focus-visible { outline: 2px solid #4DAEE5; outline-offset: 2px; }
+
+    /* Dropdown */
+    .nav-dropdown-wrap { position: relative; }
+    .nav-dropdown {
+      display: none;
+      position: absolute;
+      top: calc(100% + 6px);
+      left: 50%;
+      transform: translateX(-50%);
+      min-width: 220px;
+      background: rgba(10,20,42,0.96);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 12px;
+      padding: 0.5rem;
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+      z-index: 60;
+    }
+    .nav-dropdown-wrap:hover .nav-dropdown,
+    .nav-dropdown-wrap:focus-within .nav-dropdown { display: block; }
+    .nav-dd-item {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.5rem 0.75rem;
+      font-size: 0.82rem;
+      color: rgba(195,215,245,0.7);
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.14s ease, color 0.14s ease;
+    }
+    .nav-dd-item:hover { background: rgba(255,255,255,0.07); color: #fff; }
+    .nav-dd-item:focus-visible { outline: 2px solid #4DAEE5; outline-offset: -2px; }
+    .nav-dd-icon { display: flex; align-items: center; justify-content: center; width: 22px; height: 22px; background: rgba(77,174,229,0.1); border-radius: 6px; flex-shrink: 0; }
+    .dd-caret { margin-left: 2px; transition: transform 0.2s cubic-bezier(0.16,1,0.3,1); }
+    .nav-dropdown-wrap:hover .dd-caret { transform: rotate(180deg); }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background: #1E56B5;
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 0.84rem;
+      border: none;
+      border-radius: 10px;
+      text-decoration: none;
+      cursor: pointer;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.3), 0 4px 12px rgba(30,86,181,0.35);
+      transition: background 0.15s ease, transform 0.12s ease, box-shadow 0.15s ease;
+    }
+    .btn-primary:hover  { background: #2563c4; box-shadow: 0 2px 4px rgba(0,0,0,0.3), 0 6px 18px rgba(30,86,181,0.45); transform: translateY(-1px); }
+    .btn-primary:active { transform: translateY(0); }
+    .btn-primary:focus-visible { outline: 2px solid #4DAEE5; outline-offset: 2px; }
+
+    .content-wrap {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 6rem 1.5rem 5rem;
+    }
+
+    .ds-breadcrumb {
+      font-size: 0.78rem;
+      color: var(--clr-b);
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .ds-breadcrumb a {
+      color: #4DAEE5;
+      text-decoration: none;
+      transition: color 0.14s ease;
+    }
+    .ds-breadcrumb a:hover { color: #7ec8f0; }
+
+    .ds-eyebrow {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #4DAEE5;
+      margin-bottom: 0.9rem;
+    }
+
+    .ds-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: var(--clr-h);
+      line-height: 1.15;
+      margin-bottom: 0.5rem;
+    }
+
+    .ds-subtitle {
+      font-size: 0.92rem;
+      color: var(--clr-b);
+      line-height: 1.75;
+      margin-bottom: 1rem;
+      max-width: 680px;
+    }
+
+    .ds-updated {
+      font-size: 0.78rem;
+      color: var(--clr-b);
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--bdr);
+    }
+
+    .ds-section {
+      margin-bottom: 2.8rem;
+    }
+    .ds-section h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.12rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: var(--clr-h);
+      margin-bottom: 0.9rem;
+      padding-bottom: 0.55rem;
+      border-bottom: 1px solid var(--bdr);
+    }
+    .ds-section h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--clr-h);
+      margin-top: 1.4rem;
+      margin-bottom: 0.5rem;
+    }
+    .ds-section p {
+      font-size: 0.9rem;
+      color: var(--clr-b);
+      line-height: 1.75;
+      margin-bottom: 0.85rem;
+    }
+    .ds-section ul, .ds-section ol {
+      margin: 0.5rem 0 0.85rem 1.1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+    .ds-section ul li, .ds-section ol li {
+      font-size: 0.9rem;
+      color: var(--clr-b);
+      line-height: 1.65;
+    }
+    .ds-section a {
+      color: #4DAEE5;
+      text-decoration: none;
+      transition: color 0.14s ease;
+    }
+    .ds-section a:hover { color: #7ec8f0; text-decoration: underline; }
+
+    .ds-box {
+      background: var(--bg-raised);
+      border: 1px solid var(--bdr);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      font-size: 0.88rem;
+      color: var(--clr-b);
+      line-height: 1.7;
+      transition: background 0.25s ease, border-color 0.25s ease;
+    }
+    .ds-box strong {
+      color: var(--clr-h);
+      font-weight: 600;
+    }
+
+    .ds-highlight-box {
+      background: var(--bg-raised);
+      border: 1px solid var(--bdr);
+      border-left: 4px solid #1E56B5;
+      border-radius: 0 12px 12px 0;
+      padding: 1.25rem 1.5rem;
+      font-size: 0.88rem;
+      color: var(--clr-b);
+      line-height: 1.7;
+      margin: 1rem 0 1.2rem;
+      transition: background 0.25s ease, border-color 0.25s ease;
+    }
+    .ds-highlight-box strong {
+      color: var(--clr-h);
+      font-weight: 600;
+    }
+
+    /* Checklist */
+    .checklist {
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+      margin: 1rem 0 1.2rem;
+    }
+    .checklist-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      font-size: 0.9rem;
+      color: var(--clr-b);
+      line-height: 1.65;
+    }
+    .checklist-icon {
+      flex-shrink: 0;
+      width: 22px;
+      height: 22px;
+      background: rgba(30,86,181,0.1);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2px;
+    }
+    html.dark .checklist-icon { background: rgba(77,174,229,0.15); }
+
+    /* Method cards */
+    .method-card {
+      background: var(--bg-raised);
+      border: 1px solid var(--bdr);
+      border-radius: 16px;
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+      transition: background 0.25s ease, border-color 0.25s ease;
+    }
+    html.dark .method-card { background: var(--bg-card); }
+    .method-card h3 {
+      margin-top: 0 !important;
+    }
+    .method-badge {
+      display: inline-block;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.2rem 0.6rem;
+      border-radius: 6px;
+      margin-bottom: 0.6rem;
+    }
+    .method-badge.recommended { background: rgba(30,86,181,0.12); color: #1E56B5; }
+    .method-badge.acceptable { background: rgba(77,174,229,0.12); color: #4DAEE5; }
+    .method-badge.fallback { background: rgba(90,110,140,0.12); color: var(--clr-muted); }
+    html.dark .method-badge.recommended { background: rgba(30,86,181,0.25); color: #4DAEE5; }
+    html.dark .method-badge.acceptable { background: rgba(77,174,229,0.2); color: #7ec8f0; }
+    html.dark .method-badge.fallback { background: rgba(90,110,140,0.2); color: #8aaac8; }
+
+    /* TOC */
+    .toc {
+      background: var(--bg-raised);
+      border: 1px solid var(--bdr);
+      border-radius: 12px;
+      padding: 1.5rem 1.75rem;
+      margin-bottom: 2.8rem;
+      transition: background 0.25s ease, border-color 0.25s ease;
+    }
+    html.dark .toc { background: var(--bg-card); }
+    .toc-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--clr-muted);
+      margin-bottom: 0.8rem;
+    }
+    .toc ol {
+      margin: 0;
+      padding-left: 1.1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+    .toc ol li {
+      font-size: 0.85rem;
+      color: var(--clr-b);
+      line-height: 1.55;
+    }
+    .toc ol li a {
+      color: #4DAEE5;
+      text-decoration: none;
+      transition: color 0.14s ease;
+    }
+    .toc ol li a:hover { color: #7ec8f0; }
+
+    /* FAQ */
+    .faq-item {
+      border: 1px solid var(--bdr);
+      border-radius: 14px;
+      margin-bottom: 0.75rem;
+      overflow: hidden;
+      background: var(--bg-base);
+      transition: box-shadow 0.18s ease, background 0.25s ease, border-color 0.25s ease;
+    }
+    .faq-item:hover { box-shadow: 0 2px 8px rgba(13,27,62,0.06); }
+    html.dark .faq-item { background: var(--bg-card); }
+    html.dark .faq-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.2); }
+    .faq-q {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 1rem 1.4rem;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--clr-h);
+      text-align: left;
+      gap: 1rem;
+      transition: background 0.14s ease;
+    }
+    .faq-q:hover { background: rgba(30,86,181,0.04); }
+    html.dark .faq-q:hover { background: rgba(77,174,229,0.06); }
+    .faq-q:focus-visible { outline: 2px solid #4DAEE5; outline-offset: -2px; border-radius: 14px; }
+    .faq-q:active { background: #edf2fb; }
+    html.dark .faq-q:active { background: rgba(77,174,229,0.1); }
+    .faq-q svg { flex-shrink: 0; transition: transform 0.25s cubic-bezier(0.16,1,0.3,1); color: #1E56B5; }
+    .faq-item.open .faq-q svg { transform: rotate(180deg); }
+    .faq-a {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s cubic-bezier(0.16,1,0.3,1);
+    }
+    .faq-item.open .faq-a { max-height: 400px; }
+    .faq-a-inner {
+      padding: 0 1.4rem 1.2rem;
+      font-size: 0.9rem;
+      color: var(--clr-b);
+      line-height: 1.75;
+    }
+
+    .cta-section {
+      background: var(--bg-raised);
+      border: 1px solid var(--bdr);
+      border-radius: 16px;
+      padding: 2.5rem 2rem;
+      text-align: center;
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+      transition: background 0.25s ease, border-color 0.25s ease;
+    }
+    .cta-section h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: var(--clr-h);
+      margin-bottom: 0.8rem;
+      border: none;
+      padding-bottom: 0;
+    }
+    .cta-section p {
+      font-size: 0.9rem;
+      color: var(--clr-b);
+      line-height: 1.75;
+      margin-bottom: 1.5rem;
+      max-width: 560px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    footer { background: #04091a; border-top: 1px solid rgba(255,255,255,0.07); }
+
+    html.dark .ds-box { background: var(--bg-card); }
+    html.dark .ds-highlight-box { background: var(--bg-card); }
+    html.dark .cta-section { background: var(--bg-card); }
+    .logo-light { display: none; }
+    html.dark .logo-dark  { display: none !important; }
+    html.dark .logo-light { display: inline !important; }
+
+    html { overflow-y: scroll; }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: rgba(77,174,229,0.38); border-radius: 999px; }
+    ::-webkit-scrollbar-thumb:hover { background: rgba(77,174,229,0.55); }
+    html { scrollbar-width: thin; scrollbar-color: rgba(77,174,229,0.38) transparent; }
+    html.dark ::-webkit-scrollbar-thumb { background: rgba(77,174,229,0.30); }
+    html.dark ::-webkit-scrollbar-thumb:hover { background: rgba(77,174,229,0.48); }
+    html.dark { scrollbar-color: rgba(77,174,229,0.30) transparent; }
+  </style>
+  <link rel="stylesheet" href="/page-transition.css" />
+  <link rel="stylesheet" href="/cookie-consent.css" />
+  <script src="/page-transition.js" defer></script>
+
+  <!-- BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://novaris-consulting.com/"},
+      {"@type": "ListItem", "position": 2, "name": "Forschungszulage", "item": "https://novaris-consulting.com/forschungszulage.html"},
+      {"@type": "ListItem", "position": 3, "name": "Zeiterfassung", "item": "https://novaris-consulting.com/forschungszulage-zeiterfassung.html"}
+    ]
+  }
+  </script>
+
+  <!-- Article Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Zeiterfassung für die Forschungszulage – So dokumentieren Sie F&E korrekt",
+    "description": "Zeiterfassung Forschungszulage: Wie Sie F&E-Personalkosten revisionssicher dokumentieren. Anforderungen, Tools und häufige Fehler.",
+    "author": {
+      "@type": "Organization",
+      "name": "NOVARIS Consulting",
+      "url": "https://novaris-consulting.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "NOVARIS Consulting",
+      "url": "https://novaris-consulting.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://novaris-consulting.com/brand_assets/Logo V5-light.svg"
+      }
+    },
+    "datePublished": "2026-03-06",
+    "dateModified": "2026-03-06",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://novaris-consulting.com/forschungszulage-zeiterfassung.html"
+    },
+    "keywords": ["Forschungszulage Zeiterfassung", "FZulG Dokumentation", "F&E Personalkosten Nachweis", "Zeiterfassung F&E Projekte"]
+  }
+  </script>
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Muss ich die Zeiterfassung tagesgenau führen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Eine tagesgenaue Zeiterfassung wird empfohlen und bietet die höchste Sicherheit bei Prüfungen durch das Finanzamt. In der Praxis wird jedoch auch eine wochengenaue Erfassung in den meisten Fällen akzeptiert, sofern die Zuordnung zu einzelnen F&E-Projekten klar erkennbar ist und die Gesamtarbeitszeit plausibel aufgeteilt wird."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Was passiert, wenn ich keine Zeiterfassung habe?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ohne eine nachvollziehbare Zeiterfassung riskieren Sie eine Kürzung oder vollständige Ablehnung der Forschungszulage durch das Finanzamt. Für vergangene Jahre besteht jedoch die Möglichkeit einer nachträglichen Rekonstruktion auf Basis von Projektplänen, E-Mail-Verläufen, Jira-Tickets, Git-Commits und anderen Dokumenten. NOVARIS unterstützt Sie bei der revisionssicheren Aufbereitung."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Können Geschäftsführer ihre eigene F&E-Zeit geltend machen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, Geschäftsführer und Gesellschafter können ihre eigene F&E-Tätigkeit geltend machen. Für Einzelunternehmer und Gesellschafter gilt die Eigenleistungspauschale von 70 EUR pro Stunde (maximal 40 Stunden pro Woche). Voraussetzung ist, dass die F&E-Tätigkeit nachweisbar und von der reinen Geschäftsführungstätigkeit abgrenzbar ist."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wie dokumentiere ich Auftragsforschung?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Bei Auftragsforschung müssen Sie den Forschungsvertrag, die Rechnungen des Auftragnehmers sowie Leistungsnachweise (z.B. Zwischenberichte, Abschlussberichte) dokumentieren. Förderfähig sind 60 % des an den Auftragnehmer gezahlten Entgelts. Der Auftragnehmer muss in der EU/im EWR ansässig sein."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Bietet NOVARIS Vorlagen für die Zeiterfassung?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, NOVARIS stellt Ihnen im Rahmen der Beratung kostenlose Vorlagen für die projektbezogene F&E-Zeiterfassung zur Verfügung. Diese Vorlagen sind auf die Anforderungen des FZulG und die Prüfungspraxis der Finanzämter abgestimmt und helfen Ihnen, von Anfang an revisionssicher zu dokumentieren."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<header id="nav" class="fixed inset-x-0 top-0 z-50 nav-blur"
+        style="background:rgba(4,9,26,0.88);border-bottom:1px solid rgba(255,255,255,0.07)">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between gap-4" style="height:68px">
+    <a href="/" aria-label="NOVARIS Consulting"
+       style="text-decoration:none;flex-shrink:0;display:flex;align-items:center;transition:opacity 0.15s ease"
+       class="hover:opacity-90 focus-visible:outline-none">
+      <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto" />
+    </a>
+    <nav class="hidden lg:flex items-center gap-0.5">
+      <a href="/#was-ist-fzulg" class="nav-link">Das FZulG</a>
+      <a href="/#warum-wir" class="nav-link">Unsere St&auml;rken</a>
+      <div class="nav-dropdown-wrap">
+        <a href="/#branchen" class="nav-link" aria-haspopup="true" aria-expanded="false">
+          Branchen
+          <svg class="dd-caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </a>
+        <div class="nav-dropdown" role="menu">
+          <a href="/branchen/software-it.html" class="nav-dd-item" role="menuitem">
+            <span class="nav-dd-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4DAEE5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span>
+            Software &amp; IT
+          </a>
+          <a href="/branchen/maschinenbau.html" class="nav-dd-item" role="menuitem">
+            <span class="nav-dd-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4DAEE5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg></span>
+            Maschinenbau
+          </a>
+          <a href="/branchen/pharma.html" class="nav-dd-item" role="menuitem">
+            <span class="nav-dd-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4DAEE5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6"/><path d="M14 3v5.5l4 7.5H6l4-7.5V3"/></svg></span>
+            Pharma &amp; Life Sciences
+          </a>
+          <a href="/branchen/automotive.html" class="nav-dd-item" role="menuitem">
+            <span class="nav-dd-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4DAEE5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17H3a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h13l3 5v4a2 2 0 0 1-2 2h-1"/><circle cx="7" cy="17" r="2"/><circle cx="15" cy="17" r="2"/></svg></span>
+            Automotive &amp; Mobilit&auml;t
+          </a>
+          <a href="/branchen/medizintechnik.html" class="nav-dd-item" role="menuitem">
+            <span class="nav-dd-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4DAEE5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></span>
+            Medizintechnik
+          </a>
+          <a href="/branchen/energie.html" class="nav-dd-item" role="menuitem">
+            <span class="nav-dd-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4DAEE5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></span>
+            Energie &amp; Cleantech
+          </a>
+          <a href="/branchen/luft-raumfahrt.html" class="nav-dd-item" role="menuitem">
+            <span class="nav-dd-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4DAEE5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/></svg></span>
+            Luft- &amp; Raumfahrt
+          </a>
+          <a href="/branchen/agrar-foodtech.html" class="nav-dd-item" role="menuitem">
+            <span class="nav-dd-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4DAEE5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/></svg></span>
+            Agrar &amp; Foodtech
+          </a>
+          <a href="/branchen/bauindustrie.html" class="nav-dd-item" role="menuitem">
+            <span class="nav-dd-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4DAEE5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="1"/><path d="M9 22V12h6v10"/></svg></span>
+            Bauindustrie
+          </a>
+        </div>
+      </div>
+      <a href="/#prozess" class="nav-link">Prozess</a>
+      <a href="/#kontakt" class="nav-link">Kontakt</a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <button id="dark-toggle" onclick="toggleDark()" aria-label="Toggle dark mode"
+        class="hidden sm:flex" style="width:32px;height:32px;border-radius:8px;border:1px solid rgba(255,255,255,0.12);
+               background:rgba(255,255,255,0.07);cursor:pointer;align-items:center;
+               justify-content:center;color:rgba(255,255,255,0.7);
+               transition:background 0.15s ease,color 0.15s ease">
+        <svg id="icon-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg id="icon-sun"  width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
+      <a href="/#kontakt" class="btn-primary hidden sm:inline-flex" style="padding:0.55rem 1.35rem;font-size:0.83rem">
+        Kostenlose Erstberatung
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="content-wrap">
+
+    <div class="ds-breadcrumb">
+      <a href="/">Startseite</a>
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      <a href="/forschungszulage.html">Forschungszulage</a>
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      <span>Zeiterfassung</span>
+    </div>
+
+    <div class="ds-eyebrow">Dokumentation &amp; Zeiterfassung</div>
+    <h1 class="ds-title">Zeiterfassung f&uuml;r die Forschungszulage &ndash; So dokumentieren Sie richtig</h1>
+    <p class="ds-subtitle">Die korrekte Erfassung von F&amp;E-Arbeitszeiten ist entscheidend f&uuml;r die H&ouml;he Ihrer Forschungszulage. Erfahren Sie, welche Anforderungen gelten und wie Sie typische Fehler vermeiden.</p>
+    <p class="ds-updated">Zuletzt aktualisiert: 06. M&auml;rz 2026 &middot; Lesezeit: ca. 10 Minuten</p>
+
+    <!-- Table of Contents -->
+    <nav class="toc" aria-label="Inhaltsverzeichnis">
+      <div class="toc-title">Inhaltsverzeichnis</div>
+      <ol>
+        <li><a href="#warum-zeiterfassung">Warum ist die Zeiterfassung so wichtig?</a></li>
+        <li><a href="#anforderungen">Was das Finanzamt bei der Zeiterfassung erwartet</a></li>
+        <li><a href="#methoden">Methoden der F&amp;E-Zeiterfassung im Vergleich</a></li>
+        <li><a href="#tools">Empfohlene Tools f&uuml;r die F&amp;E-Zeiterfassung</a></li>
+        <li><a href="#fehler">Die 5 h&auml;ufigsten Fehler &ndash; und wie Sie sie vermeiden</a></li>
+        <li><a href="#checkliste">Checkliste: Ist Ihre Zeiterfassung FZulG-konform?</a></li>
+        <li><a href="#faq">H&auml;ufig gestellte Fragen</a></li>
+      </ol>
+    </nav>
+
+    <!-- Section 1: Warum ist die Zeiterfassung so wichtig? -->
+    <div class="ds-section" id="warum-zeiterfassung">
+      <h2>Warum ist die Zeiterfassung f&uuml;r die Forschungszulage so wichtig?</h2>
+      <p>Die Zeiterfassung ist das R&uuml;ckgrat jeder erfolgreichen Beantragung der Forschungszulage nach dem Forschungszulagengesetz (FZulG). Der Grund ist einfach: Die <strong>f&ouml;rderf&auml;higen Personalkosten</strong> &ndash; also die Bruttol&ouml;hne und -geh&auml;lter der in Forschung und Entwicklung t&auml;tigen Mitarbeiter &ndash; bilden den mit Abstand gr&ouml;&szlig;ten Anteil der Bemessungsgrundlage. Und genau diese Personalkosten m&uuml;ssen Sie anteilig nach dem tats&auml;chlichen Zeitaufwand f&uuml;r F&amp;E-Projekte ermitteln und nachweisen.</p>
+      <p>Das Finanzamt pr&uuml;ft bei der Festsetzung der Forschungszulage, ob die geltend gemachten Personalkosten <strong>plausibel und nachvollziehbar</strong> den bescheinigten F&amp;E-Vorhaben zugeordnet werden k&ouml;nnen. Ohne eine ordnungsgem&auml;&szlig;e Zeiterfassung fehlt die Grundlage f&uuml;r diese Zuordnung &ndash; mit der Folge, dass das Finanzamt die Bemessungsgrundlage k&uuml;rzt oder den Antrag im schlimmsten Fall vollst&auml;ndig ablehnt.</p>
+      <p>Besonders relevant wird die Zeiterfassung in folgenden Situationen:</p>
+      <ul>
+        <li><strong>Fehlerhafte Dokumentation f&uuml;hrt zu K&uuml;rzungen:</strong> Wenn das Finanzamt die geltend gemachten Stunden nicht nachvollziehen kann, wird die Bemessungsgrundlage reduziert. In der Praxis bedeutet das: Sie verschenken bares Geld, weil die Dokumentation nicht stimmt &ndash; obwohl die F&amp;E-T&auml;tigkeit tats&auml;chlich stattgefunden hat.</li>
+        <li><strong>R&uuml;ckwirkende Antr&auml;ge erfordern Rekonstruktion:</strong> Die Forschungszulage kann r&uuml;ckwirkend f&uuml;r alle offenen Steuerjahre ab 2020 beantragt werden. F&uuml;r zur&uuml;ckliegende Jahre existiert h&auml;ufig keine projektbezogene Zeiterfassung. In diesen F&auml;llen muss die Zeitverteilung anhand alternativer Quellen rekonstruiert werden &ndash; ein Prozess, der zwar m&ouml;glich, aber deutlich aufwendiger ist als eine laufende Erfassung.</li>
+        <li><strong>Die Zeiterfassung bestimmt die F&ouml;rderh&ouml;he:</strong> Die Forschungszulage betr&auml;gt 25 % (KMU: 35 %) der f&ouml;rderf&auml;higen Aufwendungen. Jede Stunde, die nicht korrekt dokumentiert ist, reduziert Ihre Bemessungsgrundlage und damit direkt die H&ouml;he Ihrer Forschungszulage. Bei einem durchschnittlichen Bruttolohn von 60.000 EUR pro Jahr und einem KMU-F&ouml;rdersatz von 35 % entspricht eine nicht erfasste Vollzeitstelle einem Verlust von bis zu 25.200 EUR Forschungszulage &ndash; pro Jahr.</li>
+        <li><strong>Betriebspr&uuml;fungen:</strong> Im Rahmen von Betriebspr&uuml;fungen kann das Finanzamt die Zeiterfassungsunterlagen detailliert pr&uuml;fen. Wer hier keine belastbare Dokumentation vorlegen kann, riskiert nicht nur die K&uuml;rzung der Forschungszulage, sondern m&ouml;glicherweise auch steuerliche Nachforderungen.</li>
+      </ul>
+
+      <div class="ds-highlight-box">
+        <strong>Kernaussage:</strong> Die Zeiterfassung ist kein b&uuml;rokratischer Selbstzweck &ndash; sie ist das zentrale Beweismittel f&uuml;r Ihren Anspruch auf die Forschungszulage. Eine sorgf&auml;ltige, projektbezogene Dokumentation kann den Unterschied zwischen einer vollen Aussch&ouml;pfung der F&ouml;rderung und einer erheblichen K&uuml;rzung ausmachen.
+      </div>
+    </div>
+
+    <!-- Section 2: Anforderungen -->
+    <div class="ds-section" id="anforderungen">
+      <h2>Was das Finanzamt bei der Zeiterfassung erwartet</h2>
+      <p>Das Forschungszulagengesetz selbst enth&auml;lt keine detaillierten Vorgaben zur Form der Zeiterfassung. Die Anforderungen ergeben sich vielmehr aus der allgemeinen steuerlichen Dokumentationspflicht, den Hinweisen des BMF (Bundesministerium der Finanzen) sowie der Pr&uuml;fungspraxis der Finanz&auml;mter. Folgende Grunds&auml;tze haben sich als Standard etabliert:</p>
+
+      <h3>Projektbezogene Erfassung</h3>
+      <p>Die wichtigste Anforderung: Jede erfasste Arbeitsstunde muss einem <strong>konkreten F&amp;E-Vorhaben</strong> zugeordnet werden k&ouml;nnen. Das Vorhaben muss dabei mit dem bei der BSFZ (Bescheinigungsstelle Forschungszulage) eingereichten und bescheinigten Projekt &uuml;bereinstimmen. Eine pauschale Angabe wie &bdquo;40 % der Arbeitszeit f&uuml;r F&amp;E&ldquo; ohne Projektzuordnung reicht nicht aus.</p>
+
+      <h3>Tagesgenaue oder w&ouml;chentliche Aufzeichnung</h3>
+      <p>Die Zeiterfassung sollte idealerweise <strong>tagesgenau</strong> erfolgen. In der Praxis wird auch eine <strong>w&ouml;chentliche Aufzeichnung</strong> von den meisten Finanz&auml;mtern akzeptiert, sofern sie konsistent und plausibel ist. Eine rein monatliche oder gar quartalsweise Erfassung wird hingegen als zu ungenau angesehen und birgt erhebliche Risiken bei einer Pr&uuml;fung.</p>
+
+      <h3>Trennung von F&amp;E-T&auml;tigkeiten und Routinearbeit</h3>
+      <p>Es muss klar erkennbar sein, welche T&auml;tigkeiten als F&amp;E eingestuft werden und welche zur normalen Gesch&auml;ftst&auml;tigkeit geh&ouml;ren. Diese Abgrenzung ist besonders wichtig bei Mitarbeitern, die nur <strong>teilweise</strong> in F&amp;E-Projekten t&auml;tig sind. Typische Beispiele f&uuml;r die Abgrenzung:</p>
+      <ul>
+        <li><strong>F&amp;E-T&auml;tigkeit:</strong> Entwicklung eines neuen Algorithmus zur Bilderkennung, Konstruktion eines Prototyps mit neuartiger Materialkombination, Durchf&uuml;hrung von Testreihen zur Validierung eines neuen Verfahrens</li>
+        <li><strong>Keine F&amp;E-T&auml;tigkeit:</strong> Routinem&auml;&szlig;ige Softwarewartung, Qualit&auml;tskontrolle nach Standard-Verfahren, Kundensupport, administrative T&auml;tigkeiten</li>
+      </ul>
+
+      <h3>Plausibilit&auml;tspr&uuml;fung</h3>
+      <p>Das Finanzamt gleicht die angegebenen F&amp;E-Stunden mit der <strong>Gesamtarbeitszeit</strong> des jeweiligen Mitarbeiters ab. Wenn ein Mitarbeiter laut Arbeitsvertrag 40 Stunden pro Woche arbeitet, aber 45 Stunden an F&amp;E-Projekten geltend gemacht werden, f&auml;llt das auf. Ebenso wird gepr&uuml;ft, ob die Anzahl der geltend gemachten Mitarbeiter im Verh&auml;ltnis zur Unternehmensgr&ouml;&szlig;e plausibel ist.</p>
+
+      <h3>Unterschrift und Best&auml;tigung</h3>
+      <p>Die Zeiterfassungsunterlagen sollten durch den <strong>jeweiligen Mitarbeiter</strong> und idealerweise auch durch den <strong>Projektleiter oder Vorgesetzten</strong> best&auml;tigt (unterschrieben oder digital freigegeben) werden. Dies erh&ouml;ht die Glaubw&uuml;rdigkeit der Dokumentation erheblich und ist bei Betriebspr&uuml;fungen ein wichtiger Aspekt.</p>
+
+      <div class="ds-highlight-box">
+        <strong>Praxistipp:</strong> Orientieren Sie sich bei der Zeiterfassung immer an der BSFZ-Bescheinigung. Die dort beschriebenen Vorhaben und Projektlaufzeiten sind der Ma&szlig;stab, an dem das Finanzamt Ihre Zeiterfassung misst. Unstimmigkeiten zwischen BSFZ-Bescheinigung und Zeiterfassung sind einer der h&auml;ufigsten Gr&uuml;nde f&uuml;r R&uuml;ckfragen.
+      </div>
+    </div>
+
+    <!-- Section 3: Methoden -->
+    <div class="ds-section" id="methoden">
+      <h2>Methoden der F&amp;E-Zeiterfassung im Vergleich</h2>
+      <p>In der Praxis haben sich drei grunds&auml;tzliche Methoden der F&amp;E-Zeiterfassung etabliert, die sich in Genauigkeit, Aufwand und Akzeptanz beim Finanzamt unterscheiden. Die Wahl der richtigen Methode h&auml;ngt von der Unternehmensgr&ouml;&szlig;e, der vorhandenen IT-Infrastruktur und davon ab, ob laufende oder r&uuml;ckwirkende Zeitr&auml;ume dokumentiert werden m&uuml;ssen.</p>
+
+      <div class="method-card">
+        <div class="method-badge recommended">Empfohlen</div>
+        <h3>1. Projektbezogene Stundenerfassung</h3>
+        <p>Bei dieser Methode erfasst jeder Mitarbeiter <strong>t&auml;glich oder w&ouml;chentlich</strong> die Stunden, die er an einem bestimmten F&amp;E-Projekt gearbeitet hat. Die Erfassung erfolgt &uuml;ber ein Zeiterfassungstool, eine Projektmanagement-Software oder eine strukturierte Excel-Vorlage mit Projektcodes.</p>
+        <ul>
+          <li><strong>Genauigkeit:</strong> Hoch &ndash; exakte Zuordnung jeder Stunde zu einem Projekt</li>
+          <li><strong>Akzeptanz beim Finanzamt:</strong> Sehr gut &ndash; die beste Grundlage f&uuml;r eine revisionssichere Dokumentation</li>
+          <li><strong>Aufwand:</strong> Mittel bis hoch &ndash; erfordert Disziplin der Mitarbeiter und regelm&auml;&szlig;ige &Uuml;berpr&uuml;fung</li>
+          <li><strong>Geeignet f&uuml;r:</strong> Unternehmen mit strukturierten F&amp;E-Abteilungen, mehreren parallelen Projekten, mittlere und gro&szlig;e Unternehmen</li>
+        </ul>
+      </div>
+
+      <div class="method-card">
+        <div class="method-badge acceptable">Akzeptabel</div>
+        <h3>2. Sch&auml;tzverfahren mit Plausibilisierung</h3>
+        <p>Beim Sch&auml;tzverfahren wird der F&amp;E-Anteil eines Mitarbeiters <strong>pauschal</strong> festgelegt, z.&nbsp;B. &bdquo;60 % der Arbeitszeit f&uuml;r Projekt X&ldquo;. Diese Sch&auml;tzung muss jedoch durch zus&auml;tzliche Nachweise <strong>plausibilisiert</strong> werden &ndash; etwa durch Projektpl&auml;ne, Meilensteinberichte, Protokolle von Projektmeetings oder Fortschrittsberichte.</p>
+        <ul>
+          <li><strong>Genauigkeit:</strong> Mittel &ndash; weniger detailliert als die Stundenerfassung</li>
+          <li><strong>Akzeptanz beim Finanzamt:</strong> Akzeptabel bei konsistenter und nachvollziehbarer Dokumentation</li>
+          <li><strong>Aufwand:</strong> Gering bis mittel &ndash; weniger Aufwand f&uuml;r die Mitarbeiter, aber Mehraufwand bei der Plausibilisierung</li>
+          <li><strong>Geeignet f&uuml;r:</strong> Kleine Unternehmen mit wenigen F&amp;E-Mitarbeitern, Unternehmen mit klar abgegrenzten F&amp;E-Rollen</li>
+        </ul>
+      </div>
+
+      <div class="method-card">
+        <div class="method-badge fallback">F&uuml;r r&uuml;ckwirkende Antr&auml;ge</div>
+        <h3>3. Nachtr&auml;gliche Rekonstruktion</h3>
+        <p>Bei r&uuml;ckwirkenden Antr&auml;gen f&uuml;r vergangene Wirtschaftsjahre (2020&ndash;2025) existiert h&auml;ufig keine projektbezogene Zeiterfassung. In diesem Fall muss die Zeitverteilung <strong>nachtr&auml;glich rekonstruiert</strong> werden. Als Quellen dienen:</p>
+        <ul>
+          <li>Projektpl&auml;ne und Meilensteinberichte</li>
+          <li>E-Mail-Verl&auml;ufe und Kalendereintr&auml;ge</li>
+          <li>Git-Commits, Jira-/Confluence-Tickets, Versionsverwaltung</li>
+          <li>Protokolle von Projektmeetings</li>
+          <li>Reisekostenabrechnungen zu Projektterminen</li>
+          <li>Eidesstattliche Erkl&auml;rungen der beteiligten Mitarbeiter</li>
+        </ul>
+        <p>Die nachtr&auml;gliche Rekonstruktion erfordert besondere Sorgfalt und Erfahrung, da die Dokumentation l&uuml;ckenlos und in sich schl&uuml;ssig sein muss. NOVARIS Consulting unterst&uuml;tzt Unternehmen gezielt bei der <strong>revisionssicheren Aufbereitung</strong> vergangener Zeitr&auml;ume und hat hierf&uuml;r erprobte Prozesse und Vorlagen entwickelt.</p>
+      </div>
+
+      <div class="ds-highlight-box">
+        <strong>Empfehlung:</strong> F&uuml;r laufende Wirtschaftsjahre ist die projektbezogene Stundenerfassung der Goldstandard. F&uuml;r r&uuml;ckwirkende Zeitr&auml;ume ist die nachtr&auml;gliche Rekonstruktion oft die einzige Option &ndash; aber mit professioneller Unterst&uuml;tzung durchaus erfolgreich. Entscheidend ist in jedem Fall die Konsistenz: Alle Dokumente m&uuml;ssen ein stimmiges Gesamtbild ergeben.
+      </div>
+    </div>
+
+    <!-- Section 4: Tools -->
+    <div class="ds-section" id="tools">
+      <h2>Empfohlene Tools f&uuml;r die F&amp;E-Zeiterfassung</h2>
+      <p>Die Wahl des richtigen Werkzeugs h&auml;ngt von der Gr&ouml;&szlig;e Ihres Unternehmens, der vorhandenen IT-Infrastruktur und der Anzahl Ihrer F&amp;E-Mitarbeiter ab. Grunds&auml;tzlich lassen sich drei Kategorien unterscheiden:</p>
+
+      <h3>ERP-Systeme mit Projektmodul</h3>
+      <p>Unternehmen, die bereits ein ERP-System wie <strong>SAP</strong>, <strong>Microsoft Dynamics</strong> oder <strong>DATEV</strong> nutzen, k&ouml;nnen h&auml;ufig die integrierte Projektzeit-Erfassung verwenden. Der Vorteil: Die Daten sind direkt mit der Lohnbuchhaltung verkn&uuml;pft, was die sp&auml;tere Berechnung der Bemessungsgrundlage erheblich vereinfacht. Die Zeiterfassung ist automatisch mit den Gehaltsdaten konsistent &ndash; ein wichtiger Pluspunkt bei der Pr&uuml;fung durch das Finanzamt.</p>
+
+      <h3>Dedizierte Zeiterfassungstools</h3>
+      <p>Spezialisierte L&ouml;sungen wie <strong>Clockodo</strong>, <strong>TimeTac</strong>, <strong>Personio</strong> oder <strong>Toggl</strong> bieten projektbezogene Zeiterfassung mit detaillierten Auswertungsm&ouml;glichkeiten. Viele dieser Tools verf&uuml;gen &uuml;ber Export-Funktionen, Audit-Trails und Genehmigungsworkflows, die f&uuml;r die FZulG-Dokumentation besonders n&uuml;tzlich sind. Achten Sie bei der Auswahl auf:</p>
+      <ul>
+        <li><strong>Projektbezug:</strong> M&ouml;glichkeit, Zeiten konkreten Projekten (und idealerweise BSFZ-Vorhabennummern) zuzuordnen</li>
+        <li><strong>Export-Funktion:</strong> Strukturierter Export der Daten (CSV, PDF) f&uuml;r die Vorlage beim Finanzamt</li>
+        <li><strong>Audit-Trail:</strong> Nachvollziehbarkeit, wann Eintr&auml;ge erstellt oder ge&auml;ndert wurden</li>
+        <li><strong>Freigabe-Workflow:</strong> M&ouml;glichkeit der Best&auml;tigung durch Vorgesetzte/Projektleiter</li>
+      </ul>
+
+      <h3>Einfache L&ouml;sungen f&uuml;r kleine Unternehmen</h3>
+      <p>F&uuml;r Unternehmen mit wenigen F&amp;E-Mitarbeitern kann auch eine <strong>strukturierte Excel-Vorlage</strong> mit Projektcodes ausreichend sein. Entscheidend ist, dass die Vorlage alle erforderlichen Informationen enth&auml;lt: Mitarbeitername, Kalenderwoche/Tag, Projektbezeichnung (analog zur BSFZ-Bescheinigung), Stundenzahl und eine Unterschriftenzeile. NOVARIS stellt im Rahmen der Beratung eine <strong>kostenlose FZulG-konforme Excel-Vorlage</strong> zur Verf&uuml;gung.</p>
+
+      <div class="ds-box" style="margin-top:1rem">
+        <strong>Worauf Sie bei der Tool-Auswahl achten sollten:</strong><br /><br />
+        Unabh&auml;ngig von der gew&auml;hlten L&ouml;sung m&uuml;ssen vier Kriterien erf&uuml;llt sein: (1) Projektbezogene Zuordnung der Arbeitszeiten, (2) nachtr&auml;gliche Unver&auml;nderbarkeit oder Versionierung der Eintr&auml;ge (Audit-Trail), (3) M&ouml;glichkeit des strukturierten Datenexports f&uuml;r das Finanzamt, und (4) Archivierungsm&ouml;glichkeit f&uuml;r mindestens 10 Jahre. Wenn Ihr bestehendes Tool diese Kriterien erf&uuml;llt, m&uuml;ssen Sie kein neues System einf&uuml;hren.
+      </div>
+    </div>
+
+    <!-- Section 5: Häufige Fehler -->
+    <div class="ds-section" id="fehler">
+      <h2>Die 5 h&auml;ufigsten Fehler bei der Zeiterfassung &ndash; und wie Sie sie vermeiden</h2>
+      <p>Aus unserer langj&auml;hrigen Beratungspraxis kennen wir die typischen Stolperfallen, die Unternehmen bei der F&amp;E-Zeiterfassung begegnen. Die folgenden f&uuml;nf Fehler sehen wir immer wieder &ndash; und sie alle lassen sich mit den richtigen Ma&szlig;nahmen vermeiden.</p>
+
+      <h3>Fehler 1: Keine Trennung zwischen F&amp;E und Routine</h3>
+      <p>Der h&auml;ufigste Fehler: Mitarbeiter erfassen ihre Gesamtarbeitszeit, aber <strong>ohne Unterscheidung zwischen F&amp;E-T&auml;tigkeiten und Routinearbeit</strong>. Das Finanzamt verlangt jedoch eine klare Abgrenzung. Wenn ein Softwareentwickler sowohl an einem neuen KI-Algorithmus (F&amp;E) als auch an Bugfixes im laufenden Betrieb (keine F&amp;E) arbeitet, m&uuml;ssen diese T&auml;tigkeiten separat erfasst werden.</p>
+      <p><strong>L&ouml;sung:</strong> Definieren Sie klare Kriterien, welche T&auml;tigkeiten als F&amp;E gelten und welche nicht. Schulen Sie Ihre Mitarbeiter entsprechend und verwenden Sie in der Zeiterfassung separate Projektnummern f&uuml;r F&amp;E und Nicht-F&amp;E.</p>
+
+      <h3>Fehler 2: Zu grobe Erfassung</h3>
+      <p>Eine rein <strong>monatliche</strong> Erfassung (&bdquo;Im Januar habe ich ca. 80 Stunden an Projekt X gearbeitet&ldquo;) wird von Finanz&auml;mtern zunehmend als unzureichend angesehen. Je gr&ouml;ber die Erfassung, desto gr&ouml;&szlig;er das Risiko, dass die Plausibilit&auml;t infrage gestellt wird.</p>
+      <p><strong>L&ouml;sung:</strong> Erfassen Sie mindestens wochengenau, idealerweise tagesgenau. Bei wochengenauer Erfassung sollten die Stunden pro Projekt und Kalenderwoche dokumentiert werden.</p>
+
+      <h3>Fehler 3: Fehlende Projektbezogenheit</h3>
+      <p>Manche Unternehmen erfassen zwar F&amp;E-Stunden, ordnen sie aber <strong>keinem spezifischen Projekt</strong> zu. Stattdessen wird pauschal &bdquo;F&amp;E&ldquo; oder &bdquo;Entwicklung&ldquo; als Kategorie verwendet. Das gen&uuml;gt den Anforderungen nicht &ndash; die Zeiterfassung muss auf die einzelnen, bei der BSFZ bescheinigten Vorhaben heruntergebrochen werden.</p>
+      <p><strong>L&ouml;sung:</strong> F&uuml;hren Sie f&uuml;r jedes BSFZ-Vorhaben eine eigene Projektnummer in Ihrer Zeiterfassung. Die Bezeichnungen sollten konsistent mit den Projekttiteln in der BSFZ-Bescheinigung sein.</p>
+
+      <h3>Fehler 4: Keine Ber&uuml;cksichtigung von Teilzeitkr&auml;ften und Werkstudenten</h3>
+      <p>Viele Unternehmen erfassen nur die F&amp;E-Stunden ihrer Vollzeitkr&auml;fte und vergessen dabei, dass auch <strong>Teilzeitkr&auml;fte, Werkstudenten, Auszubildende und befristet Besch&auml;ftigte</strong> f&ouml;rderf&auml;hig sind &ndash; sofern sie in F&amp;E-Projekten t&auml;tig sind. Gerade Werkstudenten und Doktoranden leisten oft einen erheblichen Beitrag zur F&amp;E, der ungenutzt bleibt.</p>
+      <p><strong>L&ouml;sung:</strong> &Uuml;berpr&uuml;fen Sie Ihre gesamte Belegschaft auf F&amp;E-Beteiligung. Erfassen Sie auch die Arbeitszeiten von Teilzeitkr&auml;ften, Werkstudenten und Praktikanten, sofern diese in bescheinigten Vorhaben t&auml;tig sind.</p>
+
+      <h3>Fehler 5: Zeiterfassung erst nachtr&auml;glich eingef&uuml;hrt</h3>
+      <p>Besonders bei r&uuml;ckwirkenden Antr&auml;gen sehen wir immer wieder, dass Unternehmen &uuml;ber Jahre hinweg <strong>keine projektbezogene Zeiterfassung</strong> gef&uuml;hrt haben und diese nun &bdquo;nachtr&auml;glich&ldquo; erstellen wollen. Das ist zwar m&ouml;glich (siehe Methode 3: Nachtr&auml;gliche Rekonstruktion), erfordert aber einen deutlich h&ouml;heren Aufwand und birgt das Risiko geringerer Genauigkeit.</p>
+      <p><strong>L&ouml;sung:</strong> Beginnen Sie <strong>sofort</strong> mit einer strukturierten Zeiterfassung f&uuml;r alle laufenden und zuk&uuml;nftigen F&amp;E-Projekte. F&uuml;r vergangene Jahre lassen Sie die Rekonstruktion am besten von einem erfahrenen FZulG-Berater durchf&uuml;hren, der die Anforderungen der Finanz&auml;mter kennt.</p>
+
+      <div class="ds-highlight-box">
+        <strong>Unser Tipp:</strong> Die meisten dieser Fehler lassen sich durch eine einmalige Einrichtung der richtigen Prozesse und Vorlagen vermeiden. NOVARIS unterst&uuml;tzt Sie bei der Konzeption und Implementierung einer FZulG-konformen Zeiterfassung &ndash; kostenlos im Rahmen unserer Beratung.
+      </div>
+    </div>
+
+    <!-- Section 6: Checkliste -->
+    <div class="ds-section" id="checkliste">
+      <h2>Checkliste: Ist Ihre Zeiterfassung FZulG-konform?</h2>
+      <p>Nutzen Sie die folgende Checkliste, um zu pr&uuml;fen, ob Ihre aktuelle Zeiterfassung den Anforderungen f&uuml;r die Forschungszulage gen&uuml;gt. Wenn Sie alle Punkte mit &bdquo;Ja&ldquo; beantworten k&ouml;nnen, sind Sie auf der sicheren Seite.</p>
+
+      <div class="checklist">
+        <div class="checklist-item">
+          <span class="checklist-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1E56B5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </span>
+          <span><strong>Projektbezogene Zuordnung</strong> aller F&amp;E-Stunden zu den einzelnen BSFZ-Vorhaben</span>
+        </div>
+        <div class="checklist-item">
+          <span class="checklist-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1E56B5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </span>
+          <span><strong>Tages- oder wochengenaue Erfassung</strong> der Arbeitszeiten (nicht nur monatlich)</span>
+        </div>
+        <div class="checklist-item">
+          <span class="checklist-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1E56B5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </span>
+          <span><strong>Klare Abgrenzung</strong> zwischen F&amp;E-T&auml;tigkeiten und Nicht-F&amp;E-T&auml;tigkeiten</span>
+        </div>
+        <div class="checklist-item">
+          <span class="checklist-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1E56B5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </span>
+          <span><strong>Unterschrift/Freigabe</strong> durch den jeweiligen Mitarbeiter und den Projektleiter</span>
+        </div>
+        <div class="checklist-item">
+          <span class="checklist-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1E56B5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </span>
+          <span><strong>Archivierung f&uuml;r mindestens 10 Jahre</strong> gem&auml;&szlig; steuerlicher Aufbewahrungspflichten</span>
+        </div>
+        <div class="checklist-item">
+          <span class="checklist-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1E56B5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </span>
+          <span><strong>Konsistenz mit BSFZ-Projektbeschreibungen</strong> &ndash; Projektnamen und -laufzeiten stimmen &uuml;berein</span>
+        </div>
+        <div class="checklist-item">
+          <span class="checklist-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1E56B5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </span>
+          <span><strong>Ber&uuml;cksichtigung aller relevanten Mitarbeiter</strong> inkl. Teilzeitkr&auml;fte, Werkstudenten und Auszubildende</span>
+        </div>
+      </div>
+
+      <div class="ds-box" style="margin-top:1rem">
+        <strong>Nicht alle Punkte erf&uuml;llt?</strong> Kein Grund zur Sorge &ndash; die meisten L&uuml;cken lassen sich schnell schlie&szlig;en. Kontaktieren Sie uns f&uuml;r eine kostenlose Einsch&auml;tzung, welche Ma&szlig;nahmen in Ihrem Fall erforderlich sind und wie wir Sie bei der Umsetzung unterst&uuml;tzen k&ouml;nnen.
+      </div>
+    </div>
+
+    <!-- Section 7: FAQ -->
+    <div class="ds-section" id="faq">
+      <h2>H&auml;ufig gestellte Fragen zur Zeiterfassung</h2>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')" aria-expanded="false">
+          Muss ich die Zeiterfassung tagesgenau f&uuml;hren?
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            Eine tagesgenaue Zeiterfassung wird empfohlen und bietet die h&ouml;chste Sicherheit bei Pr&uuml;fungen durch das Finanzamt. In der Praxis wird jedoch auch eine wochengenaue Erfassung in den meisten F&auml;llen akzeptiert, sofern die Zuordnung zu einzelnen F&amp;E-Projekten klar erkennbar ist und die Gesamtarbeitszeit plausibel aufgeteilt wird. Eine monatliche Erfassung birgt hingegen erhebliche Risiken und sollte vermieden werden.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')" aria-expanded="false">
+          Was passiert, wenn ich keine Zeiterfassung habe?
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            Ohne eine nachvollziehbare Zeiterfassung riskieren Sie eine K&uuml;rzung oder vollst&auml;ndige Ablehnung der Forschungszulage durch das Finanzamt. F&uuml;r vergangene Jahre besteht jedoch die M&ouml;glichkeit einer nachtr&auml;glichen Rekonstruktion auf Basis von Projektpl&auml;nen, E-Mail-Verl&auml;ufen, Jira-Tickets, Git-Commits und anderen Dokumenten. NOVARIS unterst&uuml;tzt Sie bei der revisionssicheren Aufbereitung dieser Unterlagen.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')" aria-expanded="false">
+          K&ouml;nnen Gesch&auml;ftsf&uuml;hrer ihre eigene F&amp;E-Zeit geltend machen?
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            Ja, Gesch&auml;ftsf&uuml;hrer und Gesellschafter k&ouml;nnen ihre eigene F&amp;E-T&auml;tigkeit geltend machen. F&uuml;r Einzelunternehmer und Gesellschafter, die nicht als Arbeitnehmer des Unternehmens gelten, greift die Eigenleistungspauschale von 70 EUR pro Stunde (maximal 40 Stunden pro Woche). Voraussetzung ist, dass die F&amp;E-T&auml;tigkeit nachweisbar und von der reinen Gesch&auml;ftsf&uuml;hrungst&auml;tigkeit klar abgrenzbar ist. Eine detaillierte Zeiterfassung ist hier besonders wichtig.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')" aria-expanded="false">
+          Wie dokumentiere ich Auftragsforschung?
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            Bei Auftragsforschung ben&ouml;tigen Sie den Forschungsvertrag, die Rechnungen des Auftragnehmers sowie Leistungsnachweise (z.&nbsp;B. Zwischenberichte, Abschlussberichte). F&ouml;rderf&auml;hig sind 60 % des an den Auftragnehmer gezahlten Entgelts. Der Auftragnehmer muss in der EU oder im EWR ans&auml;ssig sein. Eine projektbezogene Zeiterfassung des Auftragnehmers ist nicht erforderlich &ndash; die Dokumentationspflicht liegt auf Ihrer Seite als Auftraggeber.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')" aria-expanded="false">
+          Bietet NOVARIS Vorlagen f&uuml;r die Zeiterfassung?
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            Ja, NOVARIS stellt Ihnen im Rahmen der Beratung kostenlose Vorlagen f&uuml;r die projektbezogene F&amp;E-Zeiterfassung zur Verf&uuml;gung. Diese Vorlagen sind auf die Anforderungen des FZulG und die Pr&uuml;fungspraxis der Finanz&auml;mter abgestimmt und helfen Ihnen, von Anfang an revisionssicher zu dokumentieren. Die Vorlagen sind sowohl als Excel-Datei als auch als PDF verf&uuml;gbar.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Related Content -->
+    <div class="ds-section" id="weiterfuehrend" style="margin-top:2rem">
+      <h2>Weiterf&uuml;hrende Inhalte</h2>
+      <p>Vertiefen Sie Ihr Wissen mit unseren spezialisierten Ressourcen:</p>
+      <ul>
+        <li><a href="/forschungszulage.html" style="color:#1E56B5;font-weight:600"><strong>Forschungszulage Leitfaden</strong></a> &ndash; Alles zum FZulG: Voraussetzungen, F&ouml;rderh&ouml;he, Antragsverfahren</li>
+        <li><a href="/forschungszulage-antrag.html" style="color:#1E56B5;font-weight:600"><strong>Forschungszulage beantragen</strong></a> &ndash; Schritt-f&uuml;r-Schritt Anleitung zum gesamten Antragsprozess</li>
+        <li><a href="/forschungszulage-rechner.html" style="color:#1E56B5;font-weight:600"><strong>Forschungszulagen Rechner</strong></a> &ndash; Berechnen Sie Ihre individuelle F&ouml;rderung in 30 Sekunden</li>
+      </ul>
+    </div>
+
+    <!-- CTA Box -->
+    <div class="cta-section">
+      <h2>Unsichere Zeiterfassung? Wir helfen.</h2>
+      <p>Lassen Sie Ihre F&amp;E-Dokumentation von unseren Experten pr&uuml;fen &ndash; kostenlos und unverbindlich. Wir zeigen Ihnen, wie Sie Ihre Zeiterfassung optimieren und die maximale Forschungszulage sichern.</p>
+      <a href="/#kontakt" class="btn-primary" style="padding:0.7rem 1.8rem;font-size:0.9rem">
+        Kostenlose Erstberatung anfragen
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+
+  </div>
+</main>
+
+<footer style="background:#04091a;border-top:1px solid rgba(255,255,255,0.07)">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
+      <div class="lg:col-span-2">
+        <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto;margin-bottom:1rem" />
+        <p style="font-size:0.82rem;color:rgba(195,215,245,0.38);line-height:1.72;max-width:320px">
+          NOVARIS Consulting ist Ihr spezialisierter Full-Service-Partner f&uuml;r die staatliche
+          Forschungszulage nach dem FZulG &ndash; erfolgsbasiert, transparent und ohne Risiko.
+        </p>
+      </div>
+      <div>
+        <div style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.75rem;letter-spacing:0.09em;text-transform:uppercase;color:rgba(195,215,245,0.3);margin-bottom:1rem">Navigation</div>
+        <div style="display:flex;flex-direction:column;gap:0.55rem">
+          <a href="/#was-ist-fzulg" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Das FZulG</a>
+          <a href="/#prozess"       style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Prozess</a>
+          <a href="/#vorteile"      style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Vorteile</a>
+          <a href="/#faq"           style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">FAQ</a>
+          <a href="/#kontakt"       style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Kontakt</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.75rem;letter-spacing:0.09em;text-transform:uppercase;color:rgba(195,215,245,0.3);margin-bottom:1rem">Rechtliches</div>
+        <div style="display:flex;flex-direction:column;gap:0.55rem">
+          <a href="/impressum.html"  style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Impressum</a>
+          <a href="/datenschutz.html" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Datenschutz</a>
+          <a href="/agb.html"        style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">AGB</a>
+          <a href="javascript:void(0)" onclick="CookieConsent.reset();CookieConsent.request(function(){});" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Cookie-Einstellungen</a>
+        </div>
+      </div>
+    </div>
+    <div style="height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.08) 25%,rgba(255,255,255,0.08) 75%,transparent);margin-bottom:1.5rem"></div>
+    <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem">
+      <p style="font-size:0.73rem;color:rgba(195,215,245,0.25)">&copy; 2026 NOVARIS Consulting &middot; Alle Rechte vorbehalten.</p>
+      <p style="font-size:0.73rem;color:rgba(195,215,245,0.18)">Diese Website stellt keine Steuer- oder Rechtsberatung dar.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function() {
+    if (localStorage.getItem('theme') === 'dark') {
+      document.documentElement.classList.add('dark');
+    }
+  })();
+
+  function toggleDark() {
+    const dark = document.documentElement.classList.toggle('dark');
+    localStorage.setItem('theme', dark ? 'dark' : 'light');
+    _updateDarkBtn();
+  }
+
+  function _updateDarkBtn() {
+    const dark = document.documentElement.classList.contains('dark');
+    const moon = document.getElementById('icon-moon');
+    const sun  = document.getElementById('icon-sun');
+    if (moon) moon.style.display = dark ? 'none'  : 'block';
+    if (sun)  sun.style.display  = dark ? 'block' : 'none';
+  }
+
+  window.addEventListener('DOMContentLoaded', _updateDarkBtn);
+</script>
+
+<script src="/cookie-consent.js" defer></script>
+<script src="/analytics.js" defer></script>
+</body>
+</html>

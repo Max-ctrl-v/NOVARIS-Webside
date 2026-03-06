@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forschungszulage bei Auftragsforschung: 60%-Regel richtig anwenden | NOVARIS</title>
+  <meta name="description" content="Auftragsforschung und Forschungszulage: Wann sind externe F&E-Kosten förderfähig? Die 60%-Regel, EWR-Anforderung und typische Fehler erklärt." />
+  <meta name="keywords" content="Forschungszulage Auftragsforschung, FZulG externe Forschung, Auftragsforschung förderfähig, Forschungszulage 60 Prozent, FZulG Fremdforschung" />
+  <link rel="canonical" href="https://novaris-consulting.com/forschungszulage-auftragsforschung.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Forschungszulage bei Auftragsforschung: 60%-Regel richtig anwenden | NOVARIS" />
+  <meta property="og:description" content="Auftragsforschung und Forschungszulage: Wann sind externe F&E-Kosten förderfähig? Die 60%-Regel, EWR-Anforderung und typische Fehler erklärt." />
+  <meta property="og:url" content="https://novaris-consulting.com/forschungszulage-auftragsforschung.html" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:site_name" content="NOVARIS Consulting" />
+  <meta property="og:image" content="https://novaris-consulting.com/brand_assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Forschungszulage bei Auftragsforschung: 60%-Regel | NOVARIS" />
+  <meta name="twitter:description" content="Auftragsforschung und Forschungszulage: Wann sind externe F&E-Kosten förderfähig? Die 60%-Regel erklärt." />
+  <meta name="twitter:image" content="https://novaris-consulting.com/brand_assets/og-image.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --bg-base:    #ffffff;
+      --bg-raised:  #f5f8fe;
+      --bg-card:    #ffffff;
+      --clr-h:      #0D1B3E;
+      --clr-b:      #5a6e8c;
+      --clr-muted:  #4a5870;
+      --bdr:        #dde5f4;
+    }
+    html.dark {
+      --bg-base:    #0a1428;
+      --bg-raised:  #0D1B3E;
+      --bg-card:    #122244;
+      --clr-h:      #e8f0fa;
+      --clr-b:      #8aaac8;
+      --clr-muted:  #6888a8;
+      --bdr:        rgba(77,174,229,0.18);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg-base);
+      color: var(--clr-h);
+      transition: background 0.25s ease, color 0.25s ease;
+      line-height: 1.7;
+    }
+
+    .nav-blur { backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); }
+    .logo-img { height: 52px; width: auto; display: block; }
+
+    .nav-link {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.84rem;
+      font-weight: 500;
+      color: rgba(195,215,245,0.70);
+      text-decoration: none;
+      padding: 0.42rem 0.85rem;
+      border-radius: 8px;
+      transition: color 0.15s ease, background 0.15s ease;
+      letter-spacing: 0.01em;
+    }
+    .nav-link:hover { color: #fff; background: rgba(255,255,255,0.07); }
+    .nav-link:focus-visible { outline: 2px solid #4DAEE5; outline-offset: 2px; }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background: #1E56B5;
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 0.84rem;
+      border: none;
+      border-radius: 10px;
+      text-decoration: none;
+      cursor: pointer;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.3), 0 4px 12px rgba(30,86,181,0.35);
+      transition: background 0.15s ease, transform 0.12s ease, box-shadow 0.15s ease;
+    }
+    .btn-primary:hover  { background: #2563c4; box-shadow: 0 2px 4px rgba(0,0,0,0.3), 0 6px 18px rgba(30,86,181,0.45); transform: translateY(-1px); }
+    .btn-primary:active { transform: translateY(0); }
+    .btn-primary:focus-visible { outline: 2px solid #4DAEE5; outline-offset: 2px; }
+
+    .content-wrap {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 6rem 1.5rem 5rem;
+    }
+
+    .ds-breadcrumb {
+      font-size: 0.78rem;
+      color: var(--clr-b);
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .ds-breadcrumb a {
+      color: #4DAEE5;
+      text-decoration: none;
+      transition: color 0.14s ease;
+    }
+    .ds-breadcrumb a:hover { color: #7ec8f0; }
+
+    .ds-eyebrow {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #4DAEE5;
+      margin-bottom: 0.9rem;
+    }
+
+    .ds-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: var(--clr-h);
+      line-height: 1.15;
+      margin-bottom: 0.5rem;
+    }
+
+    .ds-subtitle {
+      font-size: 0.95rem;
+      color: var(--clr-b);
+      line-height: 1.75;
+      margin-bottom: 0.5rem;
+      max-width: 640px;
+    }
+
+    .ds-updated {
+      font-size: 0.78rem;
+      color: var(--clr-b);
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--bdr);
+    }
+
+    .ds-section {
+      margin-bottom: 2.8rem;
+    }
+    .ds-section h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.12rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: var(--clr-h);
+      margin-bottom: 0.9rem;
+      padding-bottom: 0.55rem;
+      border-bottom: 1px solid var(--bdr);
+    }
+    .ds-section h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--clr-h);
+      margin-top: 1.4rem;
+      margin-bottom: 0.5rem;
+    }
+    .ds-section p {
+      font-size: 0.9rem;
+      color: var(--clr-b);
+      line-height: 1.75;
+      margin-bottom: 0.85rem;
+    }
+    .ds-section ul, .ds-section ol {
+      margin: 0.5rem 0 0.85rem 1.1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+    .ds-section ul li, .ds-section ol li {
+      font-size: 0.9rem;
+      color: var(--clr-b);
+      line-height: 1.65;
+    }
+    .ds-section a {
+      color: #4DAEE5;
+      text-decoration: none;
+      transition: color 0.14s ease;
+    }
+    .ds-section a:hover { color: #7ec8f0; text-decoration: underline; }
+
+    .ds-box {
+      background: var(--bg-raised);
+      border: 1px solid var(--bdr);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      font-size: 0.88rem;
+      color: var(--clr-b);
+      line-height: 1.7;
+      margin: 1rem 0 1.2rem;
+      transition: background 0.25s ease, border-color 0.25s ease;
+    }
+    .ds-box strong {
+      color: var(--clr-h);
+      font-weight: 600;
+    }
+
+    .ds-highlight-box {
+      background: var(--bg-raised);
+      border: 1px solid var(--bdr);
+      border-left: 4px solid #1E56B5;
+      border-radius: 0 12px 12px 0;
+      padding: 1.25rem 1.5rem;
+      font-size: 0.88rem;
+      color: var(--clr-b);
+      line-height: 1.7;
+      margin: 1rem 0 1.2rem;
+      transition: background 0.25s ease, border-color 0.25s ease;
+    }
+    .ds-highlight-box strong {
+      color: var(--clr-h);
+      font-weight: 600;
+    }
+
+    .ds-table-wrap {
+      overflow-x: auto;
+      margin: 1rem 0 1.2rem;
+      border-radius: 12px;
+      border: 1px solid var(--bdr);
+    }
+    .ds-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+    }
+    .ds-table th {
+      background: var(--bg-raised);
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 0.78rem;
+      letter-spacing: 0.02em;
+      color: var(--clr-h);
+      text-align: left;
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid var(--bdr);
+    }
+    .ds-table td {
+      padding: 0.65rem 1rem;
+      color: var(--clr-b);
+      border-bottom: 1px solid var(--bdr);
+      line-height: 1.55;
+    }
+    .ds-table tr:last-child td { border-bottom: none; }
+    html.dark .ds-table th { background: var(--bg-card); }
+
+    .faq-item {
+      border: 1px solid var(--bdr);
+      border-radius: 12px;
+      margin-bottom: 0.65rem;
+      overflow: hidden;
+      transition: border-color 0.25s ease;
+    }
+    .faq-q {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      width: 100%;
+      padding: 1rem 1.25rem;
+      background: var(--bg-raised);
+      border: none;
+      cursor: pointer;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--clr-h);
+      text-align: left;
+      line-height: 1.5;
+      transition: background 0.15s ease, color 0.15s ease;
+    }
+    .faq-q:hover { background: var(--bg-raised); opacity: 0.85; }
+    .faq-q:focus-visible { outline: 2px solid #4DAEE5; outline-offset: -2px; }
+    .faq-q svg {
+      flex-shrink: 0;
+      transition: transform 0.2s ease;
+    }
+    .faq-item.open .faq-q svg { transform: rotate(180deg); }
+    .faq-a {
+      display: none;
+      padding: 0 1.25rem 1rem;
+      font-size: 0.87rem;
+      color: var(--clr-b);
+      line-height: 1.7;
+    }
+    .faq-item.open .faq-a { display: block; }
+    html.dark .faq-q { background: var(--bg-card); }
+
+    .cta-section {
+      background: var(--bg-raised);
+      border: 1px solid var(--bdr);
+      border-radius: 16px;
+      padding: 2.5rem 2rem;
+      text-align: center;
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+      transition: background 0.25s ease, border-color 0.25s ease;
+    }
+    .cta-section h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: var(--clr-h);
+      margin-bottom: 0.8rem;
+      border: none;
+      padding-bottom: 0;
+    }
+    .cta-section p {
+      font-size: 0.9rem;
+      color: var(--clr-b);
+      line-height: 1.75;
+      margin-bottom: 1.5rem;
+      max-width: 560px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .toc {
+      background: var(--bg-raised);
+      border: 1px solid var(--bdr);
+      border-radius: 12px;
+      padding: 1.5rem 1.75rem;
+      margin-bottom: 2.8rem;
+      transition: background 0.25s ease, border-color 0.25s ease;
+    }
+    html.dark .toc { background: var(--bg-card); }
+    .toc-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--clr-muted);
+      margin-bottom: 0.8rem;
+    }
+    .toc ol {
+      margin: 0;
+      padding-left: 1.1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+    .toc ol li {
+      font-size: 0.85rem;
+      color: var(--clr-b);
+      line-height: 1.55;
+    }
+    .toc ol li a {
+      color: #4DAEE5;
+      text-decoration: none;
+      transition: color 0.14s ease;
+    }
+    .toc ol li a:hover { color: #7ec8f0; }
+
+    footer { background: #04091a; border-top: 1px solid rgba(255,255,255,0.07); }
+
+    html.dark .ds-box { background: var(--bg-card); }
+    html.dark .ds-highlight-box { background: var(--bg-card); }
+    html.dark .cta-section { background: var(--bg-card); }
+    .logo-light { display: none; }
+    html.dark .logo-dark  { display: none !important; }
+    html.dark .logo-light { display: inline !important; }
+
+    html { overflow-y: scroll; }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: rgba(77,174,229,0.38); border-radius: 999px; }
+    ::-webkit-scrollbar-thumb:hover { background: rgba(77,174,229,0.55); }
+    html { scrollbar-width: thin; scrollbar-color: rgba(77,174,229,0.38) transparent; }
+    html.dark ::-webkit-scrollbar-thumb { background: rgba(77,174,229,0.30); }
+    html.dark ::-webkit-scrollbar-thumb:hover { background: rgba(77,174,229,0.48); }
+    html.dark { scrollbar-color: rgba(77,174,229,0.30) transparent; }
+  </style>
+  <link rel="stylesheet" href="/page-transition.css" />
+  <link rel="stylesheet" href="/cookie-consent.css" />
+  <script src="/page-transition.js" defer></script>
+
+  <!-- BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://novaris-consulting.com/"},
+      {"@type": "ListItem", "position": 2, "name": "Forschungszulage", "item": "https://novaris-consulting.com/forschungszulage.html"},
+      {"@type": "ListItem", "position": 3, "name": "Auftragsforschung", "item": "https://novaris-consulting.com/forschungszulage-auftragsforschung.html"}
+    ]
+  }
+  </script>
+
+  <!-- Article Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Forschungszulage bei Auftragsforschung: Die 60%-Regel verstehen und nutzen",
+    "description": "Auftragsforschung und Forschungszulage: Wann sind externe F&E-Kosten förderfähig? Die 60%-Regel, EWR-Anforderung und typische Fehler erklärt.",
+    "author": {
+      "@type": "Organization",
+      "name": "NOVARIS Consulting",
+      "url": "https://novaris-consulting.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "NOVARIS Consulting",
+      "url": "https://novaris-consulting.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://novaris-consulting.com/brand_assets/Logo V5-light.svg"
+      }
+    },
+    "datePublished": "2026-03-06",
+    "dateModified": "2026-03-06",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://novaris-consulting.com/forschungszulage-auftragsforschung.html"
+    },
+    "keywords": ["Forschungszulage Auftragsforschung", "FZulG externe Forschung", "Auftragsforschung förderfähig", "Forschungszulage 60 Prozent", "FZulG Fremdforschung"]
+  }
+  </script>
+
+  <!-- FAQ Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Ist Auftragsforschung in Großbritannien noch förderfähig?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nein. Seit dem Brexit ist das Vereinigte Königreich nicht mehr Mitglied des Europäischen Wirtschaftsraums (EWR). Auftragsforschung an britische Einrichtungen ist daher seit dem 01.01.2021 nicht mehr im Rahmen der Forschungszulage förderfähig. Unternehmen sollten auf EWR-Alternativen ausweichen, beispielsweise auf Forschungseinrichtungen in den Niederlanden, Österreich oder Skandinavien."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Können Kosten an verbundene Unternehmen als Auftragsforschung gelten?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, grundsätzlich können auch Aufträge an verbundene Unternehmen als Auftragsforschung im Sinne des FZulG gelten. Voraussetzung ist, dass die Leistungsbeziehung wirtschaftlich separiert ist – also ein marktüblicher Vertrag vorliegt, die Vergütung dem Fremdvergleichsgrundsatz entspricht und der Auftragnehmer die Leistung eigenständig erbringt. Besonders wichtig: Es darf keine Doppelförderung stattfinden."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Gilt die 60%-Regel auch für Teilleistungen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, die 60%-Regel gilt auch für Teilleistungen. Wenn eine Rechnung sowohl F&E-Leistungen als auch Nicht-F&E-Leistungen umfasst, werden nur die F&E-relevanten Anteile berücksichtigt. Von diesem F&E-Anteil sind dann 60% als Bemessungsgrundlage ansetzbar. Eine saubere Aufschlüsselung der Rechnung in F&E- und Nicht-F&E-Anteile ist daher essenziell."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Was ist, wenn der Auftragnehmer auch eigene F&E betreibt?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Jedes Unternehmen kann nur seine eigenen F&E-Kosten geltend machen. Der Auftragnehmer darf die Kosten, die er im Rahmen der Auftragsforschung erbringt, nicht zusätzlich als eigene F&E bei der Forschungszulage ansetzen. Betreibt der Auftragnehmer darüber hinaus eigene, separate F&E-Projekte, kann er diese selbstverständlich unabhängig geltend machen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wie dokumentiere ich Auftragsforschung richtig?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Eine revisionssichere Dokumentation der Auftragsforschung umfasst: den schriftlichen Forschungsvertrag mit klarem F&E-Bezug, alle Rechnungen mit Aufschlüsselung der F&E-Anteile, Leistungsnachweise und Zwischenberichte, die Korrespondenz zum Projektverlauf sowie Nachweise über die IP-Rechte-Übertragung. NOVARIS unterstützt bei der Erstellung einer vollständigen Dokumentation."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<header id="nav" class="fixed inset-x-0 top-0 z-50 nav-blur"
+        style="background:rgba(4,9,26,0.88);border-bottom:1px solid rgba(255,255,255,0.07)">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between gap-4" style="height:68px">
+    <a href="/" aria-label="NOVARIS Consulting"
+       style="text-decoration:none;flex-shrink:0;display:flex;align-items:center;transition:opacity 0.15s ease"
+       class="hover:opacity-90 focus-visible:outline-none">
+      <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto" />
+    </a>
+    <nav class="hidden lg:flex items-center gap-0.5">
+      <a href="/#was-ist-fzulg" class="nav-link">Das FZulG</a>
+      <a href="/#branchen"      class="nav-link">Branchen</a>
+      <a href="/#prozess"       class="nav-link">Prozess</a>
+      <a href="/#vorteile"      class="nav-link">Vorteile</a>
+      <a href="/#faq"           class="nav-link">FAQ</a>
+      <a href="/#kontakt"       class="nav-link">Kontakt</a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <button id="dark-toggle" onclick="toggleDark()" aria-label="Toggle dark mode"
+        class="hidden sm:flex" style="width:32px;height:32px;border-radius:8px;border:1px solid rgba(255,255,255,0.12);
+               background:rgba(255,255,255,0.07);cursor:pointer;align-items:center;
+               justify-content:center;color:rgba(255,255,255,0.7);
+               transition:background 0.15s ease,color 0.15s ease">
+        <svg id="icon-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg id="icon-sun"  width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
+      <a href="/#kontakt" class="btn-primary hidden sm:inline-flex" style="padding:0.55rem 1.35rem;font-size:0.83rem">
+        Kostenlos prüfen
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="content-wrap">
+
+    <div class="ds-breadcrumb">
+      <a href="/">Startseite</a>
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      <a href="/forschungszulage.html">Forschungszulage</a>
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      <span>Auftragsforschung</span>
+    </div>
+
+    <div class="ds-eyebrow">Auftragsforschung & FZulG</div>
+    <h1 class="ds-title">Forschungszulage bei Auftragsforschung – Die 60%-Regel verstehen und nutzen</h1>
+    <p class="ds-subtitle">Externe F&E-Kosten können Ihre Forschungszulage erheblich steigern. Erfahren Sie, wann Auftragsforschung förderfähig ist und wie Sie die 60%-Regel optimal nutzen.</p>
+    <p class="ds-updated">Zuletzt aktualisiert: 06. März 2026 · Lesezeit: ca. 10 Minuten</p>
+
+    <!-- Table of Contents -->
+    <nav class="toc" aria-label="Inhaltsverzeichnis">
+      <div class="toc-title">Inhaltsverzeichnis</div>
+      <ol>
+        <li><a href="#definition">Definition: Auftragsforschung nach §2 Abs. 4 FZulG</a></li>
+        <li><a href="#60-prozent-regel">Die 60%-Regel: So werden Auftragsforschungskosten berechnet</a></li>
+        <li><a href="#voraussetzungen">Wann ist Auftragsforschung förderfähig?</a></li>
+        <li><a href="#auftragnehmer">Typische Auftragnehmer in der Praxis</a></li>
+        <li><a href="#vergleich">Auftragsforschung vs. Kooperationsforschung</a></li>
+        <li><a href="#fehler">Die 5 häufigsten Fehler bei der Auftragsforschung</a></li>
+        <li><a href="#optimierung">So maximieren Sie die Förderung bei Auftragsforschung</a></li>
+        <li><a href="#faq">Häufig gestellte Fragen</a></li>
+      </ol>
+    </nav>
+
+    <!-- Section 1: Definition -->
+    <div class="ds-section" id="definition">
+      <h2>Definition: Auftragsforschung nach §2 Abs. 4 FZulG</h2>
+      <p>Die Auftragsforschung ist ein zentraler Bestandteil des Forschungszulagengesetzes (FZulG). Gemäß §2 Abs. 4 FZulG liegt Auftragsforschung vor, wenn ein steuerpflichtiges Unternehmen – der <strong>Auftraggeber</strong> – einen externen Dienstleister mit der Durchführung von Forschungs- und Entwicklungstätigkeiten (F&E) beauftragt. Der externe Dienstleister wird als <strong>Auftragnehmer</strong> bezeichnet und kann eine Universität, ein Forschungsinstitut, ein Ingenieurbüro oder ein anderes Unternehmen sein.</p>
+
+      <p>Ein entscheidender Grundsatz: <strong>Ausschließlich der Auftraggeber beantragt die Forschungszulage</strong> für die im Rahmen der Auftragsforschung entstandenen Kosten. Der Auftragnehmer darf diese Kosten nicht zusätzlich als eigene F&E geltend machen. Diese Regelung verhindert eine Doppelförderung desselben Forschungsvorhabens.</p>
+
+      <h3>Abgrenzung der F&E-Kategorien im FZulG</h3>
+      <p>Das Forschungszulagengesetz unterscheidet drei Formen der förderfähigen F&E-Tätigkeit, die sich in ihrer steuerlichen Behandlung deutlich voneinander unterscheiden:</p>
+      <ul>
+        <li><strong>Eigene Forschung und Entwicklung (Eigenforschung):</strong> Das Unternehmen führt F&E mit eigenem Personal und eigenen Ressourcen durch. Förderfähig sind die Bruttolöhne und -gehälter der F&E-Mitarbeiter sowie ab 2026 eine Gemeinkostenpauschale von 20%.</li>
+        <li><strong>Auftragsforschung:</strong> Das Unternehmen beauftragt einen externen Dienstleister im EWR mit F&E-Arbeiten. Es werden 60% der Auftragsvergütung als Bemessungsgrundlage anerkannt.</li>
+        <li><strong>Kooperationsforschung:</strong> Zwei oder mehr Partner forschen gemeinsam an einem Vorhaben. Jeder Partner beantragt die Forschungszulage nur für seine eigenen Personalkosten – eine Verrechnung der Aufwendungen des Partners ist nicht möglich.</li>
+      </ul>
+      <p>Die korrekte Einordnung Ihrer F&E-Aktivitäten in diese Kategorien ist von entscheidender Bedeutung für die Höhe Ihrer Forschungszulage. In der Praxis betreiben viele Unternehmen eine Kombination aus Eigenforschung und Auftragsforschung – beide Komponenten können parallel geltend gemacht werden und erhöhen so die Gesamtbemessungsgrundlage.</p>
+
+      <div class="ds-highlight-box">
+        <strong>Wichtig:</strong> Nur der Auftraggeber darf die Kosten der Auftragsforschung geltend machen. Wenn beide Seiten – Auftraggeber und Auftragnehmer – dieselben Kosten ansetzen, liegt eine unzulässige Doppelförderung vor, die zur Rückforderung und Sanktionen führen kann.
+      </div>
+    </div>
+
+    <!-- Section 2: 60%-Regel -->
+    <div class="ds-section" id="60-prozent-regel">
+      <h2>Die 60%-Regel: So werden Auftragsforschungskosten berechnet</h2>
+      <p>Das FZulG enthält eine spezielle Berechnungsvorschrift für die Auftragsforschung: <strong>Nur 60% der an den Auftragnehmer gezahlten Vergütung</strong> werden als förderfähige Bemessungsgrundlage anerkannt. Der Gesetzgeber geht davon aus, dass die verbleibenden 40% den Gewinnanteil, Verwaltungsoverhead und sonstige nicht-forschungsbezogene Kosten des Auftragnehmers abdecken.</p>
+
+      <p>Diese Regelung wurde bewusst pauschal gestaltet, um den administrativen Aufwand für Unternehmen und Finanzämter zu begrenzen. Es ist nicht erforderlich, die tatsächliche Kostenstruktur des Auftragnehmers offenzulegen oder nachzuweisen. Die 60%-Pauschale gilt unabhängig von der Art des Auftragnehmers – ob es sich um eine Universität mit niedrigen Overheadkosten oder ein kommerzielles Forschungsinstitut handelt.</p>
+
+      <h3>Rechenbeispiel: Auftragsforschung in der Praxis</h3>
+      <p>Um die 60%-Regel und ihre Auswirkungen auf die Forschungszulage zu veranschaulichen, betrachten wir ein konkretes Berechnungsbeispiel. Ein mittelständisches Maschinenbauunternehmen beauftragt ein Fraunhofer-Institut mit der Entwicklung eines neuartigen Sensorkonzepts für die Qualitätskontrolle in der Fertigung:</p>
+
+      <div class="ds-box">
+        <strong>Beispielrechnung Auftragsforschung:</strong><br /><br />
+        Rechnungsbetrag an Fraunhofer-Institut: <strong>500.000 €</strong><br />
+        Davon förderfähig (60%): <strong>300.000 €</strong><br />
+        + 20% Gemeinkostenzuschlag (ab 2026): <strong>60.000 €</strong><br />
+        Bemessungsgrundlage: <strong>360.000 €</strong><br /><br />
+        Forschungszulage (25%): <strong>90.000 €</strong><br />
+        Bei KMU-Status (35%): <strong>126.000 €</strong>
+      </div>
+
+      <p>Dieses Beispiel zeigt: Selbst nach der 60%-Kürzung bleibt ein erheblicher förderfähiger Betrag übrig. Besonders für KMU mit dem erhöhten Fördersatz von 35% lohnt sich die Einbeziehung der Auftragsforschung in die Forschungszulage. Zudem kann die Auftragsforschung mit den eigenen Personalkosten kombiniert werden – die Bemessungsgrundlage aus beiden Quellen wird addiert, bis zur maximalen Obergrenze von 12 Mio. Euro pro Wirtschaftsjahr.</p>
+
+      <p>Die neu eingeführte <strong>Gemeinkostenpauschale von 20%</strong>, die seit dem Wirtschaftsjahr 2026 gilt, wird auch auf die 60%-Basis der Auftragsforschung angewendet. Das bedeutet: Auf die anerkannten 300.000 € im obigen Beispiel kommen noch einmal 60.000 € Gemeinkosten hinzu – ein zusätzlicher Fördervorteil, den viele Unternehmen noch nicht auf dem Schirm haben.</p>
+    </div>
+
+    <!-- Section 3: Voraussetzungen -->
+    <div class="ds-section" id="voraussetzungen">
+      <h2>Wann ist Auftragsforschung förderfähig?</h2>
+      <p>Damit die Kosten einer Auftragsforschung im Rahmen der Forschungszulage anerkannt werden, müssen mehrere Voraussetzungen gleichzeitig erfüllt sein. Die Anforderungen sind im FZulG sowie in der zugehörigen Verwaltungsanweisung klar definiert. Nachfolgend erläutern wir die fünf zentralen Kriterien im Detail:</p>
+
+      <h3>1. EWR-Anforderung: Sitz des Auftragnehmers</h3>
+      <p>Der Auftragnehmer muss seinen Sitz im <strong>Europäischen Wirtschaftsraum (EWR)</strong> haben. Der EWR umfasst alle 27 EU-Mitgliedstaaten sowie Island, Liechtenstein und Norwegen. Aufträge an Forschungseinrichtungen außerhalb des EWR – beispielsweise in den USA, China, Indien oder seit dem Brexit auch in Großbritannien – sind <strong>nicht förderfähig</strong>. Diese Einschränkung ist einer der häufigsten Stolpersteine in der Praxis und betrifft insbesondere international aufgestellte Unternehmen mit Forschungspartnern weltweit.</p>
+
+      <h3>2. Vertragsgestaltung: Schriftlicher F&E-Vertrag</h3>
+      <p>Es muss ein <strong>schriftlicher Vertrag</strong> vorliegen, der den Forschungs- und Entwicklungscharakter der beauftragten Arbeiten klar erkennen lässt. Der Vertrag sollte den Forschungsgegenstand, die wissenschaftlich-technischen Ziele, den Zeitrahmen und die Vergütung eindeutig definieren. Rahmenverträge ohne konkreten F&E-Bezug oder reine Dienstleistungsverträge genügen nicht. Idealerweise enthält der Vertrag auch eine Zuordnung zu den F&E-Kategorien des Frascati-Manuals (Grundlagenforschung, angewandte Forschung, experimentelle Entwicklung).</p>
+
+      <h3>3. F&E-Charakter der beauftragten Arbeiten</h3>
+      <p>Die beauftragten Arbeiten müssen tatsächlich <strong>Forschungs- und Entwicklungstätigkeiten</strong> darstellen. Routinemäßige Dienstleistungen, Testing, Qualitätskontrolle, Marktforschung oder reine Beratungsleistungen sind nicht förderfähig – auch wenn sie in einem wissenschaftlichen Kontext erbracht werden. Entscheidend ist, ob die Tätigkeit auf die Gewinnung neuer Erkenntnisse oder die Entwicklung neuer oder wesentlich verbesserter Produkte, Verfahren oder Dienstleistungen abzielt.</p>
+
+      <h3>4. Auftraggeber-Risiko und IP-Rechte</h3>
+      <p>Der Auftraggeber muss das <strong>wirtschaftliche Risiko</strong> des Forschungsvorhabens tragen. Das bedeutet: Der Auftraggeber zahlt die Vergütung unabhängig vom Forschungsergebnis und trägt das Risiko eines Scheiterns. Darüber hinaus müssen die aus der Forschung entstehenden <strong>geistigen Eigentumsrechte (IP-Rechte)</strong> beim Auftraggeber liegen oder von diesem erworben werden. Verbleibt das geistige Eigentum beim Auftragnehmer, handelt es sich in der Regel nicht um Auftragsforschung im Sinne des FZulG.</p>
+
+      <h3>5. Keine Doppelförderung</h3>
+      <p>Die Kosten der Auftragsforschung dürfen nicht sowohl vom Auftraggeber als auch vom Auftragnehmer geltend gemacht werden. Der <strong>Auftragnehmer darf die gleichen Kosten nicht als eigene F&E</strong> in seinem Forschungszulage-Antrag ansetzen. Eine Doppelförderung stellt einen Verstoß gegen das FZulG dar und kann zu Rückforderungen, Zinsen und im schlimmsten Fall zu strafrechtlichen Konsequenzen führen.</p>
+
+      <div class="ds-highlight-box">
+        <strong>Praxis-Tipp:</strong> Lassen Sie Ihre bestehenden Forschungsverträge von einem Experten prüfen. Häufig genügen kleine Anpassungen in der Vertragsformulierung, um die Förderfähigkeit sicherzustellen – beispielsweise die explizite Nennung des F&E-Charakters und die Regelung der IP-Rechte-Übertragung.
+      </div>
+    </div>
+
+    <!-- Section 4: Typische Auftragnehmer -->
+    <div class="ds-section" id="auftragnehmer">
+      <h2>Typische Auftragnehmer in der Praxis</h2>
+      <p>Die Bandbreite der Auftragnehmer, die im Rahmen der Forschungszulage förderfähig sein können, ist groß. Entscheidend ist nicht die Art der Institution, sondern ob die erbrachte Leistung F&E-Charakter hat und der Auftragnehmer seinen Sitz im EWR hat. Nachfolgend die häufigsten Arten von Auftragnehmern in der Praxis:</p>
+      <ul>
+        <li><strong>Universitäten und Hochschulen:</strong> Klassische Partner für Auftragsforschung, insbesondere bei grundlagennahen Fragestellungen. Viele Universitäten haben eigene Transferstellen, die bei der Vertragsgestaltung unterstützen. Häufig sind die Kosten hier vergleichsweise günstig.</li>
+        <li><strong>Fraunhofer-Institute und andere Forschungseinrichtungen:</strong> Die Fraunhofer-Gesellschaft, Helmholtz-Zentren, Leibniz-Institute und Max-Planck-Institute sind typische Partner für angewandte Forschung und experimentelle Entwicklung. Sie verfügen über spezialisierte Laborinfrastruktur und hochqualifiziertes Personal.</li>
+        <li><strong>Spezialisierte Ingenieurbüros:</strong> Ingenieurbüros, die im Auftrag Produktentwicklung, Konstruktion oder Simulationsarbeiten durchführen, können als Auftragnehmer fungieren – vorausgesetzt, die Tätigkeit geht über Routineengineering hinaus und hat echten F&E-Charakter.</li>
+        <li><strong>IT-Dienstleister und Softwareentwickler:</strong> Die Beauftragung externer Softwareentwickler mit der Entwicklung neuartiger Algorithmen, KI-Modelle oder innovativer Softwarelösungen kann als Auftragsforschung qualifizieren. Entscheidend ist die technische Neuheit und die systematische Herangehensweise.</li>
+        <li><strong>Prüflabore und Testeinrichtungen:</strong> Nur förderfähig, wenn die durchgeführten Tests einen echten F&E-Charakter haben – also der Erkenntnisgewinn im Vordergrund steht und nicht die routinemäßige Qualitätskontrolle oder Zertifizierungsprüfung.</li>
+        <li><strong>Ausländische Forschungspartner im EWR:</strong> Aufträge an Forschungseinrichtungen und Unternehmen in anderen EWR-Staaten sind vollständig förderfähig. Dies eröffnet den Zugang zu internationaler Spitzenforschung in Ländern wie den Niederlanden, Schweden, Österreich oder der Schweiz (nur wenn EWR-assoziiert).</li>
+      </ul>
+      <p>In der Praxis beauftragt ein typisches mittelständisches Unternehmen im Durchschnitt zwei bis drei externe Forschungspartner pro Jahr. Die Kombination aus eigener F&E und Auftragsforschung maximiert die Bemessungsgrundlage und damit die Forschungszulage.</p>
+    </div>
+
+    <!-- Section 5: Vergleich -->
+    <div class="ds-section" id="vergleich">
+      <h2>Auftragsforschung vs. Kooperationsforschung: Was ist der Unterschied?</h2>
+      <p>Die Unterscheidung zwischen Auftragsforschung und Kooperationsforschung ist nicht nur akademischer Natur – sie hat erhebliche Auswirkungen auf die Höhe der Forschungszulage und darauf, wer die Förderung beantragen kann. Viele Unternehmen verwechseln die beiden Modelle oder ordnen ihre Forschungskooperationen falsch ein, was zu unnötigen Förderverlusten führt.</p>
+
+      <div class="ds-table-wrap">
+        <table class="ds-table">
+          <thead>
+            <tr>
+              <th>Kriterium</th>
+              <th>Auftragsforschung</th>
+              <th>Kooperationsforschung</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Verhältnis</strong></td>
+              <td>Auftraggeber ↔ Auftragnehmer</td>
+              <td>Gleichberechtigte Partner</td>
+            </tr>
+            <tr>
+              <td><strong>Wer beantragt</strong></td>
+              <td>Nur der Auftraggeber</td>
+              <td>Jeder Partner für eigene Kosten</td>
+            </tr>
+            <tr>
+              <td><strong>IP-Rechte</strong></td>
+              <td>Beim Auftraggeber</td>
+              <td>Geteilt nach Vereinbarung</td>
+            </tr>
+            <tr>
+              <td><strong>Anrechenbare Kosten</strong></td>
+              <td>60% der Vergütung</td>
+              <td>Eigene Personalkosten</td>
+            </tr>
+            <tr>
+              <td><strong>Wirtschaftliches Risiko</strong></td>
+              <td>Beim Auftraggeber</td>
+              <td>Geteilt zwischen den Partnern</td>
+            </tr>
+            <tr>
+              <td><strong>EWR-Anforderung</strong></td>
+              <td>Auftragnehmer muss im EWR sitzen</td>
+              <td>Keine Einschränkung</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>Die Wahl zwischen Auftragsforschung und Kooperationsforschung sollte nicht allein aus steuerlichen Gründen getroffen werden, sondern primär die tatsächliche Ausgestaltung der Zusammenarbeit widerspiegeln. Wenn ein Unternehmen das Projekt vollständig steuert, die Anforderungen definiert und die Ergebnisse allein nutzt, handelt es sich um Auftragsforschung. Arbeiten beide Seiten gleichberechtigt an einem gemeinsamen Forschungsziel und teilen sich Ergebnisse und Risiken, liegt Kooperationsforschung vor.</p>
+
+      <p>In manchen Fällen kann eine <strong>Umstrukturierung der Zusammenarbeit</strong> von Kooperation zu Auftrag – oder umgekehrt – die Fördersumme optimieren. Dies hängt von den konkreten Kosten und der jeweiligen Partnerkonstellation ab. NOVARIS Consulting analysiert Ihre bestehenden F&E-Kooperationen und empfiehlt die steuerlich optimale Ausgestaltung.</p>
+    </div>
+
+    <!-- Section 6: Häufige Fehler -->
+    <div class="ds-section" id="fehler">
+      <h2>Die 5 häufigsten Fehler bei der Auftragsforschung</h2>
+      <p>In unserer Beratungspraxis stoßen wir immer wieder auf dieselben Fehler, die Unternehmen bei der Geltendmachung von Auftragsforschung im Rahmen der Forschungszulage machen. Diese Fehler können dazu führen, dass die Förderung teilweise oder vollständig abgelehnt wird. Hier sind die fünf häufigsten Fallstricke und wie Sie sie vermeiden:</p>
+
+      <h3>Fehler 1: Auftragnehmer sitzt außerhalb des EWR</h3>
+      <p>Der mit Abstand häufigste Fehler: Das Unternehmen beauftragt einen Forschungspartner außerhalb des Europäischen Wirtschaftsraums – beispielsweise in <strong>Indien, den USA, China oder seit dem Brexit auch in Großbritannien</strong>. Diese Kosten sind unabhängig von der Qualität der Forschung nicht förderfähig. Besonders tückisch: Viele Unternehmen haben langjährige Forschungsbeziehungen nach Großbritannien, die seit dem 01.01.2021 nicht mehr unter die Forschungszulage fallen.</p>
+
+      <h3>Fehler 2: Vertrag ohne erkennbaren F&E-Bezug</h3>
+      <p>Der Forschungsvertrag ist entweder gar nicht schriftlich fixiert oder enthält keine klare Beschreibung der F&E-Tätigkeiten. Formulierungen wie „Beratungsleistungen", „Unterstützung" oder „technische Dienstleistung" ohne konkreten Forschungsbezug reichen nicht aus. Die BSFZ und das Finanzamt prüfen den Vertrag und erwarten eine eindeutige Zuordnung zu einer der drei F&E-Kategorien: Grundlagenforschung, angewandte Forschung oder experimentelle Entwicklung.</p>
+
+      <h3>Fehler 3: Routineleistungen als Auftragsforschung deklariert</h3>
+      <p>Nicht jede technisch anspruchsvolle Leistung ist automatisch F&E. Standardmäßige <strong>Softwareanpassungen, Routinetests, Qualitätsprüfungen, Marktanalysen oder Designarbeiten</strong> ohne innovativen Charakter werden regelmäßig abgelehnt. Die Abgrenzung zwischen „schwieriger Ingenieurstätigkeit" und „echter F&E" ist in der Praxis oft fließend und erfordert eine sorgfältige Argumentation im BSFZ-Antrag.</p>
+
+      <h3>Fehler 4: Doppelbeantragung durch Auftraggeber und Auftragnehmer</h3>
+      <p>Wenn sowohl der Auftraggeber die Kosten als Auftragsforschung geltend macht als auch der Auftragnehmer dieselben Kosten als eigene F&E-Personalkosten ansetzt, liegt eine <strong>unzulässige Doppelförderung</strong> vor. Dies wird von den Finanzbehörden bei Betriebsprüfungen regelmäßig aufgegriffen und führt zu Rückforderungen inklusive Verzinsung. Eine klare vertragliche Regelung, wer die Forschungszulage beantragt, verhindert dieses Problem.</p>
+
+      <h3>Fehler 5: Rechnungen nicht korrekt aufgeschlüsselt</h3>
+      <p>Viele Auftragnehmer stellen Sammelrechnungen, die keine Trennung zwischen F&E-Leistungen und sonstigen Leistungen (z.B. Projektmanagement, Reisekosten, allgemeine Beratung) enthalten. Ohne eine klare <strong>Aufschlüsselung der F&E-relevanten Kosten</strong> kann das Finanzamt die 60%-Regel nicht korrekt anwenden und die Förderung ablehnen oder kürzen. Bestehen Sie von Anfang an auf getrennten Rechnungspositionen.</p>
+
+      <div class="ds-highlight-box">
+        <strong>NOVARIS-Empfehlung:</strong> Lassen Sie Ihre Auftragsforschungsverträge und -rechnungen vor der Antragstellung professionell prüfen. In den meisten Fällen lassen sich bestehende Verträge mit geringem Aufwand so anpassen, dass die Förderfähigkeit sichergestellt ist. Wir unterstützen Sie dabei – kostenlos im Rahmen der Erstanalyse.
+      </div>
+    </div>
+
+    <!-- Section 7: Optimierung -->
+    <div class="ds-section" id="optimierung">
+      <h2>So maximieren Sie die Förderung bei Auftragsforschung</h2>
+      <p>Die Auftragsforschung bietet erhebliches Potenzial, die Bemessungsgrundlage für die Forschungszulage zu erhöhen – insbesondere in Kombination mit den eigenen Personalkosten. Nachfolgend die wichtigsten Hebel zur Maximierung Ihrer Förderung:</p>
+
+      <h3>Verträge prüfen und F&E-Bezug explizit formulieren</h3>
+      <p>Der wichtigste Optimierungshebel ist die <strong>Vertragsgestaltung</strong>. Stellen Sie sicher, dass jeder Forschungsvertrag den wissenschaftlich-technischen Charakter der beauftragten Arbeiten klar beschreibt. Verwenden Sie die Terminologie des Frascati-Manuals und benennen Sie explizit, welche technischen Unsicherheiten überwunden werden sollen. Eine professionelle Vertragsformulierung kann den Unterschied zwischen Genehmigung und Ablehnung durch die BSFZ ausmachen.</p>
+
+      <h3>UK-Problem lösen: Auf EWR-Alternativen ausweichen</h3>
+      <p>Seit dem Brexit ist Großbritannien nicht mehr Teil des EWR. Unternehmen, die bisher F&E-Aufträge an britische Universitäten oder Forschungseinrichtungen vergeben haben, sollten <strong>EWR-Alternativen</strong> prüfen. Die Niederlande, Schweden, Österreich und Irland verfügen über hervorragende Forschungslandschaften in vielen Disziplinen. Ein Wechsel des Auftragnehmers kann die Auftragsforschungskosten erstmals förderfähig machen.</p>
+
+      <h3>Gemeinkostenzuschlag nicht vergessen</h3>
+      <p>Seit 2026 gilt eine <strong>Gemeinkostenpauschale von 20%</strong> auf die förderfähige Bemessungsgrundlage. Diese Pauschale wird auch auf die 60%-Basis der Auftragsforschung angewendet. In unserem obigen Beispiel bedeutet das: Statt 300.000 € Bemessungsgrundlage werden 360.000 € angesetzt – ein Zusatzeffekt von 15.000 € bei 25% Fördersatz (bzw. 21.000 € bei KMU mit 35%).</p>
+
+      <h3>Eigene Personalkosten und Auftragsforschung kombinieren</h3>
+      <p>Die Bemessungsgrundlage aus eigener F&E (Personalkosten) und Auftragsforschung (60% der Vergütung) wird <strong>addiert</strong>. Nutzen Sie diesen Effekt bewusst: Wenn Ihr eigenes F&E-Personal an einem Projekt arbeitet und zusätzlich externe Forschungsaufträge vergeben werden, steigt die Gesamtbemessungsgrundlage erheblich. Die Obergrenze liegt bei 12 Mio. € pro Wirtschaftsjahr – bei den meisten Unternehmen ist hier noch viel Spielraum.</p>
+
+      <h3>Dokumentation von Anfang an aufbauen</h3>
+      <p>Beginnen Sie die Dokumentation nicht erst bei der Antragstellung, sondern <strong>begleitend zum Projekt</strong>. Führen Sie einen Projektordner mit Vertrag, Rechnungen, Leistungsnachweisen, Zwischenberichten und relevanter Korrespondenz. So ersparen Sie sich den aufwendigen und fehleranfälligen Prozess der nachträglichen Rekonstruktion.</p>
+
+      <div class="ds-box">
+        <strong>Zusammenfassung der Optimierungshebel:</strong><br /><br />
+        1. Verträge mit explizitem F&E-Bezug formulieren<br />
+        2. Auftragnehmer im EWR wählen (UK-Aufträge prüfen)<br />
+        3. 20% Gemeinkostenpauschale auf die 60%-Basis anwenden<br />
+        4. Eigene Personalkosten + Auftragsforschung kombinieren<br />
+        5. Laufende Dokumentation statt nachträglicher Rekonstruktion<br />
+        6. Rechnungen mit klarer F&E-/Nicht-F&E-Trennung anfordern
+      </div>
+    </div>
+
+    <!-- Section 8: FAQ -->
+    <div class="ds-section" id="faq">
+      <h2>Häufig gestellte Fragen zur Auftragsforschung</h2>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          Ist Auftragsforschung in Großbritannien noch förderfähig?
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>Nein. Seit dem Brexit (01.01.2021) ist das Vereinigte Königreich nicht mehr Mitglied des Europäischen Wirtschaftsraums (EWR). Auftragsforschung an britische Universitäten, Institute oder Unternehmen ist daher nicht mehr im Rahmen der Forschungszulage förderfähig. Unternehmen sollten auf EWR-Alternativen ausweichen – etwa auf Forschungseinrichtungen in den Niederlanden, Österreich, Schweden oder Irland, die in vielen Fachgebieten gleichwertige oder sogar führende Expertise bieten.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          Können Kosten an verbundene Unternehmen als Auftragsforschung gelten?
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>Ja, grundsätzlich können auch Aufträge an verbundene Unternehmen als Auftragsforschung im Sinne des FZulG gelten. Voraussetzung ist, dass die Leistungsbeziehung wirtschaftlich separiert ist: Es muss ein marktüblicher Vertrag vorliegen, die Vergütung muss dem Fremdvergleichsgrundsatz (Arm's-length-Prinzip) entsprechen, und der Auftragnehmer muss die Leistung eigenständig erbringen. Besonders wichtig: Es darf keine Doppelförderung stattfinden – das verbundene Unternehmen darf die gleichen Kosten nicht als eigene F&E geltend machen.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          Gilt die 60%-Regel auch für Teilleistungen?
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>Ja, die 60%-Regel gilt auch für Teilleistungen. Wenn eine Rechnung sowohl F&E-Leistungen als auch Nicht-F&E-Leistungen umfasst, werden zunächst nur die F&E-relevanten Anteile herausgefiltert. Von diesem F&E-Anteil sind dann 60% als Bemessungsgrundlage ansetzbar. Eine saubere Aufschlüsselung der Rechnung in F&E- und Nicht-F&E-Anteile ist daher essenziell – fordern Sie von Ihrem Auftragnehmer getrennte Rechnungspositionen an.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          Was ist, wenn der Auftragnehmer auch eigene F&E betreibt?
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>Jedes Unternehmen kann nur seine eigenen F&E-Kosten geltend machen. Der Auftragnehmer darf die Kosten, die er im Rahmen Ihres Auftrags erbringt, nicht zusätzlich als eigene F&E bei der Forschungszulage ansetzen. Betreibt der Auftragnehmer darüber hinaus separate, eigene F&E-Projekte (die nichts mit Ihrem Auftrag zu tun haben), kann er diese selbstverständlich eigenständig geltend machen. Entscheidend ist die klare Trennung zwischen Auftragsforschung und eigener Forschung.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          Wie dokumentiere ich Auftragsforschung richtig?
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>Eine revisionssichere Dokumentation der Auftragsforschung umfasst folgende Unterlagen: den schriftlichen Forschungsvertrag mit klarem F&E-Bezug und IP-Regelung, alle Rechnungen mit detaillierter Aufschlüsselung der F&E-Anteile, Leistungsnachweise und Zwischenberichte des Auftragnehmers, die Korrespondenz zum Projektverlauf (E-Mails, Protokolle) sowie Nachweise über die Ergebnisse (Prototypen, Berichte, Patentanmeldungen). NOVARIS unterstützt Sie bei der Erstellung einer vollständigen, revisionssicheren Dokumentation.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Related Content -->
+    <div class="ds-section" style="margin-top:2rem">
+      <h2>Weiterführende Inhalte zur Forschungszulage</h2>
+      <p>Vertiefen Sie Ihr Wissen mit unseren spezialisierten Ressourcen:</p>
+      <ul>
+        <li><a href="/forschungszulage.html" style="color:#1E56B5;font-weight:600"><strong>Forschungszulage Leitfaden</strong></a> – Der komplette Überblick zum FZulG 2026</li>
+        <li><a href="/forschungszulage-rechner.html" style="color:#1E56B5;font-weight:600"><strong>Forschungszulagen Rechner</strong></a> – Berechnen Sie Ihre individuelle Förderung in 30 Sekunden</li>
+        <li><a href="/forschungszulage-rueckwirkend.html" style="color:#1E56B5;font-weight:600"><strong>Rückwirkend beantragen</strong></a> – Bis zu 6 Jahre Förderung nachholen</li>
+      </ul>
+    </div>
+
+    <!-- CTA Box -->
+    <div class="cta-section">
+      <h2>Auftragsforschung optimal nutzen</h2>
+      <p>Lassen Sie Ihre externen F&E-Kosten kostenlos auf Förderfähigkeit prüfen. Wir analysieren Ihre Verträge, identifizieren Optimierungspotenzial und sichern Ihnen die maximale Forschungszulage.</p>
+      <a href="/#kontakt" class="btn-primary" style="padding:0.7rem 1.8rem;font-size:0.9rem">
+        Kostenlose Erstanalyse anfragen
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+
+  </div>
+</main>
+
+<footer style="background:#04091a;border-top:1px solid rgba(255,255,255,0.07)">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
+      <div class="lg:col-span-2">
+        <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto;margin-bottom:1rem" />
+        <p style="font-size:0.82rem;color:rgba(195,215,245,0.38);line-height:1.72;max-width:320px">
+          NOVARIS Consulting ist Ihr spezialisierter Full-Service-Partner für die staatliche
+          Forschungszulage nach dem FZulG – erfolgsbasiert, transparent und ohne Risiko.
+        </p>
+      </div>
+      <div>
+        <div style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.75rem;letter-spacing:0.09em;text-transform:uppercase;color:rgba(195,215,245,0.3);margin-bottom:1rem">Navigation</div>
+        <div style="display:flex;flex-direction:column;gap:0.55rem">
+          <a href="/#was-ist-fzulg" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Das FZulG</a>
+          <a href="/#prozess"       style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Prozess</a>
+          <a href="/#vorteile"      style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Vorteile</a>
+          <a href="/#faq"           style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">FAQ</a>
+          <a href="/#kontakt"       style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Kontakt</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.75rem;letter-spacing:0.09em;text-transform:uppercase;color:rgba(195,215,245,0.3);margin-bottom:1rem">Rechtliches</div>
+        <div style="display:flex;flex-direction:column;gap:0.55rem">
+          <a href="/impressum.html"  style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Impressum</a>
+          <a href="/datenschutz.html" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Datenschutz</a>
+          <a href="/agb.html"        style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">AGB</a>
+          <a href="javascript:void(0)" onclick="CookieConsent.reset();CookieConsent.request(function(){});" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Cookie-Einstellungen</a>
+        </div>
+      </div>
+    </div>
+    <div style="height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.08) 25%,rgba(255,255,255,0.08) 75%,transparent);margin-bottom:1.5rem"></div>
+    <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem">
+      <p style="font-size:0.73rem;color:rgba(195,215,245,0.25)">&copy; 2026 NOVARIS Consulting · Alle Rechte vorbehalten.</p>
+      <p style="font-size:0.73rem;color:rgba(195,215,245,0.18)">Diese Website stellt keine Steuer- oder Rechtsberatung dar.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function() {
+    if (localStorage.getItem('theme') === 'dark') {
+      document.documentElement.classList.add('dark');
+    }
+  })();
+
+  function toggleDark() {
+    const dark = document.documentElement.classList.toggle('dark');
+    localStorage.setItem('theme', dark ? 'dark' : 'light');
+    _updateDarkBtn();
+  }
+
+  function _updateDarkBtn() {
+    const dark = document.documentElement.classList.contains('dark');
+    const moon = document.getElementById('icon-moon');
+    const sun  = document.getElementById('icon-sun');
+    if (moon) moon.style.display = dark ? 'none'  : 'block';
+    if (sun)  sun.style.display  = dark ? 'block' : 'none';
+  }
+
+  window.addEventListener('DOMContentLoaded', _updateDarkBtn);
+</script>
+
+<script src="/cookie-consent.js" defer></script>
+<script src="/analytics.js" defer></script>
+</body>
+</html>

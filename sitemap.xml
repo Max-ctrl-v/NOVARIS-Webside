@@ -1,9 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://novaris-consulting.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://novaris-consulting.com/forschungszulage.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://novaris-consulting.com/forschungszulage-rechner.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://novaris-consulting.com/impressum.html</loc><changefreq>monthly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://novaris-consulting.com/datenschutz.html</loc><changefreq>monthly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://novaris-consulting.com/agb.html</loc><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <!-- Main Pages -->
+  <url><loc>https://novaris-consulting.com/</loc><lastmod>2026-03-06</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://novaris-consulting.com/forschungszulage.html</loc><lastmod>2026-03-06</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://novaris-consulting.com/forschungszulage-rechner.html</loc><lastmod>2026-03-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- New Content Pages -->
+  <url><loc>https://novaris-consulting.com/forschungszulage-antrag.html</loc><lastmod>2026-03-06</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://novaris-consulting.com/forschungszulage-check.html</loc><lastmod>2026-03-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://novaris-consulting.com/forschungszulage-2026.html</loc><lastmod>2026-03-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://novaris-consulting.com/foerdermittel-vergleich.html</loc><lastmod>2026-03-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://novaris-consulting.com/erfolge.html</loc><lastmod>2026-03-06</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+
+  <!-- Branchen Pages -->
+  <url><loc>https://novaris-consulting.com/branchen/software-it.html</loc><lastmod>2026-03-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://novaris-consulting.com/branchen/maschinenbau.html</loc><lastmod>2026-03-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://novaris-consulting.com/branchen/medizintechnik.html</loc><lastmod>2026-03-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://novaris-consulting.com/branchen/pharma.html</loc><lastmod>2026-03-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://novaris-consulting.com/branchen/automotive.html</loc><lastmod>2026-03-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://novaris-consulting.com/branchen/energie.html</loc><lastmod>2026-03-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://novaris-consulting.com/branchen/luft-raumfahrt.html</loc><lastmod>2026-03-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://novaris-consulting.com/branchen/bauindustrie.html</loc><lastmod>2026-03-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://novaris-consulting.com/branchen/agrar-foodtech.html</loc><lastmod>2026-03-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- SEO Content Pages (not in navigation) -->
+  <url><loc>https://novaris-consulting.com/forschungszulage-zeiterfassung.html</loc><lastmod>2026-03-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://novaris-consulting.com/forschungszulage-steuerberater.html</loc><lastmod>2026-03-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://novaris-consulting.com/bsfz-ablehnung-widerspruch.html</loc><lastmod>2026-03-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://novaris-consulting.com/forschungszulage-gmbh-einzelunternehmen.html</loc><lastmod>2026-03-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://novaris-consulting.com/forschungszulage-auftragsforschung.html</loc><lastmod>2026-03-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://novaris-consulting.com/forschungszulage-rueckwirkend.html</loc><lastmod>2026-03-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Legal Pages -->
+  <url><loc>https://novaris-consulting.com/impressum.html</loc><lastmod>2026-01-01</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://novaris-consulting.com/datenschutz.html</loc><lastmod>2026-01-01</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://novaris-consulting.com/agb.html</loc><lastmod>2026-01-01</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
 </urlset>

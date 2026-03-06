@@ -15,6 +15,16 @@
   <meta property="og:url" content="https://novaris-consulting.com/" />
   <meta property="og:locale" content="de_DE" />
   <meta property="og:site_name" content="NOVARIS Consulting" />
+  <meta property="og:image" content="https://novaris-consulting.com/brand_assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Forschungszulage (FZulG) beantragen – Bis zu 25 % zurück | NOVARIS" />
+  <meta name="twitter:description" content="Bis zu 25 % Ihrer F&E-Kosten zurückerstattet – risikolos & erfolgsbasiert. Kostenlose Erstberatung." />
+  <meta name="twitter:image" content="https://novaris-consulting.com/brand_assets/og-image.png" />
 
   <!-- Structured Data: Organization -->
   <script type="application/ld+json">
@@ -910,6 +920,15 @@
     .lang-btn:hover  { color: rgba(255,255,255,0.85); }
     .lang-btn:focus-visible { outline: 2px solid #4DAEE5; outline-offset: -2px; }
     .lang-divider { width: 1px; height: 16px; background: rgba(255,255,255,0.12); flex-shrink: 0; }
+
+    /* SEO block — dark mode aware */
+    .seo-block { background: #f5f8fe; padding: 3rem 0; border-top: 1px solid #edf2fb; }
+    .seo-block-heading { font-family:'Montserrat',sans-serif; font-weight:800; font-size:1.1rem; color:#0D1B3E; letter-spacing:-0.02em; margin-bottom:0.75rem; }
+    .seo-block-text { font-size:0.82rem; color:#5a6e8c; line-height:1.78; margin-bottom:0.75rem; }
+    html.dark .seo-block { background: var(--bg-raised) !important; border-top-color: var(--bdr) !important; }
+    html.dark .seo-block-heading { color: var(--clr-h) !important; }
+    html.dark .seo-block-text { color: #8aaac8 !important; }
+    html.dark .seo-block-text strong { color: #c0d8f0 !important; }
   </style>
   <link rel="stylesheet" href="/page-transition.css" />
   <script src="/page-transition.js" defer></script>
@@ -921,15 +940,12 @@
     "url": "https://novaris-consulting.com",
     "logo": "https://novaris-consulting.com/brand_assets/Logo V5-light.svg",
     "description": "NOVARIS Consulting ist Ihr spezialisierter Full-Service-Partner für die staatliche Forschungszulage nach dem FZulG – erfolgsbasiert, transparent und ohne Risiko.",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Musterstraße 12",
-      "postalCode": "80331",
-      "addressLocality": "München",
-      "addressCountry": "DE"
-    },
-    "telephone": "+49 89 123456-0",
-    "email": "info@novaris-consulting.de"
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer service",
+      "email": "info@novaris-consulting.de",
+      "availableLanguage": ["German", "English"]
+    }
   }
   </script>
 </head>
@@ -1924,18 +1940,27 @@
      FOOTER
 ══════════════════════════════════════════════ -->
 <!-- SEO Content Block -->
-<section style="background:#f5f8fe;padding:3rem 0;border-top:1px solid #edf2fb">
+<section class="seo-block">
   <div class="max-w-4xl mx-auto px-4 sm:px-6">
-    <h2 style="font-family:'Montserrat',sans-serif;font-weight:800;font-size:1.1rem;color:#0D1B3E;letter-spacing:-0.02em;margin-bottom:0.75rem">Forschungszulage beantragen mit NOVARIS Consulting</h2>
-    <p style="font-size:0.82rem;color:#5a6e8c;line-height:1.78;margin-bottom:0.75rem">
+    <h2 class="seo-block-heading">Forschungszulage beantragen mit NOVARIS Consulting</h2>
+    <p class="seo-block-text">
       Die <strong>Forschungszulage</strong> nach dem <strong>Forschungszulagengesetz (FZulG)</strong> ist eine steuerliche Förderung für Unternehmen in Deutschland, die Forschung und Entwicklung (F&amp;E) betreiben. Seit dem 01.01.2020 können Unternehmen jeder Größe und Branche bis zu <strong>25 % ihrer F&amp;E-Personalkosten</strong> als Steuergutschrift beim Finanzamt geltend machen – KMU sogar bis zu 35 %. Die maximale jährliche Bemessungsgrundlage beträgt 12 Millionen Euro, was einer Forschungszulage von bis zu 4,2 Millionen Euro entspricht.
     </p>
-    <p style="font-size:0.82rem;color:#5a6e8c;line-height:1.78;margin-bottom:0.75rem">
+    <p class="seo-block-text">
       <strong>NOVARIS Consulting</strong> ist Ihr spezialisierter Partner für die <strong>FZulG-Beratung</strong> und <strong>Antragstellung</strong>. Wir begleiten Sie durch den gesamten Prozess: von der kostenlosen Erstanalyse über die Erstellung der <strong>BSFZ-Bescheinigung</strong> (Bescheinigungsstelle Forschungszulage) bis zur erfolgreichen Auszahlung durch das Finanzamt. Unsere Vergütung ist rein erfolgsbasiert – kein Erfolg, kein Honorar.
     </p>
-    <p style="font-size:0.82rem;color:#5a6e8c;line-height:1.78">
+    <p class="seo-block-text" style="margin-bottom:0">
       Ob <strong>Software-Entwicklung</strong>, <strong>Maschinenbau</strong>, <strong>Pharma</strong>, <strong>Automotive</strong>, <strong>Medizintechnik</strong>, <strong>Energie</strong> oder <strong>Agrar &amp; Foodtech</strong> – wir haben Erfahrung in über 9 Branchen und eine <strong>100 % Bewilligungsquote</strong>. Lassen Sie jetzt kostenlos prüfen, ob Ihre F&amp;E-Projekte förderfähig sind.
     </p>
+    <div style="display:flex;flex-wrap:wrap;gap:0.5rem;margin-top:1.25rem">
+      <a href="/forschungszulage.html" style="font-size:0.78rem;color:#1E56B5;text-decoration:none;padding:0.3rem 0.7rem;border-radius:6px;border:1px solid rgba(30,86,181,0.18);transition:background 0.14s ease" onmouseover="this.style.background='rgba(30,86,181,0.06)'" onmouseout="this.style.background=''">Forschungszulage Leitfaden</a>
+      <a href="/forschungszulage-rechner.html" style="font-size:0.78rem;color:#1E56B5;text-decoration:none;padding:0.3rem 0.7rem;border-radius:6px;border:1px solid rgba(30,86,181,0.18);transition:background 0.14s ease" onmouseover="this.style.background='rgba(30,86,181,0.06)'" onmouseout="this.style.background=''">Forschungszulage Rechner</a>
+      <a href="/forschungszulage-antrag.html" style="font-size:0.78rem;color:#1E56B5;text-decoration:none;padding:0.3rem 0.7rem;border-radius:6px;border:1px solid rgba(30,86,181,0.18);transition:background 0.14s ease" onmouseover="this.style.background='rgba(30,86,181,0.06)'" onmouseout="this.style.background=''">Antrag Schritt für Schritt</a>
+      <a href="/forschungszulage-check.html" style="font-size:0.78rem;color:#1E56B5;text-decoration:none;padding:0.3rem 0.7rem;border-radius:6px;border:1px solid rgba(30,86,181,0.18);transition:background 0.14s ease" onmouseover="this.style.background='rgba(30,86,181,0.06)'" onmouseout="this.style.background=''">Förderfähigkeits-Check</a>
+      <a href="/foerdermittel-vergleich.html" style="font-size:0.78rem;color:#1E56B5;text-decoration:none;padding:0.3rem 0.7rem;border-radius:6px;border:1px solid rgba(30,86,181,0.18);transition:background 0.14s ease" onmouseover="this.style.background='rgba(30,86,181,0.06)'" onmouseout="this.style.background=''">Fördermittel Vergleich</a>
+      <a href="/forschungszulage-2026.html" style="font-size:0.78rem;color:#1E56B5;text-decoration:none;padding:0.3rem 0.7rem;border-radius:6px;border:1px solid rgba(30,86,181,0.18);transition:background 0.14s ease" onmouseover="this.style.background='rgba(30,86,181,0.06)'" onmouseout="this.style.background=''">Neuerungen 2026</a>
+      <a href="/erfolge.html" style="font-size:0.78rem;color:#1E56B5;text-decoration:none;padding:0.3rem 0.7rem;border-radius:6px;border:1px solid rgba(30,86,181,0.18);transition:background 0.14s ease" onmouseover="this.style.background='rgba(30,86,181,0.06)'" onmouseout="this.style.background=''">Praxisbeispiele</a>
+    </div>
   </div>
 </section>
 
@@ -1959,6 +1984,18 @@
           <a href="#vorteile"      style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white" data-t="footer.nav.vorteile">Vorteile</a>
           <a href="#faq"           style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white" data-t="footer.nav.faq">FAQ</a>
           <a href="#kontakt"       style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white" data-t="footer.nav.kontakt">Kontakt</a>
+        </div>
+      </div>
+
+      <div>
+        <div style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.75rem;letter-spacing:0.09em;text-transform:uppercase;color:rgba(195,215,245,0.3);margin-bottom:1rem">Ressourcen</div>
+        <div style="display:flex;flex-direction:column;gap:0.55rem">
+          <a href="/forschungszulage.html" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">FZulG-Leitfaden</a>
+          <a href="/forschungszulage-rechner.html" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Förderrechner</a>
+          <a href="/forschungszulage-antrag.html" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Antrag stellen</a>
+          <a href="/forschungszulage-check.html" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Förder-Check</a>
+          <a href="/foerdermittel-vergleich.html" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Fördermittel Vergleich</a>
+          <a href="/erfolge.html" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Praxisbeispiele</a>
         </div>
       </div>
 
@@ -2604,8 +2641,8 @@
     window.open('https://cal.com/' + link, '_blank', 'noopener,noreferrer');
   }
 </script>
-<script src="/cookie-consent.js"></script>
-<script src="/analytics.js"></script>
-<script src="/scroll-animations.js"></script>
+<script src="/cookie-consent.js" defer></script>
+<script src="/analytics.js" defer></script>
+<script src="/scroll-animations.js" defer></script>
 </body>
 </html>
