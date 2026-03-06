@@ -34,7 +34,7 @@
   }
   </script>
 
-  <!-- Structured Data: FAQ -->
+  <!-- Structured Data: FAQ (matches actual FAQ section on page) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -42,18 +42,34 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "Was ist die Forschungszulage (FZulG)?",
+        "name": "Wer ist berechtigt, einen FZulG-Antrag zu stellen?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Die Forschungszulage ist eine steuerliche Förderung für Forschungs- und Entwicklungsvorhaben in Deutschland. Unternehmen können bis zu 25 % ihrer F&E-Personalkosten und Auftragsforschungskosten als Steuergutschrift erhalten."
+          "text": "Alle in Deutschland körperschafts- oder einkommensteuerpflichtigen Unternehmen – unabhängig von Größe, Rechtsform oder Branche – sofern sie eigene Forschungs- und Entwicklungsvorhaben nach § 2 FZulG durchführen."
         }
       },
       {
         "@type": "Question",
-        "name": "Wer kann die Forschungszulage beantragen?",
+        "name": "Welche Aufwendungen sind bei der Forschungszulage förderfähig?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Alle in Deutschland steuerpflichtigen Unternehmen können die Forschungszulage beantragen – unabhängig von Größe, Rechtsform oder Branche. Auch Unternehmen ohne Gewinn profitieren, da die Zulage als Steuererstattung ausgezahlt wird."
+          "text": "Primär Personalkosten von Mitarbeitern, die an F&E-Projekten beteiligt sind. Auch Eigenleistungen von Einzelunternehmen und externe Auftragsforschung (zu 60 % anrechenbar) können gefördert werden."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Können vergangene Jahre rückwirkend beantragt werden?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja – das FZulG gilt rückwirkend ab dem 01.01.2020. Solange die Steuerfestsetzung des jeweiligen Jahres noch offen ist, können Ansprüche nachträglich geltend gemacht werden."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Was kostet die Beratung durch NOVARIS Consulting?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Die Erstanalyse ist vollständig kostenlos und unverbindlich. Das Honorar ist rein erfolgsbasiert: Es entsteht nur, wenn die Forschungszulage vom Finanzamt ausgezahlt oder mit der Steuerschuld verrechnet wird. Kein Erfolg – kein Honorar."
         }
       },
       {
@@ -61,10 +77,29 @@
         "name": "Wie hoch ist die Forschungszulage?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Die Forschungszulage beträgt 25 % der förderfähigen Aufwendungen. Die maximale Bemessungsgrundlage liegt bei 4 Millionen Euro pro Jahr, was einer maximalen Zulage von 1 Million Euro entspricht."
+          "text": "Die Forschungszulage beträgt 25 % der förderfähigen Aufwendungen (KMU erhalten 35 %). Die maximale Bemessungsgrundlage liegt bei 12 Millionen Euro pro Jahr, was einer maximalen Zulage von bis zu 4,2 Millionen Euro für KMU entspricht."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kann ich die Forschungszulage auch bei ausgelagerter Entwicklung beantragen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja – Auftragsforschung an externe Auftragnehmer im Europäischen Wirtschaftsraum (EWR) ist förderfähig. Es werden 60 % der gezahlten Vergütung als Bemessungsgrundlage anerkannt."
         }
       }
     ]
+  }
+  </script>
+
+  <!-- Structured Data: WebSite (enables sitelinks search) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "NOVARIS Consulting",
+    "url": "https://novaris-consulting.com",
+    "description": "Forschungszulage (FZulG) beantragen – bis zu 25 % Ihrer F&E-Kosten zurück, risikolos und erfolgsbasiert."
   }
   </script>
   <link rel="icon" href="/favicon.ico" sizes="any" />
@@ -1732,8 +1767,8 @@
   <div class="max-w-2xl mx-auto px-4 sm:px-6">
     <div class="text-center mb-12">
       <div class="badge mb-4" data-t="faq.badge">FAQ</div>
-      <h2 class="text-3xl sm:text-4xl font-black" style="color:#0D1B3E;margin-bottom:0.75rem" data-t="faq.h2">Häufige Fragen</h2>
-      <p style="color:#5a6e8c;font-size:0.9rem" data-t="faq.sub">Alles, was Sie zum FZulG und unserer Leistung wissen sollten.</p>
+      <h2 class="text-3xl sm:text-4xl font-black" style="color:#0D1B3E;margin-bottom:0.75rem" data-t="faq.h2">Häufige Fragen zur Forschungszulage</h2>
+      <p style="color:#5a6e8c;font-size:0.9rem" data-t="faq.sub">Alles, was Sie zum FZulG-Antrag und unserer Beratung wissen sollten.</p>
     </div>
 
     <div style="display:flex;flex-direction:column;gap:0.65rem">
@@ -1888,6 +1923,22 @@
 <!-- ══════════════════════════════════════════════
      FOOTER
 ══════════════════════════════════════════════ -->
+<!-- SEO Content Block -->
+<section style="background:#f5f8fe;padding:3rem 0;border-top:1px solid #edf2fb">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6">
+    <h2 style="font-family:'Montserrat',sans-serif;font-weight:800;font-size:1.1rem;color:#0D1B3E;letter-spacing:-0.02em;margin-bottom:0.75rem">Forschungszulage beantragen mit NOVARIS Consulting</h2>
+    <p style="font-size:0.82rem;color:#5a6e8c;line-height:1.78;margin-bottom:0.75rem">
+      Die <strong>Forschungszulage</strong> nach dem <strong>Forschungszulagengesetz (FZulG)</strong> ist eine steuerliche Förderung für Unternehmen in Deutschland, die Forschung und Entwicklung (F&amp;E) betreiben. Seit dem 01.01.2020 können Unternehmen jeder Größe und Branche bis zu <strong>25 % ihrer F&amp;E-Personalkosten</strong> als Steuergutschrift beim Finanzamt geltend machen – KMU sogar bis zu 35 %. Die maximale jährliche Bemessungsgrundlage beträgt 12 Millionen Euro, was einer Forschungszulage von bis zu 4,2 Millionen Euro entspricht.
+    </p>
+    <p style="font-size:0.82rem;color:#5a6e8c;line-height:1.78;margin-bottom:0.75rem">
+      <strong>NOVARIS Consulting</strong> ist Ihr spezialisierter Partner für die <strong>FZulG-Beratung</strong> und <strong>Antragstellung</strong>. Wir begleiten Sie durch den gesamten Prozess: von der kostenlosen Erstanalyse über die Erstellung der <strong>BSFZ-Bescheinigung</strong> (Bescheinigungsstelle Forschungszulage) bis zur erfolgreichen Auszahlung durch das Finanzamt. Unsere Vergütung ist rein erfolgsbasiert – kein Erfolg, kein Honorar.
+    </p>
+    <p style="font-size:0.82rem;color:#5a6e8c;line-height:1.78">
+      Ob <strong>Software-Entwicklung</strong>, <strong>Maschinenbau</strong>, <strong>Pharma</strong>, <strong>Automotive</strong>, <strong>Medizintechnik</strong>, <strong>Energie</strong> oder <strong>Agrar &amp; Foodtech</strong> – wir haben Erfahrung in über 9 Branchen und eine <strong>100 % Bewilligungsquote</strong>. Lassen Sie jetzt kostenlos prüfen, ob Ihre F&amp;E-Projekte förderfähig sind.
+    </p>
+  </div>
+</section>
+
 <footer style="background:#04091a;border-top:1px solid rgba(255,255,255,0.07)">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12">
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
