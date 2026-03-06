@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forschungszulage 2026: Alles zum FZulG-Antrag | NOVARIS Consulting</title>
+  <meta name="description" content="Forschungszulage (FZulG) 2026: Bis zu 4,2 Mio. EUR steuerliche Forschungsförderung sichern. BSFZ Antrag, förderfähige Aufwendungen & Neuerungen – jetzt kostenlos prüfen." />
+  <link rel="canonical" href="https://novaris-consulting.com/forschungszulage.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --bg-base:    #ffffff;
+      --bg-raised:  #f5f8fe;
+      --bg-card:    #ffffff;
+      --clr-h:      #0D1B3E;
+      --clr-b:      #5a6e8c;
+      --clr-muted:  #4a5870;
+      --bdr:        #dde5f4;
+    }
+    html.dark {
+      --bg-base:    #0a1428;
+      --bg-raised:  #0D1B3E;
+      --bg-card:    #122244;
+      --clr-h:      #e8f0fa;
+      --clr-b:      #8aaac8;
+      --clr-muted:  #6888a8;
+      --bdr:        rgba(77,174,229,0.18);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg-base);
+      color: var(--clr-h);
+      transition: background 0.25s ease, color 0.25s ease;
+      line-height: 1.7;
+    }
+
+    .nav-blur { backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); }
+    .logo-img { height: 52px; width: auto; display: block; }
+
+    .nav-link {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.84rem;
+      font-weight: 500;
+      color: rgba(195,215,245,0.70);
+      text-decoration: none;
+      padding: 0.42rem 0.85rem;
+      border-radius: 8px;
+      transition: color 0.15s ease, background 0.15s ease;
+      letter-spacing: 0.01em;
+    }
+    .nav-link:hover { color: #fff; background: rgba(255,255,255,0.07); }
+    .nav-link:focus-visible { outline: 2px solid #4DAEE5; outline-offset: 2px; }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background: #1E56B5;
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 0.84rem;
+      border: none;
+      border-radius: 10px;
+      text-decoration: none;
+      cursor: pointer;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.3), 0 4px 12px rgba(30,86,181,0.35);
+      transition: background 0.15s ease, transform 0.12s ease, box-shadow 0.15s ease;
+    }
+    .btn-primary:hover  { background: #2563c4; box-shadow: 0 2px 4px rgba(0,0,0,0.3), 0 6px 18px rgba(30,86,181,0.45); transform: translateY(-1px); }
+    .btn-primary:active { transform: translateY(0); }
+    .btn-primary:focus-visible { outline: 2px solid #4DAEE5; outline-offset: 2px; }
+
+    .content-wrap {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 6rem 1.5rem 5rem;
+    }
+
+    .ds-breadcrumb {
+      font-size: 0.78rem;
+      color: var(--clr-b);
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .ds-breadcrumb a {
+      color: #4DAEE5;
+      text-decoration: none;
+      transition: color 0.14s ease;
+    }
+    .ds-breadcrumb a:hover { color: #7ec8f0; }
+
+    .ds-eyebrow {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #4DAEE5;
+      margin-bottom: 0.9rem;
+    }
+
+    .ds-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: var(--clr-h);
+      line-height: 1.15;
+      margin-bottom: 0.5rem;
+    }
+
+    .ds-updated {
+      font-size: 0.78rem;
+      color: var(--clr-b);
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--bdr);
+    }
+
+    .ds-section {
+      margin-bottom: 2.8rem;
+    }
+    .ds-section h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.12rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: var(--clr-h);
+      margin-bottom: 0.9rem;
+      padding-bottom: 0.55rem;
+      border-bottom: 1px solid var(--bdr);
+    }
+    .ds-section h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--clr-h);
+      margin-top: 1.4rem;
+      margin-bottom: 0.5rem;
+    }
+    .ds-section p {
+      font-size: 0.9rem;
+      color: var(--clr-b);
+      line-height: 1.75;
+      margin-bottom: 0.85rem;
+    }
+    .ds-section ul, .ds-section ol {
+      margin: 0.5rem 0 0.85rem 1.1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+    .ds-section ul li, .ds-section ol li {
+      font-size: 0.9rem;
+      color: var(--clr-b);
+      line-height: 1.65;
+    }
+    .ds-section a {
+      color: #4DAEE5;
+      text-decoration: none;
+      transition: color 0.14s ease;
+    }
+    .ds-section a:hover { color: #7ec8f0; text-decoration: underline; }
+
+    .ds-box {
+      background: var(--bg-raised);
+      border: 1px solid var(--bdr);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      font-size: 0.88rem;
+      color: var(--clr-b);
+      line-height: 1.7;
+      transition: background 0.25s ease, border-color 0.25s ease;
+    }
+    .ds-box strong {
+      color: var(--clr-h);
+      font-weight: 600;
+    }
+
+    .ds-highlight-box {
+      background: var(--bg-raised);
+      border: 1px solid var(--bdr);
+      border-left: 4px solid #1E56B5;
+      border-radius: 0 12px 12px 0;
+      padding: 1.25rem 1.5rem;
+      font-size: 0.88rem;
+      color: var(--clr-b);
+      line-height: 1.7;
+      margin: 1rem 0 1.2rem;
+      transition: background 0.25s ease, border-color 0.25s ease;
+    }
+    .ds-highlight-box strong {
+      color: var(--clr-h);
+      font-weight: 600;
+    }
+
+    .ds-step {
+      display: flex;
+      gap: 1.2rem;
+      align-items: flex-start;
+      margin-bottom: 1.5rem;
+    }
+    .ds-step-num {
+      flex-shrink: 0;
+      width: 38px;
+      height: 38px;
+      background: #1E56B5;
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: 0.95rem;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.3), 0 4px 10px rgba(30,86,181,0.3);
+    }
+    .ds-step-content h3 {
+      margin-top: 0;
+    }
+
+    .cta-section {
+      background: var(--bg-raised);
+      border: 1px solid var(--bdr);
+      border-radius: 16px;
+      padding: 2.5rem 2rem;
+      text-align: center;
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+      transition: background 0.25s ease, border-color 0.25s ease;
+    }
+    .cta-section h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: var(--clr-h);
+      margin-bottom: 0.8rem;
+      border: none;
+      padding-bottom: 0;
+    }
+    .cta-section p {
+      font-size: 0.9rem;
+      color: var(--clr-b);
+      line-height: 1.75;
+      margin-bottom: 1.5rem;
+      max-width: 560px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    footer { background: #04091a; border-top: 1px solid rgba(255,255,255,0.07); }
+
+    html.dark .ds-box { background: var(--bg-card); }
+    html.dark .ds-highlight-box { background: var(--bg-card); }
+    html.dark .cta-section { background: var(--bg-card); }
+    .logo-light { display: none; }
+    html.dark .logo-dark  { display: none !important; }
+    html.dark .logo-light { display: inline !important; }
+
+    html { overflow-y: scroll; }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: rgba(77,174,229,0.38); border-radius: 999px; }
+    ::-webkit-scrollbar-thumb:hover { background: rgba(77,174,229,0.55); }
+    html { scrollbar-width: thin; scrollbar-color: rgba(77,174,229,0.38) transparent; }
+    html.dark ::-webkit-scrollbar-thumb { background: rgba(77,174,229,0.30); }
+    html.dark ::-webkit-scrollbar-thumb:hover { background: rgba(77,174,229,0.48); }
+    html.dark { scrollbar-color: rgba(77,174,229,0.30) transparent; }
+
+    /* TOC styling */
+    .toc {
+      background: var(--bg-raised);
+      border: 1px solid var(--bdr);
+      border-radius: 12px;
+      padding: 1.5rem 1.75rem;
+      margin-bottom: 2.8rem;
+      transition: background 0.25s ease, border-color 0.25s ease;
+    }
+    html.dark .toc { background: var(--bg-card); }
+    .toc-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--clr-muted);
+      margin-bottom: 0.8rem;
+    }
+    .toc ol {
+      margin: 0;
+      padding-left: 1.1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+    .toc ol li {
+      font-size: 0.85rem;
+      color: var(--clr-b);
+      line-height: 1.55;
+    }
+    .toc ol li a {
+      color: #4DAEE5;
+      text-decoration: none;
+      transition: color 0.14s ease;
+    }
+    .toc ol li a:hover { color: #7ec8f0; }
+  </style>
+  <link rel="stylesheet" href="/page-transition.css" />
+  <link rel="stylesheet" href="/cookie-consent.css" />
+  <script src="/page-transition.js" defer></script>
+
+  <!-- Article Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Forschungszulage (FZulG) 2026: Der komplette Leitfaden zum Antrag",
+    "description": "Umfassender Ratgeber zur Forschungszulage nach dem Forschungszulagengesetz (FZulG): Voraussetzungen, Förderhöhe, BSFZ Antrag, rückwirkende Beantragung und Neuerungen 2026.",
+    "author": {
+      "@type": "Organization",
+      "name": "NOVARIS Consulting",
+      "url": "https://novaris-consulting.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "NOVARIS Consulting",
+      "url": "https://novaris-consulting.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://novaris-consulting.com/brand_assets/Logo V5-light.svg"
+      }
+    },
+    "datePublished": "2026-01-15",
+    "dateModified": "2026-03-06",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://novaris-consulting.com/forschungszulage.html"
+    },
+    "keywords": ["Forschungszulage", "FZulG", "Forschungszulage beantragen", "Forschungszulagengesetz", "BSFZ Antrag", "steuerliche Forschungsförderung"]
+  }
+  </script>
+
+  <!-- FAQ Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Was ist die Forschungszulage?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Die Forschungszulage ist eine steuerliche Forschungsförderung nach dem Forschungszulagengesetz (FZulG), die seit dem 01.01.2020 allen steuerpflichtigen Unternehmen in Deutschland zusteht. Sie beträgt 25 % (KMU: 35 %) der förderfähigen Aufwendungen für Forschungs- und Entwicklungstätigkeiten."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wie hoch ist die Forschungszulage 2026?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Die maximale Bemessungsgrundlage beträgt 12 Mio. EUR pro Wirtschaftsjahr. Bei einem Fördersatz von 25 % (35 % für KMU) ergibt sich eine maximale Forschungszulage von bis zu 4,2 Mio. EUR. Zusätzlich gilt ab 2026 eine Gemeinkostenpauschale von 20 %."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kann die Forschungszulage rückwirkend beantragt werden?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, die Forschungszulage kann rückwirkend für alle offenen Steuerjahre ab 2020 beantragt werden. Voraussetzung ist, dass der Steuerbescheid noch nicht bestandskräftig ist."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<header id="nav" class="fixed inset-x-0 top-0 z-50 nav-blur"
+        style="background:rgba(4,9,26,0.88);border-bottom:1px solid rgba(255,255,255,0.07)">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between gap-4" style="height:68px">
+    <a href="/" aria-label="NOVARIS Consulting"
+       style="text-decoration:none;flex-shrink:0;display:flex;align-items:center;transition:opacity 0.15s ease"
+       class="hover:opacity-90 focus-visible:outline-none">
+      <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:52px" />
+    </a>
+    <nav class="hidden lg:flex items-center gap-0.5">
+      <a href="/#was-ist-fzulg" class="nav-link">Das FZulG</a>
+      <a href="/#branchen"      class="nav-link">Branchen</a>
+      <a href="/#prozess"       class="nav-link">Prozess</a>
+      <a href="/#vorteile"      class="nav-link">Vorteile</a>
+      <a href="/#faq"           class="nav-link">FAQ</a>
+      <a href="/#kontakt"       class="nav-link">Kontakt</a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <button id="dark-toggle" onclick="toggleDark()" aria-label="Toggle dark mode"
+        class="hidden sm:flex" style="width:32px;height:32px;border-radius:8px;border:1px solid rgba(255,255,255,0.12);
+               background:rgba(255,255,255,0.07);cursor:pointer;align-items:center;
+               justify-content:center;color:rgba(255,255,255,0.7);
+               transition:background 0.15s ease,color 0.15s ease">
+        <svg id="icon-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg id="icon-sun"  width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
+      <a href="/#kontakt" class="btn-primary hidden sm:inline-flex" style="padding:0.55rem 1.35rem;font-size:0.83rem">
+        Kostenlos prüfen
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="content-wrap">
+
+    <div class="ds-breadcrumb">
+      <a href="/">Startseite</a>
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      <span>Forschungszulage</span>
+    </div>
+
+    <div class="ds-eyebrow">Steuerliche Forschungsförderung</div>
+    <h1 class="ds-title">Forschungszulage (FZulG) – Der komplette Leitfaden 2026</h1>
+    <p class="ds-updated">Zuletzt aktualisiert: 06. März 2026 · Lesezeit: ca. 12 Minuten</p>
+
+    <!-- Table of Contents -->
+    <nav class="toc" aria-label="Inhaltsverzeichnis">
+      <div class="toc-title">Inhaltsverzeichnis</div>
+      <ol>
+        <li><a href="#was-ist-forschungszulage">Was ist die Forschungszulage?</a></li>
+        <li><a href="#wer-kann-beantragen">Wer kann die Forschungszulage beantragen?</a></li>
+        <li><a href="#hoehe-forschungszulage">Wie hoch ist die Forschungszulage 2026?</a></li>
+        <li><a href="#foerderfaehige-aufwendungen">Welche Aufwendungen sind förderfähig?</a></li>
+        <li><a href="#antragsverfahren">Das Antragsverfahren in 2 Schritten</a></li>
+        <li><a href="#rueckwirkend-beantragen">Forschungszulage rückwirkend beantragen</a></li>
+        <li><a href="#neuerungen-2026">Neuerungen 2026: Was hat sich geändert?</a></li>
+        <li><a href="#novaris-beantragen">Forschungszulage mit NOVARIS beantragen</a></li>
+      </ol>
+    </nav>
+
+    <!-- Section 1: Was ist die Forschungszulage? -->
+    <div class="ds-section" id="was-ist-forschungszulage">
+      <h2>Was ist die Forschungszulage?</h2>
+      <p>Die <strong>Forschungszulage</strong> ist eine steuerliche Förderung für Forschungs- und Entwicklungstätigkeiten (FuE) in Deutschland. Sie wurde mit dem <strong>Forschungszulagengesetz (FZulG)</strong> eingeführt und steht seit dem <strong>01. Januar 2020</strong> allen steuerpflichtigen Unternehmen zu – unabhängig von Branche, Größe oder Gewinn. Damit ist die Forschungszulage das erste branchenoffene, steuerliche Instrument zur Forschungsförderung in der deutschen Geschichte.</p>
+      <p>Die Rechtsgrundlage bildet <strong>§ 2 FZulG (Forschungszulagengesetz)</strong>, das die begünstigten Forschungs- und Entwicklungsvorhaben definiert. Als förderfähig gelten Tätigkeiten in den drei Kategorien:</p>
+      <ul>
+        <li><strong>Grundlagenforschung:</strong> Experimentelle oder theoretische Arbeiten, die in erster Linie auf die Gewinnung neuer Erkenntnisse ausgerichtet sind, ohne auf eine unmittelbare praktische Anwendung abzuzielen.</li>
+        <li><strong>Industrielle Forschung (angewandte Forschung):</strong> Planmäßiges Forschen zur Gewinnung neuer Kenntnisse und Fertigkeiten mit dem Ziel, neue Produkte, Verfahren oder Dienstleistungen zu entwickeln oder bestehende wesentlich zu verbessern.</li>
+        <li><strong>Experimentelle Entwicklung:</strong> Der Erwerb, die Kombination, die Gestaltung und die Nutzung vorhandener wissenschaftlicher, technischer, wirtschaftlicher und sonstiger einschlägiger Kenntnisse und Fertigkeiten mit dem Ziel, neue oder verbesserte Produkte, Verfahren oder Dienstleistungen zu entwickeln.</li>
+      </ul>
+      <p>Das Besondere an der steuerlichen Forschungsförderung nach dem FZulG: Im Gegensatz zu klassischen Förderprogrammen (wie ZIM oder KMU-innovativ) ist die Forschungszulage <strong>nicht an ein Wettbewerbsverfahren gebunden</strong>. Jedes Unternehmen, das die Voraussetzungen erfüllt, hat einen <strong>Rechtsanspruch</strong> auf die Förderung. Es gibt keine begrenzten Fördertöpfe und keine Stichtage. Die Forschungszulage wird als Steuergutschrift auf die Einkommen- bzw. Körperschaftsteuer angerechnet – und bei einem Steuerüberschuss sogar <strong>direkt ausgezahlt</strong>.</p>
+
+      <div class="ds-highlight-box">
+        <strong>Gut zu wissen:</strong> Die Forschungszulage ist kein Zuschuss, sondern eine steuerliche Zulage. Sie wird auf die festgesetzte Einkommen- oder Körperschaftsteuer angerechnet. Übersteigt die Zulage die Steuerschuld, wird der Differenzbetrag an das Unternehmen ausgezahlt. Das macht sie besonders attraktiv für Unternehmen in Verlustphasen oder Startups.
+      </div>
+    </div>
+
+    <!-- Section 2: Wer kann beantragen? -->
+    <div class="ds-section" id="wer-kann-beantragen">
+      <h2>Wer kann die Forschungszulage beantragen?</h2>
+      <p>Die steuerliche Forschungsförderung nach dem Forschungszulagengesetz steht grundsätzlich <strong>allen steuerpflichtigen Unternehmen</strong> in Deutschland offen. Berechtigt sind:</p>
+      <ul>
+        <li><strong>Kapitalgesellschaften</strong> (GmbH, AG, UG) mit unbeschränkter Körperschaftsteuerpflicht</li>
+        <li><strong>Personengesellschaften</strong> (GbR, OHG, KG, GmbH &amp; Co. KG) über ihre Gesellschafter</li>
+        <li><strong>Einzelunternehmer und Freiberufler</strong> mit Einkünften aus Gewerbebetrieb oder selbständiger Arbeit</li>
+        <li><strong>Betriebsstätten</strong> ausländischer Unternehmen in Deutschland</li>
+        <li><strong>Mitunternehmerschaften</strong> im Sinne des § 15 Abs. 1 Satz 1 Nr. 2 EStG</li>
+      </ul>
+      <p>Entscheidend ist: Die Forschungszulage ist <strong>branchen- und größenunabhängig</strong>. Sowohl <strong>kleine und mittlere Unternehmen (KMU)</strong> als auch <strong>Großunternehmen</strong> und Konzerne können sie beantragen. Seit dem Wachstumschancengesetz profitieren KMU sogar von einem erhöhten Fördersatz von 35 % statt 25 %.</p>
+
+      <h3>Besonderheiten für verbundene Unternehmen</h3>
+      <p>Bei verbundenen Unternehmen im Sinne des § 15 AktG bzw. der KMU-Definition der EU gilt eine wichtige Einschränkung: Die maximale Bemessungsgrundlage von 12 Mio. EUR wird <strong>auf alle verbundenen Unternehmen gemeinsam</strong> aufgeteilt. Das bedeutet: Gehören mehrere Gesellschaften zu einem Konzern, teilen sie sich die Obergrenze. Dies betrifft sowohl die horizontale als auch die vertikale Unternehmensverbindung.</p>
+
+      <h3>Voraussetzungen im Überblick</h3>
+      <p>Um die Forschungszulage beantragen zu können, müssen folgende Voraussetzungen erfüllt sein:</p>
+      <ul>
+        <li>Unbeschränkte oder beschränkte Steuerpflicht in Deutschland</li>
+        <li>Durchführung eigener FuE-Vorhaben oder Beauftragung von FuE-Auftragsforschung</li>
+        <li>Die FuE-Tätigkeit muss den Kriterien des § 2 FZulG (Neuartigkeit, Unsicherheit, Systematik, Übertragbarkeit, Reproduzierbarkeit) genügen</li>
+        <li>Keine Doppelförderung desselben Vorhabens durch andere staatliche Beihilfen für die gleichen förderfähigen Aufwendungen</li>
+      </ul>
+
+      <div class="ds-highlight-box">
+        <strong>Wichtig:</strong> Die Forschungszulage kann auch beantragt werden, wenn das Unternehmen <strong>keinen Gewinn</strong> erzielt. In diesem Fall erfolgt eine Auszahlung der Zulage als Steuererstattung. Besonders für Startups und wachsende Unternehmen ist dies ein erheblicher Liquiditätsvorteil.
+      </div>
+    </div>
+
+    <!-- Section 3: Wie hoch ist die Forschungszulage? -->
+    <div class="ds-section" id="hoehe-forschungszulage">
+      <h2>Wie hoch ist die Forschungszulage 2026?</h2>
+      <p>Die Höhe der Forschungszulage hat sich seit der Einführung des FZulG im Jahr 2020 mehrfach erhöht. Seit dem <strong>Wachstumschancengesetz 2024</strong> und den Anpassungen für 2025/2026 gelten folgende Eckdaten:</p>
+
+      <div class="ds-box" style="margin-bottom:1.2rem">
+        <strong>Maximale Bemessungsgrundlage:</strong> 12.000.000 EUR pro Wirtschaftsjahr<br /><br />
+        <strong>Fördersatz regulär:</strong> 25 % der förderfähigen Aufwendungen<br />
+        <strong>Fördersatz KMU:</strong> 35 % der förderfähigen Aufwendungen (seit 2024)<br /><br />
+        <strong>Maximale Forschungszulage:</strong> bis zu 4.200.000 EUR pro Jahr (KMU bei voller Ausschöpfung)<br />
+        <strong>Regulär:</strong> bis zu 3.000.000 EUR pro Jahr
+      </div>
+
+      <h3>Die Berechnung im Detail</h3>
+      <p>Die Forschungszulage berechnet sich nach folgender Formel: <strong>Förderfähige Aufwendungen x Fördersatz = Forschungszulage</strong>. Die förderfähigen Aufwendungen setzen sich aus verschiedenen Kostenarten zusammen (siehe nächster Abschnitt). Die wichtigsten Berechnungsparameter für 2026:</p>
+      <ul>
+        <li><strong>Personalkosten:</strong> Bruttolöhne und -gehälter der in FuE-Projekten tätigen Arbeitnehmer, anteilig nach dem Zeitaufwand für das jeweilige Vorhaben</li>
+        <li><strong>Eigenleistungen:</strong> Pauschale von <strong>70 EUR pro Stunde</strong> für Einzelunternehmer und Gesellschafter, die selbst forschend tätig sind (maximal 40 Stunden pro Woche)</li>
+        <li><strong>Gemeinkostenpauschale:</strong> Ab 2026 können <strong>20 % der Personalkosten</strong> pauschal als Gemeinkosten angesetzt werden – eine wesentliche Verbesserung gegenüber den Vorjahren</li>
+        <li><strong>Auftragsforschung:</strong> 60 % des an den Auftragnehmer gezahlten Entgelts</li>
+      </ul>
+
+      <h3>Rechenbeispiel: KMU mit 5 FuE-Mitarbeitern</h3>
+      <div class="ds-box">
+        <strong>Personalkosten FuE:</strong> 400.000 EUR/Jahr<br />
+        <strong>+ Gemeinkostenpauschale (20 %):</strong> 80.000 EUR<br />
+        <strong>= Bemessungsgrundlage:</strong> 480.000 EUR<br />
+        <strong>x KMU-Fördersatz (35 %):</strong> = <strong>168.000 EUR Forschungszulage</strong><br /><br />
+        Bei einem regulären Unternehmen (25 %): 120.000 EUR Forschungszulage.
+      </div>
+    </div>
+
+    <!-- Section 4: Förderfähige Aufwendungen -->
+    <div class="ds-section" id="foerderfaehige-aufwendungen">
+      <h2>Welche Aufwendungen sind förderfähig?</h2>
+      <p>Das Forschungszulagengesetz definiert in § 3 FZulG genau, welche Aufwendungen in die Bemessungsgrundlage der Forschungszulage einfließen. Nicht jede Ausgabe, die im Zusammenhang mit Forschung und Entwicklung steht, ist automatisch förderfähig. Hier ein detaillierter Überblick:</p>
+
+      <h3>1. Personalkosten (Eigenpersonal)</h3>
+      <p>Die mit Abstand wichtigste Kostenart sind die <strong>Arbeitslöhne der in FuE tätigen Mitarbeiter</strong>. Förderfähig sind die dem Arbeitnehmer zufließenden steuerpflichtigen Bruttolöhne und -gehälter, einschließlich:</p>
+      <ul>
+        <li>Grundgehalt und Zulagen</li>
+        <li>Überstundenvergütung</li>
+        <li>Urlaubsgeld und Weihnachtsgeld (anteilig)</li>
+        <li>Boni und Prämien (sofern steuerpflichtig)</li>
+      </ul>
+      <p><strong>Nicht förderfähig</strong> sind hingegen Arbeitgeberanteile zur Sozialversicherung, betriebliche Altersvorsorge, Sachbezüge oder geldwerte Vorteile. Die Personalkosten werden <strong>anteilig</strong> nach dem tatsächlichen Zeitaufwand für das FuE-Vorhaben berücksichtigt. Eine sorgfältige Zeiterfassung ist daher essenziell.</p>
+
+      <h3>2. Auftragsforschung</h3>
+      <p>Beauftragt ein Unternehmen einen Dritten mit FuE-Tätigkeiten, sind <strong>60 % des gezahlten Entgelts</strong> als förderfähige Aufwendungen anzusetzen. Dies gilt sowohl für die Beauftragung von Forschungseinrichtungen (Universitäten, Fraunhofer-Institute) als auch für die Beauftragung anderer Unternehmen. Der Auftragnehmer darf für dieselben Aufwendungen keine eigene Forschungszulage beantragen.</p>
+
+      <div class="ds-highlight-box">
+        <strong>Praxistipp:</strong> Die 60-%-Regelung bei Auftragsforschung bedeutet nicht, dass 40 % verloren gehen. Der Gesetzgeber unterstellt, dass 40 % des Entgelts auf nicht-förderfähige Sachkosten und Gewinnmarge des Auftragnehmers entfallen. Dokumentieren Sie den FuE-Anteil der Auftragsforschung klar im Vertrag.
+      </div>
+
+      <h3>3. Eigenleistungen von Einzelunternehmern und Gesellschaftern</h3>
+      <p>Einzelunternehmer und Gesellschafter von Personengesellschaften, die <strong>selbst forschend tätig</strong> sind, können ihre Eigenleistungen mit einer <strong>Pauschale von 70 EUR pro Stunde</strong> ansetzen. Die maximale Wochenarbeitszeit ist dabei auf 40 Stunden begrenzt. Pro Jahr ergibt sich somit eine maximale Bemessungsgrundlage für Eigenleistungen von ca. 145.600 EUR (bei 52 Wochen x 40 Stunden x 70 EUR).</p>
+
+      <h3>4. Gemeinkostenpauschale (neu ab 2026)</h3>
+      <p>Eine der wichtigsten Neuerungen: Ab dem Wirtschaftsjahr 2026 können Unternehmen eine <strong>Gemeinkostenpauschale von 20 %</strong> auf die förderfähigen Personalkosten und Eigenleistungen ansetzen. Dies deckt pauschal Kosten für Labormaterial, Verbrauchsmaterialien, Softwarelizenzen und weitere Gemeinkosten ab, die bisher nicht angesetzt werden konnten.</p>
+
+      <h3>Nicht förderfähige Aufwendungen</h3>
+      <p>Ausdrücklich <strong>nicht förderfähig</strong> nach dem FZulG sind:</p>
+      <ul>
+        <li>Sachkosten (Materialien, Maschinen, Geräte) – außer über die Gemeinkostenpauschale</li>
+        <li>Abschreibungen auf Forschungsanlagen</li>
+        <li>Reisekosten</li>
+        <li>Patentkosten und Zulassungsgebühren</li>
+        <li>Kosten für die Markteinführung</li>
+        <li>Routinemäßige Qualitätskontrollen und Tests</li>
+      </ul>
+    </div>
+
+    <!-- Section 5: Antragsverfahren -->
+    <div class="ds-section" id="antragsverfahren">
+      <h2>Das Antragsverfahren in 2 Schritten</h2>
+      <p>Das Verfahren zur Beantragung der Forschungszulage ist zweistufig aufgebaut. Zuerst wird die inhaltliche FuE-Qualifikation der Vorhaben durch eine unabhängige Stelle geprüft, dann erfolgt der steuerliche Antrag beim Finanzamt. Beide Schritte sind zwingend erforderlich.</p>
+
+      <div class="ds-step">
+        <div class="ds-step-num">1</div>
+        <div class="ds-step-content">
+          <h3>BSFZ Bescheinigung: Antrag bei der Bescheinigungsstelle Forschungszulage</h3>
+          <p>Im ersten Schritt müssen Sie einen <strong>BSFZ Antrag</strong> bei der <strong>Bescheinigungsstelle Forschungszulage (BSFZ)</strong> stellen. Die BSFZ ist eine dem BMBF zugeordnete Stelle, die von einem Konsortium aus VDI Technologiezentrum, DLR Projektträger und AiF Projekt GmbH betrieben wird.</p>
+          <p>Der Antrag erfolgt ausschließlich <strong>elektronisch über das BSFZ-Portal</strong> (elster-basiert). Folgende Angaben und Unterlagen sind erforderlich:</p>
+          <ul>
+            <li>Beschreibung des FuE-Vorhabens (Ziele, Methoden, geplante Ergebnisse)</li>
+            <li>Darstellung der wissenschaftlichen oder technischen Unsicherheit</li>
+            <li>Nachweis der Neuartigkeit gegenüber dem Stand der Technik</li>
+            <li>Zeitraum und beteiligte Mitarbeiter des Vorhabens</li>
+            <li>Einordnung in die Kategorien Grundlagenforschung, industrielle Forschung oder experimentelle Entwicklung</li>
+          </ul>
+          <p>Die BSFZ prüft ausschließlich, ob das Vorhaben die <strong>inhaltlichen Kriterien</strong> gemäß § 2 FZulG erfüllt. Die Bearbeitung dauert in der Regel <strong>4 bis 12 Wochen</strong>. Bei positivem Bescheid erhalten Sie eine Bescheinigung, die Sie dem Finanzamt vorlegen.</p>
+        </div>
+      </div>
+
+      <div class="ds-step">
+        <div class="ds-step-num">2</div>
+        <div class="ds-step-content">
+          <h3>Antrag beim Finanzamt: Festsetzung der Forschungszulage</h3>
+          <p>Mit der BSFZ-Bescheinigung in der Hand stellen Sie den <strong>Antrag auf Festsetzung der Forschungszulage</strong> bei Ihrem zuständigen Finanzamt. Dies geschieht über die <strong>Anlage FZ</strong> zur Einkommen- bzw. Körperschaftsteuererklärung oder als gesonderter Antrag nach § 6 FZulG.</p>
+          <p>Im Antrag beim Finanzamt geben Sie die <strong>förderfähigen Aufwendungen</strong> an – also die tatsächlich angefallenen Personalkosten, Auftragsforschungskosten und Eigenleistungen. Das Finanzamt prüft die rechnerische Korrektheit und setzt die Forschungszulage fest. Die Anrechnung erfolgt auf die nächste Einkommen- oder Körperschaftsteuer.</p>
+          <p>Wichtige Hinweise zum Finanzamtsantrag:</p>
+          <ul>
+            <li>Der Antrag muss <strong>nach Ablauf des Wirtschaftsjahres</strong> gestellt werden, in dem die Aufwendungen entstanden sind</li>
+            <li>Die BSFZ-Bescheinigung ist dem Antrag beizufügen</li>
+            <li>Detaillierte Aufstellung der förderfähigen Aufwendungen pro Vorhaben</li>
+            <li>Nachweis der Zeiterfassung für anteilig berücksichtigte Personalkosten</li>
+            <li>Bei Auftragsforschung: Vorlage der Verträge und Rechnungen</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="ds-highlight-box">
+        <strong>Zeitlicher Ablauf:</strong> Die BSFZ-Bescheinigung kann bereits während des laufenden Wirtschaftsjahres beantragt werden – sie muss nicht erst nach Abschluss des Vorhabens eingeholt werden. Wir empfehlen, die BSFZ-Bescheinigung so früh wie möglich zu beantragen, um Planungssicherheit zu gewinnen.
+      </div>
+    </div>
+
+    <!-- Section 6: Rückwirkend beantragen -->
+    <div class="ds-section" id="rueckwirkend-beantragen">
+      <h2>Forschungszulage rückwirkend beantragen</h2>
+      <p>Viele Unternehmen wissen nicht, dass sie die Forschungszulage auch <strong>rückwirkend für vergangene Wirtschaftsjahre</strong> beantragen können. Tatsächlich ist eine rückwirkende Beantragung für alle offenen Steuerjahre <strong>ab 2020</strong> möglich – dem Jahr, in dem das FZulG in Kraft getreten ist.</p>
+
+      <h3>Voraussetzungen für die rückwirkende Beantragung</h3>
+      <p>Damit eine rückwirkende Forschungszulage beantragt werden kann, müssen folgende Bedingungen erfüllt sein:</p>
+      <ul>
+        <li>Das FuE-Vorhaben wurde im jeweiligen Wirtschaftsjahr durchgeführt (ab 2020)</li>
+        <li>Die förderfähigen Aufwendungen sind nachweisbar (Personalkosten, Zeitnachweise, Verträge)</li>
+        <li>Der Steuerbescheid des betreffenden Jahres ist <strong>noch nicht bestandskräftig</strong> oder kann durch einen Änderungsantrag korrigiert werden</li>
+        <li>Es wurde keine BSFZ-Bescheinigung beantragt? Kein Problem – die Bescheinigung kann auch nachträglich beantragt werden</li>
+      </ul>
+
+      <h3>Welche Bemessungsgrenzen gelten rückwirkend?</h3>
+      <p>Für die rückwirkende Beantragung gelten die <strong>zum jeweiligen Zeitpunkt gültigen Regelungen</strong>:</p>
+      <div class="ds-box">
+        <strong>2020–2023:</strong> Max. Bemessungsgrundlage 4 Mio. EUR, Fördersatz 25 %, max. Zulage 1 Mio. EUR<br /><br />
+        <strong>2024 (nach Wachstumschancengesetz):</strong> Max. Bemessungsgrundlage 12 Mio. EUR, Fördersatz 25 % (KMU: 35 %), max. Zulage 3–4,2 Mio. EUR<br /><br />
+        <strong>Ab 2026:</strong> Zusätzlich 20 % Gemeinkostenpauschale auf Personalkosten
+      </div>
+      <p>Bei Unternehmen, die seit 2020 durchgängig FuE betrieben haben und noch keine Forschungszulage beantragt haben, können sich <strong>erhebliche Nachzahlungen</strong> ergeben. Ein mittelständisches Unternehmen mit jährlichen FuE-Personalkosten von 500.000 EUR könnte beispielsweise rückwirkend über 500.000 EUR an Forschungszulage erhalten.</p>
+
+      <div class="ds-highlight-box">
+        <strong>Unser Tipp:</strong> Handeln Sie zeitnah. Steuerbescheide werden nach Ablauf der Einspruchsfrist bestandskräftig. Je länger Sie warten, desto mehr vergangene Jahre können nicht mehr berücksichtigt werden. NOVARIS Consulting prüft kostenlos, welche Rückwirkungszeiträume bei Ihnen in Frage kommen.
+      </div>
+    </div>
+
+    <!-- Section 7: Neuerungen 2026 -->
+    <div class="ds-section" id="neuerungen-2026">
+      <h2>Neuerungen 2026: Was hat sich bei der Forschungszulage geändert?</h2>
+      <p>Das Forschungszulagengesetz wurde seit seiner Einführung mehrfach novelliert. Die wichtigsten Änderungen, die im Jahr 2026 gelten, gehen vor allem auf das <strong>Wachstumschancengesetz</strong> (verabschiedet 2024) und weitere Anpassungen zurück. Hier ein Überblick über alle wesentlichen Neuerungen:</p>
+
+      <h3>Erhöhte Bemessungsgrundlage: Von 4 auf 12 Mio. EUR</h3>
+      <p>Die wohl bedeutendste Änderung: Die maximale Bemessungsgrundlage wurde von ursprünglich 2 Mio. EUR (2020) über 4 Mio. EUR (2021–2023) auf jetzt <strong>12 Mio. EUR pro Wirtschaftsjahr</strong> angehoben. Damit hat sich der maximale Förderbetrag versechsfacht. Insbesondere forschungsintensive Mittelständler und Großunternehmen profitieren erheblich.</p>
+
+      <h3>KMU-Bonus: 35 % statt 25 % Fördersatz</h3>
+      <p>Kleine und mittlere Unternehmen (KMU) nach der EU-Definition erhalten seit 2024 einen <strong>erhöhten Fördersatz von 35 %</strong> statt der regulären 25 %. Die KMU-Definition umfasst Unternehmen mit weniger als 250 Mitarbeitern und entweder einem Jahresumsatz von maximal 50 Mio. EUR oder einer Bilanzsumme von maximal 43 Mio. EUR. Dieser Bonus erhöht die maximale Zulage für KMU auf bis zu <strong>4,2 Mio. EUR pro Jahr</strong>.</p>
+
+      <h3>Gemeinkostenpauschale von 20 % ab 2026</h3>
+      <p>Erstmals können Unternehmen ab dem Wirtschaftsjahr 2026 eine <strong>pauschale Gemeinkostenkomponente von 20 %</strong> auf die förderfähigen Personalkosten und Eigenleistungen ansetzen. Bisher waren nur direkte Personalkosten und Auftragsforschung förderfähig. Die neue Pauschale deckt indirekte Kosten wie Labormiete, Verbrauchsmaterial, Softwarelizenzen und ähnliche Betriebskosten ab, die unmittelbar mit der FuE-Tätigkeit zusammenhängen.</p>
+
+      <h3>Eigenleistungspauschale angepasst</h3>
+      <p>Die Stundenpauschale für Eigenleistungen von Einzelunternehmern und Gesellschaftern wurde auf <strong>70 EUR pro Stunde</strong> festgesetzt. Die maximale Wochenarbeitszeit von 40 Stunden bleibt bestehen. Für viele inhabergeführte Unternehmen bedeutet dies eine substantielle Fördermöglichkeit, die bisher nicht ausgeschöpft wird.</p>
+
+      <h3>Zusammenfassung der Änderungen</h3>
+      <div class="ds-box">
+        <strong>Was bedeuten die Neuerungen konkret?</strong><br /><br />
+        Ein KMU mit 1 Mio. EUR FuE-Personalkosten kann ab 2026 folgendermaßen rechnen:<br />
+        Personalkosten: 1.000.000 EUR<br />
+        + 20 % Gemeinkostenpauschale: 200.000 EUR<br />
+        = Bemessungsgrundlage: 1.200.000 EUR<br />
+        x 35 % (KMU-Satz): = <strong>420.000 EUR Forschungszulage</strong><br /><br />
+        Zum Vergleich: 2020 hätte dasselbe Unternehmen nur 250.000 EUR erhalten (1 Mio. x 25 %, keine Gemeinkostenpauschale).
+      </div>
+    </div>
+
+    <!-- Section 8: CTA - Mit NOVARIS beantragen -->
+    <div class="ds-section" id="novaris-beantragen">
+      <h2>Forschungszulage mit NOVARIS beantragen</h2>
+      <p>Das Antragsverfahren für die Forschungszulage erfordert sowohl <strong>technisches Verständnis</strong> (für die BSFZ-Bescheinigung) als auch <strong>steuerrechtliche Expertise</strong> (für den Antrag beim Finanzamt). Fehler in der Antragstellung führen zu Ablehnungen, Verzögerungen oder einer zu niedrig festgesetzten Zulage. Hier kommt NOVARIS Consulting ins Spiel.</p>
+
+      <p>Als spezialisierter Full-Service-Partner für die steuerliche Forschungsförderung begleiten wir den gesamten Prozess – von der ersten Analyse Ihrer FuE-Vorhaben über die Erstellung des BSFZ-Antrags bis zur Festsetzung der Forschungszulage durch das Finanzamt.</p>
+
+      <h3>Unsere Leistungen im Überblick</h3>
+      <ul>
+        <li><strong>Kostenlose Erstanalyse:</strong> Wir prüfen unverbindlich, ob Ihre FuE-Tätigkeiten förderfähig sind und schätzen die potenzielle Forschungszulage ein</li>
+        <li><strong>BSFZ-Antragstellung:</strong> Professionelle Ausarbeitung der Vorhabenbeschreibung für maximale Erfolgswahrscheinlichkeit bei der Bescheinigungsstelle</li>
+        <li><strong>Zeiterfassung und Dokumentation:</strong> Aufbau einer revisionssicheren Dokumentation Ihrer FuE-Aufwendungen</li>
+        <li><strong>Finanzamts-Antrag:</strong> Erstellung der Anlage FZ und Kommunikation mit dem Finanzamt</li>
+        <li><strong>Rückwirkende Beantragung:</strong> Identifikation und Beantragung aller offenen Förderzeiträume ab 2020</li>
+        <li><strong>Laufende Betreuung:</strong> Jährliche Optimierung Ihrer Forschungszulage für alle zukünftigen Wirtschaftsjahre</li>
+      </ul>
+
+      <h3>Erfolgsbasiert und ohne Risiko</h3>
+      <p>NOVARIS arbeitet <strong>erfolgsbasiert</strong>. Das bedeutet: Unsere Vergütung orientiert sich am Ergebnis. Erhalten Sie keine Forschungszulage, zahlen Sie nichts. So stellen wir sicher, dass unsere Interessen mit Ihren übereinstimmen. Die Erstanalyse ist grundsätzlich <strong>kostenlos und unverbindlich</strong>.</p>
+    </div>
+
+    <!-- CTA Box -->
+    <div class="cta-section">
+      <h2>Jetzt Forschungszulage sichern</h2>
+      <p>Lassen Sie kostenlos prüfen, wie viel Forschungszulage Ihrem Unternehmen zusteht – rückwirkend ab 2020 und für alle laufenden FuE-Projekte. Erfolgsbasiert, transparent, ohne Risiko.</p>
+      <a href="/#kontakt" class="btn-primary" style="padding:0.7rem 1.8rem;font-size:0.9rem">
+        Kostenlose Erstanalyse anfragen
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+
+  </div>
+</main>
+
+<footer style="background:#04091a;border-top:1px solid rgba(255,255,255,0.07)">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
+      <div class="lg:col-span-2">
+        <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:52px;width:auto;margin-bottom:1rem" />
+        <p style="font-size:0.82rem;color:rgba(195,215,245,0.38);line-height:1.72;max-width:320px">
+          NOVARIS Consulting ist Ihr spezialisierter Full-Service-Partner für die staatliche
+          Forschungszulage nach dem FZulG – erfolgsbasiert, transparent und ohne Risiko.
+        </p>
+      </div>
+      <div>
+        <div style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.75rem;letter-spacing:0.09em;text-transform:uppercase;color:rgba(195,215,245,0.3);margin-bottom:1rem">Navigation</div>
+        <div style="display:flex;flex-direction:column;gap:0.55rem">
+          <a href="/#was-ist-fzulg" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Das FZulG</a>
+          <a href="/#prozess"       style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Prozess</a>
+          <a href="/#vorteile"      style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Vorteile</a>
+          <a href="/#faq"           style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">FAQ</a>
+          <a href="/#kontakt"       style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Kontakt</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.75rem;letter-spacing:0.09em;text-transform:uppercase;color:rgba(195,215,245,0.3);margin-bottom:1rem">Rechtliches</div>
+        <div style="display:flex;flex-direction:column;gap:0.55rem">
+          <a href="/impressum.html"  style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Impressum</a>
+          <a href="/datenschutz.html" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Datenschutz</a>
+          <a href="/agb.html"        style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">AGB</a>
+          <a href="javascript:void(0)" onclick="CookieConsent.reset();CookieConsent.request(function(){});" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Cookie-Einstellungen</a>
+        </div>
+      </div>
+    </div>
+    <div style="height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.08) 25%,rgba(255,255,255,0.08) 75%,transparent);margin-bottom:1.5rem"></div>
+    <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem">
+      <p style="font-size:0.73rem;color:rgba(195,215,245,0.25)">&copy; 2026 NOVARIS Consulting · Alle Rechte vorbehalten.</p>
+      <p style="font-size:0.73rem;color:rgba(195,215,245,0.18)">Diese Website stellt keine Steuer- oder Rechtsberatung dar.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function() {
+    if (localStorage.getItem('theme') === 'dark') {
+      document.documentElement.classList.add('dark');
+    }
+  })();
+
+  function toggleDark() {
+    const dark = document.documentElement.classList.toggle('dark');
+    localStorage.setItem('theme', dark ? 'dark' : 'light');
+    _updateDarkBtn();
+  }
+
+  function _updateDarkBtn() {
+    const dark = document.documentElement.classList.contains('dark');
+    const moon = document.getElementById('icon-moon');
+    const sun  = document.getElementById('icon-sun');
+    if (moon) moon.style.display = dark ? 'none'  : 'block';
+    if (sun)  sun.style.display  = dark ? 'block' : 'none';
+  }
+
+  window.addEventListener('DOMContentLoaded', _updateDarkBtn);
+</script>
+
+<script src="/cookie-consent.js"></script>
+<script src="/analytics.js"></script>
+</body>
+</html>

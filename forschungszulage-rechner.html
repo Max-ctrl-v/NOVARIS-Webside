@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forschungszulage Rechner 2026: Jetzt Ihr FZulG-Potenzial berechnen | NOVARIS</title>
+  <meta name="description" content="Forschungszulage berechnen: Ermitteln Sie in 30 Sekunden Ihre FZulG-Förderung 2026. Bis zu 4,2 Mio. € für KMU. Kostenloser Rechner von NOVARIS Consulting." />
+  <meta name="keywords" content="Forschungszulage Rechner, Forschungszulage berechnen, FZulG Rechner, Forschungszulage Höhe berechnen" />
+  <link rel="canonical" href="https://novaris-consulting.com/forschungszulage-rechner.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Structured Data: WebApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Forschungszulage Rechner 2026",
+    "description": "Berechnen Sie Ihre Forschungszulage (FZulG) in 30 Sekunden. Kostenloser Online-Rechner für KMU und Großunternehmen.",
+    "url": "https://novaris-consulting.com/forschungszulage-rechner.html",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "All",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "EUR"
+    },
+    "provider": {
+      "@type": "Organization",
+      "name": "NOVARIS Consulting GmbH",
+      "url": "https://novaris-consulting.com"
+    }
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg-base:    #ffffff;
+      --bg-raised:  #f5f8fe;
+      --bg-card:    #ffffff;
+      --clr-h:      #0D1B3E;
+      --clr-b:      #5a6e8c;
+      --clr-muted:  #4a5870;
+      --bdr:        #dde5f4;
+    }
+    html.dark {
+      --bg-base:    #0a1428;
+      --bg-raised:  #0D1B3E;
+      --bg-card:    #122244;
+      --clr-h:      #e8f0fa;
+      --clr-b:      #8aaac8;
+      --clr-muted:  #6888a8;
+      --bdr:        rgba(77,174,229,0.18);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg-base);
+      color: var(--clr-h);
+      transition: background 0.25s ease, color 0.25s ease;
+      line-height: 1.7;
+    }
+
+    .nav-blur { backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); }
+    .logo-img { height: 52px; width: auto; display: block; }
+
+    .nav-link {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.84rem;
+      font-weight: 500;
+      color: rgba(195,215,245,0.70);
+      text-decoration: none;
+      padding: 0.42rem 0.85rem;
+      border-radius: 8px;
+      transition: color 0.15s ease, background 0.15s ease;
+      letter-spacing: 0.01em;
+    }
+    .nav-link:hover { color: #fff; background: rgba(255,255,255,0.07); }
+    .nav-link:focus-visible { outline: 2px solid #4DAEE5; outline-offset: 2px; }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background: #1E56B5;
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 0.84rem;
+      border: none;
+      border-radius: 10px;
+      text-decoration: none;
+      cursor: pointer;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.3), 0 4px 12px rgba(30,86,181,0.35);
+      transition: background 0.15s ease, transform 0.12s ease, box-shadow 0.15s ease;
+    }
+    .btn-primary:hover  { background: #2563c4; box-shadow: 0 2px 4px rgba(0,0,0,0.3), 0 6px 18px rgba(30,86,181,0.45); transform: translateY(-1px); }
+    .btn-primary:active { transform: translateY(0); }
+    .btn-primary:focus-visible { outline: 2px solid #4DAEE5; outline-offset: 2px; }
+
+    /* Hero */
+    .hero-section {
+      position: relative;
+      padding: 7rem 1.5rem 3rem;
+      text-align: center;
+      overflow: hidden;
+    }
+    .hero-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 50% at 50% 0%, rgba(30,86,181,0.18) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 60% at 80% 20%, rgba(77,174,229,0.10) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .ds-breadcrumb {
+      font-size: 0.78rem;
+      color: var(--clr-b);
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      justify-content: center;
+    }
+    .ds-breadcrumb a {
+      color: #4DAEE5;
+      text-decoration: none;
+      transition: color 0.14s ease;
+    }
+    .ds-breadcrumb a:hover { color: #7ec8f0; }
+
+    .hero-eyebrow {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #4DAEE5;
+      margin-bottom: 0.9rem;
+    }
+    .hero-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: clamp(1.8rem, 4.5vw, 2.8rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: var(--clr-h);
+      line-height: 1.15;
+      margin-bottom: 1rem;
+    }
+    .hero-sub {
+      font-size: 1.05rem;
+      color: var(--clr-b);
+      max-width: 560px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    /* Calculator card */
+    .calc-card {
+      max-width: 700px;
+      margin: 2.5rem auto 0;
+      background: var(--bg-card);
+      border: 1px solid var(--bdr);
+      border-radius: 16px;
+      padding: 2.5rem 2rem;
+      position: relative;
+      box-shadow:
+        0 1px 1px rgba(0,0,0,0.06),
+        0 4px 8px rgba(0,0,0,0.04),
+        0 16px 32px rgba(0,0,0,0.06),
+        0 0 0 1px rgba(255,255,255,0.04) inset;
+      transition: background 0.25s ease, border-color 0.25s ease;
+    }
+    html.dark .calc-card {
+      background: var(--bg-card);
+      box-shadow:
+        0 1px 1px rgba(0,0,0,0.4),
+        0 4px 8px rgba(0,0,0,0.3),
+        0 16px 32px rgba(0,0,0,0.2),
+        0 0 0 1px rgba(255,255,255,0.04) inset;
+    }
+
+    .calc-card h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: var(--clr-h);
+      margin-bottom: 1.8rem;
+      text-align: center;
+    }
+
+    .field-group {
+      margin-bottom: 1.5rem;
+    }
+    .field-label {
+      display: block;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--clr-h);
+      margin-bottom: 0.5rem;
+    }
+    .field-note {
+      font-size: 0.72rem;
+      color: var(--clr-muted);
+      margin-top: 0.3rem;
+    }
+
+    /* Radio buttons */
+    .radio-group {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+    .radio-option {
+      position: relative;
+      flex: 1;
+      min-width: 140px;
+    }
+    .radio-option input[type="radio"] {
+      position: absolute;
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    .radio-option label {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.7rem 1rem;
+      border-radius: 10px;
+      border: 1px solid var(--bdr);
+      background: var(--bg-raised);
+      font-size: 0.84rem;
+      font-weight: 500;
+      color: var(--clr-b);
+      cursor: pointer;
+      transition: border-color 0.15s ease, background 0.15s ease, color 0.15s ease;
+      text-align: center;
+    }
+    .radio-option label:hover {
+      border-color: #4DAEE5;
+      color: var(--clr-h);
+    }
+    .radio-option input[type="radio"]:checked + label {
+      border-color: #1E56B5;
+      background: rgba(30,86,181,0.10);
+      color: #4DAEE5;
+      font-weight: 600;
+    }
+    html.dark .radio-option input[type="radio"]:checked + label {
+      background: rgba(30,86,181,0.25);
+    }
+    .radio-option input[type="radio"]:focus-visible + label {
+      outline: 2px solid #4DAEE5;
+      outline-offset: 2px;
+    }
+
+    /* Number inputs */
+    .num-input {
+      width: 100%;
+      padding: 0.65rem 1rem;
+      border-radius: 10px;
+      border: 1px solid var(--bdr);
+      background: var(--bg-raised);
+      color: var(--clr-h);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: border-color 0.15s ease, background 0.15s ease;
+      outline: none;
+      -moz-appearance: textfield;
+    }
+    .num-input::-webkit-outer-spin-button,
+    .num-input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    .num-input:hover { border-color: rgba(77,174,229,0.4); }
+    .num-input:focus { border-color: #4DAEE5; box-shadow: 0 0 0 3px rgba(77,174,229,0.15); }
+    html.dark .num-input { background: var(--bg-raised); }
+
+    /* Range slider */
+    .range-slider {
+      width: 100%;
+      height: 6px;
+      -webkit-appearance: none;
+      appearance: none;
+      background: var(--bdr);
+      border-radius: 999px;
+      outline: none;
+      margin-top: 0.5rem;
+      cursor: pointer;
+    }
+    .range-slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #1E56B5, #4DAEE5);
+      border: 2px solid #fff;
+      box-shadow: 0 2px 6px rgba(30,86,181,0.35);
+      cursor: pointer;
+      transition: transform 0.12s ease;
+    }
+    .range-slider::-webkit-slider-thumb:hover { transform: scale(1.15); }
+    .range-slider::-webkit-slider-thumb:active { transform: scale(0.95); }
+    .range-slider::-moz-range-thumb {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #1E56B5, #4DAEE5);
+      border: 2px solid #fff;
+      box-shadow: 0 2px 6px rgba(30,86,181,0.35);
+      cursor: pointer;
+    }
+    .range-slider:focus-visible {
+      outline: 2px solid #4DAEE5;
+      outline-offset: 2px;
+    }
+
+    /* Checkbox */
+    .check-group {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.65rem;
+    }
+    .check-group input[type="checkbox"] {
+      width: 18px;
+      height: 18px;
+      margin-top: 2px;
+      accent-color: #1E56B5;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+    .check-group label {
+      font-size: 0.84rem;
+      color: var(--clr-b);
+      cursor: pointer;
+      line-height: 1.5;
+    }
+
+    /* Result section */
+    .result-section {
+      margin-top: 2rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--bdr);
+    }
+    .result-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.55rem 0;
+      font-size: 0.88rem;
+    }
+    .result-label { color: var(--clr-b); }
+    .result-value { color: var(--clr-h); font-weight: 600; }
+
+    .result-main {
+      margin-top: 1.2rem;
+      padding: 1.5rem;
+      border-radius: 12px;
+      background: var(--bg-raised);
+      border: 1px solid var(--bdr);
+      text-align: center;
+      transition: background 0.25s ease;
+    }
+    html.dark .result-main { background: rgba(30,86,181,0.12); border-color: rgba(77,174,229,0.18); }
+
+    .result-main-label {
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--clr-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.4rem;
+    }
+    .result-main-value {
+      font-family: 'Montserrat', sans-serif;
+      font-size: clamp(2rem, 5vw, 2.8rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      background: linear-gradient(135deg, #4DAEE5, #7ECEF5);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .result-note {
+      font-size: 0.75rem;
+      color: var(--clr-muted);
+      margin-top: 0.8rem;
+      line-height: 1.6;
+    }
+
+    /* Content section */
+    .content-wrap {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 4rem 1.5rem 5rem;
+    }
+
+    .ds-section {
+      margin-bottom: 2.8rem;
+    }
+    .ds-section h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--clr-h);
+      margin-bottom: 1rem;
+      padding-bottom: 0.55rem;
+      border-bottom: 1px solid var(--bdr);
+    }
+    .ds-section h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--clr-h);
+      margin-top: 1.4rem;
+      margin-bottom: 0.5rem;
+    }
+    .ds-section p {
+      font-size: 0.9rem;
+      color: var(--clr-b);
+      line-height: 1.75;
+      margin-bottom: 0.85rem;
+    }
+    .ds-section ul {
+      margin: 0.5rem 0 0.85rem 1.1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+    .ds-section ul li {
+      font-size: 0.9rem;
+      color: var(--clr-b);
+      line-height: 1.65;
+    }
+    .ds-section a {
+      color: #4DAEE5;
+      text-decoration: none;
+      transition: color 0.14s ease;
+    }
+    .ds-section a:hover { color: #7ec8f0; text-decoration: underline; }
+
+    /* CTA box */
+    .cta-box {
+      background: var(--bg-raised);
+      border: 1px solid var(--bdr);
+      border-radius: 14px;
+      padding: 2.5rem 2rem;
+      text-align: center;
+      margin-top: 3rem;
+      transition: background 0.25s ease, border-color 0.25s ease;
+    }
+    html.dark .cta-box { background: var(--bg-card); }
+    .cta-box h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: var(--clr-h);
+      margin-bottom: 0.8rem;
+      letter-spacing: -0.02em;
+      border: none;
+      padding: 0;
+    }
+    .cta-box p {
+      font-size: 0.9rem;
+      color: var(--clr-b);
+      margin-bottom: 1.5rem;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.7;
+    }
+
+    footer { background: #04091a; border-top: 1px solid rgba(255,255,255,0.07); }
+
+    html.dark .ds-box { background: var(--bg-card); }
+    .logo-light { display: none; }
+    html.dark .logo-dark  { display: none !important; }
+    html.dark .logo-light { display: inline !important; }
+
+    html { overflow-y: scroll; }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: rgba(77,174,229,0.38); border-radius: 999px; }
+    ::-webkit-scrollbar-thumb:hover { background: rgba(77,174,229,0.55); }
+    html { scrollbar-width: thin; scrollbar-color: rgba(77,174,229,0.38) transparent; }
+    html.dark ::-webkit-scrollbar-thumb { background: rgba(77,174,229,0.30); }
+    html.dark ::-webkit-scrollbar-thumb:hover { background: rgba(77,174,229,0.48); }
+    html.dark { scrollbar-color: rgba(77,174,229,0.30) transparent; }
+
+    @media (max-width: 640px) {
+      .calc-card { padding: 1.5rem 1.2rem; }
+      .radio-group { flex-direction: column; }
+      .result-row { font-size: 0.82rem; }
+    }
+  </style>
+  <link rel="stylesheet" href="/page-transition.css" />
+  <link rel="stylesheet" href="/cookie-consent.css" />
+  <script src="/page-transition.js" defer></script>
+</head>
+<body>
+
+<header id="nav" class="fixed inset-x-0 top-0 z-50 nav-blur"
+        style="background:rgba(4,9,26,0.88);border-bottom:1px solid rgba(255,255,255,0.07)">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between gap-4" style="height:68px">
+    <a href="/" aria-label="NOVARIS Consulting"
+       style="text-decoration:none;flex-shrink:0;display:flex;align-items:center;transition:opacity 0.15s ease"
+       class="hover:opacity-90 focus-visible:outline-none">
+      <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:52px" />
+    </a>
+    <nav class="hidden lg:flex items-center gap-0.5">
+      <a href="/#was-ist-fzulg" class="nav-link">Das FZulG</a>
+      <a href="/#branchen"      class="nav-link">Branchen</a>
+      <a href="/#prozess"       class="nav-link">Prozess</a>
+      <a href="/#vorteile"      class="nav-link">Vorteile</a>
+      <a href="/#faq"           class="nav-link">FAQ</a>
+      <a href="/#kontakt"       class="nav-link">Kontakt</a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <button id="dark-toggle" onclick="toggleDark()" aria-label="Toggle dark mode"
+        class="hidden sm:flex" style="width:32px;height:32px;border-radius:8px;border:1px solid rgba(255,255,255,0.12);
+               background:rgba(255,255,255,0.07);cursor:pointer;align-items:center;
+               justify-content:center;color:rgba(255,255,255,0.7);
+               transition:background 0.15s ease,color 0.15s ease">
+        <svg id="icon-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg id="icon-sun"  width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
+      <a href="/#kontakt" class="btn-primary hidden sm:inline-flex" style="padding:0.55rem 1.35rem;font-size:0.83rem">
+        Kostenlos prüfen
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- Hero -->
+  <section class="hero-section">
+    <div style="position:relative;z-index:1;max-width:700px;margin:0 auto">
+      <nav class="ds-breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Startseite</a>
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        <a href="/#was-ist-fzulg">Forschungszulage</a>
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        <span>Rechner</span>
+      </nav>
+      <div class="hero-eyebrow">Kostenloser Online-Rechner</div>
+      <h1 class="hero-title">Forschungszulage Rechner 2026</h1>
+      <p class="hero-sub">Berechnen Sie in 30 Sekunden, wie viel Forschungszulage Ihrem Unternehmen zusteht.</p>
+    </div>
+  </section>
+
+  <!-- Calculator -->
+  <section style="padding:0 1.5rem 3rem;position:relative;z-index:1">
+    <div class="calc-card" id="calculator">
+      <h2>Ihre Daten eingeben</h2>
+
+      <!-- Unternehmenstyp -->
+      <div class="field-group">
+        <span class="field-label">Unternehmenstyp</span>
+        <div class="radio-group">
+          <div class="radio-option">
+            <input type="radio" name="typ" id="typ-kmu" value="kmu" checked onchange="calculate()" />
+            <label for="typ-kmu">KMU <span style="font-size:0.72rem;opacity:0.7">(35 %)</span></label>
+          </div>
+          <div class="radio-option">
+            <input type="radio" name="typ" id="typ-gross" value="gross" onchange="calculate()" />
+            <label for="typ-gross">Großunternehmen <span style="font-size:0.72rem;opacity:0.7">(25 %)</span></label>
+          </div>
+        </div>
+      </div>
+
+      <!-- F&E-Personalkosten -->
+      <div class="field-group">
+        <label class="field-label" for="personal">Jährliche F&amp;E-Personalkosten (&euro;)</label>
+        <input type="number" id="personal" class="num-input" value="500000" min="0" max="5000000" step="10000" oninput="syncSlider();calculate()" />
+        <input type="range" id="personal-slider" class="range-slider" min="0" max="5000000" step="10000" value="500000" oninput="syncInput();calculate()" />
+        <div style="display:flex;justify-content:space-between;margin-top:0.2rem">
+          <span class="field-note">0 &euro;</span>
+          <span class="field-note">5.000.000 &euro;</span>
+        </div>
+      </div>
+
+      <!-- Auftragsforschung -->
+      <div class="field-group">
+        <label class="field-label" for="auftrag">Auftragsforschung (&euro;)</label>
+        <input type="number" id="auftrag" class="num-input" value="0" min="0" max="3000000" step="10000" oninput="calculate()" />
+        <p class="field-note">Hinweis: Nur 60 % der Auftragsforschungskosten sind anrechenbar.</p>
+      </div>
+
+      <!-- Eigenleistungen -->
+      <div class="field-group">
+        <label class="field-label" for="eigen">Eigenleistungen (Stunden/Jahr)</label>
+        <input type="number" id="eigen" class="num-input" value="0" min="0" max="10000" step="1" oninput="calculate()" />
+        <p class="field-note">Bewertung: 100 &euro; pro Stunde (ab 2026).</p>
+      </div>
+
+      <!-- Gemeinkostenpauschale -->
+      <div class="field-group">
+        <div class="check-group">
+          <input type="checkbox" id="gemein" onchange="calculate()" />
+          <label for="gemein">Gemeinkostenpauschale einbeziehen <span style="font-size:0.72rem;color:var(--clr-muted)">(20 % auf direkte Kosten, ab 2026)</span></label>
+        </div>
+      </div>
+
+      <!-- Results -->
+      <div class="result-section">
+        <div class="result-row">
+          <span class="result-label">Förderfähige Bemessungsgrundlage</span>
+          <span class="result-value" id="r-basis">–</span>
+        </div>
+        <div class="result-row">
+          <span class="result-label">Fördersatz</span>
+          <span class="result-value" id="r-satz">35 %</span>
+        </div>
+        <div class="result-main">
+          <div class="result-main-label">Ihre geschätzte Forschungszulage</div>
+          <div class="result-main-value" id="r-total">&euro;0</div>
+        </div>
+        <p class="result-note" style="text-align:center">
+          Maximale Forschungszulage: <strong style="color:var(--clr-h)">4.200.000 &euro;</strong> (KMU) / <strong style="color:var(--clr-h)">3.000.000 &euro;</strong> (Großunternehmen).
+          <br />Alle Angaben ohne Gewähr. Die tatsächliche Förderhöhe hängt von der Bescheinigung der BSFZ ab.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEO Content -->
+  <div class="content-wrap">
+
+    <div class="ds-section">
+      <h2>So funktioniert der Forschungszulage Rechner</h2>
+      <p>Unser kostenloser Forschungszulage Rechner ermittelt in wenigen Sekunden, wie hoch die steuerliche Forschungsförderung für Ihr Unternehmen ausfallen kann. Die Berechnung basiert auf den aktuellen Regelungen des Forschungszulagengesetzes (FZulG) in der Fassung von 2026 und berücksichtigt die jüngsten Gesetzesänderungen – einschließlich der neuen Gemeinkostenpauschale und der erhöhten Bemessungsgrundlage.</p>
+      <p>So nutzen Sie den Rechner: Wählen Sie zunächst Ihren Unternehmenstyp. Kleine und mittlere Unternehmen (KMU) erhalten einen erhöhten Fördersatz von 35 %, während Großunternehmen 25 % der förderfähigen Aufwendungen geltend machen können. Geben Sie anschließend Ihre jährlichen F&amp;E-Personalkosten, eventuelle Auftragsforschungskosten sowie Eigenleistungen des Unternehmers ein. Der Rechner zeigt Ihnen sofort die förderfähige Bemessungsgrundlage und die voraussichtliche Höhe Ihrer Forschungszulage.</p>
+      <p>Bitte beachten Sie: Die tatsächliche Auszahlung hängt von der positiven Bescheinigung der Bescheinigungsstelle Forschungszulage (BSFZ) ab. Unser Rechner liefert eine erste Orientierung – die exakte Berechnung erfolgt im Rahmen der Steuererklärung beim zuständigen Finanzamt.</p>
+    </div>
+
+    <div class="ds-section">
+      <h2>Bemessungsgrundlage der Forschungszulage</h2>
+      <p>Die Bemessungsgrundlage ist der zentrale Hebel bei der Berechnung der Forschungszulage. Sie umfasst mehrere Kostenarten, die im FZulG definiert sind:</p>
+      <ul>
+        <li><strong>F&amp;E-Personalkosten:</strong> Löhne und Gehälter einschließlich Arbeitgeberanteile zur Sozialversicherung für Arbeitnehmer, die in begünstigten F&amp;E-Vorhaben tätig sind. Die Zuordnung erfolgt anteilig nach dem tatsächlichen Zeitaufwand für das jeweilige Projekt.</li>
+        <li><strong>Auftragsforschung:</strong> Kosten für die Vergabe von F&amp;E-Aufträgen an Dritte sind zu 60 % anrechenbar. Dies betrifft sowohl Aufträge an andere Unternehmen als auch an Forschungseinrichtungen innerhalb der EU bzw. des EWR.</li>
+        <li><strong>Eigenleistungen:</strong> Einzelunternehmer und Gesellschafter, die selbst forschend tätig sind, können seit 2020 Eigenleistungen ansetzen. Ab 2026 gilt ein Stundensatz von 100 Euro bei maximal 40 Stunden pro Woche.</li>
+      </ul>
+      <p>Die maximale Bemessungsgrundlage beträgt seit der Novelle 2026 insgesamt 12 Millionen Euro pro Wirtschaftsjahr. Für verbundene Unternehmen gilt dieser Betrag konzernweit. Die Forschungszulage wird als Steuergutschrift direkt mit der Einkommen- oder Körperschaftsteuer verrechnet – oder bei Überschuss erstattet.</p>
+    </div>
+
+    <div class="ds-section">
+      <h2>Neuerungen 2026: Gemeinkostenpauschale und erhöhte Grenzen</h2>
+      <p>Das Wachstumschancengesetz und die weitere Novellierung des FZulG bringen für das Jahr 2026 substanzielle Verbesserungen. Die wichtigsten Änderungen im Überblick:</p>
+      <ul>
+        <li><strong>Gemeinkostenpauschale von 20 %:</strong> Erstmals können Unternehmen eine Pauschale von 20 % auf die direkten förderfähigen Kosten (Personalkosten und Eigenleistungen) ansetzen. Diese deckt anteilige Sachkosten, Mieten und sonstige Gemeinkosten ab – ohne Einzelnachweis.</li>
+        <li><strong>Erhöhte Bemessungsgrundlage:</strong> Die maximal förderfähige Bemessungsgrundlage wurde von 4 Mio. Euro schrittweise auf 12 Mio. Euro angehoben. Damit steigt die maximale Forschungszulage auf bis zu 3 Mio. Euro für Großunternehmen bzw. 4,2 Mio. Euro für KMU.</li>
+        <li><strong>KMU-Bonus:</strong> Kleine und mittlere Unternehmen profitieren von einem erhöhten Fördersatz von 35 % statt der regulären 25 %. Als KMU gelten Unternehmen mit weniger als 250 Beschäftigten und einem Jahresumsatz von höchstens 50 Mio. Euro oder einer Bilanzsumme von höchstens 43 Mio. Euro.</li>
+        <li><strong>Stundensatz für Eigenleistungen:</strong> Der Ansatz für Eigenleistungen wurde auf 100 Euro pro Stunde angehoben, was die Attraktivität der Förderung für Gründer und geschäftsführende Gesellschafter weiter steigert.</li>
+      </ul>
+      <p>All diese Änderungen fließen automatisch in unseren Forschungszulage Rechner ein. So erhalten Sie stets eine Berechnung auf dem aktuellen Stand der Gesetzgebung, ohne sich mit den Details der Novellierung auseinandersetzen zu müssen.</p>
+    </div>
+
+    <!-- CTA -->
+    <div class="cta-box">
+      <h2>Lassen Sie sich von NOVARIS beraten</h2>
+      <p>Unser Rechner gibt Ihnen eine erste Orientierung. Für die maximale Fördersumme und eine rechtssichere Antragstellung stehen Ihnen unsere FZulG-Experten zur Seite – erfolgsbasiert und ohne Risiko.</p>
+      <a href="/#kontakt" class="btn-primary" style="padding:0.7rem 1.8rem;font-size:0.88rem">
+        Kostenlose Erstberatung
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+
+  </div>
+</main>
+
+<footer style="background:#04091a;border-top:1px solid rgba(255,255,255,0.07)">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
+      <div class="lg:col-span-2">
+        <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:52px;width:auto;margin-bottom:1rem" />
+        <p style="font-size:0.82rem;color:rgba(195,215,245,0.38);line-height:1.72;max-width:320px">
+          NOVARIS Consulting ist Ihr spezialisierter Full-Service-Partner für die staatliche
+          Forschungszulage nach dem FZulG – erfolgsbasiert, transparent und ohne Risiko.
+        </p>
+      </div>
+      <div>
+        <div style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.75rem;letter-spacing:0.09em;text-transform:uppercase;color:rgba(195,215,245,0.3);margin-bottom:1rem">Navigation</div>
+        <div style="display:flex;flex-direction:column;gap:0.55rem">
+          <a href="/#was-ist-fzulg" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Das FZulG</a>
+          <a href="/#prozess"       style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Prozess</a>
+          <a href="/#vorteile"      style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Vorteile</a>
+          <a href="/#faq"           style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">FAQ</a>
+          <a href="/#kontakt"       style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Kontakt</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.75rem;letter-spacing:0.09em;text-transform:uppercase;color:rgba(195,215,245,0.3);margin-bottom:1rem">Rechtliches</div>
+        <div style="display:flex;flex-direction:column;gap:0.55rem">
+          <a href="/impressum.html"  style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Impressum</a>
+          <a href="/datenschutz.html" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Datenschutz</a>
+          <a href="/agb.html"        style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">AGB</a>
+          <a href="javascript:void(0)" onclick="CookieConsent.reset();CookieConsent.request(function(){});" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Cookie-Einstellungen</a>
+        </div>
+      </div>
+    </div>
+    <div style="height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.08) 25%,rgba(255,255,255,0.08) 75%,transparent);margin-bottom:1.5rem"></div>
+    <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem">
+      <p style="font-size:0.73rem;color:rgba(195,215,245,0.25)">&copy; 2026 NOVARIS Consulting · Alle Rechte vorbehalten.</p>
+      <p style="font-size:0.73rem;color:rgba(195,215,245,0.18)">Diese Website stellt keine Steuer- oder Rechtsberatung dar.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Dark mode
+  (function() {
+    if (localStorage.getItem('theme') === 'dark') {
+      document.documentElement.classList.add('dark');
+    }
+  })();
+
+  function toggleDark() {
+    const dark = document.documentElement.classList.toggle('dark');
+    localStorage.setItem('theme', dark ? 'dark' : 'light');
+    _updateDarkBtn();
+  }
+
+  function _updateDarkBtn() {
+    const dark = document.documentElement.classList.contains('dark');
+    const moon = document.getElementById('icon-moon');
+    const sun  = document.getElementById('icon-sun');
+    if (moon) moon.style.display = dark ? 'none'  : 'block';
+    if (sun)  sun.style.display  = dark ? 'block' : 'none';
+  }
+
+  window.addEventListener('DOMContentLoaded', function() {
+    _updateDarkBtn();
+    calculate();
+  });
+
+  // Format number with German locale
+  function fmt(n) {
+    return n.toLocaleString('de-DE', { minimumFractionDigits: 0, maximumFractionDigits: 0 });
+  }
+
+  // Sync slider ↔ input
+  function syncSlider() {
+    document.getElementById('personal-slider').value = document.getElementById('personal').value || 0;
+  }
+  function syncInput() {
+    document.getElementById('personal').value = document.getElementById('personal-slider').value;
+  }
+
+  // Main calculation
+  function calculate() {
+    const isKMU = document.getElementById('typ-kmu').checked;
+    const rate = isKMU ? 0.35 : 0.25;
+    const maxZulage = isKMU ? 4200000 : 3000000;
+    const maxBasis = 12000000;
+
+    const personal = Math.max(0, parseFloat(document.getElementById('personal').value) || 0);
+    const auftrag  = Math.max(0, parseFloat(document.getElementById('auftrag').value) || 0);
+    const eigen    = Math.max(0, parseFloat(document.getElementById('eigen').value) || 0);
+    const gemein   = document.getElementById('gemein').checked;
+
+    // Eligible amounts
+    const personalEligible = personal;
+    const auftragEligible  = auftrag * 0.60;
+    const eigenEligible    = eigen * 100; // €100/h
+
+    // Direct costs (for overhead)
+    const directCosts = personalEligible + eigenEligible;
+
+    // Overhead
+    const overhead = gemein ? directCosts * 0.20 : 0;
+
+    // Total basis before cap
+    let basis = personalEligible + auftragEligible + eigenEligible + overhead;
+
+    // Cap at 12 Mio
+    basis = Math.min(basis, maxBasis);
+
+    // Zulage
+    let zulage = basis * rate;
+    zulage = Math.min(zulage, maxZulage);
+
+    // Update display
+    document.getElementById('r-basis').textContent = fmt(basis) + ' \u20AC';
+    document.getElementById('r-satz').textContent = (rate * 100) + ' %';
+    document.getElementById('r-total').textContent = '\u20AC' + fmt(Math.round(zulage));
+  }
+</script>
+
+<script src="/cookie-consent.js"></script>
+<script src="/analytics.js"></script>
+</body>
+</html>
