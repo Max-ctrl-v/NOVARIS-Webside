@@ -1,14 +1,10 @@
 /* ═══════════════════════════════════════════════════════
-   Cookie Consent — Dormant-Until-Needed
+   Cookie Consent — Centered Modal Popup
    ═══════════════════════════════════════════════════════
-   The banner does NOT appear on its own.
-   It only shows when another script calls:
-
-     CookieConsent.request(callback)
-
-   If the user already accepted → callback fires immediately.
-   If declined → callback is never called.
-   If no choice yet → banner slides in; callback fires on accept.
+   Shows a centered popup on first visit with three options:
+     - Alle akzeptieren   → fires analytics callbacks
+     - Nur notwendige     → no analytics, stores 'necessary'
+     - Ablehnen           → no analytics, stores 'declined'
 
    Choice is stored in localStorage (not a cookie).
    ═══════════════════════════════════════════════════════ */
@@ -16,11 +12,10 @@
 window.CookieConsent = (() => {
   'use strict';
 
-  const STORAGE_KEY = 'novaris_cookie_consent'; // 'accepted' | 'declined'
-  let bannerEl = null;
+  const STORAGE_KEY = 'novaris_cookie_consent'; // 'accepted' | 'necessary' | 'declined'
+  let modalEl = null;
   let pendingCallbacks = [];
 
-  /* ── Read stored choice ── */
   function getChoice() {
     try { return localStorage.getItem(STORAGE_KEY); }
     catch { return null; }
@@ -28,21 +23,22 @@ window.CookieConsent = (() => {
 
   function setChoice(value) {
     try { localStorage.setItem(STORAGE_KEY, value); }
-    catch { /* private mode — silently ignore */ }
+    catch { /* private mode */ }
   }
 
-  /* ── Build & inject DOM (once) ── */
-  function ensureBanner() {
-    if (bannerEl) return bannerEl;
+  /* ── Build & inject modal ── */
+  function ensureModal() {
+    if (modalEl) return modalEl;
 
-    const wrapper = document.createElement('div');
-    wrapper.className = 'cc-banner';
-    wrapper.setAttribute('role', 'dialog');
-    wrapper.setAttribute('aria-label', 'Cookie-Einwilligung');
+    const overlay = document.createElement('div');
+    overlay.className = 'cc-overlay';
+    overlay.setAttribute('role', 'dialog');
+    overlay.setAttribute('aria-label', 'Cookie-Einwilligung');
+    overlay.setAttribute('aria-modal', 'true');
 
-    wrapper.innerHTML = `
-      <div class="cc-card">
-        <div class="cc-icon" aria-hidden="true">
+    overlay.innerHTML = `
+      <div class="cc-modal">
+        <div class="cc-modal-icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="12" cy="12" r="10"/>
             <circle cx="8" cy="9" r="1" fill="currentColor"/>
@@ -51,52 +47,49 @@ window.CookieConsent = (() => {
             <circle cx="14" cy="7" r="0.8" fill="currentColor"/>
           </svg>
         </div>
-        <p class="cc-title">Cookies &amp; Tracking</p>
-        <p class="cc-text">
-          Diese Webseite möchte Cookies setzen, um Ihr Erlebnis zu verbessern und
-          anonyme Nutzungsdaten zu erfassen.
-          <a href="/datenschutz.html">Mehr erfahren</a>
+        <p class="cc-modal-title">Cookies &amp; Datenschutz</p>
+        <p class="cc-modal-text">
+          Wir nutzen Cookies, um unsere Webseite zu verbessern und anonyme
+          Nutzungsstatistiken zu erheben. Sie k\u00F6nnen w\u00E4hlen, welche Cookies
+          Sie zulassen m\u00F6chten.
+          <a href="/datenschutz.html">Datenschutzerkl\u00E4rung</a>
         </p>
-        <div class="cc-actions">
-          <button class="cc-btn cc-btn-accept" data-cc="accept">Akzeptieren</button>
+        <div class="cc-modal-actions">
+          <button class="cc-btn cc-btn-accept" data-cc="accept">Alle akzeptieren</button>
+          <button class="cc-btn cc-btn-necessary" data-cc="necessary">Nur notwendige</button>
           <button class="cc-btn cc-btn-decline" data-cc="decline">Ablehnen</button>
         </div>
       </div>`;
 
-    document.body.appendChild(wrapper);
-    bannerEl = wrapper;
+    document.body.appendChild(overlay);
+    modalEl = overlay;
 
-    /* ── Wire buttons ── */
-    wrapper.querySelector('[data-cc="accept"]').addEventListener('click', () => {
-      resolve('accepted');
-    });
-    wrapper.querySelector('[data-cc="decline"]').addEventListener('click', () => {
-      resolve('declined');
-    });
+    overlay.querySelector('[data-cc="accept"]').addEventListener('click', () => resolve('accepted'));
+    overlay.querySelector('[data-cc="necessary"]').addEventListener('click', () => resolve('necessary'));
+    overlay.querySelector('[data-cc="decline"]').addEventListener('click', () => resolve('declined'));
 
-    return wrapper;
+    return overlay;
   }
 
-  /* ── Show / hide helpers ── */
   function show() {
-    const el = ensureBanner();
-    // Force reflow so the transition fires even if just injected
+    const el = ensureModal();
     void el.offsetHeight;
     el.classList.add('cc-visible');
+    document.body.style.overflow = 'hidden';
+    el.querySelector('.cc-btn-accept').focus();
   }
 
   function hide() {
-    if (!bannerEl) return;
-    bannerEl.classList.remove('cc-visible');
+    if (!modalEl) return;
+    modalEl.classList.remove('cc-visible');
+    document.body.style.overflow = '';
   }
 
-  /* ── Handle user choice ── */
   function resolve(choice) {
     setChoice(choice);
     hide();
 
     if (choice === 'accepted') {
-      // Fire every pending callback
       pendingCallbacks.forEach(fn => { try { fn(); } catch (e) { console.error('[CookieConsent]', e); } });
     }
     pendingCallbacks = [];
@@ -106,47 +99,24 @@ window.CookieConsent = (() => {
      PUBLIC API
      ═══════════════════════════════════════════════════ */
 
-  /**
-   * CookieConsent.request(callback)
-   *
-   * Call this BEFORE setting any cookie or loading a
-   * tracking script. The callback only runs if the
-   * user accepts cookies.
-   *
-   * Example:
-   *   CookieConsent.request(() => {
-   *     // safe to set cookies / load analytics here
-   *     gtag('config', 'G-XXXXXX');
-   *   });
-   */
   function request(callback) {
     const choice = getChoice();
 
     if (choice === 'accepted') {
-      // Already consented — run immediately
       if (typeof callback === 'function') callback();
       return;
     }
 
-    if (choice === 'declined') {
-      // Already declined — do nothing
+    if (choice === 'declined' || choice === 'necessary') {
       return;
     }
 
-    // No choice yet — queue callback & show banner
     if (typeof callback === 'function') {
       pendingCallbacks.push(callback);
     }
     show();
   }
 
-  /**
-   * CookieConsent.reset()
-   *
-   * Clears stored choice so the banner can appear again
-   * on the next .request() call. Useful for a "Cookie
-   * Settings" link in the footer.
-   */
   function reset() {
     try { localStorage.removeItem(STORAGE_KEY); }
     catch { /* ignore */ }
@@ -154,11 +124,6 @@ window.CookieConsent = (() => {
     hide();
   }
 
-  /**
-   * CookieConsent.hasConsent()
-   *
-   * Returns true if user has accepted, false otherwise.
-   */
   function hasConsent() {
     return getChoice() === 'accepted';
   }

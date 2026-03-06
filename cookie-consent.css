@@ -1,110 +1,124 @@
 /* ═══════════════════════════════════════════════════════
-   Cookie Consent Banner — NOVARIS Design System
+   Cookie Consent Modal — NOVARIS Design System
    ═══════════════════════════════════════════════════════ */
 
-/* ── Banner container ── */
-.cc-banner {
+/* ── Overlay (backdrop) ── */
+.cc-overlay {
   position: fixed;
-  bottom: 0;
+  top: 0;
   left: 0;
-  right: 0;
+  width: 100vw;
+  height: 100vh;
   z-index: 9999;
-  padding: 0 1rem 1rem;
-  pointer-events: none;
-  /* hidden until JS adds .cc-visible */
-  transform: translateY(110%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: rgba(4, 9, 26, 0.82);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  /* hidden by default */
   opacity: 0;
-  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1),
-              opacity  0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+  transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.cc-banner.cc-visible {
-  transform: translateY(0);
+.cc-overlay.cc-visible {
   opacity: 1;
   pointer-events: auto;
 }
 
-/* ── Inner card ── */
-.cc-card {
-  max-width: 520px;
-  margin: 0 auto;
-  background: rgba(13, 27, 62, 0.92);
-  backdrop-filter: blur(20px) saturate(160%);
-  -webkit-backdrop-filter: blur(20px) saturate(160%);
-  border: 1px solid rgba(30, 86, 181, 0.22);
-  border-radius: 16px;
-  padding: 1.5rem 1.75rem;
+/* ── Modal card ── */
+.cc-modal {
+  max-width: 460px;
+  width: 100%;
+  background: linear-gradient(160deg, rgba(18, 34, 68, 0.98), rgba(13, 27, 62, 0.98));
+  border: 1px solid rgba(77, 174, 229, 0.2);
+  border-radius: 20px;
+  padding: 2.25rem 2rem 1.75rem;
   box-shadow:
-    0 2px 4px rgba(4, 9, 26, 0.25),
-    0 8px 18px rgba(4, 9, 26, 0.20),
-    0 24px 48px rgba(4, 9, 26, 0.15),
-    0 0 0 1px rgba(77, 174, 229, 0.06) inset;
+    0 4px 8px rgba(0, 0, 0, 0.4),
+    0 16px 32px rgba(0, 0, 0, 0.35),
+    0 40px 80px rgba(0, 0, 0, 0.25),
+    0 0 0 1px rgba(77, 174, 229, 0.1) inset,
+    0 0 60px rgba(30, 86, 181, 0.12);
   font-family: 'Inter', sans-serif;
   color: rgba(255, 255, 255, 0.85);
   line-height: 1.7;
+  text-align: center;
+  /* entry animation */
+  transform: scale(0.92) translateY(12px);
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
+              opacity  0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* ── Icon row ── */
-.cc-icon {
+.cc-overlay.cc-visible .cc-modal {
+  transform: scale(1) translateY(0);
+}
+
+/* ── Icon ── */
+.cc-modal-icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
-  border-radius: 10px;
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
   background: linear-gradient(135deg, #1E56B5, #4DAEE5);
-  margin-bottom: 0.75rem;
-  flex-shrink: 0;
+  margin: 0 auto 1rem;
 }
 
-.cc-icon svg {
-  width: 18px;
-  height: 18px;
+.cc-modal-icon svg {
+  width: 24px;
+  height: 24px;
   color: #fff;
 }
 
 /* ── Text ── */
-.cc-title {
+.cc-modal-title {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  font-size: 0.95rem;
+  font-size: 1.15rem;
   letter-spacing: -0.03em;
   color: #fff;
-  margin: 0 0 0.35rem;
+  margin: 0 0 0.5rem;
 }
 
-.cc-text {
-  font-size: 0.82rem;
+.cc-modal-text {
+  font-size: 0.85rem;
   color: rgba(200, 218, 248, 0.75);
-  margin: 0 0 1.1rem;
+  margin: 0 0 1.5rem;
+  max-width: 380px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.cc-text a {
+.cc-modal-text a {
   color: #4DAEE5;
   text-decoration: underline;
   text-underline-offset: 2px;
   transition: color 0.14s ease;
 }
 
-.cc-text a:hover {
+.cc-modal-text a:hover {
   color: #7ECEF5;
 }
 
-.cc-text a:focus-visible {
+.cc-modal-text a:focus-visible {
   outline: 2px solid #4DAEE5;
   outline-offset: 2px;
   border-radius: 2px;
 }
 
-.cc-text a:active {
+.cc-modal-text a:active {
   color: #3A7FD4;
 }
 
-/* ── Button row ── */
-.cc-actions {
+/* ── Button stack ── */
+.cc-modal-actions {
   display: flex;
-  gap: 0.6rem;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 /* shared button base */
@@ -112,12 +126,13 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
-  font-size: 0.82rem;
+  font-size: 0.85rem;
   letter-spacing: -0.01em;
-  border-radius: 10px;
-  padding: 0.6rem 1.25rem;
+  border-radius: 12px;
+  padding: 0.75rem 1.25rem;
   border: none;
   cursor: pointer;
   transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1),
@@ -130,20 +145,20 @@
   transform: scale(0.97) translateY(1px);
 }
 
-/* ── Accept button (primary) ── */
+/* ── Accept all (primary) ── */
 .cc-btn-accept {
-  background: linear-gradient(135deg, #1E56B5, #1A3462);
+  background: linear-gradient(135deg, #1E56B5, #3A7FD4);
   color: #fff;
   box-shadow:
-    0 2px 6px rgba(30, 86, 181, 0.38),
-    0 0 0 1px rgba(255, 255, 255, 0.06) inset;
+    0 2px 8px rgba(30, 86, 181, 0.4),
+    0 0 0 1px rgba(255, 255, 255, 0.08) inset;
 }
 
 .cc-btn-accept:hover {
-  transform: translateY(-2px) scale(1.025);
+  transform: translateY(-2px) scale(1.02);
   box-shadow:
-    0 4px 14px rgba(30, 86, 181, 0.45),
-    0 0 0 1px rgba(255, 255, 255, 0.10) inset;
+    0 4px 16px rgba(30, 86, 181, 0.5),
+    0 0 0 1px rgba(255, 255, 255, 0.12) inset;
 }
 
 .cc-btn-accept:focus-visible {
@@ -151,17 +166,35 @@
   outline-offset: 2px;
 }
 
-/* ── Decline button (ghost) ── */
+/* ── Necessary only (secondary) ── */
+.cc-btn-necessary {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.cc-btn-necessary:hover {
+  background: rgba(255, 255, 255, 0.13);
+  transform: translateY(-1px);
+}
+
+.cc-btn-necessary:focus-visible {
+  outline: 2px solid #4DAEE5;
+  outline-offset: 2px;
+}
+
+/* ── Decline (ghost) ── */
 .cc-btn-decline {
-  background: rgba(255, 255, 255, 0.06);
-  color: rgba(255, 255, 255, 0.70);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: transparent;
+  color: rgba(255, 255, 255, 0.5);
+  border: none;
+  font-weight: 500;
+  font-size: 0.8rem;
+  padding: 0.5rem 1.25rem;
 }
 
 .cc-btn-decline:hover {
-  background: rgba(255, 255, 255, 0.10);
-  color: #fff;
-  transform: translateY(-1px);
+  color: rgba(255, 255, 255, 0.75);
 }
 
 .cc-btn-decline:focus-visible {
@@ -171,16 +204,8 @@
 
 /* ── Responsive ── */
 @media (max-width: 480px) {
-  .cc-card {
-    padding: 1.25rem 1.25rem;
-    border-radius: 14px;
-  }
-
-  .cc-actions {
-    flex-direction: column;
-  }
-
-  .cc-btn {
-    width: 100%;
+  .cc-modal {
+    padding: 1.5rem 1.25rem 1.25rem;
+    border-radius: 16px;
   }
 }
