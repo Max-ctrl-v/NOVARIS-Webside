@@ -89,7 +89,7 @@ window.CookieConsent = (() => {
     setChoice(choice);
     hide();
 
-    if (choice === 'accepted') {
+    if (choice === 'accepted' || choice === 'necessary') {
       pendingCallbacks.forEach(fn => { try { fn(); } catch (e) { console.error('[CookieConsent]', e); } });
     }
     pendingCallbacks = [];
@@ -107,7 +107,12 @@ window.CookieConsent = (() => {
       return;
     }
 
-    if (choice === 'declined' || choice === 'necessary') {
+    if (choice === 'declined') {
+      return;
+    }
+
+    if (choice === 'necessary') {
+      if (typeof callback === 'function') callback();
       return;
     }
 
