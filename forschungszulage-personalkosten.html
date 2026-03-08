@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forschungszulage Personalkosten berechnen: Leitfaden 2026 | NOVARIS</title>
+  <meta name="description" content="Forschungszulage Personalkosten berechnen: Welche Gehaltsbestandteile zählen, wie der F&E-Anteil ermittelt wird und was die 20% Gemeinkostenpauschale 2026 bedeutet." />
+  <meta name="keywords" content="Forschungszulage Personalkosten, FZulG Personalkosten berechnen, Forschungszulage Bemessungsgrundlage, Forschungszulage Gehalt, F&E Personalkosten, Forschungszulage Gemeinkostenpauschale" />
+  <link rel="canonical" href="https://novaris-consulting.com/forschungszulage-personalkosten.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Forschungszulage Personalkosten berechnen: Leitfaden 2026 | NOVARIS" />
+  <meta property="og:description" content="Forschungszulage Personalkosten berechnen: Welche Gehaltsbestandteile zählen, wie der F&E-Anteil ermittelt wird und was die 20% Gemeinkostenpauschale 2026 bedeutet." />
+  <meta property="og:url" content="https://novaris-consulting.com/forschungszulage-personalkosten.html" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:site_name" content="NOVARIS Consulting" />
+  <meta property="og:image" content="https://novaris-consulting.com/brand_assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Forschungszulage Personalkosten berechnen: Leitfaden 2026 | NOVARIS" />
+  <meta name="twitter:description" content="Welche Gehaltsbestandteile zählen, wie der F&E-Anteil ermittelt wird und was die 20% Gemeinkostenpauschale 2026 bedeutet." />
+  <meta name="twitter:image" content="https://novaris-consulting.com/brand_assets/og-image.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --bg-base:    #ffffff;
+      --bg-raised:  #f5f8fe;
+      --bg-card:    #ffffff;
+      --clr-h:      #0D1B3E;
+      --clr-b:      #5a6e8c;
+      --clr-muted:  #4a5870;
+      --bdr:        #dde5f4;
+    }
+    html.dark {
+      --bg-base:    #0a1428;
+      --bg-raised:  #0D1B3E;
+      --bg-card:    #122244;
+      --clr-h:      #e8f0fa;
+      --clr-b:      #8aaac8;
+      --clr-muted:  #6888a8;
+      --bdr:        rgba(77,174,229,0.18);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg-base);
+      color: var(--clr-h);
+      transition: background 0.25s ease, color 0.25s ease;
+      line-height: 1.7;
+    }
+
+    .nav-blur { backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); }
+    .logo-img { height: 52px; width: auto; display: block; }
+
+    .nav-link {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.84rem;
+      font-weight: 500;
+      color: rgba(195,215,245,0.70);
+      text-decoration: none;
+      padding: 0.42rem 0.85rem;
+      border-radius: 8px;
+      transition: color 0.15s ease, background 0.15s ease;
+      letter-spacing: 0.01em;
+    }
+    .nav-link:hover { color: #fff; background: rgba(255,255,255,0.07); }
+    .nav-link:focus-visible { outline: 2px solid #4DAEE5; outline-offset: 2px; }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background: #1E56B5;
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 0.84rem;
+      border: none;
+      border-radius: 10px;
+      text-decoration: none;
+      cursor: pointer;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.3), 0 4px 12px rgba(30,86,181,0.35);
+      transition: background 0.15s ease, transform 0.12s ease, box-shadow 0.15s ease;
+    }
+    .btn-primary:hover  { background: #2563c4; box-shadow: 0 2px 4px rgba(0,0,0,0.3), 0 6px 18px rgba(30,86,181,0.45); transform: translateY(-1px); }
+    .btn-primary:active { transform: translateY(0); }
+    .btn-primary:focus-visible { outline: 2px solid #4DAEE5; outline-offset: 2px; }
+
+    .content-wrap {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 6rem 1.5rem 5rem;
+    }
+
+    .ds-breadcrumb {
+      font-size: 0.78rem;
+      color: var(--clr-b);
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .ds-breadcrumb a {
+      color: #4DAEE5;
+      text-decoration: none;
+      transition: color 0.14s ease;
+    }
+    .ds-breadcrumb a:hover { color: #7ec8f0; }
+
+    .ds-eyebrow {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #4DAEE5;
+      margin-bottom: 0.9rem;
+    }
+
+    .ds-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: var(--clr-h);
+      line-height: 1.15;
+      margin-bottom: 0.5rem;
+    }
+
+    .ds-subtitle {
+      font-size: 0.95rem;
+      color: var(--clr-b);
+      line-height: 1.75;
+      margin-bottom: 0.5rem;
+      max-width: 640px;
+    }
+
+    .ds-updated {
+      font-size: 0.78rem;
+      color: var(--clr-b);
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--bdr);
+    }
+
+    .ds-section {
+      margin-bottom: 2.8rem;
+    }
+    .ds-section h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.12rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: var(--clr-h);
+      margin-bottom: 0.9rem;
+      padding-bottom: 0.55rem;
+      border-bottom: 1px solid var(--bdr);
+    }
+    .ds-section h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--clr-h);
+      margin-top: 1.4rem;
+      margin-bottom: 0.5rem;
+    }
+    .ds-section p {
+      font-size: 0.9rem;
+      color: var(--clr-b);
+      line-height: 1.75;
+      margin-bottom: 0.85rem;
+    }
+    .ds-section ul, .ds-section ol {
+      margin: 0.5rem 0 0.85rem 1.1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+    .ds-section ul li, .ds-section ol li {
+      font-size: 0.9rem;
+      color: var(--clr-b);
+      line-height: 1.65;
+    }
+    .ds-section a {
+      color: #4DAEE5;
+      text-decoration: none;
+      transition: color 0.14s ease;
+    }
+    .ds-section a:hover { color: #7ec8f0; text-decoration: underline; }
+
+    .ds-box {
+      background: var(--bg-raised);
+      border: 1px solid var(--bdr);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      font-size: 0.88rem;
+      color: var(--clr-b);
+      line-height: 1.7;
+      margin: 1rem 0 1.2rem;
+      transition: background 0.25s ease, border-color 0.25s ease;
+    }
+    .ds-box strong {
+      color: var(--clr-h);
+      font-weight: 600;
+    }
+
+    .ds-highlight-box {
+      background: var(--bg-raised);
+      border: 1px solid var(--bdr);
+      border-left: 4px solid #1E56B5;
+      border-radius: 0 12px 12px 0;
+      padding: 1.25rem 1.5rem;
+      font-size: 0.88rem;
+      color: var(--clr-b);
+      line-height: 1.7;
+      margin: 1rem 0 1.2rem;
+      transition: background 0.25s ease, border-color 0.25s ease;
+    }
+    .ds-highlight-box strong {
+      color: var(--clr-h);
+      font-weight: 600;
+    }
+
+    .ds-step {
+      display: flex;
+      gap: 1.2rem;
+      align-items: flex-start;
+      margin-bottom: 1.5rem;
+    }
+    .ds-step-num {
+      flex-shrink: 0;
+      width: 38px;
+      height: 38px;
+      background: #1E56B5;
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: 0.95rem;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.3), 0 4px 10px rgba(30,86,181,0.3);
+    }
+    .ds-step-content h3 {
+      margin-top: 0;
+    }
+
+    .ds-table-wrap {
+      overflow-x: auto;
+      margin: 1rem 0 1.2rem;
+      border-radius: 12px;
+      border: 1px solid var(--bdr);
+    }
+    .ds-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+    }
+    .ds-table th {
+      background: var(--bg-raised);
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 0.78rem;
+      letter-spacing: 0.02em;
+      color: var(--clr-h);
+      text-align: left;
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid var(--bdr);
+    }
+    .ds-table td {
+      padding: 0.65rem 1rem;
+      color: var(--clr-b);
+      border-bottom: 1px solid var(--bdr);
+      line-height: 1.55;
+    }
+    .ds-table tr:last-child td { border-bottom: none; }
+    html.dark .ds-table th { background: var(--bg-card); }
+
+    .ds-urgency {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 0.15rem 0.5rem;
+      border-radius: 6px;
+      letter-spacing: 0.02em;
+    }
+    .ds-urgency--red { background: rgba(220,38,38,0.12); color: #dc2626; }
+    .ds-urgency--yellow { background: rgba(234,179,8,0.12); color: #b45309; }
+    .ds-urgency--green { background: rgba(22,163,74,0.12); color: #16a34a; }
+    html.dark .ds-urgency--red { background: rgba(220,38,38,0.2); color: #f87171; }
+    html.dark .ds-urgency--yellow { background: rgba(234,179,8,0.2); color: #fbbf24; }
+    html.dark .ds-urgency--green { background: rgba(22,163,74,0.2); color: #4ade80; }
+
+    .faq-item {
+      border: 1px solid var(--bdr);
+      border-radius: 12px;
+      margin-bottom: 0.65rem;
+      overflow: hidden;
+      transition: border-color 0.25s ease;
+    }
+    .faq-q {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      width: 100%;
+      padding: 1rem 1.25rem;
+      background: var(--bg-raised);
+      border: none;
+      cursor: pointer;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--clr-h);
+      text-align: left;
+      line-height: 1.5;
+      transition: background 0.15s ease, color 0.15s ease;
+    }
+    .faq-q:hover { background: var(--bg-raised); opacity: 0.85; }
+    .faq-q:focus-visible { outline: 2px solid #4DAEE5; outline-offset: -2px; }
+    .faq-q svg {
+      flex-shrink: 0;
+      transition: transform 0.2s ease;
+    }
+    .faq-item.open .faq-q svg { transform: rotate(180deg); }
+    .faq-a {
+      display: none;
+      padding: 0 1.25rem 1rem;
+      font-size: 0.87rem;
+      color: var(--clr-b);
+      line-height: 1.7;
+    }
+    .faq-item.open .faq-a { display: block; }
+    html.dark .faq-q { background: var(--bg-card); }
+
+    .cta-section {
+      background: var(--bg-raised);
+      border: 1px solid var(--bdr);
+      border-radius: 16px;
+      padding: 2.5rem 2rem;
+      text-align: center;
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+      transition: background 0.25s ease, border-color 0.25s ease;
+    }
+    .cta-section h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: var(--clr-h);
+      margin-bottom: 0.8rem;
+      border: none;
+      padding-bottom: 0;
+    }
+    .cta-section p {
+      font-size: 0.9rem;
+      color: var(--clr-b);
+      line-height: 1.75;
+      margin-bottom: 1.5rem;
+      max-width: 560px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .toc {
+      background: var(--bg-raised);
+      border: 1px solid var(--bdr);
+      border-radius: 12px;
+      padding: 1.5rem 1.75rem;
+      margin-bottom: 2.8rem;
+      transition: background 0.25s ease, border-color 0.25s ease;
+    }
+    html.dark .toc { background: var(--bg-card); }
+    .toc-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--clr-muted);
+      margin-bottom: 0.8rem;
+    }
+    .toc ol {
+      margin: 0;
+      padding-left: 1.1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+    .toc ol li {
+      font-size: 0.85rem;
+      color: var(--clr-b);
+      line-height: 1.55;
+    }
+    .toc ol li a {
+      color: #4DAEE5;
+      text-decoration: none;
+      transition: color 0.14s ease;
+    }
+    .toc ol li a:hover { color: #7ec8f0; }
+
+    footer { background: #04091a; border-top: 1px solid rgba(255,255,255,0.07); }
+
+    html.dark .ds-box { background: var(--bg-card); }
+    html.dark .ds-highlight-box { background: var(--bg-card); }
+    html.dark .cta-section { background: var(--bg-card); }
+    .logo-light { display: none; }
+    html.dark .logo-dark  { display: none !important; }
+    html.dark .logo-light { display: inline !important; }
+
+    html { overflow-y: scroll; }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: rgba(77,174,229,0.38); border-radius: 999px; }
+    ::-webkit-scrollbar-thumb:hover { background: rgba(77,174,229,0.55); }
+    html { scrollbar-width: thin; scrollbar-color: rgba(77,174,229,0.38) transparent; }
+    html.dark ::-webkit-scrollbar-thumb { background: rgba(77,174,229,0.30); }
+    html.dark ::-webkit-scrollbar-thumb:hover { background: rgba(77,174,229,0.48); }
+    html.dark { scrollbar-color: rgba(77,174,229,0.30) transparent; }
+  </style>
+  <link rel="stylesheet" href="/page-transition.css" />
+  <link rel="stylesheet" href="/cookie-consent.css" />
+  <script src="/page-transition.js" defer></script>
+
+  <!-- BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://novaris-consulting.com/"},
+      {"@type": "ListItem", "position": 2, "name": "Forschungszulage", "item": "https://novaris-consulting.com/forschungszulage.html"},
+      {"@type": "ListItem", "position": 3, "name": "Personalkosten berechnen", "item": "https://novaris-consulting.com/forschungszulage-personalkosten.html"}
+    ]
+  }
+  </script>
+
+  <!-- Article Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Forschungszulage Personalkosten berechnen – So ermitteln Sie Ihre Bemessungsgrundlage",
+    "description": "Forschungszulage Personalkosten berechnen: Welche Gehaltsbestandteile zählen, wie der F&E-Anteil ermittelt wird und was die 20% Gemeinkostenpauschale 2026 bedeutet.",
+    "author": {
+      "@type": "Organization",
+      "name": "NOVARIS Consulting",
+      "url": "https://novaris-consulting.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "NOVARIS Consulting",
+      "url": "https://novaris-consulting.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://novaris-consulting.com/brand_assets/Logo V5-light.svg"
+      }
+    },
+    "datePublished": "2026-03-08",
+    "dateModified": "2026-03-08",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://novaris-consulting.com/forschungszulage-personalkosten.html"
+    },
+    "keywords": ["Forschungszulage Personalkosten", "FZulG Personalkosten berechnen", "Forschungszulage Bemessungsgrundlage", "Forschungszulage Gehalt", "F&E Personalkosten", "Forschungszulage Gemeinkostenpauschale"]
+  }
+  </script>
+
+  <!-- FAQ Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Zählen Arbeitgeberanteile zur Sozialversicherung?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, die Arbeitgeberanteile zur Sozialversicherung (Kranken-, Renten-, Pflege- und Arbeitslosenversicherung) zählen vollständig zu den förderfähigen Personalkosten nach § 3 Abs. 3 FZulG. Sie werden zusammen mit dem Bruttogehalt in die Bemessungsgrundlage einbezogen und erhöhen damit die Forschungszulage."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kann ein GmbH-Geschäftsführer geltend gemacht werden?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, ein GmbH-Geschäftsführer kann geltend gemacht werden, sofern seine F&E-Tätigkeit vertraglich geregelt ist. Der Geschäftsführervertrag oder eine Ergänzungsvereinbarung sollte den F&E-Anteil der Tätigkeit konkret beschreiben. Die Vergütung wird dann anteilig als förderfähige Personalkosten berücksichtigt."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Was ist die Gemeinkostenpauschale?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Die Gemeinkostenpauschale ist ein 20%-Zuschlag auf die förderfähigen Personalkosten, der ab dem Wirtschaftsjahr 2026 gilt. Sie wurde durch das Wachstumschancengesetz eingeführt und soll die indirekten Kosten der F&E-Tätigkeit (Raumkosten, IT-Infrastruktur, Verbrauchsmaterialien etc.) pauschal abdecken. Die Bemessungsgrundlage erhöht sich dadurch um 20%, was zu einer spürbar höheren Forschungszulage führt."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wie dokumentiere ich den F&E-Anteil?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Der F&E-Anteil sollte idealerweise über eine GoBD-konforme Zeiterfassung dokumentiert werden. Mitarbeiter erfassen dabei täglich oder wöchentlich ihre Arbeitszeiten, aufgeteilt nach F&E-Projekten und sonstigen Tätigkeiten. Alternative Nachweise wie Projektpläne, Stellenbeschreibungen oder plausible Schätzungen sind möglich, bergen aber ein höheres Risiko bei der Prüfung durch das Finanzamt."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<header id="nav" class="fixed inset-x-0 top-0 z-50 nav-blur"
+        style="background:rgba(4,9,26,0.88);border-bottom:1px solid rgba(255,255,255,0.07)">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between gap-4" style="height:68px">
+    <a href="/" aria-label="NOVARIS Consulting"
+       style="text-decoration:none;flex-shrink:0;display:flex;align-items:center;transition:opacity 0.15s ease"
+       class="hover:opacity-90 focus-visible:outline-none">
+      <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto" />
+    </a>
+    <nav class="hidden lg:flex items-center gap-0.5">
+      <a href="/#was-ist-fzulg" class="nav-link">Das FZulG</a>
+      <a href="/#branchen"      class="nav-link">Branchen</a>
+      <a href="/#prozess"       class="nav-link">Prozess</a>
+      <a href="/#vorteile"      class="nav-link">Vorteile</a>
+      <a href="/#faq"           class="nav-link">FAQ</a>
+      <a href="/#kontakt"       class="nav-link">Kontakt</a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <button id="dark-toggle" onclick="toggleDark()" aria-label="Toggle dark mode"
+        class="hidden sm:flex" style="width:32px;height:32px;border-radius:8px;border:1px solid rgba(255,255,255,0.12);
+               background:rgba(255,255,255,0.07);cursor:pointer;align-items:center;
+               justify-content:center;color:rgba(255,255,255,0.7);
+               transition:background 0.15s ease,color 0.15s ease">
+        <svg id="icon-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg id="icon-sun"  width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
+      <a href="/#kontakt" class="btn-primary hidden sm:inline-flex" style="padding:0.55rem 1.35rem;font-size:0.83rem">
+        Kostenlos prüfen
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="content-wrap">
+
+    <div class="ds-breadcrumb">
+      <a href="/">Startseite</a>
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      <a href="/forschungszulage.html">Forschungszulage</a>
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      <span>Personalkosten berechnen</span>
+    </div>
+
+    <div class="ds-eyebrow">Bemessungsgrundlage</div>
+    <h1 class="ds-title">Forschungszulage Personalkosten berechnen – So ermitteln Sie Ihre Bemessungsgrundlage</h1>
+    <p class="ds-subtitle">Die Personalkosten Ihrer F&E-Mitarbeiter bilden das Herzstück der Forschungszulage. Hier erfahren Sie, was zählt, was nicht – und wie Sie das Maximum herausholen.</p>
+    <p class="ds-updated">Zuletzt aktualisiert: 08. März 2026 · Lesezeit: ca. 12 Minuten</p>
+
+    <!-- Table of Contents -->
+    <nav class="toc" aria-label="Inhaltsverzeichnis">
+      <div class="toc-title">Inhaltsverzeichnis</div>
+      <ol>
+        <li><a href="#foerderfaehig">Was zählt als förderfähige Personalkosten?</a></li>
+        <li><a href="#fe-anteil">F&E-Anteil der Arbeitszeit korrekt ermitteln</a></li>
+        <li><a href="#berechnungsbeispiel">Berechnungsbeispiel: Schritt für Schritt</a></li>
+        <li><a href="#gemeinkostenpauschale">Neu ab 2026: Die 20% Gemeinkostenpauschale</a></li>
+        <li><a href="#sonderfaelle">Sonderfälle: GF, Teilzeit, Leiharbeiter, Werkstudenten</a></li>
+        <li><a href="#eigenleistungen">Eigenleistungen und Einzelunternehmer</a></li>
+        <li><a href="#faq">FAQ: Personalkosten & Forschungszulage</a></li>
+      </ol>
+    </nav>
+
+    <!-- Section 1: Förderfähige Personalkosten -->
+    <div class="ds-section" id="foerderfaehig">
+      <h2>Was zählt als förderfähige Personalkosten?</h2>
+      <p>Die Bemessungsgrundlage der Forschungszulage basiert auf den Personalkosten der Arbeitnehmer, die in begünstigten F&E-Vorhaben eingesetzt werden. Doch nicht jede Gehaltskomponente ist automatisch förderfähig. <strong>§ 3 Abs. 3 FZulG</strong> definiert die förderfähigen Aufwendungen als die dem Arbeitnehmer „gewährten Arbeitslöhne" – doch was genau fällt darunter?</p>
+
+      <h3>Was zählt</h3>
+      <ul>
+        <li><strong>Bruttolöhne und -gehälter:</strong> Das reguläre Bruttogehalt ist die zentrale Komponente. Dazu gehören auch Zulagen, die vertraglich fest vereinbart sind (z. B. Schichtzulagen, Funktionszulagen).</li>
+        <li><strong>Arbeitgeberanteile zur Sozialversicherung:</strong> Kranken-, Renten-, Pflege- und Arbeitslosenversicherung – diese Anteile zählen vollständig zu den förderfähigen Personalkosten und erhöhen die Bemessungsgrundlage erheblich (ca. 20% Aufschlag auf das Bruttogehalt).</li>
+        <li><strong>Vertraglich vereinbarte Sonderzahlungen:</strong> 13. Gehalt, Urlaubsgeld und Weihnachtsgeld, sofern sie arbeitsvertraglich oder tarifvertraglich vereinbart sind.</li>
+      </ul>
+
+      <h3>Was nicht zählt</h3>
+      <ul>
+        <li><strong>Sachbezüge:</strong> Dienstwagen, Jobtickets, Essenszuschüsse und andere geldwerte Vorteile werden nicht berücksichtigt.</li>
+        <li><strong>Leistungsboni über das Grundgehalt hinaus:</strong> Variable Vergütungsbestandteile, die an individuelle Zielerreichung geknüpft sind, gelten als nicht förderfähig.</li>
+        <li><strong>Abfindungen:</strong> Einmalzahlungen bei Beendigung des Arbeitsverhältnisses sind keine förderfähigen Personalkosten.</li>
+        <li><strong>Betriebliche Altersvorsorge (bAV):</strong> Die steuerliche Behandlung der bAV im Kontext der Forschungszulage ist <strong>strittig</strong>. Die Finanzverwaltung tendiert dazu, Arbeitgeberbeiträge zur bAV nicht als förderfähig anzuerkennen. In der Praxis empfehlen wir, diese Position konservativ zu behandeln und im Zweifel nicht anzusetzen.</li>
+      </ul>
+
+      <div class="ds-highlight-box">
+        <strong>Praxis-Tipp zum GmbH-Geschäftsführer:</strong> Auch die Vergütung eines GmbH-Geschäftsführers kann als förderfähige Personalkosten geltend gemacht werden – <strong>vorausgesetzt</strong>, seine F&E-Tätigkeit ist vertraglich geregelt. Im Geschäftsführervertrag oder einer Ergänzungsvereinbarung sollte der F&E-Anteil der Tätigkeit konkret beschrieben werden. So wird die anteilige Vergütung zur Bemessungsgrundlage.
+      </div>
+    </div>
+
+    <!-- Section 2: F&E-Anteil -->
+    <div class="ds-section" id="fe-anteil">
+      <h2>F&E-Anteil der Arbeitszeit korrekt ermitteln</h2>
+      <p>In der Praxis arbeiten nur wenige Mitarbeiter zu <strong>100% in F&E-Projekten</strong>. Entwicklungsingenieure übernehmen auch Kundensupport, Wissenschaftler halten Vorträge, Softwareentwickler warten Bestandssysteme. Nur der Anteil der Arbeitszeit, der tatsächlich auf begünstigte F&E-Vorhaben entfällt, ist förderfähig.</p>
+
+      <h3>Zeiterfassung: Der Goldstandard</h3>
+      <p>Die <strong>projektbezogene Zeiterfassung</strong> ist die sicherste Methode, um den F&E-Anteil nachzuweisen. Mitarbeiter dokumentieren täglich oder wöchentlich, welche Arbeitszeit auf welche Projekte entfällt. Die Zeiterfassung sollte <strong>GoBD-konform</strong> sein – also zeitnah, unveränderbar und nachvollziehbar. Digitale Tools wie Clockify, Toggl oder interne ERP-Systeme eignen sich hervorragend.</p>
+
+      <h3>Pauschale Schätzung: Möglich, aber riskant</h3>
+      <p>Alternativ kann der F&E-Anteil auch durch eine <strong>plausible Schätzung</strong> ermittelt werden. Beispielsweise kann anhand von Stellenbeschreibungen, Projektplänen oder Organigrammen geschätzt werden, dass ein Mitarbeiter ca. 60% seiner Zeit in F&E verbringt. Diese Methode ist zulässig, birgt aber ein <strong>höheres Risiko</strong> bei der Prüfung durch das Finanzamt, da die Schätzung begründet und plausibilisiert werden muss.</p>
+
+      <div class="ds-box">
+        <strong>Empfehlung:</strong> Führen Sie ab sofort eine projektbezogene Zeiterfassung ein. Der Aufwand ist minimal (5 Minuten pro Tag), aber der Nutzen enorm: Sie schaffen eine revisionssichere Dokumentation, die das Finanzamt akzeptiert. Mehr dazu in unserem <a href="/forschungszulage-zeiterfassung.html">Ratgeber zur F&E-Zeiterfassung</a>.
+      </div>
+    </div>
+
+    <!-- Section 3: Berechnungsbeispiel -->
+    <div class="ds-section" id="berechnungsbeispiel">
+      <h2>Berechnungsbeispiel: Schritt für Schritt</h2>
+      <p>Anhand eines konkreten Beispiels zeigen wir, wie die Bemessungsgrundlage aus den Personalkosten eines mittelständischen Unternehmens ermittelt wird. Angenommen, ein Unternehmen hat <strong>5 Mitarbeiter</strong>, die in unterschiedlichem Umfang an F&E-Projekten arbeiten:</p>
+
+      <div class="ds-table-wrap">
+        <table class="ds-table">
+          <thead>
+            <tr>
+              <th>Mitarbeiter</th>
+              <th>Bruttolohn/Jahr</th>
+              <th>AG-Anteile SV</th>
+              <th>F&E-Anteil</th>
+              <th>Förderfähiger Betrag</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Entwicklungsleiter</strong></td>
+              <td>85.000 EUR</td>
+              <td>17.000 EUR</td>
+              <td>100%</td>
+              <td><strong>102.000 EUR</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Softwareentwickler</strong></td>
+              <td>72.000 EUR</td>
+              <td>14.400 EUR</td>
+              <td>80%</td>
+              <td><strong>69.120 EUR</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Ingenieurin</strong></td>
+              <td>78.000 EUR</td>
+              <td>15.600 EUR</td>
+              <td>80%</td>
+              <td><strong>74.880 EUR</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Laborant</strong></td>
+              <td>48.000 EUR</td>
+              <td>9.600 EUR</td>
+              <td>50%</td>
+              <td><strong>28.800 EUR</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Projektmanagerin</strong></td>
+              <td>65.000 EUR</td>
+              <td>13.000 EUR</td>
+              <td>30%</td>
+              <td><strong>23.400 EUR</strong></td>
+            </tr>
+            <tr style="font-weight:700;background:var(--bg-raised)">
+              <td colspan="4" style="text-align:right"><strong>Bemessungsgrundlage (Summe):</strong></td>
+              <td style="color:var(--clr-h);font-size:0.92rem"><strong>298.200 EUR</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p><strong>Berechnung der Forschungszulage:</strong></p>
+      <ul>
+        <li><strong>Nicht-KMU (25%):</strong> 298.200 EUR x 25% = <strong>74.550 EUR</strong> Forschungszulage</li>
+        <li><strong>KMU (35%):</strong> 298.200 EUR x 35% = <strong>104.370 EUR</strong> Forschungszulage</li>
+      </ul>
+
+      <p>Dieses Beispiel zeigt: Selbst bei nur 5 Mitarbeitern mit unterschiedlichen F&E-Anteilen entsteht eine <strong>signifikante Förderung</strong>. Bei größeren Teams skaliert der Betrag entsprechend. Berechnen Sie Ihre individuelle Förderung mit unserem <a href="/forschungszulage-rechner.html">interaktiven Forschungszulagen-Rechner</a>.</p>
+    </div>
+
+    <!-- Section 4: Gemeinkostenpauschale -->
+    <div class="ds-section" id="gemeinkostenpauschale">
+      <h2>Neu ab 2026: Die 20% Gemeinkostenpauschale</h2>
+      <p>Mit dem <strong>Wachstumschancengesetz</strong> wurde eine bedeutende Neuerung eingeführt: Ab dem Wirtschaftsjahr 2026 können Unternehmen einen pauschalen <strong>Gemeinkostenzuschlag von 20%</strong> auf ihre förderfähigen Personalkosten ansetzen. Diese Pauschale soll die indirekten Kosten der F&E-Tätigkeit abdecken – Raumkosten, IT-Infrastruktur, Verbrauchsmaterialien, Laborausstattung und weitere Gemeinkosten, die bisher nicht förderfähig waren.</p>
+
+      <p>Die Gemeinkostenpauschale wird automatisch auf die Summe der förderfähigen Personalkosten aufgeschlagen. Ein separater Nachweis der tatsächlichen Gemeinkosten ist <strong>nicht erforderlich</strong> – es handelt sich um eine reine Pauschale.</p>
+
+      <div class="ds-highlight-box">
+        <strong>Rechenbeispiel mit Gemeinkostenpauschale (KMU):</strong><br /><br />
+        Förderfähige Personalkosten: <strong>500.000 EUR</strong><br />
+        + 20% Gemeinkostenpauschale: <strong>100.000 EUR</strong><br />
+        = Bemessungsgrundlage: <strong>600.000 EUR</strong><br />
+        x 35% (KMU-Fördersatz): <strong>= 210.000 EUR Forschungszulage</strong><br /><br />
+        Ohne Gemeinkostenpauschale wären es nur 175.000 EUR – die Pauschale bringt also <strong>35.000 EUR zusätzliche Förderung</strong> bei diesem Beispiel.
+      </div>
+
+      <p>Wichtig: Die Gemeinkostenpauschale gilt <strong>erst ab dem Wirtschaftsjahr 2026</strong>. Für rückwirkende Anträge der Jahre 2020 bis 2025 können nur die reinen Personalkosten (Bruttolöhne plus AG-Anteile SV) als Bemessungsgrundlage angesetzt werden.</p>
+    </div>
+
+    <!-- Section 5: Sonderfälle -->
+    <div class="ds-section" id="sonderfaelle">
+      <h2>Sonderfälle: GF, Teilzeit, Leiharbeiter, Werkstudenten</h2>
+      <p>In der Praxis ergeben sich häufig Fragen zu bestimmten Beschäftigungsformen. Hier klären wir die wichtigsten Sonderfälle:</p>
+
+      <h3>GmbH-Geschäftsführer</h3>
+      <p>Ein angestellter GmbH-Geschäftsführer kann förderfähig sein, wenn seine <strong>F&E-Tätigkeit vertraglich geregelt</strong> ist. Der Geschäftsführervertrag oder eine Ergänzungsvereinbarung sollte den F&E-Anteil konkret beschreiben (z. B. „Der Geschäftsführer widmet 40% seiner Arbeitszeit der Leitung und Durchführung von F&E-Projekten"). Die anteilige Vergütung wird dann als förderfähige Personalkosten berücksichtigt.</p>
+
+      <h3>Teilzeitkräfte</h3>
+      <p>Teilzeitkräfte werden <strong>anteilig</strong> berücksichtigt. Die Bemessungsgrundlage ergibt sich aus dem tatsächlichen Bruttogehalt (das bei Teilzeit entsprechend niedriger ist) multipliziert mit dem F&E-Anteil der Arbeitszeit. Beispiel: Eine Ingenieurin arbeitet 50% Teilzeit mit 39.000 EUR Brutto/Jahr und verbringt 80% ihrer Arbeitszeit in F&E. Förderfähig: 39.000 EUR + AG-SV x 80%.</p>
+
+      <h3>Leiharbeiter</h3>
+      <p>Bei Leiharbeitern kann der <strong>Entleiher</strong> die tatsächlich gezahlten Kosten (Vergütung an den Verleiher) anteilig als Personalkosten ansetzen. Maßgeblich sind die Kosten, die dem entleihenden Unternehmen entstehen – nicht das Gehalt des Leiharbeiters. Der F&E-Anteil muss ebenfalls dokumentiert werden.</p>
+
+      <h3>Werkstudenten</h3>
+      <p><strong>Ja</strong>, Werkstudenten sind förderfähig. Ihre Vergütung (Bruttogehalt plus AG-Anteile SV) wird anteilig nach dem F&E-Anteil ihrer Tätigkeit berücksichtigt. Werkstudenten, die an F&E-Projekten arbeiten (z. B. im Rahmen einer Thesis), können somit die Bemessungsgrundlage erhöhen.</p>
+
+      <h3>Mini-Jobber (520-EUR-Basis)</h3>
+      <p><strong>Ja</strong>, auch Mini-Jobber sind förderfähig. Die Vergütung inklusive der pauschalen Arbeitgeberbeiträge zur Sozialversicherung wird anteilig berücksichtigt. Bei Mini-Jobbern, die ausschließlich in F&E tätig sind, kann die gesamte Vergütung angesetzt werden.</p>
+
+      <div class="ds-box">
+        <strong>Zusammenfassung der Sonderfälle:</strong><br /><br />
+        GmbH-Geschäftsführer: förderfähig (F&E-Vertrag erforderlich)<br />
+        Teilzeitkräfte: anteilig nach Gehalt x F&E-Anteil<br />
+        Leiharbeiter: Entleiherkosten anteilig ansetzbar<br />
+        Werkstudenten: förderfähig (Brutto + AG-SV x F&E-Anteil)<br />
+        Mini-Jobber: förderfähig (inkl. pauschaler AG-Beiträge)
+      </div>
+    </div>
+
+    <!-- Section 6: Eigenleistungen -->
+    <div class="ds-section" id="eigenleistungen">
+      <h2>Eigenleistungen und Einzelunternehmer</h2>
+      <p>Nicht jeder F&E-Tätige ist Arbeitnehmer. Einzelunternehmer und Gesellschafter, die selbst aktiv forschen und entwickeln, können ihre eigene Arbeitsleistung ebenfalls als Bemessungsgrundlage ansetzen – allerdings gelten besondere Regeln.</p>
+
+      <h3>Die 40-EUR-Pauschale</h3>
+      <p>Für <strong>Einzelunternehmer</strong> und <strong>Gesellschafter-Geschäftsführer ohne Gehalt</strong> (z. B. bei Personengesellschaften) gilt eine pauschale Bemessungsgrundlage von <strong>40 EUR pro Arbeitsstunde</strong>. Diese Pauschale wird mit den tatsächlich geleisteten F&E-Stunden multipliziert, maximal jedoch mit 40 Stunden pro Woche.</p>
+
+      <p><strong>Rechenbeispiel:</strong> Ein Einzelunternehmer forscht 20 Stunden pro Woche an der Weiterentwicklung seines Produkts. Über ein Jahr (46 Arbeitswochen) ergibt sich:</p>
+      <ul>
+        <li>20 Stunden x 46 Wochen x 40 EUR = <strong>36.800 EUR Bemessungsgrundlage</strong></li>
+        <li>x 35% (KMU-Fördersatz) = <strong>12.880 EUR Forschungszulage</strong></li>
+      </ul>
+
+      <p>Die Eigenleistungspauschale kann <strong>zusätzlich</strong> zu den Personalkosten der Arbeitnehmer angesetzt werden. Bei inhabergeführten Unternehmen, in denen der Gründer selbst aktiv an F&E mitwirkt, erhöht dies die Bemessungsgrundlage signifikant. Mehr Details finden Sie in unserem <a href="/forschungszulage-eigenleistungen.html">Ratgeber zu Eigenleistungen bei der Forschungszulage</a>.</p>
+
+      <div class="ds-highlight-box">
+        <strong>Wichtig:</strong> Die Eigenleistungspauschale erfordert eine <strong>plausible Dokumentation</strong> der geleisteten F&E-Stunden. Eine Zeiterfassung ist hier besonders wichtig, da das Finanzamt die angesetzten Stunden hinterfragen kann. Nutzen Sie eine digitale Zeiterfassung und dokumentieren Sie die F&E-Inhalte parallel.
+      </div>
+    </div>
+
+    <!-- Section 7: FAQ -->
+    <div class="ds-section" id="faq">
+      <h2>FAQ: Personalkosten & Forschungszulage</h2>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          Zählen Arbeitgeberanteile zur Sozialversicherung?
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>Ja, die Arbeitgeberanteile zur Sozialversicherung (Kranken-, Renten-, Pflege- und Arbeitslosenversicherung) zählen <strong>vollständig</strong> zu den förderfähigen Personalkosten nach § 3 Abs. 3 FZulG. Sie werden zusammen mit dem Bruttogehalt in die Bemessungsgrundlage einbezogen und erhöhen damit die Forschungszulage um ca. 20%. Vergessen Sie diese Position nicht – sie macht einen erheblichen Unterschied.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          Kann ein GmbH-Geschäftsführer geltend gemacht werden?
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>Ja, ein GmbH-Geschäftsführer kann geltend gemacht werden, sofern seine <strong>F&E-Tätigkeit vertraglich geregelt</strong> ist. Der Geschäftsführervertrag oder eine Ergänzungsvereinbarung sollte den F&E-Anteil der Tätigkeit konkret beschreiben (z. B. „40% der Arbeitszeit entfallen auf die Leitung und Durchführung von F&E-Projekten"). Die anteilige Vergütung wird dann als förderfähige Personalkosten in die Bemessungsgrundlage einbezogen.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          Was ist die Gemeinkostenpauschale?
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>Die Gemeinkostenpauschale ist ein <strong>20%-Zuschlag</strong> auf die förderfähigen Personalkosten, der ab dem Wirtschaftsjahr 2026 gilt. Sie wurde durch das Wachstumschancengesetz eingeführt und soll die indirekten Kosten der F&E-Tätigkeit pauschal abdecken (Raumkosten, IT-Infrastruktur, Verbrauchsmaterialien etc.). Ein separater Nachweis der tatsächlichen Gemeinkosten ist nicht erforderlich. Die Bemessungsgrundlage erhöht sich dadurch um 20%, was zu einer spürbar höheren Forschungszulage führt.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          Wie dokumentiere ich den F&E-Anteil?
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>Der F&E-Anteil sollte idealerweise über eine <strong>GoBD-konforme Zeiterfassung</strong> dokumentiert werden. Mitarbeiter erfassen dabei täglich oder wöchentlich ihre Arbeitszeiten, aufgeteilt nach F&E-Projekten und sonstigen Tätigkeiten. Die Zeiterfassung muss zeitnah, unveränderbar und nachvollziehbar sein. Digitale Tools wie Clockify, Toggl oder ERP-Systeme eignen sich. Alternative Nachweise (Projektpläne, Stellenbeschreibungen, plausible Schätzungen) sind möglich, bergen aber ein höheres Risiko. Mehr dazu: <a href="/forschungszulage-zeiterfassung.html">Ratgeber zur F&E-Zeiterfassung</a>.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Related Content -->
+    <div class="ds-section" style="margin-top:2rem">
+      <h2>Weiterführende Inhalte zur Forschungszulage</h2>
+      <p>Vertiefen Sie Ihr Wissen mit unseren spezialisierten Ressourcen:</p>
+      <ul>
+        <li><a href="/forschungszulage.html" style="color:#1E56B5;font-weight:600"><strong>Forschungszulage Leitfaden</strong></a> – Der komplette Überblick zum FZulG 2026</li>
+        <li><a href="/forschungszulage-rechner.html" style="color:#1E56B5;font-weight:600"><strong>Forschungszulagen Rechner</strong></a> – Berechnen Sie Ihre individuelle Förderung in 30 Sekunden</li>
+        <li><a href="/forschungszulage-zeiterfassung.html" style="color:#1E56B5;font-weight:600"><strong>F&E-Zeiterfassung</strong></a> – GoBD-konforme Dokumentation Ihrer F&E-Stunden</li>
+        <li><a href="/forschungszulage-eigenleistungen.html" style="color:#1E56B5;font-weight:600"><strong>Eigenleistungen</strong></a> – Pauschale für Einzelunternehmer und Gesellschafter</li>
+        <li><a href="/forschungszulage-buchen.html" style="color:#1E56B5;font-weight:600"><strong>Forschungszulage buchen</strong></a> – Buchungssätze und bilanzielle Behandlung</li>
+      </ul>
+    </div>
+
+    <!-- CTA Box -->
+    <div class="cta-section">
+      <h2>Personalkosten optimal ansetzen – wir helfen Ihnen dabei</h2>
+      <p>Lassen Sie Ihre förderfähigen Personalkosten kostenlos prüfen. NOVARIS identifiziert alle ansetzbare Positionen und maximiert Ihre Bemessungsgrundlage – erfolgsbasiert und ohne Risiko.</p>
+      <a href="/#kontakt" class="btn-primary" style="padding:0.7rem 1.8rem;font-size:0.9rem">
+        Kostenlose Erstanalyse anfragen
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+
+  </div>
+</main>
+
+<footer style="background:#04091a;border-top:1px solid rgba(255,255,255,0.07)">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
+      <div class="lg:col-span-2">
+        <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto;margin-bottom:1rem" />
+        <p style="font-size:0.82rem;color:rgba(195,215,245,0.38);line-height:1.72;max-width:320px">
+          NOVARIS Consulting ist Ihr spezialisierter Full-Service-Partner für die staatliche
+          Forschungszulage nach dem FZulG – erfolgsbasiert, transparent und ohne Risiko.
+        </p>
+      </div>
+      <div>
+        <div style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.75rem;letter-spacing:0.09em;text-transform:uppercase;color:rgba(195,215,245,0.3);margin-bottom:1rem">Navigation</div>
+        <div style="display:flex;flex-direction:column;gap:0.55rem">
+          <a href="/#was-ist-fzulg" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Das FZulG</a>
+          <a href="/#prozess"       style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Prozess</a>
+          <a href="/#vorteile"      style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Vorteile</a>
+          <a href="/#faq"           style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">FAQ</a>
+          <a href="/#kontakt"       style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Kontakt</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.75rem;letter-spacing:0.09em;text-transform:uppercase;color:rgba(195,215,245,0.3);margin-bottom:1rem">Rechtliches</div>
+        <div style="display:flex;flex-direction:column;gap:0.55rem">
+          <a href="/impressum.html"  style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Impressum</a>
+          <a href="/datenschutz.html" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Datenschutz</a>
+          <a href="/agb.html"        style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">AGB</a>
+          <a href="javascript:void(0)" onclick="CookieConsent.reset();CookieConsent.request(function(){});" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Cookie-Einstellungen</a>
+        </div>
+      </div>
+    </div>
+    <div style="height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.08) 25%,rgba(255,255,255,0.08) 75%,transparent);margin-bottom:1.5rem"></div>
+    <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem">
+      <p style="font-size:0.73rem;color:rgba(195,215,245,0.25)">&copy; 2026 NOVARIS Consulting · Alle Rechte vorbehalten.</p>
+      <p style="font-size:0.73rem;color:rgba(195,215,245,0.18)">Diese Website stellt keine Steuer- oder Rechtsberatung dar.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function() {
+    if (localStorage.getItem('theme') === 'dark') {
+      document.documentElement.classList.add('dark');
+    }
+  })();
+
+  function toggleDark() {
+    const dark = document.documentElement.classList.toggle('dark');
+    localStorage.setItem('theme', dark ? 'dark' : 'light');
+    _updateDarkBtn();
+  }
+
+  function _updateDarkBtn() {
+    const dark = document.documentElement.classList.contains('dark');
+    const moon = document.getElementById('icon-moon');
+    const sun  = document.getElementById('icon-sun');
+    if (moon) moon.style.display = dark ? 'none'  : 'block';
+    if (sun)  sun.style.display  = dark ? 'block' : 'none';
+  }
+
+  window.addEventListener('DOMContentLoaded', _updateDarkBtn);
+</script>
+
+<script src="/cookie-consent.js" defer></script>
+<script src="/analytics.js" defer></script>
+</body>
+</html>

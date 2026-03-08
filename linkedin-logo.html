@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>NOVARIS LinkedIn Logo</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    .logo-container {
+      width: 400px;
+      height: 400px;
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(145deg, #0A1C38 0%, #0F2747 30%, #123E6B 70%, #0F2747 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Grain texture */
+    .grain {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    /* Radial glow — top right */
+    .glow-1 {
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      top: -180px;
+      right: -100px;
+      background: radial-gradient(circle, rgba(30, 109, 181, 0.3) 0%, rgba(30, 109, 181, 0.08) 40%, transparent 70%);
+      z-index: 3;
+    }
+
+    /* Radial glow — bottom left */
+    .glow-2 {
+      position: absolute;
+      width: 350px;
+      height: 350px;
+      bottom: -150px;
+      left: -80px;
+      background: radial-gradient(circle, rgba(79, 163, 227, 0.15) 0%, transparent 60%);
+      z-index: 3;
+    }
+
+    /* Center glow behind logo */
+    .glow-center {
+      position: absolute;
+      width: 280px;
+      height: 280px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: radial-gradient(circle, rgba(30, 109, 181, 0.1) 0%, transparent 60%);
+      z-index: 3;
+    }
+
+    /* Logo image */
+    .logo-wrap {
+      position: relative;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo-wrap img {
+      width: 360px;
+      height: auto;
+      filter: drop-shadow(0 4px 24px rgba(30, 109, 181, 0.3));
+    }
+
+    /* Circular safe zone guide (invisible, just for layout reference) */
+    /* LinkedIn crops to circle: 400px circle inscribed in 400px square = full bleed */
+  </style>
+</head>
+<body style="margin:0; padding:0; background:#0F2747; width:400px; height:400px; overflow:hidden;">
+
+  <div class="logo-container">
+    <!-- SVG grain filter -->
+    <svg class="grain" xmlns="http://www.w3.org/2000/svg">
+      <filter id="grain">
+        <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/>
+        <feColorMatrix type="saturate" values="0"/>
+      </filter>
+      <rect width="100%" height="100%" filter="url(#grain)" opacity="0.06"/>
+    </svg>
+
+    <!-- Glow effects -->
+    <div class="glow-1"></div>
+    <div class="glow-2"></div>
+    <div class="glow-center"></div>
+
+    <!-- Logo -->
+    <div class="logo-wrap">
+      <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" />
+    </div>
+  </div>
+
+</body>
+</html>

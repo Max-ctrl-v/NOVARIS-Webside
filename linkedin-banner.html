@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NOVARIS LinkedIn Banner</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    .banner {
+      width: 1584px;
+      height: 396px;
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(135deg, #0A1C38 0%, #0F2747 25%, #123E6B 60%, #0F2747 100%);
+      font-family: 'Inter', sans-serif;
+      display: flex;
+      align-items: center;
+    }
+
+    /* Subtle grid pattern */
+    .banner::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(79, 163, 227, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(79, 163, 227, 0.04) 1px, transparent 1px);
+      background-size: 48px 48px;
+      z-index: 1;
+    }
+
+    /* Grain texture */
+    .grain {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      opacity: 0.35;
+      pointer-events: none;
+    }
+
+    /* Radial glow — top right */
+    .glow-1 {
+      position: absolute;
+      width: 900px;
+      height: 900px;
+      top: -450px;
+      right: -150px;
+      background: radial-gradient(circle, rgba(30, 109, 181, 0.25) 0%, rgba(30, 109, 181, 0.08) 40%, transparent 70%);
+      z-index: 3;
+    }
+
+    /* Radial glow — bottom left */
+    .glow-2 {
+      position: absolute;
+      width: 700px;
+      height: 700px;
+      bottom: -350px;
+      left: -100px;
+      background: radial-gradient(circle, rgba(79, 163, 227, 0.15) 0%, rgba(79, 163, 227, 0.05) 40%, transparent 70%);
+      z-index: 3;
+    }
+
+    /* Accent glow — center-right for depth */
+    .glow-3 {
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      top: 50%;
+      right: 20%;
+      transform: translateY(-50%);
+      background: radial-gradient(circle, rgba(30, 109, 181, 0.12) 0%, transparent 60%);
+      z-index: 3;
+    }
+
+    /* Decorative diagonal lines */
+    .diag-lines {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 600px;
+      height: 100%;
+      z-index: 4;
+      overflow: hidden;
+    }
+
+    .diag-lines::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: 80px;
+      width: 1px;
+      height: 200%;
+      background: linear-gradient(to bottom, transparent, rgba(79, 163, 227, 0.15), transparent);
+      transform: rotate(25deg);
+    }
+
+    .diag-lines::after {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: 200px;
+      width: 1px;
+      height: 200%;
+      background: linear-gradient(to bottom, transparent, rgba(79, 163, 227, 0.08), transparent);
+      transform: rotate(25deg);
+    }
+
+    /* Content container */
+    .content {
+      position: relative;
+      z-index: 10;
+      padding-left: 340px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    /* Logo area */
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .logo-area img {
+      height: 52px;
+      width: auto;
+    }
+
+    /* Tagline */
+    .tagline {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: 42px;
+      color: #FFFFFF;
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      max-width: 800px;
+    }
+
+    .tagline .accent {
+      background: linear-gradient(135deg, #4FA3E3, #1E6DB5);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* Subtitle */
+    .subtitle {
+      font-family: 'Inter', sans-serif;
+      font-weight: 300;
+      font-size: 18px;
+      color: rgba(255, 255, 255, 0.6);
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    /* Decorative accent bar */
+    .accent-bar {
+      width: 64px;
+      height: 3px;
+      background: linear-gradient(90deg, #1E6DB5, #4FA3E3);
+      border-radius: 2px;
+    }
+
+    /* Right side — abstract rocket/arrow graphic */
+    .right-graphic {
+      position: absolute;
+      right: 80px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .stat-boxes {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .stat-box {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(79, 163, 227, 0.15);
+      border-radius: 10px;
+      padding: 14px 22px;
+      text-align: center;
+      backdrop-filter: blur(8px);
+      min-width: 155px;
+    }
+
+    .stat-box .number {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: 26px;
+      color: #4FA3E3;
+      letter-spacing: -0.03em;
+      line-height: 1;
+    }
+
+    .stat-box .number.green {
+      color: #34D399;
+    }
+
+    .stat-box .label {
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      font-size: 10px;
+      color: rgba(255, 255, 255, 0.5);
+      text-transform: uppercase;
+      letter-spacing: 0.10em;
+      margin-top: 5px;
+      line-height: 1.4;
+    }
+
+    /* Bottom edge accent line */
+    .bottom-line {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, #1E6DB5 30%, #4FA3E3 70%, transparent);
+      z-index: 10;
+    }
+  </style>
+</head>
+<body style="margin:0; padding:0; background:#0F2747; width:1584px; height:396px; overflow:hidden;">
+
+  <div class="banner">
+    <!-- SVG grain filter -->
+    <svg class="grain" xmlns="http://www.w3.org/2000/svg">
+      <filter id="grain">
+        <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/>
+        <feColorMatrix type="saturate" values="0"/>
+      </filter>
+      <rect width="100%" height="100%" filter="url(#grain)" opacity="0.08"/>
+    </svg>
+
+    <!-- Glow effects -->
+    <div class="glow-1"></div>
+    <div class="glow-2"></div>
+    <div class="glow-3"></div>
+
+    <!-- Diagonal lines -->
+    <div class="diag-lines"></div>
+
+    <!-- Main content — left side -->
+    <div class="content">
+      <div class="accent-bar"></div>
+      <div class="tagline">
+        Forschung fördern.<br/>
+        <span class="accent">Zukunft gestalten.</span>
+      </div>
+      <div class="subtitle">Erfolgsbasierte 360&deg; Beratung</div>
+    </div>
+
+    <!-- Right side stats -->
+    <div class="right-graphic">
+      <div class="stat-boxes">
+        <div class="stat-box">
+          <div class="number">bis 35%</div>
+          <div class="label">F&E-Kosten<br/>zurück</div>
+        </div>
+        <div class="stat-box">
+          <div class="number">4,2 Mio. &euro;</div>
+          <div class="label">Max. Förderung<br/>pro Jahr</div>
+        </div>
+        <div class="stat-box">
+          <div class="number green">100%</div>
+          <div class="label">Erfolgsquote<br/>bei Anträgen</div>
+        </div>
+        <div class="stat-box">
+          <div class="number">Günstiger</div>
+          <div class="label">als jeder<br/>Wettbewerber</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom accent line -->
+    <div class="bottom-line"></div>
+  </div>
+
+</body>
+</html>

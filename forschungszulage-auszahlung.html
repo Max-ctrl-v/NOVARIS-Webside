@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forschungszulage Auszahlung: Wann kommt das Geld vom Finanzamt? | NOVARIS</title>
+  <meta name="description" content="Forschungszulage Auszahlung: Zeitrahmen, Verrechnung mit Steuerschuld, direkte Erstattung und was bei Verzögerung zu tun ist – alle Infos zur FZulG-Auszahlung." />
+  <meta name="keywords" content="Forschungszulage Auszahlung, FZulG Auszahlung Finanzamt, Forschungszulage wann Geld, Forschungszulage Erstattung, Forschungszulage Verrechnung" />
+  <link rel="canonical" href="https://novaris-consulting.com/forschungszulage-auszahlung.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Forschungszulage Auszahlung: Wann kommt das Geld vom Finanzamt? | NOVARIS" />
+  <meta property="og:description" content="Forschungszulage Auszahlung: Zeitrahmen, Verrechnung mit Steuerschuld, direkte Erstattung und was bei Verzögerung zu tun ist." />
+  <meta property="og:url" content="https://novaris-consulting.com/forschungszulage-auszahlung.html" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:site_name" content="NOVARIS Consulting" />
+  <meta property="og:image" content="https://novaris-consulting.com/brand_assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Forschungszulage Auszahlung: Wann kommt das Geld? | NOVARIS" />
+  <meta name="twitter:description" content="Forschungszulage Auszahlung: Zeitrahmen, Verrechnung, direkte Erstattung und was bei Verzögerung zu tun ist." />
+  <meta name="twitter:image" content="https://novaris-consulting.com/brand_assets/og-image.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --bg-base:    #ffffff;
+      --bg-raised:  #f5f8fe;
+      --bg-card:    #ffffff;
+      --clr-h:      #0D1B3E;
+      --clr-b:      #5a6e8c;
+      --clr-muted:  #4a5870;
+      --bdr:        #dde5f4;
+    }
+    html.dark {
+      --bg-base:    #0a1428;
+      --bg-raised:  #0D1B3E;
+      --bg-card:    #122244;
+      --clr-h:      #e8f0fa;
+      --clr-b:      #8aaac8;
+      --clr-muted:  #6888a8;
+      --bdr:        rgba(77,174,229,0.18);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg-base);
+      color: var(--clr-h);
+      transition: background 0.25s ease, color 0.25s ease;
+      line-height: 1.7;
+    }
+
+    .nav-blur { backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); }
+    .logo-img { height: 52px; width: auto; display: block; }
+
+    .nav-link {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.84rem;
+      font-weight: 500;
+      color: rgba(195,215,245,0.70);
+      text-decoration: none;
+      padding: 0.42rem 0.85rem;
+      border-radius: 8px;
+      transition: color 0.15s ease, background 0.15s ease;
+      letter-spacing: 0.01em;
+    }
+    .nav-link:hover { color: #fff; background: rgba(255,255,255,0.07); }
+    .nav-link:focus-visible { outline: 2px solid #4DAEE5; outline-offset: 2px; }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background: #1E56B5;
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 0.84rem;
+      border: none;
+      border-radius: 10px;
+      text-decoration: none;
+      cursor: pointer;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.3), 0 4px 12px rgba(30,86,181,0.35);
+      transition: background 0.15s ease, transform 0.12s ease, box-shadow 0.15s ease;
+    }
+    .btn-primary:hover  { background: #2563c4; box-shadow: 0 2px 4px rgba(0,0,0,0.3), 0 6px 18px rgba(30,86,181,0.45); transform: translateY(-1px); }
+    .btn-primary:active { transform: translateY(0); }
+    .btn-primary:focus-visible { outline: 2px solid #4DAEE5; outline-offset: 2px; }
+
+    .content-wrap {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 6rem 1.5rem 5rem;
+    }
+
+    .ds-breadcrumb {
+      font-size: 0.78rem;
+      color: var(--clr-b);
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .ds-breadcrumb a {
+      color: #4DAEE5;
+      text-decoration: none;
+      transition: color 0.14s ease;
+    }
+    .ds-breadcrumb a:hover { color: #7ec8f0; }
+
+    .ds-eyebrow {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #4DAEE5;
+      margin-bottom: 0.9rem;
+    }
+
+    .ds-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: var(--clr-h);
+      line-height: 1.15;
+      margin-bottom: 0.5rem;
+    }
+
+    .ds-subtitle {
+      font-size: 0.95rem;
+      color: var(--clr-b);
+      line-height: 1.75;
+      margin-bottom: 0.5rem;
+      max-width: 640px;
+    }
+
+    .ds-updated {
+      font-size: 0.78rem;
+      color: var(--clr-b);
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--bdr);
+    }
+
+    .ds-section {
+      margin-bottom: 2.8rem;
+    }
+    .ds-section h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.12rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: var(--clr-h);
+      margin-bottom: 0.9rem;
+      padding-bottom: 0.55rem;
+      border-bottom: 1px solid var(--bdr);
+    }
+    .ds-section h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--clr-h);
+      margin-top: 1.4rem;
+      margin-bottom: 0.5rem;
+    }
+    .ds-section p {
+      font-size: 0.9rem;
+      color: var(--clr-b);
+      line-height: 1.75;
+      margin-bottom: 0.85rem;
+    }
+    .ds-section ul, .ds-section ol {
+      margin: 0.5rem 0 0.85rem 1.1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+    .ds-section ul li, .ds-section ol li {
+      font-size: 0.9rem;
+      color: var(--clr-b);
+      line-height: 1.65;
+    }
+    .ds-section a {
+      color: #4DAEE5;
+      text-decoration: none;
+      transition: color 0.14s ease;
+    }
+    .ds-section a:hover { color: #7ec8f0; text-decoration: underline; }
+
+    .ds-box {
+      background: var(--bg-raised);
+      border: 1px solid var(--bdr);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      font-size: 0.88rem;
+      color: var(--clr-b);
+      line-height: 1.7;
+      margin: 1rem 0 1.2rem;
+      transition: background 0.25s ease, border-color 0.25s ease;
+    }
+    .ds-box strong {
+      color: var(--clr-h);
+      font-weight: 600;
+    }
+
+    .ds-highlight-box {
+      background: var(--bg-raised);
+      border: 1px solid var(--bdr);
+      border-left: 4px solid #1E56B5;
+      border-radius: 0 12px 12px 0;
+      padding: 1.25rem 1.5rem;
+      font-size: 0.88rem;
+      color: var(--clr-b);
+      line-height: 1.7;
+      margin: 1rem 0 1.2rem;
+      transition: background 0.25s ease, border-color 0.25s ease;
+    }
+    .ds-highlight-box strong {
+      color: var(--clr-h);
+      font-weight: 600;
+    }
+
+    .ds-step {
+      display: flex;
+      gap: 1.2rem;
+      align-items: flex-start;
+      margin-bottom: 1.5rem;
+    }
+    .ds-step-num {
+      flex-shrink: 0;
+      width: 38px;
+      height: 38px;
+      background: #1E56B5;
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: 0.95rem;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.3), 0 4px 10px rgba(30,86,181,0.3);
+    }
+    .ds-step-content h3 {
+      margin-top: 0;
+    }
+
+    .ds-table-wrap {
+      overflow-x: auto;
+      margin: 1rem 0 1.2rem;
+      border-radius: 12px;
+      border: 1px solid var(--bdr);
+    }
+    .ds-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+    }
+    .ds-table th {
+      background: var(--bg-raised);
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 0.78rem;
+      letter-spacing: 0.02em;
+      color: var(--clr-h);
+      text-align: left;
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid var(--bdr);
+    }
+    .ds-table td {
+      padding: 0.65rem 1rem;
+      color: var(--clr-b);
+      border-bottom: 1px solid var(--bdr);
+      line-height: 1.55;
+    }
+    .ds-table tr:last-child td { border-bottom: none; }
+    html.dark .ds-table th { background: var(--bg-card); }
+
+    .ds-urgency {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 0.15rem 0.5rem;
+      border-radius: 6px;
+      letter-spacing: 0.02em;
+    }
+    .ds-urgency--red { background: rgba(220,38,38,0.12); color: #dc2626; }
+    .ds-urgency--yellow { background: rgba(234,179,8,0.12); color: #b45309; }
+    .ds-urgency--green { background: rgba(22,163,74,0.12); color: #16a34a; }
+    html.dark .ds-urgency--red { background: rgba(220,38,38,0.2); color: #f87171; }
+    html.dark .ds-urgency--yellow { background: rgba(234,179,8,0.2); color: #fbbf24; }
+    html.dark .ds-urgency--green { background: rgba(22,163,74,0.2); color: #4ade80; }
+
+    .faq-item {
+      border: 1px solid var(--bdr);
+      border-radius: 12px;
+      margin-bottom: 0.65rem;
+      overflow: hidden;
+      transition: border-color 0.25s ease;
+    }
+    .faq-q {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      width: 100%;
+      padding: 1rem 1.25rem;
+      background: var(--bg-raised);
+      border: none;
+      cursor: pointer;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--clr-h);
+      text-align: left;
+      line-height: 1.5;
+      transition: background 0.15s ease, color 0.15s ease;
+    }
+    .faq-q:hover { background: var(--bg-raised); opacity: 0.85; }
+    .faq-q:focus-visible { outline: 2px solid #4DAEE5; outline-offset: -2px; }
+    .faq-q svg {
+      flex-shrink: 0;
+      transition: transform 0.2s ease;
+    }
+    .faq-item.open .faq-q svg { transform: rotate(180deg); }
+    .faq-a {
+      display: none;
+      padding: 0 1.25rem 1rem;
+      font-size: 0.87rem;
+      color: var(--clr-b);
+      line-height: 1.7;
+    }
+    .faq-item.open .faq-a { display: block; }
+    html.dark .faq-q { background: var(--bg-card); }
+
+    .cta-section {
+      background: var(--bg-raised);
+      border: 1px solid var(--bdr);
+      border-radius: 16px;
+      padding: 2.5rem 2rem;
+      text-align: center;
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+      transition: background 0.25s ease, border-color 0.25s ease;
+    }
+    .cta-section h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: var(--clr-h);
+      margin-bottom: 0.8rem;
+      border: none;
+      padding-bottom: 0;
+    }
+    .cta-section p {
+      font-size: 0.9rem;
+      color: var(--clr-b);
+      line-height: 1.75;
+      margin-bottom: 1.5rem;
+      max-width: 560px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .toc {
+      background: var(--bg-raised);
+      border: 1px solid var(--bdr);
+      border-radius: 12px;
+      padding: 1.5rem 1.75rem;
+      margin-bottom: 2.8rem;
+      transition: background 0.25s ease, border-color 0.25s ease;
+    }
+    html.dark .toc { background: var(--bg-card); }
+    .toc-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--clr-muted);
+      margin-bottom: 0.8rem;
+    }
+    .toc ol {
+      margin: 0;
+      padding-left: 1.1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+    .toc ol li {
+      font-size: 0.85rem;
+      color: var(--clr-b);
+      line-height: 1.55;
+    }
+    .toc ol li a {
+      color: #4DAEE5;
+      text-decoration: none;
+      transition: color 0.14s ease;
+    }
+    .toc ol li a:hover { color: #7ec8f0; }
+
+    footer { background: #04091a; border-top: 1px solid rgba(255,255,255,0.07); }
+
+    html.dark .ds-box { background: var(--bg-card); }
+    html.dark .ds-highlight-box { background: var(--bg-card); }
+    html.dark .cta-section { background: var(--bg-card); }
+    .logo-light { display: none; }
+    html.dark .logo-dark  { display: none !important; }
+    html.dark .logo-light { display: inline !important; }
+
+    html { overflow-y: scroll; }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: rgba(77,174,229,0.38); border-radius: 999px; }
+    ::-webkit-scrollbar-thumb:hover { background: rgba(77,174,229,0.55); }
+    html { scrollbar-width: thin; scrollbar-color: rgba(77,174,229,0.38) transparent; }
+    html.dark ::-webkit-scrollbar-thumb { background: rgba(77,174,229,0.30); }
+    html.dark ::-webkit-scrollbar-thumb:hover { background: rgba(77,174,229,0.48); }
+    html.dark { scrollbar-color: rgba(77,174,229,0.30) transparent; }
+  </style>
+  <link rel="stylesheet" href="/page-transition.css" />
+  <link rel="stylesheet" href="/cookie-consent.css" />
+  <script src="/page-transition.js" defer></script>
+
+  <!-- BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://novaris-consulting.com/"},
+      {"@type": "ListItem", "position": 2, "name": "Forschungszulage", "item": "https://novaris-consulting.com/forschungszulage.html"},
+      {"@type": "ListItem", "position": 3, "name": "Auszahlung", "item": "https://novaris-consulting.com/forschungszulage-auszahlung.html"}
+    ]
+  }
+  </script>
+
+  <!-- Article Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Forschungszulage Auszahlung – Wann und wie kommt das Geld vom Finanzamt?",
+    "description": "Forschungszulage Auszahlung: Zeitrahmen, Verrechnung mit Steuerschuld, direkte Erstattung und was bei Verzögerung zu tun ist.",
+    "author": {
+      "@type": "Organization",
+      "name": "NOVARIS Consulting",
+      "url": "https://novaris-consulting.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "NOVARIS Consulting",
+      "url": "https://novaris-consulting.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://novaris-consulting.com/brand_assets/Logo V5-light.svg"
+      }
+    },
+    "datePublished": "2026-03-08",
+    "dateModified": "2026-03-08",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://novaris-consulting.com/forschungszulage-auszahlung.html"
+    },
+    "keywords": ["Forschungszulage Auszahlung", "FZulG Auszahlung Finanzamt", "Forschungszulage wann Geld", "Forschungszulage Erstattung", "Forschungszulage Verrechnung"]
+  }
+  </script>
+
+  <!-- FAQ Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Wie lange dauert die Auszahlung der Forschungszulage?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In der Regel vergehen 3 bis 6 Monate vom BSFZ-Antrag bis zur tatsächlichen Auszahlung bzw. Verrechnung durch das Finanzamt. Die BSFZ-Bescheinigung dauert 4–8 Wochen, die Festsetzung durch das Finanzamt weitere 4–12 Wochen. Bei rückwirkenden Anträgen kann die Gesamtdauer bis zu 6 Monate betragen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Bekomme ich die Forschungszulage auch ohne Gewinn ausgezahlt?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, die Forschungszulage wird auch bei Verlusten direkt erstattet. Wenn Ihre Steuerschuld null beträgt oder die Forschungszulage die Steuerschuld übersteigt, erhalten Sie den vollen Betrag bzw. den Differenzbetrag als direkte Auszahlung auf Ihr Konto. Das macht die Forschungszulage besonders attraktiv für Startups und Wachstumsunternehmen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wird die Forschungszulage auf Vorauszahlungen angerechnet?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, die Forschungszulage kann mit Steuervorauszahlungen verrechnet werden. Nach Festsetzung der Forschungszulage können Sie beim Finanzamt eine Anpassung der Vorauszahlungen beantragen, sodass die Entlastung bereits unterjährig spürbar wird."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Was mache ich, wenn das Finanzamt nicht auf meinen Antrag reagiert?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Wenn das Finanzamt nach 6 Monaten ohne zureichenden Grund nicht über Ihren Antrag entschieden hat, können Sie einen Untätigkeitseinspruch nach §347 AO einlegen. Vorab empfiehlt sich eine telefonische Nachfrage beim zuständigen Sachbearbeiter. NOVARIS unterstützt Sie bei der Kommunikation mit dem Finanzamt und übernimmt bei Bedarf die Korrespondenz."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<header id="nav" class="fixed inset-x-0 top-0 z-50 nav-blur"
+        style="background:rgba(4,9,26,0.88);border-bottom:1px solid rgba(255,255,255,0.07)">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between gap-4" style="height:68px">
+    <a href="/" aria-label="NOVARIS Consulting"
+       style="text-decoration:none;flex-shrink:0;display:flex;align-items:center;transition:opacity 0.15s ease"
+       class="hover:opacity-90 focus-visible:outline-none">
+      <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto" />
+    </a>
+    <nav class="hidden lg:flex items-center gap-0.5">
+      <a href="/#was-ist-fzulg" class="nav-link">Das FZulG</a>
+      <a href="/#branchen"      class="nav-link">Branchen</a>
+      <a href="/#prozess"       class="nav-link">Prozess</a>
+      <a href="/#vorteile"      class="nav-link">Vorteile</a>
+      <a href="/#faq"           class="nav-link">FAQ</a>
+      <a href="/#kontakt"       class="nav-link">Kontakt</a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <button id="dark-toggle" onclick="toggleDark()" aria-label="Toggle dark mode"
+        class="hidden sm:flex" style="width:32px;height:32px;border-radius:8px;border:1px solid rgba(255,255,255,0.12);
+               background:rgba(255,255,255,0.07);cursor:pointer;align-items:center;
+               justify-content:center;color:rgba(255,255,255,0.7);
+               transition:background 0.15s ease,color 0.15s ease">
+        <svg id="icon-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg id="icon-sun"  width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
+      <a href="/#kontakt" class="btn-primary hidden sm:inline-flex" style="padding:0.55rem 1.35rem;font-size:0.83rem">
+        Kostenlos prüfen
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="content-wrap">
+
+    <div class="ds-breadcrumb">
+      <a href="/">Startseite</a>
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      <a href="/forschungszulage.html">Forschungszulage</a>
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      <span>Auszahlung</span>
+    </div>
+
+    <div class="ds-eyebrow">Auszahlung & Erstattung</div>
+    <h1 class="ds-title">Forschungszulage Auszahlung – Wann und wie kommt das Geld vom Finanzamt?</h1>
+    <p class="ds-subtitle">Sie haben die BSFZ-Bescheinigung und den Antrag beim Finanzamt gestellt. Jetzt die entscheidende Frage: Wann fließt das Geld?</p>
+    <p class="ds-updated">Zuletzt aktualisiert: 08. März 2026 · Lesezeit: ca. 8 Minuten</p>
+
+    <!-- Table of Contents -->
+    <nav class="toc" aria-label="Inhaltsverzeichnis">
+      <div class="toc-title">Inhaltsverzeichnis</div>
+      <ol>
+        <li><a href="#schritte">Der Weg zur Auszahlung: Schritt für Schritt</a></li>
+        <li><a href="#verrechnung">Verrechnung vs. direkte Erstattung</a></li>
+        <li><a href="#zeitraeume">Typische Zeiträume in der Praxis</a></li>
+        <li><a href="#verzoegerung">Was tun bei Verzögerung?</a></li>
+        <li><a href="#besonderheiten">Besonderheiten bei der Auszahlung</a></li>
+        <li><a href="#faq">FAQ: Forschungszulage Auszahlung</a></li>
+      </ol>
+    </nav>
+
+    <!-- Section 1: Schritt für Schritt -->
+    <div class="ds-section" id="schritte">
+      <h2>Der Weg zur Auszahlung: Schritt für Schritt</h2>
+      <p>Die Auszahlung der Forschungszulage folgt einem klar definierten Prozess. Vom ersten Antrag bei der BSFZ bis zur tatsächlichen Gutschrift auf Ihrem Konto durchlaufen Sie vier zentrale Stationen. Hier der Überblick:</p>
+
+      <div class="ds-step">
+        <div class="ds-step-num">1</div>
+        <div class="ds-step-content">
+          <h3>BSFZ-Antrag stellen (Dauer: 4–8 Wochen)</h3>
+          <p style="font-size:0.9rem;color:var(--clr-b);line-height:1.75;margin-bottom:0">Der erste Schritt ist die Einreichung des Antrags bei der <strong>Bescheinigungsstelle Forschungszulage (BSFZ)</strong>. Diese prüft, ob Ihre F&E-Vorhaben die inhaltlichen Voraussetzungen des FZulG erfüllen. Die Bearbeitungsdauer beträgt in der Regel 4 bis 8 Wochen. Nach positiver Prüfung erhalten Sie eine Bescheinigung, die Sie für den nächsten Schritt benötigen.</p>
+        </div>
+      </div>
+
+      <div class="ds-step">
+        <div class="ds-step-num">2</div>
+        <div class="ds-step-content">
+          <h3>Anlage FZ beim Finanzamt einreichen</h3>
+          <p style="font-size:0.9rem;color:var(--clr-b);line-height:1.75;margin-bottom:0">Mit der BSFZ-Bescheinigung reichen Sie die <strong>Anlage FZ</strong> (Forschungszulage) bei Ihrem zuständigen Finanzamt ein. Dies kann zusammen mit der regulären Steuererklärung oder separat erfolgen. In der Anlage FZ geben Sie die förderfähigen Aufwendungen und die Bemessungsgrundlage an. Tipp: Auch ohne laufende Steuererklärung können Sie die Anlage FZ eigenständig einreichen.</p>
+        </div>
+      </div>
+
+      <div class="ds-step">
+        <div class="ds-step-num">3</div>
+        <div class="ds-step-content">
+          <h3>Festsetzung durch das Finanzamt (Dauer: 4–12 Wochen)</h3>
+          <p style="font-size:0.9rem;color:var(--clr-b);line-height:1.75;margin-bottom:0">Das Finanzamt prüft Ihren Antrag und setzt die Forschungszulage per <strong>Bescheid</strong> fest. Im Gegensatz zur BSFZ prüft das Finanzamt nicht die inhaltliche F&E-Qualität, sondern die rechnerische Richtigkeit der förderfähigen Aufwendungen. Die Bearbeitungsdauer variiert je nach Finanzamt zwischen 4 und 12 Wochen.</p>
+        </div>
+      </div>
+
+      <div class="ds-step">
+        <div class="ds-step-num">4</div>
+        <div class="ds-step-content">
+          <h3>Verrechnung oder Erstattung</h3>
+          <p style="font-size:0.9rem;color:var(--clr-b);line-height:1.75;margin-bottom:0">Nach der Festsetzung wird die Forschungszulage mit Ihrer <strong>Einkommen- oder Körperschaftsteuerschuld verrechnet</strong>. Übersteigt die Zulage die Steuerschuld, erhalten Sie den Differenzbetrag als direkte Erstattung ausgezahlt – in der Regel innerhalb weniger Tage nach Festsetzung auf Ihr beim Finanzamt hinterlegtes Konto.</p>
+        </div>
+      </div>
+
+      <div class="ds-box">
+        <strong>Praxistipp:</strong> Reichen Sie die Anlage FZ so früh wie möglich ein – idealerweise unmittelbar nach Erhalt der BSFZ-Bescheinigung. Sie müssen nicht auf die Abgabe der Steuererklärung warten. Das beschleunigt den Auszahlungsprozess erheblich.
+      </div>
+    </div>
+
+    <!-- Section 2: Verrechnung vs. Erstattung -->
+    <div class="ds-section" id="verrechnung">
+      <h2>Verrechnung vs. direkte Erstattung</h2>
+      <p>Die Forschungszulage wird grundsätzlich mit der <strong>festgesetzten Einkommen- oder Körperschaftsteuer</strong> verrechnet. Dabei gibt es zwei Szenarien, die für Unternehmen besonders relevant sind:</p>
+
+      <div class="ds-highlight-box">
+        <strong>Kernprinzip:</strong> Die Forschungszulage wird auf die Steuerschuld angerechnet. Übersteigt die Zulage die Steuer, wird der <strong>übersteigende Betrag direkt erstattet</strong>. Das ist der entscheidende Vorteil gegenüber anderen steuerlichen Vergünstigungen: Die Forschungszulage ist eine echte <strong>Negativsteuer</strong>.
+      </div>
+
+      <h3>Szenario 1: Steuerschuld vorhanden</h3>
+      <p>Beträgt Ihre Steuerschuld z.B. 80.000 EUR und die Forschungszulage 50.000 EUR, zahlen Sie nur noch 30.000 EUR Steuern. Die Forschungszulage wirkt wie eine direkte Steuerminderung.</p>
+
+      <h3>Szenario 2: Steuerschuld niedriger als die Zulage oder gleich null</h3>
+      <p>Beträgt Ihre Steuerschuld 20.000 EUR und die Forschungszulage 50.000 EUR, erhalten Sie nach Verrechnung <strong>30.000 EUR direkt ausgezahlt</strong>. Bei einer Steuerschuld von 0 EUR erhalten Sie die vollen 50.000 EUR als Erstattung.</p>
+
+      <div class="ds-highlight-box">
+        <strong>Besonders relevant für Startups:</strong> Junge Unternehmen mit Verlusten und keiner Steuerschuld erhalten die <strong>volle Forschungszulage als Barauszahlung</strong>. Bei bis zu 1 Million EUR Bemessungsgrundlage und 35% KMU-Satz (ab 2024) können das bis zu <strong>350.000 EUR pro Jahr</strong> sein – direkt auf das Firmenkonto. Mehr zur steuerlichen Einordnung erfahren Sie in unserem <a href="/forschungszulage-koerperschaftsteuer.html">Ratgeber zur Körperschaftsteuer</a>.
+      </div>
+    </div>
+
+    <!-- Section 3: Typische Zeiträume -->
+    <div class="ds-section" id="zeitraeume">
+      <h2>Typische Zeiträume in der Praxis</h2>
+      <p>Die tatsächliche Dauer bis zur Auszahlung hängt von verschiedenen Faktoren ab. Hier die typischen Erfahrungswerte aus unserer Beratungspraxis:</p>
+
+      <div class="ds-table-wrap">
+        <table class="ds-table">
+          <thead>
+            <tr>
+              <th>Verfahrensschritt</th>
+              <th>Typische Dauer</th>
+              <th>Anmerkung</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>BSFZ-Bescheinigung</strong></td>
+              <td>4–8 Wochen</td>
+              <td>Bei vollständigem Antrag; Rückfragen können verzögern</td>
+            </tr>
+            <tr>
+              <td><strong>Finanzamt-Festsetzung (laufendes Jahr)</strong></td>
+              <td>4–12 Wochen</td>
+              <td>Abhängig von Arbeitsbelastung des Finanzamts</td>
+            </tr>
+            <tr>
+              <td><strong>Finanzamt-Festsetzung (Rückwirkung)</strong></td>
+              <td>Bis zu 6 Monate</td>
+              <td>Längere Bearbeitungszeit bei rückwirkenden Anträgen</td>
+            </tr>
+            <tr>
+              <td style="color:var(--clr-h);font-size:0.92rem"><strong>Gesamtdauer Erstantrag</strong></td>
+              <td style="color:var(--clr-h);font-size:0.92rem"><strong>3–6 Monate</strong></td>
+              <td>Vom BSFZ-Antrag bis zur Auszahlung/Verrechnung</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Faktoren, die die Bearbeitungsdauer beeinflussen</h3>
+      <ul>
+        <li><strong>Komplexität der F&E-Projekte:</strong> Viele oder technisch anspruchsvolle Vorhaben können zu Rückfragen bei der BSFZ führen</li>
+        <li><strong>Rückfragen des Finanzamts:</strong> Unvollständige Anträge oder untypische Aufwendungen ziehen Nachfragen nach sich</li>
+        <li><strong>Arbeitsbelastung des Finanzamts:</strong> Saisonale Spitzen (z.B. nach Abgabeterminen) können die Bearbeitungszeit verlängern</li>
+        <li><strong>Gleichzeitige Steuererklärung:</strong> Wird die Anlage FZ zusammen mit der Steuererklärung eingereicht, hängt die Bearbeitungsdauer von der gesamten Veranlagung ab</li>
+        <li><strong>Erstantrag vs. Folgeantrag:</strong> Der erste Antrag beim Finanzamt kann länger dauern, da der Sachbearbeiter sich erst einarbeiten muss</li>
+      </ul>
+
+      <div class="ds-box">
+        <strong>NOVARIS-Erfahrungswert:</strong> Durch unsere strukturierten Antragsunterlagen und proaktive Kommunikation mit den Behörden erreichen wir bei der Mehrzahl unserer Mandanten eine Gesamtdauer von <strong>3 bis 4 Monaten</strong>. Ausführliche Informationen zum Antragsprozess finden Sie in unserem <a href="/forschungszulage-antrag.html">Leitfaden zum FZulG-Antrag</a>.
+      </div>
+    </div>
+
+    <!-- Section 4: Was tun bei Verzögerung -->
+    <div class="ds-section" id="verzoegerung">
+      <h2>Was tun bei Verzögerung?</h2>
+      <p>In seltenen Fällen kann es zu Verzögerungen bei der Bearbeitung durch das Finanzamt kommen. Hier sind Ihre Handlungsoptionen:</p>
+
+      <h3>Telefonische Nachfrage</h3>
+      <p>Der einfachste erste Schritt: Rufen Sie beim zuständigen Sachbearbeiter Ihres Finanzamts an und erkundigen Sie sich nach dem Bearbeitungsstand. Oft reicht eine freundliche Nachfrage, um den Vorgang zu beschleunigen. Notieren Sie sich den Namen des Sachbearbeiters und das Datum des Gesprächs.</p>
+
+      <h3>Untätigkeitseinspruch nach 6 Monaten</h3>
+      <p>Hat das Finanzamt nach <strong>6 Monaten ohne zureichenden Grund</strong> nicht über Ihren Antrag entschieden, steht Ihnen der <strong>Untätigkeitseinspruch nach §347 AO</strong> zu. Dieser ist ein formelles Rechtsmittel, das das Finanzamt zur Bearbeitung Ihres Antrags zwingt. Der Einspruch ist schriftlich beim zuständigen Finanzamt einzulegen.</p>
+
+      <div class="ds-highlight-box">
+        <strong>NOVARIS übernimmt die Kommunikation:</strong> Als Ihr Berater führen wir die gesamte Korrespondenz mit dem Finanzamt. Bei Verzögerungen eskalieren wir proaktiv und legen bei Bedarf den Untätigkeitseinspruch ein. Sie müssen sich um nichts kümmern.
+      </div>
+
+      <h3>Weitere Optionen bei anhaltender Verzögerung</h3>
+      <ul>
+        <li><strong>Dienstaufsichtsbeschwerde:</strong> Bei wiederholter Untätigkeit kann eine Beschwerde bei der Amtsleitung eingereicht werden</li>
+        <li><strong>Finanzgericht:</strong> Im äußersten Fall ist eine Untätigkeitsklage vor dem Finanzgericht möglich (§46 FGO)</li>
+        <li><strong>Vorauszahlungsanpassung:</strong> Alternativ können Sie eine Anpassung der Steuervorauszahlungen beantragen, um zumindest indirekt eine Entlastung zu erzielen</li>
+      </ul>
+    </div>
+
+    <!-- Section 5: Besonderheiten -->
+    <div class="ds-section" id="besonderheiten">
+      <h2>Besonderheiten bei der Auszahlung</h2>
+      <p>Die Forschungszulage hat einige steuerliche Besonderheiten, die bei der Finanzplanung relevant sind:</p>
+
+      <h3>Keine Betriebseinnahme für die Gewerbesteuer</h3>
+      <p>Die Forschungszulage ist <strong>keine Betriebseinnahme</strong> im Sinne des Gewerbesteuergesetzes. Das bedeutet: Die Zulage erhöht weder den Gewerbeertrag noch die Gewerbesteuer. Sie fließt steuerneutral in Ihr Unternehmen.</p>
+
+      <h3>Keine Umsatzsteuer</h3>
+      <p>Auf die Forschungszulage fällt <strong>keine Umsatzsteuer</strong> an. Die Zahlung stellt kein Entgelt für eine Leistung dar und ist daher nicht umsatzsteuerbar. Mehr zur korrekten <a href="/forschungszulage-buchen.html">Verbuchung der Forschungszulage</a> erfahren Sie in unserem Buchhaltungs-Ratgeber.</p>
+
+      <h3>Kein Einfluss auf Verlustvorträge</h3>
+      <p>Die Festsetzung der Forschungszulage hat <strong>keinen Einfluss auf bestehende Verlustvorträge</strong>. Ihre Verluste aus Vorjahren bleiben vollständig erhalten und können weiterhin mit künftigen Gewinnen verrechnet werden. Die Forschungszulage wird separat behandelt.</p>
+
+      <h3>Verrechnung mit Vorauszahlungen</h3>
+      <p>Die Forschungszulage kann auch mit laufenden <strong>Steuervorauszahlungen</strong> verrechnet werden. Nach Festsetzung der Zulage können Sie beim Finanzamt eine Herabsetzung der Vorauszahlungen beantragen. Das verbessert Ihre Liquidität bereits unterjährig – besonders wertvoll für wachsende Unternehmen.</p>
+
+      <div class="ds-box">
+        <strong>Zusammenfassung:</strong> Die Forschungszulage ist eine der steuerlich vorteilhaftesten Förderungen in Deutschland. Sie mindert die Steuerlast, wird bei fehlender Steuerschuld bar ausgezahlt, löst keine Gewerbe- oder Umsatzsteuer aus und lässt Verlustvorträge unberührt. Eine detaillierte Analyse zur Wechselwirkung mit der Körperschaftsteuer finden Sie in unserem <a href="/forschungszulage-koerperschaftsteuer.html">Ratgeber zur Körperschaftsteuer</a>.
+      </div>
+    </div>
+
+    <!-- Section 6: FAQ -->
+    <div class="ds-section" id="faq">
+      <h2>FAQ: Forschungszulage Auszahlung</h2>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          Wie lange dauert die Auszahlung der Forschungszulage?
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>In der Regel vergehen <strong>3 bis 6 Monate</strong> vom BSFZ-Antrag bis zur tatsächlichen Auszahlung bzw. Verrechnung durch das Finanzamt. Die BSFZ-Bescheinigung dauert 4–8 Wochen, die Festsetzung durch das Finanzamt weitere 4–12 Wochen. Bei rückwirkenden Anträgen kann die Gesamtdauer bis zu 6 Monate betragen. Durch professionelle Antragsstellung lässt sich die Bearbeitungszeit deutlich verkürzen.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          Bekomme ich die Forschungszulage auch ohne Gewinn ausgezahlt?
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>Ja, die Forschungszulage wird auch bei <strong>Verlusten direkt erstattet</strong>. Wenn Ihre Steuerschuld null beträgt oder die Forschungszulage die Steuerschuld übersteigt, erhalten Sie den vollen Betrag bzw. den Differenzbetrag als direkte Auszahlung auf Ihr Konto. Das macht die Forschungszulage besonders attraktiv für Startups und Wachstumsunternehmen, die noch keine Gewinne erzielen.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          Wird die Forschungszulage auf Vorauszahlungen angerechnet?
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>Ja, die Forschungszulage kann mit <strong>Steuervorauszahlungen verrechnet</strong> werden. Nach Festsetzung der Forschungszulage können Sie beim Finanzamt eine Anpassung der Vorauszahlungen beantragen, sodass die Entlastung bereits unterjährig spürbar wird. Das ist besonders für Unternehmen mit hohen laufenden Steuervorauszahlungen ein erheblicher Liquiditätsvorteil.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          Was mache ich, wenn das Finanzamt nicht auf meinen Antrag reagiert?
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>Wenn das Finanzamt nach <strong>6 Monaten ohne zureichenden Grund</strong> nicht über Ihren Antrag entschieden hat, können Sie einen <strong>Untätigkeitseinspruch nach §347 AO</strong> einlegen. Vorab empfiehlt sich eine telefonische Nachfrage beim zuständigen Sachbearbeiter. NOVARIS unterstützt Sie bei der Kommunikation mit dem Finanzamt und übernimmt bei Bedarf die gesamte Korrespondenz, damit Sie sich auf Ihr Kerngeschäft konzentrieren können.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Related Content -->
+    <div class="ds-section" style="margin-top:2rem">
+      <h2>Weiterführende Inhalte zur Forschungszulage</h2>
+      <p>Vertiefen Sie Ihr Wissen mit unseren spezialisierten Ressourcen:</p>
+      <ul>
+        <li><a href="/forschungszulage.html" style="color:#1E56B5;font-weight:600"><strong>Forschungszulage Leitfaden</strong></a> – Der komplette Überblick zum FZulG 2026</li>
+        <li><a href="/forschungszulage-antrag.html" style="color:#1E56B5;font-weight:600"><strong>Forschungszulage Antrag</strong></a> – Schritt-für-Schritt-Anleitung zum BSFZ- und Finanzamt-Antrag</li>
+        <li><a href="/forschungszulage-buchen.html" style="color:#1E56B5;font-weight:600"><strong>Forschungszulage buchen</strong></a> – So verbuchen Sie die Zulage korrekt in der Buchhaltung</li>
+        <li><a href="/forschungszulage-koerperschaftsteuer.html" style="color:#1E56B5;font-weight:600"><strong>Forschungszulage & Körperschaftsteuer</strong></a> – Steuerliche Wechselwirkungen verstehen</li>
+      </ul>
+    </div>
+
+    <!-- CTA Box -->
+    <div class="cta-section">
+      <h2>Forschungszulage beantragen – wir kümmern uns um die Auszahlung</h2>
+      <p>Lassen Sie in einer kostenlosen Erstanalyse prüfen, wie hoch Ihre Forschungszulage ausfällt und wann Sie mit der Auszahlung rechnen können. Erfolgsbasiert, transparent und ohne Risiko.</p>
+      <a href="/#kontakt" class="btn-primary" style="padding:0.7rem 1.8rem;font-size:0.9rem">
+        Kostenlose Erstanalyse anfragen
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+
+  </div>
+</main>
+
+<footer style="background:#04091a;border-top:1px solid rgba(255,255,255,0.07)">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
+      <div class="lg:col-span-2">
+        <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto;margin-bottom:1rem" />
+        <p style="font-size:0.82rem;color:rgba(195,215,245,0.38);line-height:1.72;max-width:320px">
+          NOVARIS Consulting ist Ihr spezialisierter Full-Service-Partner für die staatliche
+          Forschungszulage nach dem FZulG – erfolgsbasiert, transparent und ohne Risiko.
+        </p>
+      </div>
+      <div>
+        <div style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.75rem;letter-spacing:0.09em;text-transform:uppercase;color:rgba(195,215,245,0.3);margin-bottom:1rem">Navigation</div>
+        <div style="display:flex;flex-direction:column;gap:0.55rem">
+          <a href="/#was-ist-fzulg" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Das FZulG</a>
+          <a href="/#prozess"       style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Prozess</a>
+          <a href="/#vorteile"      style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Vorteile</a>
+          <a href="/#faq"           style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">FAQ</a>
+          <a href="/#kontakt"       style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Kontakt</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.75rem;letter-spacing:0.09em;text-transform:uppercase;color:rgba(195,215,245,0.3);margin-bottom:1rem">Rechtliches</div>
+        <div style="display:flex;flex-direction:column;gap:0.55rem">
+          <a href="/impressum.html"  style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Impressum</a>
+          <a href="/datenschutz.html" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Datenschutz</a>
+          <a href="/agb.html"        style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">AGB</a>
+          <a href="javascript:void(0)" onclick="CookieConsent.reset();CookieConsent.request(function(){});" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Cookie-Einstellungen</a>
+        </div>
+      </div>
+    </div>
+    <div style="height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.08) 25%,rgba(255,255,255,0.08) 75%,transparent);margin-bottom:1.5rem"></div>
+    <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem">
+      <p style="font-size:0.73rem;color:rgba(195,215,245,0.25)">&copy; 2026 NOVARIS Consulting · Alle Rechte vorbehalten.</p>
+      <p style="font-size:0.73rem;color:rgba(195,215,245,0.18)">Diese Website stellt keine Steuer- oder Rechtsberatung dar.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function() {
+    if (localStorage.getItem('theme') === 'dark') {
+      document.documentElement.classList.add('dark');
+    }
+  })();
+
+  function toggleDark() {
+    const dark = document.documentElement.classList.toggle('dark');
+    localStorage.setItem('theme', dark ? 'dark' : 'light');
+    _updateDarkBtn();
+  }
+
+  function _updateDarkBtn() {
+    const dark = document.documentElement.classList.contains('dark');
+    const moon = document.getElementById('icon-moon');
+    const sun  = document.getElementById('icon-sun');
+    if (moon) moon.style.display = dark ? 'none'  : 'block';
+    if (sun)  sun.style.display  = dark ? 'block' : 'none';
+  }
+
+  window.addEventListener('DOMContentLoaded', _updateDarkBtn);
+</script>
+
+<script src="/cookie-consent.js" defer></script>
+<script src="/analytics.js" defer></script>
+</body>
+</html>

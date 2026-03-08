@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forschungszulage &amp; Körperschaftsteuer: So funktioniert die Verrechnung | NOVARIS</title>
+  <meta name="description" content="Forschungszulage und Körperschaftsteuer: Verrechnung, Anlage FZ, Gewerbesteuerfreiheit und Auswirkung auf die Steuerlast – komplett erklärt für GmbH und AG." />
+  <meta name="keywords" content="Forschungszulage Körperschaftsteuer, FZulG KSt, Forschungszulage Steuererklärung, Anlage FZ, Forschungszulage Gewerbesteuer, FZulG Verrechnung" />
+  <link rel="canonical" href="https://novaris-consulting.com/forschungszulage-koerperschaftsteuer.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Forschungszulage &amp; Körperschaftsteuer: So funktioniert die Verrechnung | NOVARIS" />
+  <meta property="og:description" content="Forschungszulage und Körperschaftsteuer: Verrechnung, Anlage FZ, Gewerbesteuerfreiheit und Auswirkung auf die Steuerlast – komplett erklärt." />
+  <meta property="og:url" content="https://novaris-consulting.com/forschungszulage-koerperschaftsteuer.html" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:site_name" content="NOVARIS Consulting" />
+  <meta property="og:image" content="https://novaris-consulting.com/brand_assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Forschungszulage &amp; Körperschaftsteuer: Verrechnung erklärt | NOVARIS" />
+  <meta name="twitter:description" content="Forschungszulage und Körperschaftsteuer: Verrechnung, Anlage FZ, Gewerbesteuerfreiheit und Auswirkung auf die Steuerlast." />
+  <meta name="twitter:image" content="https://novaris-consulting.com/brand_assets/og-image.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --bg-base:    #ffffff;
+      --bg-raised:  #f5f8fe;
+      --bg-card:    #ffffff;
+      --clr-h:      #0D1B3E;
+      --clr-b:      #5a6e8c;
+      --clr-muted:  #4a5870;
+      --bdr:        #dde5f4;
+    }
+    html.dark {
+      --bg-base:    #0a1428;
+      --bg-raised:  #0D1B3E;
+      --bg-card:    #122244;
+      --clr-h:      #e8f0fa;
+      --clr-b:      #8aaac8;
+      --clr-muted:  #6888a8;
+      --bdr:        rgba(77,174,229,0.18);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg-base);
+      color: var(--clr-h);
+      transition: background 0.25s ease, color 0.25s ease;
+      line-height: 1.7;
+    }
+
+    .nav-blur { backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); }
+    .logo-img { height: 52px; width: auto; display: block; }
+
+    .nav-link {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.84rem;
+      font-weight: 500;
+      color: rgba(195,215,245,0.70);
+      text-decoration: none;
+      padding: 0.42rem 0.85rem;
+      border-radius: 8px;
+      transition: color 0.15s ease, background 0.15s ease;
+      letter-spacing: 0.01em;
+    }
+    .nav-link:hover { color: #fff; background: rgba(255,255,255,0.07); }
+    .nav-link:focus-visible { outline: 2px solid #4DAEE5; outline-offset: 2px; }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background: #1E56B5;
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 0.84rem;
+      border: none;
+      border-radius: 10px;
+      text-decoration: none;
+      cursor: pointer;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.3), 0 4px 12px rgba(30,86,181,0.35);
+      transition: background 0.15s ease, transform 0.12s ease, box-shadow 0.15s ease;
+    }
+    .btn-primary:hover  { background: #2563c4; box-shadow: 0 2px 4px rgba(0,0,0,0.3), 0 6px 18px rgba(30,86,181,0.45); transform: translateY(-1px); }
+    .btn-primary:active { transform: translateY(0); }
+    .btn-primary:focus-visible { outline: 2px solid #4DAEE5; outline-offset: 2px; }
+
+    .content-wrap {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 6rem 1.5rem 5rem;
+    }
+
+    .ds-breadcrumb {
+      font-size: 0.78rem;
+      color: var(--clr-b);
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .ds-breadcrumb a {
+      color: #4DAEE5;
+      text-decoration: none;
+      transition: color 0.14s ease;
+    }
+    .ds-breadcrumb a:hover { color: #7ec8f0; }
+
+    .ds-eyebrow {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #4DAEE5;
+      margin-bottom: 0.9rem;
+    }
+
+    .ds-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: var(--clr-h);
+      line-height: 1.15;
+      margin-bottom: 0.5rem;
+    }
+
+    .ds-subtitle {
+      font-size: 0.95rem;
+      color: var(--clr-b);
+      line-height: 1.75;
+      margin-bottom: 0.5rem;
+      max-width: 640px;
+    }
+
+    .ds-updated {
+      font-size: 0.78rem;
+      color: var(--clr-b);
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--bdr);
+    }
+
+    .ds-section {
+      margin-bottom: 2.8rem;
+    }
+    .ds-section h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.12rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: var(--clr-h);
+      margin-bottom: 0.9rem;
+      padding-bottom: 0.55rem;
+      border-bottom: 1px solid var(--bdr);
+    }
+    .ds-section h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--clr-h);
+      margin-top: 1.4rem;
+      margin-bottom: 0.5rem;
+    }
+    .ds-section p {
+      font-size: 0.9rem;
+      color: var(--clr-b);
+      line-height: 1.75;
+      margin-bottom: 0.85rem;
+    }
+    .ds-section ul, .ds-section ol {
+      margin: 0.5rem 0 0.85rem 1.1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+    .ds-section ul li, .ds-section ol li {
+      font-size: 0.9rem;
+      color: var(--clr-b);
+      line-height: 1.65;
+    }
+    .ds-section a {
+      color: #4DAEE5;
+      text-decoration: none;
+      transition: color 0.14s ease;
+    }
+    .ds-section a:hover { color: #7ec8f0; text-decoration: underline; }
+
+    .ds-box {
+      background: var(--bg-raised);
+      border: 1px solid var(--bdr);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      font-size: 0.88rem;
+      color: var(--clr-b);
+      line-height: 1.7;
+      margin: 1rem 0 1.2rem;
+      transition: background 0.25s ease, border-color 0.25s ease;
+    }
+    .ds-box strong {
+      color: var(--clr-h);
+      font-weight: 600;
+    }
+
+    .ds-highlight-box {
+      background: var(--bg-raised);
+      border: 1px solid var(--bdr);
+      border-left: 4px solid #1E56B5;
+      border-radius: 0 12px 12px 0;
+      padding: 1.25rem 1.5rem;
+      font-size: 0.88rem;
+      color: var(--clr-b);
+      line-height: 1.7;
+      margin: 1rem 0 1.2rem;
+      transition: background 0.25s ease, border-color 0.25s ease;
+    }
+    .ds-highlight-box strong {
+      color: var(--clr-h);
+      font-weight: 600;
+    }
+
+    .ds-step {
+      display: flex;
+      gap: 1.2rem;
+      align-items: flex-start;
+      margin-bottom: 1.5rem;
+    }
+    .ds-step-num {
+      flex-shrink: 0;
+      width: 38px;
+      height: 38px;
+      background: #1E56B5;
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: 0.95rem;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.3), 0 4px 10px rgba(30,86,181,0.3);
+    }
+    .ds-step-content h3 {
+      margin-top: 0;
+    }
+
+    .ds-table-wrap {
+      overflow-x: auto;
+      margin: 1rem 0 1.2rem;
+      border-radius: 12px;
+      border: 1px solid var(--bdr);
+    }
+    .ds-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+    }
+    .ds-table th {
+      background: var(--bg-raised);
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 0.78rem;
+      letter-spacing: 0.02em;
+      color: var(--clr-h);
+      text-align: left;
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid var(--bdr);
+    }
+    .ds-table td {
+      padding: 0.65rem 1rem;
+      color: var(--clr-b);
+      border-bottom: 1px solid var(--bdr);
+      line-height: 1.55;
+    }
+    .ds-table tr:last-child td { border-bottom: none; }
+    html.dark .ds-table th { background: var(--bg-card); }
+
+    .ds-urgency {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 0.15rem 0.5rem;
+      border-radius: 6px;
+      letter-spacing: 0.02em;
+    }
+    .ds-urgency--red { background: rgba(220,38,38,0.12); color: #dc2626; }
+    .ds-urgency--yellow { background: rgba(234,179,8,0.12); color: #b45309; }
+    .ds-urgency--green { background: rgba(22,163,74,0.12); color: #16a34a; }
+    html.dark .ds-urgency--red { background: rgba(220,38,38,0.2); color: #f87171; }
+    html.dark .ds-urgency--yellow { background: rgba(234,179,8,0.2); color: #fbbf24; }
+    html.dark .ds-urgency--green { background: rgba(22,163,74,0.2); color: #4ade80; }
+
+    .faq-item {
+      border: 1px solid var(--bdr);
+      border-radius: 12px;
+      margin-bottom: 0.65rem;
+      overflow: hidden;
+      transition: border-color 0.25s ease;
+    }
+    .faq-q {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      width: 100%;
+      padding: 1rem 1.25rem;
+      background: var(--bg-raised);
+      border: none;
+      cursor: pointer;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--clr-h);
+      text-align: left;
+      line-height: 1.5;
+      transition: background 0.15s ease, color 0.15s ease;
+    }
+    .faq-q:hover { background: var(--bg-raised); opacity: 0.85; }
+    .faq-q:focus-visible { outline: 2px solid #4DAEE5; outline-offset: -2px; }
+    .faq-q svg {
+      flex-shrink: 0;
+      transition: transform 0.2s ease;
+    }
+    .faq-item.open .faq-q svg { transform: rotate(180deg); }
+    .faq-a {
+      display: none;
+      padding: 0 1.25rem 1rem;
+      font-size: 0.87rem;
+      color: var(--clr-b);
+      line-height: 1.7;
+    }
+    .faq-item.open .faq-a { display: block; }
+    html.dark .faq-q { background: var(--bg-card); }
+
+    .cta-section {
+      background: var(--bg-raised);
+      border: 1px solid var(--bdr);
+      border-radius: 16px;
+      padding: 2.5rem 2rem;
+      text-align: center;
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+      transition: background 0.25s ease, border-color 0.25s ease;
+    }
+    .cta-section h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: var(--clr-h);
+      margin-bottom: 0.8rem;
+      border: none;
+      padding-bottom: 0;
+    }
+    .cta-section p {
+      font-size: 0.9rem;
+      color: var(--clr-b);
+      line-height: 1.75;
+      margin-bottom: 1.5rem;
+      max-width: 560px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .toc {
+      background: var(--bg-raised);
+      border: 1px solid var(--bdr);
+      border-radius: 12px;
+      padding: 1.5rem 1.75rem;
+      margin-bottom: 2.8rem;
+      transition: background 0.25s ease, border-color 0.25s ease;
+    }
+    html.dark .toc { background: var(--bg-card); }
+    .toc-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--clr-muted);
+      margin-bottom: 0.8rem;
+    }
+    .toc ol {
+      margin: 0;
+      padding-left: 1.1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+    .toc ol li {
+      font-size: 0.85rem;
+      color: var(--clr-b);
+      line-height: 1.55;
+    }
+    .toc ol li a {
+      color: #4DAEE5;
+      text-decoration: none;
+      transition: color 0.14s ease;
+    }
+    .toc ol li a:hover { color: #7ec8f0; }
+
+    footer { background: #04091a; border-top: 1px solid rgba(255,255,255,0.07); }
+
+    html.dark .ds-box { background: var(--bg-card); }
+    html.dark .ds-highlight-box { background: var(--bg-card); }
+    html.dark .cta-section { background: var(--bg-card); }
+    .logo-light { display: none; }
+    html.dark .logo-dark  { display: none !important; }
+    html.dark .logo-light { display: inline !important; }
+
+    html { overflow-y: scroll; }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: rgba(77,174,229,0.38); border-radius: 999px; }
+    ::-webkit-scrollbar-thumb:hover { background: rgba(77,174,229,0.55); }
+    html { scrollbar-width: thin; scrollbar-color: rgba(77,174,229,0.38) transparent; }
+    html.dark ::-webkit-scrollbar-thumb { background: rgba(77,174,229,0.30); }
+    html.dark ::-webkit-scrollbar-thumb:hover { background: rgba(77,174,229,0.48); }
+    html.dark { scrollbar-color: rgba(77,174,229,0.30) transparent; }
+  </style>
+  <link rel="stylesheet" href="/page-transition.css" />
+  <link rel="stylesheet" href="/cookie-consent.css" />
+  <script src="/page-transition.js" defer></script>
+
+  <!-- BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://novaris-consulting.com/"},
+      {"@type": "ListItem", "position": 2, "name": "Forschungszulage", "item": "https://novaris-consulting.com/forschungszulage.html"},
+      {"@type": "ListItem", "position": 3, "name": "Körperschaftsteuer", "item": "https://novaris-consulting.com/forschungszulage-koerperschaftsteuer.html"}
+    ]
+  }
+  </script>
+
+  <!-- Article Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Forschungszulage & Körperschaftsteuer – So funktioniert die Verrechnung",
+    "description": "Forschungszulage und Körperschaftsteuer: Verrechnung, Anlage FZ, Gewerbesteuerfreiheit und Auswirkung auf die Steuerlast – komplett erklärt für GmbH und AG.",
+    "author": {
+      "@type": "Organization",
+      "name": "NOVARIS Consulting",
+      "url": "https://novaris-consulting.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "NOVARIS Consulting",
+      "url": "https://novaris-consulting.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://novaris-consulting.com/brand_assets/Logo V5-light.svg"
+      }
+    },
+    "datePublished": "2026-03-08",
+    "dateModified": "2026-03-08",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://novaris-consulting.com/forschungszulage-koerperschaftsteuer.html"
+    },
+    "keywords": ["Forschungszulage Körperschaftsteuer", "FZulG KSt", "Forschungszulage Steuererklärung", "Anlage FZ", "Forschungszulage Gewerbesteuer", "FZulG Verrechnung"]
+  }
+  </script>
+
+  <!-- FAQ Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Ist die Forschungszulage gewerbesteuerpflichtig?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nein. Gemäß §4 Abs. 3 FZulG ist die Forschungszulage ausdrücklich von der Gewerbesteuer befreit. Sie wird bei der Ermittlung des Gewerbeertrags nicht hinzugerechnet und hat keinen Einfluss auf den Gewerbesteuer-Messbetrag."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Was passiert, wenn die Forschungszulage höher ist als die Steuerschuld?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Übersteigt die festgesetzte Forschungszulage die Körperschaftsteuer- oder Einkommensteuerschuld, wird der Differenzbetrag direkt an das Unternehmen erstattet. Es handelt sich um eine echte Steuergutschrift – auch Unternehmen ohne Steuerschuld oder mit Verlusten erhalten die volle Auszahlung."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Muss ich die Anlage FZ mit der Steuererklärung einreichen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nein, die Anlage FZ kann auch separat von der Steuererklärung beim zuständigen Finanzamt eingereicht werden. Die Einreichung erfolgt elektronisch über ELSTER. Es ist jedoch empfehlenswert, die Anlage FZ zeitnah nach Erhalt der BSFZ-Bescheinigung einzureichen, um die Festsetzung und Auszahlung zu beschleunigen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wirkt sich die Forschungszulage auf meinen Verlustvortrag aus?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nein, die Forschungszulage hat keinen Einfluss auf den Verlustvortrag. Sie wird unabhängig von der Gewinnsituation des Unternehmens festgesetzt und ausgezahlt. Ein bestehender Verlustvortrag wird weder gemindert noch beeinflusst. Das macht die Forschungszulage besonders attraktiv für Startups und Unternehmen in Verlustphasen."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<header id="nav" class="fixed inset-x-0 top-0 z-50 nav-blur"
+        style="background:rgba(4,9,26,0.88);border-bottom:1px solid rgba(255,255,255,0.07)">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between gap-4" style="height:68px">
+    <a href="/" aria-label="NOVARIS Consulting"
+       style="text-decoration:none;flex-shrink:0;display:flex;align-items:center;transition:opacity 0.15s ease"
+       class="hover:opacity-90 focus-visible:outline-none">
+      <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto" />
+    </a>
+    <nav class="hidden lg:flex items-center gap-0.5">
+      <a href="/#was-ist-fzulg" class="nav-link">Das FZulG</a>
+      <a href="/#branchen"      class="nav-link">Branchen</a>
+      <a href="/#prozess"       class="nav-link">Prozess</a>
+      <a href="/#vorteile"      class="nav-link">Vorteile</a>
+      <a href="/#faq"           class="nav-link">FAQ</a>
+      <a href="/#kontakt"       class="nav-link">Kontakt</a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <button id="dark-toggle" onclick="toggleDark()" aria-label="Toggle dark mode"
+        class="hidden sm:flex" style="width:32px;height:32px;border-radius:8px;border:1px solid rgba(255,255,255,0.12);
+               background:rgba(255,255,255,0.07);cursor:pointer;align-items:center;
+               justify-content:center;color:rgba(255,255,255,0.7);
+               transition:background 0.15s ease,color 0.15s ease">
+        <svg id="icon-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg id="icon-sun"  width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
+      <a href="/#kontakt" class="btn-primary hidden sm:inline-flex" style="padding:0.55rem 1.35rem;font-size:0.83rem">
+        Kostenlos prüfen
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="content-wrap">
+
+    <div class="ds-breadcrumb">
+      <a href="/">Startseite</a>
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      <a href="/forschungszulage.html">Forschungszulage</a>
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      <span>Körperschaftsteuer</span>
+    </div>
+
+    <div class="ds-eyebrow">Steuerliche Verrechnung</div>
+    <h1 class="ds-title">Forschungszulage &amp; Körperschaftsteuer – So funktioniert die Verrechnung</h1>
+    <p class="ds-subtitle">Die Forschungszulage wird direkt mit Ihrer Körperschaftsteuer verrechnet – oder sogar darüber hinaus erstattet. Hier erfahren Sie, wie das in der Praxis funktioniert.</p>
+    <p class="ds-updated">Zuletzt aktualisiert: 08. März 2026 · Lesezeit: ca. 9 Minuten</p>
+
+    <!-- Table of Contents -->
+    <nav class="toc" aria-label="Inhaltsverzeichnis">
+      <div class="toc-title">Inhaltsverzeichnis</div>
+      <ol>
+        <li><a href="#steuersystem">Forschungszulage im Steuersystem: Wo sie ansetzt</a></li>
+        <li><a href="#anlage-fz">Die Anlage FZ: Antrag beim Finanzamt</a></li>
+        <li><a href="#verrechnung">Verrechnung mit Körperschaftsteuer</a></li>
+        <li><a href="#gewerbesteuer">Gewerbesteuer: Keine Hinzurechnung</a></li>
+        <li><a href="#einkommensteuer">Einkommensteuer bei Personengesellschaften</a></li>
+        <li><a href="#verlustvortraege">Auswirkung auf Verlustvorträge</a></li>
+        <li><a href="#faq">FAQ: Forschungszulage &amp; Körperschaftsteuer</a></li>
+      </ol>
+    </nav>
+
+    <!-- Section 1: Forschungszulage im Steuersystem -->
+    <div class="ds-section" id="steuersystem">
+      <h2>Forschungszulage im Steuersystem: Wo sie ansetzt</h2>
+      <p>Die Forschungszulage nach dem FZulG ist keine klassische Subvention oder ein Zuschuss, sondern eine <strong>echte Steuergutschrift</strong>. Sie wird gemäß <strong>§4 FZulG</strong> im Rahmen der Körperschaftsteuer- bzw. Einkommensteuerveranlagung festgesetzt und direkt mit der festgesetzten Steuer verrechnet.</p>
+
+      <p>Konkret bedeutet das: Das Finanzamt setzt zunächst die Körperschaftsteuer (bei GmbH, AG, UG) oder die Einkommensteuer (bei Einzelunternehmen und Personengesellschaften) wie gewohnt fest. Anschließend wird die Forschungszulage als <strong>eigenständiger Bescheid</strong> festgesetzt und von der Steuerschuld abgezogen.</p>
+
+      <p>Der entscheidende Vorteil gegenüber anderen Förderprogrammen:</p>
+      <ul>
+        <li><strong>Verrechnung mit der Steuerschuld:</strong> Die Forschungszulage mindert die zu zahlende Körperschaftsteuer direkt.</li>
+        <li><strong>Erstattung bei Überschuss:</strong> Übersteigt die Forschungszulage die Steuerschuld, wird der Differenzbetrag <strong>direkt erstattet</strong> – eine Auszahlung auf das Firmenkonto.</li>
+        <li><strong>Kein Zuschuss, sondern Rechtsanspruch:</strong> Anders als bei Förderprogrammen besteht ein gesetzlicher Anspruch. Es gibt keinen Ermessensspielraum und kein Budget, das erschöpft sein kann.</li>
+        <li><strong>Unabhängig von der Gewinnsituation:</strong> Auch Unternehmen in Verlustjahren erhalten die volle Forschungszulage als Erstattung.</li>
+      </ul>
+
+      <div class="ds-highlight-box">
+        <strong>Wichtig:</strong> Die Forschungszulage ist selbst <strong>steuerfrei</strong>. Sie wird weder bei der Ermittlung des zu versteuernden Einkommens berücksichtigt noch erhöht sie den Gewinn des Unternehmens. Das bedeutet: Die ausgezahlte Forschungszulage kommt <strong>1:1 beim Unternehmen an</strong> – ohne weitere steuerliche Abzüge.
+      </div>
+    </div>
+
+    <!-- Section 2: Anlage FZ -->
+    <div class="ds-section" id="anlage-fz">
+      <h2>Die Anlage FZ: Antrag beim Finanzamt</h2>
+      <p>Die Forschungszulage wird beim zuständigen Finanzamt über die <strong>Anlage FZ</strong> beantragt. Die Einreichung erfolgt elektronisch über das ELSTER-Portal – genau wie die reguläre Steuererklärung.</p>
+
+      <h3>Inhalt der Anlage FZ</h3>
+      <p>Die Anlage FZ enthält alle wesentlichen Angaben zur Beantragung der Forschungszulage:</p>
+      <ul>
+        <li><strong>BSFZ-Bescheinigung:</strong> Die Bescheinigungsnummer der positiven Begutachtung durch die Bescheinigungsstelle Forschungszulage (BSFZ). Ohne BSFZ-Bescheinigung kann keine Forschungszulage festgesetzt werden.</li>
+        <li><strong>Förderfähige Aufwendungen:</strong> Detaillierte Aufstellung der Personalkosten (Bruttolöhne und -gehälter), Eigenleistungen von Einzelunternehmern und Auftragsforschungskosten (60% der Vergütung).</li>
+        <li><strong>Bemessungsgrundlage:</strong> Die Summe aller förderfähigen Aufwendungen, begrenzt auf die maximale Bemessungsgrundlage (4 Mio. EUR bis 2023, 12 Mio. EUR ab 2024).</li>
+        <li><strong>Beantragte Forschungszulage:</strong> Der errechnete Förderbetrag (25% bzw. 35% für KMU ab 2024).</li>
+      </ul>
+
+      <h3>Einreichungszeitpunkt</h3>
+      <p>Die Anlage FZ kann <strong>zusammen mit der Steuererklärung</strong> eingereicht werden, muss es aber nicht. Sie kann auch <strong>separat und zeitlich unabhängig</strong> beim Finanzamt eingereicht werden. Voraussetzung ist lediglich, dass die BSFZ-Bescheinigung bereits vorliegt.</p>
+
+      <div class="ds-box">
+        <strong>Praxis-Empfehlung:</strong> Reichen Sie die Anlage FZ zeitnah nach Erhalt der BSFZ-Bescheinigung ein – auch wenn Ihre Steuererklärung noch nicht fertig ist. So beschleunigen Sie den Festsetzungs- und Auszahlungsprozess erheblich. Die Bearbeitungsdauer beim Finanzamt beträgt typischerweise 2–4 Monate.
+      </div>
+    </div>
+
+    <!-- Section 3: Verrechnung mit Körperschaftsteuer -->
+    <div class="ds-section" id="verrechnung">
+      <h2>Verrechnung mit Körperschaftsteuer</h2>
+      <p>Die Verrechnung der Forschungszulage mit der Körperschaftsteuer ist unkompliziert und funktioniert nach einem einfachen Prinzip: Die festgesetzte Forschungszulage wird von der festgesetzten Körperschaftsteuer abgezogen. Je nach Verhältnis ergeben sich zwei Szenarien:</p>
+
+      <h3>Szenario 1: Steuerschuld höher als Forschungszulage</h3>
+      <p>Wenn die Körperschaftsteuerschuld höher ist als die Forschungszulage, mindert die Forschungszulage die zu zahlende Steuer. Das Unternehmen zahlt nur noch die Differenz.</p>
+
+      <h3>Szenario 2: Forschungszulage höher als Steuerschuld</h3>
+      <p>Wenn die Forschungszulage die Steuerschuld übersteigt, wird der überschüssige Betrag <strong>direkt an das Unternehmen erstattet</strong>. Dies ist besonders relevant für wachstumsstarke Unternehmen mit hohen F&E-Aufwendungen und vergleichsweise geringer Steuerlast.</p>
+
+      <div class="ds-table-wrap">
+        <table class="ds-table">
+          <thead>
+            <tr>
+              <th>Szenario</th>
+              <th>KSt-Schuld</th>
+              <th>Forschungszulage</th>
+              <th>Ergebnis</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>A: Teilverrechnung</strong></td>
+              <td>200.000 EUR</td>
+              <td>150.000 EUR</td>
+              <td style="color:var(--clr-h)"><strong>50.000 EUR Restschuld</strong></td>
+            </tr>
+            <tr>
+              <td><strong>B: Vollverrechnung + Erstattung</strong></td>
+              <td>80.000 EUR</td>
+              <td>150.000 EUR</td>
+              <td style="color:#16a34a"><strong>70.000 EUR Erstattung</strong></td>
+            </tr>
+            <tr>
+              <td><strong>C: Keine Steuerschuld</strong></td>
+              <td>0 EUR</td>
+              <td>150.000 EUR</td>
+              <td style="color:#16a34a"><strong>150.000 EUR Erstattung</strong></td>
+            </tr>
+            <tr>
+              <td><strong>D: Exakte Verrechnung</strong></td>
+              <td>150.000 EUR</td>
+              <td>150.000 EUR</td>
+              <td style="color:var(--clr-h)"><strong>0 EUR – vollständig verrechnet</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p><strong>Beispielrechnung im Detail (Szenario B):</strong> Eine GmbH hat im Wirtschaftsjahr 2025 eine Körperschaftsteuerschuld von 80.000 EUR. Gleichzeitig wird eine Forschungszulage von 150.000 EUR festgesetzt (basierend auf 600.000 EUR Personalkosten x 25%). Die Forschungszulage übersteigt die Steuerschuld um 70.000 EUR. Dieser Betrag wird direkt auf das Firmenkonto erstattet.</p>
+
+      <div class="ds-highlight-box">
+        <strong>Liquiditätsvorteil:</strong> Die Forschungszulage wirkt sich direkt auf die Liquidität Ihres Unternehmens aus. Im Szenario B fließen nicht nur 80.000 EUR weniger an das Finanzamt – das Unternehmen erhält zusätzlich 70.000 EUR als Erstattung. Der effektive Liquiditätsvorteil beträgt damit <strong>150.000 EUR</strong>.
+      </div>
+    </div>
+
+    <!-- Section 4: Gewerbesteuer -->
+    <div class="ds-section" id="gewerbesteuer">
+      <h2>Gewerbesteuer: Keine Hinzurechnung</h2>
+      <p>Eine häufig gestellte Frage betrifft die gewerbesteuerliche Behandlung der Forschungszulage. Die Antwort ist eindeutig und erfreulich: <strong>Die Forschungszulage ist vollständig gewerbesteuerfrei.</strong></p>
+
+      <p>Dies ergibt sich direkt aus <strong>§4 Abs. 3 FZulG</strong>, der ausdrücklich regelt, dass die Forschungszulage bei der Ermittlung des Gewerbeertrags nicht berücksichtigt wird. Konkret bedeutet das:</p>
+
+      <ul>
+        <li><strong>Keine Hinzurechnung:</strong> Die Forschungszulage wird nicht als Ertrag behandelt und nicht zum Gewerbeertrag hinzugerechnet.</li>
+        <li><strong>Kein Einfluss auf den GewSt-Messbetrag:</strong> Der Gewerbesteuer-Messbetrag bleibt von der Forschungszulage unberührt.</li>
+        <li><strong>Keine Auswirkung auf den Hebesatz:</strong> Die Gewerbesteuerbelastung des Unternehmens ändert sich durch die Forschungszulage nicht.</li>
+        <li><strong>Keine gewerbesteuerliche Erklärungspflicht:</strong> Die Forschungszulage muss in der Gewerbesteuererklärung nicht gesondert angegeben werden.</li>
+      </ul>
+
+      <div class="ds-highlight-box">
+        <strong>Praxisbedeutung:</strong> Die Gewerbesteuerfreiheit der Forschungszulage bedeutet, dass die gesamte Förderung beim Unternehmen verbleibt. Bei einem typischen Gewerbesteuer-Hebesatz von 400% und einem Steuermessbetrag von 3,5% würde eine Gewerbesteuerpflicht die effektive Förderung um bis zu 14% reduzieren. Diese zusätzliche Belastung entfällt dank §4 Abs. 3 FZulG vollständig.
+      </div>
+    </div>
+
+    <!-- Section 5: Einkommensteuer bei Personengesellschaften -->
+    <div class="ds-section" id="einkommensteuer">
+      <h2>Einkommensteuer bei Personengesellschaften</h2>
+      <p>Die Forschungszulage steht nicht nur Kapitalgesellschaften (GmbH, AG) zu, sondern auch <strong>Personengesellschaften</strong> wie GbR, KG und OHG. Da Personengesellschaften selbst nicht körperschaftsteuerpflichtig sind, erfolgt die Verrechnung auf Ebene der einzelnen Gesellschafter mit deren <strong>Einkommensteuer</strong>.</p>
+
+      <h3>Verteilung auf die Gesellschafter</h3>
+      <p>Die Forschungszulage wird entsprechend dem <strong>Verteilungsschlüssel</strong> der Gesellschaft auf die einzelnen Gesellschafter aufgeteilt. In der Regel entspricht dieser dem Gewinnverteilungsschlüssel laut Gesellschaftsvertrag. Jeder Gesellschafter erhält seinen Anteil an der Forschungszulage als Anrechnung auf seine persönliche Einkommensteuer.</p>
+
+      <h3>Besonderheiten bei Kommanditgesellschaften (KG)</h3>
+      <p>Bei einer KG wird die Forschungszulage auf Komplementäre und Kommanditisten verteilt. Der Verteilungsschlüssel richtet sich nach dem Gesellschaftsvertrag. Wichtig: Auch Kommanditisten, die nicht aktiv in der Geschäftsführung tätig sind, erhalten ihren Anteil an der Forschungszulage.</p>
+
+      <h3>Einzelunternehmer</h3>
+      <p>Bei Einzelunternehmen wird die Forschungszulage direkt mit der <strong>Einkommensteuer des Inhabers</strong> verrechnet. Zusätzlich können Einzelunternehmer die <strong>Eigenleistungspauschale</strong> (70 EUR/Stunde, max. 40h/Woche) als Bemessungsgrundlage geltend machen – ein erheblicher Vorteil, der die Fördersumme deutlich erhöhen kann. Mehr dazu in unserem <a href="/forschungszulage-gmbh-einzelunternehmen.html">Ratgeber GmbH vs. Einzelunternehmen</a>.</p>
+
+      <div class="ds-box">
+        <strong>Hinweis für Personengesellschaften:</strong> Der Antrag auf Forschungszulage (Anlage FZ) wird von der <strong>Gesellschaft</strong> beim Finanzamt eingereicht – nicht von den einzelnen Gesellschaftern. Die Verteilung auf die Gesellschafter erfolgt durch das Finanzamt im Rahmen der gesonderten und einheitlichen Feststellung.
+      </div>
+    </div>
+
+    <!-- Section 6: Verlustvorträge -->
+    <div class="ds-section" id="verlustvortraege">
+      <h2>Auswirkung auf Verlustvorträge</h2>
+      <p>Eine der attraktivsten Eigenschaften der Forschungszulage ist ihre <strong>vollständige Unabhängigkeit von der Gewinnsituation</strong> des Unternehmens. Dies hat weitreichende Konsequenzen für Unternehmen mit Verlustvorträgen:</p>
+
+      <ul>
+        <li><strong>Keine Minderung des Verlustvortrags:</strong> Die Forschungszulage mindert den bestehenden Verlustvortrag nicht. Der körperschaftsteuerliche bzw. einkommensteuerliche Verlustvortrag bleibt in voller Höhe erhalten und kann in zukünftigen Jahren weiterhin genutzt werden.</li>
+        <li><strong>Auszahlung trotz Verlust:</strong> Auch wenn das Unternehmen im betreffenden Wirtschaftsjahr einen Verlust erwirtschaftet hat und keine Steuerschuld besteht, wird die Forschungszulage in voller Höhe erstattet.</li>
+        <li><strong>Keine Verrechnung mit dem Verlustvortrag:</strong> Die Forschungszulage wird nicht gegen bestehende Verlustvorträge aufgerechnet – sie steht dem Unternehmen zusätzlich zur Verfügung.</li>
+      </ul>
+
+      <div class="ds-highlight-box">
+        <strong>Besonders relevant für Startups:</strong> Junge Unternehmen befinden sich häufig in einer Verlustphase, investieren aber gleichzeitig stark in Forschung und Entwicklung. Die Forschungszulage bietet diesen Unternehmen eine <strong>direkte Liquiditätsspritze</strong>, die unabhängig von der Gewinnsituation fließt. Ein Startup mit 500.000 EUR F&E-Personalkosten und null Steuerschuld erhält trotzdem 125.000 EUR (bzw. 175.000 EUR als KMU ab 2024) als direkte Erstattung – und behält gleichzeitig seinen vollen Verlustvortrag für die Zukunft.
+      </div>
+
+      <p>Diese Eigenschaft unterscheidet die Forschungszulage fundamental von steuerlichen Vergünstigungen wie Sonderabschreibungen oder Investitionsabzugsbeträgen, die nur dann wirken, wenn auch steuerpflichtiger Gewinn vorhanden ist. Die Forschungszulage ist in diesem Sinne eine <strong>„echte" Förderung</strong>, die auch in wirtschaftlich schwierigen Phasen ihre volle Wirkung entfaltet.</p>
+    </div>
+
+    <!-- Section 7: FAQ -->
+    <div class="ds-section" id="faq">
+      <h2>FAQ: Forschungszulage &amp; Körperschaftsteuer</h2>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          Ist die Forschungszulage gewerbesteuerpflichtig?
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>Nein. Gemäß <strong>§4 Abs. 3 FZulG</strong> ist die Forschungszulage ausdrücklich von der Gewerbesteuer befreit. Sie wird bei der Ermittlung des Gewerbeertrags nicht hinzugerechnet und hat keinen Einfluss auf den Gewerbesteuer-Messbetrag. Die gesamte Forschungszulage verbleibt ohne gewerbesteuerliche Belastung beim Unternehmen.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          Was passiert, wenn die Forschungszulage höher ist als die Steuerschuld?
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>Übersteigt die festgesetzte Forschungszulage die Körperschaftsteuer- oder Einkommensteuerschuld, wird der <strong>Differenzbetrag direkt an das Unternehmen erstattet</strong>. Es handelt sich um eine echte Steuergutschrift. Beispiel: Bei einer KSt-Schuld von 80.000 EUR und einer Forschungszulage von 150.000 EUR erhält das Unternehmen 70.000 EUR als direkte Erstattung auf das Firmenkonto.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          Muss ich die Anlage FZ mit der Steuererklärung einreichen?
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>Nein, die <strong>Anlage FZ</strong> kann auch separat von der Steuererklärung beim zuständigen Finanzamt eingereicht werden. Die Einreichung erfolgt elektronisch über ELSTER. Voraussetzung ist lediglich, dass die BSFZ-Bescheinigung bereits vorliegt. Es empfiehlt sich, die Anlage FZ zeitnah nach Erhalt der Bescheinigung einzureichen, um den Festsetzungs- und Auszahlungsprozess zu beschleunigen.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          Wirkt sich die Forschungszulage auf meinen Verlustvortrag aus?
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>Nein, die Forschungszulage hat <strong>keinen Einfluss auf den Verlustvortrag</strong>. Sie wird unabhängig von der Gewinnsituation des Unternehmens festgesetzt und ausgezahlt. Ein bestehender Verlustvortrag wird weder gemindert noch beeinflusst. Das macht die Forschungszulage besonders attraktiv für Startups und Unternehmen in Verlustphasen, die trotz fehlender Steuerschuld die volle Förderung als direkte Erstattung erhalten.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Related Content -->
+    <div class="ds-section" style="margin-top:2rem">
+      <h2>Weiterführende Inhalte zur Forschungszulage</h2>
+      <p>Vertiefen Sie Ihr Wissen mit unseren spezialisierten Ressourcen:</p>
+      <ul>
+        <li><a href="/forschungszulage.html" style="color:#1E56B5;font-weight:600"><strong>Forschungszulage Leitfaden</strong></a> – Der komplette Überblick zum FZulG 2026</li>
+        <li><a href="/forschungszulage-buchen.html" style="color:#1E56B5;font-weight:600"><strong>Forschungszulage buchen</strong></a> – Richtige Verbuchung in der Buchhaltung</li>
+        <li><a href="/forschungszulage-antrag.html" style="color:#1E56B5;font-weight:600"><strong>Forschungszulage Antrag</strong></a> – Schritt-für-Schritt-Anleitung zur Antragstellung</li>
+        <li><a href="/forschungszulage-auszahlung.html" style="color:#1E56B5;font-weight:600"><strong>Forschungszulage Auszahlung</strong></a> – Ablauf, Dauer und Verrechnung</li>
+        <li><a href="/forschungszulage-gmbh-einzelunternehmen.html" style="color:#1E56B5;font-weight:600"><strong>GmbH vs. Einzelunternehmen</strong></a> – Rechtsformspezifische Besonderheiten</li>
+      </ul>
+    </div>
+
+    <!-- CTA Box -->
+    <div class="cta-section">
+      <h2>Forschungszulage mit Ihrer Steuerlast verrechnen</h2>
+      <p>Erfahren Sie in einer kostenlosen Erstanalyse, wie viel Forschungszulage Ihrem Unternehmen zusteht und wie sie mit Ihrer Körperschaftsteuer verrechnet wird. Erfolgsbasiert und ohne Risiko.</p>
+      <a href="/#kontakt" class="btn-primary" style="padding:0.7rem 1.8rem;font-size:0.9rem">
+        Kostenlose Erstanalyse anfragen
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+
+  </div>
+</main>
+
+<footer style="background:#04091a;border-top:1px solid rgba(255,255,255,0.07)">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
+      <div class="lg:col-span-2">
+        <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto;margin-bottom:1rem" />
+        <p style="font-size:0.82rem;color:rgba(195,215,245,0.38);line-height:1.72;max-width:320px">
+          NOVARIS Consulting ist Ihr spezialisierter Full-Service-Partner für die staatliche
+          Forschungszulage nach dem FZulG – erfolgsbasiert, transparent und ohne Risiko.
+        </p>
+      </div>
+      <div>
+        <div style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.75rem;letter-spacing:0.09em;text-transform:uppercase;color:rgba(195,215,245,0.3);margin-bottom:1rem">Navigation</div>
+        <div style="display:flex;flex-direction:column;gap:0.55rem">
+          <a href="/#was-ist-fzulg" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Das FZulG</a>
+          <a href="/#prozess"       style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Prozess</a>
+          <a href="/#vorteile"      style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Vorteile</a>
+          <a href="/#faq"           style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">FAQ</a>
+          <a href="/#kontakt"       style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Kontakt</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.75rem;letter-spacing:0.09em;text-transform:uppercase;color:rgba(195,215,245,0.3);margin-bottom:1rem">Rechtliches</div>
+        <div style="display:flex;flex-direction:column;gap:0.55rem">
+          <a href="/impressum.html"  style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Impressum</a>
+          <a href="/datenschutz.html" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Datenschutz</a>
+          <a href="/agb.html"        style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">AGB</a>
+          <a href="javascript:void(0)" onclick="CookieConsent.reset();CookieConsent.request(function(){});" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Cookie-Einstellungen</a>
+        </div>
+      </div>
+    </div>
+    <div style="height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.08) 25%,rgba(255,255,255,0.08) 75%,transparent);margin-bottom:1.5rem"></div>
+    <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem">
+      <p style="font-size:0.73rem;color:rgba(195,215,245,0.25)">&copy; 2026 NOVARIS Consulting · Alle Rechte vorbehalten.</p>
+      <p style="font-size:0.73rem;color:rgba(195,215,245,0.18)">Diese Website stellt keine Steuer- oder Rechtsberatung dar.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function() {
+    if (localStorage.getItem('theme') === 'dark') {
+      document.documentElement.classList.add('dark');
+    }
+  })();
+
+  function toggleDark() {
+    const dark = document.documentElement.classList.toggle('dark');
+    localStorage.setItem('theme', dark ? 'dark' : 'light');
+    _updateDarkBtn();
+  }
+
+  function _updateDarkBtn() {
+    const dark = document.documentElement.classList.contains('dark');
+    const moon = document.getElementById('icon-moon');
+    const sun  = document.getElementById('icon-sun');
+    if (moon) moon.style.display = dark ? 'none'  : 'block';
+    if (sun)  sun.style.display  = dark ? 'block' : 'none';
+  }
+
+  window.addEventListener('DOMContentLoaded', _updateDarkBtn);
+</script>
+
+<script src="/cookie-consent.js" defer></script>
+<script src="/analytics.js" defer></script>
+</body>
+</html>

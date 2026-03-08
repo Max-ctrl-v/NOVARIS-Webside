@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forschungszulage Sachkosten 2026: Gemeinkostenpauschale & förderfähige Kosten | NOVARIS</title>
+  <meta name="description" content="Forschungszulage Sachkosten 2026: Die neue 20% Gemeinkostenpauschale, förderfähige Materialkosten und was NICHT zählt – vollständiger Überblick." />
+  <meta name="keywords" content="Forschungszulage Sachkosten, FZulG Gemeinkostenpauschale, Forschungszulage Materialkosten, Forschungszulage förderfähige Kosten, FZulG 2026 Sachkosten" />
+  <link rel="canonical" href="https://novaris-consulting.com/forschungszulage-sachkosten.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Forschungszulage Sachkosten 2026: Gemeinkostenpauschale & förderfähige Kosten | NOVARIS" />
+  <meta property="og:description" content="Forschungszulage Sachkosten 2026: Die neue 20% Gemeinkostenpauschale, förderfähige Materialkosten und was NICHT zählt." />
+  <meta property="og:url" content="https://novaris-consulting.com/forschungszulage-sachkosten.html" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:site_name" content="NOVARIS Consulting" />
+  <meta property="og:image" content="https://novaris-consulting.com/brand_assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Forschungszulage Sachkosten 2026: Gemeinkostenpauschale | NOVARIS" />
+  <meta name="twitter:description" content="Die neue 20% Gemeinkostenpauschale, förderfähige Materialkosten und was NICHT zählt – vollständiger Überblick." />
+  <meta name="twitter:image" content="https://novaris-consulting.com/brand_assets/og-image.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --bg-base:    #ffffff;
+      --bg-raised:  #f5f8fe;
+      --bg-card:    #ffffff;
+      --clr-h:      #0D1B3E;
+      --clr-b:      #5a6e8c;
+      --clr-muted:  #4a5870;
+      --bdr:        #dde5f4;
+    }
+    html.dark {
+      --bg-base:    #0a1428;
+      --bg-raised:  #0D1B3E;
+      --bg-card:    #122244;
+      --clr-h:      #e8f0fa;
+      --clr-b:      #8aaac8;
+      --clr-muted:  #6888a8;
+      --bdr:        rgba(77,174,229,0.18);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg-base);
+      color: var(--clr-h);
+      transition: background 0.25s ease, color 0.25s ease;
+      line-height: 1.7;
+    }
+
+    .nav-blur { backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); }
+    .logo-img { height: 52px; width: auto; display: block; }
+
+    .nav-link {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.84rem;
+      font-weight: 500;
+      color: rgba(195,215,245,0.70);
+      text-decoration: none;
+      padding: 0.42rem 0.85rem;
+      border-radius: 8px;
+      transition: color 0.15s ease, background 0.15s ease;
+      letter-spacing: 0.01em;
+    }
+    .nav-link:hover { color: #fff; background: rgba(255,255,255,0.07); }
+    .nav-link:focus-visible { outline: 2px solid #4DAEE5; outline-offset: 2px; }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background: #1E56B5;
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 0.84rem;
+      border: none;
+      border-radius: 10px;
+      text-decoration: none;
+      cursor: pointer;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.3), 0 4px 12px rgba(30,86,181,0.35);
+      transition: background 0.15s ease, transform 0.12s ease, box-shadow 0.15s ease;
+    }
+    .btn-primary:hover  { background: #2563c4; box-shadow: 0 2px 4px rgba(0,0,0,0.3), 0 6px 18px rgba(30,86,181,0.45); transform: translateY(-1px); }
+    .btn-primary:active { transform: translateY(0); }
+    .btn-primary:focus-visible { outline: 2px solid #4DAEE5; outline-offset: 2px; }
+
+    .content-wrap {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 6rem 1.5rem 5rem;
+    }
+
+    .ds-breadcrumb {
+      font-size: 0.78rem;
+      color: var(--clr-b);
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .ds-breadcrumb a {
+      color: #4DAEE5;
+      text-decoration: none;
+      transition: color 0.14s ease;
+    }
+    .ds-breadcrumb a:hover { color: #7ec8f0; }
+
+    .ds-eyebrow {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #4DAEE5;
+      margin-bottom: 0.9rem;
+    }
+
+    .ds-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: var(--clr-h);
+      line-height: 1.15;
+      margin-bottom: 0.5rem;
+    }
+
+    .ds-subtitle {
+      font-size: 0.95rem;
+      color: var(--clr-b);
+      line-height: 1.75;
+      margin-bottom: 0.5rem;
+      max-width: 640px;
+    }
+
+    .ds-updated {
+      font-size: 0.78rem;
+      color: var(--clr-b);
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--bdr);
+    }
+
+    .ds-section {
+      margin-bottom: 2.8rem;
+    }
+    .ds-section h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.12rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: var(--clr-h);
+      margin-bottom: 0.9rem;
+      padding-bottom: 0.55rem;
+      border-bottom: 1px solid var(--bdr);
+    }
+    .ds-section h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--clr-h);
+      margin-top: 1.4rem;
+      margin-bottom: 0.5rem;
+    }
+    .ds-section p {
+      font-size: 0.9rem;
+      color: var(--clr-b);
+      line-height: 1.75;
+      margin-bottom: 0.85rem;
+    }
+    .ds-section ul, .ds-section ol {
+      margin: 0.5rem 0 0.85rem 1.1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+    .ds-section ul li, .ds-section ol li {
+      font-size: 0.9rem;
+      color: var(--clr-b);
+      line-height: 1.65;
+    }
+    .ds-section a {
+      color: #4DAEE5;
+      text-decoration: none;
+      transition: color 0.14s ease;
+    }
+    .ds-section a:hover { color: #7ec8f0; text-decoration: underline; }
+
+    .ds-box {
+      background: var(--bg-raised);
+      border: 1px solid var(--bdr);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      font-size: 0.88rem;
+      color: var(--clr-b);
+      line-height: 1.7;
+      margin: 1rem 0 1.2rem;
+      transition: background 0.25s ease, border-color 0.25s ease;
+    }
+    .ds-box strong {
+      color: var(--clr-h);
+      font-weight: 600;
+    }
+
+    .ds-highlight-box {
+      background: var(--bg-raised);
+      border: 1px solid var(--bdr);
+      border-left: 4px solid #1E56B5;
+      border-radius: 0 12px 12px 0;
+      padding: 1.25rem 1.5rem;
+      font-size: 0.88rem;
+      color: var(--clr-b);
+      line-height: 1.7;
+      margin: 1rem 0 1.2rem;
+      transition: background 0.25s ease, border-color 0.25s ease;
+    }
+    .ds-highlight-box strong {
+      color: var(--clr-h);
+      font-weight: 600;
+    }
+
+    .ds-step {
+      display: flex;
+      gap: 1.2rem;
+      align-items: flex-start;
+      margin-bottom: 1.5rem;
+    }
+    .ds-step-num {
+      flex-shrink: 0;
+      width: 38px;
+      height: 38px;
+      background: #1E56B5;
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: 0.95rem;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.3), 0 4px 10px rgba(30,86,181,0.3);
+    }
+    .ds-step-content h3 {
+      margin-top: 0;
+    }
+
+    .ds-table-wrap {
+      overflow-x: auto;
+      margin: 1rem 0 1.2rem;
+      border-radius: 12px;
+      border: 1px solid var(--bdr);
+    }
+    .ds-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+    }
+    .ds-table th {
+      background: var(--bg-raised);
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 0.78rem;
+      letter-spacing: 0.02em;
+      color: var(--clr-h);
+      text-align: left;
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid var(--bdr);
+    }
+    .ds-table td {
+      padding: 0.65rem 1rem;
+      color: var(--clr-b);
+      border-bottom: 1px solid var(--bdr);
+      line-height: 1.55;
+    }
+    .ds-table tr:last-child td { border-bottom: none; }
+    html.dark .ds-table th { background: var(--bg-card); }
+
+    .ds-urgency {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 0.15rem 0.5rem;
+      border-radius: 6px;
+      letter-spacing: 0.02em;
+    }
+    .ds-urgency--red { background: rgba(220,38,38,0.12); color: #dc2626; }
+    .ds-urgency--yellow { background: rgba(234,179,8,0.12); color: #b45309; }
+    .ds-urgency--green { background: rgba(22,163,74,0.12); color: #16a34a; }
+    html.dark .ds-urgency--red { background: rgba(220,38,38,0.2); color: #f87171; }
+    html.dark .ds-urgency--yellow { background: rgba(234,179,8,0.2); color: #fbbf24; }
+    html.dark .ds-urgency--green { background: rgba(22,163,74,0.2); color: #4ade80; }
+
+    .faq-item {
+      border: 1px solid var(--bdr);
+      border-radius: 12px;
+      margin-bottom: 0.65rem;
+      overflow: hidden;
+      transition: border-color 0.25s ease;
+    }
+    .faq-q {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      width: 100%;
+      padding: 1rem 1.25rem;
+      background: var(--bg-raised);
+      border: none;
+      cursor: pointer;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--clr-h);
+      text-align: left;
+      line-height: 1.5;
+      transition: background 0.15s ease, color 0.15s ease;
+    }
+    .faq-q:hover { background: var(--bg-raised); opacity: 0.85; }
+    .faq-q:focus-visible { outline: 2px solid #4DAEE5; outline-offset: -2px; }
+    .faq-q svg {
+      flex-shrink: 0;
+      transition: transform 0.2s ease;
+    }
+    .faq-item.open .faq-q svg { transform: rotate(180deg); }
+    .faq-a {
+      display: none;
+      padding: 0 1.25rem 1rem;
+      font-size: 0.87rem;
+      color: var(--clr-b);
+      line-height: 1.7;
+    }
+    .faq-item.open .faq-a { display: block; }
+    html.dark .faq-q { background: var(--bg-card); }
+
+    .cta-section {
+      background: var(--bg-raised);
+      border: 1px solid var(--bdr);
+      border-radius: 16px;
+      padding: 2.5rem 2rem;
+      text-align: center;
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+      transition: background 0.25s ease, border-color 0.25s ease;
+    }
+    .cta-section h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: var(--clr-h);
+      margin-bottom: 0.8rem;
+      border: none;
+      padding-bottom: 0;
+    }
+    .cta-section p {
+      font-size: 0.9rem;
+      color: var(--clr-b);
+      line-height: 1.75;
+      margin-bottom: 1.5rem;
+      max-width: 560px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .toc {
+      background: var(--bg-raised);
+      border: 1px solid var(--bdr);
+      border-radius: 12px;
+      padding: 1.5rem 1.75rem;
+      margin-bottom: 2.8rem;
+      transition: background 0.25s ease, border-color 0.25s ease;
+    }
+    html.dark .toc { background: var(--bg-card); }
+    .toc-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--clr-muted);
+      margin-bottom: 0.8rem;
+    }
+    .toc ol {
+      margin: 0;
+      padding-left: 1.1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+    .toc ol li {
+      font-size: 0.85rem;
+      color: var(--clr-b);
+      line-height: 1.55;
+    }
+    .toc ol li a {
+      color: #4DAEE5;
+      text-decoration: none;
+      transition: color 0.14s ease;
+    }
+    .toc ol li a:hover { color: #7ec8f0; }
+
+    footer { background: #04091a; border-top: 1px solid rgba(255,255,255,0.07); }
+
+    html.dark .ds-box { background: var(--bg-card); }
+    html.dark .ds-highlight-box { background: var(--bg-card); }
+    html.dark .cta-section { background: var(--bg-card); }
+    .logo-light { display: none; }
+    html.dark .logo-dark  { display: none !important; }
+    html.dark .logo-light { display: inline !important; }
+
+    html { overflow-y: scroll; }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: rgba(77,174,229,0.38); border-radius: 999px; }
+    ::-webkit-scrollbar-thumb:hover { background: rgba(77,174,229,0.55); }
+    html { scrollbar-width: thin; scrollbar-color: rgba(77,174,229,0.38) transparent; }
+    html.dark ::-webkit-scrollbar-thumb { background: rgba(77,174,229,0.30); }
+    html.dark ::-webkit-scrollbar-thumb:hover { background: rgba(77,174,229,0.48); }
+    html.dark { scrollbar-color: rgba(77,174,229,0.30) transparent; }
+  </style>
+  <link rel="stylesheet" href="/page-transition.css" />
+  <link rel="stylesheet" href="/cookie-consent.css" />
+  <script src="/page-transition.js" defer></script>
+
+  <!-- BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://novaris-consulting.com/"},
+      {"@type": "ListItem", "position": 2, "name": "Forschungszulage", "item": "https://novaris-consulting.com/forschungszulage.html"},
+      {"@type": "ListItem", "position": 3, "name": "Sachkosten", "item": "https://novaris-consulting.com/forschungszulage-sachkosten.html"}
+    ]
+  }
+  </script>
+
+  <!-- Article Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Forschungszulage Sachkosten 2026 – Was die Gemeinkostenpauschale für Sie bedeutet",
+    "description": "Forschungszulage Sachkosten 2026: Die neue 20% Gemeinkostenpauschale, förderfähige Materialkosten und was NICHT zählt – vollständiger Überblick.",
+    "author": {
+      "@type": "Organization",
+      "name": "NOVARIS Consulting",
+      "url": "https://novaris-consulting.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "NOVARIS Consulting",
+      "url": "https://novaris-consulting.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://novaris-consulting.com/brand_assets/Logo V5-light.svg"
+      }
+    },
+    "datePublished": "2026-03-08",
+    "dateModified": "2026-03-08",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://novaris-consulting.com/forschungszulage-sachkosten.html"
+    },
+    "keywords": ["Forschungszulage Sachkosten", "FZulG Gemeinkostenpauschale", "Forschungszulage Materialkosten", "Forschungszulage förderfähige Kosten", "FZulG 2026 Sachkosten"]
+  }
+  </script>
+
+  <!-- FAQ Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Kann ich Materialkosten direkt bei der Forschungszulage geltend machen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nein, Materialkosten und andere Sachkosten können nicht direkt als Bemessungsgrundlage angesetzt werden. Das FZulG sieht weiterhin nur Personalkosten und Auftragsforschung als direkt förderfähige Kostenarten vor. Allerdings deckt die neue 20% Gemeinkostenpauschale ab 2026 Sachkosten indirekt und pauschal ab – ohne dass Sie die Kosten einzeln nachweisen müssen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ab wann gilt die Gemeinkostenpauschale?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Die 20% Gemeinkostenpauschale wurde durch das Wachstumschancengesetz eingeführt und gilt ab dem Wirtschaftsjahr 2026. Für Wirtschaftsjahre vor 2026 können ausschließlich Personalkosten und Auftragsforschungskosten als Bemessungsgrundlage angesetzt werden."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Muss ich die Sachkosten einzeln nachweisen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nein, das ist der große Vorteil der Gemeinkostenpauschale. Die 20% werden automatisch auf die förderfähigen Personalkosten aufgeschlagen – ohne Einzelnachweis der tatsächlichen Sachkosten. Sie müssen keine Belege für Büromaterial, IT-Kosten oder Verbrauchsmaterialien sammeln. Die Pauschale wird einfach bei der Berechnung der Bemessungsgrundlage berücksichtigt."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Gilt die Gemeinkostenpauschale auch für Auftragsforschung?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nein, die 20% Gemeinkostenpauschale wird ausschließlich auf die förderfähigen Personalkosten (Bruttolöhne und -gehälter der F&E-Mitarbeiter sowie Eigenleistungen) berechnet. Auftragsforschungskosten sind davon nicht betroffen – diese werden weiterhin separat mit 60% der Vergütung an externe F&E-Partner angesetzt."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<header id="nav" class="fixed inset-x-0 top-0 z-50 nav-blur"
+        style="background:rgba(4,9,26,0.88);border-bottom:1px solid rgba(255,255,255,0.07)">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between gap-4" style="height:68px">
+    <a href="/" aria-label="NOVARIS Consulting"
+       style="text-decoration:none;flex-shrink:0;display:flex;align-items:center;transition:opacity 0.15s ease"
+       class="hover:opacity-90 focus-visible:outline-none">
+      <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto" />
+    </a>
+    <nav class="hidden lg:flex items-center gap-0.5">
+      <a href="/#was-ist-fzulg" class="nav-link">Das FZulG</a>
+      <a href="/#branchen"      class="nav-link">Branchen</a>
+      <a href="/#prozess"       class="nav-link">Prozess</a>
+      <a href="/#vorteile"      class="nav-link">Vorteile</a>
+      <a href="/#faq"           class="nav-link">FAQ</a>
+      <a href="/#kontakt"       class="nav-link">Kontakt</a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <button id="dark-toggle" onclick="toggleDark()" aria-label="Toggle dark mode"
+        class="hidden sm:flex" style="width:32px;height:32px;border-radius:8px;border:1px solid rgba(255,255,255,0.12);
+               background:rgba(255,255,255,0.07);cursor:pointer;align-items:center;
+               justify-content:center;color:rgba(255,255,255,0.7);
+               transition:background 0.15s ease,color 0.15s ease">
+        <svg id="icon-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg id="icon-sun"  width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
+      <a href="/#kontakt" class="btn-primary hidden sm:inline-flex" style="padding:0.55rem 1.35rem;font-size:0.83rem">
+        Kostenlos prüfen
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="content-wrap">
+
+    <div class="ds-breadcrumb">
+      <a href="/">Startseite</a>
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      <a href="/forschungszulage.html">Forschungszulage</a>
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      <span>Sachkosten</span>
+    </div>
+
+    <div class="ds-eyebrow">Sachkosten & Gemeinkostenpauschale</div>
+    <h1 class="ds-title">Forschungszulage Sachkosten 2026 – Was die Gemeinkostenpauschale für Sie bedeutet</h1>
+    <p class="ds-subtitle">Bisher waren nur Personalkosten förderfähig. Ab 2026 ändert sich das: Die neue 20% Gemeinkostenpauschale macht auch Sachkosten indirekt ansetzbar.</p>
+    <p class="ds-updated">Zuletzt aktualisiert: 08. März 2026 · Lesezeit: ca. 9 Minuten</p>
+
+    <!-- Table of Contents -->
+    <nav class="toc" aria-label="Inhaltsverzeichnis">
+      <div class="toc-title">Inhaltsverzeichnis</div>
+      <ol>
+        <li><a href="#ausgangslage">Die Ausgangslage: Warum Sachkosten bisher nicht förderfähig waren</a></li>
+        <li><a href="#gemeinkostenpauschale">Neu ab 2026: Die 20% Gemeinkostenpauschale</a></li>
+        <li><a href="#abdeckung">Was die Pauschale abdeckt (und was nicht)</a></li>
+        <li><a href="#vergleich">Vergleich: Vor und nach der Gemeinkostenpauschale</a></li>
+        <li><a href="#auftragsforschung">Auftragsforschung: Die andere förderfähige Kostenart</a></li>
+        <li><a href="#maximieren">So maximieren Sie Ihre förderfähigen Kosten</a></li>
+        <li><a href="#faq">FAQ: Forschungszulage Sachkosten</a></li>
+      </ol>
+    </nav>
+
+    <!-- Section 1: Ausgangslage -->
+    <div class="ds-section" id="ausgangslage">
+      <h2>Die Ausgangslage: Warum Sachkosten bisher nicht förderfähig waren</h2>
+      <p>Das Forschungszulagengesetz (FZulG) definiert in <strong>§3 FZulG</strong> abschließend, welche Aufwendungen als Bemessungsgrundlage für die Forschungszulage herangezogen werden können. Seit Inkrafttreten des Gesetzes im Jahr 2020 waren dies ausschließlich zwei Kostenarten:</p>
+      <ul>
+        <li><strong>Personalkosten:</strong> Bruttolöhne und -gehälter der Arbeitnehmer, die unmittelbar mit F&E-Vorhaben betraut sind, einschließlich der Arbeitgeberanteile zur Sozialversicherung.</li>
+        <li><strong>Auftragsforschung:</strong> 60% der Vergütung, die an externe Auftragnehmer für die Durchführung von F&E-Tätigkeiten gezahlt wird.</li>
+      </ul>
+      <p><strong>Materialkosten, Gerätebeschaffungen, Softwarelizenzen, Laborausstattung, Verbrauchsmaterialien</strong> – all diese typischen Sachkosten, die in jedem F&E-Projekt anfallen, waren nicht direkt als Bemessungsgrundlage ansetzbar. Dies galt selbst dann, wenn die Sachkosten unmittelbar und ausschließlich für förderfähige F&E-Vorhaben eingesetzt wurden.</p>
+      <p>Die Kritik aus der Wirtschaft war deutlich: Gerade in forschungsintensiven Branchen wie <a href="/branchen/pharma.html">Pharma</a>, <a href="/branchen/maschinenbau.html">Maschinenbau</a> oder <a href="/branchen/medizintechnik.html">Medizintechnik</a> machen Sachkosten einen erheblichen Teil der F&E-Aufwendungen aus. Die alleinige Fokussierung auf Personalkosten führte dazu, dass ein wesentlicher Teil der tatsächlichen F&E-Investitionen bei der Berechnung der Forschungszulage unberücksichtigt blieb. Unternehmen mit hohem Materialeinsatz in der Forschung fühlten sich gegenüber personalintensiven F&E-Betrieben benachteiligt.</p>
+
+      <div class="ds-highlight-box">
+        <strong>Kernproblem bis 2025:</strong> Ein Unternehmen, das 500.000 EUR Personalkosten und 300.000 EUR Sachkosten in F&E investiert, konnte nur die Personalkosten als Bemessungsgrundlage ansetzen. Die 300.000 EUR Sachkosten blieben bei der Forschungszulage vollständig unberücksichtigt – eine erhebliche Lücke in der Förderlogik.
+      </div>
+    </div>
+
+    <!-- Section 2: Gemeinkostenpauschale -->
+    <div class="ds-section" id="gemeinkostenpauschale">
+      <h2>Neu ab 2026: Die 20% Gemeinkostenpauschale</h2>
+      <p>Mit dem <strong>Wachstumschancengesetz</strong> hat der Gesetzgeber auf die Kritik reagiert und eine grundlegende Verbesserung eingeführt: Ab dem Wirtschaftsjahr 2026 können Unternehmen zusätzlich zu den förderfähigen Personalkosten eine <strong>pauschale Gemeinkostenerstattung von 20%</strong> ansetzen. Diese Pauschale soll die bisher nicht berücksichtigten Sachkosten pauschal abdecken.</p>
+      <p>Der entscheidende Vorteil: Die Pauschale wird <strong>ohne Einzelnachweis</strong> gewährt. Unternehmen müssen weder die tatsächlichen Sachkosten belegen noch eine Zuordnung einzelner Sachkostenpositionen zu F&E-Vorhaben vornehmen. Die 20% werden automatisch auf die förderfähigen <a href="/forschungszulage-personalkosten.html">Personalkosten</a> aufgeschlagen.</p>
+
+      <h3>So funktioniert die Berechnung</h3>
+      <p>Die Gemeinkostenpauschale wird direkt auf die förderfähigen Personalkosten berechnet und erhöht die Bemessungsgrundlage entsprechend:</p>
+
+      <div class="ds-highlight-box">
+        <strong>Rechenbeispiel:</strong><br /><br />
+        Förderfähige Personalkosten: <strong>500.000 EUR</strong><br />
+        + 20% Gemeinkostenpauschale: <strong>100.000 EUR</strong><br />
+        = Bemessungsgrundlage (Personalkosten): <strong>600.000 EUR</strong><br /><br />
+        Bei einem Fördersatz von 25%: 600.000 EUR x 25% = <strong>150.000 EUR Forschungszulage</strong><br />
+        Bei einem KMU-Fördersatz von 35%: 600.000 EUR x 35% = <strong>210.000 EUR Forschungszulage</strong><br /><br />
+        <em>Ohne Pauschale wären es nur 125.000 EUR bzw. 175.000 EUR – die Gemeinkostenpauschale bringt also 25.000 EUR bzw. 35.000 EUR zusätzliche Förderung.</em>
+      </div>
+
+      <p>Die Gemeinkostenpauschale gilt auch für <strong>Eigenleistungen</strong> von Einzelunternehmern und Gesellschaftern, die selbst an F&E-Vorhaben mitwirken. Die Eigenleistungspauschale von 40 EUR pro Stunde (max. 40h/Woche) wird ebenfalls um 20% erhöht, was die Bemessungsgrundlage für inhabergeführte Unternehmen zusätzlich steigert.</p>
+    </div>
+
+    <!-- Section 3: Was die Pauschale abdeckt -->
+    <div class="ds-section" id="abdeckung">
+      <h2>Was die Pauschale abdeckt (und was nicht)</h2>
+      <p>Die 20% Gemeinkostenpauschale ist als pauschale Abgeltung für typische F&E-begleitende Sachkosten konzipiert. Da es sich um eine Pauschale handelt, ist ein Einzelnachweis nicht erforderlich. Dennoch ist es hilfreich zu verstehen, welche Kostenarten damit abgedeckt werden sollen – und welche weiterhin nicht förderfähig sind.</p>
+
+      <h3>Pauschal abgedeckte Kosten</h3>
+      <p>Die Gemeinkostenpauschale soll typische Gemeinkosten im F&E-Betrieb abdecken. Dazu zählen insbesondere:</p>
+      <ul>
+        <li><strong>Bürokosten und Raummieten:</strong> Anteilige Miete und Nebenkosten für F&E-Arbeitsplätze und Labore</li>
+        <li><strong>IT-Infrastruktur:</strong> Server, Netzwerk, Cloud-Dienste, Hardware-Wartung und IT-Support</li>
+        <li><strong>Laborausstattung:</strong> Kleingeräte, Laboreinrichtung und laufende Wartungskosten</li>
+        <li><strong>Verbrauchsmaterialien:</strong> Chemikalien, Prototypenmaterialien, Testkomponenten und sonstiges Verbrauchsmaterial</li>
+        <li><strong>Softwarelizenzen:</strong> CAD-Software, Simulationstools, Entwicklungsumgebungen und Analyse-Software</li>
+        <li><strong>Reisekosten:</strong> F&E-bezogene Dienstreisen, Konferenzbesuche und Messeteilnahmen</li>
+        <li><strong>Allgemeine Verwaltungskosten:</strong> Anteilige Kosten für Buchhaltung, Personalverwaltung und Management-Overhead</li>
+      </ul>
+
+      <h3>NICHT abgedeckte Kosten</h3>
+      <p>Die Gemeinkostenpauschale hat klare Grenzen. Folgende Kostenarten werden auch durch die Pauschale <strong>nicht</strong> als förderfähig anerkannt:</p>
+      <ul>
+        <li><strong>Investitionen in Anlagen und Maschinen:</strong> Große Investitionsgüter, die über die üblichen Gemeinkosten hinausgehen, sind nicht pauschal abgegolten</li>
+        <li><strong>Grundstücke und Immobilien:</strong> Kauf oder Bau von Forschungsgebäuden und Grundstücken</li>
+        <li><strong>Nicht-F&E-bezogene Kosten:</strong> Vertriebskosten, Marketing, allgemeine Geschäftsführung ohne F&E-Bezug</li>
+        <li><strong>Abschreibungen auf Großgeräte:</strong> AfA auf teure Spezialmaschinen und Forschungsgroßgeräte</li>
+      </ul>
+
+      <div class="ds-box">
+        <strong>Wichtig zu verstehen:</strong> Die Gemeinkostenpauschale von 20% wird pauschal gewährt – unabhängig davon, ob Ihre tatsächlichen Sachkosten höher oder niedriger sind. Unternehmen mit geringen Sachkosten profitieren überproportional, während Unternehmen mit sehr hohen Sachkosten möglicherweise feststellen, dass die 20% Pauschale ihre tatsächlichen Kosten nicht vollständig widerspiegelt. Dennoch ist die Pauschale in jedem Fall ein Zugewinn, da zuvor gar keine Sachkosten berücksichtigt wurden.
+      </div>
+    </div>
+
+    <!-- Section 4: Vergleich -->
+    <div class="ds-section" id="vergleich">
+      <h2>Vergleich: Vor und nach der Gemeinkostenpauschale</h2>
+      <p>Die folgende Tabelle zeigt die wesentlichen Änderungen bei den förderfähigen Kostenarten vor und nach Einführung der Gemeinkostenpauschale:</p>
+
+      <div class="ds-table-wrap">
+        <table class="ds-table">
+          <thead>
+            <tr>
+              <th>Kostenart</th>
+              <th>Vor 2026</th>
+              <th>Ab 2026</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Personalkosten</strong> (Bruttolöhne F&E-Mitarbeiter)</td>
+              <td>Ja, voll ansetzbar</td>
+              <td>Ja, voll ansetzbar</td>
+            </tr>
+            <tr>
+              <td><strong>Sachkosten</strong> (Material, IT, Labor etc.)</td>
+              <td>Nein, nicht förderfähig</td>
+              <td>Ja, über 20% Pauschale auf Personalkosten</td>
+            </tr>
+            <tr>
+              <td><strong>Auftragsforschung</strong> (externe F&E)</td>
+              <td>60% der Vergütung</td>
+              <td>60% der Vergütung (unverändert)</td>
+            </tr>
+            <tr>
+              <td><strong>Eigenleistungen</strong> (Einzelunternehmer/Gesellschafter)</td>
+              <td>40 EUR/Stunde</td>
+              <td>40 EUR/Stunde + 20% Pauschale</td>
+            </tr>
+            <tr>
+              <td><strong>Bemessungsgrundlage bei 500k Personalkosten</strong></td>
+              <td>500.000 EUR</td>
+              <td>600.000 EUR (+20%)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="ds-highlight-box">
+        <strong>Fazit:</strong> Die Gemeinkostenpauschale erhöht die Bemessungsgrundlage automatisch um 20% – bei gleichem Personalaufwand steigt die Forschungszulage um bis zu 20%. In Kombination mit dem erhöhten KMU-Fördersatz von 35% und der auf 12 Mio. EUR verdreifachten Bemessungsgrundlage ist <a href="/forschungszulage-2026.html">2026 das bisher attraktivste Jahr</a> für die Forschungszulage.
+      </div>
+    </div>
+
+    <!-- Section 5: Auftragsforschung -->
+    <div class="ds-section" id="auftragsforschung">
+      <h2>Auftragsforschung: Die andere förderfähige Kostenart</h2>
+      <p>Neben Personalkosten und der neuen Gemeinkostenpauschale gibt es eine weitere wichtige Kostenart, die bei der Forschungszulage berücksichtigt wird: die <strong>Auftragsforschung</strong>. Wenn Ihr Unternehmen F&E-Leistungen an externe Partner vergibt, können <strong>60% der Vergütung</strong> als Bemessungsgrundlage angesetzt werden.</p>
+
+      <p>Typische externe F&E-Partner sind:</p>
+      <ul>
+        <li><strong>Universitäten und Hochschulen:</strong> Kooperative Forschungsprojekte mit akademischen Partnern</li>
+        <li><strong>Fraunhofer-Institute und andere Forschungseinrichtungen:</strong> Angewandte Forschung und Technologietransfer</li>
+        <li><strong>Andere Unternehmen:</strong> Entwicklungsaufträge an spezialisierte Dienstleister und Technologiepartner</li>
+        <li><strong>Freie Forschungseinrichtungen:</strong> Private Forschungslabore und Institute</li>
+      </ul>
+
+      <p>Die <strong>60%-Regel</strong> bei der Auftragsforschung hat einen praktischen Hintergrund: Der Gesetzgeber geht davon aus, dass 60% der Vergütung Personalkosten des Auftragnehmers entsprechen, da nur diese förderfähig sein sollen. Die restlichen 40% werden als Sachkosten und Gewinnmarge des Auftragnehmers betrachtet.</p>
+
+      <div class="ds-box">
+        <strong>Hinweis:</strong> Die 20% Gemeinkostenpauschale wird <strong>nicht</strong> auf Auftragsforschungskosten berechnet – sie gilt ausschließlich für eigene Personalkosten und Eigenleistungen. Detaillierte Informationen zur Auftragsforschung finden Sie in unserem <a href="/forschungszulage-auftragsforschung.html">Ratgeber zur Auftragsforschung & 60%-Regel</a>.
+      </div>
+    </div>
+
+    <!-- Section 6: Maximieren -->
+    <div class="ds-section" id="maximieren">
+      <h2>So maximieren Sie Ihre förderfähigen Kosten</h2>
+      <p>Um die maximale Forschungszulage zu erhalten, sollten Sie alle förderfähigen Kostenarten konsequent erfassen und optimieren. Die folgenden vier Hebel stehen Ihnen zur Verfügung:</p>
+
+      <div class="ds-step">
+        <div class="ds-step-num">1</div>
+        <div class="ds-step-content">
+          <h3>Alle F&E-Mitarbeiter vollständig erfassen</h3>
+          <p style="font-size:0.9rem;color:var(--clr-b);line-height:1.75;margin-bottom:0">Die Personalkosten bilden die Basis Ihrer Bemessungsgrundlage. Stellen Sie sicher, dass <strong>alle Mitarbeiter</strong>, die an förderfähigen F&E-Vorhaben mitwirken, erfasst werden – nicht nur die offensichtlichen Entwickler, sondern auch Projektleiter, Tester, Techniker und Wissenschaftler mit F&E-Anteil. Eine saubere <a href="/forschungszulage-zeiterfassung.html">Zeiterfassung</a> ist dabei essenziell.</p>
+        </div>
+      </div>
+
+      <div class="ds-step">
+        <div class="ds-step-num">2</div>
+        <div class="ds-step-content">
+          <h3>Auftragsforschung einbeziehen</h3>
+          <p style="font-size:0.9rem;color:var(--clr-b);line-height:1.75;margin-bottom:0">Prüfen Sie, ob externe F&E-Vergütungen vorliegen. <strong>60% der Auftragsforschungskosten</strong> erhöhen Ihre Bemessungsgrundlage zusätzlich zu den Personalkosten. Auch Kooperationen mit Universitäten, Fraunhofer-Instituten oder spezialisierten Dienstleistern zählen hier.</p>
+        </div>
+      </div>
+
+      <div class="ds-step">
+        <div class="ds-step-num">3</div>
+        <div class="ds-step-content">
+          <h3>Eigenleistungen nicht vergessen</h3>
+          <p style="font-size:0.9rem;color:var(--clr-b);line-height:1.75;margin-bottom:0">Wenn Gesellschafter oder Einzelunternehmer selbst an F&E mitwirken, können bis zu <strong>40 EUR pro Stunde</strong> (max. 40h/Woche) als Eigenleistung angesetzt werden. Ab 2026 kommt die 20% Gemeinkostenpauschale auch auf diese Eigenleistungen obendrauf – ein zusätzlicher Bonus für inhabergeführte Unternehmen.</p>
+        </div>
+      </div>
+
+      <div class="ds-step">
+        <div class="ds-step-num">4</div>
+        <div class="ds-step-content">
+          <h3>Gemeinkostenpauschale automatisch mitnehmen</h3>
+          <p style="font-size:0.9rem;color:var(--clr-b);line-height:1.75;margin-bottom:0">Die 20% Gemeinkostenpauschale wird automatisch auf Ihre förderfähigen Personalkosten und Eigenleistungen aufgeschlagen. Sie müssen nichts Zusätzliches beantragen – aber Sie sollten sicherstellen, dass Ihre Personalkosten-Basis möglichst vollständig ist, denn davon hängt die Höhe der Pauschale ab.</p>
+        </div>
+      </div>
+
+      <div class="ds-highlight-box">
+        <strong>Maximale Förderung berechnen:</strong> Mit unserem <a href="/forschungszulage-rechner.html">Forschungszulagen-Rechner</a> können Sie in wenigen Sekunden berechnen, wie hoch Ihre Forschungszulage mit allen Kostenarten – Personalkosten, Auftragsforschung, Eigenleistungen und Gemeinkostenpauschale – ausfällt.
+      </div>
+    </div>
+
+    <!-- Section 7: FAQ -->
+    <div class="ds-section" id="faq">
+      <h2>FAQ: Forschungszulage Sachkosten</h2>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          Kann ich Materialkosten direkt bei der Forschungszulage geltend machen?
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>Nein, Materialkosten und andere Sachkosten können <strong>nicht direkt</strong> als Bemessungsgrundlage angesetzt werden. Das FZulG sieht weiterhin nur Personalkosten und Auftragsforschung als direkt förderfähige Kostenarten vor. Allerdings deckt die neue <strong>20% Gemeinkostenpauschale</strong> ab 2026 Sachkosten indirekt und pauschal ab – ohne dass Sie die Kosten einzeln nachweisen müssen. Die Pauschale wird automatisch auf Ihre förderfähigen Personalkosten aufgeschlagen.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          Ab wann gilt die Gemeinkostenpauschale?
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>Die 20% Gemeinkostenpauschale wurde durch das <strong>Wachstumschancengesetz</strong> eingeführt und gilt ab dem <strong>Wirtschaftsjahr 2026</strong>. Für Wirtschaftsjahre vor 2026 können ausschließlich Personalkosten und Auftragsforschungskosten als Bemessungsgrundlage angesetzt werden. Eine rückwirkende Anwendung der Pauschale auf frühere Jahre ist nicht möglich.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          Muss ich die Sachkosten einzeln nachweisen?
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>Nein, das ist der große Vorteil der Gemeinkostenpauschale. Die 20% werden <strong>automatisch</strong> auf die förderfähigen Personalkosten aufgeschlagen – ohne Einzelnachweis der tatsächlichen Sachkosten. Sie müssen keine Belege für Büromaterial, IT-Kosten oder Verbrauchsmaterialien sammeln. Die Pauschale wird einfach bei der Berechnung der Bemessungsgrundlage berücksichtigt. Das spart erheblichen Dokumentationsaufwand.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          Gilt die Gemeinkostenpauschale auch für Auftragsforschung?
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>Nein, die 20% Gemeinkostenpauschale wird <strong>ausschließlich auf die förderfähigen Personalkosten</strong> (Bruttolöhne und -gehälter der F&E-Mitarbeiter sowie Eigenleistungen) berechnet. Auftragsforschungskosten sind davon nicht betroffen – diese werden weiterhin separat mit 60% der Vergütung an externe F&E-Partner angesetzt. Die Gemeinkostenpauschale und die Auftragsforschung sind zwei unabhängige Kostenarten in der Bemessungsgrundlage.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Related Content -->
+    <div class="ds-section" style="margin-top:2rem">
+      <h2>Weiterführende Inhalte zur Forschungszulage</h2>
+      <p>Vertiefen Sie Ihr Wissen mit unseren spezialisierten Ressourcen:</p>
+      <ul>
+        <li><a href="/forschungszulage.html" style="color:#1E56B5;font-weight:600"><strong>Forschungszulage Leitfaden</strong></a> – Der komplette Überblick zum FZulG 2026</li>
+        <li><a href="/forschungszulage-personalkosten.html" style="color:#1E56B5;font-weight:600"><strong>Personalkosten im FZulG</strong></a> – Alles zu förderfähigen Bruttolöhnen und Zeiterfassung</li>
+        <li><a href="/forschungszulage-auftragsforschung.html" style="color:#1E56B5;font-weight:600"><strong>Auftragsforschung & 60%-Regel</strong></a> – Externe F&E-Kosten förderfähig machen</li>
+        <li><a href="/forschungszulage-rechner.html" style="color:#1E56B5;font-weight:600"><strong>Forschungszulagen Rechner</strong></a> – Berechnen Sie Ihre individuelle Förderung in 30 Sekunden</li>
+        <li><a href="/forschungszulage-2026.html" style="color:#1E56B5;font-weight:600"><strong>Forschungszulage 2026</strong></a> – Alle Neuerungen im Überblick</li>
+      </ul>
+    </div>
+
+    <!-- CTA Box -->
+    <div class="cta-section">
+      <h2>Maximieren Sie Ihre Forschungszulage – mit allen förderfähigen Kosten</h2>
+      <p>Lassen Sie sich kostenlos und unverbindlich beraten, wie Sie Personalkosten, Auftragsforschung und die neue Gemeinkostenpauschale optimal kombinieren.</p>
+      <a href="/#kontakt" class="btn-primary" style="padding:0.7rem 1.8rem;font-size:0.9rem">
+        Kostenlose Erstanalyse anfragen
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+
+  </div>
+</main>
+
+<footer style="background:#04091a;border-top:1px solid rgba(255,255,255,0.07)">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
+      <div class="lg:col-span-2">
+        <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto;margin-bottom:1rem" />
+        <p style="font-size:0.82rem;color:rgba(195,215,245,0.38);line-height:1.72;max-width:320px">
+          NOVARIS Consulting ist Ihr spezialisierter Full-Service-Partner für die staatliche
+          Forschungszulage nach dem FZulG – erfolgsbasiert, transparent und ohne Risiko.
+        </p>
+      </div>
+      <div>
+        <div style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.75rem;letter-spacing:0.09em;text-transform:uppercase;color:rgba(195,215,245,0.3);margin-bottom:1rem">Navigation</div>
+        <div style="display:flex;flex-direction:column;gap:0.55rem">
+          <a href="/#was-ist-fzulg" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Das FZulG</a>
+          <a href="/#prozess"       style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Prozess</a>
+          <a href="/#vorteile"      style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Vorteile</a>
+          <a href="/#faq"           style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">FAQ</a>
+          <a href="/#kontakt"       style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Kontakt</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.75rem;letter-spacing:0.09em;text-transform:uppercase;color:rgba(195,215,245,0.3);margin-bottom:1rem">Rechtliches</div>
+        <div style="display:flex;flex-direction:column;gap:0.55rem">
+          <a href="/impressum.html"  style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Impressum</a>
+          <a href="/datenschutz.html" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Datenschutz</a>
+          <a href="/agb.html"        style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">AGB</a>
+          <a href="javascript:void(0)" onclick="CookieConsent.reset();CookieConsent.request(function(){});" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Cookie-Einstellungen</a>
+        </div>
+      </div>
+    </div>
+    <div style="height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.08) 25%,rgba(255,255,255,0.08) 75%,transparent);margin-bottom:1.5rem"></div>
+    <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem">
+      <p style="font-size:0.73rem;color:rgba(195,215,245,0.25)">&copy; 2026 NOVARIS Consulting · Alle Rechte vorbehalten.</p>
+      <p style="font-size:0.73rem;color:rgba(195,215,245,0.18)">Diese Website stellt keine Steuer- oder Rechtsberatung dar.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function() {
+    if (localStorage.getItem('theme') === 'dark') {
+      document.documentElement.classList.add('dark');
+    }
+  })();
+
+  function toggleDark() {
+    const dark = document.documentElement.classList.toggle('dark');
+    localStorage.setItem('theme', dark ? 'dark' : 'light');
+    _updateDarkBtn();
+  }
+
+  function _updateDarkBtn() {
+    const dark = document.documentElement.classList.contains('dark');
+    const moon = document.getElementById('icon-moon');
+    const sun  = document.getElementById('icon-sun');
+    if (moon) moon.style.display = dark ? 'none'  : 'block';
+    if (sun)  sun.style.display  = dark ? 'block' : 'none';
+  }
+
+  window.addEventListener('DOMContentLoaded', _updateDarkBtn);
+</script>
+
+<script src="/cookie-consent.js" defer></script>
+<script src="/analytics.js" defer></script>
+</body>
+</html>

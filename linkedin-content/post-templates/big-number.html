@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>Big Number Template</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800;900&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    .card {
+      width: 1080px; height: 1080px;
+      background: linear-gradient(145deg, #0A1C38 0%, #0F2747 40%, #123E6B 80%, #0F2747 100%);
+      position: relative; overflow: hidden;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+    }
+    .grain { position: absolute; inset: 0; z-index: 1; pointer-events: none; }
+    .grid-bg { position: absolute; inset: 0; z-index: 1;
+      background-image: linear-gradient(rgba(79,163,227,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(79,163,227,0.03) 1px, transparent 1px);
+      background-size: 54px 54px; }
+    .glow-center { position: absolute; width: 700px; height: 700px; top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      background: radial-gradient(circle, rgba(30,109,181,0.2) 0%, transparent 60%); z-index: 2; }
+    .glow-top { position: absolute; width: 500px; height: 500px; top: -200px; right: -100px;
+      background: radial-gradient(circle, rgba(79,163,227,0.15) 0%, transparent 60%); z-index: 2; }
+    .content { position: relative; z-index: 10; text-align: center; }
+    .logo { height: 40px; margin-bottom: 60px; opacity: 0.6; }
+    .big-number {
+      font-family: 'Montserrat', sans-serif; font-weight: 900;
+      font-size: 180px; line-height: 1; letter-spacing: -0.04em;
+      background: linear-gradient(180deg, #FFFFFF 30%, #4FA3E3 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+      margin-bottom: 30px;
+      filter: drop-shadow(0 0 60px rgba(79,163,227,0.3));
+    }
+    .subtitle { font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 32px;
+      color: rgba(255,255,255,0.9); letter-spacing: -0.02em; margin-bottom: 16px; }
+    .desc { font-family: 'Inter', sans-serif; font-weight: 300; font-size: 20px;
+      color: rgba(255,255,255,0.45); max-width: 600px; line-height: 1.6; }
+    .bottom-bar { position: absolute; bottom: 50px; left: 50%; transform: translateX(-50%);
+      display: flex; align-items: center; gap: 12px; z-index: 10; }
+    .bottom-bar .line { width: 40px; height: 2px; background: rgba(79,163,227,0.3); }
+    .bottom-bar .url { font-family: 'Inter', sans-serif; font-weight: 400; font-size: 14px;
+      color: rgba(79,163,227,0.5); letter-spacing: 0.08em; }
+    .accent-line { position: absolute; bottom: 0; left: 0; width: 100%; height: 3px;
+      background: linear-gradient(90deg, transparent, #1E6DB5 30%, #4FA3E3 70%, transparent); z-index: 10; }
+    /* Animated ring */
+    .ring { position: absolute; width: 600px; height: 600px; top: 50%; left: 50%;
+      transform: translate(-50%, -50%); border: 1px solid rgba(79,163,227,0.08);
+      border-radius: 50%; z-index: 3; }
+    .ring2 { position: absolute; width: 800px; height: 800px; top: 50%; left: 50%;
+      transform: translate(-50%, -50%); border: 1px solid rgba(79,163,227,0.04);
+      border-radius: 50%; z-index: 3; }
+  </style>
+</head>
+<body style="margin:0;padding:0;background:#0F2747;width:1080px;height:1080px;overflow:hidden;">
+  <div class="card">
+    <svg class="grain" xmlns="http://www.w3.org/2000/svg">
+      <filter id="g"><feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/></filter>
+      <rect width="100%" height="100%" filter="url(#g)" opacity="0.05"/>
+    </svg>
+    <div class="grid-bg"></div>
+    <div class="glow-center"></div>
+    <div class="glow-top"></div>
+    <div class="ring"></div>
+    <div class="ring2"></div>
+    <div class="content">
+      <img class="logo" src="/brand_assets/Logo V5-light.svg" alt="NOVARIS" />
+      <div class="big-number" id="number">35%</div>
+      <div class="subtitle" id="subtitle">Ihrer F&E-Kosten zurück</div>
+      <div class="desc" id="desc">Direkt als Steuergutschrift. Ohne Rückzahlung. Jedes Jahr.</div>
+    </div>
+    <div class="bottom-bar">
+      <div class="line"></div>
+      <div class="url">novaris-consulting.com</div>
+      <div class="line"></div>
+    </div>
+    <div class="accent-line"></div>
+  </div>
+</body>
+</html>

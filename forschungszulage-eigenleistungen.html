@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forschungszulage Eigenleistungen: 40 €/h Pauschale für Unternehmer | NOVARIS</title>
+  <meta name="description" content="Forschungszulage Eigenleistungen: Einzelunternehmer und Gesellschafter können 40 €/h für eigene F&E-Arbeit geltend machen. Voraussetzungen, Berechnung und Beispiele." />
+  <meta name="keywords" content="Forschungszulage Eigenleistungen, FZulG 40 Euro Stunde, Forschungszulage Einzelunternehmer, Forschungszulage Gesellschafter, Forschungszulage Freiberufler" />
+  <link rel="canonical" href="https://novaris-consulting.com/forschungszulage-eigenleistungen.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Forschungszulage Eigenleistungen: 40 €/h Pauschale für Unternehmer | NOVARIS" />
+  <meta property="og:description" content="Forschungszulage Eigenleistungen: Einzelunternehmer und Gesellschafter können 40 €/h für eigene F&E-Arbeit geltend machen. Voraussetzungen, Berechnung und Beispiele." />
+  <meta property="og:url" content="https://novaris-consulting.com/forschungszulage-eigenleistungen.html" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:site_name" content="NOVARIS Consulting" />
+  <meta property="og:image" content="https://novaris-consulting.com/brand_assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Forschungszulage Eigenleistungen: 40 €/h Pauschale | NOVARIS" />
+  <meta name="twitter:description" content="Einzelunternehmer und Gesellschafter können 40 €/h für eigene F&E-Arbeit geltend machen. Voraussetzungen, Berechnung und Beispiele." />
+  <meta name="twitter:image" content="https://novaris-consulting.com/brand_assets/og-image.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --bg-base:    #ffffff;
+      --bg-raised:  #f5f8fe;
+      --bg-card:    #ffffff;
+      --clr-h:      #0D1B3E;
+      --clr-b:      #5a6e8c;
+      --clr-muted:  #4a5870;
+      --bdr:        #dde5f4;
+    }
+    html.dark {
+      --bg-base:    #0a1428;
+      --bg-raised:  #0D1B3E;
+      --bg-card:    #122244;
+      --clr-h:      #e8f0fa;
+      --clr-b:      #8aaac8;
+      --clr-muted:  #6888a8;
+      --bdr:        rgba(77,174,229,0.18);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg-base);
+      color: var(--clr-h);
+      transition: background 0.25s ease, color 0.25s ease;
+      line-height: 1.7;
+    }
+
+    .nav-blur { backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); }
+    .logo-img { height: 52px; width: auto; display: block; }
+
+    .nav-link {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.84rem;
+      font-weight: 500;
+      color: rgba(195,215,245,0.70);
+      text-decoration: none;
+      padding: 0.42rem 0.85rem;
+      border-radius: 8px;
+      transition: color 0.15s ease, background 0.15s ease;
+      letter-spacing: 0.01em;
+    }
+    .nav-link:hover { color: #fff; background: rgba(255,255,255,0.07); }
+    .nav-link:focus-visible { outline: 2px solid #4DAEE5; outline-offset: 2px; }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background: #1E56B5;
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 0.84rem;
+      border: none;
+      border-radius: 10px;
+      text-decoration: none;
+      cursor: pointer;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.3), 0 4px 12px rgba(30,86,181,0.35);
+      transition: background 0.15s ease, transform 0.12s ease, box-shadow 0.15s ease;
+    }
+    .btn-primary:hover  { background: #2563c4; box-shadow: 0 2px 4px rgba(0,0,0,0.3), 0 6px 18px rgba(30,86,181,0.45); transform: translateY(-1px); }
+    .btn-primary:active { transform: translateY(0); }
+    .btn-primary:focus-visible { outline: 2px solid #4DAEE5; outline-offset: 2px; }
+
+    .content-wrap {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 6rem 1.5rem 5rem;
+    }
+
+    .ds-breadcrumb {
+      font-size: 0.78rem;
+      color: var(--clr-b);
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .ds-breadcrumb a {
+      color: #4DAEE5;
+      text-decoration: none;
+      transition: color 0.14s ease;
+    }
+    .ds-breadcrumb a:hover { color: #7ec8f0; }
+
+    .ds-eyebrow {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #4DAEE5;
+      margin-bottom: 0.9rem;
+    }
+
+    .ds-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: var(--clr-h);
+      line-height: 1.15;
+      margin-bottom: 0.5rem;
+    }
+
+    .ds-subtitle {
+      font-size: 0.95rem;
+      color: var(--clr-b);
+      line-height: 1.75;
+      margin-bottom: 0.5rem;
+      max-width: 640px;
+    }
+
+    .ds-updated {
+      font-size: 0.78rem;
+      color: var(--clr-b);
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--bdr);
+    }
+
+    .ds-section {
+      margin-bottom: 2.8rem;
+    }
+    .ds-section h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.12rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: var(--clr-h);
+      margin-bottom: 0.9rem;
+      padding-bottom: 0.55rem;
+      border-bottom: 1px solid var(--bdr);
+    }
+    .ds-section h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--clr-h);
+      margin-top: 1.4rem;
+      margin-bottom: 0.5rem;
+    }
+    .ds-section p {
+      font-size: 0.9rem;
+      color: var(--clr-b);
+      line-height: 1.75;
+      margin-bottom: 0.85rem;
+    }
+    .ds-section ul, .ds-section ol {
+      margin: 0.5rem 0 0.85rem 1.1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+    .ds-section ul li, .ds-section ol li {
+      font-size: 0.9rem;
+      color: var(--clr-b);
+      line-height: 1.65;
+    }
+    .ds-section a {
+      color: #4DAEE5;
+      text-decoration: none;
+      transition: color 0.14s ease;
+    }
+    .ds-section a:hover { color: #7ec8f0; text-decoration: underline; }
+
+    .ds-box {
+      background: var(--bg-raised);
+      border: 1px solid var(--bdr);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      font-size: 0.88rem;
+      color: var(--clr-b);
+      line-height: 1.7;
+      margin: 1rem 0 1.2rem;
+      transition: background 0.25s ease, border-color 0.25s ease;
+    }
+    .ds-box strong {
+      color: var(--clr-h);
+      font-weight: 600;
+    }
+
+    .ds-highlight-box {
+      background: var(--bg-raised);
+      border: 1px solid var(--bdr);
+      border-left: 4px solid #1E56B5;
+      border-radius: 0 12px 12px 0;
+      padding: 1.25rem 1.5rem;
+      font-size: 0.88rem;
+      color: var(--clr-b);
+      line-height: 1.7;
+      margin: 1rem 0 1.2rem;
+      transition: background 0.25s ease, border-color 0.25s ease;
+    }
+    .ds-highlight-box strong {
+      color: var(--clr-h);
+      font-weight: 600;
+    }
+
+    .ds-step {
+      display: flex;
+      gap: 1.2rem;
+      align-items: flex-start;
+      margin-bottom: 1.5rem;
+    }
+    .ds-step-num {
+      flex-shrink: 0;
+      width: 38px;
+      height: 38px;
+      background: #1E56B5;
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: 0.95rem;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.3), 0 4px 10px rgba(30,86,181,0.3);
+    }
+    .ds-step-content h3 {
+      margin-top: 0;
+    }
+
+    .ds-table-wrap {
+      overflow-x: auto;
+      margin: 1rem 0 1.2rem;
+      border-radius: 12px;
+      border: 1px solid var(--bdr);
+    }
+    .ds-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+    }
+    .ds-table th {
+      background: var(--bg-raised);
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 0.78rem;
+      letter-spacing: 0.02em;
+      color: var(--clr-h);
+      text-align: left;
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid var(--bdr);
+    }
+    .ds-table td {
+      padding: 0.65rem 1rem;
+      color: var(--clr-b);
+      border-bottom: 1px solid var(--bdr);
+      line-height: 1.55;
+    }
+    .ds-table tr:last-child td { border-bottom: none; }
+    html.dark .ds-table th { background: var(--bg-card); }
+
+    .ds-urgency {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 0.15rem 0.5rem;
+      border-radius: 6px;
+      letter-spacing: 0.02em;
+    }
+    .ds-urgency--red { background: rgba(220,38,38,0.12); color: #dc2626; }
+    .ds-urgency--yellow { background: rgba(234,179,8,0.12); color: #b45309; }
+    .ds-urgency--green { background: rgba(22,163,74,0.12); color: #16a34a; }
+    html.dark .ds-urgency--red { background: rgba(220,38,38,0.2); color: #f87171; }
+    html.dark .ds-urgency--yellow { background: rgba(234,179,8,0.2); color: #fbbf24; }
+    html.dark .ds-urgency--green { background: rgba(22,163,74,0.2); color: #4ade80; }
+
+    .faq-item {
+      border: 1px solid var(--bdr);
+      border-radius: 12px;
+      margin-bottom: 0.65rem;
+      overflow: hidden;
+      transition: border-color 0.25s ease;
+    }
+    .faq-q {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      width: 100%;
+      padding: 1rem 1.25rem;
+      background: var(--bg-raised);
+      border: none;
+      cursor: pointer;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--clr-h);
+      text-align: left;
+      line-height: 1.5;
+      transition: background 0.15s ease, color 0.15s ease;
+    }
+    .faq-q:hover { background: var(--bg-raised); opacity: 0.85; }
+    .faq-q:focus-visible { outline: 2px solid #4DAEE5; outline-offset: -2px; }
+    .faq-q svg {
+      flex-shrink: 0;
+      transition: transform 0.2s ease;
+    }
+    .faq-item.open .faq-q svg { transform: rotate(180deg); }
+    .faq-a {
+      display: none;
+      padding: 0 1.25rem 1rem;
+      font-size: 0.87rem;
+      color: var(--clr-b);
+      line-height: 1.7;
+    }
+    .faq-item.open .faq-a { display: block; }
+    html.dark .faq-q { background: var(--bg-card); }
+
+    .cta-section {
+      background: var(--bg-raised);
+      border: 1px solid var(--bdr);
+      border-radius: 16px;
+      padding: 2.5rem 2rem;
+      text-align: center;
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+      transition: background 0.25s ease, border-color 0.25s ease;
+    }
+    .cta-section h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: var(--clr-h);
+      margin-bottom: 0.8rem;
+      border: none;
+      padding-bottom: 0;
+    }
+    .cta-section p {
+      font-size: 0.9rem;
+      color: var(--clr-b);
+      line-height: 1.75;
+      margin-bottom: 1.5rem;
+      max-width: 560px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .toc {
+      background: var(--bg-raised);
+      border: 1px solid var(--bdr);
+      border-radius: 12px;
+      padding: 1.5rem 1.75rem;
+      margin-bottom: 2.8rem;
+      transition: background 0.25s ease, border-color 0.25s ease;
+    }
+    html.dark .toc { background: var(--bg-card); }
+    .toc-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--clr-muted);
+      margin-bottom: 0.8rem;
+    }
+    .toc ol {
+      margin: 0;
+      padding-left: 1.1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+    .toc ol li {
+      font-size: 0.85rem;
+      color: var(--clr-b);
+      line-height: 1.55;
+    }
+    .toc ol li a {
+      color: #4DAEE5;
+      text-decoration: none;
+      transition: color 0.14s ease;
+    }
+    .toc ol li a:hover { color: #7ec8f0; }
+
+    footer { background: #04091a; border-top: 1px solid rgba(255,255,255,0.07); }
+
+    html.dark .ds-box { background: var(--bg-card); }
+    html.dark .ds-highlight-box { background: var(--bg-card); }
+    html.dark .cta-section { background: var(--bg-card); }
+    .logo-light { display: none; }
+    html.dark .logo-dark  { display: none !important; }
+    html.dark .logo-light { display: inline !important; }
+
+    html { overflow-y: scroll; }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: rgba(77,174,229,0.38); border-radius: 999px; }
+    ::-webkit-scrollbar-thumb:hover { background: rgba(77,174,229,0.55); }
+    html { scrollbar-width: thin; scrollbar-color: rgba(77,174,229,0.38) transparent; }
+    html.dark ::-webkit-scrollbar-thumb { background: rgba(77,174,229,0.30); }
+    html.dark ::-webkit-scrollbar-thumb:hover { background: rgba(77,174,229,0.48); }
+    html.dark { scrollbar-color: rgba(77,174,229,0.30) transparent; }
+  </style>
+  <link rel="stylesheet" href="/page-transition.css" />
+  <link rel="stylesheet" href="/cookie-consent.css" />
+  <script src="/page-transition.js" defer></script>
+
+  <!-- BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://novaris-consulting.com/"},
+      {"@type": "ListItem", "position": 2, "name": "Forschungszulage", "item": "https://novaris-consulting.com/forschungszulage.html"},
+      {"@type": "ListItem", "position": 3, "name": "Eigenleistungen", "item": "https://novaris-consulting.com/forschungszulage-eigenleistungen.html"}
+    ]
+  }
+  </script>
+
+  <!-- Article Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Forschungszulage Eigenleistungen – 40 €/h für Ihre eigene F&E-Arbeit",
+    "description": "Forschungszulage Eigenleistungen: Einzelunternehmer und Gesellschafter können 40 €/h für eigene F&E-Arbeit geltend machen. Voraussetzungen, Berechnung und Beispiele.",
+    "author": {
+      "@type": "Organization",
+      "name": "NOVARIS Consulting",
+      "url": "https://novaris-consulting.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "NOVARIS Consulting",
+      "url": "https://novaris-consulting.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://novaris-consulting.com/brand_assets/Logo V5-light.svg"
+      }
+    },
+    "datePublished": "2026-03-08",
+    "dateModified": "2026-03-08",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://novaris-consulting.com/forschungszulage-eigenleistungen.html"
+    },
+    "keywords": ["Forschungszulage Eigenleistungen", "FZulG 40 Euro Stunde", "Forschungszulage Einzelunternehmer", "Forschungszulage Gesellschafter", "Forschungszulage Freiberufler"]
+  }
+  </script>
+
+  <!-- FAQ Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Wie viele Stunden kann ich maximal ansetzen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Es gibt keine gesetzliche Obergrenze für die Anzahl der ansetzbaren Stunden. Allerdings muss die Stundenanzahl plausibel sein. Als Richtwert gelten ca. 1.600 bis 1.800 Stunden pro Jahr bei Vollzeit-F&E-Tätigkeit. Deutlich höhere Werte könnten bei einer Prüfung durch das Finanzamt beanstandet werden. Entscheidend ist, dass jede einzelne Stunde durch die Zeiterfassung belegbar ist."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Muss ich die 40 €/h nachweisen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nein, die 40 € pro Stunde sind eine gesetzlich festgelegte Pauschale gemäß §3 Abs. 4 FZulG. Sie müssen keinen Nachweis über tatsächlich entstandene Kosten erbringen. Was Sie jedoch nachweisen müssen, sind die tatsächlich geleisteten F&E-Stunden – eine lückenlose, GoBD-konforme Zeiterfassung ist daher Pflicht."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kann ich als GmbH-Geschäftsführer Eigenleistungen geltend machen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nur wenn Sie als GmbH-Geschäftsführer kein Gehalt beziehen. Beziehen Sie ein Geschäftsführergehalt, werden Ihre F&E-Tätigkeiten über die Personalkosten (Gehalt + AG-Anteile Sozialversicherung) abgerechnet – nicht über die Eigenleistungspauschale. Dies ist in der Praxis der häufigere Fall. Nur bei unvergüteter Geschäftsführung kommt die 40 €/h-Pauschale in Betracht."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Gilt die Gemeinkostenpauschale auch auf Eigenleistungen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, ab dem Wirtschaftsjahr 2026 gilt die 20%ige Gemeinkostenpauschale auch auf Eigenleistungen. Das bedeutet: Die Bemessungsgrundlage aus Eigenleistungen wird um 20% erhöht. Beispiel: 32.000 € Eigenleistungen + 6.400 € Gemeinkostenpauschale = 38.400 € Bemessungsgrundlage. Dies wurde mit dem Wachstumschancengesetz eingeführt und macht die Eigenleistungspauschale noch attraktiver."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<header id="nav" class="fixed inset-x-0 top-0 z-50 nav-blur"
+        style="background:rgba(4,9,26,0.88);border-bottom:1px solid rgba(255,255,255,0.07)">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between gap-4" style="height:68px">
+    <a href="/" aria-label="NOVARIS Consulting"
+       style="text-decoration:none;flex-shrink:0;display:flex;align-items:center;transition:opacity 0.15s ease"
+       class="hover:opacity-90 focus-visible:outline-none">
+      <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto" />
+    </a>
+    <nav class="hidden lg:flex items-center gap-0.5">
+      <a href="/#was-ist-fzulg" class="nav-link">Das FZulG</a>
+      <a href="/#branchen"      class="nav-link">Branchen</a>
+      <a href="/#prozess"       class="nav-link">Prozess</a>
+      <a href="/#vorteile"      class="nav-link">Vorteile</a>
+      <a href="/#faq"           class="nav-link">FAQ</a>
+      <a href="/#kontakt"       class="nav-link">Kontakt</a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <button id="dark-toggle" onclick="toggleDark()" aria-label="Toggle dark mode"
+        class="hidden sm:flex" style="width:32px;height:32px;border-radius:8px;border:1px solid rgba(255,255,255,0.12);
+               background:rgba(255,255,255,0.07);cursor:pointer;align-items:center;
+               justify-content:center;color:rgba(255,255,255,0.7);
+               transition:background 0.15s ease,color 0.15s ease">
+        <svg id="icon-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg id="icon-sun"  width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
+      <a href="/#kontakt" class="btn-primary hidden sm:inline-flex" style="padding:0.55rem 1.35rem;font-size:0.83rem">
+        Kostenlos prüfen
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="content-wrap">
+
+    <div class="ds-breadcrumb">
+      <a href="/">Startseite</a>
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      <a href="/forschungszulage.html">Forschungszulage</a>
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      <span>Eigenleistungen</span>
+    </div>
+
+    <div class="ds-eyebrow">Eigenleistungen nach FZulG</div>
+    <h1 class="ds-title">Forschungszulage Eigenleistungen – 40 €/h für Ihre eigene F&E-Arbeit</h1>
+    <p class="ds-subtitle">Auch ohne Angestellte können Sie die Forschungszulage nutzen: Einzelunternehmer, Freiberufler und Gesellschafter erhalten 40 € pro Stunde für eigene F&E-Tätigkeit.</p>
+    <p class="ds-updated">Zuletzt aktualisiert: 08. März 2026 · Lesezeit: ca. 9 Minuten</p>
+
+    <!-- Table of Contents -->
+    <nav class="toc" aria-label="Inhaltsverzeichnis">
+      <div class="toc-title">Inhaltsverzeichnis</div>
+      <ol>
+        <li><a href="#wer-kann">Wer kann Eigenleistungen geltend machen?</a></li>
+        <li><a href="#pauschale">Die 40 €/h Pauschale: So funktioniert sie</a></li>
+        <li><a href="#berechnungsbeispiele">Berechnungsbeispiele</a></li>
+        <li><a href="#zeiterfassung">Zeiterfassung: Pflicht bei Eigenleistungen</a></li>
+        <li><a href="#kombination">Kombination mit Personalkosten</a></li>
+        <li><a href="#fehler">Häufige Fehler bei Eigenleistungen</a></li>
+        <li><a href="#faq">FAQ: Eigenleistungen</a></li>
+      </ol>
+    </nav>
+
+    <!-- Section 1: Wer kann Eigenleistungen geltend machen? -->
+    <div class="ds-section" id="wer-kann">
+      <h2>Wer kann Eigenleistungen geltend machen?</h2>
+      <p>Die Forschungszulage kennt neben den klassischen <a href="/forschungszulage-personalkosten.html">Personalkosten</a> für Angestellte auch die sogenannten <strong>Eigenleistungen</strong>. Diese Regelung richtet sich an Personen, die selbst aktiv in der Forschung und Entwicklung tätig sind, aber kein Gehalt als Arbeitnehmer beziehen. Die Rechtsgrundlage findet sich in <strong>§3 Abs. 4 FZulG</strong>.</p>
+
+      <p>Folgende Personengruppen können Eigenleistungen ansetzen:</p>
+      <ul>
+        <li><strong>Einzelunternehmer</strong> – Sie betreiben F&E in Ihrem eigenen Unternehmen und sind kein Angestellter</li>
+        <li><strong>Gesellschafter von Personengesellschaften</strong> (GbR, OHG, KG) – die aktiv an F&E-Vorhaben mitwirken</li>
+        <li><strong>Geschäftsführende Gesellschafter</strong> – sofern sie kein Geschäftsführergehalt beziehen</li>
+        <li><strong>Freiberufler</strong> – die eigene F&E-Projekte durchführen (z. B. Ingenieure, Softwareentwickler, Naturwissenschaftler)</li>
+      </ul>
+
+      <div class="ds-highlight-box">
+        <strong>Wichtige Abgrenzung:</strong> GmbH-Geschäftsführer, die ein reguläres Gehalt beziehen, können <strong>keine</strong> Eigenleistungen geltend machen. Ihre F&E-Tätigkeit wird über die <a href="/forschungszulage-personalkosten.html">Personalkosten</a> (Bruttogehalt + AG-Anteile) abgerechnet. Die Eigenleistungspauschale gilt nur, wenn <strong>kein Arbeitsentgelt</strong> für die F&E-Tätigkeit gezahlt wird.
+      </div>
+
+      <p>In der Praxis betrifft die Eigenleistungsregelung vor allem <strong>inhabergeführte Unternehmen</strong> und <strong>Start-ups</strong>, in denen die Gründer selbst aktiv forschen und entwickeln. Gerade für <a href="/forschungszulage-gmbh-einzelunternehmen.html">Einzelunternehmer und kleine Personengesellschaften</a> ist dies oft der einzige Weg zur Forschungszulage, wenn keine Angestellten beschäftigt werden.</p>
+    </div>
+
+    <!-- Section 2: Die 40 €/h Pauschale -->
+    <div class="ds-section" id="pauschale">
+      <h2>Die 40 €/h Pauschale: So funktioniert sie</h2>
+      <p>Für Eigenleistungen gilt eine gesetzlich festgelegte <strong>Pauschale von 40 € pro Stunde</strong>. Das bedeutet: Für jede Stunde, die Sie nachweislich mit förderfähiger F&E-Tätigkeit verbracht haben, fließen 40 € in die Bemessungsgrundlage der Forschungszulage ein.</p>
+
+      <h3>Die wichtigsten Regeln im Überblick</h3>
+      <ul>
+        <li><strong>Feste Pauschale:</strong> 40 € pro tatsächlich geleisteter F&E-Stunde – unabhängig von Ihren realen Kosten</li>
+        <li><strong>Kein Kostennachweis nötig:</strong> Sie müssen nicht belegen, dass Ihnen tatsächlich 40 €/h Kosten entstanden sind</li>
+        <li><strong>Zeiterfassung ist Pflicht:</strong> Jede F&E-Stunde muss dokumentiert und nachweisbar sein</li>
+        <li><strong>Nur tatsächlich geleistete Stunden:</strong> Angesetzt werden darf nur die Zeit, die nachweislich für F&E aufgewendet wurde</li>
+        <li><strong>Plausibilitätsprüfung:</strong> Das Finanzamt prüft, ob die Stundenanzahl realistisch ist</li>
+      </ul>
+
+      <div class="ds-box">
+        <strong>Rechenbeispiel:</strong> Ein Einzelunternehmer arbeitet 800 Stunden pro Jahr an einem förderfähigen F&E-Projekt.<br><br>
+        800 Stunden × 40 € = <strong>32.000 € Bemessungsgrundlage</strong><br>
+        32.000 € × 25% Fördersatz = <strong>8.000 € Forschungszulage</strong><br><br>
+        Bei KMU-Status ab 2024: 32.000 € × 35% = <strong>11.200 € Forschungszulage</strong>
+      </div>
+
+      <p>Die Pauschale von 40 €/h mag auf den ersten Blick niedrig erscheinen, doch sie hat einen entscheidenden Vorteil: <strong>Sie ist unkompliziert.</strong> Kein Sammeln von Belegen, keine Berechnung von Gemeinkosten, keine Diskussion über die Angemessenheit – einfach Stunden dokumentieren und mit 40 € multiplizieren. Nutzen Sie unseren <a href="/forschungszulage-rechner.html">Forschungszulagen-Rechner</a>, um Ihre individuelle Förderung zu berechnen.</p>
+    </div>
+
+    <!-- Section 3: Berechnungsbeispiele -->
+    <div class="ds-section" id="berechnungsbeispiele">
+      <h2>Berechnungsbeispiele</h2>
+      <p>Die folgenden Szenarien zeigen, wie sich Eigenleistungen in der Praxis auf die Forschungszulage auswirken. Alle Beispiele basieren auf dem <strong>KMU-Fördersatz von 25%</strong> (vor 2024) – ab 2024 gilt für KMU der erhöhte Satz von 35%.</p>
+
+      <div class="ds-table-wrap">
+        <table class="ds-table">
+          <thead>
+            <tr>
+              <th>Szenario</th>
+              <th>F&E-Stunden/Jahr</th>
+              <th>Bemessungsgrundlage</th>
+              <th>Forschungszulage (25%)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Einzelunternehmer Vollzeit F&E</strong></td>
+              <td>1.600 h</td>
+              <td>64.000 €</td>
+              <td><strong>16.000 €</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Teilzeit F&E (50%)</strong></td>
+              <td>800 h</td>
+              <td>32.000 €</td>
+              <td><strong>8.000 €</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Gesellschafter-Duo (2 Personen)</strong></td>
+              <td>2 × 1.200 h</td>
+              <td>96.000 €</td>
+              <td><strong>24.000 €</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="ds-highlight-box">
+        <strong>Gesellschafter-Duo im Detail:</strong> Wenn zwei Gesellschafter einer Personengesellschaft jeweils 1.200 Stunden pro Jahr in F&E investieren, ergibt sich eine gemeinsame Bemessungsgrundlage von 2 × 1.200 h × 40 € = 96.000 €. Bei 25% Fördersatz sind das 24.000 € Forschungszulage – bei KMU-Status ab 2024 sogar <strong>33.600 €</strong> (35%).
+      </div>
+
+      <p>Die Bemessungsgrundlage aus Eigenleistungen fließt zusammen mit eventuellen <a href="/forschungszulage-personalkosten.html">Personalkosten</a> und <a href="/forschungszulage-auftragsforschung.html">Auftragsforschungskosten</a> in die Gesamtbemessungsgrundlage ein. Die maximale Bemessungsgrundlage beträgt seit 2024 insgesamt <strong>12 Mio. € pro Wirtschaftsjahr</strong> (zuvor 4 Mio. €).</p>
+    </div>
+
+    <!-- Section 4: Zeiterfassung -->
+    <div class="ds-section" id="zeiterfassung">
+      <h2>Zeiterfassung: Pflicht bei Eigenleistungen</h2>
+      <p>Bei Eigenleistungen ist die Anforderung an die <strong>Zeiterfassung besonders streng</strong>. Da keine Gehaltsabrechnungen oder Arbeitsverträge als Nachweis dienen, ist die Stundendokumentation das einzige Beweismittel für die geleistete F&E-Arbeit.</p>
+
+      <h3>Was muss erfasst werden?</h3>
+      <ul>
+        <li><strong>Datum</strong> – An welchem Tag wurde die F&E-Tätigkeit ausgeübt?</li>
+        <li><strong>Stunden</strong> – Wie viele Stunden wurden an diesem Tag für F&E aufgewendet?</li>
+        <li><strong>Projekt</strong> – Welchem F&E-Vorhaben sind die Stunden zuzuordnen?</li>
+        <li><strong>Tätigkeit</strong> – Welche konkrete F&E-Arbeit wurde durchgeführt?</li>
+      </ul>
+
+      <div class="ds-highlight-box">
+        <strong>GoBD-Konformität ist Pflicht:</strong> Die Zeiterfassung muss den Grundsätzen zur ordnungsmäßigen Führung und Aufbewahrung von Büchern, Aufzeichnungen und Unterlagen in elektronischer Form (GoBD) entsprechen. Das bedeutet: <strong>täglich dokumentieren</strong>, nicht rückwirkend erstellen, und manipulationssicher aufbewahren. Eine nachträglich erstellte Zeiterfassung wird bei einer Betriebsprüfung nicht anerkannt.
+      </div>
+
+      <p>Gerade bei Eigenleistungen empfiehlt sich eine <strong>projektbezogene Zeiterfassung</strong>, die klar zwischen F&E-Tätigkeiten und anderen unternehmerischen Aufgaben (Vertrieb, Verwaltung, Kundenkontakt) unterscheidet. Nur die tatsächlich für F&E aufgewendeten Stunden sind förderfähig.</p>
+
+      <p>Ausführliche Informationen zur korrekten Zeiterfassung finden Sie in unserem <a href="/forschungszulage-zeiterfassung.html">Ratgeber zur Zeiterfassung bei der Forschungszulage</a>.</p>
+    </div>
+
+    <!-- Section 5: Kombination mit Personalkosten -->
+    <div class="ds-section" id="kombination">
+      <h2>Kombination mit Personalkosten</h2>
+      <p>Ein häufiges Missverständnis: Eigenleistungen und Personalkosten <strong>schließen sich nicht gegenseitig aus</strong>. Wenn Sie als Einzelunternehmer oder Gesellschafter selbst forschen und gleichzeitig Angestellte in der F&E beschäftigen, können Sie <strong>beide Kostenarten gleichzeitig</strong> geltend machen.</p>
+
+      <h3>So funktioniert die Kombination</h3>
+      <ul>
+        <li>Ihre eigenen F&E-Stunden werden mit <strong>40 €/h als Eigenleistungen</strong> angesetzt</li>
+        <li>Die F&E-Tätigkeit Ihrer Angestellten wird über die <strong><a href="/forschungszulage-personalkosten.html">Personalkosten</a></strong> (Bruttogehalt + AG-Anteile Sozialversicherung) abgerechnet</li>
+        <li>Alles fließt in <strong>eine gemeinsame Bemessungsgrundlage</strong> ein</li>
+        <li>Der Fördersatz (25% bzw. 35% für KMU) wird auf die Gesamtsumme angewendet</li>
+      </ul>
+
+      <div class="ds-box">
+        <strong>Beispiel Kombination:</strong><br><br>
+        Eigenleistungen Inhaber: 1.000 h × 40 € = 40.000 €<br>
+        Personalkosten 2 Entwickler: 2 × 65.000 € = 130.000 €<br>
+        <strong>Gesamte Bemessungsgrundlage: 170.000 €</strong><br><br>
+        Forschungszulage (25%): <strong>42.500 €</strong><br>
+        Forschungszulage (35% KMU ab 2024): <strong>59.500 €</strong>
+      </div>
+
+      <h3>Gemeinkostenpauschale ab 2026</h3>
+      <p>Ab dem Wirtschaftsjahr 2026 gilt die <strong>20%ige Gemeinkostenpauschale</strong> auch auf Eigenleistungen. Das bedeutet: Die Bemessungsgrundlage aus Eigenleistungen wird pauschal um 20% erhöht – ohne dass Sie tatsächliche Gemeinkosten nachweisen müssen. Damit steigt der effektive Stundensatz rechnerisch auf <strong>48 €/h</strong> (40 € + 20% Zuschlag).</p>
+
+      <p>Diese Regelung macht die Eigenleistungspauschale ab 2026 noch attraktiver und verringert den Abstand zu den über <a href="/forschungszulage-personalkosten.html">Personalkosten</a> abgerechneten F&E-Aufwendungen, bei denen die Gemeinkostenpauschale bereits seit 2024 greift.</p>
+    </div>
+
+    <!-- Section 6: Häufige Fehler -->
+    <div class="ds-section" id="fehler">
+      <h2>Häufige Fehler bei Eigenleistungen</h2>
+      <p>In der Beratungspraxis begegnen uns immer wieder die gleichen Fehler bei der Geltendmachung von Eigenleistungen. Vermeiden Sie diese Fallstricke:</p>
+
+      <div class="ds-box">
+        <ul style="margin-left:0.5rem">
+          <li style="margin-bottom:0.6rem"><strong>Keine oder mangelhafte Zeiterfassung:</strong> Der mit Abstand häufigste Fehler. Ohne tägliche, GoBD-konforme Zeiterfassung werden Eigenleistungen vom Finanzamt nicht anerkannt – egal wie viel F&E tatsächlich betrieben wurde.</li>
+          <li style="margin-bottom:0.6rem"><strong>Unrealistisch hohe Stundenzahl:</strong> 2.500 F&E-Stunden pro Jahr bei einem Einzelunternehmer, der auch Vertrieb, Buchhaltung und Kundenbetreuung macht? Das wird bei der Plausibilitätsprüfung auffallen. Bleiben Sie realistisch.</li>
+          <li style="margin-bottom:0.6rem"><strong>Verwechslung mit Unternehmerlohn:</strong> Die 40 €/h-Pauschale ist keine Vergütung für Ihre Arbeitszeit, sondern eine fiktive Bemessungsgrundlage für die Forschungszulage. Sie erhalten nicht 40 € pro Stunde, sondern 25% (bzw. 35%) davon als Steuergutschrift.</li>
+          <li><strong>GmbH-GF rechnet Eigenleistungen statt Personalkosten:</strong> Wenn Sie als GmbH-Geschäftsführer ein Gehalt beziehen, sind Ihre F&E-Stunden über die Personalkosten abzurechnen – nicht über die Eigenleistungspauschale. Die Personalkosten sind in der Regel deutlich höher als 40 €/h und somit vorteilhafter.</li>
+        </ul>
+      </div>
+
+      <p>NOVARIS prüft in der <strong>kostenlosen Erstanalyse</strong>, welche Abrechnungsmethode (Eigenleistungen vs. Personalkosten) für Ihre Situation die höchste Forschungszulage ergibt und unterstützt Sie bei der Einrichtung einer korrekten Zeiterfassung.</p>
+    </div>
+
+    <!-- Section 7: FAQ -->
+    <div class="ds-section" id="faq">
+      <h2>FAQ: Eigenleistungen</h2>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          Wie viele Stunden kann ich maximal ansetzen?
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>Es gibt <strong>keine gesetzliche Obergrenze</strong> für die Anzahl der ansetzbaren Stunden. Allerdings muss die Stundenanzahl plausibel sein. Als Richtwert gelten ca. <strong>1.600 bis 1.800 Stunden pro Jahr</strong> bei Vollzeit-F&E-Tätigkeit. Deutlich höhere Werte könnten bei einer Prüfung durch das Finanzamt beanstandet werden. Entscheidend ist, dass jede einzelne Stunde durch die Zeiterfassung belegbar ist und dass neben der F&E-Tätigkeit auch andere unternehmerische Aufgaben realistisch abgebildet werden.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          Muss ich die 40 €/h nachweisen?
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>Nein, die 40 € pro Stunde sind eine <strong>gesetzlich festgelegte Pauschale</strong> gemäß §3 Abs. 4 FZulG. Sie müssen keinen Nachweis über tatsächlich entstandene Kosten erbringen. Was Sie jedoch nachweisen müssen, sind die <strong>tatsächlich geleisteten F&E-Stunden</strong>. Eine lückenlose, GoBD-konforme <a href="/forschungszulage-zeiterfassung.html">Zeiterfassung</a> ist daher unerlässlich.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          Kann ich als GmbH-Geschäftsführer Eigenleistungen geltend machen?
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>Nur wenn Sie als GmbH-Geschäftsführer <strong>kein Gehalt</strong> beziehen. Beziehen Sie ein Geschäftsführergehalt, werden Ihre F&E-Tätigkeiten über die <a href="/forschungszulage-personalkosten.html">Personalkosten</a> (Gehalt + AG-Anteile Sozialversicherung) abgerechnet – nicht über die Eigenleistungspauschale. In der Praxis ist der Personalkosten-Ansatz meist <strong>vorteilhafter</strong>, da das Gehalt häufig über 40 €/h liegt. Mehr dazu in unserem <a href="/forschungszulage-gmbh-einzelunternehmen.html">Vergleich GmbH vs. Einzelunternehmen</a>.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          Gilt die Gemeinkostenpauschale auch auf Eigenleistungen?
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>Ja, <strong>ab dem Wirtschaftsjahr 2026</strong> gilt die 20%ige Gemeinkostenpauschale auch auf Eigenleistungen. Die Bemessungsgrundlage aus Eigenleistungen wird um 20% erhöht. Beispiel: 32.000 € Eigenleistungen + 6.400 € Gemeinkostenpauschale = <strong>38.400 € Bemessungsgrundlage</strong>. Dies wurde mit dem Wachstumschancengesetz eingeführt und macht die Eigenleistungspauschale noch attraktiver.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Related Content -->
+    <div class="ds-section" style="margin-top:2rem">
+      <h2>Weiterführende Inhalte zur Forschungszulage</h2>
+      <p>Vertiefen Sie Ihr Wissen mit unseren spezialisierten Ressourcen:</p>
+      <ul>
+        <li><a href="/forschungszulage.html" style="color:#1E56B5;font-weight:600"><strong>Forschungszulage Leitfaden</strong></a> – Der komplette Überblick zum FZulG 2026</li>
+        <li><a href="/forschungszulage-personalkosten.html" style="color:#1E56B5;font-weight:600"><strong>Personalkosten & Forschungszulage</strong></a> – Gehälter und AG-Anteile korrekt ansetzen</li>
+        <li><a href="/forschungszulage-zeiterfassung.html" style="color:#1E56B5;font-weight:600"><strong>Zeiterfassung für die Forschungszulage</strong></a> – GoBD-konforme Dokumentation Ihrer F&E-Stunden</li>
+        <li><a href="/forschungszulage-gmbh-einzelunternehmen.html" style="color:#1E56B5;font-weight:600"><strong>GmbH vs. Einzelunternehmen</strong></a> – Welche Rechtsform profitiert wie?</li>
+        <li><a href="/forschungszulage-rechner.html" style="color:#1E56B5;font-weight:600"><strong>Forschungszulagen Rechner</strong></a> – Berechnen Sie Ihre individuelle Förderung in 30 Sekunden</li>
+      </ul>
+    </div>
+
+    <!-- CTA Box -->
+    <div class="cta-section">
+      <h2>Eigenleistungen optimal nutzen – jetzt Potenzial prüfen</h2>
+      <p>Finden Sie heraus, wie viel Forschungszulage Ihnen als Einzelunternehmer, Freiberufler oder Gesellschafter zusteht. Kostenlose Erstanalyse, erfolgsbasiert und ohne Risiko.</p>
+      <a href="/#kontakt" class="btn-primary" style="padding:0.7rem 1.8rem;font-size:0.9rem">
+        Kostenlose Erstanalyse anfragen
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+
+  </div>
+</main>
+
+<footer style="background:#04091a;border-top:1px solid rgba(255,255,255,0.07)">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
+      <div class="lg:col-span-2">
+        <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto;margin-bottom:1rem" />
+        <p style="font-size:0.82rem;color:rgba(195,215,245,0.38);line-height:1.72;max-width:320px">
+          NOVARIS Consulting ist Ihr spezialisierter Full-Service-Partner für die staatliche
+          Forschungszulage nach dem FZulG – erfolgsbasiert, transparent und ohne Risiko.
+        </p>
+      </div>
+      <div>
+        <div style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.75rem;letter-spacing:0.09em;text-transform:uppercase;color:rgba(195,215,245,0.3);margin-bottom:1rem">Navigation</div>
+        <div style="display:flex;flex-direction:column;gap:0.55rem">
+          <a href="/#was-ist-fzulg" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Das FZulG</a>
+          <a href="/#prozess"       style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Prozess</a>
+          <a href="/#vorteile"      style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Vorteile</a>
+          <a href="/#faq"           style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">FAQ</a>
+          <a href="/#kontakt"       style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Kontakt</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.75rem;letter-spacing:0.09em;text-transform:uppercase;color:rgba(195,215,245,0.3);margin-bottom:1rem">Rechtliches</div>
+        <div style="display:flex;flex-direction:column;gap:0.55rem">
+          <a href="/impressum.html"  style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Impressum</a>
+          <a href="/datenschutz.html" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Datenschutz</a>
+          <a href="/agb.html"        style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">AGB</a>
+          <a href="javascript:void(0)" onclick="CookieConsent.reset();CookieConsent.request(function(){});" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Cookie-Einstellungen</a>
+        </div>
+      </div>
+    </div>
+    <div style="height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.08) 25%,rgba(255,255,255,0.08) 75%,transparent);margin-bottom:1.5rem"></div>
+    <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem">
+      <p style="font-size:0.73rem;color:rgba(195,215,245,0.25)">&copy; 2026 NOVARIS Consulting · Alle Rechte vorbehalten.</p>
+      <p style="font-size:0.73rem;color:rgba(195,215,245,0.18)">Diese Website stellt keine Steuer- oder Rechtsberatung dar.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function() {
+    if (localStorage.getItem('theme') === 'dark') {
+      document.documentElement.classList.add('dark');
+    }
+  })();
+
+  function toggleDark() {
+    const dark = document.documentElement.classList.toggle('dark');
+    localStorage.setItem('theme', dark ? 'dark' : 'light');
+    _updateDarkBtn();
+  }
+
+  function _updateDarkBtn() {
+    const dark = document.documentElement.classList.contains('dark');
+    const moon = document.getElementById('icon-moon');
+    const sun  = document.getElementById('icon-sun');
+    if (moon) moon.style.display = dark ? 'none'  : 'block';
+    if (sun)  sun.style.display  = dark ? 'block' : 'none';
+  }
+
+  window.addEventListener('DOMContentLoaded', _updateDarkBtn);
+</script>
+
+<script src="/cookie-consent.js" defer></script>
+<script src="/analytics.js" defer></script>
+</body>
+</html>
