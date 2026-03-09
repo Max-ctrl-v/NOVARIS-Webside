@@ -492,14 +492,10 @@
     </nav>
 
     <div class="flex items-center gap-3">
-      <div class="lang-toggle hidden sm:flex">
-        <button id="lang-de" class="lang-btn active" onclick="setLang('de')" aria-label="Sprache: Deutsch">DE</button>
+      <div class="lang-toggle" style="display:flex;">
+        <span class="lang-btn active">DE</span>
         <div class="lang-divider"></div>
-        <button id="lang-en" class="lang-btn" onclick="setLang('en')" aria-label="Sprache: English">EN</button>
-      </div>
-      <div style="display:flex;align-items:center;gap:2px;margin-right:8px;">
-        <span style="font-family:'Inter',sans-serif;font-size:0.78rem;font-weight:600;color:#fff;padding:4px 8px;border-radius:6px;background:rgba(77,174,229,0.18);">DE</span>
-        <a href="/en/erfolge.html" style="font-family:'Inter',sans-serif;font-size:0.78rem;font-weight:500;color:rgba(195,215,245,0.5);padding:4px 8px;border-radius:6px;text-decoration:none;transition:color 0.15s ease;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(195,215,245,0.5)'">EN</a>
+        <a href="/en/erfolge.html" class="lang-btn" style="text-decoration:none;">EN</a>
       </div>
       <button id="dark-toggle" onclick="toggleDark()" aria-label="Toggle dark mode"
         class="hidden sm:flex" style="width:32px;height:32px;border-radius:8px;border:1px solid rgba(255,255,255,0.12);
@@ -534,9 +530,9 @@
       <a href="/#kontakt"       class="nav-link py-2.5" onclick="toggleMob()">Kontakt</a>
       <div class="flex items-center gap-2 mt-1">
         <div class="lang-toggle self-start">
-          <button id="lang-de-mob" class="lang-btn active" onclick="setLang('de')" aria-label="Sprache: Deutsch">DE</button>
+          <span class="lang-btn active">DE</span>
           <div class="lang-divider"></div>
-          <button id="lang-en-mob" class="lang-btn" onclick="setLang('en')" aria-label="Sprache: English">EN</button>
+          <a href="/en/erfolge.html" class="lang-btn" style="text-decoration:none;">EN</a>
         </div>
         <button id="dark-toggle-mob" onclick="toggleDark()" aria-label="Toggle dark mode"
           style="width:32px;height:32px;border-radius:8px;border:1px solid rgba(255,255,255,0.12);

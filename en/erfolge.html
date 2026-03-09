@@ -229,12 +229,13 @@
     }
     .lang-btn {
       padding: 0.28rem 0.62rem; border: none; background: transparent; cursor: pointer;
-      font-family: 'Inter', sans-serif; font-size: 0.72rem; font-weight: 600;
-      color: rgba(195,215,245,0.45); transition: color 0.14s ease, background 0.14s ease;
+      font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 0.71rem;
+      color: rgba(255,255,255,0.48); letter-spacing: 0.06em;
+      transition: background 0.15s ease, color 0.15s ease;
     }
-    .lang-btn:hover { color: rgba(195,215,245,0.8); }
-    .lang-btn.active { color: #fff; background: rgba(255,255,255,0.12); }
-    .lang-divider { width: 1px; height: 14px; background: rgba(255,255,255,0.12); }
+    .lang-btn.active { background: rgba(255,255,255,0.16); color: #fff; }
+    .lang-btn:hover { color: rgba(255,255,255,0.85); }
+    .lang-divider { width: 1px; height: 16px; background: rgba(255,255,255,0.12); flex-shrink: 0; }
 
     /* ═══════════════════════════════════════
        BUTTONS
@@ -487,14 +488,10 @@
     </nav>
 
     <div class="flex items-center gap-3">
-      <div class="lang-toggle hidden sm:flex">
-        <button id="lang-de" class="lang-btn" onclick="window.location.href='/erfolge.html'" aria-label="Language: Deutsch">DE</button>
+      <div class="lang-toggle" style="display:flex;">
+        <a href="/erfolge.html" class="lang-btn" style="text-decoration:none;">DE</a>
         <div class="lang-divider"></div>
-        <button id="lang-en" class="lang-btn active" onclick="window.location.href='/en/erfolge.html'" aria-label="Language: English">EN</button>
-      </div>
-      <div style="display:flex;align-items:center;gap:2px;margin-right:8px;">
-        <a href="/erfolge.html" style="font-family:'Inter',sans-serif;font-size:0.78rem;font-weight:500;color:rgba(195,215,245,0.5);padding:4px 8px;border-radius:6px;text-decoration:none;transition:color 0.15s ease;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(195,215,245,0.5)'">DE</a>
-        <span style="font-family:'Inter',sans-serif;font-size:0.78rem;font-weight:600;color:#fff;padding:4px 8px;border-radius:6px;background:rgba(77,174,229,0.18);">EN</span>
+        <span class="lang-btn active">EN</span>
       </div>
       <button id="dark-toggle" onclick="toggleDark()" aria-label="Toggle dark mode"
         class="hidden sm:flex" style="width:32px;height:32px;border-radius:8px;border:1px solid rgba(255,255,255,0.12);

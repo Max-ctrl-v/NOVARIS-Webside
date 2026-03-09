@@ -66,28 +66,20 @@
     .nav-link:focus-visible { outline: 2px solid #4DAEE5; outline-offset: 2px; }
 
     .lang-toggle {
-      display: flex;
-      align-items: center;
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(255,255,255,0.10);
-      border-radius: 8px;
-      overflow: hidden;
+      display: flex; align-items: center;
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 8px; overflow: hidden; flex-shrink: 0;
     }
     .lang-btn {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 0.72rem;
-      font-weight: 700;
-      letter-spacing: 0.05em;
-      color: rgba(195,215,245,0.45);
-      background: transparent;
-      border: none;
-      cursor: pointer;
-      padding: 0.3rem 0.65rem;
-      transition: color 0.15s ease, background 0.15s ease;
+      padding: 0.28rem 0.62rem; border: none; background: transparent; cursor: pointer;
+      font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 0.71rem;
+      color: rgba(255,255,255,0.48); letter-spacing: 0.06em;
+      transition: background 0.15s ease, color 0.15s ease;
     }
-    .lang-btn.active { color: #fff; background: rgba(77,174,229,0.18); }
-    .lang-btn:hover:not(.active) { color: rgba(195,215,245,0.75); }
-    .lang-divider { width: 1px; height: 14px; background: rgba(255,255,255,0.12); }
+    .lang-btn.active { background: rgba(255,255,255,0.16); color: #fff; }
+    .lang-btn:hover { color: rgba(255,255,255,0.85); }
+    .lang-divider { width: 1px; height: 16px; background: rgba(255,255,255,0.12); flex-shrink: 0; }
 
     .btn-primary {
       display: inline-flex;
@@ -291,9 +283,10 @@
     </nav>
 
     <div class="flex items-center gap-3">
-      <div style="display:flex;align-items:center;gap:2px;margin-right:8px;">
-        <a href="/datenschutz.html" style="font-family:'Inter',sans-serif;font-size:0.78rem;font-weight:500;color:rgba(195,215,245,0.5);padding:4px 8px;border-radius:6px;text-decoration:none;transition:color 0.15s ease;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(195,215,245,0.5)'">DE</a>
-        <span style="font-family:'Inter',sans-serif;font-size:0.78rem;font-weight:600;color:#fff;padding:4px 8px;border-radius:6px;background:rgba(77,174,229,0.18);">EN</span>
+      <div class="lang-toggle" style="display:flex;">
+        <a href="/datenschutz.html" class="lang-btn" style="text-decoration:none;">DE</a>
+        <div class="lang-divider"></div>
+        <span class="lang-btn active">EN</span>
       </div>
       <button id="dark-toggle" onclick="toggleDark()" aria-label="Toggle dark mode"
         class="hidden sm:flex" style="width:32px;height:32px;border-radius:8px;border:1px solid rgba(255,255,255,0.12);

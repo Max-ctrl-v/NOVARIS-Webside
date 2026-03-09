@@ -106,6 +106,22 @@
     html.dark ::-webkit-scrollbar-thumb { background: rgba(77,174,229,0.30); }
     html.dark ::-webkit-scrollbar-thumb:hover { background: rgba(77,174,229,0.48); }
     html.dark { scrollbar-color: rgba(77,174,229,0.30) transparent; }
+
+    .lang-toggle {
+      display: flex; align-items: center;
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 8px; overflow: hidden; flex-shrink: 0;
+    }
+    .lang-btn {
+      padding: 0.28rem 0.62rem; border: none; background: transparent; cursor: pointer;
+      font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 0.71rem;
+      color: rgba(255,255,255,0.48); letter-spacing: 0.06em;
+      transition: background 0.15s ease, color 0.15s ease;
+    }
+    .lang-btn.active { background: rgba(255,255,255,0.16); color: #fff; }
+    .lang-btn:hover { color: rgba(255,255,255,0.85); }
+    .lang-divider { width: 1px; height: 16px; background: rgba(255,255,255,0.12); flex-shrink: 0; }
   </style>
   <link rel="stylesheet" href="/page-transition.css" />
   <link rel="stylesheet" href="/cookie-consent.css" />
@@ -159,9 +175,10 @@
       <a href="/en/#kontakt"       class="nav-link">Contact</a>
     </nav>
     <div class="flex items-center gap-3">
-      <div style="display:flex;align-items:center;gap:2px;margin-right:8px;">
-        <a href="/forschungszulage-koerperschaftsteuer.html" style="font-family:'Inter',sans-serif;font-size:0.78rem;font-weight:500;color:rgba(195,215,245,0.5);padding:4px 8px;border-radius:6px;text-decoration:none;transition:color 0.15s ease;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(195,215,245,0.5)'">DE</a>
-        <span style="font-family:'Inter',sans-serif;font-size:0.78rem;font-weight:600;color:#fff;padding:4px 8px;border-radius:6px;background:rgba(77,174,229,0.18);">EN</span>
+      <div class="lang-toggle" style="display:flex;">
+        <a href="/forschungszulage-koerperschaftsteuer.html" class="lang-btn" style="text-decoration:none;">DE</a>
+        <div class="lang-divider"></div>
+        <span class="lang-btn active">EN</span>
       </div>
       <button id="dark-toggle" onclick="toggleDark()" aria-label="Toggle dark mode" class="hidden sm:flex" style="width:32px;height:32px;border-radius:8px;border:1px solid rgba(255,255,255,0.12);background:rgba(255,255,255,0.07);cursor:pointer;align-items:center;justify-content:center;color:rgba(255,255,255,0.7);transition:background 0.15s ease,color 0.15s ease">
         <svg id="icon-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>

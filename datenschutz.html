@@ -302,9 +302,10 @@
 
     <div class="flex items-center gap-3">
       <!-- Dark mode toggle -->
-      <div style="display:flex;align-items:center;gap:2px;margin-right:8px;">
-        <span style="font-family:'Inter',sans-serif;font-size:0.78rem;font-weight:600;color:#fff;padding:4px 8px;border-radius:6px;background:rgba(77,174,229,0.18);">DE</span>
-        <a href="/en/datenschutz.html" style="font-family:'Inter',sans-serif;font-size:0.78rem;font-weight:500;color:rgba(195,215,245,0.5);padding:4px 8px;border-radius:6px;text-decoration:none;transition:color 0.15s ease;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(195,215,245,0.5)'">EN</a>
+      <div class="lang-toggle" style="display:flex;">
+        <span class="lang-btn active">DE</span>
+        <div class="lang-divider"></div>
+        <a href="/en/datenschutz.html" class="lang-btn" style="text-decoration:none;">EN</a>
       </div>
       <button id="dark-toggle" onclick="toggleDark()" aria-label="Toggle dark mode"
         class="hidden sm:flex" style="width:32px;height:32px;border-radius:8px;border:1px solid rgba(255,255,255,0.12);
