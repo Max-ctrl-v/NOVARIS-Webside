@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>R&amp;D Tax Credit (Forschungszulage) &amp; Corporate Tax: How the Offset Works | NOVARIS</title>
+  <meta name="description" content="German R&D Tax Credit and Corporate Tax (Körperschaftsteuer): Offset, Anlage FZ, trade tax exemption, and impact on tax liability – fully explained for GmbH and AG." />
+  <meta name="keywords" content="R&D tax credit corporate tax, Forschungszulage Körperschaftsteuer, FZulG KSt, Forschungszulage tax return, Anlage FZ, R&D tax credit trade tax, FZulG offset" />
+  <link rel="canonical" href="https://novaris-consulting.com/en/forschungszulage-koerperschaftsteuer.html" />
+  <link rel="alternate" hreflang="de" href="https://novaris-consulting.com/forschungszulage-koerperschaftsteuer.html" />
+  <link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/forschungszulage-koerperschaftsteuer.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="R&amp;D Tax Credit (Forschungszulage) &amp; Corporate Tax: How the Offset Works | NOVARIS" />
+  <meta property="og:description" content="German R&D Tax Credit and Corporate Tax: Offset, Anlage FZ, trade tax exemption, and impact on tax liability – fully explained." />
+  <meta property="og:url" content="https://novaris-consulting.com/en/forschungszulage-koerperschaftsteuer.html" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="NOVARIS Consulting" />
+  <meta property="og:image" content="https://novaris-consulting.com/brand_assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="R&amp;D Tax Credit &amp; Corporate Tax: Offset Explained | NOVARIS" />
+  <meta name="twitter:description" content="How the German R&D Tax Credit (Forschungszulage) is offset against Corporate Tax – complete guide for GmbH, AG, and partnerships." />
+  <meta name="twitter:image" content="https://novaris-consulting.com/brand_assets/og-image.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root { --bg-base: #ffffff; --bg-raised: #f5f8fe; --bg-card: #ffffff; --clr-h: #0D1B3E; --clr-b: #5a6e8c; --clr-muted: #4a5870; --bdr: #dde5f4; }
+    html.dark { --bg-base: #0a1428; --bg-raised: #0D1B3E; --bg-card: #122244; --clr-h: #e8f0fa; --clr-b: #8aaac8; --clr-muted: #6888a8; --bdr: rgba(77,174,229,0.18); }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: var(--bg-base); color: var(--clr-h); transition: background 0.25s ease, color 0.25s ease; line-height: 1.7; }
+    .nav-blur { backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); }
+    .nav-link { font-family: 'Inter', sans-serif; font-size: 0.84rem; font-weight: 500; color: rgba(195,215,245,0.70); text-decoration: none; padding: 0.42rem 0.85rem; border-radius: 8px; transition: color 0.15s ease, background 0.15s ease; letter-spacing: 0.01em; }
+    .nav-link:hover { color: #fff; background: rgba(255,255,255,0.07); }
+    .nav-link:focus-visible { outline: 2px solid #4DAEE5; outline-offset: 2px; }
+    .btn-primary { display: inline-flex; align-items: center; gap: 0.45rem; background: #1E56B5; color: #fff; font-family: 'Inter', sans-serif; font-weight: 600; font-size: 0.84rem; border: none; border-radius: 10px; text-decoration: none; cursor: pointer; box-shadow: 0 1px 2px rgba(0,0,0,0.3), 0 4px 12px rgba(30,86,181,0.35); transition: background 0.15s ease, transform 0.12s ease, box-shadow 0.15s ease; }
+    .btn-primary:hover { background: #2563c4; box-shadow: 0 2px 4px rgba(0,0,0,0.3), 0 6px 18px rgba(30,86,181,0.45); transform: translateY(-1px); }
+    .btn-primary:active { transform: translateY(0); }
+    .btn-primary:focus-visible { outline: 2px solid #4DAEE5; outline-offset: 2px; }
+    .content-wrap { max-width: 820px; margin: 0 auto; padding: 6rem 1.5rem 5rem; }
+    .ds-breadcrumb { font-size: 0.78rem; color: var(--clr-b); margin-bottom: 2rem; display: flex; align-items: center; gap: 0.5rem; }
+    .ds-breadcrumb a { color: #4DAEE5; text-decoration: none; transition: color 0.14s ease; }
+    .ds-breadcrumb a:hover { color: #7ec8f0; }
+    .ds-eyebrow { font-family: 'Montserrat', sans-serif; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #4DAEE5; margin-bottom: 0.9rem; }
+    .ds-title { font-family: 'Montserrat', sans-serif; font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 800; letter-spacing: -0.03em; color: var(--clr-h); line-height: 1.15; margin-bottom: 0.5rem; }
+    .ds-subtitle { font-size: 0.95rem; color: var(--clr-b); line-height: 1.75; margin-bottom: 0.5rem; max-width: 640px; }
+    .ds-updated { font-size: 0.78rem; color: var(--clr-b); margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid var(--bdr); }
+    .ds-section { margin-bottom: 2.8rem; }
+    .ds-section h2 { font-family: 'Montserrat', sans-serif; font-size: 1.12rem; font-weight: 700; letter-spacing: -0.01em; color: var(--clr-h); margin-bottom: 0.9rem; padding-bottom: 0.55rem; border-bottom: 1px solid var(--bdr); }
+    .ds-section h3 { font-family: 'Montserrat', sans-serif; font-size: 0.92rem; font-weight: 700; color: var(--clr-h); margin-top: 1.4rem; margin-bottom: 0.5rem; }
+    .ds-section p { font-size: 0.9rem; color: var(--clr-b); line-height: 1.75; margin-bottom: 0.85rem; }
+    .ds-section ul, .ds-section ol { margin: 0.5rem 0 0.85rem 1.1rem; display: flex; flex-direction: column; gap: 0.35rem; }
+    .ds-section ul li, .ds-section ol li { font-size: 0.9rem; color: var(--clr-b); line-height: 1.65; }
+    .ds-section a { color: #4DAEE5; text-decoration: none; transition: color 0.14s ease; }
+    .ds-section a:hover { color: #7ec8f0; text-decoration: underline; }
+    .ds-box { background: var(--bg-raised); border: 1px solid var(--bdr); border-radius: 12px; padding: 1.25rem 1.5rem; font-size: 0.88rem; color: var(--clr-b); line-height: 1.7; margin: 1rem 0 1.2rem; transition: background 0.25s ease, border-color 0.25s ease; }
+    .ds-box strong { color: var(--clr-h); font-weight: 600; }
+    .ds-highlight-box { background: var(--bg-raised); border: 1px solid var(--bdr); border-left: 4px solid #1E56B5; border-radius: 0 12px 12px 0; padding: 1.25rem 1.5rem; font-size: 0.88rem; color: var(--clr-b); line-height: 1.7; margin: 1rem 0 1.2rem; transition: background 0.25s ease, border-color 0.25s ease; }
+    .ds-highlight-box strong { color: var(--clr-h); font-weight: 600; }
+    .ds-table-wrap { overflow-x: auto; margin: 1rem 0 1.2rem; border-radius: 12px; border: 1px solid var(--bdr); }
+    .ds-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+    .ds-table th { background: var(--bg-raised); font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 0.78rem; letter-spacing: 0.02em; color: var(--clr-h); text-align: left; padding: 0.75rem 1rem; border-bottom: 1px solid var(--bdr); }
+    .ds-table td { padding: 0.65rem 1rem; color: var(--clr-b); border-bottom: 1px solid var(--bdr); line-height: 1.55; }
+    .ds-table tr:last-child td { border-bottom: none; }
+    html.dark .ds-table th { background: var(--bg-card); }
+    .faq-item { border: 1px solid var(--bdr); border-radius: 12px; margin-bottom: 0.65rem; overflow: hidden; transition: border-color 0.25s ease; }
+    .faq-q { display: flex; align-items: center; justify-content: space-between; gap: 1rem; width: 100%; padding: 1rem 1.25rem; background: var(--bg-raised); border: none; cursor: pointer; font-family: 'Inter', sans-serif; font-size: 0.88rem; font-weight: 600; color: var(--clr-h); text-align: left; line-height: 1.5; transition: background 0.15s ease, color 0.15s ease; }
+    .faq-q:hover { background: var(--bg-raised); opacity: 0.85; }
+    .faq-q:focus-visible { outline: 2px solid #4DAEE5; outline-offset: -2px; }
+    .faq-q svg { flex-shrink: 0; transition: transform 0.2s ease; }
+    .faq-item.open .faq-q svg { transform: rotate(180deg); }
+    .faq-a { display: none; padding: 0 1.25rem 1rem; font-size: 0.87rem; color: var(--clr-b); line-height: 1.7; }
+    .faq-item.open .faq-a { display: block; }
+    html.dark .faq-q { background: var(--bg-card); }
+    .cta-section { background: var(--bg-raised); border: 1px solid var(--bdr); border-radius: 16px; padding: 2.5rem 2rem; text-align: center; margin-top: 3rem; margin-bottom: 1rem; transition: background 0.25s ease, border-color 0.25s ease; }
+    .cta-section h2 { font-family: 'Montserrat', sans-serif; font-size: 1.3rem; font-weight: 800; letter-spacing: -0.02em; color: var(--clr-h); margin-bottom: 0.8rem; border: none; padding-bottom: 0; }
+    .cta-section p { font-size: 0.9rem; color: var(--clr-b); line-height: 1.75; margin-bottom: 1.5rem; max-width: 560px; margin-left: auto; margin-right: auto; }
+    .toc { background: var(--bg-raised); border: 1px solid var(--bdr); border-radius: 12px; padding: 1.5rem 1.75rem; margin-bottom: 2.8rem; transition: background 0.25s ease, border-color 0.25s ease; }
+    html.dark .toc { background: var(--bg-card); }
+    .toc-title { font-family: 'Montserrat', sans-serif; font-size: 0.82rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--clr-muted); margin-bottom: 0.8rem; }
+    .toc ol { margin: 0; padding-left: 1.1rem; display: flex; flex-direction: column; gap: 0.4rem; }
+    .toc ol li { font-size: 0.85rem; color: var(--clr-b); line-height: 1.55; }
+    .toc ol li a { color: #4DAEE5; text-decoration: none; transition: color 0.14s ease; }
+    .toc ol li a:hover { color: #7ec8f0; }
+    footer { background: #04091a; border-top: 1px solid rgba(255,255,255,0.07); }
+    html.dark .ds-box { background: var(--bg-card); }
+    html.dark .ds-highlight-box { background: var(--bg-card); }
+    html.dark .cta-section { background: var(--bg-card); }
+    .logo-light { display: none; }
+    html.dark .logo-dark { display: none !important; }
+    html.dark .logo-light { display: inline !important; }
+    html { overflow-y: scroll; scrollbar-width: thin; scrollbar-color: rgba(77,174,229,0.38) transparent; }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: rgba(77,174,229,0.38); border-radius: 999px; }
+    ::-webkit-scrollbar-thumb:hover { background: rgba(77,174,229,0.55); }
+    html.dark ::-webkit-scrollbar-thumb { background: rgba(77,174,229,0.30); }
+    html.dark ::-webkit-scrollbar-thumb:hover { background: rgba(77,174,229,0.48); }
+    html.dark { scrollbar-color: rgba(77,174,229,0.30) transparent; }
+  </style>
+  <link rel="stylesheet" href="/page-transition.css" />
+  <link rel="stylesheet" href="/cookie-consent.css" />
+  <script src="/page-transition.js" defer></script>
+
+  <script type="application/ld+json">
+  { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://novaris-consulting.com/en/"},
+    {"@type": "ListItem", "position": 2, "name": "R&D Tax Credit", "item": "https://novaris-consulting.com/en/forschungszulage.html"},
+    {"@type": "ListItem", "position": 3, "name": "Corporate Tax", "item": "https://novaris-consulting.com/en/forschungszulage-koerperschaftsteuer.html"}
+  ]}
+  </script>
+  <script type="application/ld+json">
+  { "@context": "https://schema.org", "@type": "Article",
+    "headline": "R&D Tax Credit (Forschungszulage) & Corporate Tax – How the Offset Works",
+    "description": "R&D Tax Credit and Corporate Tax: Offset, Anlage FZ, trade tax exemption, and impact on tax liability – fully explained for GmbH and AG.",
+    "author": { "@type": "Organization", "name": "NOVARIS Consulting", "url": "https://novaris-consulting.com" },
+    "publisher": { "@type": "Organization", "name": "NOVARIS Consulting", "url": "https://novaris-consulting.com", "logo": { "@type": "ImageObject", "url": "https://novaris-consulting.com/brand_assets/Logo V5-light.svg" } },
+    "datePublished": "2026-03-08", "dateModified": "2026-03-08",
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://novaris-consulting.com/en/forschungszulage-koerperschaftsteuer.html" },
+    "keywords": ["R&D Tax Credit corporate tax", "FZulG KSt", "Anlage FZ", "R&D Tax Credit trade tax", "FZulG offset"]
+  }
+  </script>
+  <script type="application/ld+json">
+  { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+    { "@type": "Question", "name": "Is the R&D Tax Credit subject to trade tax (Gewerbesteuer)?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. Under Section 4(3) FZulG, the R&D Tax Credit is expressly exempt from trade tax. It is not added to trade income and has no impact on the trade tax assessment amount. The full R&D Tax Credit remains with the company without any trade tax burden." } },
+    { "@type": "Question", "name": "What happens if the R&D Tax Credit exceeds the tax liability?",
+      "acceptedAnswer": { "@type": "Answer", "text": "If the assessed R&D Tax Credit exceeds the corporate or income tax liability, the difference is directly refunded to the company. It is a genuine tax credit – even companies without a tax liability or with losses receive the full payout." } },
+    { "@type": "Question", "name": "Do I have to submit Anlage FZ with the tax return?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No, Anlage FZ can also be submitted separately from the tax return to the responsible tax office. The submission is made electronically via ELSTER. It is recommended to submit Anlage FZ promptly after receiving the BSFZ certificate to accelerate the assessment and payout process." } },
+    { "@type": "Question", "name": "Does the R&D Tax Credit affect my loss carryforward?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No, the R&D Tax Credit has no impact on the loss carryforward. It is assessed and paid out independently of the company's profit situation. An existing loss carryforward is neither reduced nor affected. This makes the R&D Tax Credit particularly attractive for startups and companies in loss phases." } }
+  ]}
+  </script>
+</head>
+<body>
+
+<header id="nav" class="fixed inset-x-0 top-0 z-50 nav-blur"
+        style="background:rgba(4,9,26,0.88);border-bottom:1px solid rgba(255,255,255,0.07)">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between gap-4" style="height:68px">
+    <a href="/en/" aria-label="NOVARIS Consulting" style="text-decoration:none;flex-shrink:0;display:flex;align-items:center;transition:opacity 0.15s ease" class="hover:opacity-90 focus-visible:outline-none">
+      <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto" />
+    </a>
+    <nav class="hidden lg:flex items-center gap-0.5">
+      <a href="/en/#was-ist-fzulg" class="nav-link">The FZulG</a>
+      <a href="/en/#branchen"      class="nav-link">Industries</a>
+      <a href="/en/#prozess"       class="nav-link">Process</a>
+      <a href="/en/#vorteile"      class="nav-link">Benefits</a>
+      <a href="/en/#faq"           class="nav-link">FAQ</a>
+      <a href="/en/#kontakt"       class="nav-link">Contact</a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <div style="display:flex;align-items:center;gap:2px;margin-right:8px;">
+        <a href="/forschungszulage-koerperschaftsteuer.html" style="font-family:'Inter',sans-serif;font-size:0.78rem;font-weight:500;color:rgba(195,215,245,0.5);padding:4px 8px;border-radius:6px;text-decoration:none;transition:color 0.15s ease;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(195,215,245,0.5)'">DE</a>
+        <span style="font-family:'Inter',sans-serif;font-size:0.78rem;font-weight:600;color:#fff;padding:4px 8px;border-radius:6px;background:rgba(77,174,229,0.18);">EN</span>
+      </div>
+      <button id="dark-toggle" onclick="toggleDark()" aria-label="Toggle dark mode" class="hidden sm:flex" style="width:32px;height:32px;border-radius:8px;border:1px solid rgba(255,255,255,0.12);background:rgba(255,255,255,0.07);cursor:pointer;align-items:center;justify-content:center;color:rgba(255,255,255,0.7);transition:background 0.15s ease,color 0.15s ease">
+        <svg id="icon-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg id="icon-sun" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
+      <a href="/en/#kontakt" class="btn-primary hidden sm:inline-flex" style="padding:0.55rem 1.35rem;font-size:0.83rem">
+        Free Consultation
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="content-wrap">
+
+    <div class="ds-breadcrumb">
+      <a href="/en/">Home</a>
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      <a href="/en/forschungszulage.html">R&D Tax Credit</a>
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      <span>Corporate Tax (Körperschaftsteuer)</span>
+    </div>
+
+    <div class="ds-eyebrow">Tax Offset</div>
+    <h1 class="ds-title">R&D Tax Credit (Forschungszulage) &amp; Corporate Tax – How the Offset Works</h1>
+    <p class="ds-subtitle">The R&D Tax Credit is directly offset against your corporate tax – or even refunded beyond it. Here you learn how this works in practice.</p>
+    <p class="ds-updated">Last updated: March 8, 2026 · Reading time: approx. 9 minutes</p>
+
+    <nav class="toc" aria-label="Table of Contents">
+      <div class="toc-title">Table of Contents</div>
+      <ol>
+        <li><a href="#steuersystem">R&D Tax Credit in the Tax System: Where It Applies</a></li>
+        <li><a href="#anlage-fz">Anlage FZ: Application at the Tax Office</a></li>
+        <li><a href="#verrechnung">Offset Against Corporate Tax (Körperschaftsteuer)</a></li>
+        <li><a href="#gewerbesteuer">Trade Tax (Gewerbesteuer): No Addition</a></li>
+        <li><a href="#einkommensteuer">Income Tax for Partnerships</a></li>
+        <li><a href="#verlustvortraege">Impact on Loss Carryforwards</a></li>
+        <li><a href="#faq">FAQ: R&D Tax Credit &amp; Corporate Tax</a></li>
+      </ol>
+    </nav>
+
+    <!-- Section 1 -->
+    <div class="ds-section" id="steuersystem">
+      <h2>R&D Tax Credit in the Tax System: Where It Applies</h2>
+      <p>The R&D Tax Credit under the FZulG is not a traditional subsidy or grant, but a <strong>genuine tax credit</strong>. Under <strong>Section 4 FZulG</strong>, it is assessed within the corporate tax or income tax assessment and directly offset against the assessed tax.</p>
+
+      <p>Specifically, this means: The tax office first assesses the corporate tax (for GmbH, AG, UG) or income tax (for sole proprietorships and partnerships) as usual. The R&D Tax Credit is then assessed as a <strong>separate notice</strong> and deducted from the tax liability.</p>
+
+      <p>The decisive advantages over other funding programs:</p>
+      <ul>
+        <li><strong>Offset against the tax liability:</strong> The R&D Tax Credit directly reduces the corporate tax payable.</li>
+        <li><strong>Refund of excess:</strong> If the R&D Tax Credit exceeds the tax liability, the difference is <strong>directly refunded</strong> – a payout to the company account.</li>
+        <li><strong>Not a grant, but a legal entitlement:</strong> Unlike funding programs, there is a statutory entitlement. There is no discretion and no budget that can be exhausted.</li>
+        <li><strong>Independent of the profit situation:</strong> Even companies in loss years receive the full R&D Tax Credit as a refund.</li>
+      </ul>
+
+      <div class="ds-highlight-box">
+        <strong>Important:</strong> The R&D Tax Credit itself is <strong>tax-free</strong>. It is neither considered when determining taxable income nor does it increase the company's profit. This means: The paid-out R&D Tax Credit arrives <strong>1:1 at the company</strong> – without further tax deductions.
+      </div>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="ds-section" id="anlage-fz">
+      <h2>Anlage FZ: Application at the Tax Office</h2>
+      <p>The R&D Tax Credit is applied for at the responsible tax office via <strong>Anlage FZ</strong>. Submission is electronic via the ELSTER portal – just like the regular tax return.</p>
+
+      <h3>Content of Anlage FZ</h3>
+      <p>Anlage FZ contains all essential information for claiming the R&D Tax Credit:</p>
+      <ul>
+        <li><strong>BSFZ certificate:</strong> The certificate number from the positive assessment by the Certification Body for R&D Tax Credit (BSFZ). Without a BSFZ certificate, no R&D Tax Credit can be assessed.</li>
+        <li><strong>Eligible expenditures:</strong> Detailed breakdown of personnel costs (gross wages and salaries), own contributions from sole proprietors, and contract research costs (60% of remuneration).</li>
+        <li><strong>Assessment basis:</strong> The sum of all eligible expenditures, capped at the maximum assessment basis (EUR 4 million until 2023, EUR 12 million from 2024).</li>
+        <li><strong>Requested R&D Tax Credit:</strong> The calculated funding amount (25% or 35% for SMEs from 2024).</li>
+      </ul>
+
+      <h3>Submission Timing</h3>
+      <p>Anlage FZ can be submitted <strong>together with the tax return</strong>, but does not have to be. It can also be submitted <strong>separately and independently</strong> of the tax return. The only prerequisite is that the BSFZ certificate is already available.</p>
+
+      <div class="ds-box">
+        <strong>Practical recommendation:</strong> Submit Anlage FZ promptly after receiving the BSFZ certificate – even if your tax return is not yet ready. This significantly accelerates the assessment and payout process. Processing time at the tax office is typically 2-4 months.
+      </div>
+    </div>
+
+    <!-- Section 3 -->
+    <div class="ds-section" id="verrechnung">
+      <h2>Offset Against Corporate Tax (Körperschaftsteuer)</h2>
+      <p>The offset of the R&D Tax Credit against corporate tax is straightforward and follows a simple principle: The assessed R&D Tax Credit is deducted from the assessed corporate tax. Depending on the ratio, two scenarios arise:</p>
+
+      <h3>Scenario 1: Tax Liability Higher than R&D Tax Credit</h3>
+      <p>If the corporate tax liability is higher than the R&D Tax Credit, the allowance reduces the tax payable. The company only pays the difference.</p>
+
+      <h3>Scenario 2: R&D Tax Credit Higher than Tax Liability</h3>
+      <p>If the R&D Tax Credit exceeds the tax liability, the excess amount is <strong>directly refunded to the company</strong>. This is particularly relevant for high-growth companies with significant R&amp;D expenditures and comparatively low tax liability.</p>
+
+      <div class="ds-table-wrap">
+        <table class="ds-table">
+          <thead>
+            <tr>
+              <th>Scenario</th>
+              <th>CT Liability</th>
+              <th>R&D Tax Credit</th>
+              <th>Result</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>A: Partial Offset</strong></td>
+              <td>EUR 200,000</td>
+              <td>EUR 150,000</td>
+              <td style="color:var(--clr-h)"><strong>EUR 50,000 remaining liability</strong></td>
+            </tr>
+            <tr>
+              <td><strong>B: Full Offset + Refund</strong></td>
+              <td>EUR 80,000</td>
+              <td>EUR 150,000</td>
+              <td style="color:#16a34a"><strong>EUR 70,000 refund</strong></td>
+            </tr>
+            <tr>
+              <td><strong>C: No Tax Liability</strong></td>
+              <td>EUR 0</td>
+              <td>EUR 150,000</td>
+              <td style="color:#16a34a"><strong>EUR 150,000 refund</strong></td>
+            </tr>
+            <tr>
+              <td><strong>D: Exact Offset</strong></td>
+              <td>EUR 150,000</td>
+              <td>EUR 150,000</td>
+              <td style="color:var(--clr-h)"><strong>EUR 0 – fully offset</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p><strong>Detailed example (Scenario B):</strong> A GmbH has a corporate tax liability of EUR 80,000 in fiscal year 2025. At the same time, a R&D Tax Credit of EUR 150,000 is assessed (based on EUR 600,000 personnel costs x 25%). The R&D Tax Credit exceeds the tax liability by EUR 70,000. This amount is directly refunded to the company account.</p>
+
+      <div class="ds-highlight-box">
+        <strong>Liquidity advantage:</strong> The R&D Tax Credit directly impacts your company's liquidity. In Scenario B, not only does EUR 80,000 less flow to the tax office – the company also receives EUR 70,000 as a refund. The effective liquidity advantage is thus <strong>EUR 150,000</strong>.
+      </div>
+    </div>
+
+    <!-- Section 4 -->
+    <div class="ds-section" id="gewerbesteuer">
+      <h2>Trade Tax (Gewerbesteuer): No Addition</h2>
+      <p>A frequently asked question concerns the trade tax treatment of the R&D Tax Credit. The answer is clear and positive: <strong>The R&D Tax Credit is fully exempt from trade tax.</strong></p>
+
+      <p>This follows directly from <strong>Section 4(3) FZulG</strong>, which expressly provides that the R&D Tax Credit is not taken into account when determining trade income. Specifically, this means:</p>
+
+      <ul>
+        <li><strong>No addition:</strong> The R&D Tax Credit is not treated as income and is not added to trade income.</li>
+        <li><strong>No impact on the trade tax assessment amount:</strong> The trade tax assessment amount remains unaffected by the R&D Tax Credit.</li>
+        <li><strong>No impact on the multiplier:</strong> The trade tax burden of the company does not change due to the R&D Tax Credit.</li>
+        <li><strong>No trade tax reporting obligation:</strong> The R&D Tax Credit does not need to be separately declared in the trade tax return.</li>
+      </ul>
+
+      <div class="ds-highlight-box">
+        <strong>Practical significance:</strong> The trade tax exemption of the R&D Tax Credit means that the entire funding remains with the company. At a typical trade tax multiplier (Hebesatz) of 400% and an assessment rate of 3.5%, trade tax liability would reduce the effective funding by up to 14%. Thanks to Section 4(3) FZulG, this additional burden is completely eliminated.
+      </div>
+    </div>
+
+    <!-- Section 5 -->
+    <div class="ds-section" id="einkommensteuer">
+      <h2>Income Tax for Partnerships</h2>
+      <p>The R&D Tax Credit is available not only to corporations (GmbH, AG) but also to <strong>partnerships</strong> such as GbR, KG, and OHG. Since partnerships are not themselves subject to corporate tax, the offset occurs at the level of the individual partners against their <strong>personal income tax</strong>.</p>
+
+      <h3>Distribution Among Partners</h3>
+      <p>The R&D Tax Credit is allocated to the individual partners according to the <strong>distribution key</strong> of the partnership. Typically, this corresponds to the profit distribution key in the partnership agreement. Each partner receives their share of the R&D Tax Credit as a credit against their personal income tax.</p>
+
+      <h3>Specifics for Limited Partnerships (KG)</h3>
+      <p>In a KG, the R&D Tax Credit is distributed among general partners (Komplementäre) and limited partners (Kommanditisten). The distribution key follows the partnership agreement. Important: Even limited partners who are not actively involved in management receive their share of the R&D Tax Credit.</p>
+
+      <h3>Sole Proprietors</h3>
+      <p>For sole proprietorships, the R&D Tax Credit is directly offset against the <strong>owner's income tax</strong>. Additionally, sole proprietors can claim the <strong>own contribution flat rate</strong> (EUR 70/hour, max. 40h/week) as an assessment basis – a significant advantage that can substantially increase the funding amount. More details in our <a href="/en/forschungszulage-gmbh-einzelunternehmen.html">Guide: GmbH vs. Sole Proprietorship</a>.</p>
+
+      <div class="ds-box">
+        <strong>Note for partnerships:</strong> The application for the R&D Tax Credit (Anlage FZ) is submitted by the <strong>partnership</strong> to the tax office – not by the individual partners. The allocation to partners is made by the tax office as part of the separate and uniform determination (gesonderte und einheitliche Feststellung).
+      </div>
+    </div>
+
+    <!-- Section 6 -->
+    <div class="ds-section" id="verlustvortraege">
+      <h2>Impact on Loss Carryforwards</h2>
+      <p>One of the most attractive features of the R&D Tax Credit is its <strong>complete independence from the company's profit situation</strong>. This has far-reaching consequences for companies with loss carryforwards:</p>
+
+      <ul>
+        <li><strong>No reduction of the loss carryforward:</strong> The R&D Tax Credit does not reduce the existing loss carryforward. The corporate or income tax loss carryforward remains fully intact and can continue to be utilized in future years.</li>
+        <li><strong>Payout despite losses:</strong> Even if the company has incurred a loss in the relevant fiscal year and has no tax liability, the R&D Tax Credit is refunded in full.</li>
+        <li><strong>No offset against the loss carryforward:</strong> The R&D Tax Credit is not netted against existing loss carryforwards – it is available to the company in addition.</li>
+      </ul>
+
+      <div class="ds-highlight-box">
+        <strong>Particularly relevant for startups:</strong> Young companies are frequently in a loss phase while simultaneously investing heavily in research and development. The R&D Tax Credit provides these companies with a <strong>direct liquidity injection</strong> that flows regardless of the profit situation. A startup with EUR 500,000 in R&amp;D personnel costs and zero tax liability still receives EUR 125,000 (or EUR 175,000 as an SME from 2024) as a direct refund – while retaining their full loss carryforward for the future.
+      </div>
+
+      <p>This feature fundamentally distinguishes the R&D Tax Credit from tax benefits such as special depreciation allowances or investment deduction amounts, which only take effect when there is taxable profit. In this sense, the R&D Tax Credit is a <strong>"true" incentive</strong> that delivers its full impact even in economically challenging phases.</p>
+    </div>
+
+    <!-- Section 7: FAQ -->
+    <div class="ds-section" id="faq">
+      <h2>FAQ: R&D Tax Credit &amp; Corporate Tax</h2>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          Is the R&D Tax Credit subject to trade tax (Gewerbesteuer)?
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>No. Under <strong>Section 4(3) FZulG</strong>, the R&D Tax Credit is expressly exempt from trade tax. It is not added to trade income and has no impact on the trade tax assessment amount. The full R&D Tax Credit remains with the company without any trade tax burden.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          What happens if the R&D Tax Credit exceeds the tax liability?
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>If the assessed R&D Tax Credit exceeds the corporate or income tax liability, the <strong>difference is directly refunded to the company</strong>. It is a genuine tax credit. Example: With a CT liability of EUR 80,000 and a R&D Tax Credit of EUR 150,000, the company receives EUR 70,000 as a direct refund to the company account.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          Do I have to submit Anlage FZ with the tax return?
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>No, <strong>Anlage FZ</strong> can also be submitted separately from the tax return to the responsible tax office. Submission is electronic via ELSTER. The only prerequisite is that the BSFZ certificate is already available. It is recommended to submit Anlage FZ promptly after receiving the certificate to accelerate the assessment and payout process.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          Does the R&D Tax Credit affect my loss carryforward?
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>No, the R&D Tax Credit has <strong>no impact on the loss carryforward</strong>. It is assessed and paid out independently of the company's profit situation. An existing loss carryforward is neither reduced nor affected. This makes the R&D Tax Credit particularly attractive for startups and companies in loss phases that receive the full funding as a direct refund despite having no tax liability.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Related Content -->
+    <div class="ds-section" style="margin-top:2rem">
+      <h2>Further Resources on the R&D Tax Credit</h2>
+      <p>Deepen your knowledge with our specialized resources:</p>
+      <ul>
+        <li><a href="/en/forschungszulage.html" style="color:#1E56B5;font-weight:600"><strong>R&D Tax Credit Guide</strong></a> – The complete overview of the FZulG 2026</li>
+        <li><a href="/en/forschungszulage-buchen.html" style="color:#1E56B5;font-weight:600"><strong>Booking the R&D Tax Credit</strong></a> – Correct recording in your accounting</li>
+        <li><a href="/en/forschungszulage-antrag.html" style="color:#1E56B5;font-weight:600"><strong>R&D Tax Credit Application</strong></a> – Step-by-step guide to the application process</li>
+        <li><a href="/en/forschungszulage-auszahlung.html" style="color:#1E56B5;font-weight:600"><strong>R&D Tax Credit Payout</strong></a> – Process, timeline, and offset</li>
+        <li><a href="/en/forschungszulage-gmbh-einzelunternehmen.html" style="color:#1E56B5;font-weight:600"><strong>GmbH vs. Sole Proprietorship</strong></a> – Legal form-specific considerations</li>
+      </ul>
+    </div>
+
+    <!-- CTA Box -->
+    <div class="cta-section">
+      <h2>Offset the R&D Tax Credit against your tax liability</h2>
+      <p>Find out in a free initial analysis how much R&D Tax Credit your company is entitled to and how it will be offset against your corporate tax. Success-based and risk-free.</p>
+      <a href="/en/#kontakt" class="btn-primary" style="padding:0.7rem 1.8rem;font-size:0.9rem">
+        Request Free Initial Analysis
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+
+  </div>
+</main>
+
+<footer style="background:#04091a;border-top:1px solid rgba(255,255,255,0.07)">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
+      <div class="lg:col-span-2">
+        <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto;margin-bottom:1rem" />
+        <p style="font-size:0.82rem;color:rgba(195,215,245,0.38);line-height:1.72;max-width:320px">
+          NOVARIS Consulting is your specialized full-service partner for the German
+          R&D Tax Credit (Forschungszulage) under the FZulG – success-based, transparent, and risk-free.
+        </p>
+      </div>
+      <div>
+        <div style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.75rem;letter-spacing:0.09em;text-transform:uppercase;color:rgba(195,215,245,0.3);margin-bottom:1rem">Navigation</div>
+        <div style="display:flex;flex-direction:column;gap:0.55rem">
+          <a href="/en/#was-ist-fzulg" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">The FZulG</a>
+          <a href="/en/#prozess"       style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Process</a>
+          <a href="/en/#vorteile"      style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Benefits</a>
+          <a href="/en/#faq"           style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">FAQ</a>
+          <a href="/en/#kontakt"       style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Contact</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.75rem;letter-spacing:0.09em;text-transform:uppercase;color:rgba(195,215,245,0.3);margin-bottom:1rem">Legal</div>
+        <div style="display:flex;flex-direction:column;gap:0.55rem">
+          <a href="/impressum.html"  style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Imprint</a>
+          <a href="/datenschutz.html" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Privacy Policy</a>
+          <a href="/agb.html"        style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Terms &amp; Conditions</a>
+          <a href="javascript:void(0)" onclick="CookieConsent.reset();CookieConsent.request(function(){});" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Cookie Settings</a>
+        </div>
+      </div>
+    </div>
+    <div style="height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.08) 25%,rgba(255,255,255,0.08) 75%,transparent);margin-bottom:1.5rem"></div>
+    <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem">
+      <p style="font-size:0.73rem;color:rgba(195,215,245,0.25)">&copy; 2026 NOVARIS Consulting · All rights reserved.</p>
+      <p style="font-size:0.73rem;color:rgba(195,215,245,0.18)">This website does not constitute tax or legal advice.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function() { if (localStorage.getItem('theme') === 'dark') { document.documentElement.classList.add('dark'); } })();
+  function toggleDark() { const dark = document.documentElement.classList.toggle('dark'); localStorage.setItem('theme', dark ? 'dark' : 'light'); _updateDarkBtn(); }
+  function _updateDarkBtn() { const dark = document.documentElement.classList.contains('dark'); const moon = document.getElementById('icon-moon'); const sun = document.getElementById('icon-sun'); if (moon) moon.style.display = dark ? 'none' : 'block'; if (sun) sun.style.display = dark ? 'block' : 'none'; }
+  window.addEventListener('DOMContentLoaded', _updateDarkBtn);
+</script>
+<script src="/cookie-consent.js" defer></script>
+<script src="/analytics.js" defer></script>
+</body>
+</html>

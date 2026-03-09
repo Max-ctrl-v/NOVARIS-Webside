@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – NOVARIS Consulting</title>
+  <meta name="robots" content="noindex, follow" />
+  <link rel="canonical" href="https://novaris-consulting.com/en/datenschutz.html" />
+
+  <!-- Hreflang -->
+  <link rel="alternate" hreflang="de" href="https://novaris-consulting.com/datenschutz.html" />
+  <link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/datenschutz.html" />
+  <link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/datenschutz.html" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --bg-base:    #ffffff;
+      --bg-raised:  #f5f8fe;
+      --bg-card:    #ffffff;
+      --clr-h:      #0D1B3E;
+      --clr-b:      #5a6e8c;
+      --clr-muted:  #4a5870;
+      --bdr:        #dde5f4;
+    }
+    html.dark {
+      --bg-base:    #0a1428;
+      --bg-raised:  #0D1B3E;
+      --bg-card:    #122244;
+      --clr-h:      #e8f0fa;
+      --clr-b:      #8aaac8;
+      --clr-muted:  #6888a8;
+      --bdr:        rgba(77,174,229,0.18);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg-base);
+      color: var(--clr-h);
+      transition: background 0.25s ease, color 0.25s ease;
+      line-height: 1.7;
+    }
+
+    .nav-blur { backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); }
+
+    .nav-link {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.84rem;
+      font-weight: 500;
+      color: rgba(195,215,245,0.70);
+      text-decoration: none;
+      padding: 0.42rem 0.85rem;
+      border-radius: 8px;
+      transition: color 0.15s ease, background 0.15s ease;
+      letter-spacing: 0.01em;
+    }
+    .nav-link:hover { color: #fff; background: rgba(255,255,255,0.07); }
+    .nav-link:focus-visible { outline: 2px solid #4DAEE5; outline-offset: 2px; }
+
+    .lang-toggle {
+      display: flex;
+      align-items: center;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.10);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .lang-btn {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      color: rgba(195,215,245,0.45);
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 0.3rem 0.65rem;
+      transition: color 0.15s ease, background 0.15s ease;
+    }
+    .lang-btn.active { color: #fff; background: rgba(77,174,229,0.18); }
+    .lang-btn:hover:not(.active) { color: rgba(195,215,245,0.75); }
+    .lang-divider { width: 1px; height: 14px; background: rgba(255,255,255,0.12); }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background: #1E56B5;
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 0.84rem;
+      border: none;
+      border-radius: 10px;
+      text-decoration: none;
+      cursor: pointer;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.3), 0 4px 12px rgba(30,86,181,0.35);
+      transition: background 0.15s ease, transform 0.12s ease, box-shadow 0.15s ease;
+    }
+    .btn-primary:hover  { background: #2563c4; box-shadow: 0 2px 4px rgba(0,0,0,0.3), 0 6px 18px rgba(30,86,181,0.45); transform: translateY(-1px); }
+    .btn-primary:active { transform: translateY(0); }
+    .btn-primary:focus-visible { outline: 2px solid #4DAEE5; outline-offset: 2px; }
+
+    .content-wrap {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 6rem 1.5rem 5rem;
+    }
+
+    .ds-breadcrumb {
+      font-size: 0.78rem;
+      color: var(--clr-b);
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .ds-breadcrumb a {
+      color: #4DAEE5;
+      text-decoration: none;
+      transition: color 0.14s ease;
+    }
+    .ds-breadcrumb a:hover { color: #7ec8f0; }
+
+    .ds-eyebrow {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #4DAEE5;
+      margin-bottom: 0.9rem;
+    }
+
+    .ds-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: var(--clr-h);
+      line-height: 1.15;
+      margin-bottom: 0.5rem;
+    }
+
+    .ds-updated {
+      font-size: 0.78rem;
+      color: var(--clr-b);
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--bdr);
+    }
+
+    .ds-section {
+      margin-bottom: 2.8rem;
+    }
+    .ds-section h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.12rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: var(--clr-h);
+      margin-bottom: 0.9rem;
+      padding-bottom: 0.55rem;
+      border-bottom: 1px solid var(--bdr);
+    }
+    .ds-section h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--clr-h);
+      margin-top: 1.4rem;
+      margin-bottom: 0.5rem;
+    }
+    .ds-section p {
+      font-size: 0.9rem;
+      color: var(--clr-b);
+      line-height: 1.75;
+      margin-bottom: 0.85rem;
+    }
+    .ds-section ul {
+      margin: 0.5rem 0 0.85rem 1.1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+    .ds-section ul li {
+      font-size: 0.9rem;
+      color: var(--clr-b);
+      line-height: 1.65;
+    }
+    .ds-section a {
+      color: #4DAEE5;
+      text-decoration: none;
+      transition: color 0.14s ease;
+    }
+    .ds-section a:hover { color: #7ec8f0; text-decoration: underline; }
+
+    .ds-box {
+      background: var(--bg-raised);
+      border: 1px solid var(--bdr);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      font-size: 0.88rem;
+      color: var(--clr-b);
+      line-height: 1.7;
+      transition: background 0.25s ease, border-color 0.25s ease;
+    }
+    .ds-box strong {
+      color: var(--clr-h);
+      font-weight: 600;
+    }
+
+    .ds-rights-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 0.75rem;
+      margin-top: 1rem;
+    }
+    .ds-right-item {
+      background: var(--bg-raised);
+      border: 1px solid var(--bdr);
+      border-radius: 10px;
+      padding: 0.9rem 1rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.65rem;
+      transition: background 0.25s ease, border-color 0.25s ease;
+    }
+    .ds-right-icon {
+      width: 28px;
+      height: 28px;
+      border-radius: 7px;
+      background: rgba(30,86,181,0.12);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .ds-right-item p { margin: 0; font-size: 0.82rem; }
+    .ds-right-item strong { display: block; font-size: 0.83rem; color: var(--clr-h); margin-bottom: 0.15rem; }
+
+    footer { background: #04091a; border-top: 1px solid rgba(255,255,255,0.07); }
+
+    html.dark .ds-box       { background: var(--bg-card); }
+    html.dark .ds-right-item { background: var(--bg-card); }
+    .logo-light { display: none; }
+    html.dark .logo-dark  { display: none !important; }
+    html.dark .logo-light { display: inline !important; }
+
+    html { overflow-y: scroll; }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: rgba(77,174,229,0.38); border-radius: 999px; }
+    ::-webkit-scrollbar-thumb:hover { background: rgba(77,174,229,0.55); }
+    html { scrollbar-width: thin; scrollbar-color: rgba(77,174,229,0.38) transparent; }
+    html.dark ::-webkit-scrollbar-thumb { background: rgba(77,174,229,0.30); }
+    html.dark ::-webkit-scrollbar-thumb:hover { background: rgba(77,174,229,0.48); }
+    html.dark { scrollbar-color: rgba(77,174,229,0.30) transparent; }
+  </style>
+  <link rel="stylesheet" href="/page-transition.css" />
+  <link rel="stylesheet" href="/cookie-consent.css" />
+  <script src="/page-transition.js" defer></script>
+</head>
+<body>
+
+<header id="nav" class="fixed inset-x-0 top-0 z-50 nav-blur"
+        style="background:rgba(4,9,26,0.88);border-bottom:1px solid rgba(255,255,255,0.07)">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between gap-4" style="height:68px">
+
+    <a href="/en/" aria-label="NOVARIS Consulting"
+       style="text-decoration:none;flex-shrink:0;display:flex;align-items:center;transition:opacity 0.15s ease"
+       class="hover:opacity-90 focus-visible:outline-none">
+      <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:52px" />
+    </a>
+
+    <nav class="hidden lg:flex items-center gap-0.5">
+      <a href="/en/#what-is-fzulg" class="nav-link">The FZulG</a>
+      <a href="/en/#industries"    class="nav-link">Industries</a>
+      <a href="/en/#process"       class="nav-link">Process</a>
+      <a href="/en/#benefits"      class="nav-link">Benefits</a>
+      <a href="/en/#faq"           class="nav-link">FAQ</a>
+      <a href="/en/#contact"       class="nav-link">Contact</a>
+    </nav>
+
+    <div class="flex items-center gap-3">
+      <div style="display:flex;align-items:center;gap:2px;margin-right:8px;">
+        <a href="/datenschutz.html" style="font-family:'Inter',sans-serif;font-size:0.78rem;font-weight:500;color:rgba(195,215,245,0.5);padding:4px 8px;border-radius:6px;text-decoration:none;transition:color 0.15s ease;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(195,215,245,0.5)'">DE</a>
+        <span style="font-family:'Inter',sans-serif;font-size:0.78rem;font-weight:600;color:#fff;padding:4px 8px;border-radius:6px;background:rgba(77,174,229,0.18);">EN</span>
+      </div>
+      <button id="dark-toggle" onclick="toggleDark()" aria-label="Toggle dark mode"
+        class="hidden sm:flex" style="width:32px;height:32px;border-radius:8px;border:1px solid rgba(255,255,255,0.12);
+               background:rgba(255,255,255,0.07);cursor:pointer;align-items:center;
+               justify-content:center;color:rgba(255,255,255,0.7);
+               transition:background 0.15s ease,color 0.15s ease">
+        <svg id="icon-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg id="icon-sun"  width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
+      <a href="/en/#contact" class="btn-primary hidden sm:inline-flex" style="padding:0.55rem 1.35rem;font-size:0.83rem">
+        Free assessment
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="content-wrap">
+
+    <!-- Breadcrumb -->
+    <div class="ds-breadcrumb">
+      <a href="/en/">Home</a>
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      <span>Privacy Policy</span>
+    </div>
+
+    <!-- Heading -->
+    <div class="ds-eyebrow">Legal</div>
+    <h1 class="ds-title">Privacy Policy</h1>
+    <p class="ds-updated">Last updated: February 2026</p>
+
+    <!-- 1. Controller -->
+    <div class="ds-section">
+      <h2>1. Data Controller</h2>
+      <p>The controller responsible for data processing on this website within the meaning of the General Data Protection Regulation (GDPR) is:</p>
+      <div class="ds-box">
+        <strong>NOVARIS Consulting GmbH</strong><br />
+        Musterstrasse 12<br />
+        80331 Munich<br />
+        Germany<br /><br />
+        Email: <a href="mailto:datenschutz@novaris-consulting.de">datenschutz@novaris-consulting.de</a><br />
+        Phone: +49 89 123456-0
+      </div>
+    </div>
+
+    <!-- 2. General Information -->
+    <div class="ds-section">
+      <h2>2. General Information on Data Processing</h2>
+      <p>We take the protection of your personal data very seriously and treat your personal data confidentially and in accordance with statutory data protection regulations and this privacy policy.</p>
+      <p>Personal data means any data that can be used to personally identify you (e.g., name, email address, IP address). The processing of personal data is always carried out in accordance with the GDPR and applicable national data protection regulations.</p>
+      <p>This privacy policy applies exclusively to our website. It does not apply to third-party websites that we link to.</p>
+    </div>
+
+    <!-- 3. Server Log Files -->
+    <div class="ds-section">
+      <h2>3. Server Log Files</h2>
+      <p>When you visit our website, the hosting provider automatically collects and stores information in so-called server log files, which your browser automatically transmits. These include:</p>
+      <ul>
+        <li>Browser type and version</li>
+        <li>Operating system used</li>
+        <li>Referrer URL (the previously visited page)</li>
+        <li>Host name of the accessing computer</li>
+        <li>Time of the server request</li>
+        <li>IP address (anonymised)</li>
+      </ul>
+      <p>This data is not merged with other data sources. Processing is based on Art. 6(1)(f) GDPR (legitimate interest in the technically error-free presentation and optimisation of the website).</p>
+      <p>The data is deleted as soon as it is no longer required for the purpose of its collection – typically after 7 days.</p>
+    </div>
+
+    <!-- 4. Contact Form -->
+    <div class="ds-section">
+      <h2>4. Contact Form and Email Enquiries</h2>
+      <p>When you contact us via the contact form or by email, the data you provide (name, email address, message, and any additional information) is stored by us to process your enquiry and for possible follow-up questions.</p>
+      <p>We do not share this data without your consent. The legal basis is Art. 6(1)(b) GDPR (processing for the performance of pre-contractual measures) or Art. 6(1)(f) GDPR (legitimate interest in the efficient handling of enquiries).</p>
+      <p>The data you enter in the contact form will remain with us until you request its deletion, revoke your consent to storage, or the purpose for data storage no longer applies (e.g., after your enquiry has been fully processed). Mandatory statutory provisions – in particular retention periods – remain unaffected.</p>
+    </div>
+
+    <!-- 5. Cookies -->
+    <div class="ds-section">
+      <h2>5. Cookies</h2>
+      <p>Our website uses only technically necessary cookies. These cookies are essential for the proper functioning of the website and cannot be disabled in your browser. They are typically set only in response to actions you take, such as setting your privacy preferences, logging in, or filling out forms.</p>
+
+      <h3>Technically Necessary Cookies</h3>
+      <p>We use the following technically necessary cookies:</p>
+      <ul>
+        <li><strong>theme</strong> – Stores your preferred display mode (light/dark mode) for this session (localStorage). Not a cookie in the technical sense, but local browser storage only.</li>
+      </ul>
+      <p>The legal basis for the use of technically necessary cookies is Art. 6(1)(f) GDPR (legitimate interest in the error-free and user-friendly provision of the website).</p>
+      <p>We do not use tracking cookies, advertising cookies, or analytics services (e.g., Google Analytics) on this website.</p>
+    </div>
+
+    <!-- 6. Hosting -->
+    <div class="ds-section">
+      <h2>6. Hosting</h2>
+      <p>This website is hosted by an external service provider (host). The personal data collected on this website is stored on the host's servers. This may include IP addresses, contact requests, meta and communication data, contract data, contact details, names, website access data, and other data generated via a website.</p>
+      <p>The host is used for the purpose of fulfilling our contract with our potential and existing customers (Art. 6(1)(b) GDPR) and in the interest of a secure, fast, and efficient provision of our online offering by a professional provider (Art. 6(1)(f) GDPR).</p>
+      <p>Our host will only process your data to the extent necessary to fulfil its service obligations and will follow our instructions regarding this data. A data processing agreement (DPA) pursuant to Art. 28 GDPR is in place.</p>
+    </div>
+
+    <!-- 7. Your Rights -->
+    <div class="ds-section">
+      <h2>7. Your Rights as a Data Subject</h2>
+      <p>You have the following rights with regard to your personal data:</p>
+
+      <div class="ds-rights-grid">
+        <div class="ds-right-item">
+          <div class="ds-right-icon">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#4DAEE5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </div>
+          <div>
+            <strong>Access (Art. 15 GDPR)</strong>
+            <p>You may request information about your stored data.</p>
+          </div>
+        </div>
+        <div class="ds-right-item">
+          <div class="ds-right-icon">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#4DAEE5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+          </div>
+          <div>
+            <strong>Rectification (Art. 16 GDPR)</strong>
+            <p>You may request correction of inaccurate data.</p>
+          </div>
+        </div>
+        <div class="ds-right-item">
+          <div class="ds-right-icon">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#4DAEE5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14H6L5 6"/><path d="M10 11v6"/><path d="M14 11v6"/><path d="M9 6V4h6v2"/></svg>
+          </div>
+          <div>
+            <strong>Erasure (Art. 17 GDPR)</strong>
+            <p>You may request deletion of your data.</p>
+          </div>
+        </div>
+        <div class="ds-right-item">
+          <div class="ds-right-icon">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#4DAEE5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
+          </div>
+          <div>
+            <strong>Restriction (Art. 18 GDPR)</strong>
+            <p>You may request restriction of processing.</p>
+          </div>
+        </div>
+        <div class="ds-right-item">
+          <div class="ds-right-icon">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#4DAEE5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="8 17 12 21 16 17"/><line x1="12" y1="12" x2="12" y2="21"/><path d="M20.88 18.09A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.29"/></svg>
+          </div>
+          <div>
+            <strong>Data Portability (Art. 20 GDPR)</strong>
+            <p>You may receive your data in a commonly used format.</p>
+          </div>
+        </div>
+        <div class="ds-right-item">
+          <div class="ds-right-icon">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#4DAEE5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6L6 18"/><path d="M6 6l12 12"/></svg>
+          </div>
+          <div>
+            <strong>Objection (Art. 21 GDPR)</strong>
+            <p>You may object to data processing at any time.</p>
+          </div>
+        </div>
+      </div>
+
+      <p style="margin-top:1.2rem">To exercise your rights, please contact: <a href="mailto:datenschutz@novaris-consulting.de">datenschutz@novaris-consulting.de</a></p>
+      <p>Without prejudice to any other administrative or judicial remedy, you have the right to lodge a complaint with a supervisory authority, in particular in the Member State of your habitual residence, your place of work, or the place of the alleged infringement, if you consider that the processing of your personal data infringes the GDPR.</p>
+    </div>
+
+    <!-- 8. Data Security -->
+    <div class="ds-section">
+      <h2>8. Data Security</h2>
+      <p>For security reasons and to protect the transmission of confidential content, this website uses SSL/TLS encryption. You can recognise an encrypted connection by the browser address bar changing from "http://" to "https://" and the lock icon in your browser bar.</p>
+      <p>When SSL/TLS encryption is activated, the data you transmit to us cannot be read by third parties. We also take appropriate technical and organisational measures to protect your data against loss, destruction, unauthorised access, and unauthorised transmission.</p>
+    </div>
+
+    <!-- 9. Disclosure to Third Parties -->
+    <div class="ds-section">
+      <h2>9. Disclosure to Third Parties</h2>
+      <p>We do not disclose your personal data to third parties for purposes other than those listed below. We only share your personal data with third parties if:</p>
+      <ul>
+        <li>You have given your express consent (Art. 6(1)(a) GDPR),</li>
+        <li>Disclosure is necessary for the performance of a contract with you (Art. 6(1)(b) GDPR),</li>
+        <li>There is a legal obligation to disclose (Art. 6(1)(c) GDPR),</li>
+        <li>Disclosure is necessary for the protection of legitimate interests and there is no reason to assume that you have an overriding interest worthy of protection in not having your data disclosed (Art. 6(1)(f) GDPR).</li>
+      </ul>
+    </div>
+
+    <!-- 10. Updates -->
+    <div class="ds-section">
+      <h2>10. Updates to this Privacy Policy</h2>
+      <p>This privacy policy is currently valid as of February 2026. Due to the further development of our website or changes in legal or regulatory requirements, it may become necessary to amend this privacy policy. The current version can be accessed and printed at any time on our website at <a href="/en/datenschutz.html">novaris-consulting.com/en/datenschutz</a>.</p>
+    </div>
+
+  </div>
+</main>
+
+<footer style="background:#04091a;border-top:1px solid rgba(255,255,255,0.07)">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
+      <div class="lg:col-span-2">
+        <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:52px;width:auto;margin-bottom:1rem" />
+        <p style="font-size:0.82rem;color:rgba(195,215,245,0.38);line-height:1.72;max-width:320px">
+          NOVARIS Consulting is your specialised full-service partner for the German R&D tax credit
+          (Forschungszulage / FZulG) – success-based, transparent, and risk-free.
+        </p>
+      </div>
+      <div>
+        <div style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.75rem;letter-spacing:0.09em;text-transform:uppercase;color:rgba(195,215,245,0.3);margin-bottom:1rem">Navigation</div>
+        <div style="display:flex;flex-direction:column;gap:0.55rem">
+          <a href="/en/#what-is-fzulg" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">The FZulG</a>
+          <a href="/en/#process"       style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Process</a>
+          <a href="/en/#benefits"      style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Benefits</a>
+          <a href="/en/#faq"           style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">FAQ</a>
+          <a href="/en/#contact"       style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Contact</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.75rem;letter-spacing:0.09em;text-transform:uppercase;color:rgba(195,215,245,0.3);margin-bottom:1rem">Legal</div>
+        <div style="display:flex;flex-direction:column;gap:0.55rem">
+          <a href="/en/impressum.html"  style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Legal Notice</a>
+          <a href="/en/datenschutz.html" style="font-size:0.82rem;color:rgba(195,215,245,0.70);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Privacy Policy</a>
+          <a href="/en/agb.html"        style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Terms &amp; Conditions</a>
+          <a href="javascript:void(0)" onclick="CookieConsent.reset();CookieConsent.request(function(){});" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Cookie Settings</a>
+        </div>
+      </div>
+    </div>
+    <div style="height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.08) 25%,rgba(255,255,255,0.08) 75%,transparent);margin-bottom:1.5rem"></div>
+    <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem">
+      <p style="font-size:0.73rem;color:rgba(195,215,245,0.25)">&copy; 2026 NOVARIS Consulting &middot; All rights reserved.</p>
+      <p style="font-size:0.73rem;color:rgba(195,215,245,0.18)">This website does not constitute tax or legal advice.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function() {
+    if (localStorage.getItem('theme') === 'dark') {
+      document.documentElement.classList.add('dark');
+    }
+  })();
+
+  function toggleDark() {
+    const dark = document.documentElement.classList.toggle('dark');
+    localStorage.setItem('theme', dark ? 'dark' : 'light');
+    _updateDarkBtn();
+  }
+
+  function _updateDarkBtn() {
+    const dark = document.documentElement.classList.contains('dark');
+    const moon = document.getElementById('icon-moon');
+    const sun  = document.getElementById('icon-sun');
+    if (moon) moon.style.display = dark ? 'none'  : 'block';
+    if (sun)  sun.style.display  = dark ? 'block' : 'none';
+  }
+
+  window.addEventListener('DOMContentLoaded', _updateDarkBtn);
+</script>
+
+<script src="/cookie-consent.js"></script>
+<script src="/analytics.js"></script>
+</body>
+</html>

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms & Conditions – NOVARIS Consulting</title>
+  <meta name="robots" content="noindex, follow" />
+  <link rel="canonical" href="https://novaris-consulting.com/en/agb.html" />
+  <link rel="alternate" hreflang="de" href="https://novaris-consulting.com/agb.html" />
+  <link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/agb.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --bg-base:    #ffffff;
+      --bg-raised:  #f5f8fe;
+      --bg-card:    #ffffff;
+      --clr-h:      #0D1B3E;
+      --clr-b:      #5a6e8c;
+      --clr-muted:  #4a5870;
+      --bdr:        #dde5f4;
+    }
+    html.dark {
+      --bg-base:    #0a1428;
+      --bg-raised:  #0D1B3E;
+      --bg-card:    #122244;
+      --clr-h:      #e8f0fa;
+      --clr-b:      #8aaac8;
+      --clr-muted:  #6888a8;
+      --bdr:        rgba(77,174,229,0.18);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg-base);
+      color: var(--clr-h);
+      transition: background 0.25s ease, color 0.25s ease;
+      line-height: 1.7;
+    }
+
+    .nav-blur { backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); }
+    .logo-img { height: 52px; width: auto; display: block; }
+
+    .nav-link {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.84rem;
+      font-weight: 500;
+      color: rgba(195,215,245,0.70);
+      text-decoration: none;
+      padding: 0.42rem 0.85rem;
+      border-radius: 8px;
+      transition: color 0.15s ease, background 0.15s ease;
+      letter-spacing: 0.01em;
+    }
+    .nav-link:hover { color: #fff; background: rgba(255,255,255,0.07); }
+    .nav-link:focus-visible { outline: 2px solid #4DAEE5; outline-offset: 2px; }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background: #1E56B5;
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 0.84rem;
+      border: none;
+      border-radius: 10px;
+      text-decoration: none;
+      cursor: pointer;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.3), 0 4px 12px rgba(30,86,181,0.35);
+      transition: background 0.15s ease, transform 0.12s ease, box-shadow 0.15s ease;
+    }
+    .btn-primary:hover  { background: #2563c4; box-shadow: 0 2px 4px rgba(0,0,0,0.3), 0 6px 18px rgba(30,86,181,0.45); transform: translateY(-1px); }
+    .btn-primary:active { transform: translateY(0); }
+    .btn-primary:focus-visible { outline: 2px solid #4DAEE5; outline-offset: 2px; }
+
+    .content-wrap {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 6rem 1.5rem 5rem;
+    }
+
+    .ds-breadcrumb {
+      font-size: 0.78rem;
+      color: var(--clr-b);
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .ds-breadcrumb a {
+      color: #4DAEE5;
+      text-decoration: none;
+      transition: color 0.14s ease;
+    }
+    .ds-breadcrumb a:hover { color: #7ec8f0; }
+
+    .ds-eyebrow {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #4DAEE5;
+      margin-bottom: 0.9rem;
+    }
+
+    .ds-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: var(--clr-h);
+      line-height: 1.15;
+      margin-bottom: 0.5rem;
+    }
+
+    .ds-updated {
+      font-size: 0.78rem;
+      color: var(--clr-b);
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--bdr);
+    }
+
+    .ds-section {
+      margin-bottom: 2.8rem;
+    }
+    .ds-section h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.12rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: var(--clr-h);
+      margin-bottom: 0.9rem;
+      padding-bottom: 0.55rem;
+      border-bottom: 1px solid var(--bdr);
+    }
+    .ds-section h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--clr-h);
+      margin-top: 1.4rem;
+      margin-bottom: 0.5rem;
+    }
+    .ds-section p {
+      font-size: 0.9rem;
+      color: var(--clr-b);
+      line-height: 1.75;
+      margin-bottom: 0.85rem;
+    }
+    .ds-section ul, .ds-section ol {
+      margin: 0.5rem 0 0.85rem 1.1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+    .ds-section ul li, .ds-section ol li {
+      font-size: 0.9rem;
+      color: var(--clr-b);
+      line-height: 1.65;
+    }
+    .ds-section a {
+      color: #4DAEE5;
+      text-decoration: none;
+      transition: color 0.14s ease;
+    }
+    .ds-section a:hover { color: #7ec8f0; text-decoration: underline; }
+
+    .ds-box {
+      background: var(--bg-raised);
+      border: 1px solid var(--bdr);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      font-size: 0.88rem;
+      color: var(--clr-b);
+      line-height: 1.7;
+      transition: background 0.25s ease, border-color 0.25s ease;
+    }
+    .ds-box strong {
+      color: var(--clr-h);
+      font-weight: 600;
+    }
+
+    footer { background: #04091a; border-top: 1px solid rgba(255,255,255,0.07); }
+
+    html.dark .ds-box { background: var(--bg-card); }
+    .logo-light { display: none; }
+    html.dark .logo-dark  { display: none !important; }
+    html.dark .logo-light { display: inline !important; }
+
+    html { overflow-y: scroll; }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: rgba(77,174,229,0.38); border-radius: 999px; }
+    ::-webkit-scrollbar-thumb:hover { background: rgba(77,174,229,0.55); }
+    html { scrollbar-width: thin; scrollbar-color: rgba(77,174,229,0.38) transparent; }
+    html.dark ::-webkit-scrollbar-thumb { background: rgba(77,174,229,0.30); }
+    html.dark ::-webkit-scrollbar-thumb:hover { background: rgba(77,174,229,0.48); }
+    html.dark { scrollbar-color: rgba(77,174,229,0.30) transparent; }
+  </style>
+  <link rel="stylesheet" href="/page-transition.css" />
+  <link rel="stylesheet" href="/cookie-consent.css" />
+  <script src="/page-transition.js" defer></script>
+</head>
+<body>
+
+<header id="nav" class="fixed inset-x-0 top-0 z-50 nav-blur"
+        style="background:rgba(4,9,26,0.88);border-bottom:1px solid rgba(255,255,255,0.07)">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between gap-4" style="height:68px">
+    <a href="/en/" aria-label="NOVARIS Consulting"
+       style="text-decoration:none;flex-shrink:0;display:flex;align-items:center;transition:opacity 0.15s ease"
+       class="hover:opacity-90 focus-visible:outline-none">
+      <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:52px" />
+    </a>
+    <nav class="hidden lg:flex items-center gap-0.5">
+      <a href="/en/#r-and-d-tax-credit" class="nav-link">The R&D Tax Credit</a>
+      <a href="/en/#industries"      class="nav-link">Industries</a>
+      <a href="/en/#process"       class="nav-link">Process</a>
+      <a href="/en/#benefits"      class="nav-link">Benefits</a>
+      <a href="/en/#faq"           class="nav-link">FAQ</a>
+      <a href="/en/#contact"       class="nav-link">Contact</a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <div style="display:flex;align-items:center;gap:2px;margin-right:8px;">
+        <a href="/agb.html" style="font-family:'Inter',sans-serif;font-size:0.78rem;font-weight:500;color:rgba(195,215,245,0.5);padding:4px 8px;border-radius:6px;text-decoration:none;transition:color 0.15s ease;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(195,215,245,0.5)'">DE</a>
+        <span style="font-family:'Inter',sans-serif;font-size:0.78rem;font-weight:600;color:#fff;padding:4px 8px;border-radius:6px;background:rgba(77,174,229,0.18);">EN</span>
+      </div>
+      <button id="dark-toggle" onclick="toggleDark()" aria-label="Toggle dark mode"
+        class="hidden sm:flex" style="width:32px;height:32px;border-radius:8px;border:1px solid rgba(255,255,255,0.12);
+               background:rgba(255,255,255,0.07);cursor:pointer;align-items:center;
+               justify-content:center;color:rgba(255,255,255,0.7);
+               transition:background 0.15s ease,color 0.15s ease">
+        <svg id="icon-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg id="icon-sun"  width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
+      <a href="/en/#contact" class="btn-primary hidden sm:inline-flex" style="padding:0.55rem 1.35rem;font-size:0.83rem">
+        Free Check
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="content-wrap">
+
+    <div class="ds-breadcrumb">
+      <a href="/">Home</a>
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      <span>Terms & Conditions</span>
+    </div>
+
+    <div class="ds-eyebrow">Legal</div>
+    <h1 class="ds-title">Terms & Conditions</h1>
+    <p class="ds-updated">Last updated: February 2026</p>
+
+    <!-- § 1 -->
+    <div class="ds-section">
+      <h2>§ 1 Scope of Application</h2>
+      <p>These Terms & Conditions (hereinafter "T&C") apply to all business relationships between NOVARIS Consulting GmbH, Musterstraße 12, 80331 Munich (hereinafter "NOVARIS" or "Contractor") and the client (hereinafter "Client").</p>
+      <p>Deviating, conflicting, or supplementary terms and conditions of the Client shall only become part of the contract if and to the extent that NOVARIS has expressly agreed to their validity in writing. This consent requirement applies in any case, for example even if NOVARIS provides the service without reservation while being aware of the Client's terms and conditions.</p>
+    </div>
+
+    <!-- § 2 -->
+    <div class="ds-section">
+      <h2>§ 2 Subject Matter</h2>
+      <p>NOVARIS provides consulting services in the area of the R&D Tax Credit under the German Research Allowance Act (FZulG). The exact scope of services is determined by the individual proposal or service description.</p>
+      <p>The services include in particular:</p>
+      <ul>
+        <li>Analysis and identification of eligible research and development projects</li>
+        <li>Preparation and submission of the certification application to the Certification Body for Research Allowance (BSFZ)</li>
+        <li>Support with the application to the responsible tax office</li>
+        <li>Guidance and communication during the certification process</li>
+        <li>Documentation of R&D activities in accordance with FZulG requirements</li>
+      </ul>
+      <p>NOVARIS does not owe any specific outcome (in particular not the approval of the R&D Tax Credit), but rather the professional delivery of the agreed consulting services.</p>
+    </div>
+
+    <!-- § 3 -->
+    <div class="ds-section">
+      <h2>§ 3 Fees and Payment Terms</h2>
+
+      <h3>3.1 Success-Based Fee</h3>
+      <p>Unless otherwise agreed in the individual contract, NOVARIS's fee is success-based. The fee only becomes due when the Client has received a positive certification from the BSFZ and/or an R&D Tax Credit notice from the tax office.</p>
+
+      <h3>3.2 Fee Amount</h3>
+      <p>The exact fee amount (percentage of the approved R&D Tax Credit or fixed price) is specified in the individual proposal.</p>
+
+      <h3>3.3 Due Date</h3>
+      <p>Invoices are due for payment within 14 days of the invoice date without deduction, unless otherwise agreed.</p>
+
+      <h3>3.4 Value Added Tax</h3>
+      <p>All prices are quoted exclusive of the applicable statutory value added tax.</p>
+    </div>
+
+    <!-- § 4 -->
+    <div class="ds-section">
+      <h2>§ 4 Client Cooperation Duties</h2>
+      <p>The Client is obligated to provide NOVARIS with all documents, information, and data required for the execution of the engagement in a timely, complete, and truthful manner. This includes in particular:</p>
+      <ul>
+        <li>Project descriptions and technical documentation of the R&D projects</li>
+        <li>Personnel cost and material cost statements</li>
+        <li>Existing funding decisions or rejections</li>
+        <li>Contact persons for queries on technical and commercial details</li>
+      </ul>
+      <p>Delays caused by untimely or incomplete cooperation by the Client shall not be attributable to NOVARIS. Additional costs arising from incorrect or incomplete information provided by the Client may be charged separately.</p>
+    </div>
+
+    <!-- § 5 -->
+    <div class="ds-section">
+      <h2>§ 5 Vertraulichkeit und Privacy Policy</h2>
+      <p>Both parties undertake to treat all confidential information of the other party obtained during the collaboration as strictly confidential and to use it only for the purposes of the contractual collaboration.</p>
+      <p>NOVARIS processes personal data of the Client exclusively in accordance with applicable data protection regulations (GDPR, BDSG). Further details are set out in our <a href="/en/datenschutz.html">Privacy Policy</a>.</p>
+      <p>The confidentiality obligation shall continue to apply after termination of the contractual relationship.</p>
+    </div>
+
+    <!-- § 6 -->
+    <div class="ds-section">
+      <h2>§ 6 Liability</h2>
+
+      <h3>6.1 Limitation of Liability</h3>
+      <p>NOVARIS shall not be liable for slightly negligent breaches of non-essential contractual obligations. In the case of slightly negligent breaches of essential contractual obligations (cardinal obligations), liability is limited to the foreseeable damage typical of the contract.</p>
+
+      <h3>6.2 No Guarantee of Funding Approval</h3>
+      <p>NOVARIS does not guarantee the approval of the R&D Tax Credit by the BSFZ or the responsible tax office. The decision on granting the R&D Tax Credit rests solely with the relevant authorities.</p>
+
+      <h3>6.3 Unaffected Liability</h3>
+      <p>The foregoing limitations of liability shall not apply to damages resulting from injury to life, body or health, in cases of intentional or grossly negligent conduct, or to claims under the Product Liability Act.</p>
+    </div>
+
+    <!-- § 7 -->
+    <div class="ds-section">
+      <h2>§ 7 Term and Termination</h2>
+
+      <h3>7.1 Contract Commencement</h3>
+      <p>The contract is concluded upon acceptance of the NOVARIS proposal by the Client (in writing, by email, or by signing the consulting agreement).</p>
+
+      <h3>7.2 Term</h3>
+      <p>The contract applies for the duration of the project specified in the proposal. It ends automatically upon completion of the agreed services and full payment of fees.</p>
+
+      <h3>7.3 Ordinary Termination</h3>
+      <p>Either party may terminate the contract in writing with 4 weeks' notice to the end of the month. In the event of termination by the Client after the application has already been submitted, NOVARIS shall be entitled to compensation for services rendered up to that point.</p>
+
+      <h3>7.4 Extraordinary Termination</h3>
+      <p>The right to extraordinary termination for good cause is reserved by both parties.</p>
+    </div>
+
+    <!-- § 8 -->
+    <div class="ds-section">
+      <h2>§ 8 Intellectual Property</h2>
+      <p>All documents, analyses, applications, and documentation produced by NOVARIS in the course of fulfilling the engagement are protected by copyright. The Client receives a simple, non-transferable right of use for the contractually agreed purpose.</p>
+      <p>Transfer to third parties requires the prior written consent of NOVARIS, unless the transfer is made to the relevant authorities as part of the application process.</p>
+    </div>
+
+    <!-- § 9 -->
+    <div class="ds-section">
+      <h2>§ 9 Final Provisions</h2>
+
+      <h3>9.1 Written Form</h3>
+      <p>Amendments and supplements to these T&C must be made in writing. This also applies to the waiver of this written form requirement.</p>
+
+      <h3>9.2 Applicable Law</h3>
+      <p>The law of the Federal Republic of Germany shall apply, excluding the UN Convention on Contracts for the International Sale of Goods (CISG).</p>
+
+      <h3>9.3 Place of Jurisdiction</h3>
+      <p>If the Client is a merchant, a legal entity under public law, or a special fund under public law, the exclusive place of jurisdiction for all disputes arising from this contract shall be Munich.</p>
+
+      <h3>9.4 Severability Clause</h3>
+      <p>Should any provision of these T&C be or become invalid or unenforceable, the validity of the remaining provisions shall remain unaffected. The parties undertake to replace the invalid or unenforceable provision with a provision that most closely approximates the economic purpose of the invalid or unenforceable provision.</p>
+    </div>
+
+    <!-- Contact -->
+    <div class="ds-section">
+      <h2>Questions about our Terms & Conditions?</h2>
+      <div class="ds-box">
+        <strong>NOVARIS Consulting GmbH</strong><br />
+        E-Mail: <a href="mailto:info@novaris-consulting.de">info@novaris-consulting.de</a><br />
+        Telefon: +49 89 123456-0
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer style="background:#04091a;border-top:1px solid rgba(255,255,255,0.07)">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
+      <div class="lg:col-span-2">
+        <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:52px;width:auto;margin-bottom:1rem" />
+        <p style="font-size:0.82rem;color:rgba(195,215,245,0.38);line-height:1.72;max-width:320px">
+          NOVARIS Consulting is your specialized full-service partner for the government
+          R&D Tax Credit under the FZulG – success-based, transparent and risk-free.
+        </p>
+      </div>
+      <div>
+        <div style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.75rem;letter-spacing:0.09em;text-transform:uppercase;color:rgba(195,215,245,0.3);margin-bottom:1rem">Navigation</div>
+        <div style="display:flex;flex-direction:column;gap:0.55rem">
+          <a href="/en/#r-and-d-tax-credit" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">The R&D Tax Credit</a>
+          <a href="/en/#process"       style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Process</a>
+          <a href="/en/#benefits"      style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Benefits</a>
+          <a href="/en/#faq"           style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">FAQ</a>
+          <a href="/en/#contact"       style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Contact</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.75rem;letter-spacing:0.09em;text-transform:uppercase;color:rgba(195,215,245,0.3);margin-bottom:1rem">Legal</div>
+        <div style="display:flex;flex-direction:column;gap:0.55rem">
+          <a href="/en/impressum.html"  style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Legal Notice</a>
+          <a href="/en/datenschutz.html" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Privacy Policy</a>
+          <a href="/en/agb.html"        style="font-size:0.82rem;color:rgba(195,215,245,0.70);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">AGB</a>
+          <a href="javascript:void(0)" onclick="CookieConsent.reset();CookieConsent.request(function(){});" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Cookie Settings</a>
+        </div>
+      </div>
+    </div>
+    <div style="height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.08) 25%,rgba(255,255,255,0.08) 75%,transparent);margin-bottom:1.5rem"></div>
+    <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem">
+      <p style="font-size:0.73rem;color:rgba(195,215,245,0.25)">© 2026 NOVARIS Consulting · All rights reserved.</p>
+      <p style="font-size:0.73rem;color:rgba(195,215,245,0.18)">This website does not constitute tax or legal advice.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function() {
+    if (localStorage.getItem('theme') === 'dark') {
+      document.documentElement.classList.add('dark');
+    }
+  })();
+
+  function toggleDark() {
+    const dark = document.documentElement.classList.toggle('dark');
+    localStorage.setItem('theme', dark ? 'dark' : 'light');
+    _updateDarkBtn();
+  }
+
+  function _updateDarkBtn() {
+    const dark = document.documentElement.classList.contains('dark');
+    const moon = document.getElementById('icon-moon');
+    const sun  = document.getElementById('icon-sun');
+    if (moon) moon.style.display = dark ? 'none'  : 'block';
+    if (sun)  sun.style.display  = dark ? 'block' : 'none';
+  }
+
+  window.addEventListener('DOMContentLoaded', _updateDarkBtn);
+</script>
+
+<script src="/cookie-consent.js"></script>
+<script src="/analytics.js"></script>
+</body>
+</html>

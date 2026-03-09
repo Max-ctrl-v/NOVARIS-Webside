@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Time Tracking for the Research Allowance: Proper R&amp;D Documentation | NOVARIS</title>
+  <meta name="description" content="Research Allowance time tracking: How to document R&amp;D personnel costs in an audit-proof manner. Requirements, tools &amp; common mistakes explained." />
+  <meta name="keywords" content="Forschungszulage time tracking, FZulG documentation, R&amp;D personnel costs verification, time tracking R&amp;D projects, research allowance documentation" />
+  <link rel="canonical" href="https://novaris-consulting.com/en/forschungszulage-zeiterfassung.html" />
+
+  <!-- Hreflang -->
+  <link rel="alternate" hreflang="de" href="https://novaris-consulting.com/forschungszulage-zeiterfassung.html" />
+  <link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/forschungszulage-zeiterfassung.html" />
+  <link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/forschungszulage-zeiterfassung.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Time Tracking for the Research Allowance (Forschungszulage): How to Document R&amp;D Correctly | NOVARIS" />
+  <meta property="og:description" content="Research Allowance time tracking: How to document R&amp;D personnel costs in an audit-proof manner. Requirements, tools &amp; common mistakes." />
+  <meta property="og:url" content="https://novaris-consulting.com/en/forschungszulage-zeiterfassung.html" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="NOVARIS Consulting" />
+  <meta property="og:image" content="https://novaris-consulting.com/brand_assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Time Tracking for the Research Allowance | NOVARIS" />
+  <meta name="twitter:description" content="Audit-proof documentation of R&amp;D personnel costs. Requirements, tools &amp; common mistakes." />
+  <meta name="twitter:image" content="https://novaris-consulting.com/brand_assets/og-image.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --bg-base:    #ffffff;
+      --bg-raised:  #f5f8fe;
+      --bg-card:    #ffffff;
+      --clr-h:      #0D1B3E;
+      --clr-b:      #5a6e8c;
+      --clr-muted:  #4a5870;
+      --bdr:        #dde5f4;
+    }
+    html.dark {
+      --bg-base:    #0a1428;
+      --bg-raised:  #0D1B3E;
+      --bg-card:    #122244;
+      --clr-h:      #e8f0fa;
+      --clr-b:      #8aaac8;
+      --clr-muted:  #6888a8;
+      --bdr:        rgba(77,174,229,0.18);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg-base);
+      color: var(--clr-h);
+      transition: background 0.25s ease, color 0.25s ease;
+      line-height: 1.7;
+    }
+
+    .nav-blur { backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); }
+    .logo-img { height: 52px; width: auto; display: block; }
+
+    .nav-link {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.84rem;
+      font-weight: 500;
+      color: rgba(195,215,245,0.70);
+      text-decoration: none;
+      padding: 0.42rem 0.85rem;
+      border-radius: 8px;
+      transition: color 0.15s ease, background 0.15s ease;
+      letter-spacing: 0.01em;
+    }
+    .nav-link:hover { color: #fff; background: rgba(255,255,255,0.07); }
+    .nav-link:focus-visible { outline: 2px solid #4DAEE5; outline-offset: 2px; }
+
+    /* Dropdown */
+    .nav-dropdown-wrap { position: relative; }
+    .nav-dropdown {
+      display: none;
+      position: absolute;
+      top: calc(100% + 6px);
+      left: 50%;
+      transform: translateX(-50%);
+      min-width: 220px;
+      background: rgba(10,20,42,0.96);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 12px;
+      padding: 0.5rem;
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+      z-index: 60;
+    }
+    .nav-dropdown-wrap:hover .nav-dropdown,
+    .nav-dropdown-wrap:focus-within .nav-dropdown { display: block; }
+    .nav-dd-item {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.5rem 0.75rem;
+      font-size: 0.82rem;
+      color: rgba(195,215,245,0.7);
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.14s ease, color 0.14s ease;
+    }
+    .nav-dd-item:hover { background: rgba(255,255,255,0.07); color: #fff; }
+    .nav-dd-item:focus-visible { outline: 2px solid #4DAEE5; outline-offset: -2px; }
+    .nav-dd-icon { display: flex; align-items: center; justify-content: center; width: 22px; height: 22px; background: rgba(77,174,229,0.1); border-radius: 6px; flex-shrink: 0; }
+    .dd-caret { margin-left: 2px; transition: transform 0.2s cubic-bezier(0.16,1,0.3,1); }
+    .nav-dropdown-wrap:hover .dd-caret { transform: rotate(180deg); }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background: #1E56B5;
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 0.84rem;
+      border: none;
+      border-radius: 10px;
+      text-decoration: none;
+      cursor: pointer;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.3), 0 4px 12px rgba(30,86,181,0.35);
+      transition: background 0.15s ease, transform 0.12s ease, box-shadow 0.15s ease;
+    }
+    .btn-primary:hover  { background: #2563c4; box-shadow: 0 2px 4px rgba(0,0,0,0.3), 0 6px 18px rgba(30,86,181,0.45); transform: translateY(-1px); }
+    .btn-primary:active { transform: translateY(0); }
+    .btn-primary:focus-visible { outline: 2px solid #4DAEE5; outline-offset: 2px; }
+
+    .content-wrap {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 6rem 1.5rem 5rem;
+    }
+
+    .ds-breadcrumb {
+      font-size: 0.78rem;
+      color: var(--clr-b);
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .ds-breadcrumb a {
+      color: #4DAEE5;
+      text-decoration: none;
+      transition: color 0.14s ease;
+    }
+    .ds-breadcrumb a:hover { color: #7ec8f0; }
+
+    .ds-eyebrow {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #4DAEE5;
+      margin-bottom: 0.9rem;
+    }
+
+    .ds-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: var(--clr-h);
+      line-height: 1.15;
+      margin-bottom: 0.5rem;
+    }
+
+    .ds-subtitle {
+      font-size: 0.92rem;
+      color: var(--clr-b);
+      line-height: 1.75;
+      margin-bottom: 1rem;
+      max-width: 680px;
+    }
+
+    .ds-updated {
+      font-size: 0.78rem;
+      color: var(--clr-b);
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--bdr);
+    }
+
+    .ds-section {
+      margin-bottom: 2.8rem;
+    }
+    .ds-section h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.12rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: var(--clr-h);
+      margin-bottom: 0.9rem;
+      padding-bottom: 0.55rem;
+      border-bottom: 1px solid var(--bdr);
+    }
+    .ds-section h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--clr-h);
+      margin-top: 1.4rem;
+      margin-bottom: 0.5rem;
+    }
+    .ds-section p {
+      font-size: 0.9rem;
+      color: var(--clr-b);
+      line-height: 1.75;
+      margin-bottom: 0.85rem;
+    }
+    .ds-section ul, .ds-section ol {
+      margin: 0.5rem 0 0.85rem 1.1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+    .ds-section ul li, .ds-section ol li {
+      font-size: 0.9rem;
+      color: var(--clr-b);
+      line-height: 1.65;
+    }
+    .ds-section a {
+      color: #4DAEE5;
+      text-decoration: none;
+      transition: color 0.14s ease;
+    }
+    .ds-section a:hover { color: #7ec8f0; text-decoration: underline; }
+
+    .ds-box {
+      background: var(--bg-raised);
+      border: 1px solid var(--bdr);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      font-size: 0.88rem;
+      color: var(--clr-b);
+      line-height: 1.7;
+      transition: background 0.25s ease, border-color 0.25s ease;
+    }
+    .ds-box strong {
+      color: var(--clr-h);
+      font-weight: 600;
+    }
+
+    .ds-highlight-box {
+      background: var(--bg-raised);
+      border: 1px solid var(--bdr);
+      border-left: 4px solid #1E56B5;
+      border-radius: 0 12px 12px 0;
+      padding: 1.25rem 1.5rem;
+      font-size: 0.88rem;
+      color: var(--clr-b);
+      line-height: 1.7;
+      margin: 1rem 0 1.2rem;
+      transition: background 0.25s ease, border-color 0.25s ease;
+    }
+    .ds-highlight-box strong {
+      color: var(--clr-h);
+      font-weight: 600;
+    }
+
+    /* Checklist */
+    .checklist {
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+      margin: 1rem 0 1.2rem;
+    }
+    .checklist-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      font-size: 0.9rem;
+      color: var(--clr-b);
+      line-height: 1.65;
+    }
+    .checklist-icon {
+      flex-shrink: 0;
+      width: 22px;
+      height: 22px;
+      background: rgba(30,86,181,0.1);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2px;
+    }
+    html.dark .checklist-icon { background: rgba(77,174,229,0.15); }
+
+    /* Method cards */
+    .method-card {
+      background: var(--bg-raised);
+      border: 1px solid var(--bdr);
+      border-radius: 16px;
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+      transition: background 0.25s ease, border-color 0.25s ease;
+    }
+    html.dark .method-card { background: var(--bg-card); }
+    .method-card h3 {
+      margin-top: 0 !important;
+    }
+    .method-badge {
+      display: inline-block;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.2rem 0.6rem;
+      border-radius: 6px;
+      margin-bottom: 0.6rem;
+    }
+    .method-badge.recommended { background: rgba(30,86,181,0.12); color: #1E56B5; }
+    .method-badge.acceptable { background: rgba(77,174,229,0.12); color: #4DAEE5; }
+    .method-badge.fallback { background: rgba(90,110,140,0.12); color: var(--clr-muted); }
+    html.dark .method-badge.recommended { background: rgba(30,86,181,0.25); color: #4DAEE5; }
+    html.dark .method-badge.acceptable { background: rgba(77,174,229,0.2); color: #7ec8f0; }
+    html.dark .method-badge.fallback { background: rgba(90,110,140,0.2); color: #8aaac8; }
+
+    /* TOC */
+    .toc {
+      background: var(--bg-raised);
+      border: 1px solid var(--bdr);
+      border-radius: 12px;
+      padding: 1.5rem 1.75rem;
+      margin-bottom: 2.8rem;
+      transition: background 0.25s ease, border-color 0.25s ease;
+    }
+    html.dark .toc { background: var(--bg-card); }
+    .toc-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--clr-muted);
+      margin-bottom: 0.8rem;
+    }
+    .toc ol {
+      margin: 0;
+      padding-left: 1.1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+    .toc ol li {
+      font-size: 0.85rem;
+      color: var(--clr-b);
+      line-height: 1.55;
+    }
+    .toc ol li a {
+      color: #4DAEE5;
+      text-decoration: none;
+      transition: color 0.14s ease;
+    }
+    .toc ol li a:hover { color: #7ec8f0; }
+
+    /* FAQ */
+    .faq-item {
+      border: 1px solid var(--bdr);
+      border-radius: 14px;
+      margin-bottom: 0.75rem;
+      overflow: hidden;
+      background: var(--bg-base);
+      transition: box-shadow 0.18s ease, background 0.25s ease, border-color 0.25s ease;
+    }
+    .faq-item:hover { box-shadow: 0 2px 8px rgba(13,27,62,0.06); }
+    html.dark .faq-item { background: var(--bg-card); }
+    html.dark .faq-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.2); }
+    .faq-q {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 1rem 1.4rem;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--clr-h);
+      text-align: left;
+      gap: 1rem;
+      transition: background 0.14s ease;
+    }
+    .faq-q:hover { background: rgba(30,86,181,0.04); }
+    html.dark .faq-q:hover { background: rgba(77,174,229,0.06); }
+    .faq-q:focus-visible { outline: 2px solid #4DAEE5; outline-offset: -2px; border-radius: 14px; }
+    .faq-q:active { background: #edf2fb; }
+    html.dark .faq-q:active { background: rgba(77,174,229,0.1); }
+    .faq-q svg { flex-shrink: 0; transition: transform 0.25s cubic-bezier(0.16,1,0.3,1); color: #1E56B5; }
+    .faq-item.open .faq-q svg { transform: rotate(180deg); }
+    .faq-a {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s cubic-bezier(0.16,1,0.3,1);
+    }
+    .faq-item.open .faq-a { max-height: 400px; }
+    .faq-a-inner {
+      padding: 0 1.4rem 1.2rem;
+      font-size: 0.9rem;
+      color: var(--clr-b);
+      line-height: 1.75;
+    }
+
+    .cta-section {
+      background: var(--bg-raised);
+      border: 1px solid var(--bdr);
+      border-radius: 16px;
+      padding: 2.5rem 2rem;
+      text-align: center;
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+      transition: background 0.25s ease, border-color 0.25s ease;
+    }
+    .cta-section h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: var(--clr-h);
+      margin-bottom: 0.8rem;
+      border: none;
+      padding-bottom: 0;
+    }
+    .cta-section p {
+      font-size: 0.9rem;
+      color: var(--clr-b);
+      line-height: 1.75;
+      margin-bottom: 1.5rem;
+      max-width: 560px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    footer { background: #04091a; border-top: 1px solid rgba(255,255,255,0.07); }
+
+    html.dark .ds-box { background: var(--bg-card); }
+    html.dark .ds-highlight-box { background: var(--bg-card); }
+    html.dark .cta-section { background: var(--bg-card); }
+    .logo-light { display: none; }
+    html.dark .logo-dark  { display: none !important; }
+    html.dark .logo-light { display: inline !important; }
+
+    html { overflow-y: scroll; }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: rgba(77,174,229,0.38); border-radius: 999px; }
+    ::-webkit-scrollbar-thumb:hover { background: rgba(77,174,229,0.55); }
+    html { scrollbar-width: thin; scrollbar-color: rgba(77,174,229,0.38) transparent; }
+    html.dark ::-webkit-scrollbar-thumb { background: rgba(77,174,229,0.30); }
+    html.dark ::-webkit-scrollbar-thumb:hover { background: rgba(77,174,229,0.48); }
+    html.dark { scrollbar-color: rgba(77,174,229,0.30) transparent; }
+  </style>
+  <link rel="stylesheet" href="/page-transition.css" />
+  <link rel="stylesheet" href="/cookie-consent.css" />
+  <script src="/page-transition.js" defer></script>
+
+  <!-- BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://novaris-consulting.com/"},
+      {"@type": "ListItem", "position": 2, "name": "Research Allowance (Forschungszulage)", "item": "https://novaris-consulting.com/en/forschungszulage.html"},
+      {"@type": "ListItem", "position": 3, "name": "Time Tracking", "item": "https://novaris-consulting.com/en/forschungszulage-zeiterfassung.html"}
+    ]
+  }
+  </script>
+
+  <!-- Article Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Time Tracking for the Research Allowance – Proper R&D Documentation",
+    "description": "Research Allowance time tracking: How to document R&D personnel costs in an audit-proof manner. Requirements, tools and common mistakes.",
+    "author": {
+      "@type": "Organization",
+      "name": "NOVARIS Consulting",
+      "url": "https://novaris-consulting.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "NOVARIS Consulting",
+      "url": "https://novaris-consulting.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://novaris-consulting.com/brand_assets/Logo V5-light.svg"
+      }
+    },
+    "datePublished": "2026-03-06",
+    "dateModified": "2026-03-06",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://novaris-consulting.com/en/forschungszulage-zeiterfassung.html"
+    },
+    "keywords": ["Forschungszulage Zeiterfassung", "FZulG Dokumentation", "F&E Personalkosten Nachweis", "Zeiterfassung F&E Projekte"]
+  }
+  </script>
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Do I need to track time on a daily basis?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Daily time tracking is recommended and offers the highest level of security during tax office audits. In practice, however, weekly tracking is also accepted in most cases, provided the allocation to individual R&D projects is clearly recognizable and the total working time is plausibly distributed."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens if I have no time tracking?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Without traceable time tracking, you risk a reduction or complete rejection of the R&D Tax Credit by the tax office. For past years, however, retrospective reconstruction is possible based on project plans, email histories, Jira tickets, Git commits, and other documents. NOVARIS supports you with audit-proof preparation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can managing directors claim their own R&D time?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, managing directors and shareholders can claim their own R&D activities. For sole proprietors and shareholders, the owner contribution flat rate of EUR 70 per hour (maximum 40 hours per week) applies. The prerequisite is that the R&D activity is demonstrable and distinguishable from pure management activities."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I document contract research?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For contract research, you need to document the research contract, the contractor's invoices, and proof of performance (e.g., interim reports, final reports). 60% of the remuneration paid to the contractor is eligible. The contractor must be based in the EU/EEA."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does NOVARIS provide time tracking templates?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, NOVARIS provides free templates for project-based R&D time tracking as part of our consulting services. These templates are tailored to FZulG requirements and tax office audit practices, helping you document in an audit-proof manner from the start."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<header id="nav" class="fixed inset-x-0 top-0 z-50 nav-blur"
+        style="background:rgba(4,9,26,0.88);border-bottom:1px solid rgba(255,255,255,0.07)">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between gap-4" style="height:68px">
+    <a href="/" aria-label="NOVARIS Consulting"
+       style="text-decoration:none;flex-shrink:0;display:flex;align-items:center;transition:opacity 0.15s ease"
+       class="hover:opacity-90 focus-visible:outline-none">
+      <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto" />
+    </a>
+    <nav class="hidden lg:flex items-center gap-0.5">
+      <a href="/#was-ist-fzulg" class="nav-link">The FZulG</a>
+      <a href="/#warum-wir" class="nav-link">Our Strengths</a>
+      <div class="nav-dropdown-wrap">
+        <a href="/#branchen" class="nav-link" aria-haspopup="true" aria-expanded="false">
+          Industries
+          <svg class="dd-caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </a>
+        <div class="nav-dropdown" role="menu">
+          <a href="/branchen/software-it.html" class="nav-dd-item" role="menuitem">
+            <span class="nav-dd-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4DAEE5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span>
+            Software &amp; IT
+          </a>
+          <a href="/branchen/maschinenbau.html" class="nav-dd-item" role="menuitem">
+            <span class="nav-dd-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4DAEE5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg></span>
+            Maschinenbau
+          </a>
+          <a href="/branchen/pharma.html" class="nav-dd-item" role="menuitem">
+            <span class="nav-dd-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4DAEE5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6"/><path d="M14 3v5.5l4 7.5H6l4-7.5V3"/></svg></span>
+            Pharma &amp; Life Sciences
+          </a>
+          <a href="/branchen/automotive.html" class="nav-dd-item" role="menuitem">
+            <span class="nav-dd-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4DAEE5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17H3a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h13l3 5v4a2 2 0 0 1-2 2h-1"/><circle cx="7" cy="17" r="2"/><circle cx="15" cy="17" r="2"/></svg></span>
+            Automotive &amp; Mobilit&auml;t
+          </a>
+          <a href="/branchen/medizintechnik.html" class="nav-dd-item" role="menuitem">
+            <span class="nav-dd-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4DAEE5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></span>
+            Medizintechnik
+          </a>
+          <a href="/branchen/energie.html" class="nav-dd-item" role="menuitem">
+            <span class="nav-dd-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4DAEE5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></span>
+            Energie &amp; Cleantech
+          </a>
+          <a href="/branchen/luft-raumfahrt.html" class="nav-dd-item" role="menuitem">
+            <span class="nav-dd-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4DAEE5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/></svg></span>
+            Luft- &amp; Raumfahrt
+          </a>
+          <a href="/branchen/agrar-foodtech.html" class="nav-dd-item" role="menuitem">
+            <span class="nav-dd-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4DAEE5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/></svg></span>
+            Agrar &amp; Foodtech
+          </a>
+          <a href="/branchen/bauindustrie.html" class="nav-dd-item" role="menuitem">
+            <span class="nav-dd-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4DAEE5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="1"/><path d="M9 22V12h6v10"/></svg></span>
+            Bauindustrie
+          </a>
+        </div>
+      </div>
+      <a href="/#prozess" class="nav-link">Process</a>
+      <a href="/#kontakt" class="nav-link">Contact</a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <div style="display:flex;align-items:center;gap:2px;margin-right:8px;">
+        <a href="/forschungszulage-zeiterfassung.html" style="font-family:'Inter',sans-serif;font-size:0.78rem;font-weight:500;color:rgba(195,215,245,0.5);padding:4px 8px;border-radius:6px;text-decoration:none;transition:color 0.15s ease;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(195,215,245,0.5)'">DE</a>
+        <span style="font-family:'Inter',sans-serif;font-size:0.78rem;font-weight:600;color:#fff;padding:4px 8px;border-radius:6px;background:rgba(77,174,229,0.18);">EN</span>
+      </div>
+      <button id="dark-toggle" onclick="toggleDark()" aria-label="Toggle dark mode"
+        class="hidden sm:flex" style="width:32px;height:32px;border-radius:8px;border:1px solid rgba(255,255,255,0.12);
+               background:rgba(255,255,255,0.07);cursor:pointer;align-items:center;
+               justify-content:center;color:rgba(255,255,255,0.7);
+               transition:background 0.15s ease,color 0.15s ease">
+        <svg id="icon-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg id="icon-sun"  width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
+      <a href="/#kontakt" class="btn-primary hidden sm:inline-flex" style="padding:0.55rem 1.35rem;font-size:0.83rem">
+        Free Consultation
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="content-wrap">
+
+    <div class="ds-breadcrumb">
+      <a href="/">Home</a>
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      <a href="/en/forschungszulage.html">Research Allowance (Forschungszulage)</a>
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      <span>Time Tracking</span>
+    </div>
+
+    <div class="ds-eyebrow">Documentation &amp; Time Tracking</div>
+    <h1 class="ds-title">Time Tracking for the Research Allowance (Forschungszulage) &ndash; How to Document Properly</h1>
+    <p class="ds-subtitle">Correct tracking of R&amp;D working hours is crucial for the amount of your Research Allowance (Forschungszulage). Learn what requirements apply and how to avoid typical mistakes.</p>
+    <p class="ds-updated">Last updated: March 6, 2026 &middot; Reading time: approx. 10 min</p>
+
+    <!-- Table of Contents -->
+    <nav class="toc" aria-label="Table of Contents">
+      <div class="toc-title">Table of Contents</div>
+      <ol>
+        <li><a href="#warum-zeiterfassung">Why Is Time Tracking So Important?</a></li>
+        <li><a href="#anforderungen">What the Tax Office Expects from Time Tracking</a></li>
+        <li><a href="#methoden">R&amp;D Time Tracking Methods Compared</a></li>
+        <li><a href="#tools">Recommended Tools for R&amp;D Time Tracking</a></li>
+        <li><a href="#fehler">The 5 Most Common Mistakes &ndash; and How to Avoid Them</a></li>
+        <li><a href="#checkliste">Checklist: Is Your Time Tracking FZulG-Compliant?</a></li>
+        <li><a href="#faq">Frequently Asked Questions</a></li>
+      </ol>
+    </nav>
+
+    <!-- Section 1: Why Is Time Tracking So Important? -->
+    <div class="ds-section" id="warum-zeiterfassung">
+      <h2>Why Is Time Tracking for the Research Allowance (Forschungszulage) So Important?</h2>
+      <p>Time tracking is the backbone of every successful R&D Tax Credit application under the Research Allowance Act (FZulG). The reason is simple: <strong>eligible personnel costs</strong> &ndash; i.e., the gross wages and salaries of employees working in research and development &ndash; constitute by far the largest share of the assessment basis. And these personnel costs must be determined and documented proportionally based on the actual time spent on R&D projects.</p>
+      <p>When assessing the R&D Tax Credit, the tax office checks whether the claimed personnel costs can be <strong>plausibly and traceably</strong> allocated to the certified R&D projects. Without proper time tracking, there is no basis for this allocation &ndash; with the consequence that the tax office reduces the assessment basis or, in the worst case, rejects the application entirely.</p>
+      <p>Time tracking becomes particularly relevant in the following situations:</p>
+      <ul>
+        <li><strong>Faulty documentation leads to reductions:</strong> If the tax office cannot verify the claimed hours, the assessment basis is reduced. In practice, this means you are giving away money because the documentation is incorrect &ndash; even though the R&D activity actually took place.</li>
+        <li><strong>Retroactive applications require reconstruction:</strong> The R&D Tax Credit can be applied for retroactively for all open tax years from 2020. For past years, project-based time tracking often does not exist. In these cases, the time allocation must be reconstructed using alternative sources &ndash; a process that is possible but significantly more effort than ongoing tracking.</li>
+        <li><strong>Time tracking determines funding amount:</strong> The R&D Tax Credit is 25% (SMEs: 35%) of eligible expenditures. Every hour not correctly documented reduces your assessment basis and thus directly the amount of your R&D Tax Credit. With an average gross salary of EUR 60,000 per year and an SME rate of 35%, one unrecorded full-time position represents a loss of up to EUR 25,200 in R&D Tax Credit &ndash; per year.</li>
+        <li><strong>Tax audits:</strong> During tax audits, the tax office can examine time tracking records in detail. Those who cannot present solid documentation risk not only a reduction of the R&D Tax Credit but potentially also additional tax demands.</li>
+      </ul>
+
+      <div class="ds-highlight-box">
+        <strong>Key takeaway:</strong> Time tracking is not bureaucratic red tape &ndash; it is the central piece of evidence for your R&D Tax Credit entitlement. Careful, project-based documentation can make the difference between fully utilizing the funding and a significant reduction.
+      </div>
+    </div>
+
+    <!-- Section 2: Anforderungen -->
+    <div class="ds-section" id="anforderungen">
+      <h2>What the Tax Office Expects from Time Tracking</h2>
+      <p>The Research Allowance Act itself does not contain detailed requirements for the form of time tracking. The requirements instead derive from general tax documentation obligations, guidelines from the BMF (Federal Ministry of Finance), and the audit practices of tax offices. The following principles have become established as standard:</p>
+
+      <h3>Project-Based Tracking</h3>
+      <p>The most important requirement: Every recorded working hour must be assignable to a <strong>specific R&D project</strong>. The project must match the one submitted to and certified by the BSFZ (Federal Certification Body for Research Allowance). A blanket statement like "40% of working time for R&D" without project assignment is not sufficient.</p>
+
+      <h3>Daily or Weekly Recording</h3>
+      <p>Time tracking should ideally be <strong>daily</strong>. In practice, <strong>weekly recording</strong> is also accepted by most tax offices, provided it is consistent and plausible. Purely monthly or even quarterly recording is considered too imprecise and carries significant risks during an audit.</p>
+
+      <h3>Separation of R&amp;D Activities and Routine Work</h3>
+      <p>It must be clearly identifiable which activities are classified as R&D and which belong to normal business operations. This distinction is particularly important for employees who only work <strong>part-time</strong> on R&D projects. Typical examples of this distinction:</p>
+      <ul>
+        <li><strong>R&D activity:</strong> Development of a new image recognition algorithm, construction of a prototype with novel material combinations, conducting test series to validate a new process</li>
+        <li><strong>Not R&D activity:</strong> Routine software maintenance, quality control using standard procedures, customer support, administrative tasks</li>
+      </ul>
+
+      <h3>Plausibility Check</h3>
+      <p>The tax office compares the stated R&D hours with the <strong>total working time</strong> of each employee. If an employee works 40 hours per week according to their employment contract but claims 45 hours on R&D projects, this is flagged. Likewise, it is checked whether the number of claimed employees is plausible in relation to the company size.</p>
+
+      <h3>Signature and Confirmation</h3>
+      <p>Time tracking records should be confirmed (signed or digitally approved) by the <strong>respective employee</strong> and ideally also by the <strong>project manager or supervisor</strong>. This significantly increases the credibility of the documentation and is an important aspect during tax audits.</p>
+
+      <div class="ds-highlight-box">
+        <strong>Practical tip:</strong> Always align your time tracking with the BSFZ certificate. The projects and project durations described there are the benchmark against which the tax office measures your time tracking. Discrepancies between the BSFZ certificate and time tracking are one of the most common reasons for follow-up questions.
+      </div>
+    </div>
+
+    <!-- Section 3: Methoden -->
+    <div class="ds-section" id="methoden">
+      <h2>R&amp;D Time Tracking Methods Compared</h2>
+      <p>In practice, three fundamental methods of R&D time tracking have been established, differing in accuracy, effort, and acceptance by the tax office. The choice of the right method depends on company size, existing IT infrastructure, and whether current or retroactive periods need to be documented.</p>
+
+      <div class="method-card">
+        <div class="method-badge recommended">Recommended</div>
+        <h3>1. Project-Based Hourly Tracking</h3>
+        <p>With this method, each employee records <strong>daily or weekly</strong> the hours worked on a specific R&D project. Recording is done via a time tracking tool, project management software, or a structured Excel template with project codes.</p>
+        <ul>
+          <li><strong>Accuracy:</strong> High &ndash; exact allocation of every hour to a project</li>
+          <li><strong>Tax office acceptance:</strong> Very good &ndash; the best basis for audit-proof documentation</li>
+          <li><strong>Effort:</strong> Medium to high &ndash; requires employee discipline and regular review</li>
+          <li><strong>Suitable for:</strong> Companies with structured R&D departments, multiple parallel projects, medium and large enterprises</li>
+        </ul>
+      </div>
+
+      <div class="method-card">
+        <div class="method-badge acceptable">Acceptable</div>
+        <h3>2. Estimation Method with Plausibility Check</h3>
+        <p>With the estimation method, an employee's R&D share is set <strong>as a flat rate</strong>, e.g., "60% of working time for Project X." However, this estimate must be <strong>substantiated</strong> with additional evidence &ndash; such as project plans, milestone reports, meeting minutes, or progress reports.</p>
+        <ul>
+          <li><strong>Accuracy:</strong> Medium &ndash; less detailed than hourly tracking</li>
+          <li><strong>Tax office acceptance:</strong> Acceptable with consistent and traceable documentation</li>
+          <li><strong>Effort:</strong> Low to medium &ndash; less effort for employees, but more effort for substantiation</li>
+          <li><strong>Suitable for:</strong> Small companies with few R&D employees, companies with clearly defined R&D roles</li>
+        </ul>
+      </div>
+
+      <div class="method-card">
+        <div class="method-badge fallback">For Retroactive Applications</div>
+        <h3>3. Retrospective Reconstruction</h3>
+        <p>For retroactive applications for past fiscal years (2020&ndash;2025), project-based time tracking often does not exist. In this case, the time allocation must be <strong>reconstructed retrospectively</strong>. Sources include:</p>
+        <ul>
+          <li>Project plans and milestone reports</li>
+          <li>Email threads and calendar entries</li>
+          <li>Git commits, Jira/Confluence tickets, version control</li>
+          <li>Project meeting minutes</li>
+          <li>Travel expense reports for project appointments</li>
+          <li>Sworn declarations by involved employees</li>
+        </ul>
+        <p>Retrospective reconstruction requires particular care and experience, as the documentation must be complete and internally consistent. NOVARIS Consulting specifically supports companies with the <strong>audit-proof preparation</strong> of past periods and has developed proven processes and templates for this purpose.</p>
+      </div>
+
+      <div class="ds-highlight-box">
+        <strong>Recommendation:</strong> For current fiscal years, project-based hourly tracking is the gold standard. For retroactive periods, retrospective reconstruction is often the only option &ndash; but with professional support, it is certainly successful. In any case, consistency is key: all documents must present a coherent overall picture.
+      </div>
+    </div>
+
+    <!-- Section 4: Tools -->
+    <div class="ds-section" id="tools">
+      <h2>Recommended Tools for R&amp;D Time Tracking</h2>
+      <p>The choice of the right tool depends on the size of your company, existing IT infrastructure, and the number of your R&D employees. Three categories can be distinguished:</p>
+
+      <h3>ERP Systems with Project Module</h3>
+      <p>Companies already using an ERP system such as <strong>SAP</strong>, <strong>Microsoft Dynamics</strong>, or <strong>DATEV</strong> can often use the integrated project time tracking. The advantage: data is directly linked to payroll accounting, which significantly simplifies the later calculation of the assessment basis. Time tracking is automatically consistent with salary data &ndash; an important plus during tax office review.</p>
+
+      <h3>Dedicated Time Tracking Tools</h3>
+      <p>Specialized solutions such as <strong>Clockodo</strong>, <strong>TimeTac</strong>, <strong>Personio</strong>, or <strong>Toggl</strong> offer project-based time tracking with detailed reporting capabilities. Many of these tools feature export functions, audit trails, and approval workflows that are particularly useful for FZulG documentation. When selecting, look for:</p>
+      <ul>
+        <li><strong>Project reference:</strong> Ability to assign times to specific projects (and ideally BSFZ project numbers)</li>
+        <li><strong>Export function:</strong> Structured data export (CSV, PDF) for submission to the tax office</li>
+        <li><strong>Audit trail:</strong> Traceability of when entries were created or modified</li>
+        <li><strong>Approval workflow:</strong> Ability for confirmation by supervisors/project managers</li>
+      </ul>
+
+      <h3>Simple Solutions for Small Companies</h3>
+      <p>For companies with few R&D employees, a <strong>structured Excel template</strong> with project codes can also be sufficient. The key is that the template contains all required information: employee name, calendar week/day, project designation (matching the BSFZ certificate), hours, and a signature line. NOVARIS provides a <strong>free FZulG-compliant Excel template</strong> as part of our consulting services.</p>
+
+      <div class="ds-box" style="margin-top:1rem">
+        <strong>What to look for when choosing a tool:</strong><br /><br />
+        Regardless of the chosen solution, four criteria must be met: (1) Project-based allocation of working hours, (2) immutability or versioning of entries after the fact (audit trail), (3) ability for structured data export for the tax office, and (4) archiving capability for at least 10 years. If your existing tool meets these criteria, you do not need to implement a new system.
+      </div>
+    </div>
+
+    <!-- Section 5: Häufige Fehler -->
+    <div class="ds-section" id="fehler">
+      <h2>The 5 Most Common Mistakes in Time Tracking &ndash; and How to Avoid Them</h2>
+      <p>From our many years of consulting practice, we know the typical pitfalls companies encounter with R&D time tracking. We see the following five mistakes repeatedly &ndash; and all of them can be avoided with the right measures.</p>
+
+      <h3>Mistake 1: No Separation Between R&amp;D and Routine Work</h3>
+      <p>The most common mistake: employees record their total working time, but <strong>without distinguishing between R&D activities and routine work</strong>. However, the tax office requires clear separation. If a software developer works on both a new AI algorithm (R&D) and bug fixes in ongoing operations (not R&D), these activities must be recorded separately.</p>
+      <p><strong>Solution:</strong> Define clear criteria for which activities qualify as R&D and which do not. Train your employees accordingly and use separate project numbers for R&D and non-R&D in your time tracking.</p>
+
+      <h3>Mistake 2: Too Coarse Tracking</h3>
+      <p>Purely <strong>monthly</strong> tracking ("In January I worked about 80 hours on Project X") is increasingly seen as insufficient by tax offices. The coarser the tracking, the greater the risk that plausibility is questioned.</p>
+      <p><strong>Solution:</strong> Track at least weekly, ideally daily. With weekly tracking, hours per project and calendar week should be documented.</p>
+
+      <h3>Mistake 3: Missing Project Reference</h3>
+      <p>Some companies do track R&D hours but assign them to <strong>no specific project</strong>. Instead, "R&D" or "Development" is used as a blanket category. This does not meet the requirements &ndash; time tracking must be broken down to the individual projects certified by the BSFZ.</p>
+      <p><strong>Solution:</strong> Maintain a separate project number for each BSFZ project in your time tracking. The designations should be consistent with the project titles in the BSFZ certificate.</p>
+
+      <h3>Mistake 4: Not Including Part-Time Employees and Working Students</h3>
+      <p>Many companies only track the R&D hours of their full-time employees and forget that <strong>part-time employees, working students, trainees, and temporary staff</strong> are also eligible &ndash; provided they work on R&D projects. Working students and doctoral candidates in particular often make a significant R&D contribution that goes unclaimed.</p>
+      <p><strong>Solution:</strong> Review your entire workforce for R&D involvement. Also track the working hours of part-time employees, working students, and interns, provided they work on certified projects.</p>
+
+      <h3>Mistake 5: Time Tracking Introduced Only Retroactively</h3>
+      <p>Especially with retroactive applications, we repeatedly see companies that have <strong>not maintained project-based time tracking</strong> for years and now want to create it "after the fact." While this is possible (see Method 3: Retrospective Reconstruction), it requires significantly more effort and carries the risk of lower accuracy.</p>
+      <p><strong>Solution:</strong> Begin <strong>immediately</strong> with structured time tracking for all current and future R&D projects. For past years, have the reconstruction done by an experienced FZulG consultant who knows the requirements of the tax offices.</p>
+
+      <div class="ds-highlight-box">
+        <strong>Our tip:</strong> Most of these mistakes can be avoided by setting up the right processes and templates once. NOVARIS supports you with the design and implementation of FZulG-compliant time tracking &ndash; free of charge as part of our consulting.
+      </div>
+    </div>
+
+    <!-- Section 6: Checkliste -->
+    <div class="ds-section" id="checkliste">
+      <h2>Checklist: Is Your Time Tracking FZulG-Compliant?</h2>
+      <p>Use the following checklist to verify whether your current time tracking meets the requirements for the R&D Tax Credit. If you can answer "Yes" to all points, you are on the safe side.</p>
+
+      <div class="checklist">
+        <div class="checklist-item">
+          <span class="checklist-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1E56B5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </span>
+          <span><strong>Project-based allocation</strong> of all R&amp;D hours to individual BSFZ projects</span>
+        </div>
+        <div class="checklist-item">
+          <span class="checklist-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1E56B5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </span>
+          <span><strong>Daily or weekly recording</strong> of working hours (not just monthly)</span>
+        </div>
+        <div class="checklist-item">
+          <span class="checklist-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1E56B5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </span>
+          <span><strong>Clear separation</strong> between R&amp;D activities and non-R&amp;D activities</span>
+        </div>
+        <div class="checklist-item">
+          <span class="checklist-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1E56B5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </span>
+          <span><strong>Signature/approval</strong> by the respective employee and project manager</span>
+        </div>
+        <div class="checklist-item">
+          <span class="checklist-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1E56B5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </span>
+          <span><strong>Archiving for at least 10 years</strong> in accordance with tax retention requirements</span>
+        </div>
+        <div class="checklist-item">
+          <span class="checklist-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1E56B5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </span>
+          <span><strong>Consistency with BSFZ project descriptions</strong> &ndash; project names and durations match</span>
+        </div>
+        <div class="checklist-item">
+          <span class="checklist-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1E56B5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </span>
+          <span><strong>Inclusion of all relevant employees</strong> incl. part-time staff, working students, and apprentices</span>
+        </div>
+      </div>
+
+      <div class="ds-box" style="margin-top:1rem">
+        <strong>Not all points met?</strong> No cause for concern &ndash; most gaps can be closed quickly. Contact us for a free assessment of what measures are needed in your case and how we can support you with implementation.
+      </div>
+    </div>
+
+    <!-- Section 7: FAQ -->
+    <div class="ds-section" id="faq">
+      <h2>Frequently Asked Questions About Time Tracking</h2>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')" aria-expanded="false">
+          Do I need to track time on a daily basis?
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            Daily time tracking is recommended and offers the highest level of security during tax office audits. In practice, however, weekly tracking is also accepted in most cases, provided the allocation to individual R&D projects is clearly identifiable and the total working time is plausibly distributed. Monthly tracking, on the other hand, carries significant risks and should be avoided.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')" aria-expanded="false">
+          What happens if I have no time tracking?
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            Without traceable time tracking, you risk a reduction or complete rejection of the R&D Tax Credit by the tax office. For past years, however, there is the possibility of retrospective reconstruction based on project plans, email threads, Jira tickets, Git commits, and other documents. NOVARIS supports you with the audit-proof preparation of these documents.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')" aria-expanded="false">
+          Can managing directors claim their own R&amp;D time?
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            Yes, managing directors and shareholders can claim their own R&D work. For sole proprietors and shareholders who are not considered employees of the company, the owner-operator flat rate of EUR 70 per hour (maximum 40 hours per week) applies. The prerequisite is that the R&D work is demonstrable and clearly distinguishable from pure management activities. Detailed time tracking is particularly important here.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')" aria-expanded="false">
+          How do I document contract research?
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            For contract research, you need the research contract, the contractor's invoices, and proof of performance (e.g., interim reports, final reports). 60% of the remuneration paid to the contractor is eligible. The contractor must be based in the EU or EEA. Project-based time tracking by the contractor is not required &ndash; the documentation obligation lies on your side as the client.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')" aria-expanded="false">
+          Does NOVARIS provide templates for time tracking?
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            Yes, NOVARIS provides free templates for project-based R&D time tracking as part of our consulting services. These templates are tailored to FZulG requirements and tax office audit practices, helping you document in an audit-proof manner from the start. The templates are available as both Excel files and PDFs.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Related Content -->
+    <div class="ds-section" id="weiterfuehrend" style="margin-top:2rem">
+      <h2>Further Resources</h2>
+      <p>Deepen your knowledge with our specialized resources:</p>
+      <ul>
+        <li><a href="/en/forschungszulage.html" style="color:#1E56B5;font-weight:600"><strong>Research Allowance Guide</strong></a> &ndash; Everything about the FZulG: requirements, funding amount, application process</li>
+        <li><a href="/en/forschungszulage-antrag.html" style="color:#1E56B5;font-weight:600"><strong>Apply for Research Allowance</strong></a> &ndash; Step-by-step guide to the entire application process</li>
+        <li><a href="/en/forschungszulage-rechner.html" style="color:#1E56B5;font-weight:600"><strong>Research Allowance Calculator</strong></a> &ndash; Calculate your individual funding in 30 seconds</li>
+      </ul>
+    </div>
+
+    <!-- CTA Box -->
+    <div class="cta-section">
+      <h2>Uncertain About Time Tracking? We Can Help.</h2>
+      <p>Have your R&amp;D documentation reviewed by our experts &ndash; free and non-binding. We show you how to optimize your time tracking and secure the maximum Research Allowance (Forschungszulage).</p>
+      <a href="/#kontakt" class="btn-primary" style="padding:0.7rem 1.8rem;font-size:0.9rem">
+        Request Free Consultation
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+
+  </div>
+</main>
+
+<footer style="background:#04091a;border-top:1px solid rgba(255,255,255,0.07)">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
+      <div class="lg:col-span-2">
+        <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto;margin-bottom:1rem" />
+        <p style="font-size:0.82rem;color:rgba(195,215,245,0.38);line-height:1.72;max-width:320px">
+          NOVARIS Consulting is your specialized full-service partner for the German
+          Research Allowance (FZulG) &ndash; success-based, transparent, and risk-free.
+        </p>
+      </div>
+      <div>
+        <div style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.75rem;letter-spacing:0.09em;text-transform:uppercase;color:rgba(195,215,245,0.3);margin-bottom:1rem">Navigation</div>
+        <div style="display:flex;flex-direction:column;gap:0.55rem">
+          <a href="/#was-ist-fzulg" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">The FZulG</a>
+          <a href="/#prozess"       style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Process</a>
+          <a href="/#vorteile"      style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Benefits</a>
+          <a href="/#faq"           style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">FAQ</a>
+          <a href="/#kontakt"       style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Contact</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.75rem;letter-spacing:0.09em;text-transform:uppercase;color:rgba(195,215,245,0.3);margin-bottom:1rem">Legal</div>
+        <div style="display:flex;flex-direction:column;gap:0.55rem">
+          <a href="/impressum.html"  style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Legal Notice</a>
+          <a href="/datenschutz.html" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Privacy Policy</a>
+          <a href="/agb.html"        style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Terms &amp; Conditions</a>
+          <a href="javascript:void(0)" onclick="CookieConsent.reset();CookieConsent.request(function(){});" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Cookie Settings</a>
+        </div>
+      </div>
+    </div>
+    <div style="height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.08) 25%,rgba(255,255,255,0.08) 75%,transparent);margin-bottom:1.5rem"></div>
+    <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem">
+      <p style="font-size:0.73rem;color:rgba(195,215,245,0.25)">&copy; 2026 NOVARIS Consulting &middot; All rights reserved.</p>
+      <p style="font-size:0.73rem;color:rgba(195,215,245,0.18)">This website does not constitute tax or legal advice.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function() {
+    if (localStorage.getItem('theme') === 'dark') {
+      document.documentElement.classList.add('dark');
+    }
+  })();
+
+  function toggleDark() {
+    const dark = document.documentElement.classList.toggle('dark');
+    localStorage.setItem('theme', dark ? 'dark' : 'light');
+    _updateDarkBtn();
+  }
+
+  function _updateDarkBtn() {
+    const dark = document.documentElement.classList.contains('dark');
+    const moon = document.getElementById('icon-moon');
+    const sun  = document.getElementById('icon-sun');
+    if (moon) moon.style.display = dark ? 'none'  : 'block';
+    if (sun)  sun.style.display  = dark ? 'block' : 'none';
+  }
+
+  window.addEventListener('DOMContentLoaded', _updateDarkBtn);
+</script>
+
+<script src="/cookie-consent.js" defer></script>
+<script src="/analytics.js" defer></script>
+</body>
+</html>
