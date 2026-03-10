@@ -3,11 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#04091a">
   <title>R&amp;D Tax Credit for Medical Technology 2026 – Secure R&amp;D Funding | NOVARIS</title>
   <meta name="description" content="Medical technology companies can reclaim up to 25% of their R&D costs. NOVARIS shows which projects in active medical devices, AI diagnostics and in-vitro diagnostics are eligible for the German R&D tax credit." />
   <meta name="keywords" content="R&D tax credit medical technology, FZulG medical devices, R&D funding MedTech, research allowance AI diagnostics, FZulG in-vitro diagnostics, R&D tax credit MDR Germany" />
   <link rel="canonical" href="https://novaris-consulting.com/en/branchen/medizintechnik.html" />
   <link rel="alternate" hreflang="de" href="https://novaris-consulting.com/branchen/medizintechnik.html" />
+  <link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/branchen/medizintechnik.html" />
   <link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/branchen/medizintechnik.html" />
   <!-- Open Graph -->
   <meta property="og:type" content="article" />
@@ -26,12 +28,13 @@
     <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <script>tailwind.config={theme:{extend:{fontFamily:{display:['Montserrat','sans-serif'],body:['Inter','sans-serif']}}}};</script>
-  <link rel="stylesheet" href="/cookie-consent.css" />
+
+    <link rel="preload" href="/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/montserrat-800.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/fonts/fonts.css" />
+  <link rel="stylesheet" href="/styles.min.css" />
+  <link rel="stylesheet" href="/cookie-consent.css" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="/cookie-consent.css" /></noscript>
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     html{scroll-behavior:smooth;font-size:16px}
@@ -109,14 +112,52 @@
     html.dark section.bg-white .badge:not(.badge-dark),html.dark .bg-tinted .badge:not(.badge-dark){background:rgba(30,86,181,0.20)!important}
     #dark-toggle:hover,#dark-toggle-mob:hover{background:rgba(255,255,255,0.14)!important;color:#fff!important}
   </style>
-  <link rel="stylesheet" href="/page-transition.css" />
-  <script src="/page-transition.js" defer></script>
+  <link rel="stylesheet" href="/page-transition.css" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="/page-transition.css" /></noscript>
+  <script src="/page-transition.js" defer integrity="sha384-4inSnEeQghmg/0CJ7SF+TjLNtxyzHdmMI9o/kpB7+f78/vWCNesEiHYkzAgbHcTE" crossorigin="anonymous"></script>
   <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"en","mainEntity":[
 {"@type":"Question","name":"Ist die Entwicklung von Medizinprodukten förderfähig?","acceptedAnswer":{"@type":"Answer","text":"Ja, insbesondere bei Klasse II und III Medizinprodukten, die technische Neuheit aufweisen. Dazu zählen aktive Implantate, KI-gestützte Diagnostik, neuartige Bildgebungsverfahren und innovative In-vitro-Diagnostika."}},
 {"@type":"Question","name":"Zählen regulatorische Arbeiten für MDR als F&E?","acceptedAnswer":{"@type":"Answer","text":"Teilweise. Regulatorische Arbeiten sind förderfähig, wenn sie wissenschaftliche oder technische Unsicherheiten adressieren – etwa die Entwicklung neuer Prüfmethoden oder Biokompatibilitätsstudien. Reine Dokumentationsarbeit für die MDR-Konformität zählt nicht."}},
 {"@type":"Question","name":"Wie dokumentiere ich F&E in der Medizintechnik korrekt?","acceptedAnswer":{"@type":"Answer","text":"Entscheidend ist eine getrennte Zeiterfassung für F&E-Tätigkeiten, eine klare Abgrenzung von Routinetests und Qualitätssicherung sowie eine nachvollziehbare Dokumentation der technischen Unsicherheiten und des systematischen Vorgehens."}}
 ]}
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "inLanguage": "en",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://novaris-consulting.com/en/branchen/medizintechnik.html"
+    },
+    "headline": "R&D Tax Credit for Medical Technology 2026",
+    "datePublished": "2026-03-06",
+    "dateModified": "2026-03-10",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://novaris-consulting.com/brand_assets/og-image.png",
+      "width": 1200,
+      "height": 630
+    },
+    "author": {
+      "@type": "Organization",
+      "@id": "https://novaris-consulting.com/#organization",
+      "name": "NOVARIS Consulting GmbH",
+      "url": "https://novaris-consulting.com",
+      "sameAs": ["https://www.linkedin.com/company/novaris-consulting"]
+    },
+    "publisher": {
+      "@type": "Organization",
+      "@id": "https://novaris-consulting.com/#organization",
+      "name": "NOVARIS Consulting GmbH",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://novaris-consulting.com/brand_assets/Logo%20V3-transparent.png"
+      }
+    }
+  }
   </script>
 </head>
 <body>
@@ -125,7 +166,7 @@
 <header id="nav" class="fixed inset-x-0 top-0 z-50 nav-blur" style="background:rgba(4,9,26,0.85);border-bottom:1px solid rgba(255,255,255,0.07)">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between gap-4" style="height:68px">
     <a href="../../en/" aria-label="NOVARIS Consulting" class="hover:opacity-90" style="text-decoration:none;flex-shrink:0;display:flex;align-items:center;transition:opacity 0.15s ease">
-      <img src="../../brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto" />
+      <img src="../../brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" width="230" height="72" style="height:72px;width:auto" />
     </a>
     <nav class="hidden lg:flex items-center gap-0.5">
       <a href="../../en/index.html#was-ist-fzulg" class="nav-link" data-t="nav-fzulg">The FZulG</a>
@@ -268,6 +309,23 @@
   </div>
 </section>
 
+<div style="max-width:1280px;margin:0 auto;padding:0.75rem 1.5rem 0">
+  <p class="ds-updated" style="font-size:0.78rem;color:#5a6e8c;margin-bottom:0;padding-bottom:0.75rem;border-bottom:1px solid #dde5f4">Last updated: March 10, 2026</p>
+</div>
+
+    <div class="tldr-summary" id="auf-einen-blick" style="background:var(--bg-raised, #f5f8fe);border:1px solid var(--bdr, #dde5f4);border-left:4px solid #1E56B5;border-radius:0 12px 12px 0;padding:1.25rem 1.5rem;font-size:0.88rem;color:var(--clr-b, #5a6e8c);line-height:1.7;margin-bottom:2rem">
+      <div style="font-family:'Montserrat',sans-serif;font-size:0.82rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#1E56B5;margin-bottom:0.6rem;display:flex;align-items:center;gap:0.5rem">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1E56B5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+        At a Glance
+      </div>
+      <ul style="list-style:none;display:flex;flex-direction:column;gap:0.4rem;margin:0;padding:0">
+        <li style="display:flex;align-items:flex-start;gap:0.5rem"><span style="color:#1E56B5;font-weight:700;flex-shrink:0;margin-top:1px">&bull;</span><span>Medical technology companies can reclaim up to <strong>25% of R&amp;D expenses</strong> as a tax credit.</span></li>
+        <li style="display:flex;align-items:flex-start;gap:0.5rem"><span style="color:#1E56B5;font-weight:700;flex-shrink:0;margin-top:1px">&bull;</span><span>Eligible: new medical devices, innovative diagnostics, implant research, DiGA development.</span></li>
+        <li style="display:flex;align-items:flex-start;gap:0.5rem"><span style="color:#1E56B5;font-weight:700;flex-shrink:0;margin-top:1px">&bull;</span><span>MedTech startups: founders' own contributions eligible at <strong>€40/hour</strong>.</span></li>
+        <li style="display:flex;align-items:flex-start;gap:0.5rem"><span style="color:#1E56B5;font-weight:700;flex-shrink:0;margin-top:1px">&bull;</span><span>Clinical studies testing <strong>new technologies</strong> are eligible (pure MDR conformity assessments are not).</span></li>
+      </ul>
+    </div>
+
 <!-- PROJECTS -->
 <section class="bg-white py-20 sm:py-28">
   <div class="max-w-7xl mx-auto px-4 sm:px-6">
@@ -382,6 +440,18 @@
 </section>
 
 <!-- FAQ -->
+
+  <!-- External Citations -->
+  <div style="max-width:48rem;margin:0 auto 2rem;padding:0 1rem">
+    <div class="external-citations" style="margin-top:1.5rem;padding:1rem 1.25rem;background:var(--bg-raised, #f5f8fe);border:1px solid var(--bdr, #dde5f4);border-radius:10px;font-size:0.82rem;color:var(--clr-b, #5a6e8c);line-height:1.7">
+        <div style="font-family:'Montserrat',sans-serif;font-size:0.72rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#1E56B5;margin-bottom:0.5rem">Official Sources</div>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.3rem">
+          <li><a href="https://www.gesetze-im-internet.de/fzulg/" target="_blank" rel="noopener" style="color:#1E56B5;text-decoration:none" data-legal-ref="FZulG">Research Allowance Act (FZulG) – Legal Text</a></li>
+          <li><a href="https://www.bescheinigung-forschungszulage.de/" target="_blank" rel="noopener" style="color:#1E56B5;text-decoration:none" data-legal-ref="BSFZ">BSFZ – Certification Body for Research Allowance</a></li>
+          <li><a href="https://www.bundesfinanzministerium.de/" target="_blank" rel="noopener" style="color:#1E56B5;text-decoration:none" data-legal-ref="BMF">Federal Ministry of Finance (BMF)</a></li>
+        </ul>
+      </div>
+  </div>
 <section class="bg-white py-16 sm:py-20">
   <div class="max-w-3xl mx-auto px-4 sm:px-6">
     <div class="text-center mb-10 reveal"><div class="badge mb-4" data-t="faq-badge">FAQ</div><h2 class="text-2xl sm:text-3xl font-black" data-t="faq-h2" style="color:#0D1B3E">Frequently Asked Questions</h2></div>
@@ -424,6 +494,10 @@
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
         Back to Home
       </a>
+      <a href="/en/erfolge.html" style="display:inline-flex;align-items:center;gap:0.4rem;padding:0.5rem 1rem;border-radius:8px;border:1.5px solid rgba(30,86,181,0.18);color:#1E56B5;font-family:'Inter',sans-serif;font-size:0.84rem;font-weight:500;text-decoration:none;transition:background 0.14s ease,border-color 0.14s ease" onmouseover="this.style.background='rgba(30,86,181,0.06)';this.style.borderColor='#1E56B5'" onmouseout="this.style.background='';this.style.borderColor='rgba(30,86,181,0.18)'">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        View our success stories
+      </a>
     </div>
   </div>
 </section>
@@ -442,7 +516,7 @@
 <!-- FOOTER -->
 <footer style="background:#04091a;border-top:1px solid rgba(255,255,255,0.07);padding:2.5rem 0">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-    <a href="../" style="text-decoration:none;display:flex;align-items:center"><img src="../brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:52px;width:auto" /></a>
+    <a href="../" style="text-decoration:none;display:flex;align-items:center"><img src="../brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" width="166" height="52" style="height:52px;width:auto" /></a>
     <div style="display:flex;gap:1.5rem;flex-wrap:wrap;justify-content:center">
       <a href="../index.html#was-ist-fzulg" data-t="footer-fzulg" style="color:rgba(195,215,245,0.45);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.45)'">Das FZulG</a>
       <a href="../../en/index.html#branchen" data-t="footer-branchen" style="color:rgba(195,215,245,0.45);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.45)'">Branchen</a>
@@ -520,7 +594,7 @@
       'elig4-desc': 'Design-History-Files, Prüfberichte und Entwicklungsberichte belegen die F&amp;E-Tätigkeit gegenüber dem Finanzamt.',
       'info-title': 'Wichtig zu wissen',
       'info-p1': '<strong style="color:#4DAEE5">Software as a Medical Device (SaMD)</strong> ist vollständig förderfähig – auch ohne physisches Gerät. Der reine Software-F&amp;E-Aufwand zählt vollständig zur Bemessungsgrundlage.',
-      'info-p2': 'Förderfähig sind: <strong style="color:#7ECEF5">Entwicklungsingenieure, klinische Wissenschaftler, Softwareentwickler</strong> sowie Auftragsforschung an Kliniken (60 % der Vergütung).',
+      'info-p2': 'Förderfähig sind: <strong style="color:#7ECEF5">Entwicklungsingenieure, klinische Wissenschaftler, Softwareentwickler</strong> sowie Auftragsforschung an Kliniken (70 % der Vergütung).',
       'info-highlight': 'Typische Förderung pro Medizintechnik-Projekt: <span style="font-size:1rem;color:#7ECEF5">60.000 – 250.000 €/Jahr</span>',
       'faq-badge': 'FAQ',
       'faq-h2': 'Häufige Fragen',
@@ -638,16 +712,11 @@
     if (en) en.classList.toggle('active', lang === 'en');
   }
   (function(){ var s = localStorage.getItem('lang'); if (s === 'de') { setLang('de'); } else { setLang('en'); } })();
-
-    (function(){if(localStorage.getItem('theme')==='dark'){document.documentElement.classList.add('dark');}})();
-  function toggleDark(){var dark=document.documentElement.classList.toggle('dark');localStorage.setItem('theme',dark?'dark':'light');_updateDarkBtn();}
-  function _updateDarkBtn(){var dark=document.documentElement.classList.contains('dark');var moon=document.getElementById('icon-moon');var sun=document.getElementById('icon-sun');var moonM=document.getElementById('icon-moon-mob');var sunM=document.getElementById('icon-sun-mob');if(moon)moon.style.display=dark?'none':'block';if(sun)sun.style.display=dark?'block':'none';if(moonM)moonM.style.display=dark?'none':'block';if(sunM)sunM.style.display=dark?'block':'none';}
-  window.addEventListener('DOMContentLoaded',_updateDarkBtn);
-  function toggleMob(){var m=document.getElementById('mob-menu');var open=m.classList.toggle('open');document.getElementById('ham-btn').setAttribute('aria-expanded',open)}document.querySelectorAll('.nav-dropdown-wrap').forEach(function(w){var t=w.querySelector('.nav-dropdown-trigger');if(!t)return;w.addEventListener('mouseenter',function(){t.setAttribute('aria-expanded','true')});w.addEventListener('mouseleave',function(){t.setAttribute('aria-expanded','false')})})
-  function toggleFaq(btn){var wrap=btn.closest('.faq-wrap');wrap.classList.toggle('open')}
-  (function(){var els=document.querySelectorAll('.reveal');var io=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}});},{threshold:0.1});els.forEach(function(el){if(el.getBoundingClientRect().top<window.innerHeight){el.classList.add('visible')}else{io.observe(el)}});})();
 </script>
-<script src="/scroll-animations.js"></script>
-<script src="/cookie-consent.js" defer></script>
+<script src="/scroll-animations.js" defer integrity="sha384-5yoQoxPe2O9Cw9YL146JTqW40AHi4oyxKuBlCebY8tMsvbRbIm9E521JwCS6kakr" crossorigin="anonymous"></script>
+<script src="/analytics.js" defer integrity="sha384-OTNmjy5n3I58KsCyQOce6zES4sVHwLLRFxpQoGp77N9nwR67WTSDKTsYzaxYHDQ3" crossorigin="anonymous"></script>
+  <script src="/theme.js" integrity="sha384-AHw/yIbpsf0UGYQRWNa1CnjuLJI76aQs0pyr51zWtjzNthQM8zFRHuo4sHJSrVy6" crossorigin="anonymous"></script>
+<script src="/nav-utils.js" defer integrity="sha384-HEPFc2/A6GCO1ZOjeylEPeFC589M3uf9OKsK/nHgRZjIVpHMIXB+STNmfV7/BK4W" crossorigin="anonymous"></script>
+<script src="/cookie-consent.js" defer integrity="sha384-8uu1DY4EaX+0gOCSB9J625s7KuuZI54bS+Otavzur8EoSXCCwGeR3MYrMv2+tsjn" crossorigin="anonymous"></script>
 </body>
 </html>

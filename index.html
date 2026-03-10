@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#04091a">
   <title>Forschungszulage (FZulG) beantragen – Bis zu 25 % F&E-Kosten zurück | NOVARIS Consulting</title>
   <meta name="description" content="Forschungszulage nach FZulG beantragen: Bis zu 25 % Ihrer F&E-Kosten zurückerstattet – risikolos & erfolgsbasiert. NOVARIS Consulting begleitet Sie durch das gesamte FZulG-Verfahren. Kostenlose Erstberatung." />
   <meta name="keywords" content="Forschungszulage, FZulG, Forschungszulagengesetz, F&E Förderung, Steuererstattung Forschung, Forschung und Entwicklung, FZulG Beratung, Forschungszulage beantragen, BSFZ Antrag, steuerliche Forschungsförderung" />
@@ -34,8 +35,11 @@
   {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
-    "name": "NOVARIS Consulting",
+    "@id": "https://novaris-consulting.com/#business",
+    "name": "NOVARIS Consulting GmbH",
     "url": "https://novaris-consulting.com",
+    "image": "https://novaris-consulting.com/brand_assets/og-image.png",
+    "logo": "https://novaris-consulting.com/brand_assets/Logo%20V3-transparent.png",
     "description": "NOVARIS Consulting begleitet Unternehmen bei der Beantragung der Forschungszulage (FZulG) – bis zu 25 % der F&E-Kosten zurückerstattet, risikolos und erfolgsbasiert.",
     "areaServed": {
       "@type": "Country",
@@ -43,7 +47,9 @@
     },
     "serviceType": ["Forschungszulage Beratung", "FZulG Antragstellung", "BSFZ Bescheinigung", "Steuerliche F&E-Förderung"],
     "knowsAbout": ["Forschungszulage", "FZulG", "Forschungszulagengesetz", "BSFZ", "F&E Förderung"],
-    "priceRange": "Erfolgsbasiert"
+    "priceRange": "Erfolgsbasiert",
+    "parentOrganization": {"@id": "https://novaris-consulting.com/#organization"},
+    "inLanguage": "de"
   }
   </script>
 
@@ -51,8 +57,7 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
+    "@type":"FAQPage","inLanguage":"de","mainEntity": [
       {
         "@type": "Question",
         "name": "Wer ist berechtigt, einen FZulG-Antrag zu stellen?",
@@ -66,7 +71,7 @@
         "name": "Welche Aufwendungen sind bei der Forschungszulage förderfähig?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Primär Personalkosten von Mitarbeitern, die an F&E-Projekten beteiligt sind. Auch Eigenleistungen von Einzelunternehmen und externe Auftragsforschung (zu 60 % anrechenbar) können gefördert werden."
+          "text": "Primär Personalkosten von Mitarbeitern, die an F&E-Projekten beteiligt sind. Auch Eigenleistungen von Einzelunternehmen und externe Auftragsforschung (zu 70 % anrechenbar) können gefördert werden."
         }
       },
       {
@@ -98,10 +103,11 @@
         "name": "Kann ich die Forschungszulage auch bei ausgelagerter Entwicklung beantragen?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Ja – Auftragsforschung an externe Auftragnehmer im Europäischen Wirtschaftsraum (EWR) ist förderfähig. Es werden 60 % der gezahlten Vergütung als Bemessungsgrundlage anerkannt."
+          "text": "Ja – Auftragsforschung an externe Auftragnehmer im Europäischen Wirtschaftsraum (EWR) ist förderfähig. Es werden 70 % der gezahlten Vergütung als Bemessungsgrundlage anerkannt."
         }
       }
-    ]
+    ],
+    "inLanguage": "de"
   }
   </script>
 
@@ -110,63 +116,24 @@
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "NOVARIS Consulting",
+    "@id": "https://novaris-consulting.com/#website",
+    "name": "NOVARIS Consulting GmbH",
     "url": "https://novaris-consulting.com",
-    "description": "Forschungszulage (FZulG) beantragen – bis zu 25 % Ihrer F&E-Kosten zurück, risikolos und erfolgsbasiert."
+    "description": "Forschungszulage (FZulG) beantragen – bis zu 25 % Ihrer F&E-Kosten zurück, risikolos und erfolgsbasiert.",
+    "publisher": {"@id": "https://novaris-consulting.com/#organization"},
+    "inLanguage": "de"
   }
   </script>
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/cookie-consent.css" />
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            display: ['Montserrat', 'sans-serif'],
-            body:    ['Inter', 'sans-serif'],
-          },
-          colors: {
-            // ── Brand scale derived from logo navy + cobalt ──
-            navy: {
-              950: '#04091a',
-              900: '#0D1B3E',
-              800: '#122244',
-              700: '#1A3462',
-              600: '#1E4080',
-              500: '#1E56B5',
-              400: '#3A7FD4',
-              300: '#4DAEE5',
-              200: '#7ECEF5',
-              100: '#C2E8FB',
-              50:  '#EBF6FE',
-            },
-            // ── Surface tokens ──
-            surface: {
-              base:     '#ffffff',
-              raised:   '#f5f8fe',
-              elevated: '#edf2fb',
-              floating: '#ffffff',
-              border:   '#dde5f4',
-            },
-          },
-          spacing: {
-            '18': '4.5rem',
-            '22': '5.5rem',
-            '26': '6.5rem',
-            '30': '7.5rem',
-          },
-        },
-      },
-    };
-  </script>
-
-  <style>
+  <link rel="stylesheet" href="/fonts/fonts.css" />
+  <link rel="stylesheet" href="/styles.min.css" />
+  <link rel="preload" href="/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/montserrat-800.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/cookie-consent.css" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="/cookie-consent.css" /></noscript>
+<style>
     /* ═══════════════════════════════════════
        RESET & BASE
     ═══════════════════════════════════════ */
@@ -933,22 +900,39 @@
     html.dark .seo-block-text { color: #8aaac8 !important; }
     html.dark .seo-block-text strong { color: #c0d8f0 !important; }
   </style>
-  <link rel="stylesheet" href="/page-transition.css" />
-  <script src="/page-transition.js" defer></script>
+  <link rel="stylesheet" href="/page-transition.css" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="/page-transition.css" /></noscript>
+  <script src="/page-transition.js" defer integrity="sha384-4inSnEeQghmg/0CJ7SF+TjLNtxyzHdmMI9o/kpB7+f78/vWCNesEiHYkzAgbHcTE" crossorigin="anonymous"></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": "https://novaris-consulting.com/#organization",
     "name": "NOVARIS Consulting GmbH",
     "url": "https://novaris-consulting.com",
-    "logo": "https://novaris-consulting.com/brand_assets/Logo V5-light.svg",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://novaris-consulting.com/brand_assets/Logo%20V3-transparent.png",
+      "width": 512,
+      "height": 512
+    },
+    "image": "https://novaris-consulting.com/brand_assets/og-image.png",
     "description": "NOVARIS Consulting ist Ihr spezialisierter Full-Service-Partner für die staatliche Forschungszulage nach dem FZulG – erfolgsbasiert, transparent und ohne Risiko.",
+    "sameAs": [
+      "https://www.linkedin.com/company/novaris-consulting"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Deutschland",
+      "addressCountry": "DE"
+    },
     "contactPoint": {
       "@type": "ContactPoint",
       "contactType": "customer service",
       "email": "info@novaris-consulting.de",
       "availableLanguage": ["German", "English"]
-    }
+    },
+    "foundingDate": "2020"
   }
   </script>
 </head>
@@ -965,7 +949,7 @@
        style="text-decoration:none;flex-shrink:0;display:flex;align-items:center;
               transition:opacity 0.15s ease"
        class="hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-navy-300">
-      <img src="brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto" />
+      <img src="brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto" width="230" height="72">
     </a>
 
     <nav class="hidden lg:flex items-center gap-0.5">
@@ -1782,6 +1766,18 @@
 <!-- ══════════════════════════════════════════════
      FAQ
 ══════════════════════════════════════════════ -->
+
+  <!-- External Citations -->
+  <div style="max-width:48rem;margin:0 auto 2rem;padding:0 1rem">
+    <div class="external-citations" style="margin-top:1.5rem;padding:1rem 1.25rem;background:var(--bg-raised, #f5f8fe);border:1px solid var(--bdr, #dde5f4);border-radius:10px;font-size:0.82rem;color:var(--clr-b, #5a6e8c);line-height:1.7">
+        <div style="font-family:'Montserrat',sans-serif;font-size:0.72rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#1E56B5;margin-bottom:0.5rem">Offizielle Quellen</div>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.3rem">
+          <li><a href="https://www.gesetze-im-internet.de/fzulg/" target="_blank" rel="noopener" style="color:#1E56B5;text-decoration:none" data-legal-ref="FZulG">Forschungszulagengesetz (FZulG) – Gesetzestext</a></li>
+          <li><a href="https://www.bescheinigung-forschungszulage.de/" target="_blank" rel="noopener" style="color:#1E56B5;text-decoration:none" data-legal-ref="BSFZ">BSFZ – Bescheinigungsstelle Forschungszulage</a></li>
+          <li><a href="https://www.bundesfinanzministerium.de/" target="_blank" rel="noopener" style="color:#1E56B5;text-decoration:none" data-legal-ref="BMF">Bundesfinanzministerium (BMF)</a></li>
+        </ul>
+      </div>
+  </div>
 <section id="faq" class="bg-tinted py-20 sm:py-28">
   <div class="max-w-2xl mx-auto px-4 sm:px-6">
     <div class="text-center mb-12">
@@ -1799,7 +1795,7 @@
 
       <div class="faq-wrap">
         <button class="faq-btn" aria-expanded="false" onclick="toggleFaq(this.parentElement)"><span data-t="faq.q2">Welche Aufwendungen sind förderfähig?</span> <span class="faq-icon">+</span></button>
-        <div class="faq-body"><div class="faq-content" data-t="faq.a2">Primär Personalkosten von Mitarbeitern, die nachweislich an F&E-Projekten beteiligt sind. Auch Eigenleistungen von Einzelunternehmen/Gesellschaftern und externe Auftragsforschung (zu 60 % anrechenbar) können gefördert werden. Sachkosten wie Material sind aktuell nicht direkt förderfähig.</div></div>
+        <div class="faq-body"><div class="faq-content" data-t="faq.a2">Primär Personalkosten von Mitarbeitern, die nachweislich an F&E-Projekten beteiligt sind. Auch Eigenleistungen von Einzelunternehmen/Gesellschaftern und externe Auftragsforschung (zu 70 % anrechenbar) können gefördert werden. Sachkosten wie Material sind aktuell nicht direkt förderfähig.</div></div>
       </div>
 
       <div class="faq-wrap">
@@ -1819,7 +1815,7 @@
 
       <div class="faq-wrap">
         <button class="faq-btn" aria-expanded="false" onclick="toggleFaq(this.parentElement)"><span data-t="faq.q6">Kann ich F&amp;E auch dann beantragen, wenn ich Teile der Entwicklung auslagere?</span> <span class="faq-icon">+</span></button>
-        <div class="faq-body"><div class="faq-content" data-t="faq.a6">Ja – die Vergabe von Forschungs- und Entwicklungsaufträgen an externe Auftragnehmer ist förderfähig, sofern der Auftragnehmer im <strong>Europäischen Wirtschaftsraum (EWR)</strong> ansässig ist. Wichtig: Für ausgelagerte Auftragsforschung gilt ein reduzierter Fördersatz – anstelle der vollen Personalkosten werden nur <strong>60 % der tatsächlich gezahlten Vergütung</strong> als Bemessungsgrundlage anerkannt. Außerhalb des EWR vergebene Aufträge sind vollständig von der Förderung ausgeschlossen. Für Unternehmen, die intern und extern entwickeln, empfiehlt sich eine genaue Aufteilung – wir ermitteln in der Erstanalyse das maximale Potenzial aus beiden Komponenten.</div></div>
+        <div class="faq-body"><div class="faq-content" data-t="faq.a6">Ja – die Vergabe von Forschungs- und Entwicklungsaufträgen an externe Auftragnehmer ist förderfähig, sofern der Auftragnehmer im <strong>Europäischen Wirtschaftsraum (EWR)</strong> ansässig ist. Wichtig: Für ausgelagerte Auftragsforschung gilt ein reduzierter Fördersatz – anstelle der vollen Personalkosten werden nur <strong>70 % der tatsächlich gezahlten Vergütung</strong> als Bemessungsgrundlage anerkannt. Außerhalb des EWR vergebene Aufträge sind vollständig von der Förderung ausgeschlossen. Für Unternehmen, die intern und extern entwickeln, empfiehlt sich eine genaue Aufteilung – wir ermitteln in der Erstanalyse das maximale Potenzial aus beiden Komponenten.</div></div>
       </div>
 
     </div>
@@ -1972,7 +1968,7 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
 
       <div class="lg:col-span-2">
-        <img src="brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto;margin-bottom:1rem" />
+        <img src="brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto;margin-bottom:1rem" width="230" height="72" loading="lazy">
         <p style="font-size:0.82rem;color:rgba(195,215,245,0.38);line-height:1.72;max-width:320px" data-t="footer.desc">
           NOVARIS Consulting ist Ihr spezialisierter Full-Service-Partner für die staatliche
           Forschungszulage nach dem FZulG – erfolgsbasiert, transparent und ohne Risiko.
@@ -2027,34 +2023,14 @@
      JAVASCRIPT
 ══════════════════════════════════════════════ -->
 <script>
-  // ── Theme init — runs immediately to prevent flash ──
   (function() {
     if (localStorage.getItem('theme') === 'dark') {
       document.documentElement.classList.add('dark');
     }
   })();
 
-  function toggleDark() {
-    const dark = document.documentElement.classList.toggle('dark');
-    localStorage.setItem('theme', dark ? 'dark' : 'light');
-    _updateDarkBtn();
-  }
 
-  function _updateDarkBtn() {
-    const dark  = document.documentElement.classList.contains('dark');
-    const moon  = document.getElementById('icon-moon');
-    const sun   = document.getElementById('icon-sun');
-    const moonM = document.getElementById('icon-moon-mob');
-    const sunM  = document.getElementById('icon-sun-mob');
-    if (moon)  moon.style.display  = dark ? 'none'  : 'block';
-    if (sun)   sun.style.display   = dark ? 'block' : 'none';
-    if (moonM) moonM.style.display = dark ? 'none'  : 'block';
-    if (sunM)  sunM.style.display  = dark ? 'block' : 'none';
-  }
-
-  window.addEventListener('DOMContentLoaded', _updateDarkBtn);
-
-  // ── Animated stat counters ──
+// ── Animated stat counters ──
   (function() {
     var counters = document.querySelectorAll('[data-count-to]');
     if (!counters.length) return;
@@ -2096,40 +2072,10 @@
     counters.forEach(function(el) { io.observe(el); });
   })();
 
-  // ── Mobile menu toggle ──
-  function toggleMob() {
-    const m  = document.getElementById('mob-menu');
-    const b1 = document.getElementById('hb1');
-    const b2 = document.getElementById('hb2');
-    const b3 = document.getElementById('hb3');
-    const open = m.classList.toggle('open');
-    document.getElementById('ham-btn').setAttribute('aria-expanded', open);
-    b1.style.transform  = open ? 'translateY(6.5px) rotate(45deg)' : '';
-    b2.style.opacity    = open ? '0' : '';
-    b3.style.transform  = open ? 'translateY(-6.5px) rotate(-45deg)' : '';
-    b3.style.width      = open ? '20px' : '';
-  }
 
   // ── Dropdown aria-expanded on hover ──
-  document.querySelectorAll('.nav-dropdown-wrap').forEach(function(wrap) {
-    var trigger = wrap.querySelector('.nav-dropdown-trigger');
-    if (!trigger) return;
-    wrap.addEventListener('mouseenter', function() { trigger.setAttribute('aria-expanded', 'true'); });
-    wrap.addEventListener('mouseleave', function() { trigger.setAttribute('aria-expanded', 'false'); });
-  });
 
   // ── FAQ accordion (one open at a time) ──
-  function toggleFaq(el) {
-    const wasOpen = el.classList.contains('open');
-    document.querySelectorAll('.faq-wrap').forEach(f => {
-      f.classList.remove('open');
-      f.querySelector('.faq-btn').setAttribute('aria-expanded', 'false');
-    });
-    if (!wasOpen) {
-      el.classList.add('open');
-      el.querySelector('.faq-btn').setAttribute('aria-expanded', 'true');
-    }
-  }
 
   // ── Förderpotenzial calculator ──
   // ── Calculator state ──
@@ -2385,7 +2331,7 @@
       'faq.q1':          'Wer ist berechtigt, einen FZulG-Antrag zu stellen?',
       'faq.a1':          'Alle in Deutschland körperschafts- oder einkommensteuerpflichtigen Unternehmen – unabhängig von Größe, Rechtsform oder Branche – sofern sie eigene Forschungs- und Entwicklungsvorhaben nach § 2 FZulG durchführen (systematisch, neuartig, mit technischer Unsicherheit).',
       'faq.q2':          'Welche Aufwendungen sind förderfähig?',
-      'faq.a2':          'Primär Personalkosten von Mitarbeitern, die nachweislich an F&E-Projekten beteiligt sind. Auch Eigenleistungen von Einzelunternehmen/Gesellschaftern und externe Auftragsforschung (zu 60 % anrechenbar) können gefördert werden. Sachkosten wie Material sind aktuell nicht direkt förderfähig.',
+      'faq.a2':          'Primär Personalkosten von Mitarbeitern, die nachweislich an F&E-Projekten beteiligt sind. Auch Eigenleistungen von Einzelunternehmen/Gesellschaftern und externe Auftragsforschung (zu 70 % anrechenbar) können gefördert werden. Sachkosten wie Material sind aktuell nicht direkt förderfähig.',
       'faq.q3':          'Können vergangene Jahre rückwirkend beantragt werden?',
       'faq.a3':          'Ja – das FZulG gilt rückwirkend ab dem 01.01.2020. Solange die Steuerfestsetzung des jeweiligen Jahres noch offen (nicht bestandskräftig) ist, können Ansprüche nachträglich geltend gemacht werden. Wir prüfen in der Erstanalyse alle offenen Förderjahre.',
       'faq.q4':          'Wie arbeitet NOVARIS mit meinem Steuerberater zusammen?',
@@ -2393,7 +2339,7 @@
       'faq.q5':          'Was kostet die Beratung durch NOVARIS?',
       'faq.a5':          'Die Erstanalyse ist vollständig kostenlos und unverbindlich. Unser Honorar ist rein erfolgsbasiert: Es entsteht ausschließlich dann, wenn die Forschungszulage vom Finanzamt ausgezahlt oder mit Ihrer Steuerschuld verrechnet wird. Kein Erfolg – kein Honorar. Garantiert.',
       'faq.q6':          'Kann ich F&amp;E auch dann beantragen, wenn ich Teile der Entwicklung auslagere?',
-      'faq.a6':          'Ja – die Vergabe von Forschungs- und Entwicklungsaufträgen an externe Auftragnehmer ist förderfähig, sofern der Auftragnehmer im <strong>Europäischen Wirtschaftsraum (EWR)</strong> ansässig ist. Wichtig: Für ausgelagerte Auftragsforschung gilt ein reduzierter Fördersatz – anstelle der vollen Personalkosten werden nur <strong>60 % der tatsächlich gezahlten Vergütung</strong> als Bemessungsgrundlage anerkannt. Außerhalb des EWR vergebene Aufträge sind vollständig von der Förderung ausgeschlossen. Für Unternehmen, die intern und extern entwickeln, empfiehlt sich eine genaue Aufteilung – wir ermitteln in der Erstanalyse das maximale Potenzial aus beiden Komponenten.',
+      'faq.a6':          'Ja – die Vergabe von Forschungs- und Entwicklungsaufträgen an externe Auftragnehmer ist förderfähig, sofern der Auftragnehmer im <strong>Europäischen Wirtschaftsraum (EWR)</strong> ansässig ist. Wichtig: Für ausgelagerte Auftragsforschung gilt ein reduzierter Fördersatz – anstelle der vollen Personalkosten werden nur <strong>70 % der tatsächlich gezahlten Vergütung</strong> als Bemessungsgrundlage anerkannt. Außerhalb des EWR vergebene Aufträge sind vollständig von der Förderung ausgeschlossen. Für Unternehmen, die intern und extern entwickeln, empfiehlt sich eine genaue Aufteilung – wir ermitteln in der Erstanalyse das maximale Potenzial aus beiden Komponenten.',
       'kontakt.badge':   'Jetzt starten',
       'kontakt.h2':      'Prüfen Sie Ihr<br/><span style="background:linear-gradient(125deg,#4DAEE5,#7ECEF5);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">FZulG-Potenzial</span><br/>– kostenlos.',
       'kontakt.sub':     'In einem kurzen Erstgespräch analysieren wir Ihre F&E-Aktivitäten und schätzen das Förderpotenzial ein. Kein Risiko, kein Aufwand, keine Verpflichtung.',
@@ -2638,14 +2584,10 @@
   }, { threshold: 0.45 });
   secs.forEach(s => io.observe(s));
 </script>
-<!-- Cal.com booking helper -->
-<script>
-  function openCal(link) {
-    window.open('https://cal.com/' + link, '_blank', 'noopener,noreferrer');
-  }
-</script>
-<script src="/cookie-consent.js" defer></script>
-<script src="/analytics.js" defer></script>
-<script src="/scroll-animations.js" defer></script>
+<script src="/theme.js" integrity="sha384-AHw/yIbpsf0UGYQRWNa1CnjuLJI76aQs0pyr51zWtjzNthQM8zFRHuo4sHJSrVy6" crossorigin="anonymous"></script>
+<script src="/nav-utils.js" defer integrity="sha384-HEPFc2/A6GCO1ZOjeylEPeFC589M3uf9OKsK/nHgRZjIVpHMIXB+STNmfV7/BK4W" crossorigin="anonymous"></script>
+<script src="/cookie-consent.js" defer integrity="sha384-8uu1DY4EaX+0gOCSB9J625s7KuuZI54bS+Otavzur8EoSXCCwGeR3MYrMv2+tsjn" crossorigin="anonymous"></script>
+<script src="/analytics.js" defer integrity="sha384-OTNmjy5n3I58KsCyQOce6zES4sVHwLLRFxpQoGp77N9nwR67WTSDKTsYzaxYHDQ3" crossorigin="anonymous"></script>
+<script src="/scroll-animations.js" defer integrity="sha384-5yoQoxPe2O9Cw9YL146JTqW40AHi4oyxKuBlCebY8tMsvbRbIm9E521JwCS6kakr" crossorigin="anonymous"></script>
 </body>
 </html>

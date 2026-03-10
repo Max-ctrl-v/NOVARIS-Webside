@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#04091a">
   <title>Forschungszulage Sachkosten 2026: Gemeinkostenpauschale & förderfähige Kosten | NOVARIS</title>
   <meta name="description" content="Forschungszulage Sachkosten 2026: Die neue 20% Gemeinkostenpauschale, förderfähige Materialkosten und was NICHT zählt – vollständiger Überblick." />
   <meta name="keywords" content="Forschungszulage Sachkosten, FZulG Gemeinkostenpauschale, Forschungszulage Materialkosten, Forschungszulage förderfähige Kosten, FZulG 2026 Sachkosten" />
@@ -27,14 +28,14 @@
   <meta name="twitter:title" content="Forschungszulage Sachkosten 2026: Gemeinkostenpauschale | NOVARIS" />
   <meta name="twitter:description" content="Die neue 20% Gemeinkostenpauschale, förderfähige Materialkosten und was NICHT zählt – vollständiger Überblick." />
   <meta name="twitter:image" content="https://novaris-consulting.com/brand_assets/og-image.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/fonts/fonts.css" />
+  <link rel="stylesheet" href="/styles.min.css" />
+  <link rel="preload" href="/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/montserrat-800.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
+<style>
     :root {
       --bg-base:    #ffffff;
       --bg-raised:  #f5f8fe;
@@ -450,16 +451,17 @@
 .lang-btn:hover { color: rgba(255,255,255,0.85); }
 .lang-divider { width: 1px; height: 16px; background: rgba(255,255,255,0.12); flex-shrink: 0; }
   </style>
-  <link rel="stylesheet" href="/page-transition.css" />
-  <link rel="stylesheet" href="/cookie-consent.css" />
-  <script src="/page-transition.js" defer></script>
+  <link rel="stylesheet" href="/page-transition.css" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="/page-transition.css" /></noscript>
+  <link rel="stylesheet" href="/cookie-consent.css" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="/cookie-consent.css" /></noscript>
+  <script src="/page-transition.js" defer integrity="sha384-4inSnEeQghmg/0CJ7SF+TjLNtxyzHdmMI9o/kpB7+f78/vWCNesEiHYkzAgbHcTE" crossorigin="anonymous"></script>
 
   <!-- BreadcrumbList -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
+    "@type": "BreadcrumbList", "inLanguage": "de", "itemListElement": [
       {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://novaris-consulting.com/"},
       {"@type": "ListItem", "position": 2, "name": "Forschungszulage", "item": "https://novaris-consulting.com/forschungszulage.html"},
       {"@type": "ListItem", "position": 3, "name": "Sachkosten", "item": "https://novaris-consulting.com/forschungszulage-sachkosten.html"}
@@ -476,8 +478,9 @@
     "description": "Forschungszulage Sachkosten 2026: Die neue 20% Gemeinkostenpauschale, förderfähige Materialkosten und was NICHT zählt – vollständiger Überblick.",
     "author": {
       "@type": "Organization",
-      "name": "NOVARIS Consulting",
-      "url": "https://novaris-consulting.com"
+      "name": "NOVARIS Consulting GmbH",
+      "url": "https://novaris-consulting.com",
+      "sameAs": ["https://www.linkedin.com/company/novaris-consulting"]
     },
     "publisher": {
       "@type": "Organization",
@@ -485,11 +488,17 @@
       "url": "https://novaris-consulting.com",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://novaris-consulting.com/brand_assets/Logo V5-light.svg"
+        "url": "https://novaris-consulting.com/brand_assets/Logo%20V3-transparent.png"
       }
     },
     "datePublished": "2026-03-08",
     "dateModified": "2026-03-08",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://novaris-consulting.com/brand_assets/og-image.png",
+      "width": 1200,
+      "height": 630
+    },
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https://novaris-consulting.com/forschungszulage-sachkosten.html"
@@ -502,8 +511,7 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
+    "@type":"FAQPage","inLanguage":"de","mainEntity": [
       {
         "@type": "Question",
         "name": "Kann ich Materialkosten direkt bei der Forschungszulage geltend machen?",
@@ -533,10 +541,11 @@
         "name": "Gilt die Gemeinkostenpauschale auch für Auftragsforschung?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Nein, die 20% Gemeinkostenpauschale wird ausschließlich auf die förderfähigen Personalkosten (Bruttolöhne und -gehälter der F&E-Mitarbeiter sowie Eigenleistungen) berechnet. Auftragsforschungskosten sind davon nicht betroffen – diese werden weiterhin separat mit 60% der Vergütung an externe F&E-Partner angesetzt."
+          "text": "Nein, die 20% Gemeinkostenpauschale wird ausschließlich auf die förderfähigen Personalkosten (Bruttolöhne und -gehälter der F&E-Mitarbeiter sowie Eigenleistungen) berechnet. Auftragsforschungskosten sind davon nicht betroffen – diese werden weiterhin separat mit 70% der Vergütung an externe F&E-Partner angesetzt."
         }
       }
-    ]
+    ],
+    "inLanguage": "de"
   }
   </script>
 </head>
@@ -548,7 +557,7 @@
     <a href="/" aria-label="NOVARIS Consulting"
        style="text-decoration:none;flex-shrink:0;display:flex;align-items:center;transition:opacity 0.15s ease"
        class="hover:opacity-90 focus-visible:outline-none">
-      <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto" />
+      <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto" width="230" height="72" loading="lazy">
     </a>
     <nav class="hidden lg:flex items-center gap-0.5">
       <a href="/#was-ist-fzulg" class="nav-link">Das FZulG</a>
@@ -596,6 +605,20 @@
     <p class="ds-subtitle">Bisher waren nur Personalkosten förderfähig. Ab 2026 ändert sich das: Die neue 20% Gemeinkostenpauschale macht auch Sachkosten indirekt ansetzbar.</p>
     <p class="ds-updated">Zuletzt aktualisiert: 08. März 2026 · Lesezeit: ca. 9 Minuten</p>
 
+    <!-- AI-optimized TL;DR summary -->
+    <div class="tldr-summary" id="auf-einen-blick" style="background:var(--bg-raised, #f5f8fe);border:1px solid var(--bdr, #dde5f4);border-left:4px solid #1E56B5;border-radius:0 12px 12px 0;padding:1.25rem 1.5rem;font-size:0.88rem;color:var(--clr-b, #5a6e8c);line-height:1.7;margin-bottom:2rem">
+      <div style="font-family:'Montserrat',sans-serif;font-size:0.82rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#1E56B5;margin-bottom:0.6rem;display:flex;align-items:center;gap:0.5rem">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1E56B5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+        Auf einen Blick
+      </div>
+      <ul style="list-style:none;display:flex;flex-direction:column;gap:0.4rem;margin:0;padding:0">
+        <li style="display:flex;align-items:flex-start;gap:0.5rem"><span style="color:#1E56B5;font-weight:700;flex-shrink:0;margin-top:1px">&bull;</span><span>Sachkosten sind seit dem <strong>Wachstumschancengesetz 2024</strong> erstmals förderfähig.</span></li>
+        <li style="display:flex;align-items:flex-start;gap:0.5rem"><span style="color:#1E56B5;font-weight:700;flex-shrink:0;margin-top:1px">&bull;</span><span>Umfasst: Materialien, Verbrauchsgüter, Messgeräte für F&amp;E-Projekte.</span></li>
+        <li style="display:flex;align-items:flex-start;gap:0.5rem"><span style="color:#1E56B5;font-weight:700;flex-shrink:0;margin-top:1px">&bull;</span><span>Voraussetzung: <strong>direkte Zuordnung</strong> zu einem BSFZ-bescheinigten Vorhaben.</span></li>
+        <li style="display:flex;align-items:flex-start;gap:0.5rem"><span style="color:#1E56B5;font-weight:700;flex-shrink:0;margin-top:1px">&bull;</span><span>Investitionsgüter und Abschreibungen sind <strong>nicht</strong> förderfähig.</span></li>
+      </ul>
+    </div>
+
     <!-- Table of Contents -->
     <nav class="toc" aria-label="Inhaltsverzeichnis">
       <div class="toc-title">Inhaltsverzeichnis</div>
@@ -613,10 +636,10 @@
     <!-- Section 1: Ausgangslage -->
     <div class="ds-section" id="ausgangslage">
       <h2>Die Ausgangslage: Warum Sachkosten bisher nicht förderfähig waren</h2>
-      <p>Das Forschungszulagengesetz (FZulG) definiert in <strong>§3 FZulG</strong> abschließend, welche Aufwendungen als Bemessungsgrundlage für die Forschungszulage herangezogen werden können. Seit Inkrafttreten des Gesetzes im Jahr 2020 waren dies ausschließlich zwei Kostenarten:</p>
+      <p>Das Forschungszulagengesetz (FZulG) definiert in <strong><span data-legal-ref="FZulG-§3">§3 FZulG</span></strong> abschließend, welche Aufwendungen als Bemessungsgrundlage für die Forschungszulage herangezogen werden können. Seit Inkrafttreten des Gesetzes im Jahr 2020 waren dies ausschließlich zwei Kostenarten:</p>
       <ul>
         <li><strong>Personalkosten:</strong> Bruttolöhne und -gehälter der Arbeitnehmer, die unmittelbar mit F&E-Vorhaben betraut sind, einschließlich der Arbeitgeberanteile zur Sozialversicherung.</li>
-        <li><strong>Auftragsforschung:</strong> 60% der Vergütung, die an externe Auftragnehmer für die Durchführung von F&E-Tätigkeiten gezahlt wird.</li>
+        <li><strong>Auftragsforschung:</strong> 70% der Vergütung, die an externe Auftragnehmer für die Durchführung von F&E-Tätigkeiten gezahlt wird.</li>
       </ul>
       <p><strong>Materialkosten, Gerätebeschaffungen, Softwarelizenzen, Laborausstattung, Verbrauchsmaterialien</strong> – all diese typischen Sachkosten, die in jedem F&E-Projekt anfallen, waren nicht direkt als Bemessungsgrundlage ansetzbar. Dies galt selbst dann, wenn die Sachkosten unmittelbar und ausschließlich für förderfähige F&E-Vorhaben eingesetzt wurden.</p>
       <p>Die Kritik aus der Wirtschaft war deutlich: Gerade in forschungsintensiven Branchen wie <a href="/branchen/pharma.html">Pharma</a>, <a href="/branchen/maschinenbau.html">Maschinenbau</a> oder <a href="/branchen/medizintechnik.html">Medizintechnik</a> machen Sachkosten einen erheblichen Teil der F&E-Aufwendungen aus. Die alleinige Fokussierung auf Personalkosten führte dazu, dass ein wesentlicher Teil der tatsächlichen F&E-Investitionen bei der Berechnung der Forschungszulage unberücksichtigt blieb. Unternehmen mit hohem Materialeinsatz in der Forschung fühlten sich gegenüber personalintensiven F&E-Betrieben benachteiligt.</p>
@@ -629,7 +652,7 @@
     <!-- Section 2: Gemeinkostenpauschale -->
     <div class="ds-section" id="gemeinkostenpauschale">
       <h2>Neu ab 2026: Die 20% Gemeinkostenpauschale</h2>
-      <p>Mit dem <strong>Wachstumschancengesetz</strong> hat der Gesetzgeber auf die Kritik reagiert und eine grundlegende Verbesserung eingeführt: Ab dem Wirtschaftsjahr 2026 können Unternehmen zusätzlich zu den förderfähigen Personalkosten eine <strong>pauschale Gemeinkostenerstattung von 20%</strong> ansetzen. Diese Pauschale soll die bisher nicht berücksichtigten Sachkosten pauschal abdecken.</p>
+      <p>Mit dem <strong><span data-legal-ref="WachstumschancenG">Wachstumschancengesetz</span></strong> hat der Gesetzgeber auf die Kritik reagiert und eine grundlegende Verbesserung eingeführt: Ab dem Wirtschaftsjahr 2026 können Unternehmen zusätzlich zu den förderfähigen Personalkosten eine <strong>pauschale Gemeinkostenerstattung von 20%</strong> ansetzen. Diese Pauschale soll die bisher nicht berücksichtigten Sachkosten pauschal abdecken.</p>
       <p>Der entscheidende Vorteil: Die Pauschale wird <strong>ohne Einzelnachweis</strong> gewährt. Unternehmen müssen weder die tatsächlichen Sachkosten belegen noch eine Zuordnung einzelner Sachkostenpositionen zu F&E-Vorhaben vornehmen. Die 20% werden automatisch auf die förderfähigen <a href="/forschungszulage-personalkosten.html">Personalkosten</a> aufgeschlagen.</p>
 
       <h3>So funktioniert die Berechnung</h3>
@@ -706,8 +729,8 @@
             </tr>
             <tr>
               <td><strong>Auftragsforschung</strong> (externe F&E)</td>
-              <td>60% der Vergütung</td>
-              <td>60% der Vergütung (unverändert)</td>
+              <td>70% der Vergütung</td>
+              <td>70% der Vergütung</td>
             </tr>
             <tr>
               <td><strong>Eigenleistungen</strong> (Einzelunternehmer/Gesellschafter)</td>
@@ -731,7 +754,7 @@
     <!-- Section 5: Auftragsforschung -->
     <div class="ds-section" id="auftragsforschung">
       <h2>Auftragsforschung: Die andere förderfähige Kostenart</h2>
-      <p>Neben Personalkosten und der neuen Gemeinkostenpauschale gibt es eine weitere wichtige Kostenart, die bei der Forschungszulage berücksichtigt wird: die <strong>Auftragsforschung</strong>. Wenn Ihr Unternehmen F&E-Leistungen an externe Partner vergibt, können <strong>60% der Vergütung</strong> als Bemessungsgrundlage angesetzt werden.</p>
+      <p>Neben Personalkosten und der neuen Gemeinkostenpauschale gibt es eine weitere wichtige Kostenart, die bei der Forschungszulage berücksichtigt wird: die <strong>Auftragsforschung</strong>. Wenn Ihr Unternehmen F&E-Leistungen an externe Partner vergibt, können <strong>70% der Vergütung</strong> als Bemessungsgrundlage angesetzt werden.</p>
 
       <p>Typische externe F&E-Partner sind:</p>
       <ul>
@@ -741,10 +764,10 @@
         <li><strong>Freie Forschungseinrichtungen:</strong> Private Forschungslabore und Institute</li>
       </ul>
 
-      <p>Die <strong>60%-Regel</strong> bei der Auftragsforschung hat einen praktischen Hintergrund: Der Gesetzgeber geht davon aus, dass 60% der Vergütung Personalkosten des Auftragnehmers entsprechen, da nur diese förderfähig sein sollen. Die restlichen 40% werden als Sachkosten und Gewinnmarge des Auftragnehmers betrachtet.</p>
+      <p>Die <strong>70%-Regel</strong> bei der Auftragsforschung hat einen praktischen Hintergrund: Der Gesetzgeber geht davon aus, dass 70% der Vergütung Personalkosten des Auftragnehmers entsprechen, da nur diese förderfähig sein sollen. Die restlichen 30% werden als Sachkosten und Gewinnmarge des Auftragnehmers betrachtet.</p>
 
       <div class="ds-box">
-        <strong>Hinweis:</strong> Die 20% Gemeinkostenpauschale wird <strong>nicht</strong> auf Auftragsforschungskosten berechnet – sie gilt ausschließlich für eigene Personalkosten und Eigenleistungen. Detaillierte Informationen zur Auftragsforschung finden Sie in unserem <a href="/forschungszulage-auftragsforschung.html">Ratgeber zur Auftragsforschung & 60%-Regel</a>.
+        <strong>Hinweis:</strong> Die 20% Gemeinkostenpauschale wird <strong>nicht</strong> auf Auftragsforschungskosten berechnet – sie gilt ausschließlich für eigene Personalkosten und Eigenleistungen. Detaillierte Informationen zur Auftragsforschung finden Sie in unserem <a href="/forschungszulage-auftragsforschung.html">Ratgeber zur Auftragsforschung & 70%-Regel</a>.
       </div>
     </div>
 
@@ -765,7 +788,7 @@
         <div class="ds-step-num">2</div>
         <div class="ds-step-content">
           <h3>Auftragsforschung einbeziehen</h3>
-          <p style="font-size:0.9rem;color:var(--clr-b);line-height:1.75;margin-bottom:0">Prüfen Sie, ob externe F&E-Vergütungen vorliegen. <strong>60% der Auftragsforschungskosten</strong> erhöhen Ihre Bemessungsgrundlage zusätzlich zu den Personalkosten. Auch Kooperationen mit Universitäten, Fraunhofer-Instituten oder spezialisierten Dienstleistern zählen hier.</p>
+          <p style="font-size:0.9rem;color:var(--clr-b);line-height:1.75;margin-bottom:0">Prüfen Sie, ob externe F&E-Vergütungen vorliegen. <strong>70% der Auftragsforschungskosten</strong> erhöhen Ihre Bemessungsgrundlage zusätzlich zu den Personalkosten. Auch Kooperationen mit Universitäten, Fraunhofer-Instituten oder spezialisierten Dienstleistern zählen hier.</p>
         </div>
       </div>
 
@@ -810,7 +833,7 @@
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
         </button>
         <div class="faq-a">
-          <p>Die 20% Gemeinkostenpauschale wurde durch das <strong>Wachstumschancengesetz</strong> eingeführt und gilt ab dem <strong>Wirtschaftsjahr 2026</strong>. Für Wirtschaftsjahre vor 2026 können ausschließlich Personalkosten und Auftragsforschungskosten als Bemessungsgrundlage angesetzt werden. Eine rückwirkende Anwendung der Pauschale auf frühere Jahre ist nicht möglich.</p>
+          <p>Die 20% Gemeinkostenpauschale wurde durch das <strong><span data-legal-ref="WachstumschancenG">Wachstumschancengesetz</span></strong> eingeführt und gilt ab dem <strong>Wirtschaftsjahr 2026</strong>. Für Wirtschaftsjahre vor 2026 können ausschließlich Personalkosten und Auftragsforschungskosten als Bemessungsgrundlage angesetzt werden. Eine rückwirkende Anwendung der Pauschale auf frühere Jahre ist nicht möglich.</p>
         </div>
       </div>
 
@@ -830,7 +853,7 @@
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
         </button>
         <div class="faq-a">
-          <p>Nein, die 20% Gemeinkostenpauschale wird <strong>ausschließlich auf die förderfähigen Personalkosten</strong> (Bruttolöhne und -gehälter der F&E-Mitarbeiter sowie Eigenleistungen) berechnet. Auftragsforschungskosten sind davon nicht betroffen – diese werden weiterhin separat mit 60% der Vergütung an externe F&E-Partner angesetzt. Die Gemeinkostenpauschale und die Auftragsforschung sind zwei unabhängige Kostenarten in der Bemessungsgrundlage.</p>
+          <p>Nein, die 20% Gemeinkostenpauschale wird <strong>ausschließlich auf die förderfähigen Personalkosten</strong> (Bruttolöhne und -gehälter der F&E-Mitarbeiter sowie Eigenleistungen) berechnet. Auftragsforschungskosten sind davon nicht betroffen – diese werden weiterhin separat mit 70% der Vergütung an externe F&E-Partner angesetzt. Die Gemeinkostenpauschale und die Auftragsforschung sind zwei unabhängige Kostenarten in der Bemessungsgrundlage.</p>
         </div>
       </div>
     </div>
@@ -842,7 +865,7 @@
       <ul>
         <li><a href="/forschungszulage.html" style="color:#1E56B5;font-weight:600"><strong>Forschungszulage Leitfaden</strong></a> – Der komplette Überblick zum FZulG 2026</li>
         <li><a href="/forschungszulage-personalkosten.html" style="color:#1E56B5;font-weight:600"><strong>Personalkosten im FZulG</strong></a> – Alles zu förderfähigen Bruttolöhnen und Zeiterfassung</li>
-        <li><a href="/forschungszulage-auftragsforschung.html" style="color:#1E56B5;font-weight:600"><strong>Auftragsforschung & 60%-Regel</strong></a> – Externe F&E-Kosten förderfähig machen</li>
+        <li><a href="/forschungszulage-auftragsforschung.html" style="color:#1E56B5;font-weight:600"><strong>Auftragsforschung & 70%-Regel</strong></a> – Externe F&E-Kosten förderfähig machen</li>
         <li><a href="/forschungszulage-rechner.html" style="color:#1E56B5;font-weight:600"><strong>Forschungszulagen Rechner</strong></a> – Berechnen Sie Ihre individuelle Förderung in 30 Sekunden</li>
         <li><a href="/forschungszulage-2026.html" style="color:#1E56B5;font-weight:600"><strong>Forschungszulage 2026</strong></a> – Alle Neuerungen im Überblick</li>
       </ul>
@@ -861,11 +884,23 @@
   </div>
 </main>
 
+
+  <!-- External Citations -->
+  <div style="max-width:48rem;margin:0 auto 2rem;padding:0 1rem">
+    <div class="external-citations" style="margin-top:1.5rem;padding:1rem 1.25rem;background:var(--bg-raised, #f5f8fe);border:1px solid var(--bdr, #dde5f4);border-radius:10px;font-size:0.82rem;color:var(--clr-b, #5a6e8c);line-height:1.7">
+        <div style="font-family:'Montserrat',sans-serif;font-size:0.72rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#1E56B5;margin-bottom:0.5rem">Offizielle Quellen</div>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.3rem">
+          <li><a href="https://www.gesetze-im-internet.de/fzulg/" target="_blank" rel="noopener" style="color:#1E56B5;text-decoration:none" data-legal-ref="FZulG">Forschungszulagengesetz (FZulG) – Gesetzestext</a></li>
+          <li><a href="https://www.bescheinigung-forschungszulage.de/" target="_blank" rel="noopener" style="color:#1E56B5;text-decoration:none" data-legal-ref="BSFZ">BSFZ – Bescheinigungsstelle Forschungszulage</a></li>
+          <li><a href="https://www.bundesfinanzministerium.de/" target="_blank" rel="noopener" style="color:#1E56B5;text-decoration:none" data-legal-ref="BMF">Bundesfinanzministerium (BMF)</a></li>
+        </ul>
+      </div>
+  </div>
 <footer style="background:#04091a;border-top:1px solid rgba(255,255,255,0.07)">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12">
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
       <div class="lg:col-span-2">
-        <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto;margin-bottom:1rem" />
+        <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto;margin-bottom:1rem" width="230" height="72" loading="lazy">
         <p style="font-size:0.82rem;color:rgba(195,215,245,0.38);line-height:1.72;max-width:320px">
           NOVARIS Consulting ist Ihr spezialisierter Full-Service-Partner für die staatliche
           Forschungszulage nach dem FZulG – erfolgsbasiert, transparent und ohne Risiko.
@@ -898,32 +933,9 @@
     </div>
   </div>
 </footer>
-
-<script>
-  (function() {
-    if (localStorage.getItem('theme') === 'dark') {
-      document.documentElement.classList.add('dark');
-    }
-  })();
-
-  function toggleDark() {
-    const dark = document.documentElement.classList.toggle('dark');
-    localStorage.setItem('theme', dark ? 'dark' : 'light');
-    _updateDarkBtn();
-  }
-
-  function _updateDarkBtn() {
-    const dark = document.documentElement.classList.contains('dark');
-    const moon = document.getElementById('icon-moon');
-    const sun  = document.getElementById('icon-sun');
-    if (moon) moon.style.display = dark ? 'none'  : 'block';
-    if (sun)  sun.style.display  = dark ? 'block' : 'none';
-  }
-
-  window.addEventListener('DOMContentLoaded', _updateDarkBtn);
-</script>
-
-<script src="/cookie-consent.js" defer></script>
-<script src="/analytics.js" defer></script>
+<script src="/theme.js" integrity="sha384-AHw/yIbpsf0UGYQRWNa1CnjuLJI76aQs0pyr51zWtjzNthQM8zFRHuo4sHJSrVy6" crossorigin="anonymous"></script>
+<script src="/nav-utils.js" defer integrity="sha384-HEPFc2/A6GCO1ZOjeylEPeFC589M3uf9OKsK/nHgRZjIVpHMIXB+STNmfV7/BK4W" crossorigin="anonymous"></script>
+<script src="/cookie-consent.js" defer integrity="sha384-8uu1DY4EaX+0gOCSB9J625s7KuuZI54bS+Otavzur8EoSXCCwGeR3MYrMv2+tsjn" crossorigin="anonymous"></script>
+<script src="/analytics.js" defer integrity="sha384-OTNmjy5n3I58KsCyQOce6zES4sVHwLLRFxpQoGp77N9nwR67WTSDKTsYzaxYHDQ3" crossorigin="anonymous"></script>
 </body>
 </html>

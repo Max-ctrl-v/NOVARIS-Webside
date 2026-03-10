@@ -3,20 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#04091a">
   <title>Datenschutzerklärung – NOVARIS Consulting</title>
   <meta name="robots" content="noindex, follow" />
   <link rel="canonical" href="https://novaris-consulting.com/datenschutz.html" />
   <link rel="alternate" hreflang="de" href="https://novaris-consulting.com/datenschutz.html" />
   <link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/datenschutz.html" />
   <link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/datenschutz.html" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/fonts/fonts.css" />
+  <link rel="stylesheet" href="/styles.min.css" />
+  <link rel="preload" href="/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/montserrat-800.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
+<style>
     /* ── CSS Custom Properties (light → dark) ── */
     :root {
       --bg-base:    #ffffff;
@@ -272,9 +273,11 @@
     html.dark ::-webkit-scrollbar-thumb:hover { background: rgba(77,174,229,0.48); }
     html.dark { scrollbar-color: rgba(77,174,229,0.30) transparent; }
   </style>
-  <link rel="stylesheet" href="/page-transition.css" />
-  <link rel="stylesheet" href="/cookie-consent.css" />
-  <script src="/page-transition.js" defer></script>
+  <link rel="stylesheet" href="/page-transition.css" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="/page-transition.css" /></noscript>
+  <link rel="stylesheet" href="/cookie-consent.css" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="/cookie-consent.css" /></noscript>
+  <script src="/page-transition.js" defer integrity="sha384-4inSnEeQghmg/0CJ7SF+TjLNtxyzHdmMI9o/kpB7+f78/vWCNesEiHYkzAgbHcTE" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -288,7 +291,7 @@
     <a href="/" aria-label="NOVARIS Consulting"
        style="text-decoration:none;flex-shrink:0;display:flex;align-items:center;transition:opacity 0.15s ease"
        class="hover:opacity-90 focus-visible:outline-none">
-      <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:52px" />
+      <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:52px" width="166" height="52">
     </a>
 
     <nav class="hidden lg:flex items-center gap-0.5">
@@ -511,7 +514,7 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
 
       <div class="lg:col-span-2">
-        <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:52px;width:auto;margin-bottom:1rem" />
+        <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:52px;width:auto;margin-bottom:1rem" width="166" height="52" loading="lazy">
         <p style="font-size:0.82rem;color:rgba(195,215,245,0.38);line-height:1.72;max-width:320px">
           NOVARIS Consulting ist Ihr spezialisierter Full-Service-Partner für die staatliche
           Forschungszulage nach dem FZulG – erfolgsbasiert, transparent und ohne Risiko.
@@ -548,33 +551,9 @@
     </div>
   </div>
 </footer>
-
-<script>
-  // ── Theme init (prevent flash) ──
-  (function() {
-    if (localStorage.getItem('theme') === 'dark') {
-      document.documentElement.classList.add('dark');
-    }
-  })();
-
-  function toggleDark() {
-    const dark = document.documentElement.classList.toggle('dark');
-    localStorage.setItem('theme', dark ? 'dark' : 'light');
-    _updateDarkBtn();
-  }
-
-  function _updateDarkBtn() {
-    const dark = document.documentElement.classList.contains('dark');
-    const moon = document.getElementById('icon-moon');
-    const sun  = document.getElementById('icon-sun');
-    if (moon) moon.style.display = dark ? 'none'  : 'block';
-    if (sun)  sun.style.display  = dark ? 'block' : 'none';
-  }
-
-  window.addEventListener('DOMContentLoaded', _updateDarkBtn);
-</script>
-
-<script src="/cookie-consent.js"></script>
-<script src="/analytics.js"></script>
+<script src="/theme.js" integrity="sha384-AHw/yIbpsf0UGYQRWNa1CnjuLJI76aQs0pyr51zWtjzNthQM8zFRHuo4sHJSrVy6" crossorigin="anonymous"></script>
+<script src="/nav-utils.js" defer integrity="sha384-HEPFc2/A6GCO1ZOjeylEPeFC589M3uf9OKsK/nHgRZjIVpHMIXB+STNmfV7/BK4W" crossorigin="anonymous"></script>
+<script src="/cookie-consent.js" defer integrity="sha384-8uu1DY4EaX+0gOCSB9J625s7KuuZI54bS+Otavzur8EoSXCCwGeR3MYrMv2+tsjn" crossorigin="anonymous"></script>
+<script src="/analytics.js" defer integrity="sha384-OTNmjy5n3I58KsCyQOce6zES4sVHwLLRFxpQoGp77N9nwR67WTSDKTsYzaxYHDQ3" crossorigin="anonymous"></script>
 </body>
 </html>

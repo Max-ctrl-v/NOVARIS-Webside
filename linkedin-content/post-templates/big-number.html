@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <title>Big Number Template</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800;900&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/fonts/fonts.css" />
+  <link rel="stylesheet" href="/styles.min.css" />
+  <link rel="preload" href="/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/montserrat-700.woff2" as="font" type="font/woff2" crossorigin />
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     .card {
@@ -65,7 +68,7 @@
     <div class="ring"></div>
     <div class="ring2"></div>
     <div class="content">
-      <img class="logo" src="/brand_assets/Logo V5-light.svg" alt="NOVARIS" />
+      <img class="logo" src="/brand_assets/Logo V5-light.svg" alt="NOVARIS" width="230" height="72" loading="lazy">
       <div class="big-number" id="number">35%</div>
       <div class="subtitle" id="subtitle">Ihrer F&E-Kosten zurück</div>
       <div class="desc" id="desc">Direkt als Steuergutschrift. Ohne Rückzahlung. Jedes Jahr.</div>

@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#04091a">
   <title>Forschungszulage 2026: Alles zum FZulG-Antrag | NOVARIS Consulting</title>
   <meta name="description" content="Forschungszulage (FZulG) 2026: Bis zu 4,2 Mio. EUR steuerliche Forschungsförderung sichern. BSFZ Antrag, förderfähige Aufwendungen & Neuerungen – jetzt kostenlos prüfen." />
   <link rel="canonical" href="https://novaris-consulting.com/forschungszulage.html" />
@@ -26,14 +27,14 @@
   <meta name="twitter:title" content="Forschungszulage 2026: Alles zum FZulG-Antrag | NOVARIS" />
   <meta name="twitter:description" content="Bis zu 4,2 Mio. EUR steuerliche Forschungsförderung sichern. Jetzt kostenlos prüfen." />
   <meta name="twitter:image" content="https://novaris-consulting.com/brand_assets/og-image.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/fonts/fonts.css" />
+  <link rel="stylesheet" href="/styles.min.css" />
+  <link rel="preload" href="/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/montserrat-800.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
+<style>
     :root {
       --bg-base:    #ffffff;
       --bg-raised:  #f5f8fe;
@@ -353,16 +354,17 @@
 .lang-btn:hover { color: rgba(255,255,255,0.85); }
 .lang-divider { width: 1px; height: 16px; background: rgba(255,255,255,0.12); flex-shrink: 0; }
   </style>
-  <link rel="stylesheet" href="/page-transition.css" />
-  <link rel="stylesheet" href="/cookie-consent.css" />
-  <script src="/page-transition.js" defer></script>
+  <link rel="stylesheet" href="/page-transition.css" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="/page-transition.css" /></noscript>
+  <link rel="stylesheet" href="/cookie-consent.css" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="/cookie-consent.css" /></noscript>
+  <script src="/page-transition.js" defer integrity="sha384-4inSnEeQghmg/0CJ7SF+TjLNtxyzHdmMI9o/kpB7+f78/vWCNesEiHYkzAgbHcTE" crossorigin="anonymous"></script>
 
   <!-- BreadcrumbList -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
+    "@type": "BreadcrumbList", "inLanguage": "de", "itemListElement": [
       {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://novaris-consulting.com/"},
       {"@type": "ListItem", "position": 2, "name": "Forschungszulage Leitfaden", "item": "https://novaris-consulting.com/forschungszulage.html"}
     ]
@@ -396,7 +398,8 @@
         {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Rückwirkende Beantragung ab 2020"}},
         {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Laufende jährliche Betreuung"}}
       ]
-    }
+    },
+    "inLanguage": "de"
   }
   </script>
 
@@ -409,8 +412,9 @@
     "description": "Umfassender Ratgeber zur Forschungszulage nach dem Forschungszulagengesetz (FZulG): Voraussetzungen, Förderhöhe, BSFZ Antrag, rückwirkende Beantragung und Neuerungen 2026.",
     "author": {
       "@type": "Organization",
-      "name": "NOVARIS Consulting",
-      "url": "https://novaris-consulting.com"
+      "name": "NOVARIS Consulting GmbH",
+      "url": "https://novaris-consulting.com",
+      "sameAs": ["https://www.linkedin.com/company/novaris-consulting"]
     },
     "publisher": {
       "@type": "Organization",
@@ -418,11 +422,17 @@
       "url": "https://novaris-consulting.com",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://novaris-consulting.com/brand_assets/Logo V5-light.svg"
+        "url": "https://novaris-consulting.com/brand_assets/Logo%20V3-transparent.png"
       }
     },
     "datePublished": "2026-01-15",
     "dateModified": "2026-03-06",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://novaris-consulting.com/brand_assets/og-image.png",
+      "width": 1200,
+      "height": 630
+    },
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https://novaris-consulting.com/forschungszulage.html"
@@ -435,8 +445,7 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
+    "@type":"FAQPage","inLanguage":"de","mainEntity": [
       {
         "@type": "Question",
         "name": "Was ist die Forschungszulage?",
@@ -461,7 +470,20 @@
           "text": "Ja, die Forschungszulage kann rückwirkend für alle offenen Steuerjahre ab 2020 beantragt werden. Voraussetzung ist, dass der Steuerbescheid noch nicht bestandskräftig ist."
         }
       }
-    ]
+    ],
+    "inLanguage": "de"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "inLanguage": "de",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": ["#auf-einen-blick",".section-card h2",".faq-btn"]
+    }
   }
   </script>
 </head>
@@ -473,7 +495,7 @@
     <a href="/" aria-label="NOVARIS Consulting"
        style="text-decoration:none;flex-shrink:0;display:flex;align-items:center;transition:opacity 0.15s ease"
        class="hover:opacity-90 focus-visible:outline-none">
-      <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto" />
+      <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto" width="230" height="72">
     </a>
     <nav class="hidden lg:flex items-center gap-0.5">
       <a href="/#was-ist-fzulg" class="nav-link">Das FZulG</a>
@@ -518,6 +540,20 @@
     <h1 class="ds-title">Forschungszulage (FZulG) – Der komplette Leitfaden 2026</h1>
     <p class="ds-updated">Zuletzt aktualisiert: 06. März 2026 · Lesezeit: ca. 12 Minuten</p>
 
+    <!-- AI-optimized TL;DR summary -->
+    <div class="tldr-summary" id="auf-einen-blick" style="background:var(--bg-raised, #f5f8fe);border:1px solid var(--bdr, #dde5f4);border-left:4px solid #1E56B5;border-radius:0 12px 12px 0;padding:1.25rem 1.5rem;font-size:0.88rem;color:var(--clr-b, #5a6e8c);line-height:1.7;margin-bottom:2rem">
+      <div style="font-family:'Montserrat',sans-serif;font-size:0.82rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#1E56B5;margin-bottom:0.6rem;display:flex;align-items:center;gap:0.5rem">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1E56B5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+        Auf einen Blick
+      </div>
+      <ul style="list-style:none;display:flex;flex-direction:column;gap:0.4rem;margin:0;padding:0">
+        <li style="display:flex;align-items:flex-start;gap:0.5rem"><span style="color:#1E56B5;font-weight:700;flex-shrink:0;margin-top:1px">&bull;</span><span>Die Forschungszulage (FZulG) erstattet bis zu <strong>25 % der F&amp;E-Kosten</strong> (KMU: 35 %) als Steuergutschrift.</span></li>
+        <li style="display:flex;align-items:flex-start;gap:0.5rem"><span style="color:#1E56B5;font-weight:700;flex-shrink:0;margin-top:1px">&bull;</span><span>Maximale Förderung: <strong>4,2 Mio. EUR pro Jahr</strong> (Bemessungsgrundlage: 12 Mio. EUR).</span></li>
+        <li style="display:flex;align-items:flex-start;gap:0.5rem"><span style="color:#1E56B5;font-weight:700;flex-shrink:0;margin-top:1px">&bull;</span><span>Gilt für alle Unternehmen in Deutschland – <strong>branchen- und größenunabhängig</strong>.</span></li>
+        <li style="display:flex;align-items:flex-start;gap:0.5rem"><span style="color:#1E56B5;font-weight:700;flex-shrink:0;margin-top:1px">&bull;</span><span>Rückwirkend beantragbar ab <strong>01.01.2020</strong>. Rechtsgrundlage: § 2 FZulG.</span></li>
+      </ul>
+    </div>
+
     <!-- Table of Contents -->
     <nav class="toc" aria-label="Inhaltsverzeichnis">
       <div class="toc-title">Inhaltsverzeichnis</div>
@@ -536,7 +572,7 @@
     <!-- Section 1: Was ist die Forschungszulage? -->
     <div class="ds-section" id="was-ist-forschungszulage">
       <h2>Was ist die Forschungszulage?</h2>
-      <p>Die <strong>Forschungszulage</strong> ist eine steuerliche Förderung für Forschungs- und Entwicklungstätigkeiten (FuE) in Deutschland. Sie wurde mit dem <strong>Forschungszulagengesetz (FZulG)</strong> eingeführt und steht seit dem <strong>01. Januar 2020</strong> allen steuerpflichtigen Unternehmen zu – unabhängig von Branche, Größe oder Gewinn. Damit ist die Forschungszulage das erste branchenoffene, steuerliche Instrument zur Forschungsförderung in der deutschen Geschichte.</p>
+      <p>Die <strong>Forschungszulage</strong> ist eine steuerliche Förderung für Forschungs- und Entwicklungstätigkeiten (FuE) in Deutschland. Sie wurde mit dem <strong><a href="https://www.gesetze-im-internet.de/fzulg/" target="_blank" rel="noopener" style="color:#1E56B5">Forschungszulagengesetz (FZulG)</a></strong> eingeführt und steht seit dem <strong>01. Januar 2020</strong> allen steuerpflichtigen Unternehmen zu – unabhängig von Branche, Größe oder Gewinn. Damit ist die Forschungszulage das erste branchenoffene, steuerliche Instrument zur Forschungsförderung in der deutschen Geschichte.</p>
       <p>Die Rechtsgrundlage bildet <strong>§ 2 FZulG (Forschungszulagengesetz)</strong>, das die begünstigten Forschungs- und Entwicklungsvorhaben definiert. Als förderfähig gelten Tätigkeiten in den drei Kategorien:</p>
       <ul>
         <li><strong>Grundlagenforschung:</strong> Experimentelle oder theoretische Arbeiten, die in erster Linie auf die Gewinnung neuer Erkenntnisse ausgerichtet sind, ohne auf eine unmittelbare praktische Anwendung abzuzielen.</li>
@@ -561,7 +597,7 @@
         <li><strong>Betriebsstätten</strong> ausländischer Unternehmen in Deutschland</li>
         <li><strong>Mitunternehmerschaften</strong> im Sinne des § 15 Abs. 1 Satz 1 Nr. 2 EStG</li>
       </ul>
-      <p>Entscheidend ist: Die Forschungszulage ist <strong>branchen- und größenunabhängig</strong>. Sowohl <strong>kleine und mittlere Unternehmen (KMU)</strong> als auch <strong>Großunternehmen</strong> und Konzerne können sie beantragen. Seit dem Wachstumschancengesetz profitieren KMU sogar von einem erhöhten Fördersatz von 35 % statt 25 %.</p>
+      <p>Entscheidend ist: Die Forschungszulage ist <strong>branchen- und größenunabhängig</strong>. Sowohl <strong>kleine und mittlere Unternehmen (KMU)</strong> als auch <strong>Großunternehmen</strong> und Konzerne können sie beantragen. Seit dem <span data-legal-ref="WachstumschancenG">Wachstumschancengesetz</span> profitieren KMU sogar von einem erhöhten Fördersatz von 35 % statt 25 %.</p>
 
       <h3>Besonderheiten für verbundene Unternehmen</h3>
       <p>Bei verbundenen Unternehmen im Sinne des § 15 AktG bzw. der KMU-Definition der EU gilt eine wichtige Einschränkung: Die maximale Bemessungsgrundlage von 12 Mio. EUR wird <strong>auf alle verbundenen Unternehmen gemeinsam</strong> aufgeteilt. Das bedeutet: Gehören mehrere Gesellschaften zu einem Konzern, teilen sie sich die Obergrenze. Dies betrifft sowohl die horizontale als auch die vertikale Unternehmensverbindung.</p>
@@ -583,7 +619,7 @@
     <!-- Section 3: Wie hoch ist die Forschungszulage? -->
     <div class="ds-section" id="hoehe-forschungszulage">
       <h2>Wie hoch ist die Forschungszulage 2026?</h2>
-      <p>Die Höhe der Forschungszulage hat sich seit der Einführung des FZulG im Jahr 2020 mehrfach erhöht. Seit dem <strong>Wachstumschancengesetz 2024</strong> und den Anpassungen für 2025/2026 gelten folgende Eckdaten:</p>
+      <p>Die Höhe der Forschungszulage hat sich seit der Einführung des FZulG im Jahr 2020 mehrfach erhöht. Seit dem <strong><span data-legal-ref="WachstumschancenG">Wachstumschancengesetz</span> 2024</strong> und den Anpassungen für 2025/2026 gelten folgende Eckdaten:</p>
 
       <div class="ds-box" style="margin-bottom:1.2rem">
         <strong>Maximale Bemessungsgrundlage:</strong> 12.000.000 EUR pro Wirtschaftsjahr<br /><br />
@@ -599,7 +635,7 @@
         <li><strong>Personalkosten:</strong> Bruttolöhne und -gehälter der in FuE-Projekten tätigen Arbeitnehmer, anteilig nach dem Zeitaufwand für das jeweilige Vorhaben</li>
         <li><strong>Eigenleistungen:</strong> Pauschale von <strong>70 EUR pro Stunde</strong> für Einzelunternehmer und Gesellschafter, die selbst forschend tätig sind (maximal 40 Stunden pro Woche)</li>
         <li><strong>Gemeinkostenpauschale:</strong> Ab 2026 können <strong>20 % der Personalkosten</strong> pauschal als Gemeinkosten angesetzt werden – eine wesentliche Verbesserung gegenüber den Vorjahren</li>
-        <li><strong>Auftragsforschung:</strong> 60 % des an den Auftragnehmer gezahlten Entgelts</li>
+        <li><strong>Auftragsforschung:</strong> 70 % des an den Auftragnehmer gezahlten Entgelts</li>
       </ul>
 
       <h3>Rechenbeispiel: KMU mit 5 FuE-Mitarbeitern</h3>
@@ -615,7 +651,7 @@
     <!-- Section 4: Förderfähige Aufwendungen -->
     <div class="ds-section" id="foerderfaehige-aufwendungen">
       <h2>Welche Aufwendungen sind förderfähig?</h2>
-      <p>Das Forschungszulagengesetz definiert in § 3 FZulG genau, welche Aufwendungen in die Bemessungsgrundlage der Forschungszulage einfließen. Nicht jede Ausgabe, die im Zusammenhang mit Forschung und Entwicklung steht, ist automatisch förderfähig. Hier ein detaillierter Überblick:</p>
+      <p>Das Forschungszulagengesetz definiert in <span data-legal-ref="FZulG-§3">§ 3 FZulG</span> genau, welche Aufwendungen in die Bemessungsgrundlage der Forschungszulage einfließen. Nicht jede Ausgabe, die im Zusammenhang mit Forschung und Entwicklung steht, ist automatisch förderfähig. Hier ein detaillierter Überblick:</p>
 
       <h3>1. Personalkosten (Eigenpersonal)</h3>
       <p>Die mit Abstand wichtigste Kostenart sind die <strong>Arbeitslöhne der in FuE tätigen Mitarbeiter</strong>. Förderfähig sind die dem Arbeitnehmer zufließenden steuerpflichtigen Bruttolöhne und -gehälter, einschließlich:</p>
@@ -661,7 +697,7 @@
         <div class="ds-step-num">1</div>
         <div class="ds-step-content">
           <h3>BSFZ Bescheinigung: Antrag bei der Bescheinigungsstelle Forschungszulage</h3>
-          <p>Im ersten Schritt müssen Sie einen <strong>BSFZ Antrag</strong> bei der <strong>Bescheinigungsstelle Forschungszulage (BSFZ)</strong> stellen. Die BSFZ ist eine dem BMBF zugeordnete Stelle, die von einem Konsortium aus VDI Technologiezentrum, DLR Projektträger und AiF Projekt GmbH betrieben wird.</p>
+          <p>Im ersten Schritt müssen Sie einen <strong>BSFZ Antrag</strong> bei der <strong><a href="https://www.bescheinigung-forschungszulage.de/" target="_blank" rel="noopener" style="color:#1E56B5">Bescheinigungsstelle Forschungszulage (BSFZ)</a></strong> stellen. Die BSFZ ist eine dem BMBF zugeordnete Stelle, die von einem Konsortium aus VDI Technologiezentrum, DLR Projektträger und AiF Projekt GmbH betrieben wird.</p>
           <p>Der Antrag erfolgt ausschließlich <strong>elektronisch über das BSFZ-Portal</strong> (elster-basiert). Folgende Angaben und Unterlagen sind erforderlich:</p>
           <ul>
             <li>Beschreibung des FuE-Vorhabens (Ziele, Methoden, geplante Ergebnisse)</li>
@@ -670,7 +706,7 @@
             <li>Zeitraum und beteiligte Mitarbeiter des Vorhabens</li>
             <li>Einordnung in die Kategorien Grundlagenforschung, industrielle Forschung oder experimentelle Entwicklung</li>
           </ul>
-          <p>Die BSFZ prüft ausschließlich, ob das Vorhaben die <strong>inhaltlichen Kriterien</strong> gemäß § 2 FZulG erfüllt. Die Bearbeitung dauert in der Regel <strong>4 bis 12 Wochen</strong>. Bei positivem Bescheid erhalten Sie eine Bescheinigung, die Sie dem Finanzamt vorlegen.</p>
+          <p>Die BSFZ prüft ausschließlich, ob das Vorhaben die <strong>inhaltlichen Kriterien</strong> gemäß <span data-legal-ref="FZulG-§2">§ 2 FZulG</span> erfüllt. Die Bearbeitung dauert in der Regel <strong>4 bis 12 Wochen</strong>. Bei positivem Bescheid erhalten Sie eine Bescheinigung, die Sie dem Finanzamt vorlegen.</p>
         </div>
       </div>
 
@@ -714,7 +750,7 @@
       <p>Für die rückwirkende Beantragung gelten die <strong>zum jeweiligen Zeitpunkt gültigen Regelungen</strong>:</p>
       <div class="ds-box">
         <strong>2020–2023:</strong> Max. Bemessungsgrundlage 4 Mio. EUR, Fördersatz 25 %, max. Zulage 1 Mio. EUR<br /><br />
-        <strong>2024 (nach Wachstumschancengesetz):</strong> Max. Bemessungsgrundlage 12 Mio. EUR, Fördersatz 25 % (KMU: 35 %), max. Zulage 3–4,2 Mio. EUR<br /><br />
+        <strong>2024 (nach <span data-legal-ref="WachstumschancenG">Wachstumschancengesetz</span>):</strong> Max. Bemessungsgrundlage 12 Mio. EUR, Fördersatz 25 % (KMU: 35 %), max. Zulage 3–4,2 Mio. EUR<br /><br />
         <strong>Ab 2026:</strong> Zusätzlich 20 % Gemeinkostenpauschale auf Personalkosten
       </div>
       <p>Bei Unternehmen, die seit 2020 durchgängig FuE betrieben haben und noch keine Forschungszulage beantragt haben, können sich <strong>erhebliche Nachzahlungen</strong> ergeben. Ein mittelständisches Unternehmen mit jährlichen FuE-Personalkosten von 500.000 EUR könnte beispielsweise rückwirkend über 500.000 EUR an Forschungszulage erhalten.</p>
@@ -727,7 +763,7 @@
     <!-- Section 7: Neuerungen 2026 -->
     <div class="ds-section" id="neuerungen-2026">
       <h2>Neuerungen 2026: Was hat sich bei der Forschungszulage geändert?</h2>
-      <p>Das Forschungszulagengesetz wurde seit seiner Einführung mehrfach novelliert. Die wichtigsten Änderungen, die im Jahr 2026 gelten, gehen vor allem auf das <strong>Wachstumschancengesetz</strong> (verabschiedet 2024) und weitere Anpassungen zurück. Hier ein Überblick über alle wesentlichen Neuerungen:</p>
+      <p>Das Forschungszulagengesetz wurde seit seiner Einführung mehrfach novelliert. Die wichtigsten Änderungen, die im Jahr 2026 gelten, gehen vor allem auf das <strong><span data-legal-ref="WachstumschancenG">Wachstumschancengesetz</span></strong> (verabschiedet 2024) und weitere Anpassungen zurück. Hier ein Überblick über alle wesentlichen Neuerungen:</p>
 
       <h3>Erhöhte Bemessungsgrundlage: Von 4 auf 12 Mio. EUR</h3>
       <p>Die wohl bedeutendste Änderung: Die maximale Bemessungsgrundlage wurde von ursprünglich 2 Mio. EUR (2020) über 4 Mio. EUR (2021–2023) auf jetzt <strong>12 Mio. EUR pro Wirtschaftsjahr</strong> angehoben. Damit hat sich der maximale Förderbetrag versechsfacht. Insbesondere forschungsintensive Mittelständler und Großunternehmen profitieren erheblich.</p>
@@ -798,7 +834,7 @@
         <li><a href="/forschungszulage-auszahlung.html" style="color:#1E56B5">Auszahlung</a> – Wann kommt das Geld vom Finanzamt?</li>
         <li><a href="/forschungszulage-rueckwirkend.html" style="color:#1E56B5">Rückwirkend beantragen</a> – Bis zu 6 Jahre Förderung nachholen</li>
         <li><a href="/forschungszulage-zeiterfassung.html" style="color:#1E56B5">F&amp;E-Zeiterfassung</a> – GoBD-konforme Dokumentation</li>
-        <li><a href="/forschungszulage-auftragsforschung.html" style="color:#1E56B5">Auftragsforschung</a> – 60% der Kosten förderfähig</li>
+        <li><a href="/forschungszulage-auftragsforschung.html" style="color:#1E56B5">Auftragsforschung</a> – 70% der Kosten förderfähig</li>
         <li><a href="/forschungszulage-gmbh-einzelunternehmen.html" style="color:#1E56B5">GmbH &amp; Einzelunternehmen</a> – Rechtsformspezifische Besonderheiten</li>
         <li><a href="/forschungszulage-steuerberater.html" style="color:#1E56B5">Für Steuerberater</a> – Partnermodell &amp; Mandanten-Mehrwert</li>
       </ul>
@@ -814,6 +850,17 @@
         <li><a href="/branchen/luft-raumfahrt.html" style="color:#1E56B5">Forschungszulage Luft- &amp; Raumfahrt</a></li>
         <li><a href="/branchen/bauindustrie.html" style="color:#1E56B5">Forschungszulage Bauindustrie</a></li>
         <li><a href="/branchen/agrar-foodtech.html" style="color:#1E56B5">Forschungszulage Agrar &amp; FoodTech</a></li>
+      </ul>
+    </div>
+
+    <!-- Rechtsgrundlagen / Official Sources -->
+    <div class="ds-section" id="rechtsgrundlagen" style="margin-top:2rem">
+      <h2>Rechtsgrundlagen &amp; offizielle Quellen</h2>
+      <p>Die folgenden offiziellen Quellen bilden die rechtliche Grundlage der Forschungszulage:</p>
+      <ul>
+        <li><a href="https://www.gesetze-im-internet.de/fzulg/" target="_blank" rel="noopener" style="color:#1E56B5;font-weight:600">Forschungszulagengesetz (FZulG) – Gesetzestext</a> – Vollständiger Wortlaut des Gesetzes zur steuerlichen Förderung von Forschung und Entwicklung</li>
+        <li><a href="https://www.bescheinigung-forschungszulage.de/" target="_blank" rel="noopener" style="color:#1E56B5;font-weight:600">Bescheinigungsstelle Forschungszulage (BSFZ)</a> – Offizielle Anlaufstelle für die Beantragung der BSFZ-Bescheinigung</li>
+        <li><a href="https://www.bundesfinanzministerium.de/" target="_blank" rel="noopener" style="color:#1E56B5;font-weight:600">Bundesministerium der Finanzen (BMF)</a> – Zuständiges Ministerium für die steuerliche Umsetzung der Forschungszulage</li>
       </ul>
     </div>
 
@@ -834,7 +881,7 @@
   <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12">
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
       <div class="lg:col-span-2">
-        <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto;margin-bottom:1rem" />
+        <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto;margin-bottom:1rem" width="230" height="72" loading="lazy">
         <p style="font-size:0.82rem;color:rgba(195,215,245,0.38);line-height:1.72;max-width:320px">
           NOVARIS Consulting ist Ihr spezialisierter Full-Service-Partner für die staatliche
           Forschungszulage nach dem FZulG – erfolgsbasiert, transparent und ohne Risiko.
@@ -867,32 +914,9 @@
     </div>
   </div>
 </footer>
-
-<script>
-  (function() {
-    if (localStorage.getItem('theme') === 'dark') {
-      document.documentElement.classList.add('dark');
-    }
-  })();
-
-  function toggleDark() {
-    const dark = document.documentElement.classList.toggle('dark');
-    localStorage.setItem('theme', dark ? 'dark' : 'light');
-    _updateDarkBtn();
-  }
-
-  function _updateDarkBtn() {
-    const dark = document.documentElement.classList.contains('dark');
-    const moon = document.getElementById('icon-moon');
-    const sun  = document.getElementById('icon-sun');
-    if (moon) moon.style.display = dark ? 'none'  : 'block';
-    if (sun)  sun.style.display  = dark ? 'block' : 'none';
-  }
-
-  window.addEventListener('DOMContentLoaded', _updateDarkBtn);
-</script>
-
-<script src="/cookie-consent.js" defer></script>
-<script src="/analytics.js" defer></script>
+<script src="/theme.js" integrity="sha384-AHw/yIbpsf0UGYQRWNa1CnjuLJI76aQs0pyr51zWtjzNthQM8zFRHuo4sHJSrVy6" crossorigin="anonymous"></script>
+<script src="/nav-utils.js" defer integrity="sha384-HEPFc2/A6GCO1ZOjeylEPeFC589M3uf9OKsK/nHgRZjIVpHMIXB+STNmfV7/BK4W" crossorigin="anonymous"></script>
+<script src="/cookie-consent.js" defer integrity="sha384-8uu1DY4EaX+0gOCSB9J625s7KuuZI54bS+Otavzur8EoSXCCwGeR3MYrMv2+tsjn" crossorigin="anonymous"></script>
+<script src="/analytics.js" defer integrity="sha384-OTNmjy5n3I58KsCyQOce6zES4sVHwLLRFxpQoGp77N9nwR67WTSDKTsYzaxYHDQ3" crossorigin="anonymous"></script>
 </body>
 </html>

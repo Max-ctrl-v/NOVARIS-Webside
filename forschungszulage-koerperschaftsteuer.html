@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#04091a">
   <title>Forschungszulage &amp; Körperschaftsteuer: So funktioniert die Verrechnung | NOVARIS</title>
   <meta name="description" content="Forschungszulage und Körperschaftsteuer: Verrechnung, Anlage FZ, Gewerbesteuerfreiheit und Auswirkung auf die Steuerlast – komplett erklärt für GmbH und AG." />
   <meta name="keywords" content="Forschungszulage Körperschaftsteuer, FZulG KSt, Forschungszulage Steuererklärung, Anlage FZ, Forschungszulage Gewerbesteuer, FZulG Verrechnung" />
@@ -27,14 +28,14 @@
   <meta name="twitter:title" content="Forschungszulage &amp; Körperschaftsteuer: Verrechnung erklärt | NOVARIS" />
   <meta name="twitter:description" content="Forschungszulage und Körperschaftsteuer: Verrechnung, Anlage FZ, Gewerbesteuerfreiheit und Auswirkung auf die Steuerlast." />
   <meta name="twitter:image" content="https://novaris-consulting.com/brand_assets/og-image.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/fonts/fonts.css" />
+  <link rel="stylesheet" href="/styles.min.css" />
+  <link rel="preload" href="/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/montserrat-800.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
+<style>
     :root {
       --bg-base:    #ffffff;
       --bg-raised:  #f5f8fe;
@@ -450,16 +451,17 @@
 .lang-btn:hover { color: rgba(255,255,255,0.85); }
 .lang-divider { width: 1px; height: 16px; background: rgba(255,255,255,0.12); flex-shrink: 0; }
   </style>
-  <link rel="stylesheet" href="/page-transition.css" />
-  <link rel="stylesheet" href="/cookie-consent.css" />
-  <script src="/page-transition.js" defer></script>
+  <link rel="stylesheet" href="/page-transition.css" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="/page-transition.css" /></noscript>
+  <link rel="stylesheet" href="/cookie-consent.css" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="/cookie-consent.css" /></noscript>
+  <script src="/page-transition.js" defer integrity="sha384-4inSnEeQghmg/0CJ7SF+TjLNtxyzHdmMI9o/kpB7+f78/vWCNesEiHYkzAgbHcTE" crossorigin="anonymous"></script>
 
   <!-- BreadcrumbList -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
+    "@type": "BreadcrumbList", "inLanguage": "de", "itemListElement": [
       {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://novaris-consulting.com/"},
       {"@type": "ListItem", "position": 2, "name": "Forschungszulage", "item": "https://novaris-consulting.com/forschungszulage.html"},
       {"@type": "ListItem", "position": 3, "name": "Körperschaftsteuer", "item": "https://novaris-consulting.com/forschungszulage-koerperschaftsteuer.html"}
@@ -476,8 +478,9 @@
     "description": "Forschungszulage und Körperschaftsteuer: Verrechnung, Anlage FZ, Gewerbesteuerfreiheit und Auswirkung auf die Steuerlast – komplett erklärt für GmbH und AG.",
     "author": {
       "@type": "Organization",
-      "name": "NOVARIS Consulting",
-      "url": "https://novaris-consulting.com"
+      "name": "NOVARIS Consulting GmbH",
+      "url": "https://novaris-consulting.com",
+      "sameAs": ["https://www.linkedin.com/company/novaris-consulting"]
     },
     "publisher": {
       "@type": "Organization",
@@ -485,11 +488,17 @@
       "url": "https://novaris-consulting.com",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://novaris-consulting.com/brand_assets/Logo V5-light.svg"
+        "url": "https://novaris-consulting.com/brand_assets/Logo%20V3-transparent.png"
       }
     },
     "datePublished": "2026-03-08",
     "dateModified": "2026-03-08",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://novaris-consulting.com/brand_assets/og-image.png",
+      "width": 1200,
+      "height": 630
+    },
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https://novaris-consulting.com/forschungszulage-koerperschaftsteuer.html"
@@ -502,8 +511,7 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
+    "@type":"FAQPage","inLanguage":"de","mainEntity": [
       {
         "@type": "Question",
         "name": "Ist die Forschungszulage gewerbesteuerpflichtig?",
@@ -536,7 +544,8 @@
           "text": "Nein, die Forschungszulage hat keinen Einfluss auf den Verlustvortrag. Sie wird unabhängig von der Gewinnsituation des Unternehmens festgesetzt und ausgezahlt. Ein bestehender Verlustvortrag wird weder gemindert noch beeinflusst. Das macht die Forschungszulage besonders attraktiv für Startups und Unternehmen in Verlustphasen."
         }
       }
-    ]
+    ],
+    "inLanguage": "de"
   }
   </script>
 </head>
@@ -548,7 +557,7 @@
     <a href="/" aria-label="NOVARIS Consulting"
        style="text-decoration:none;flex-shrink:0;display:flex;align-items:center;transition:opacity 0.15s ease"
        class="hover:opacity-90 focus-visible:outline-none">
-      <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto" />
+      <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto" width="230" height="72" loading="lazy">
     </a>
     <nav class="hidden lg:flex items-center gap-0.5">
       <a href="/#was-ist-fzulg" class="nav-link">Das FZulG</a>
@@ -596,6 +605,20 @@
     <p class="ds-subtitle">Die Forschungszulage wird direkt mit Ihrer Körperschaftsteuer verrechnet – oder sogar darüber hinaus erstattet. Hier erfahren Sie, wie das in der Praxis funktioniert.</p>
     <p class="ds-updated">Zuletzt aktualisiert: 08. März 2026 · Lesezeit: ca. 9 Minuten</p>
 
+    <!-- AI-optimized TL;DR summary -->
+    <div class="tldr-summary" id="auf-einen-blick" style="background:var(--bg-raised, #f5f8fe);border:1px solid var(--bdr, #dde5f4);border-left:4px solid #1E56B5;border-radius:0 12px 12px 0;padding:1.25rem 1.5rem;font-size:0.88rem;color:var(--clr-b, #5a6e8c);line-height:1.7;margin-bottom:2rem">
+      <div style="font-family:'Montserrat',sans-serif;font-size:0.82rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#1E56B5;margin-bottom:0.6rem;display:flex;align-items:center;gap:0.5rem">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1E56B5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+        Auf einen Blick
+      </div>
+      <ul style="list-style:none;display:flex;flex-direction:column;gap:0.4rem;margin:0;padding:0">
+        <li style="display:flex;align-items:flex-start;gap:0.5rem"><span style="color:#1E56B5;font-weight:700;flex-shrink:0;margin-top:1px">&bull;</span><span>Die Forschungszulage wird <strong>direkt auf die Körperschaftsteuer</strong> angerechnet (§ 10 FZulG).</span></li>
+        <li style="display:flex;align-items:flex-start;gap:0.5rem"><span style="color:#1E56B5;font-weight:700;flex-shrink:0;margin-top:1px">&bull;</span><span>Übersteigt die Zulage die KSt-Schuld: <strong>Auszahlung</strong> des Differenzbetrags.</span></li>
+        <li style="display:flex;align-items:flex-start;gap:0.5rem"><span style="color:#1E56B5;font-weight:700;flex-shrink:0;margin-top:1px">&bull;</span><span>Keine Anrechnung auf Gewerbesteuer oder Solidaritätszuschlag.</span></li>
+        <li style="display:flex;align-items:flex-start;gap:0.5rem"><span style="color:#1E56B5;font-weight:700;flex-shrink:0;margin-top:1px">&bull;</span><span>Besonders attraktiv für Unternehmen mit <strong>geringer Steuerlast oder Verlusten</strong>.</span></li>
+      </ul>
+    </div>
+
     <!-- Table of Contents -->
     <nav class="toc" aria-label="Inhaltsverzeichnis">
       <div class="toc-title">Inhaltsverzeichnis</div>
@@ -639,7 +662,7 @@
       <p>Die Anlage FZ enthält alle wesentlichen Angaben zur Beantragung der Forschungszulage:</p>
       <ul>
         <li><strong>BSFZ-Bescheinigung:</strong> Die Bescheinigungsnummer der positiven Begutachtung durch die Bescheinigungsstelle Forschungszulage (BSFZ). Ohne BSFZ-Bescheinigung kann keine Forschungszulage festgesetzt werden.</li>
-        <li><strong>Förderfähige Aufwendungen:</strong> Detaillierte Aufstellung der Personalkosten (Bruttolöhne und -gehälter), Eigenleistungen von Einzelunternehmern und Auftragsforschungskosten (60% der Vergütung).</li>
+        <li><strong>Förderfähige Aufwendungen:</strong> Detaillierte Aufstellung der Personalkosten (Bruttolöhne und -gehälter), Eigenleistungen von Einzelunternehmern und Auftragsforschungskosten (70% der Vergütung).</li>
         <li><strong>Bemessungsgrundlage:</strong> Die Summe aller förderfähigen Aufwendungen, begrenzt auf die maximale Bemessungsgrundlage (4 Mio. EUR bis 2023, 12 Mio. EUR ab 2024).</li>
         <li><strong>Beantragte Forschungszulage:</strong> Der errechnete Förderbetrag (25% bzw. 35% für KMU ab 2024).</li>
       </ul>
@@ -836,11 +859,23 @@
   </div>
 </main>
 
+
+  <!-- External Citations -->
+  <div style="max-width:48rem;margin:0 auto 2rem;padding:0 1rem">
+    <div class="external-citations" style="margin-top:1.5rem;padding:1rem 1.25rem;background:var(--bg-raised, #f5f8fe);border:1px solid var(--bdr, #dde5f4);border-radius:10px;font-size:0.82rem;color:var(--clr-b, #5a6e8c);line-height:1.7">
+        <div style="font-family:'Montserrat',sans-serif;font-size:0.72rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#1E56B5;margin-bottom:0.5rem">Offizielle Quellen</div>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.3rem">
+          <li><a href="https://www.gesetze-im-internet.de/fzulg/" target="_blank" rel="noopener" style="color:#1E56B5;text-decoration:none" data-legal-ref="FZulG">Forschungszulagengesetz (FZulG) – Gesetzestext</a></li>
+          <li><a href="https://www.bescheinigung-forschungszulage.de/" target="_blank" rel="noopener" style="color:#1E56B5;text-decoration:none" data-legal-ref="BSFZ">BSFZ – Bescheinigungsstelle Forschungszulage</a></li>
+          <li><a href="https://www.bundesfinanzministerium.de/" target="_blank" rel="noopener" style="color:#1E56B5;text-decoration:none" data-legal-ref="BMF">Bundesfinanzministerium (BMF)</a></li>
+        </ul>
+      </div>
+  </div>
 <footer style="background:#04091a;border-top:1px solid rgba(255,255,255,0.07)">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12">
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
       <div class="lg:col-span-2">
-        <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto;margin-bottom:1rem" />
+        <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto;margin-bottom:1rem" width="230" height="72" loading="lazy">
         <p style="font-size:0.82rem;color:rgba(195,215,245,0.38);line-height:1.72;max-width:320px">
           NOVARIS Consulting ist Ihr spezialisierter Full-Service-Partner für die staatliche
           Forschungszulage nach dem FZulG – erfolgsbasiert, transparent und ohne Risiko.
@@ -873,32 +908,9 @@
     </div>
   </div>
 </footer>
-
-<script>
-  (function() {
-    if (localStorage.getItem('theme') === 'dark') {
-      document.documentElement.classList.add('dark');
-    }
-  })();
-
-  function toggleDark() {
-    const dark = document.documentElement.classList.toggle('dark');
-    localStorage.setItem('theme', dark ? 'dark' : 'light');
-    _updateDarkBtn();
-  }
-
-  function _updateDarkBtn() {
-    const dark = document.documentElement.classList.contains('dark');
-    const moon = document.getElementById('icon-moon');
-    const sun  = document.getElementById('icon-sun');
-    if (moon) moon.style.display = dark ? 'none'  : 'block';
-    if (sun)  sun.style.display  = dark ? 'block' : 'none';
-  }
-
-  window.addEventListener('DOMContentLoaded', _updateDarkBtn);
-</script>
-
-<script src="/cookie-consent.js" defer></script>
-<script src="/analytics.js" defer></script>
+<script src="/theme.js" integrity="sha384-AHw/yIbpsf0UGYQRWNa1CnjuLJI76aQs0pyr51zWtjzNthQM8zFRHuo4sHJSrVy6" crossorigin="anonymous"></script>
+<script src="/nav-utils.js" defer integrity="sha384-HEPFc2/A6GCO1ZOjeylEPeFC589M3uf9OKsK/nHgRZjIVpHMIXB+STNmfV7/BK4W" crossorigin="anonymous"></script>
+<script src="/cookie-consent.js" defer integrity="sha384-8uu1DY4EaX+0gOCSB9J625s7KuuZI54bS+Otavzur8EoSXCCwGeR3MYrMv2+tsjn" crossorigin="anonymous"></script>
+<script src="/analytics.js" defer integrity="sha384-OTNmjy5n3I58KsCyQOce6zES4sVHwLLRFxpQoGp77N9nwR67WTSDKTsYzaxYHDQ3" crossorigin="anonymous"></script>
 </body>
 </html>

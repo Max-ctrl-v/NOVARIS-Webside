@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#04091a">
   <title>Fördermittel Vergleich 2026: Forschungszulage vs. ZIM vs. KMU-innovativ | NOVARIS</title>
   <meta name="description" content="Fördermittel für F&E im Vergleich: Forschungszulage (FZulG), ZIM, KMU-innovativ & BMBF-Programme. Welches Programm passt? Jetzt kostenlos beraten lassen." />
   <meta name="keywords" content="Fördermittel Vergleich, Forschungszulage vs ZIM, F&E Förderung Deutschland, KMU-innovativ, BMBF Förderprogramme, FZulG Vergleich" />
@@ -33,8 +34,7 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
+    "@type": "BreadcrumbList", "inLanguage": "de", "itemListElement": [
       {
         "@type": "ListItem",
         "position": 1,
@@ -55,8 +55,7 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
+    "@type":"FAQPage","inLanguage":"de","mainEntity": [
       {
         "@type": "Question",
         "name": "Kann ich Forschungszulage und ZIM gleichzeitig beantragen?",
@@ -104,11 +103,12 @@
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/cookie-consent.css" />
+    <link rel="preload" href="/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/montserrat-800.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/fonts/fonts.css" />
+  <link rel="stylesheet" href="/styles.min.css" />
+  <link rel="stylesheet" href="/cookie-consent.css" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="/cookie-consent.css" /></noscript>
 
   <script>
     tailwind.config = {
@@ -453,7 +453,7 @@
     <a href="/" aria-label="NOVARIS Consulting"
        style="text-decoration:none;flex-shrink:0;display:flex;align-items:center;transition:opacity 0.15s ease"
        class="hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-navy-300">
-      <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto" />
+      <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" width="230" height="72" style="height:72px;width:auto" />
     </a>
 
     <nav class="hidden lg:flex items-center gap-0.5">
@@ -582,6 +582,11 @@
   </div>
 </section>
 
+<div style="max-width:1280px;margin:0 auto;padding:0.75rem 1.5rem 0">
+  <p class="ds-updated" style="font-size:0.78rem;color:#5a6e8c;margin-bottom:0;padding-bottom:0.75rem;border-bottom:1px solid #dde5f4">Zuletzt aktualisiert: 10. März 2026</p>
+</div>
+
+
 
 <!-- ════════════════════════════════════════
      SECTION 1: INTRODUCTION
@@ -686,7 +691,7 @@
             </tr>
             <tr>
               <td>Förderfähige Kosten</td>
-              <td class="highlight-col">Personalkosten + Auftragsforschung (60 %)</td>
+              <td class="highlight-col">Personalkosten + Auftragsforschung (70 %)</td>
               <td>Personal, Material, Geräte, FE-Aufträge</td>
               <td>Personal, Material, Reisen, Unteraufträge</td>
               <td>Alle Projektkosten</td>
@@ -1034,6 +1039,18 @@
 <!-- ════════════════════════════════════════
      SECTION 7: FAQ
 ════════════════════════════════════════ -->
+
+  <!-- External Citations -->
+  <div style="max-width:48rem;margin:0 auto 2rem;padding:0 1rem">
+    <div class="external-citations" style="margin-top:1.5rem;padding:1rem 1.25rem;background:var(--bg-raised, #f5f8fe);border:1px solid var(--bdr, #dde5f4);border-radius:10px;font-size:0.82rem;color:var(--clr-b, #5a6e8c);line-height:1.7">
+        <div style="font-family:'Montserrat',sans-serif;font-size:0.72rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#1E56B5;margin-bottom:0.5rem">Offizielle Quellen</div>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.3rem">
+          <li><a href="https://www.gesetze-im-internet.de/fzulg/" target="_blank" rel="noopener" style="color:#1E56B5;text-decoration:none" data-legal-ref="FZulG">Forschungszulagengesetz (FZulG) – Gesetzestext</a></li>
+          <li><a href="https://www.bescheinigung-forschungszulage.de/" target="_blank" rel="noopener" style="color:#1E56B5;text-decoration:none" data-legal-ref="BSFZ">BSFZ – Bescheinigungsstelle Forschungszulage</a></li>
+          <li><a href="https://www.bundesfinanzministerium.de/" target="_blank" rel="noopener" style="color:#1E56B5;text-decoration:none" data-legal-ref="BMF">Bundesfinanzministerium (BMF)</a></li>
+        </ul>
+      </div>
+  </div>
 <section style="padding:5rem 0">
   <div class="max-w-3xl mx-auto px-4 sm:px-6">
     <div class="text-center mb-12">
@@ -1207,74 +1224,20 @@
      SCRIPTS
 ════════════════════════════════════════ -->
 <script>
-  // FAQ toggle
-  function toggleFaq(btn) {
-    var wrap = btn.closest('.faq-wrap');
-    var isOpen = wrap.classList.contains('open');
-    // Close all
-    document.querySelectorAll('.faq-wrap.open').forEach(function(w) {
-      w.classList.remove('open');
-      w.querySelector('.faq-btn').setAttribute('aria-expanded', 'false');
-    });
-    // Open clicked if it was closed
-    if (!isOpen) {
-      wrap.classList.add('open');
-      btn.setAttribute('aria-expanded', 'true');
-    }
-  }
 
-  // Mobile menu toggle
-  function toggleMob() {
-    var menu = document.getElementById('mob-menu');
-    var btn = document.getElementById('ham-btn');
-    var isOpen = menu.classList.contains('open');
-    menu.classList.toggle('open');
-    btn.setAttribute('aria-expanded', !isOpen ? 'true' : 'false');
-    var hb1 = document.getElementById('hb1');
-    var hb2 = document.getElementById('hb2');
-    var hb3 = document.getElementById('hb3');
-    if (!isOpen) {
-      hb1.style.transform = 'translateY(5px) rotate(45deg)';
-      hb2.style.opacity = '0';
-      hb3.style.transform = 'translateY(-5px) rotate(-45deg)';
-      hb3.style.width = '20px';
-    } else {
-      hb1.style.transform = '';
-      hb2.style.opacity = '1';
-      hb3.style.transform = '';
-      hb3.style.width = '14px';
-    }
-  }
 
-  // Close mobile menu on link click
-  document.querySelectorAll('#mob-menu a').forEach(function(a) {
-    a.addEventListener('click', function() { toggleMob(); });
-  });
 
-  // Dropdown aria-expanded
-  document.querySelectorAll('.nav-dropdown-wrap').forEach(function(wrap) {
-    var trigger = wrap.querySelector('.nav-dropdown-trigger');
-    if (!trigger) return;
-    wrap.addEventListener('mouseenter', function() { trigger.setAttribute('aria-expanded', 'true'); });
-    wrap.addEventListener('mouseleave', function() { trigger.setAttribute('aria-expanded', 'false'); });
-  });
 
-  // Nav scroll shadow
   (function() {
     var nav = document.getElementById('nav');
     var scrolled = false;
-    window.addEventListener('scroll', function() {
-      var s = window.scrollY > 20;
-      if (s !== scrolled) {
-        scrolled = s;
-        nav.style.boxShadow = s ? '0 4px 24px rgba(0,0,0,0.25)' : 'none';
-      }
-    }, { passive: true });
   })();
 </script>
 
-<script src="/cookie-consent.js" defer></script>
-<script src="/analytics.js" defer></script>
+<script src="/theme.js" integrity="sha384-AHw/yIbpsf0UGYQRWNa1CnjuLJI76aQs0pyr51zWtjzNthQM8zFRHuo4sHJSrVy6" crossorigin="anonymous"></script>
+<script src="/nav-utils.js" defer integrity="sha384-HEPFc2/A6GCO1ZOjeylEPeFC589M3uf9OKsK/nHgRZjIVpHMIXB+STNmfV7/BK4W" crossorigin="anonymous"></script>
+<script src="/cookie-consent.js" defer integrity="sha384-8uu1DY4EaX+0gOCSB9J625s7KuuZI54bS+Otavzur8EoSXCCwGeR3MYrMv2+tsjn" crossorigin="anonymous"></script>
+<script src="/analytics.js" defer integrity="sha384-OTNmjy5n3I58KsCyQOce6zES4sVHwLLRFxpQoGp77N9nwR67WTSDKTsYzaxYHDQ3" crossorigin="anonymous"></script>
 
 </body>
 </html>

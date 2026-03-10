@@ -3,12 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#04091a">
   <title>R&amp;D Tax Credit Personnel Costs: Guide 2026 | NOVARIS</title>
   <meta name="description" content="R&D tax credit personnel costs: Which salary components count, how to determine the R&D share, and what the 20% overhead allowance means in 2026." />
   <meta name="keywords" content="R&D tax credit personnel costs, Forschungszulage Personalkosten, R&D tax credit assessment basis, R&D personnel costs Germany, overhead allowance Gemeinkostenpauschale" />
   <link rel="canonical" href="https://novaris-consulting.com/en/forschungszulage-personalkosten.html" />
   <link rel="alternate" hreflang="de" href="https://novaris-consulting.com/forschungszulage-personalkosten.html" />
   <link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/forschungszulage-personalkosten.html" />
+  <link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/forschungszulage-personalkosten.html" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="article" />
@@ -26,14 +28,14 @@
   <meta name="twitter:title" content="R&amp;D Tax Credit Personnel Costs: Guide 2026 | NOVARIS" />
   <meta name="twitter:description" content="Which salary components count, how to determine the R&D share, and what the 20% overhead allowance means in 2026." />
   <meta name="twitter:image" content="https://novaris-consulting.com/brand_assets/og-image.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/fonts/fonts.css" />
+  <link rel="stylesheet" href="/styles.min.css" />
+  <link rel="preload" href="/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/montserrat-800.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
+<style>
     :root { --bg-base:#ffffff; --bg-raised:#f5f8fe; --bg-card:#ffffff; --clr-h:#0D1B3E; --clr-b:#5a6e8c; --clr-muted:#4a5870; --bdr:#dde5f4; }
     html.dark { --bg-base:#0a1428; --bg-raised:#0D1B3E; --bg-card:#122244; --clr-h:#e8f0fa; --clr-b:#8aaac8; --clr-muted:#6888a8; --bdr:rgba(77,174,229,0.18); }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -124,35 +126,69 @@
     .lang-btn:hover { color: rgba(255,255,255,0.85); }
     .lang-divider { width: 1px; height: 16px; background: rgba(255,255,255,0.12); flex-shrink: 0; }
   </style>
-  <link rel="stylesheet" href="/page-transition.css" />
-  <link rel="stylesheet" href="/cookie-consent.css" />
-  <script src="/page-transition.js" defer></script>
+  <link rel="stylesheet" href="/page-transition.css" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="/page-transition.css" /></noscript>
+  <link rel="stylesheet" href="/cookie-consent.css" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="/cookie-consent.css" /></noscript>
+  <script src="/page-transition.js" defer integrity="sha384-4inSnEeQghmg/0CJ7SF+TjLNtxyzHdmMI9o/kpB7+f78/vWCNesEiHYkzAgbHcTE" crossorigin="anonymous"></script>
 
   <script type="application/ld+json">
-  { "@context":"https://schema.org", "@type":"BreadcrumbList", "itemListElement": [
+  { "@context":"https://schema.org", "@type": "BreadcrumbList", "inLanguage": "en", "itemListElement": [
     {"@type":"ListItem","position":1,"name":"Home","item":"https://novaris-consulting.com/en/"},
     {"@type":"ListItem","position":2,"name":"R&D Tax Credit","item":"https://novaris-consulting.com/en/forschungszulage.html"},
     {"@type":"ListItem","position":3,"name":"Personnel Costs","item":"https://novaris-consulting.com/en/forschungszulage-personalkosten.html"}
   ] }
   </script>
   <script type="application/ld+json">
-  { "@context":"https://schema.org", "@type":"Article",
-    "headline":"R&D Tax Credit Personnel Costs – How to Calculate Your Assessment Basis",
-    "description":"R&D tax credit personnel costs: Which salary components count, how to determine the R&D share, and what the 20% overhead allowance means in 2026.",
-    "author":{"@type":"Organization","name":"NOVARIS Consulting","url":"https://novaris-consulting.com"},
-    "publisher":{"@type":"Organization","name":"NOVARIS Consulting","url":"https://novaris-consulting.com","logo":{"@type":"ImageObject","url":"https://novaris-consulting.com/brand_assets/Logo V5-light.svg"}},
-    "datePublished":"2026-03-08","dateModified":"2026-03-08",
-    "mainEntityOfPage":{"@type":"WebPage","@id":"https://novaris-consulting.com/en/forschungszulage-personalkosten.html"},
-    "keywords":["R&D tax credit personnel costs","Forschungszulage Personalkosten","R&D assessment basis","overhead allowance Gemeinkostenpauschale"]
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "R&D Tax Credit Personnel Costs – How to Calculate Your Assessment Basis",
+    "description": "R&D tax credit personnel costs: Which salary components count, how to determine the R&D share, and what the 20% overhead allowance means in 2026.",
+    "author": {
+      "@type": "Organization",
+      "name": "NOVARIS Consulting",
+      "url": "https://novaris-consulting.com",
+      "sameAs": ["https://www.linkedin.com/company/novaris-consulting"]
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "NOVARIS Consulting",
+      "url": "https://novaris-consulting.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://novaris-consulting.com/brand_assets/Logo%20V3-transparent.png"
+      }
+    },
+    "datePublished": "2026-03-08",
+    "dateModified": "2026-03-08",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://novaris-consulting.com/brand_assets/og-image.png",
+      "width": 1200,
+      "height": 630
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://novaris-consulting.com/en/forschungszulage-personalkosten.html"
+    },
+    "keywords": [
+      "R&D tax credit personnel costs",
+      "Forschungszulage Personalkosten",
+      "R&D assessment basis",
+      "overhead allowance Gemeinkostenpauschale"
+    ]
   }
   </script>
   <script type="application/ld+json">
-  { "@context":"https://schema.org", "@type":"FAQPage", "mainEntity": [
+  { "@context":"https://schema.org", "@type":"FAQPage","inLanguage":"en","mainEntity": [
     {"@type":"Question","name":"Are employer social security contributions included?","acceptedAnswer":{"@type":"Answer","text":"Yes, employer social security contributions (health, pension, care and unemployment insurance) are fully included in eligible personnel costs under Section 3(3) FZulG. They are included together with the gross salary in the assessment basis and thus increase the R&D tax credit."}},
     {"@type":"Question","name":"Can a GmbH managing director be claimed?","acceptedAnswer":{"@type":"Answer","text":"Yes, a GmbH managing director can be claimed, provided their R&D activities are contractually regulated. The managing director contract or a supplementary agreement should specifically describe the R&D share of their activities. The proportional remuneration is then considered as eligible personnel costs."}},
     {"@type":"Question","name":"What is the overhead allowance (Gemeinkostenpauschale)?","acceptedAnswer":{"@type":"Answer","text":"The overhead allowance is a 20% surcharge on eligible personnel costs, applicable from fiscal year 2026. It was introduced by the Growth Opportunities Act (Wachstumschancengesetz) to cover the indirect costs of R&D activities on a flat-rate basis. The assessment basis increases by 20%, resulting in a noticeably higher R&D tax credit."}},
     {"@type":"Question","name":"How do I document the R&D share?","acceptedAnswer":{"@type":"Answer","text":"The R&D share should ideally be documented through GoBD-compliant time tracking. Employees record their working hours daily or weekly, broken down by R&D projects and other activities. Alternative evidence such as project plans or plausible estimates are possible but carry a higher risk during tax office audits."}}
-  ] }
+  ],
+    "inLanguage": "en"
+  }
   </script>
 </head>
 <body>
@@ -160,7 +196,7 @@
 <header id="nav" class="fixed inset-x-0 top-0 z-50 nav-blur" style="background:rgba(4,9,26,0.88);border-bottom:1px solid rgba(255,255,255,0.07)">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between gap-4" style="height:68px">
     <a href="/en/" aria-label="NOVARIS Consulting" style="text-decoration:none;flex-shrink:0;display:flex;align-items:center;transition:opacity 0.15s ease" class="hover:opacity-90 focus-visible:outline-none">
-      <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto" />
+      <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto" width="230" height="72">
     </a>
     <nav class="hidden lg:flex items-center gap-0.5">
       <a href="/en/#was-ist-fzulg" class="nav-link">The FZulG</a>
@@ -202,6 +238,20 @@
     <h1 class="ds-title">R&amp;D Tax Credit Personnel Costs – How to Calculate Your Assessment Basis</h1>
     <p class="ds-subtitle">The personnel costs of your R&amp;D employees form the core of the R&amp;D tax credit (Forschungszulage). Here you will learn what counts, what does not – and how to maximize your benefit.</p>
     <p class="ds-updated">Last updated: March 8, 2026 · Reading time: approx. 12 minutes</p>
+
+    <!-- AI-optimized TL;DR summary -->
+    <div class="tldr-summary" id="auf-einen-blick" style="background:var(--bg-raised, #f5f8fe);border:1px solid var(--bdr, #dde5f4);border-left:4px solid #1E56B5;border-radius:0 12px 12px 0;padding:1.25rem 1.5rem;font-size:0.88rem;color:var(--clr-b, #5a6e8c);line-height:1.7;margin-bottom:2rem">
+      <div style="font-family:'Montserrat',sans-serif;font-size:0.82rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#1E56B5;margin-bottom:0.6rem;display:flex;align-items:center;gap:0.5rem">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1E56B5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+        At a Glance
+      </div>
+      <ul style="list-style:none;display:flex;flex-direction:column;gap:0.4rem;margin:0;padding:0">
+        <li style="display:flex;align-items:flex-start;gap:0.5rem"><span style="color:#1E56B5;font-weight:700;flex-shrink:0;margin-top:1px">&bull;</span><span>Eligible: <strong>gross wages + employer contributions</strong> of R&amp;D staff.</span></li>
+        <li style="display:flex;align-items:flex-start;gap:0.5rem"><span style="color:#1E56B5;font-weight:700;flex-shrink:0;margin-top:1px">&bull;</span><span>Pro-rata calculation based on <strong>actual R&amp;D time share</strong> (time tracking required).</span></li>
+        <li style="display:flex;align-items:flex-start;gap:0.5rem"><span style="color:#1E56B5;font-weight:700;flex-shrink:0;margin-top:1px">&bull;</span><span>Part-time and temporary employees are also eligible.</span></li>
+        <li style="display:flex;align-items:flex-start;gap:0.5rem"><span style="color:#1E56B5;font-weight:700;flex-shrink:0;margin-top:1px">&bull;</span><span>Overhead surcharge since 2024: additional <strong>15%</strong> flat rate on personnel costs.</span></li>
+      </ul>
+    </div>
 
     <nav class="toc" aria-label="Table of Contents">
       <div class="toc-title">Table of Contents</div>
@@ -275,7 +325,7 @@
 
     <div class="ds-section" id="gemeinkostenpauschale">
       <h2>New from 2026: The 20% overhead allowance (Gemeinkostenpauschale)</h2>
-      <p>The <strong>Growth Opportunities Act (Wachstumschancengesetz)</strong> introduced a significant innovation: From fiscal year 2026, companies can apply a flat-rate <strong>overhead surcharge of 20%</strong> on their eligible personnel costs. This allowance is intended to cover the indirect costs of R&amp;D activities – office space, IT infrastructure, consumables, laboratory equipment, and other overheads that were previously not eligible.</p>
+      <p>The <strong><span data-legal-ref="WachstumschancenG">Growth Opportunities Act</span> (<span data-legal-ref="WachstumschancenG">Wachstumschancengesetz</span>)</strong> introduced a significant innovation: From fiscal year 2026, companies can apply a flat-rate <strong>overhead surcharge of 20%</strong> on their eligible personnel costs. This allowance is intended to cover the indirect costs of R&amp;D activities – office space, IT infrastructure, consumables, laboratory equipment, and other overheads that were previously not eligible.</p>
       <p>The overhead allowance is automatically added to the sum of eligible personnel costs. Separate proof of actual overhead costs is <strong>not required</strong> – it is a pure flat rate.</p>
       <div class="ds-highlight-box">
         <strong>Calculation example with overhead allowance (SME):</strong><br /><br />
@@ -339,7 +389,7 @@
       </div>
       <div class="faq-item">
         <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">What is the overhead allowance (Gemeinkostenpauschale)?<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button>
-        <div class="faq-a"><p>The overhead allowance is a <strong>20% surcharge</strong> on eligible personnel costs, applicable from fiscal year 2026. It was introduced by the Growth Opportunities Act (Wachstumschancengesetz) to cover the indirect costs of R&amp;D activities on a flat-rate basis. Separate proof of actual overhead costs is not required. The assessment basis increases by 20%, resulting in a noticeably higher R&amp;D tax credit.</p></div>
+        <div class="faq-a"><p>The overhead allowance is a <strong>20% surcharge</strong> on eligible personnel costs, applicable from fiscal year 2026. It was introduced by the <span data-legal-ref="WachstumschancenG">Growth Opportunities Act</span> (<span data-legal-ref="WachstumschancenG">Wachstumschancengesetz</span>) to cover the indirect costs of R&amp;D activities on a flat-rate basis. Separate proof of actual overhead costs is not required. The assessment basis increases by 20%, resulting in a noticeably higher R&amp;D tax credit.</p></div>
       </div>
       <div class="faq-item">
         <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">How do I document the R&amp;D share?<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button>
@@ -370,11 +420,23 @@
   </div>
 </main>
 
+
+  <!-- External Citations -->
+  <div style="max-width:48rem;margin:0 auto 2rem;padding:0 1rem">
+    <div class="external-citations" style="margin-top:1.5rem;padding:1rem 1.25rem;background:var(--bg-raised, #f5f8fe);border:1px solid var(--bdr, #dde5f4);border-radius:10px;font-size:0.82rem;color:var(--clr-b, #5a6e8c);line-height:1.7">
+        <div style="font-family:'Montserrat',sans-serif;font-size:0.72rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#1E56B5;margin-bottom:0.5rem">Official Sources</div>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.3rem">
+          <li><a href="https://www.gesetze-im-internet.de/fzulg/" target="_blank" rel="noopener" style="color:#1E56B5;text-decoration:none" data-legal-ref="FZulG">Research Allowance Act (FZulG) – Legal Text</a></li>
+          <li><a href="https://www.bescheinigung-forschungszulage.de/" target="_blank" rel="noopener" style="color:#1E56B5;text-decoration:none" data-legal-ref="BSFZ">BSFZ – Certification Body for Research Allowance</a></li>
+          <li><a href="https://www.bundesfinanzministerium.de/" target="_blank" rel="noopener" style="color:#1E56B5;text-decoration:none" data-legal-ref="BMF">Federal Ministry of Finance (BMF)</a></li>
+        </ul>
+      </div>
+  </div>
 <footer style="background:#04091a;border-top:1px solid rgba(255,255,255,0.07)">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12">
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
       <div class="lg:col-span-2">
-        <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto;margin-bottom:1rem" />
+        <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto;margin-bottom:1rem" width="230" height="72" loading="lazy">
         <p style="font-size:0.82rem;color:rgba(195,215,245,0.38);line-height:1.72;max-width:320px">NOVARIS Consulting is your specialized full-service partner for the German R&D tax credit (Forschungszulage) under the FZulG – success-based, transparent and risk-free.</p>
       </div>
       <div>
@@ -404,14 +466,9 @@
     </div>
   </div>
 </footer>
-
-<script>
-  (function(){if(localStorage.getItem('theme')==='dark'){document.documentElement.classList.add('dark');}})();
-  function toggleDark(){const dark=document.documentElement.classList.toggle('dark');localStorage.setItem('theme',dark?'dark':'light');_updateDarkBtn();}
-  function _updateDarkBtn(){const dark=document.documentElement.classList.contains('dark');const moon=document.getElementById('icon-moon');const sun=document.getElementById('icon-sun');if(moon)moon.style.display=dark?'none':'block';if(sun)sun.style.display=dark?'block':'none';}
-  window.addEventListener('DOMContentLoaded',_updateDarkBtn);
-</script>
-<script src="/cookie-consent.js" defer></script>
-<script src="/analytics.js" defer></script>
+<script src="/theme.js" integrity="sha384-AHw/yIbpsf0UGYQRWNa1CnjuLJI76aQs0pyr51zWtjzNthQM8zFRHuo4sHJSrVy6" crossorigin="anonymous"></script>
+<script src="/nav-utils.js" defer integrity="sha384-HEPFc2/A6GCO1ZOjeylEPeFC589M3uf9OKsK/nHgRZjIVpHMIXB+STNmfV7/BK4W" crossorigin="anonymous"></script>
+<script src="/cookie-consent.js" defer integrity="sha384-8uu1DY4EaX+0gOCSB9J625s7KuuZI54bS+Otavzur8EoSXCCwGeR3MYrMv2+tsjn" crossorigin="anonymous"></script>
+<script src="/analytics.js" defer integrity="sha384-OTNmjy5n3I58KsCyQOce6zES4sVHwLLRFxpQoGp77N9nwR67WTSDKTsYzaxYHDQ3" crossorigin="anonymous"></script>
 </body>
 </html>

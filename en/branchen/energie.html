@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#04091a">
   <title>R&amp;D Tax Credit Energy &amp; Cleantech 2026 | NOVARIS Consulting</title>
   <meta name="description" content="Energy and cleantech companies can reclaim up to 25% of their R&amp;D costs. Solar, battery storage, smart grid and hydrogen - NOVARIS shows what is eligible." />
   <meta name="keywords" content="R&D tax credit, FZulG, research allowance, NOVARIS, energie" />
@@ -27,12 +28,13 @@
     <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <script>tailwind.config={theme:{extend:{fontFamily:{display:['Montserrat','sans-serif'],body:['Inter','sans-serif']}}}};</script>
-  <link rel="stylesheet" href="/cookie-consent.css" />
+
+    <link rel="preload" href="/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/montserrat-800.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/fonts/fonts.css" />
+  <link rel="stylesheet" href="/styles.min.css" />
+  <link rel="stylesheet" href="/cookie-consent.css" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="/cookie-consent.css" /></noscript>
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;font-size:16px}body{font-family:'Inter',sans-serif;background:#fff;color:#0D1B3E;-webkit-font-smoothing:antialiased;overflow-x:hidden}h1,h2,h3,h4{font-family:'Montserrat',sans-serif;letter-spacing:-0.03em;line-height:1.13}
     .hero-bg{background:radial-gradient(ellipse 110% 60% at 55% -5%,rgba(30,86,181,0.30) 0%,transparent 62%),radial-gradient(ellipse 55% 55% at 95% 45%,rgba(77,174,229,0.14) 0%,transparent 58%),radial-gradient(ellipse 65% 70% at 0% 100%,rgba(13,27,62,0.25) 0%,transparent 60%),linear-gradient(160deg,#04091a 0%,#0D1B3E 50%,#122244 100%)}
@@ -94,14 +96,52 @@
     html.dark section.bg-white .badge:not(.badge-dark),html.dark .bg-tinted .badge:not(.badge-dark){background:rgba(30,86,181,0.20)!important}
     #dark-toggle:hover,#dark-toggle-mob:hover{background:rgba(255,255,255,0.14)!important;color:#fff!important}
   </style>
-  <link rel="stylesheet" href="/page-transition.css" />
-  <script src="/page-transition.js" defer></script>
+  <link rel="stylesheet" href="/page-transition.css" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="/page-transition.css" /></noscript>
+  <script src="/page-transition.js" defer integrity="sha384-4inSnEeQghmg/0CJ7SF+TjLNtxyzHdmMI9o/kpB7+f78/vWCNesEiHYkzAgbHcTE" crossorigin="anonymous"></script>
   <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"en","mainEntity":[
 {"@type":"Question","name":"Ist die Entwicklung von Wasserstofftechnologien förderfähig?","acceptedAnswer":{"@type":"Answer","text":"Ja, Wasserstofftechnologien sind förderfähig. Dazu gehören Elektrolyse-Verfahren, Brennstoffzellen-Entwicklung, Wasserstoff-Speichersysteme und die Optimierung von Transportlösungen, sofern technische Neuheit vorliegt."}},
 {"@type":"Question","name":"Können Energieversorger die Forschungszulage beantragen?","acceptedAnswer":{"@type":"Answer","text":"Ja, Energieversorger können die Forschungszulage beantragen, wenn sie eigene F&E-Projekte durchführen. Dazu zählen z.B. die Entwicklung intelligenter Netzsteuerungen, neue Speichertechnologien oder innovative Erzeugungskonzepte."}},
 {"@type":"Question","name":"Welche Cleantech-Projekte qualifizieren sich?","acceptedAnswer":{"@type":"Answer","text":"Förderfähig sind neue Verfahren zur CO2-Reduktion, innovative Recyclingsysteme, Smart-Grid-Technologien, neuartige Wärmepumpen-Konzepte und die Entwicklung von Energieeffizienz-Lösungen mit technischer Neuheit."}}
 ]}
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "inLanguage": "en",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://novaris-consulting.com/en/branchen/energie.html"
+    },
+    "headline": "R&D Tax Credit for Energy & Cleantech 2026",
+    "datePublished": "2026-03-06",
+    "dateModified": "2026-03-10",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://novaris-consulting.com/brand_assets/og-image.png",
+      "width": 1200,
+      "height": 630
+    },
+    "author": {
+      "@type": "Organization",
+      "@id": "https://novaris-consulting.com/#organization",
+      "name": "NOVARIS Consulting GmbH",
+      "url": "https://novaris-consulting.com",
+      "sameAs": ["https://www.linkedin.com/company/novaris-consulting"]
+    },
+    "publisher": {
+      "@type": "Organization",
+      "@id": "https://novaris-consulting.com/#organization",
+      "name": "NOVARIS Consulting GmbH",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://novaris-consulting.com/brand_assets/Logo%20V3-transparent.png"
+      }
+    }
+  }
   </script>
 </head>
 <body>
@@ -109,7 +149,7 @@
 <header id="nav" class="fixed inset-x-0 top-0 z-50 nav-blur" style="background:rgba(4,9,26,0.85);border-bottom:1px solid rgba(255,255,255,0.07)">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between gap-4" style="height:68px">
     <a href="../../en/" aria-label="NOVARIS Consulting" class="hover:opacity-90" style="text-decoration:none;flex-shrink:0;display:flex;align-items:center;transition:opacity 0.15s ease">
-      <img src="../../brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto" />
+      <img src="../../brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" width="230" height="72" style="height:72px;width:auto" />
     </a>
     <nav class="hidden lg:flex items-center gap-0.5">
       <a href="../../en/index.html#was-ist-fzulg" class="nav-link" data-t="nav.fzulg">The FZulG Act</a>
@@ -221,6 +261,23 @@
     </div>
   </div>
 </section>
+
+<div style="max-width:1280px;margin:0 auto;padding:0.75rem 1.5rem 0">
+  <p class="ds-updated" style="font-size:0.78rem;color:#5a6e8c;margin-bottom:0;padding-bottom:0.75rem;border-bottom:1px solid #dde5f4">Last updated: March 10, 2026</p>
+</div>
+
+    <div class="tldr-summary" id="auf-einen-blick" style="background:var(--bg-raised, #f5f8fe);border:1px solid var(--bdr, #dde5f4);border-left:4px solid #1E56B5;border-radius:0 12px 12px 0;padding:1.25rem 1.5rem;font-size:0.88rem;color:var(--clr-b, #5a6e8c);line-height:1.7;margin-bottom:2rem">
+      <div style="font-family:'Montserrat',sans-serif;font-size:0.82rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#1E56B5;margin-bottom:0.6rem;display:flex;align-items:center;gap:0.5rem">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1E56B5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+        At a Glance
+      </div>
+      <ul style="list-style:none;display:flex;flex-direction:column;gap:0.4rem;margin:0;padding:0">
+        <li style="display:flex;align-items:flex-start;gap:0.5rem"><span style="color:#1E56B5;font-weight:700;flex-shrink:0;margin-top:1px">&bull;</span><span>Energy companies can reclaim up to <strong>25% of R&amp;D expenses</strong> as a tax credit.</span></li>
+        <li style="display:flex;align-items:flex-start;gap:0.5rem"><span style="color:#1E56B5;font-weight:700;flex-shrink:0;margin-top:1px">&bull;</span><span>Eligible: renewable energy, hydrogen technology, battery storage, smart grid, energy efficiency.</span></li>
+        <li style="display:flex;align-items:flex-start;gap:0.5rem"><span style="color:#1E56B5;font-weight:700;flex-shrink:0;margin-top:1px">&bull;</span><span>The R&amp;D tax credit is <strong>combinable</strong> with ZIM, BMWK programs, and EU funding.</span></li>
+        <li style="display:flex;align-items:flex-start;gap:0.5rem"><span style="color:#1E56B5;font-weight:700;flex-shrink:0;margin-top:1px">&bull;</span><span>Cooperations with Fraunhofer/universities: own shares claimable at <strong>100%</strong>.</span></li>
+      </ul>
+    </div>
 
 <!-- PROJECTS -->
 <section class="bg-white py-20 sm:py-28">
@@ -339,6 +396,18 @@
 </section>
 
 <!-- FAQ -->
+
+  <!-- External Citations -->
+  <div style="max-width:48rem;margin:0 auto 2rem;padding:0 1rem">
+    <div class="external-citations" style="margin-top:1.5rem;padding:1rem 1.25rem;background:var(--bg-raised, #f5f8fe);border:1px solid var(--bdr, #dde5f4);border-radius:10px;font-size:0.82rem;color:var(--clr-b, #5a6e8c);line-height:1.7">
+        <div style="font-family:'Montserrat',sans-serif;font-size:0.72rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#1E56B5;margin-bottom:0.5rem">Official Sources</div>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.3rem">
+          <li><a href="https://www.gesetze-im-internet.de/fzulg/" target="_blank" rel="noopener" style="color:#1E56B5;text-decoration:none" data-legal-ref="FZulG">Research Allowance Act (FZulG) – Legal Text</a></li>
+          <li><a href="https://www.bescheinigung-forschungszulage.de/" target="_blank" rel="noopener" style="color:#1E56B5;text-decoration:none" data-legal-ref="BSFZ">BSFZ – Certification Body for Research Allowance</a></li>
+          <li><a href="https://www.bundesfinanzministerium.de/" target="_blank" rel="noopener" style="color:#1E56B5;text-decoration:none" data-legal-ref="BMF">Federal Ministry of Finance (BMF)</a></li>
+        </ul>
+      </div>
+  </div>
 <section class="bg-white py-16 sm:py-20">
   <div class="max-w-3xl mx-auto px-4 sm:px-6">
     <div class="text-center mb-10 reveal">
@@ -381,6 +450,10 @@
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
         Back to Homepage
       </a>
+      <a href="/en/erfolge.html" style="display:inline-flex;align-items:center;gap:0.4rem;padding:0.5rem 1rem;border-radius:8px;border:1.5px solid rgba(30,86,181,0.18);color:#1E56B5;font-family:'Inter',sans-serif;font-size:0.84rem;font-weight:500;text-decoration:none;transition:background 0.14s ease,border-color 0.14s ease" onmouseover="this.style.background='rgba(30,86,181,0.06)';this.style.borderColor='#1E56B5'" onmouseout="this.style.background='';this.style.borderColor='rgba(30,86,181,0.18)'">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        View our success stories
+      </a>
     </div>
   </div>
 </section>
@@ -399,7 +472,7 @@
 <!-- FOOTER -->
 <footer style="background:#04091a;border-top:1px solid rgba(255,255,255,0.07);padding:2.5rem 0">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-    <a href="../../en/" style="text-decoration:none;display:flex;align-items:center"><img src="../../brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:52px;width:auto" /></a>
+    <a href="../../en/" style="text-decoration:none;display:flex;align-items:center"><img src="../../brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" width="166" height="52" style="height:52px;width:auto" /></a>
     <div style="display:flex;gap:1.5rem;flex-wrap:wrap;justify-content:center">
       <a href="../../en/index.html#was-ist-fzulg" style="color:rgba(195,215,245,0.45);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.45)'" data-t="footer.fzulg">The FZulG Act</a>
       <a href="../../en/index.html#branchen" style="color:rgba(195,215,245,0.45);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.45)'" data-t="footer.branchen">Industries</a>
@@ -412,207 +485,10 @@
     <p style="color:rgba(195,215,245,0.28);font-size:0.75rem" data-t="footer.copy">© 2026 NOVARIS Consulting GmbH</p>
   </div>
 </footer>
-
-<script>
-  (function(){if(localStorage.getItem('theme')==='dark'){document.documentElement.classList.add('dark');}})();
-  function toggleDark(){var dark=document.documentElement.classList.toggle('dark');localStorage.setItem('theme',dark?'dark':'light');_updateDarkBtn();}
-  function _updateDarkBtn(){var dark=document.documentElement.classList.contains('dark');var moon=document.getElementById('icon-moon');var sun=document.getElementById('icon-sun');var moonM=document.getElementById('icon-moon-mob');var sunM=document.getElementById('icon-sun-mob');if(moon)moon.style.display=dark?'none':'block';if(sun)sun.style.display=dark?'block':'none';if(moonM)moonM.style.display=dark?'none':'block';if(sunM)sunM.style.display=dark?'block':'none';}
-  window.addEventListener('DOMContentLoaded',_updateDarkBtn);
-  function toggleMob(){var m=document.getElementById('mob-menu');var open=m.classList.toggle('open');document.getElementById('ham-btn').setAttribute('aria-expanded',open)}document.querySelectorAll('.nav-dropdown-wrap').forEach(function(w){var t=w.querySelector('.nav-dropdown-trigger');if(!t)return;w.addEventListener('mouseenter',function(){t.setAttribute('aria-expanded','true')});w.addEventListener('mouseleave',function(){t.setAttribute('aria-expanded','false')})})
-  function toggleFaq(btn){var wrap=btn.closest('.faq-wrap');wrap.classList.toggle('open')}
-  (function(){var els=document.querySelectorAll('.reveal');var io=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}});},{threshold:0.1});els.forEach(function(el){if(el.getBoundingClientRect().top<window.innerHeight){el.classList.add('visible')}else{io.observe(el)}});})();
-
-  // ── i18n ──
-  const T = {
-    de: {
-      'nav.back':            'Alle Branchen',
-      'nav.fzulg':           'Das FZulG',
-      'nav.branchen.label':  'Branchen',
-      'nav.dd.software':     'Software &amp; IT',
-      'nav.dd.maschinenbau': 'Maschinenbau',
-      'nav.dd.pharma':       'Pharma &amp; Life Sciences',
-      'nav.dd.automotive':   'Automotive &amp; Mobilität',
-      'nav.dd.medizin':      'Medizintechnik',
-      'nav.dd.energie':      'Energie &amp; Cleantech',
-      'nav.dd.luft':         'Luft- &amp; Raumfahrt',
-      'nav.dd.agrar':        'Agrar &amp; Foodtech',
-      'nav.dd.bau':          'Bauindustrie',
-      'nav.prozess':         'Prozess',
-      'nav.vorteile':        'Vorteile',
-      'nav.faq':             'FAQ',
-      'nav.kontakt':         'Kontakt',
-      'nav.cta':             'Kostenlos prüfen',
-      'mob.fzulg':           'Das FZulG',
-      'mob.branchen':        'Branchen',
-      'mob.prozess':         'Prozess',
-      'mob.kontakt':         'Kontakt',
-      'mob.cta':             'Kostenlos prüfen →',
-      'hero.badge':          'Energie &amp; Cleantech · FZulG-berechtigt',
-      'hero.h1':             'Energie &amp;<br/><span style="background:linear-gradient(125deg,#4DAEE5,#7ECEF5);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Cleantech</span>',
-      'hero.body':           'Die Energiewende ist Europas größtes F&E-Programm. Wer neue Solar-, Batterie-, Wasserstoff- oder Smart-Grid-Technologien entwickelt, kann <strong style="color:#7ECEF5;font-weight:600">bis zu 25 % der F&E-Kosten</strong> über das FZulG zurückfordern.',
-      'hero.pill1':          'Förderquote bis 25 %',
-      'hero.pill2':          'Solar, Wind, H₂, Speicher',
-      'hero.pill3':          'Start-ups &amp; KMU bevorzugt',
-      'hero.btn':            'Förderung prüfen',
-      'proj.badge':          'Förderfähige Projekte',
-      'proj.h2':             'Was wird im Bereich<br/>Energie &amp; Cleantech gefördert?',
-      'proj.body':           'Diese Technologiefelder sind nach FZulG §2 förderfähig – sofern technische Unsicherheit bestand und die Lösung nicht aus bekannten Bauteilen zusammengesetzt wurde.',
-      'card.eligible':       'Typischerweise förderfähig',
-      'card1.h3':            'Erneuerbare Energiesysteme',
-      'card1.body':          'Entwicklung neuer Photovoltaik-Zellkonzepte, Windturbinen-Aerodynamik, Wärmepumpen-Kreisläufe oder Geothermie-Technologien mit unbekanntem Wirkungsgrad zu Projektbeginn.',
-      'card1.li1':           'Perowskit-Solarzellen &amp; Tandem-Konzepte',
-      'card1.li2':           'Neue Rotorblatt-Geometrien &amp; Materialien',
-      'card1.li3':           'Hocheffizienz-Wärmepumpen mit neuem Kältemittel',
-      'card2.h3':            'Energiespeichertechnologien',
-      'card2.body':          'Entwicklung neuer Batteriezellchemien, Festkörperbatterien, Redox-Flow-Systeme, Wasserstoffspeicher oder thermischer Großspeicher mit unbekannten Leistungsparametern.',
-      'card2.li1':           'Feststoff-Elektrolyte &amp; Lithium-Metall-Anoden',
-      'card2.li2':           'PEM-Elektrolyseure &amp; Wasserstoffkompression',
-      'card2.li3':           'Thermische Latentwärmespeicher &amp; PCM-Systeme',
-      'card3.h3':            'Smart Grid &amp; Netzsteuerung',
-      'card3.body':          'Entwicklung neuer Algorithmen für prädiktives Lastmanagement, digitale Netzsteuerung oder Aggregatoren-Plattformen, die dezentrale Erzeuger optimal einbinden.',
-      'card3.li1':           'KI-basierte Lastprognose &amp; Regelung',
-      'card3.li2':           'Virtual Power Plants &amp; Demand-Response-Systeme',
-      'card3.li3':           'Cybersicherheit für kritische Netzinfrastruktur',
-      'elig.badge':          'Wann qualifiziert sich Ihr Projekt?',
-      'elig.h2':             'Cleantech-Projekte und<br/>das FZulG',
-      'elig1.title':         'Neues Wirkprinzip oder Konzept',
-      'elig1.body':          'Die Technologie geht über bekannte Ansätze hinaus – kein bloßes Zusammenfügen von Standardkomponenten.',
-      'elig2.title':         'Technische Unsicherheit',
-      'elig2.body':          'Der Wirkungsgrad, die Lebensdauer oder die Systemstabilität war zu Beginn unbekannt.',
-      'elig3.title':         'Systematische Dokumentation',
-      'elig3.body':          'Experimente, Messreihen, Simulationen und Iterationen wurden strukturiert durchgeführt und aufgezeichnet.',
-      'elig4.title':         'Eigenständiges wirtschaftliches Risiko',
-      'elig4.body':          'Das Unternehmen trägt das Kostenrisiko der F&E – nicht der Auftraggeber oder Fördergeber allein.',
-      'info.title':          'Wichtig für Energie-Unternehmen',
-      'info.p1':             'FZulG und andere Förderprogramme (BAFA, NIP, Bundesförderung Wasserstoff) sind <strong style="color:#4DAEE5">kumulierbar</strong> – allerdings mit einer Gesamtfördergrenze. NOVARIS koordiniert die optimale Kombination.',
-      'info.p2':             'Kleinunternehmen und Start-ups erhalten eine erhöhte Förderquote von <strong style="color:#7ECEF5">25 % auf bis zu 4 Mio. € Bemessungsgrundlage</strong> pro Jahr.',
-      'info.highlight':      'Typische Förderung pro Cleantech-Projekt: <span style="font-size:1rem;color:#7ECEF5">50.000 – 200.000 €/Jahr</span>',
-      'faq.badge':           'FAQ',
-      'faq.h2':              'Häufige Fragen',
-      'faq1.q':              'Kann das FZulG mit anderen Energieförderprogrammen kombiniert werden?',
-      'faq1.a':              'Ja, grundsätzlich ist eine Kombination mit anderen Förderprogrammen möglich. Es gilt jedoch das Kumulierungsverbot: Die Gesamtförderung darf bestimmte Obergrenzen (De-minimis, AGVO) nicht überschreiten. NOVARIS prüft die optimale Kombination und stellt sicher, dass alle Programme rechtssicher nebeneinanderher laufen.',
-      'faq2.q':              'Sind Pilotanlagen und Demonstratoren förderfähig?',
-      'faq2.a':              'Ja, sofern die Pilotanlage der experimentellen Entwicklung dient und nicht bereits kommerzielle Serienproduktion darstellt. Ein Pilotprojekt zur Validierung eines neuen Speicherkonzepts im MW-Maßstab kann vollständig förderfähig sein – entscheidend ist die technische Zielsetzung der Erkenntnisgewinnung.',
-      'faq3.q':              'Gilt das FZulG auch für Wasserstoff- und Power-to-X-Projekte?',
-      'faq3.a':              'Ja. Wasserstoffelektrolyse, Methanisierung (Power-to-Gas), synthetische Kraftstoffe und Brennstoffzellen-Systeme sind – soweit technische Unsicherheit besteht – typischerweise förderfähige F&E-Tätigkeiten. NOVARIS hat mehrere Wasserstoff-Start-ups erfolgreich durch den BSFZ-Prozess begleitet.',
-      'cta.badge':           'Jetzt starten',
-      'cta.h2':              'Prüfen Sie Ihr Cleantech-Projekt kostenlos',
-      'cta.body':            'Von der ersten Konzeptidee bis zur Serienreife – NOVARIS identifiziert den förderfähigen F&E-Anteil Ihrer Energieprojekte und sichert Ihnen die maximale steuerliche Erstattung.',
-      'cta.btn':             'Kostenlose Erstanalyse anfordern',
-      'footer.fzulg':        'Das FZulG',
-      'footer.branchen':     'Branchen',
-      'footer.prozess':      'Prozess',
-      'footer.kontakt':      'Kontakt',
-      'footer.datenschutz':  'Datenschutz', 'foot.cookies': 'Cookie-Einstellungen', 'bc.home': 'Startseite', 'bc.branchen': 'Branchen', 'bc.current': 'Energie &amp; Cleantech',
-      'footer.datenschutz':  'Privacy Policy', 'foot.cookies': 'Cookie Settings', 'bc.home': 'Home', 'bc.branchen': 'Industries', 'bc.current': 'Energy &amp; Cleantech',
-      'footer.copy':         '© 2026 NOVARIS Consulting GmbH',
-    },
-    en: {
-      'nav.back':            'All Industries',
-      'nav.fzulg':           'The FZulG Act',
-      'nav.branchen.label':  'Industries',
-      'nav.dd.software':     'Software &amp; IT',
-      'nav.dd.maschinenbau': 'Mechanical Engineering',
-      'nav.dd.pharma':       'Pharma &amp; Life Sciences',
-      'nav.dd.automotive':   'Automotive &amp; Mobility',
-      'nav.dd.medizin':      'Medical Technology',
-      'nav.dd.energie':      'Energy &amp; Cleantech',
-      'nav.dd.luft':         'Aerospace &amp; Aviation',
-      'nav.dd.agrar':        'Agri &amp; Foodtech',
-      'nav.dd.bau':          'Construction Industry',
-      'nav.prozess':         'Process',
-      'nav.vorteile':        'Benefits',
-      'nav.faq':             'FAQ',
-      'nav.kontakt':         'Contact',
-      'nav.cta':             'Free Check',
-      'mob.fzulg':           'The FZulG Act',
-      'mob.branchen':        'Industries',
-      'mob.prozess':         'Process',
-      'mob.kontakt':         'Contact',
-      'mob.cta':             'Free Check →',
-      'hero.badge':          'Energy &amp; Cleantech · FZulG-eligible',
-      'hero.h1':             'Energy &amp;<br/><span style="background:linear-gradient(125deg,#4DAEE5,#7ECEF5);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Cleantech</span>',
-      'hero.body':           'The energy transition is Europe\'s largest R&D programme. Companies developing new solar, battery, hydrogen or smart grid technologies can reclaim <strong style="color:#7ECEF5;font-weight:600">up to 25 % of their R&D costs</strong> through the FZulG.',
-      'hero.pill1':          'Up to 25 % funding rate',
-      'hero.pill2':          'Solar, Wind, H₂, Storage',
-      'hero.pill3':          'Start-ups &amp; SMEs preferred',
-      'hero.btn':            'Check eligibility',
-      'proj.badge':          'Eligible Projects',
-      'proj.h2':             'What is funded in<br/>Energy &amp; Cleantech?',
-      'proj.body':           'These technology fields are eligible under FZulG § 2 – provided technical uncertainty existed and the solution was not assembled from known components.',
-      'card.eligible':       'Typically eligible',
-      'card1.h3':            'Renewable Energy Systems',
-      'card1.body':          'Development of new photovoltaic cell concepts, wind turbine aerodynamics, heat pump cycles or geothermal technologies with unknown efficiency at the start of the project.',
-      'card1.li1':           'Perovskite solar cells &amp; tandem concepts',
-      'card1.li2':           'New rotor blade geometries &amp; materials',
-      'card1.li3':           'High-efficiency heat pumps with new refrigerant',
-      'card2.h3':            'Energy Storage Technologies',
-      'card2.body':          'Development of new battery cell chemistries, solid-state batteries, redox flow systems, hydrogen storage or large-scale thermal storage with unknown performance parameters.',
-      'card2.li1':           'Solid-state electrolytes &amp; lithium-metal anodes',
-      'card2.li2':           'PEM electrolysers &amp; hydrogen compression',
-      'card2.li3':           'Thermal latent heat storage &amp; PCM systems',
-      'card3.h3':            'Smart Grid &amp; Grid Control',
-      'card3.body':          'Development of new algorithms for predictive load management, digital grid control or aggregator platforms that optimally integrate distributed generators.',
-      'card3.li1':           'AI-based load forecasting &amp; control',
-      'card3.li2':           'Virtual Power Plants &amp; Demand-Response systems',
-      'card3.li3':           'Cybersecurity for critical grid infrastructure',
-      'elig.badge':          'When does your project qualify?',
-      'elig.h2':             'Cleantech Projects and<br/>the FZulG',
-      'elig1.title':         'New operating principle or concept',
-      'elig1.body':          'The technology goes beyond known approaches – not merely assembling standard components.',
-      'elig2.title':         'Technical uncertainty',
-      'elig2.body':          'The efficiency, service life or system stability was unknown at the outset.',
-      'elig3.title':         'Systematic documentation',
-      'elig3.body':          'Experiments, measurement series, simulations and iterations were conducted and recorded in a structured manner.',
-      'elig4.title':         'Independent financial risk',
-      'elig4.body':          'The company bears the cost risk of the R&D – not the client or funding body alone.',
-      'info.title':          'Important for energy companies',
-      'info.p1':             'The FZulG and other funding programmes (BAFA, NIP, National Hydrogen Programme) are <strong style="color:#4DAEE5">stackable</strong> – subject to an overall funding cap. NOVARIS coordinates the optimal combination.',
-      'info.p2':             'Small companies and start-ups receive an increased funding rate of <strong style="color:#7ECEF5">25 % on up to € 4M assessment basis</strong> per year.',
-      'info.highlight':      'Typical funding per Cleantech project: <span style="font-size:1rem;color:#7ECEF5">€ 50,000 – 200,000 / year</span>',
-      'faq.badge':           'FAQ',
-      'faq.h2':              'Frequently Asked Questions',
-      'faq1.q':              'Can the FZulG be combined with other energy funding programmes?',
-      'faq1.a':              'Yes, in principle a combination with other funding programmes is possible. However, the anti-cumulation rule applies: total funding must not exceed certain ceilings (de minimis, GBER). NOVARIS evaluates the optimal combination and ensures all programmes run alongside each other in a legally compliant manner.',
-      'faq2.q':              'Are pilot plants and demonstrators eligible for funding?',
-      'faq2.a':              'Yes, provided the pilot plant serves experimental development and does not already constitute commercial series production. A pilot project to validate a new storage concept at MW scale can be fully eligible – what matters is the technical objective of gaining new knowledge.',
-      'faq3.q':              'Does the FZulG apply to hydrogen and Power-to-X projects?',
-      'faq3.a':              'Yes. Hydrogen electrolysis, methanation (Power-to-Gas), synthetic fuels and fuel cell systems are – to the extent technical uncertainty exists – typically eligible R&D activities. NOVARIS has successfully guided several hydrogen start-ups through the BSFZ process.',
-      'cta.badge':           'Get Started',
-      'cta.h2':              'Check your Cleantech project for free',
-      'cta.body':            'From initial concept to series production – NOVARIS identifies the eligible R&D portion of your energy projects and secures the maximum tax refund for you.',
-      'cta.btn':             'Request free initial analysis',
-      'footer.fzulg':        'The FZulG Act',
-      'footer.branchen':     'Industries',
-      'footer.prozess':      'Process',
-      'footer.kontakt':      'Contact',
-      'footer.copy':         '© 2026 NOVARIS Consulting GmbH',
-    }
-  };
-
-  let _lang = 'en';
-
-  function setLang(lang) {
-    _lang = lang;
-    localStorage.setItem('lang', lang);
-    const t = T[lang];
-    document.querySelectorAll('[data-t]').forEach(function(el) {
-      var val = t[el.getAttribute('data-t')];
-      if (val !== undefined) el.innerHTML = val;
-    });
-    var de = document.getElementById('lang-de');
-    var en = document.getElementById('lang-en');
-    var dem = document.getElementById('lang-de-mob');
-    var enm = document.getElementById('lang-en-mob');
-    if (de) { de.classList.toggle('active', lang === 'de'); }
-    if (en) { en.classList.toggle('active', lang === 'en'); }
-    if (dem) { dem.classList.toggle('active', lang === 'de'); }
-    if (enm) { enm.classList.toggle('active', lang === 'en'); }
-    document.documentElement.lang = lang;
-  }
-  (function(){ var s = localStorage.getItem('lang'); if (s && s !== 'de') setLang(s); })();
-</script>
-<script src="/scroll-animations.js"></script>
-<script src="/cookie-consent.js" defer></script>
+<script src="/scroll-animations.js" defer integrity="sha384-5yoQoxPe2O9Cw9YL146JTqW40AHi4oyxKuBlCebY8tMsvbRbIm9E521JwCS6kakr" crossorigin="anonymous"></script>
+<script src="/analytics.js" defer integrity="sha384-OTNmjy5n3I58KsCyQOce6zES4sVHwLLRFxpQoGp77N9nwR67WTSDKTsYzaxYHDQ3" crossorigin="anonymous"></script>
+  <script src="/theme.js" integrity="sha384-AHw/yIbpsf0UGYQRWNa1CnjuLJI76aQs0pyr51zWtjzNthQM8zFRHuo4sHJSrVy6" crossorigin="anonymous"></script>
+<script src="/nav-utils.js" defer integrity="sha384-HEPFc2/A6GCO1ZOjeylEPeFC589M3uf9OKsK/nHgRZjIVpHMIXB+STNmfV7/BK4W" crossorigin="anonymous"></script>
+<script src="/cookie-consent.js" defer integrity="sha384-8uu1DY4EaX+0gOCSB9J625s7KuuZI54bS+Otavzur8EoSXCCwGeR3MYrMv2+tsjn" crossorigin="anonymous"></script>
 </body>
 </html>

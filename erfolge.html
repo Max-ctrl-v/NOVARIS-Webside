@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#04091a">
   <title>Forschungszulage Erfolge: Praxisbeispiele aus der Beratung | NOVARIS Consulting</title>
   <meta name="description" content="Forschungszulage Praxisbeispiele: Wie Unternehmen aus Chemietechnik, Maschinenbau und Engineering bis zu 1,2 Mio. EUR Foerderung gesichert haben." />
   <meta name="keywords" content="Forschungszulage Erfahrungen, Forschungszulage Praxisbeispiele, FZulG Erfolge, Forschungszulage Beratung Ergebnisse" />
@@ -32,8 +33,7 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
+    "@type": "BreadcrumbList", "inLanguage": "de", "itemListElement": [
       {
         "@type": "ListItem",
         "position": 1,
@@ -53,11 +53,12 @@
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/cookie-consent.css" />
+    <link rel="preload" href="/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/montserrat-800.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/fonts/fonts.css" />
+  <link rel="stylesheet" href="/styles.min.css" />
+  <link rel="stylesheet" href="/cookie-consent.css" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="/cookie-consent.css" /></noscript>
   <script>
     tailwind.config = {
       theme: {
@@ -422,6 +423,43 @@
         linear-gradient(160deg, #04091a 0%, #0D1B3E 50%, #122244 100%);
     }
   </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "inLanguage": "de",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://novaris-consulting.com/erfolge.html"
+    },
+    "headline": "Forschungszulage Erfolge: Praxisbeispiele aus der Beratung",
+    "datePublished": "2026-03-06",
+    "dateModified": "2026-03-10",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://novaris-consulting.com/brand_assets/og-image.png",
+      "width": 1200,
+      "height": 630
+    },
+    "author": {
+      "@type": "Organization",
+      "@id": "https://novaris-consulting.com/#organization",
+      "name": "NOVARIS Consulting GmbH",
+      "url": "https://novaris-consulting.com",
+      "sameAs": ["https://www.linkedin.com/company/novaris-consulting"]
+    },
+    "publisher": {
+      "@type": "Organization",
+      "@id": "https://novaris-consulting.com/#organization",
+      "name": "NOVARIS Consulting GmbH",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://novaris-consulting.com/brand_assets/Logo%20V3-transparent.png"
+      }
+    }
+  }
+  </script>
 </head>
 <body>
 
@@ -435,7 +473,7 @@
     <a href="/" aria-label="NOVARIS Consulting"
        style="text-decoration:none;flex-shrink:0;display:flex;align-items:center;transition:opacity 0.15s ease"
        class="hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-navy-300">
-      <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto" />
+      <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" width="230" height="72" style="height:72px;width:auto" />
     </a>
 
     <nav class="hidden lg:flex items-center gap-0.5">
@@ -494,7 +532,10 @@
     <div class="flex items-center gap-3">
       <div class="lang-toggle" style="display:flex;">
         <span class="lang-btn active">DE</span>
-        <div class="lang-divider"></div>
+        <div class="lang-divider">
+            <a href="/branchen/pharma.html" style="display:inline-block;margin-top:0.75rem;color:#1E56B5;font-size:0.84rem;font-weight:500;text-decoration:none;font-family:'Inter',sans-serif" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">Mehr zur Forschungszulage in der Pharma- & Chemiebranche →</a>
+            <a href="/branchen/maschinenbau.html" style="display:inline-block;margin-top:0.75rem;color:#1E56B5;font-size:0.84rem;font-weight:500;text-decoration:none;font-family:'Inter',sans-serif" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">Mehr zur Forschungszulage im Maschinenbau →</a>
+            <a href="/branchen/luft-raumfahrt.html" style="display:inline-block;margin-top:0.75rem;color:#1E56B5;font-size:0.84rem;font-weight:500;text-decoration:none;font-family:'Inter',sans-serif" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">Mehr zur Forschungszulage in der Luft- & Raumfahrt →</a></div>
         <a href="/en/erfolge.html" class="lang-btn" style="text-decoration:none;">EN</a>
       </div>
       <button id="dark-toggle" onclick="toggleDark()" aria-label="Toggle dark mode"
@@ -556,6 +597,19 @@
 <section class="hero-bg grain relative overflow-hidden" style="padding-top:140px;padding-bottom:90px">
   <!-- Decorative rings -->
   <div aria-hidden="true" style="position:absolute;pointer-events:none;inset:0;overflow:hidden">
+    <div class="tldr-summary" id="auf-einen-blick" style="background:var(--bg-raised, #f5f8fe);border:1px solid var(--bdr, #dde5f4);border-left:4px solid #1E56B5;border-radius:0 12px 12px 0;padding:1.25rem 1.5rem;font-size:0.88rem;color:var(--clr-b, #5a6e8c);line-height:1.7;margin-bottom:2rem">
+      <div style="font-family:'Montserrat',sans-serif;font-size:0.82rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#1E56B5;margin-bottom:0.6rem;display:flex;align-items:center;gap:0.5rem">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1E56B5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+        Auf einen Blick
+      </div>
+      <ul style="list-style:none;display:flex;flex-direction:column;gap:0.4rem;margin:0;padding:0">
+        <li style="display:flex;align-items:flex-start;gap:0.5rem"><span style="color:#1E56B5;font-weight:700;flex-shrink:0;margin-top:1px">&bull;</span><span>NOVARIS hat über <strong>25 Projekte</strong> mit einem Fördervolumen von <strong>15 Mio. €+</strong> begleitet.</span></li>
+        <li style="display:flex;align-items:flex-start;gap:0.5rem"><span style="color:#1E56B5;font-weight:700;flex-shrink:0;margin-top:1px">&bull;</span><span>Branchenübergreifende Erfolge: Chemietechnik (1,2 Mio. €), Maschinenbau (1,4 Mio. €), Engineering (620.000 €).</span></li>
+        <li style="display:flex;align-items:flex-start;gap:0.5rem"><span style="color:#1E56B5;font-weight:700;flex-shrink:0;margin-top:1px">&bull;</span><span><strong>100 % Erfolgsquote</strong> bei der BSFZ-Bescheinigung (Stand: März 2026, alle eingereichten Projekte).</span></li>
+        <li style="display:flex;align-items:flex-start;gap:0.5rem"><span style="color:#1E56B5;font-weight:700;flex-shrink:0;margin-top:1px">&bull;</span><span>Durchschnittliche Bearbeitungszeit von Erstberatung bis Auszahlung: <strong>3,5 Monate</strong>.</span></li>
+      </ul>
+    </div>
+
     <div style="position:absolute;top:-160px;right:-160px;width:700px;height:700px;border-radius:50%;border:1px solid rgba(30,86,181,0.14)"></div>
     <div style="position:absolute;top:-90px;right:-90px;width:500px;height:500px;border-radius:50%;border:1px solid rgba(77,174,229,0.10)"></div>
     <div style="position:absolute;bottom:-80px;left:-100px;width:520px;height:520px;border-radius:50%;border:1px solid rgba(30,86,181,0.08)"></div>
@@ -591,6 +645,11 @@
     </div>
   </div>
 </section>
+
+<div style="max-width:1280px;margin:0 auto;padding:0.75rem 1.5rem 0">
+  <p class="ds-updated" style="font-size:0.78rem;color:#5a6e8c;margin-bottom:0;padding-bottom:0.75rem;border-bottom:1px solid #dde5f4">Zuletzt aktualisiert: 10. März 2026</p>
+</div>
+
 
 <!-- ══════════════════════════════════════════════
      SUMMARY STATS BAR
@@ -917,7 +976,7 @@
             </li>
             <li class="flex items-start gap-2.5">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1E56B5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:4px"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-              <span style="font-size:0.88rem;color:#5a6e8c;line-height:1.65">Korrekte Zuordnung der Auftragsforschung (60% Anrechnung der Universitaetskosten)</span>
+              <span style="font-size:0.88rem;color:#5a6e8c;line-height:1.65">Korrekte Zuordnung der Auftragsforschung (70% Anrechnung der Universitaetskosten)</span>
             </li>
             <li class="flex items-start gap-2.5">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1E56B5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:4px"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
@@ -1102,6 +1161,18 @@
 <!-- ══════════════════════════════════════════════
      FOOTER
 ══════════════════════════════════════════════ -->
+
+  <!-- External Citations -->
+  <div style="max-width:48rem;margin:0 auto 2rem;padding:0 1rem">
+    <div class="external-citations" style="margin-top:1.5rem;padding:1rem 1.25rem;background:var(--bg-raised, #f5f8fe);border:1px solid var(--bdr, #dde5f4);border-radius:10px;font-size:0.82rem;color:var(--clr-b, #5a6e8c);line-height:1.7">
+        <div style="font-family:'Montserrat',sans-serif;font-size:0.72rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#1E56B5;margin-bottom:0.5rem">Offizielle Quellen</div>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.3rem">
+          <li><a href="https://www.gesetze-im-internet.de/fzulg/" target="_blank" rel="noopener" style="color:#1E56B5;text-decoration:none" data-legal-ref="FZulG">Forschungszulagengesetz (FZulG) – Gesetzestext</a></li>
+          <li><a href="https://www.bescheinigung-forschungszulage.de/" target="_blank" rel="noopener" style="color:#1E56B5;text-decoration:none" data-legal-ref="BSFZ">BSFZ – Bescheinigungsstelle Forschungszulage</a></li>
+          <li><a href="https://www.bundesfinanzministerium.de/" target="_blank" rel="noopener" style="color:#1E56B5;text-decoration:none" data-legal-ref="BMF">Bundesfinanzministerium (BMF)</a></li>
+        </ul>
+      </div>
+  </div>
 <footer style="background:#04091a;border-top:1px solid rgba(255,255,255,0.07)">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12">
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
@@ -1150,61 +1221,20 @@
      JAVASCRIPT
 ══════════════════════════════════════════════ -->
 <script>
-  // ── Theme ──
   (function() {
     if (localStorage.getItem('theme') === 'dark') {
       document.documentElement.classList.add('dark');
     }
   })();
 
-  function toggleDark() {
-    const dark = document.documentElement.classList.toggle('dark');
-    localStorage.setItem('theme', dark ? 'dark' : 'light');
-    _updateDarkBtn();
-  }
-  function _updateDarkBtn() {
-    const dark = document.documentElement.classList.contains('dark');
-    const moon  = document.getElementById('icon-moon');
-    const sun   = document.getElementById('icon-sun');
-    const moonM = document.getElementById('icon-moon-mob');
-    const sunM  = document.getElementById('icon-sun-mob');
-    if (moon)  moon.style.display  = dark ? 'none'  : 'block';
-    if (sun)   sun.style.display   = dark ? 'block' : 'none';
-    if (moonM) moonM.style.display = dark ? 'none'  : 'block';
-    if (sunM)  sunM.style.display  = dark ? 'block' : 'none';
-  }
-  window.addEventListener('DOMContentLoaded', _updateDarkBtn);
-
-  // ── Language (stub) ──
+// ── Language (stub) ──
   function setLang(lang) {
     document.querySelectorAll('.lang-btn').forEach(function(b) {
       b.classList.toggle('active', b.textContent.trim() === lang.toUpperCase());
     });
   }
 
-  // ── Mobile menu ──
-  function toggleMob() {
-    var menu = document.getElementById('mob-menu');
-    var btn  = document.getElementById('ham-btn');
-    var open = menu.classList.toggle('open');
-    btn.setAttribute('aria-expanded', open);
-    var hb1 = document.getElementById('hb1');
-    var hb2 = document.getElementById('hb2');
-    var hb3 = document.getElementById('hb3');
-    if (open) {
-      hb1.style.transform = 'rotate(45deg) translate(4px, 4px)';
-      hb2.style.opacity   = '0';
-      hb3.style.transform = 'rotate(-45deg) translate(3px, -3px)';
-      hb3.style.width     = '20px';
-    } else {
-      hb1.style.transform = 'none';
-      hb2.style.opacity   = '1';
-      hb3.style.transform = 'none';
-      hb3.style.width     = '14px';
-    }
-  }
 
-  // ── Scroll fade-up animation ──
   (function() {
     var els = document.querySelectorAll('.fade-up');
     if (!els.length) return;

@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#04091a">
   <title>R&D Tax Credit Calculator 2026: Calculate Your FZulG Funding | NOVARIS</title>
   <meta name="description" content="Calculate your R&D tax credit (Forschungszulage): Determine your FZulG funding in 30 seconds. Up to EUR 4.2M for SMEs. Free calculator by NOVARIS Consulting." />
   <meta name="keywords" content="R&D tax credit calculator, Forschungszulage calculator, FZulG calculator, research allowance Germany" />
@@ -11,6 +12,7 @@
   <!-- Hreflang -->
   <link rel="alternate" hreflang="de" href="https://novaris-consulting.com/forschungszulage-rechner.html" />
   <link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/forschungszulage-rechner.html" />
+  <link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/forschungszulage-rechner.html" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
@@ -28,20 +30,18 @@
   <meta name="twitter:title" content="R&D Tax Credit Calculator 2026 | NOVARIS Consulting" />
   <meta name="twitter:description" content="Determine your FZulG funding in 30 seconds. Up to EUR 4.2M for SMEs." />
   <meta name="twitter:image" content="https://novaris-consulting.com/brand_assets/og-image.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/fonts/fonts.css" />
+  <link rel="stylesheet" href="/styles.min.css" />
+  <link rel="preload" href="/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/montserrat-800.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- BreadcrumbList -->
+<!-- BreadcrumbList -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
+    "@type": "BreadcrumbList", "inLanguage": "en", "itemListElement": [
       {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://novaris-consulting.com/en/"},
       {"@type": "ListItem", "position": 2, "name": "R&D Tax Credit Calculator", "item": "https://novaris-consulting.com/en/forschungszulage-rechner.html"}
     ]
@@ -52,8 +52,7 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "R&D Tax Credit Calculator 2026",
+    "@type": "WebApplication", "inLanguage": "en", "name": "R&D Tax Credit Calculator 2026",
     "description": "Calculate your R&D tax credit (Forschungszulage / FZulG) in 30 seconds. Free online calculator for SMEs and large enterprises.",
     "url": "https://novaris-consulting.com/en/forschungszulage-rechner.html",
     "applicationCategory": "FinanceApplication",
@@ -407,9 +406,11 @@
     .lang-btn:hover { color: rgba(255,255,255,0.85); }
     .lang-divider { width: 1px; height: 16px; background: rgba(255,255,255,0.12); flex-shrink: 0; }
   </style>
-  <link rel="stylesheet" href="/page-transition.css" />
-  <link rel="stylesheet" href="/cookie-consent.css" />
-  <script src="/page-transition.js" defer></script>
+  <link rel="stylesheet" href="/page-transition.css" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="/page-transition.css" /></noscript>
+  <link rel="stylesheet" href="/cookie-consent.css" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="/cookie-consent.css" /></noscript>
+  <script src="/page-transition.js" defer integrity="sha384-4inSnEeQghmg/0CJ7SF+TjLNtxyzHdmMI9o/kpB7+f78/vWCNesEiHYkzAgbHcTE" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -419,7 +420,7 @@
     <a href="/en/" aria-label="NOVARIS Consulting"
        style="text-decoration:none;flex-shrink:0;display:flex;align-items:center;transition:opacity 0.15s ease"
        class="hover:opacity-90 focus-visible:outline-none">
-      <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto" />
+      <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto" width="230" height="72" loading="lazy">
     </a>
     <nav class="hidden lg:flex items-center gap-0.5">
       <a href="/en/#the-fzulg" class="nav-link">The FZulG</a>
@@ -491,11 +492,11 @@
       <!-- R&D Personnel Costs -->
       <div class="field-group">
         <label class="field-label" for="personal">Annual R&amp;D Personnel Costs (&euro;)</label>
-        <input type="number" id="personal" class="num-input" value="500000" min="0" max="5000000" step="10000" oninput="syncSlider();calculate()" />
-        <input type="range" id="personal-slider" class="range-slider" min="0" max="5000000" step="10000" value="500000" oninput="syncInput();calculate()" />
+        <input type="number" id="personal" class="num-input" value="500000" min="0" max="12000000" step="10000" oninput="syncSlider();calculate()" />
+        <input type="range" id="personal-slider" class="range-slider" min="0" max="12000000" step="10000" value="500000" oninput="syncInput();calculate()" />
         <div style="display:flex;justify-content:space-between;margin-top:0.2rem">
           <span class="field-note">&euro;0</span>
-          <span class="field-note">&euro;5,000,000</span>
+          <span class="field-note">&euro;12,000,000</span>
         </div>
       </div>
 
@@ -503,7 +504,7 @@
       <div class="field-group">
         <label class="field-label" for="auftrag">Contract Research (&euro;)</label>
         <input type="number" id="auftrag" class="num-input" value="0" min="0" max="3000000" step="10000" oninput="calculate()" />
-        <p class="field-note">Note: Only 60 % of contract research costs are eligible.</p>
+        <p class="field-note">Note: Only 70 % of contract research costs are eligible.</p>
       </div>
 
       <!-- Own Contributions -->
@@ -566,7 +567,7 @@
 
     <div class="ds-section">
       <h2>2026 Updates: Overhead Allowance and Increased Limits</h2>
-      <p>The Growth Opportunities Act (Wachstumschancengesetz) and further amendments to the FZulG bring substantial improvements for 2026. Key changes at a glance:</p>
+      <p>The <span data-legal-ref="WachstumschancenG">Growth Opportunities Act</span> (<span data-legal-ref="WachstumschancenG">Wachstumschancengesetz</span>) and further amendments to the FZulG bring substantial improvements for 2026. Key changes at a glance:</p>
       <ul>
         <li><strong>20 % Overhead Allowance:</strong> For the first time, companies can apply a flat-rate allowance of 20 % on direct eligible costs (personnel costs and own contributions). This covers proportional material costs, rent, and other overheads &ndash; without individual documentation.</li>
         <li><strong>Increased Assessment Basis:</strong> The maximum eligible assessment basis has been gradually raised from &euro;4 million to &euro;12 million. This increases the maximum R&D tax credit to up to &euro;3 million for large enterprises and &euro;4.2 million for SMEs.</li>
@@ -589,11 +590,23 @@
   </div>
 </main>
 
+
+  <!-- External Citations -->
+  <div style="max-width:48rem;margin:0 auto 2rem;padding:0 1rem">
+    <div class="external-citations" style="margin-top:1.5rem;padding:1rem 1.25rem;background:var(--bg-raised, #f5f8fe);border:1px solid var(--bdr, #dde5f4);border-radius:10px;font-size:0.82rem;color:var(--clr-b, #5a6e8c);line-height:1.7">
+        <div style="font-family:'Montserrat',sans-serif;font-size:0.72rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#1E56B5;margin-bottom:0.5rem">Official Sources</div>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.3rem">
+          <li><a href="https://www.gesetze-im-internet.de/fzulg/" target="_blank" rel="noopener" style="color:#1E56B5;text-decoration:none" data-legal-ref="FZulG">Research Allowance Act (FZulG) – Legal Text</a></li>
+          <li><a href="https://www.bescheinigung-forschungszulage.de/" target="_blank" rel="noopener" style="color:#1E56B5;text-decoration:none" data-legal-ref="BSFZ">BSFZ – Certification Body for Research Allowance</a></li>
+          <li><a href="https://www.bundesfinanzministerium.de/" target="_blank" rel="noopener" style="color:#1E56B5;text-decoration:none" data-legal-ref="BMF">Federal Ministry of Finance (BMF)</a></li>
+        </ul>
+      </div>
+  </div>
 <footer style="background:#04091a;border-top:1px solid rgba(255,255,255,0.07)">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12">
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
       <div class="lg:col-span-2">
-        <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto;margin-bottom:1rem" />
+        <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto;margin-bottom:1rem" width="230" height="72" loading="lazy">
         <p style="font-size:0.82rem;color:rgba(195,215,245,0.38);line-height:1.72;max-width:320px">
           NOVARIS Consulting is your specialised full-service partner for the government
           R&D tax credit (Forschungszulage) under the FZulG &ndash; performance-based, transparent and risk-free.
@@ -635,19 +648,7 @@
     }
   })();
 
-  function toggleDark() {
-    const dark = document.documentElement.classList.toggle('dark');
-    localStorage.setItem('theme', dark ? 'dark' : 'light');
-    _updateDarkBtn();
-  }
 
-  function _updateDarkBtn() {
-    const dark = document.documentElement.classList.contains('dark');
-    const moon = document.getElementById('icon-moon');
-    const sun  = document.getElementById('icon-sun');
-    if (moon) moon.style.display = dark ? 'none'  : 'block';
-    if (sun)  sun.style.display  = dark ? 'block' : 'none';
-  }
 
   window.addEventListener('DOMContentLoaded', function() {
     _updateDarkBtn();
@@ -681,8 +682,8 @@
 
     // Eligible amounts
     const personalEligible = personal;
-    const auftragEligible  = auftrag * 0.60;
-    const eigenEligible    = eigen * 40; // EUR 40/h
+    const auftragEligible  = auftrag * 0.70;
+    const eigenEligible    = eigen * 100; // EUR 100/h (from 2026)
 
     // Direct costs (for overhead)
     const directCosts = personalEligible + eigenEligible;
@@ -707,7 +708,9 @@
   }
 </script>
 
-<script src="/cookie-consent.js" defer></script>
-<script src="/analytics.js" defer></script>
+<script src="/theme.js" integrity="sha384-AHw/yIbpsf0UGYQRWNa1CnjuLJI76aQs0pyr51zWtjzNthQM8zFRHuo4sHJSrVy6" crossorigin="anonymous"></script>
+<script src="/nav-utils.js" defer integrity="sha384-HEPFc2/A6GCO1ZOjeylEPeFC589M3uf9OKsK/nHgRZjIVpHMIXB+STNmfV7/BK4W" crossorigin="anonymous"></script>
+<script src="/cookie-consent.js" defer integrity="sha384-8uu1DY4EaX+0gOCSB9J625s7KuuZI54bS+Otavzur8EoSXCCwGeR3MYrMv2+tsjn" crossorigin="anonymous"></script>
+<script src="/analytics.js" defer integrity="sha384-OTNmjy5n3I58KsCyQOce6zES4sVHwLLRFxpQoGp77N9nwR67WTSDKTsYzaxYHDQ3" crossorigin="anonymous"></script>
 </body>
 </html>
