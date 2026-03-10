@@ -9,11 +9,13 @@
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="preload" href="https://fonts.gstatic.com/s/montserrat/v29/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hiA.woff2" as="font" type="font/woff2" crossorigin>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>tailwind.config={theme:{extend:{fontFamily:{display:['Montserrat','sans-serif'],body:['Inter','sans-serif']}}}};</script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.min.css">
   <style>
     body { margin: 0; font-family: 'Inter', sans-serif; background: #04091a; color: #c3d7f5; min-height: 100vh; display: flex; flex-direction: column; }
     .hero-bg {
@@ -48,12 +50,13 @@
   </style>
 </head>
 <body>
+<a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[9999] focus:bg-navy-500 focus:text-white focus:px-4 focus:py-2 focus:rounded-lg">Zum Inhalt springen</a>
 
 <!-- NAV -->
 <header style="position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(4,9,26,0.85);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,0.06)">
   <div class="max-w-7xl mx-auto px-4 sm:px-6" style="display:flex;align-items:center;justify-content:space-between;height:68px">
     <a href="/" aria-label="NOVARIS Consulting" style="text-decoration:none;display:flex;align-items:center">
-      <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:52px;width:auto" />
+      <img width="180" height="72" src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:52px;width:auto" />
     </a>
     <a href="/" class="btn-home" style="font-size:0.82rem;padding:0.6rem 1.4rem">Zur Startseite</a>
   </div>

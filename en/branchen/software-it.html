@@ -26,11 +26,12 @@
     <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/styles.min.css">
+  <link rel="preload" href="https://fonts.gstatic.com/s/montserrat/v29/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hiA.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <script>tailwind.config={theme:{extend:{fontFamily:{display:['Montserrat','sans-serif'],body:['Inter','sans-serif']}}}};</script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/cookie-consent.css" />
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -115,14 +116,51 @@
 {"@type":"Question","name":"How much is the R&D tax credit for IT companies?","acceptedAnswer":{"@type":"Answer","text":"IT companies receive 25% of eligible R&D staff costs back. SMEs receive up to 35%. With a maximum assessment base of EUR 12 million, up to EUR 4.2 million in funding per year is possible."}}
 ]}
   </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://novaris-consulting.com/en/"},
+    {"@type": "ListItem", "position": 2, "name": "Industries", "item": "https://novaris-consulting.com/en/#branchen"},
+    {"@type": "ListItem", "position": 3, "name": "Software & IT", "item": "https://novaris-consulting.com/en/branchen/software-it.html"}
+  ]
+}
+  </script>
+
+  <!-- Article Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "R&D Tax Credit for Software & IT 2026 – Up to 25% R&D Costs Back | NOVARIS",
+    "description": "Software and IT companies can reclaim up to 25% of their R&D costs. NOVARIS shows which projects in AI, embedded systems and custom software are eligible for the German R&D tax credit.",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://novaris-consulting.com/brand_assets/og-image.png",
+      "width": 1200,
+      "height": 630
+    },
+    "author": { "@type": "Organization", "name": "NOVARIS Consulting", "url": "https://novaris-consulting.com" },
+    "publisher": { "@type": "Organization", "name": "NOVARIS Consulting", "url": "https://novaris-consulting.com", "logo": { "@type": "ImageObject", "url": "https://novaris-consulting.com/brand_assets/Logo V5-light.svg" } },
+    "datePublished": "2026-02-15",
+    "dateModified": "2026-03-10",
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://novaris-consulting.com/en/branchen/software-it.html" }
+  }
+  </script>
 </head>
 <body>
+<a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[9999] focus:bg-white focus:text-[#1E56B5] focus:px-4 focus:py-2 focus:rounded-lg focus:shadow-lg focus:font-semibold">Skip to content</a>
+
+
+<p class="text-sm" style="color:#94a3b8">Updated: March 2026 &middot; By NOVARIS Consulting &ndash; FZulG Experts</p>
 
 <!-- NAV -->
 <header id="nav" class="fixed inset-x-0 top-0 z-50 nav-blur" style="background:rgba(4,9,26,0.85);border-bottom:1px solid rgba(255,255,255,0.07)">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between gap-4" style="height:68px">
     <a href="../../en/" aria-label="NOVARIS Consulting" class="hover:opacity-90" style="text-decoration:none;flex-shrink:0;display:flex;align-items:center;transition:opacity 0.15s ease">
-      <img src="../../brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto" />
+      <img src="../../brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto" width="180" height="72" />
     </a>
     <nav class="hidden lg:flex items-center gap-0.5">
       <a href="../../en/index.html#was-ist-fzulg" class="nav-link" data-t="nav.fzulg">The FZulG</a>
@@ -235,6 +273,8 @@
           <span class="stat-pill"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span data-t="hero.pill2">Wages &amp; contractors eligible</span></span>
           <span class="stat-pill"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span data-t="hero.pill3">Retroactive to 2020</span></span>
         </div>
+        <p class="text-sm text-gray-500 mt-4">Last updated: March 10, 2026</p>
+        <p class="text-sm text-gray-500">By NOVARIS Consulting – Industry Experts</p>
         <div class="au d4 flex flex-wrap gap-3">
           <a href="../index.html#kontakt" class="btn-primary" style="padding:0.95rem 2.25rem;font-size:0.95rem">
             <span data-t="hero.btn">Check eligibility</span>
@@ -423,6 +463,55 @@
   </div>
 </section>
 
+
+<!-- CHALLENGES -->
+<section class="bg-white py-16 sm:py-20">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-10 reveal">
+      <div class="badge mb-4">Challenges</div>
+      <h2 class="text-2xl sm:text-3xl font-black" style="color:#0D1B3E">Common Challenges in Software & IT FZulG Applications</h2>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:1.5rem" class="reveal" style="transition-delay:0.05s">
+      <div style="background:var(--bg-card);border:1px solid rgba(30,86,181,0.09);border-radius:16px;padding:1.5rem 1.75rem;box-shadow:0 2px 12px rgba(30,86,181,0.06)">
+        <div style="display:flex;align-items:flex-start;gap:0.85rem">
+          <div class="check-dot" style="background:linear-gradient(135deg,#E8A317,#F5C842);margin-top:2px;flex-shrink:0"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01"/></svg></div>
+          <div>
+            <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.95rem;color:#0D1B3E;margin-bottom:0.4rem">Distinguishing routine development from technical novelty</h3>
+            <p style="font-size:0.85rem;color:#5a6e8c;line-height:1.72">In agile software projects, the line between feature development and genuine R&D often blurs. What matters is whether the project overcomes technical uncertainties that could not be resolved with existing knowledge. NOVARIS helps you apply the <a href="/en/forschungszulage.html" style="color:#1E56B5;text-decoration:underline">FZulG criteria</a> precisely to your sprints and epics.</p>
+          </div>
+        </div>
+      </div>
+      <div style="background:var(--bg-card);border:1px solid rgba(30,86,181,0.09);border-radius:16px;padding:1.5rem 1.75rem;box-shadow:0 2px 12px rgba(30,86,181,0.06)">
+        <div style="display:flex;align-items:flex-start;gap:0.85rem">
+          <div class="check-dot" style="background:linear-gradient(135deg,#E8A317,#F5C842);margin-top:2px;flex-shrink:0"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01"/></svg></div>
+          <div>
+            <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.95rem;color:#0D1B3E;margin-bottom:0.4rem">Documenting R&D shares in mixed projects</h3>
+            <p style="font-size:0.85rem;color:#5a6e8c;line-height:1.72">Many software projects combine routine work (UI, deployment) with innovative development (new algorithms, architecture research). The BSFZ expects a clean separation of R&D components. Use our <a href="/en/forschungszulage-rechner.html" style="color:#1E56B5;text-decoration:underline">R&D tax credit calculator</a> to estimate the funding potential of your mixed projects.</p>
+          </div>
+        </div>
+      </div>
+      <div style="background:var(--bg-card);border:1px solid rgba(30,86,181,0.09);border-radius:16px;padding:1.5rem 1.75rem;box-shadow:0 2px 12px rgba(30,86,181,0.06)">
+        <div style="display:flex;align-items:flex-start;gap:0.85rem">
+          <div class="check-dot" style="background:linear-gradient(135deg,#E8A317,#F5C842);margin-top:2px;flex-shrink:0"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01"/></svg></div>
+          <div>
+            <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.95rem;color:#0D1B3E;margin-bottom:0.4rem">Proving technical uncertainty in software projects</h3>
+            <p style="font-size:0.85rem;color:#5a6e8c;line-height:1.72">The BSFZ requires evidence that the project outcome was not foreseeable at the start. For software, this is often harder to prove than for hardware. Document failed approaches, benchmark comparisons, and iteration cycles. Our <a href="/en/forschungszulage-antrag.html" style="color:#1E56B5;text-decoration:underline">application experts</a> know the requirements inside out.</p>
+          </div>
+        </div>
+      </div>
+      <div style="background:var(--bg-card);border:1px solid rgba(30,86,181,0.09);border-radius:16px;padding:1.5rem 1.75rem;box-shadow:0 2px 12px rgba(30,86,181,0.06)">
+        <div style="display:flex;align-items:flex-start;gap:0.85rem">
+          <div class="check-dot" style="background:linear-gradient(135deg,#E8A317,#F5C842);margin-top:2px;flex-shrink:0"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01"/></svg></div>
+          <div>
+            <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.95rem;color:#0D1B3E;margin-bottom:0.4rem">Eligibility of open-source contributions</h3>
+            <p style="font-size:0.85rem;color:#5a6e8c;line-height:1.72">Contributions to open-source projects can be eligible if they constitute genuine R&D and the company bears the personnel costs. Similar demarcation questions arise in <a href="/en/branchen/medizintechnik.html" style="color:#1E56B5;text-decoration:underline">medical technology</a> and <a href="/en/branchen/maschinenbau.html" style="color:#1E56B5;text-decoration:underline">mechanical engineering</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- FAQ -->
 <section class="bg-white py-16 sm:py-20">
   <div class="max-w-3xl mx-auto px-4 sm:px-6">
@@ -432,7 +521,7 @@
     </div>
     <div class="reveal" style="transition-delay:0.05s">
       <div class="faq-wrap">
-        <button class="faq-btn" onclick="toggleFaq(this)">
+        <button class="faq-btn" aria-expanded="false" onclick="toggleFaq(this)">
           <span data-t="faq.q1">Is pure software development – without hardware – eligible under the FZulG?</span>
           <span class="faq-icon">+</span>
         </button>
@@ -443,7 +532,7 @@
     </div>
     <div class="reveal" style="transition-delay:0.1s">
       <div class="faq-wrap">
-        <button class="faq-btn" onclick="toggleFaq(this)">
+        <button class="faq-btn" aria-expanded="false" onclick="toggleFaq(this)">
           <span data-t="faq.q2">Can external developers (freelancers / subcontractors) be included?</span>
           <span class="faq-icon">+</span>
         </button>
@@ -454,7 +543,7 @@
     </div>
     <div class="reveal" style="transition-delay:0.15s">
       <div class="faq-wrap">
-        <button class="faq-btn" onclick="toggleFaq(this)">
+        <button class="faq-btn" aria-expanded="false" onclick="toggleFaq(this)">
           <span data-t="faq.q3">Does the FZulG also apply to SaaS products and cloud platforms?</span>
           <span class="faq-icon">+</span>
         </button>
@@ -464,6 +553,28 @@
       </div>
     </div>
   </div>
+    <div class="reveal" style="transition-delay:0.2s">
+      <div class="faq-wrap">
+        <button class="faq-btn" aria-expanded="false" onclick="toggleFaq(this)">
+          <span>Is agile software development with Scrum eligible?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-body">
+          <div class="faq-content">Yes, the project methodology is not decisive for eligibility. Whether Scrum, Kanban or waterfall – what matters is whether the project overcomes technical uncertainties and proceeds systematically. Iterative sprints with an experimental character can also qualify as experimental development under the FZulG. Continuous documentation of R&D components in each sprint is essential.</div>
+        </div>
+      </div>
+    </div>
+    <div class="reveal" style="transition-delay:0.2s">
+      <div class="faq-wrap">
+        <button class="faq-btn" aria-expanded="false" onclick="toggleFaq(this)">
+          <span>Can cloud infrastructure costs be claimed as R&D material costs?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-body">
+          <div class="faq-content">Direct cloud costs (e.g. GPU instances for ML training or test environments) are not directly eligible as material costs – the FZulG primarily funds personnel costs and contract research. However, the personnel costs of developers using this infrastructure for R&D can be fully claimed. Since the 2024 amendment, SMEs can also claim a material cost lump sum of up to 70% of eligible personnel costs.</div>
+        </div>
+      </div>
+    </div>
 </section>
 
 
@@ -506,16 +617,16 @@
 <footer style="background:#04091a;border-top:1px solid rgba(255,255,255,0.07);padding:2.5rem 0">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
     <a href="../" style="text-decoration:none;display:flex;align-items:center">
-      <img src="../brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:52px;width:auto" />
+      <img src="../brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:52px;width:auto" width="130" height="52" />
     </a>
     <div style="display:flex;gap:1.5rem;flex-wrap:wrap;justify-content:center">
-      <a href="../index.html#was-ist-fzulg" data-t="foot.fzulg" style="color:rgba(195,215,245,0.45);font-size:0.82rem;text-decoration:none;transition:color 0.15s" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.45)'">Das FZulG</a>
-      <a href="../../en/index.html#branchen" data-t="foot.branchen" style="color:rgba(195,215,245,0.45);font-size:0.82rem;text-decoration:none;transition:color 0.15s" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.45)'">Branchen</a>
-      <a href="../index.html#prozess" data-t="foot.prozess" style="color:rgba(195,215,245,0.45);font-size:0.82rem;text-decoration:none;transition:color 0.15s" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.45)'">Prozess</a>
-      <a href="../index.html#kontakt" data-t="foot.kontakt" style="color:rgba(195,215,245,0.45);font-size:0.82rem;text-decoration:none;transition:color 0.15s" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.45)'">Kontakt</a>
-      <a href="../../impressum.html" style="color:rgba(195,215,245,0.45);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.45)'">Legal Notice</a>
-      <a href="../../datenschutz.html" style="color:rgba(195,215,245,0.45);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.45)'" data-t="foot.datenschutz">Privacy Policy</a>
-      <a href="javascript:void(0)" onclick="CookieConsent.reset();CookieConsent.request(function(){});" style="color:rgba(195,215,245,0.45);font-size:0.82rem;text-decoration:none;transition:color 0.15s" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.45)'" data-t="foot.cookies">Cookie Settings</a>
+      <a href="../index.html#was-ist-fzulg" data-t="foot.fzulg" style="color:rgba(195,215,245,0.65);font-size:0.82rem;text-decoration:none;transition:color 0.15s" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.65)'">Das FZulG</a>
+      <a href="../../en/index.html#branchen" data-t="foot.branchen" style="color:rgba(195,215,245,0.65);font-size:0.82rem;text-decoration:none;transition:color 0.15s" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.65)'">Branchen</a>
+      <a href="../index.html#prozess" data-t="foot.prozess" style="color:rgba(195,215,245,0.65);font-size:0.82rem;text-decoration:none;transition:color 0.15s" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.65)'">Prozess</a>
+      <a href="../index.html#kontakt" data-t="foot.kontakt" style="color:rgba(195,215,245,0.65);font-size:0.82rem;text-decoration:none;transition:color 0.15s" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.65)'">Kontakt</a>
+      <a href="../../impressum.html" style="color:rgba(195,215,245,0.65);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.65)'">Legal Notice</a>
+      <a href="../../datenschutz.html" style="color:rgba(195,215,245,0.65);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.65)'" data-t="foot.datenschutz">Privacy Policy</a>
+      <a href="javascript:void(0)" onclick="CookieConsent.reset();CookieConsent.request(function(){});" style="color:rgba(195,215,245,0.65);font-size:0.82rem;text-decoration:none;transition:color 0.15s" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.65)'" data-t="foot.cookies">Cookie Settings</a>
     </div>
     <p style="color:rgba(195,215,245,0.28);font-size:0.75rem">© 2026 NOVARIS Consulting GmbH</p>
   </div>
@@ -527,7 +638,7 @@
   function _updateDarkBtn(){var dark=document.documentElement.classList.contains('dark');var moon=document.getElementById('icon-moon');var sun=document.getElementById('icon-sun');var moonM=document.getElementById('icon-moon-mob');var sunM=document.getElementById('icon-sun-mob');if(moon)moon.style.display=dark?'none':'block';if(sun)sun.style.display=dark?'block':'none';if(moonM)moonM.style.display=dark?'none':'block';if(sunM)sunM.style.display=dark?'block':'none';}
   window.addEventListener("DOMContentLoaded",_updateDarkBtn);
   function toggleMob(){var m=document.getElementById('mob-menu');var open=m.classList.toggle('open');document.getElementById('ham-btn').setAttribute('aria-expanded',open)}document.querySelectorAll('.nav-dropdown-wrap').forEach(function(w){var t=w.querySelector('.nav-dropdown-trigger');if(!t)return;w.addEventListener('mouseenter',function(){t.setAttribute('aria-expanded','true')});w.addEventListener('mouseleave',function(){t.setAttribute('aria-expanded','false')})})
-  function toggleFaq(btn){var wrap=btn.closest('.faq-wrap');wrap.classList.toggle('open')}
+  function toggleFaq(btn){var wrap=btn.closest('.faq-wrap');wrap.classList.toggle('open');btn.setAttribute('aria-expanded',wrap.classList.contains('open'))}
   (function(){var els=document.querySelectorAll('.reveal');var io=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}});},{threshold:0.1});els.forEach(function(el){if(el.getBoundingClientRect().top<window.innerHeight){el.classList.add('visible')}else{io.observe(el)}});})();
 
   // i18n
@@ -625,7 +736,7 @@
   }
   (function(){ var s = localStorage.getItem('lang'); if (s === 'de') { setLang('de'); } else { setLang('en'); } })();
 </script>
-<script src="/scroll-animations.js"></script>
+<script src="/scroll-animations.js" defer></script>
 <script src="/cookie-consent.js" defer></script>
 </body>
 </html>

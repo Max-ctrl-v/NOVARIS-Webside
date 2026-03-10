@@ -1,80 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Main Pages -->
-  <url><loc>https://novaris-consulting.com/</loc><lastmod>2026-03-06</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://novaris-consulting.com/forschungszulage.html</loc><lastmod>2026-03-06</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://novaris-consulting.com/forschungszulage-rechner.html</loc><lastmod>2026-03-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://novaris-consulting.com/</loc><lastmod>2026-03-10</lastmod></url>
+  <url><loc>https://novaris-consulting.com/forschungszulage.html</loc><lastmod>2026-03-10</lastmod></url>
+  <url><loc>https://novaris-consulting.com/forschungszulage-rechner.html</loc><lastmod>2026-03-10</lastmod></url>
 
   <!-- New Content Pages -->
-  <url><loc>https://novaris-consulting.com/forschungszulage-antrag.html</loc><lastmod>2026-03-06</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://novaris-consulting.com/forschungszulage-check.html</loc><lastmod>2026-03-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://novaris-consulting.com/forschungszulage-2026.html</loc><lastmod>2026-03-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://novaris-consulting.com/foerdermittel-vergleich.html</loc><lastmod>2026-03-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://novaris-consulting.com/erfolge.html</loc><lastmod>2026-03-06</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://novaris-consulting.com/forschungszulage-antrag.html</loc><lastmod>2026-03-10</lastmod></url>
+  <url><loc>https://novaris-consulting.com/forschungszulage-check.html</loc><lastmod>2026-03-10</lastmod></url>
+  <url><loc>https://novaris-consulting.com/forschungszulage-2026.html</loc><lastmod>2026-03-10</lastmod></url>
+  <url><loc>https://novaris-consulting.com/foerdermittel-vergleich.html</loc><lastmod>2026-03-10</lastmod></url>
+  <url><loc>https://novaris-consulting.com/erfolge.html</loc><lastmod>2026-03-10</lastmod></url>
 
   <!-- Branchen Pages -->
-  <url><loc>https://novaris-consulting.com/branchen/software-it.html</loc><lastmod>2026-03-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://novaris-consulting.com/branchen/maschinenbau.html</loc><lastmod>2026-03-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://novaris-consulting.com/branchen/medizintechnik.html</loc><lastmod>2026-03-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://novaris-consulting.com/branchen/pharma.html</loc><lastmod>2026-03-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://novaris-consulting.com/branchen/automotive.html</loc><lastmod>2026-03-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://novaris-consulting.com/branchen/energie.html</loc><lastmod>2026-03-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://novaris-consulting.com/branchen/luft-raumfahrt.html</loc><lastmod>2026-03-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://novaris-consulting.com/branchen/bauindustrie.html</loc><lastmod>2026-03-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://novaris-consulting.com/branchen/agrar-foodtech.html</loc><lastmod>2026-03-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://novaris-consulting.com/branchen/software-it.html</loc><lastmod>2026-03-10</lastmod></url>
+  <url><loc>https://novaris-consulting.com/branchen/maschinenbau.html</loc><lastmod>2026-03-10</lastmod></url>
+  <url><loc>https://novaris-consulting.com/branchen/medizintechnik.html</loc><lastmod>2026-03-10</lastmod></url>
+  <url><loc>https://novaris-consulting.com/branchen/pharma.html</loc><lastmod>2026-03-10</lastmod></url>
+  <url><loc>https://novaris-consulting.com/branchen/automotive.html</loc><lastmod>2026-03-10</lastmod></url>
+  <url><loc>https://novaris-consulting.com/branchen/energie.html</loc><lastmod>2026-03-10</lastmod></url>
+  <url><loc>https://novaris-consulting.com/branchen/luft-raumfahrt.html</loc><lastmod>2026-03-10</lastmod></url>
+  <url><loc>https://novaris-consulting.com/branchen/bauindustrie.html</loc><lastmod>2026-03-10</lastmod></url>
+  <url><loc>https://novaris-consulting.com/branchen/agrar-foodtech.html</loc><lastmod>2026-03-10</lastmod></url>
 
   <!-- SEO Content Pages (not in navigation) -->
-  <url><loc>https://novaris-consulting.com/forschungszulage-zeiterfassung.html</loc><lastmod>2026-03-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://novaris-consulting.com/forschungszulage-steuerberater.html</loc><lastmod>2026-03-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://novaris-consulting.com/bsfz-ablehnung-widerspruch.html</loc><lastmod>2026-03-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://novaris-consulting.com/forschungszulage-gmbh-einzelunternehmen.html</loc><lastmod>2026-03-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://novaris-consulting.com/forschungszulage-auftragsforschung.html</loc><lastmod>2026-03-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://novaris-consulting.com/forschungszulage-rueckwirkend.html</loc><lastmod>2026-03-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://novaris-consulting.com/forschungszulage-buchen.html</loc><lastmod>2026-03-08</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://novaris-consulting.com/forschungszulage-personalkosten.html</loc><lastmod>2026-03-08</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://novaris-consulting.com/forschungszulage-auszahlung.html</loc><lastmod>2026-03-08</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://novaris-consulting.com/forschungszulage-koerperschaftsteuer.html</loc><lastmod>2026-03-08</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://novaris-consulting.com/forschungszulage-hoehe.html</loc><lastmod>2026-03-08</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://novaris-consulting.com/forschungszulage-sachkosten.html</loc><lastmod>2026-03-08</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://novaris-consulting.com/forschungszulage-eigenleistungen.html</loc><lastmod>2026-03-08</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://novaris-consulting.com/forschungszulage-zeiterfassung.html</loc><lastmod>2026-02-15</lastmod></url>
+  <url><loc>https://novaris-consulting.com/forschungszulage-steuerberater.html</loc><lastmod>2026-02-15</lastmod></url>
+  <url><loc>https://novaris-consulting.com/bsfz-ablehnung-widerspruch.html</loc><lastmod>2026-02-15</lastmod></url>
+  <url><loc>https://novaris-consulting.com/forschungszulage-gmbh-einzelunternehmen.html</loc><lastmod>2026-02-15</lastmod></url>
+  <url><loc>https://novaris-consulting.com/forschungszulage-auftragsforschung.html</loc><lastmod>2026-02-15</lastmod></url>
+  <url><loc>https://novaris-consulting.com/forschungszulage-rueckwirkend.html</loc><lastmod>2026-02-15</lastmod></url>
+  <url><loc>https://novaris-consulting.com/forschungszulage-buchen.html</loc><lastmod>2026-02-15</lastmod></url>
+  <url><loc>https://novaris-consulting.com/forschungszulage-personalkosten.html</loc><lastmod>2026-02-15</lastmod></url>
+  <url><loc>https://novaris-consulting.com/forschungszulage-auszahlung.html</loc><lastmod>2026-02-15</lastmod></url>
+  <url><loc>https://novaris-consulting.com/forschungszulage-koerperschaftsteuer.html</loc><lastmod>2026-02-15</lastmod></url>
+  <url><loc>https://novaris-consulting.com/forschungszulage-hoehe.html</loc><lastmod>2026-02-15</lastmod></url>
+  <url><loc>https://novaris-consulting.com/forschungszulage-sachkosten.html</loc><lastmod>2026-02-15</lastmod></url>
+  <url><loc>https://novaris-consulting.com/forschungszulage-eigenleistungen.html</loc><lastmod>2026-02-15</lastmod></url>
 
   <!-- Legal Pages -->
-  <url><loc>https://novaris-consulting.com/impressum.html</loc><lastmod>2026-01-01</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://novaris-consulting.com/datenschutz.html</loc><lastmod>2026-01-01</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://novaris-consulting.com/agb.html</loc><lastmod>2026-01-01</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://novaris-consulting.com/impressum.html</loc><lastmod>2026-01-01</lastmod></url>
+  <url><loc>https://novaris-consulting.com/datenschutz.html</loc><lastmod>2026-01-01</lastmod></url>
+  <url><loc>https://novaris-consulting.com/agb.html</loc><lastmod>2026-01-01</lastmod></url>
 
   <!-- English Pages -->
-  <url><loc>https://novaris-consulting.com/en/</loc><lastmod>2026-03-08</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://novaris-consulting.com/en/forschungszulage.html</loc><lastmod>2026-03-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://novaris-consulting.com/en/forschungszulage-rechner.html</loc><lastmod>2026-03-08</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://novaris-consulting.com/en/forschungszulage-antrag.html</loc><lastmod>2026-03-08</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
-  <url><loc>https://novaris-consulting.com/en/forschungszulage-check.html</loc><lastmod>2026-03-08</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://novaris-consulting.com/en/forschungszulage-2026.html</loc><lastmod>2026-03-08</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://novaris-consulting.com/en/foerdermittel-vergleich.html</loc><lastmod>2026-03-08</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://novaris-consulting.com/en/erfolge.html</loc><lastmod>2026-03-08</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://novaris-consulting.com/en/forschungszulage-buchen.html</loc><lastmod>2026-03-08</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://novaris-consulting.com/en/forschungszulage-personalkosten.html</loc><lastmod>2026-03-08</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://novaris-consulting.com/en/forschungszulage-auszahlung.html</loc><lastmod>2026-03-08</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://novaris-consulting.com/en/forschungszulage-koerperschaftsteuer.html</loc><lastmod>2026-03-08</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://novaris-consulting.com/en/forschungszulage-hoehe.html</loc><lastmod>2026-03-08</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://novaris-consulting.com/en/forschungszulage-sachkosten.html</loc><lastmod>2026-03-08</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://novaris-consulting.com/en/forschungszulage-eigenleistungen.html</loc><lastmod>2026-03-08</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://novaris-consulting.com/en/forschungszulage-rueckwirkend.html</loc><lastmod>2026-03-08</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://novaris-consulting.com/en/forschungszulage-zeiterfassung.html</loc><lastmod>2026-03-08</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://novaris-consulting.com/en/forschungszulage-steuerberater.html</loc><lastmod>2026-03-08</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://novaris-consulting.com/en/bsfz-ablehnung-widerspruch.html</loc><lastmod>2026-03-08</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://novaris-consulting.com/en/forschungszulage-gmbh-einzelunternehmen.html</loc><lastmod>2026-03-08</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://novaris-consulting.com/en/forschungszulage-auftragsforschung.html</loc><lastmod>2026-03-08</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://novaris-consulting.com/en/branchen/software-it.html</loc><lastmod>2026-03-08</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://novaris-consulting.com/en/branchen/maschinenbau.html</loc><lastmod>2026-03-08</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://novaris-consulting.com/en/branchen/medizintechnik.html</loc><lastmod>2026-03-08</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://novaris-consulting.com/en/branchen/pharma.html</loc><lastmod>2026-03-08</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://novaris-consulting.com/en/branchen/automotive.html</loc><lastmod>2026-03-08</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://novaris-consulting.com/en/branchen/energie.html</loc><lastmod>2026-03-08</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://novaris-consulting.com/en/branchen/luft-raumfahrt.html</loc><lastmod>2026-03-08</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://novaris-consulting.com/en/branchen/bauindustrie.html</loc><lastmod>2026-03-08</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://novaris-consulting.com/en/branchen/agrar-foodtech.html</loc><lastmod>2026-03-08</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://novaris-consulting.com/en/impressum.html</loc><lastmod>2026-03-08</lastmod><changefreq>yearly</changefreq><priority>0.2</priority></url>
-  <url><loc>https://novaris-consulting.com/en/datenschutz.html</loc><lastmod>2026-03-08</lastmod><changefreq>yearly</changefreq><priority>0.2</priority></url>
-  <url><loc>https://novaris-consulting.com/en/agb.html</loc><lastmod>2026-03-08</lastmod><changefreq>yearly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://novaris-consulting.com/en/</loc><lastmod>2026-03-10</lastmod></url>
+  <url><loc>https://novaris-consulting.com/en/forschungszulage.html</loc><lastmod>2026-03-10</lastmod></url>
+  <url><loc>https://novaris-consulting.com/en/forschungszulage-rechner.html</loc><lastmod>2026-03-10</lastmod></url>
+  <url><loc>https://novaris-consulting.com/en/forschungszulage-antrag.html</loc><lastmod>2026-03-10</lastmod></url>
+  <url><loc>https://novaris-consulting.com/en/forschungszulage-check.html</loc><lastmod>2026-03-10</lastmod></url>
+  <url><loc>https://novaris-consulting.com/en/forschungszulage-2026.html</loc><lastmod>2026-03-10</lastmod></url>
+  <url><loc>https://novaris-consulting.com/en/foerdermittel-vergleich.html</loc><lastmod>2026-03-10</lastmod></url>
+  <url><loc>https://novaris-consulting.com/en/erfolge.html</loc><lastmod>2026-03-10</lastmod></url>
+  <url><loc>https://novaris-consulting.com/en/forschungszulage-buchen.html</loc><lastmod>2026-02-15</lastmod></url>
+  <url><loc>https://novaris-consulting.com/en/forschungszulage-personalkosten.html</loc><lastmod>2026-02-15</lastmod></url>
+  <url><loc>https://novaris-consulting.com/en/forschungszulage-auszahlung.html</loc><lastmod>2026-02-15</lastmod></url>
+  <url><loc>https://novaris-consulting.com/en/forschungszulage-koerperschaftsteuer.html</loc><lastmod>2026-02-15</lastmod></url>
+  <url><loc>https://novaris-consulting.com/en/forschungszulage-hoehe.html</loc><lastmod>2026-02-15</lastmod></url>
+  <url><loc>https://novaris-consulting.com/en/forschungszulage-sachkosten.html</loc><lastmod>2026-02-15</lastmod></url>
+  <url><loc>https://novaris-consulting.com/en/forschungszulage-eigenleistungen.html</loc><lastmod>2026-02-15</lastmod></url>
+  <url><loc>https://novaris-consulting.com/en/forschungszulage-rueckwirkend.html</loc><lastmod>2026-02-15</lastmod></url>
+  <url><loc>https://novaris-consulting.com/en/forschungszulage-zeiterfassung.html</loc><lastmod>2026-02-15</lastmod></url>
+  <url><loc>https://novaris-consulting.com/en/forschungszulage-steuerberater.html</loc><lastmod>2026-02-15</lastmod></url>
+  <url><loc>https://novaris-consulting.com/en/bsfz-ablehnung-widerspruch.html</loc><lastmod>2026-02-15</lastmod></url>
+  <url><loc>https://novaris-consulting.com/en/forschungszulage-gmbh-einzelunternehmen.html</loc><lastmod>2026-02-15</lastmod></url>
+  <url><loc>https://novaris-consulting.com/en/forschungszulage-auftragsforschung.html</loc><lastmod>2026-02-15</lastmod></url>
+  <url><loc>https://novaris-consulting.com/en/branchen/software-it.html</loc><lastmod>2026-03-10</lastmod></url>
+  <url><loc>https://novaris-consulting.com/en/branchen/maschinenbau.html</loc><lastmod>2026-03-10</lastmod></url>
+  <url><loc>https://novaris-consulting.com/en/branchen/medizintechnik.html</loc><lastmod>2026-03-10</lastmod></url>
+  <url><loc>https://novaris-consulting.com/en/branchen/pharma.html</loc><lastmod>2026-03-10</lastmod></url>
+  <url><loc>https://novaris-consulting.com/en/branchen/automotive.html</loc><lastmod>2026-03-10</lastmod></url>
+  <url><loc>https://novaris-consulting.com/en/branchen/energie.html</loc><lastmod>2026-03-10</lastmod></url>
+  <url><loc>https://novaris-consulting.com/en/branchen/luft-raumfahrt.html</loc><lastmod>2026-03-10</lastmod></url>
+  <url><loc>https://novaris-consulting.com/en/branchen/bauindustrie.html</loc><lastmod>2026-03-10</lastmod></url>
+  <url><loc>https://novaris-consulting.com/en/branchen/agrar-foodtech.html</loc><lastmod>2026-03-10</lastmod></url>
+  <url><loc>https://novaris-consulting.com/en/impressum.html</loc><lastmod>2026-01-01</lastmod></url>
+  <url><loc>https://novaris-consulting.com/en/datenschutz.html</loc><lastmod>2026-01-01</lastmod></url>
+  <url><loc>https://novaris-consulting.com/en/agb.html</loc><lastmod>2026-01-01</lastmod></url>
 </urlset>

@@ -38,7 +38,7 @@
       {
         "@type": "ListItem",
         "position": 1,
-        "name": "Home",
+        "name": "Startseite",
         "item": "https://novaris-consulting.com/"
       },
       {
@@ -443,8 +443,25 @@
 .lang-btn:hover { color: rgba(255,255,255,0.85); }
 .lang-divider { width: 1px; height: 16px; background: rgba(255,255,255,0.12); flex-shrink: 0; }
   </style>
+
+  <!-- Article Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Fördermittel Vergleich 2026: Forschungszulage vs. ZIM vs. KMU-innovativ | NOVARIS",
+    "description": "Fördermittel für F&E im Vergleich: Forschungszulage (FZulG), ZIM, KMU-innovativ & BMBF-Programme. Welches Programm passt? Jetzt kostenlos beraten lassen.",
+    "author": {"@type": "Organization", "name": "NOVARIS Consulting", "url": "https://novaris-consulting.com"},
+    "publisher": {"@type": "Organization", "name": "NOVARIS Consulting", "logo": {"@type": "ImageObject", "url": "https://novaris-consulting.com/brand_assets/og-image.png"}},
+    "image": {"@type": "ImageObject", "url": "https://novaris-consulting.com/brand_assets/og-image.png", "width": 1200, "height": 630},
+    "datePublished": "2026-02-15",
+    "dateModified": "2026-03-10",
+    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://novaris-consulting.com/foerdermittel-vergleich.html"}
+  }
+  </script>
 </head>
 <body>
+<a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[9999] focus:bg-white focus:text-[#1E56B5] focus:px-4 focus:py-2 focus:rounded-lg focus:shadow-lg focus:font-semibold">Zum Inhalt springen</a>
 
 <!-- NAV -->
 <header id="nav" class="fixed inset-x-0 top-0 z-50 nav-blur transition-shadow duration-300"
@@ -453,7 +470,7 @@
     <a href="/" aria-label="NOVARIS Consulting"
        style="text-decoration:none;flex-shrink:0;display:flex;align-items:center;transition:opacity 0.15s ease"
        class="hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-navy-300">
-      <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto" />
+      <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" width="250" height="72" style="height:72px;width:auto" />
     </a>
 
     <nav class="hidden lg:flex items-center gap-0.5">
@@ -548,11 +565,11 @@
 <!-- ════════════════════════════════════════
      HERO
 ════════════════════════════════════════ -->
-<section class="hero-bg grain relative overflow-hidden" style="padding-top:140px;padding-bottom:80px">
+<section id="main-content" class="hero-bg grain relative overflow-hidden" style="padding-top:140px;padding-bottom:80px">
   <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center relative" style="z-index:3">
     <!-- Breadcrumb -->
     <nav aria-label="Breadcrumb" style="margin-bottom:1.5rem">
-      <ol class="flex items-center justify-center gap-2" style="font-size:0.78rem;color:rgba(195,215,245,0.45)">
+      <ol class="flex items-center justify-center gap-2" style="font-size:0.78rem;color:rgba(195,215,245,0.65)">
         <li><a href="/" style="color:rgba(195,215,245,0.55);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Home</a></li>
         <li><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="opacity:0.4"><polyline points="9 18 15 12 9 6"/></svg></li>
         <li style="color:rgba(195,215,245,0.7)">Fördermittel Vergleich</li>
@@ -568,6 +585,7 @@
     <p style="font-size:1.05rem;color:rgba(195,215,245,0.65);max-width:640px;margin:0 auto 2.5rem;font-weight:400;line-height:1.75">
       Forschungszulage, ZIM, KMU-innovativ und mehr: Finden Sie die optimale Förderung für Ihre Forschungs- und Entwicklungsprojekte.
     </p>
+    <p class="text-sm" style="color:#94a3b8">Stand: März 2026 · Von NOVARIS Consulting – FZulG-Experten</p>
 
     <div class="flex flex-wrap justify-center gap-4">
       <a href="#vergleichstabelle" class="btn-primary">
@@ -1042,7 +1060,18 @@
     </div>
 
     <div class="flex flex-col gap-3">
-      <!-- FAQ 1 -->
+      
+    <!-- Internal Links -->
+    <div style="background:#f0f5ff;border:1px solid #dde5f4;border-radius:12px;padding:1.5rem 2rem;margin:2rem 0">
+      <p style="font-weight:600;color:#0D1B3E;margin-bottom:0.75rem;font-size:0.95rem">Weiterführende Artikel</p>
+      <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.5rem;font-size:0.9rem">
+          <li><a href="/forschungszulage.html" style="color:#1E56B5;text-decoration:underline;text-underline-offset:2px">Forschungszulage im Detail</a></li>
+          <li><a href="/forschungszulage-antrag.html" style="color:#1E56B5;text-decoration:underline;text-underline-offset:2px">Forschungszulage Antrag</a></li>
+          <li><a href="/forschungszulage-rechner.html" style="color:#1E56B5;text-decoration:underline;text-underline-offset:2px">FZulG-Rechner</a></li>
+      </ul>
+    </div>
+
+    <!-- FAQ 1 -->
       <div class="faq-wrap">
         <button class="faq-btn" onclick="toggleFaq(this)" aria-expanded="false">
           <span>Kann ich Forschungszulage und ZIM gleichzeitig beantragen?</span>
@@ -1176,19 +1205,19 @@
       <div>
         <div style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.75rem;letter-spacing:0.09em;text-transform:uppercase;color:rgba(195,215,245,0.3);margin-bottom:1rem">Navigation</div>
         <div style="display:flex;flex-direction:column;gap:0.55rem">
-          <a href="/" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Home</a>
-          <a href="/forschungszulage.html" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Forschungszulage</a>
-          <a href="/forschungszulage-rechner.html" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Rechner</a>
-          <a href="/foerdermittel-vergleich.html" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Fördermittel Vergleich</a>
-          <a href="/#kontakt" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Kontakt</a>
+          <a href="/" style="font-size:0.82rem;color:rgba(195,215,245,0.65);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Home</a>
+          <a href="/forschungszulage.html" style="font-size:0.82rem;color:rgba(195,215,245,0.65);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Forschungszulage</a>
+          <a href="/forschungszulage-rechner.html" style="font-size:0.82rem;color:rgba(195,215,245,0.65);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Rechner</a>
+          <a href="/foerdermittel-vergleich.html" style="font-size:0.82rem;color:rgba(195,215,245,0.65);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Fördermittel Vergleich</a>
+          <a href="/#kontakt" style="font-size:0.82rem;color:rgba(195,215,245,0.65);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Kontakt</a>
         </div>
       </div>
       <div>
         <div style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.75rem;letter-spacing:0.09em;text-transform:uppercase;color:rgba(195,215,245,0.3);margin-bottom:1rem">Rechtliches</div>
         <div style="display:flex;flex-direction:column;gap:0.55rem">
-          <a href="/impressum.html" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Impressum</a>
-          <a href="/datenschutz.html" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Datenschutz</a>
-          <a href="/agb.html" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">AGB</a>
+          <a href="/impressum.html" style="font-size:0.82rem;color:rgba(195,215,245,0.65);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Impressum</a>
+          <a href="/datenschutz.html" style="font-size:0.82rem;color:rgba(195,215,245,0.65);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Datenschutz</a>
+          <a href="/agb.html" style="font-size:0.82rem;color:rgba(195,215,245,0.65);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">AGB</a>
         </div>
       </div>
     </div>

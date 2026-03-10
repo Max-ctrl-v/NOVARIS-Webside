@@ -27,11 +27,12 @@
     <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/styles.min.css">
+  <link rel="preload" href="https://fonts.gstatic.com/s/montserrat/v29/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hiA.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <script>tailwind.config={theme:{extend:{fontFamily:{display:['Montserrat','sans-serif'],body:['Inter','sans-serif']}}}};</script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/cookie-consent.css" />
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -121,14 +122,43 @@
 {"@type":"Question","name":"Wie werden Dual-Use-Projekte behandelt?","acceptedAnswer":{"@type":"Answer","text":"Bei Dual-Use-Projekten sind die zivilen F&E-Anteile voll förderfähig. Militärische Anteile müssen klar abgegrenzt werden. Eine saubere Kostentrennung und Dokumentation ist Voraussetzung für die Antragstellung."}}
 ]}
   </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Startseite", "item": "https://novaris-consulting.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Branchen", "item": "https://novaris-consulting.com/#branchen"},
+    {"@type": "ListItem", "position": 3, "name": "Luft- & Raumfahrt", "item": "https://novaris-consulting.com/branchen/luft-raumfahrt.html"}
+  ]
+}
+  </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Forschungszulage Luft- & Raumfahrt 2026 | NOVARIS Consulting",
+  "description": "Luft- und Raumfahrtunternehmen erhalten bis zu 25 % ihrer F&E-Kosten zurück. NOVARIS zeigt, welche Projekte in Antriebssystemen, Leichtbau und Avionik förderfähig sind.",
+  "author": {"@type": "Organization", "name": "NOVARIS Consulting", "url": "https://novaris-consulting.com"},
+  "publisher": {"@type": "Organization", "name": "NOVARIS Consulting", "logo": {"@type": "ImageObject", "url": "https://novaris-consulting.com/brand_assets/og-image.png"}},
+  "image": {"@type": "ImageObject", "url": "https://novaris-consulting.com/brand_assets/og-image.png", "width": 1200, "height": 630},
+  "datePublished": "2026-02-01",
+  "dateModified": "2026-03-10",
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://novaris-consulting.com/branchen/luft-raumfahrt.html"}
+}
+  </script>
 </head>
 <body>
+<a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[9999] focus:bg-white focus:text-[#1E56B5] focus:px-4 focus:py-2 focus:rounded-lg focus:shadow-lg focus:font-semibold">Zum Inhalt springen</a>
+
 
 <!-- NAV -->
 <header id="nav" class="fixed inset-x-0 top-0 z-50 nav-blur" style="background:rgba(4,9,26,0.85);border-bottom:1px solid rgba(255,255,255,0.07)">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between gap-4" style="height:68px">
     <a href="../" aria-label="NOVARIS Consulting" class="hover:opacity-90" style="text-decoration:none;flex-shrink:0;display:flex;align-items:center;transition:opacity 0.15s ease">
-      <img src="../brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto" />
+      <img src="../brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto" width="180" height="72" />
     </a>
     <nav class="hidden lg:flex items-center gap-0.5">
       <a href="../index.html#was-ist-fzulg" class="nav-link" data-t="nav-fzulg">Das FZulG</a>
@@ -271,6 +301,10 @@
   </div>
 </section>
 
+<div class="max-w-5xl mx-auto px-4 sm:px-6" style="padding-top:80px">
+  <p class="text-sm" style="color:#94a3b8">Stand: März 2026 · Von NOVARIS Consulting – FZulG-Experten</p>
+</div>
+
 <!-- PROJECTS -->
 <section class="bg-white py-20 sm:py-28">
   <div class="max-w-7xl mx-auto px-4 sm:px-6">
@@ -384,29 +418,121 @@
   </div>
 </section>
 
+
+<!-- CHALLENGES -->
+<section class="bg-white py-16 sm:py-20">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-10 reveal">
+      <div class="badge mb-4">Herausforderungen</div>
+      <h2 class="text-2xl sm:text-3xl font-black" style="color:#0D1B3E">Häufige Herausforderungen bei Luft- & Raumfahrt FZulG-Anträgen</h2>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:1.5rem" class="reveal" style="transition-delay:0.05s">
+      <div style="background:var(--bg-card);border:1px solid rgba(30,86,181,0.09);border-radius:16px;padding:1.5rem 1.75rem;box-shadow:0 2px 12px rgba(30,86,181,0.06)">
+        <div style="display:flex;align-items:flex-start;gap:0.85rem">
+          <div class="check-dot" style="background:linear-gradient(135deg,#E8A317,#F5C842);margin-top:2px;flex-shrink:0"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01"/></svg></div>
+          <div>
+            <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.95rem;color:#0D1B3E;margin-bottom:0.4rem">Geheimhaltungspflichten und BSFZ-Nachweise</h3>
+            <p style="font-size:0.85rem;color:#5a6e8c;line-height:1.72">In der Luft- und Raumfahrt unterliegen viele Projekte Geheimhaltungsklauseln (ITAR, EAR, VS-NfD). Die BSFZ-Bescheinigung erfordert jedoch detaillierte technische Beschreibungen. NOVARIS kennt die Möglichkeiten, F&E-Inhalte BSFZ-konform darzustellen, ohne Exportkontrollvorschriften zu verletzen. Lesen Sie unseren <a href="/forschungszulage.html" style="color:#1E56B5;text-decoration:underline">FZulG-Leitfaden</a> für Details.</p>
+          </div>
+        </div>
+      </div>
+      <div style="background:var(--bg-card);border:1px solid rgba(30,86,181,0.09);border-radius:16px;padding:1.5rem 1.75rem;box-shadow:0 2px 12px rgba(30,86,181,0.06)">
+        <div style="display:flex;align-items:flex-start;gap:0.85rem">
+          <div class="check-dot" style="background:linear-gradient(135deg,#E8A317,#F5C842);margin-top:2px;flex-shrink:0"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01"/></svg></div>
+          <div>
+            <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.95rem;color:#0D1B3E;margin-bottom:0.4rem">Qualifikationstests vs. experimentelle Entwicklung</h3>
+            <p style="font-size:0.85rem;color:#5a6e8c;line-height:1.72">Umweltqualifikationstests (Vibration, Thermal Vacuum, EMV) sind nicht automatisch F&E. Nur wenn die Tests Teil eines experimentellen Entwicklungsvorhabens sind und technische Unsicherheiten bestehen, sind sie förderfähig. Die Abgrenzung erfordert Erfahrung – unser <a href="/forschungszulage-antrag.html" style="color:#1E56B5;text-decoration:underline">Antragsservice</a> unterstützt Sie.</p>
+          </div>
+        </div>
+      </div>
+      <div style="background:var(--bg-card);border:1px solid rgba(30,86,181,0.09);border-radius:16px;padding:1.5rem 1.75rem;box-shadow:0 2px 12px rgba(30,86,181,0.06)">
+        <div style="display:flex;align-items:flex-start;gap:0.85rem">
+          <div class="check-dot" style="background:linear-gradient(135deg,#E8A317,#F5C842);margin-top:2px;flex-shrink:0"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01"/></svg></div>
+          <div>
+            <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.95rem;color:#0D1B3E;margin-bottom:0.4rem">DO-178C/DO-254 Entwicklung als förderfähige F&E</h3>
+            <p style="font-size:0.85rem;color:#5a6e8c;line-height:1.72">Die Entwicklung sicherheitskritischer Software (DO-178C) und Hardware (DO-254) nach Luftfahrtstandards kann als F&E gelten, wenn dabei technische Neuheiten entstehen. Reine Zertifizierungsarbeiten nach etablierten Methoden sind hingegen nicht förderfähig. Ähnliche Abgrenzungen kennt die <a href="/branchen/automotive.html" style="color:#1E56B5;text-decoration:underline">Automotive-Branche</a>.</p>
+          </div>
+        </div>
+      </div>
+      <div style="background:var(--bg-card);border:1px solid rgba(30,86,181,0.09);border-radius:16px;padding:1.5rem 1.75rem;box-shadow:0 2px 12px rgba(30,86,181,0.06)">
+        <div style="display:flex;align-items:flex-start;gap:0.85rem">
+          <div class="check-dot" style="background:linear-gradient(135deg,#E8A317,#F5C842);margin-top:2px;flex-shrink:0"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01"/></svg></div>
+          <div>
+            <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.95rem;color:#0D1B3E;margin-bottom:0.4rem">Additive Fertigung und neue Leichtbauwerkstoffe</h3>
+            <p style="font-size:0.85rem;color:#5a6e8c;line-height:1.72">Die Erforschung neuer AM-Prozesse für Titanlegierungen oder die Entwicklung neuartiger Faserverbundstrukturen ist typischerweise förderfähig. Auch im <a href="/branchen/maschinenbau.html" style="color:#1E56B5;text-decoration:underline">Maschinenbau</a> sind solche Materialinnovationen häufig. Kalkulieren Sie Ihr Förderpotenzial mit unserem <a href="/forschungszulage-rechner.html" style="color:#1E56B5;text-decoration:underline">Rechner</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- DEEP-DIVE -->
+<section class="bg-tinted py-16 sm:py-20">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6">
+    <div class="reveal">
+      <div class="badge mb-4">Branchenwissen</div>
+      <h2 class="text-2xl sm:text-3xl font-black mb-6" style="color:#0D1B3E">Forschungszulage in der Luft- und Raumfahrt: Was Sie wissen müssen</h2>
+
+      <div style="font-size:0.92rem;color:#374151;line-height:1.85">
+        <p style="margin-bottom:1.25rem">Die Luft- und Raumfahrtindustrie ist eine der forschungsintensivsten Branchen überhaupt. Entwicklungen an Triebwerkskomponenten, Faserverbundstrukturen, Avionik-Systemen oder satellitengestützter Kommunikation erfüllen in der Regel die Voraussetzungen der <a href="/forschungszulage.html" style="color:#1E56B5;text-decoration:underline;text-underline-offset:2px">Forschungszulage nach FZulG</a>. Besonders die experimentelle Entwicklung – also Arbeiten, die systematisch auf technischer Neuheit aufbauen und Unsicherheiten überwinden – ist in dieser Branche der Regelfall. Von CFD-Simulationen über Materialerprobung bis hin zu Zertifizierungstests: Der Innovationsgrad ist hoch und die Förderberechtigung entsprechend wahrscheinlich.</p>
+
+        <p style="margin-bottom:1.25rem">Relevante Kostenkategorien umfassen vor allem hochqualifiziertes Personal wie Berechnungsingenieure, Versuchstechniker und Systemarchitekten. Dazu kommen Kosten für Prüfstandsversuche, Materialproben und Simulationslizenzen. Seit der Erweiterung des FZulG können nun auch <a href="/forschungszulage-sachkosten.html" style="color:#1E56B5;text-decoration:underline;text-underline-offset:2px">Sachkosten und Investitionen</a> anteilig berücksichtigt werden – ein wesentlicher Vorteil für Aerospace-Unternehmen mit kapitalintensiven Testprogrammen. Nutzen Sie den <a href="/forschungszulage-rechner.html" style="color:#1E56B5;text-decoration:underline;text-underline-offset:2px">Forschungszulage-Rechner</a>, um Ihre mögliche Erstattung vorab zu berechnen.</p>
+
+        <p style="margin-bottom:1.25rem">Die Dokumentationsanforderungen in der Luft- und Raumfahrt sind anspruchsvoll, aber die Branche ist es gewohnt, strukturiert zu arbeiten. Für den <a href="/forschungszulage-antrag.html" style="color:#1E56B5;text-decoration:underline;text-underline-offset:2px">BSFZ-Antrag</a> ist entscheidend, dass Sie technische Neuheit und Unsicherheit klar belegen. Nutzen Sie vorhandene Design-Reviews, TRL-Bewertungen und Testprotokolle als Nachweise. Achten Sie darauf, F&E-Anteile innerhalb größerer Entwicklungsprogramme sauber von Serienvorbereitung und Routinetätigkeiten abzugrenzen.</p>
+
+        <p>NOVARIS hat Aerospace-Unternehmen aller Größen begleitet – vom spezialisierten Zulieferer über MRO-Betriebe bis zu Systemhäusern. Wir kennen die Besonderheiten von DO-178C-konformer Softwareentwicklung, NADCAP-relevanten Fertigungsverfahren und ESA-Technologieprogrammen. Unsere Branchenexpertise erstreckt sich auch auf Schnittstellen zum <a href="/branchen/automotive.html" style="color:#1E56B5;text-decoration:underline;text-underline-offset:2px">Automotive-Bereich</a> und zur <a href="/branchen/medizintechnik.html" style="color:#1E56B5;text-decoration:underline;text-underline-offset:2px">Medizintechnik</a>, wo ähnliche Zertifizierungsanforderungen gelten.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- FAQ -->
 <section class="bg-white py-16 sm:py-20">
   <div class="max-w-3xl mx-auto px-4 sm:px-6">
     <div class="text-center mb-10 reveal"><div class="badge mb-4" data-t="faq-badge">FAQ</div><h2 class="text-2xl sm:text-3xl font-black" data-t="faq-h2" style="color:#0D1B3E">Häufige Fragen</h2></div>
     <div class="reveal" style="transition-delay:0.05s">
       <div class="faq-wrap">
-        <button class="faq-btn" onclick="toggleFaq(this)"><span data-t="faq1-q">Sind Dual-Use-Entwicklungen (zivil &amp; militärisch) nach FZulG förderfähig?</span><span class="faq-icon">+</span></button>
+        <button class="faq-btn" aria-expanded="false" onclick="toggleFaq(this)"><span data-t="faq1-q">Sind Dual-Use-Entwicklungen (zivil &amp; militärisch) nach FZulG förderfähig?</span><span class="faq-icon">+</span></button>
         <div class="faq-body"><div data-t="faq1-a" class="faq-content">Dual-Use-Technologien sind nicht grundsätzlich ausgeschlossen. Das FZulG fördert F&amp;E unabhängig vom späteren Einsatzbereich, sofern ein ziviler Verwendungszweck vorliegt. Bei gemischt genutzten Projekten empfiehlt sich eine klare Dokumentation des zivilen Anteils. Rein militärische F&amp;E ohne zivile Anwendungsperspektive ist von der Förderung ausgenommen.</div></div>
       </div>
     </div>
     <div class="reveal" style="transition-delay:0.1s">
       <div class="faq-wrap">
-        <button class="faq-btn" onclick="toggleFaq(this)"><span data-t="faq2-q">Können ESA- oder CleanSky-geförderte Projekte zusätzlich FZulG erhalten?</span><span class="faq-icon">+</span></button>
+        <button class="faq-btn" aria-expanded="false" onclick="toggleFaq(this)"><span data-t="faq2-q">Können ESA- oder CleanSky-geförderte Projekte zusätzlich FZulG erhalten?</span><span class="faq-icon">+</span></button>
         <div class="faq-body"><div data-t="faq2-a" class="faq-content">Eine Kombination ist möglich, sofern keine Doppelförderung derselben Personalkosten entsteht. ESA-Verträge vergüten in der Regel Personalkosten direkt – diese Kosten können nicht zusätzlich als FZulG-Bemessungsgrundlage geltend gemacht werden. Kosten, die nicht durch ESA-Mittel gedeckt sind, sowie Eigenleistungen über das ESA-Projekt hinaus können jedoch sehr wohl förderfähig sein.</div></div>
       </div>
     </div>
     <div class="reveal" style="transition-delay:0.15s">
       <div class="faq-wrap">
-        <button class="faq-btn" onclick="toggleFaq(this)"><span data-t="faq3-q">Ist EASA-Zertifizierungsarbeit (DO-178C, CS-25) als F&amp;E förderfähig?</span><span class="faq-icon">+</span></button>
+        <button class="faq-btn" aria-expanded="false" onclick="toggleFaq(this)"><span data-t="faq3-q">Ist EASA-Zertifizierungsarbeit (DO-178C, CS-25) als F&amp;E förderfähig?</span><span class="faq-icon">+</span></button>
         <div class="faq-body"><div data-t="faq3-a" class="faq-content">Reine Compliance-Nachweisführung für Zertifizierungszwecke ist nicht förderfähig. Jedoch ist die vorgelagerte Entwicklungs- und Verifikationsphase, in der neue technische Lösungen erarbeitet werden, klar förderfähig. NOVARIS grenzt den F&amp;E-Anteil sauber von der Zertifizierungsarbeit ab und maximiert so die förderfähige Bemessungsgrundlage.</div></div>
       </div>
     </div>
   </div>
+    <div class="reveal" style="transition-delay:0.2s">
+      <div class="faq-wrap">
+        <button class="faq-btn" aria-expanded="false" onclick="toggleFaq(this)">
+          <span>Sind Drohnen- und UAV-Entwicklungsprojekte förderfähig?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-body">
+          <div class="faq-content">Ja, die Entwicklung unbemannter Luftfahrzeuge (UAVs/Drohnen) ist ein wachsendes F&E-Feld. Neue Flugsteuerungsalgorithmen, Sensorintegration, autonome Navigation und innovative Antriebskonzepte sind typischerweise förderfähig. Auch die Entwicklung von Sense-and-Avoid-Systemen oder UTM-Integration (Unmanned Traffic Management) qualifiziert sich regelmäßig.</div>
+        </div>
+      </div>
+    </div>
+    <div class="reveal" style="transition-delay:0.2s">
+      <div class="faq-wrap">
+        <button class="faq-btn" aria-expanded="false" onclick="toggleFaq(this)">
+          <span>Können Raumfahrt-Projekte für Kleinsatelliten die Forschungszulage nutzen?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-body">
+          <div class="faq-content">Ja, die Entwicklung von CubeSats, Mikrosatelliten und zugehörigen Subsystemen ist typischerweise voll förderfähig. Neue Kommunikationsnutzlasten, miniaturisierte Sensorik oder innovative Lageregelungssysteme überwinden regelmäßig technische Unsicherheiten. Auch die Entwicklung von Bodensegment-Software kann als F&E gelten.</div>
+        </div>
+      </div>
+    </div>
 </section>
 
 
@@ -445,15 +571,15 @@
 <!-- FOOTER -->
 <footer style="background:#04091a;border-top:1px solid rgba(255,255,255,0.07);padding:2.5rem 0">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-    <a href="../" style="text-decoration:none;display:flex;align-items:center"><img src="../brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:52px;width:auto" /></a>
+    <a href="../" style="text-decoration:none;display:flex;align-items:center"><img src="../brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:52px;width:auto" width="130" height="52" /></a>
     <div style="display:flex;gap:1.5rem;flex-wrap:wrap;justify-content:center">
-      <a href="../index.html#was-ist-fzulg" data-t="footer-fzulg" style="color:rgba(195,215,245,0.45);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.45)'">Das FZulG</a>
-      <a href="../index.html#branchen" data-t="footer-branchen" style="color:rgba(195,215,245,0.45);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.45)'">Branchen</a>
-      <a href="../index.html#prozess" data-t="footer-prozess" style="color:rgba(195,215,245,0.45);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.45)'">Prozess</a>
-      <a href="../index.html#kontakt" data-t="footer-kontakt" style="color:rgba(195,215,245,0.45);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.45)'">Kontakt</a>
-      <a href="../impressum.html" style="color:rgba(195,215,245,0.45);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.45)'">Impressum</a>
-      <a href="../datenschutz.html" style="color:rgba(195,215,245,0.45);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.45)'" data-t="footer-datenschutz">Datenschutz</a>
-      <a href="javascript:void(0)" onclick="CookieConsent.reset();CookieConsent.request(function(){});" style="color:rgba(195,215,245,0.45);font-size:0.82rem;text-decoration:none;transition:color 0.15s" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.45)'" data-t="foot.cookies">Cookie-Einstellungen</a>
+      <a href="../index.html#was-ist-fzulg" data-t="footer-fzulg" style="color:rgba(195,215,245,0.65);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.65)'">Das FZulG</a>
+      <a href="../index.html#branchen" data-t="footer-branchen" style="color:rgba(195,215,245,0.65);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.65)'">Branchen</a>
+      <a href="../index.html#prozess" data-t="footer-prozess" style="color:rgba(195,215,245,0.65);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.65)'">Prozess</a>
+      <a href="../index.html#kontakt" data-t="footer-kontakt" style="color:rgba(195,215,245,0.65);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.65)'">Kontakt</a>
+      <a href="../impressum.html" style="color:rgba(195,215,245,0.65);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.65)'">Impressum</a>
+      <a href="../datenschutz.html" style="color:rgba(195,215,245,0.65);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.65)'" data-t="footer-datenschutz">Datenschutz</a>
+      <a href="javascript:void(0)" onclick="CookieConsent.reset();CookieConsent.request(function(){});" style="color:rgba(195,215,245,0.65);font-size:0.82rem;text-decoration:none;transition:color 0.15s" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.65)'" data-t="foot.cookies">Cookie-Einstellungen</a>
     </div>
     <p style="color:rgba(195,215,245,0.28);font-size:0.75rem">© 2026 NOVARIS Consulting GmbH</p>
   </div>
@@ -579,10 +705,10 @@
   function _updateDarkBtn(){var dark=document.documentElement.classList.contains('dark');var moon=document.getElementById('icon-moon');var sun=document.getElementById('icon-sun');var moonM=document.getElementById('icon-moon-mob');var sunM=document.getElementById('icon-sun-mob');if(moon)moon.style.display=dark?'none':'block';if(sun)sun.style.display=dark?'block':'none';if(moonM)moonM.style.display=dark?'none':'block';if(sunM)sunM.style.display=dark?'block':'none';}
   window.addEventListener('DOMContentLoaded',_updateDarkBtn);
   function toggleMob(){var m=document.getElementById('mob-menu');var open=m.classList.toggle('open');document.getElementById('ham-btn').setAttribute('aria-expanded',open)}document.querySelectorAll('.nav-dropdown-wrap').forEach(function(w){var t=w.querySelector('.nav-dropdown-trigger');if(!t)return;w.addEventListener('mouseenter',function(){t.setAttribute('aria-expanded','true')});w.addEventListener('mouseleave',function(){t.setAttribute('aria-expanded','false')})})
-  function toggleFaq(btn){var wrap=btn.closest('.faq-wrap');wrap.classList.toggle('open')}
+  function toggleFaq(btn){var wrap=btn.closest('.faq-wrap');wrap.classList.toggle('open');btn.setAttribute('aria-expanded',wrap.classList.contains('open'))}
   (function(){var els=document.querySelectorAll('.reveal');var io=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}});},{threshold:0.1});els.forEach(function(el){if(el.getBoundingClientRect().top<window.innerHeight){el.classList.add('visible')}else{io.observe(el)}});})();
 </script>
-<script src="/scroll-animations.js"></script>
+<script src="/scroll-animations.js" defer></script>
 <script src="/cookie-consent.js" defer></script>
 </body>
 </html>

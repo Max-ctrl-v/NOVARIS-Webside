@@ -60,6 +60,12 @@
   {
     "@context": "https://schema.org",
     "@type": "Article",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://novaris-consulting.com/brand_assets/og-image.png",
+      "width": 1200,
+      "height": 630
+    },
     "headline": "R&D Tax Credit 2026: All Changes and Updates at a Glance",
     "description": "The key changes to the R&D Tax Credit 2026: 35% SME bonus, EUR 12M assessment basis, 20% overhead surcharge.",
     "author": {
@@ -77,7 +83,7 @@
       }
     },
     "datePublished": "2026-03-06",
-    "dateModified": "2026-03-06",
+    "dateModified": "2026-03-10",
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https://novaris-consulting.com/forschungszulage-2026.html"
@@ -135,49 +141,18 @@
     ]
   }
   </script>
+  <link rel="preload" href="https://fonts.gstatic.com/s/montserrat/v29/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hiA.woff2" as="font" type="font/woff2" crossorigin>
+
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            display: ['Montserrat', 'sans-serif'],
-            body:    ['Inter', 'sans-serif'],
-          },
-          colors: {
-            navy: {
-              950: '#04091a',
-              900: '#0D1B3E',
-              800: '#122244',
-              700: '#1A3462',
-              600: '#1E4080',
-              500: '#1E56B5',
-              400: '#3A7FD4',
-              300: '#4DAEE5',
-              200: '#7ECEF5',
-              100: '#C2E8FB',
-              50:  '#EBF6FE',
-            },
-            surface: {
-              base:     '#ffffff',
-              raised:   '#f5f8fe',
-              elevated: '#edf2fb',
-              floating: '#ffffff',
-              border:   '#dde5f4',
-            },
-          },
-        },
-      },
-    };
-  </script>
-  <style>
+  <link rel="stylesheet" href="/styles.min.css">
+<style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; font-size: 16px; overflow-y: scroll; }
     body {
@@ -457,15 +432,18 @@
   <script src="/page-transition.js" defer></script>
 </head>
 <body>
+<a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[9999] focus:bg-white focus:text-[#1E56B5] focus:px-4 focus:py-2 focus:rounded-lg focus:shadow-lg focus:font-semibold">Skip to content</a>
 
 <!-- ═══════════════════════ NAV ═══════════════════════ -->
+<p class="text-sm" style="color:#94a3b8">Updated: March 2026 &middot; By NOVARIS Consulting &ndash; FZulG Experts</p>
+
 <header id="nav" class="fixed inset-x-0 top-0 z-50 nav-blur"
         style="background:rgba(4,9,26,0.88);border-bottom:1px solid rgba(255,255,255,0.07)">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between gap-4" style="height:68px">
     <a href="/en/" aria-label="NOVARIS Consulting"
        style="text-decoration:none;flex-shrink:0;display:flex;align-items:center;transition:opacity 0.15s ease"
        class="hover:opacity-90 focus-visible:outline-none">
-      <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto" />
+      <img width="180" height="72" src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto" />
     </a>
     <nav class="hidden lg:flex items-center gap-0.5">
       <a href="/en/#r-and-d-tax-credit" class="nav-link">The R&D Tax Credit</a>
@@ -513,6 +491,8 @@
     <p style="font-size:1.1rem;color:rgba(195,215,245,0.72);line-height:1.75;max-width:640px;margin-bottom:2.5rem">
       The key changes at a glance: higher SME bonus, increased assessment basis, and new overhead surcharge.
     </p>
+    <p class="text-sm text-gray-500">By NOVARIS Consulting – FZulG Experts</p>
+    <p class="text-sm text-gray-500 mt-2">Last updated: March 2026</p>
 
     <div style="display:flex;flex-wrap:wrap;gap:1rem">
       <a href="/en/#contact" class="btn-primary" style="padding:0.95rem 2.2rem">
@@ -526,7 +506,7 @@
   </div>
 </section>
 
-<main>
+<main id="main-content">
 
 <!-- ═══════════════════════ SECTION 1: KEY CHANGES ═══════════════════════ -->
 <section style="padding:5rem 0" class="bg-tinted">
@@ -904,6 +884,84 @@
   </div>
 </section>
 
+<!-- ═══════════════════════ SECTION 5b: DETAILED 2026 CHANGES ═══════════════════════ -->
+<section style="padding:5rem 0">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6">
+    <div style="text-align:center;margin-bottom:3.5rem">
+      <div class="badge" style="margin-bottom:1rem">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        Details
+      </div>
+      <h2 style="font-family:'Montserrat',sans-serif;font-size:clamp(1.4rem,3vw,2rem);font-weight:800;letter-spacing:-0.03em;color:#0D1B3E;margin-bottom:0.75rem">
+        New Regulations from 2026 in Detail
+      </h2>
+      <p style="font-size:0.95rem;color:#5a6e8c;max-width:620px;margin:0 auto;line-height:1.75">
+        The Growth Opportunities Act and subsequent adjustments have fundamentally reformed the research allowance. Here is what the changes mean specifically for your company.
+      </p>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:2.5rem">
+
+      <div style="padding:2rem;background:#fff;border:1px solid #dde5f4;border-radius:14px">
+        <h3 style="font-family:'Montserrat',sans-serif;font-size:1.1rem;font-weight:700;color:#0D1B3E;margin-bottom:1rem;letter-spacing:-0.01em">
+          Increased Assessment Base: From EUR 4 Million to EUR 12 Million
+        </h3>
+        <p style="font-size:0.9rem;color:#5a6e8c;line-height:1.75;margin-bottom:0.85rem">
+          The most significant change concerns the maximum assessment base. While companies could only claim eligible expenditures up to EUR 4 million per fiscal year until 2023, this amount was <strong style="color:#0D1B3E">tripled to EUR 12 million</strong> under the Growth Opportunities Act. This increase applies retroactively from fiscal year 2024.
+        </p>
+        <p style="font-size:0.9rem;color:#5a6e8c;line-height:1.75;margin-bottom:0.85rem">
+          For companies with extensive R&D activities, this represents an enormous difference: At a funding rate of 25%, the maximum research allowance increases from EUR 1 million to EUR 3 million. SMEs with the increased rate of 35% can receive up to <strong style="color:#0D1B3E">EUR 4.2 million</strong> per fiscal year.
+        </p>
+        <p style="font-size:0.9rem;color:#5a6e8c;line-height:1.75">
+          Important note: For <a href="/en/forschungszulage-auftragsforschung.html" style="color:#4DAEE5;text-decoration:none">contract research</a>, only 60% of costs remain eligible. The assessment base is calculated from eligible personnel costs plus 60% of contract research costs, capped at EUR 12 million in total.
+        </p>
+      </div>
+
+      <div style="padding:2rem;background:#fff;border:1px solid #dde5f4;border-radius:14px">
+        <h3 style="font-family:'Montserrat',sans-serif;font-size:1.1rem;font-weight:700;color:#0D1B3E;margin-bottom:1rem;letter-spacing:-0.01em">
+          SME Bonus: 35% Instead of 25% Funding Rate
+        </h3>
+        <p style="font-size:0.9rem;color:#5a6e8c;line-height:1.75;margin-bottom:0.85rem">
+          Small and medium-sized enterprises (SMEs) have benefited from an increased funding rate of <strong style="color:#0D1B3E">35% instead of the standard 25%</strong> since the Growth Opportunities Act. The SME definition follows EU Recommendation 2003/361/EC: fewer than 250 employees and either a maximum annual turnover of EUR 50 million or a maximum annual balance sheet total of EUR 43 million.
+        </p>
+        <p style="font-size:0.9rem;color:#5a6e8c;line-height:1.75;margin-bottom:0.85rem">
+          In practice, the SME bonus means a <strong style="color:#0D1B3E">40% increase in funding</strong> with identical R&D expenditures. An SME with EUR 500,000 in eligible personnel costs now receives EUR 175,000 instead of EUR 125,000. Use our <a href="/en/forschungszulage-rechner.html" style="color:#4DAEE5;text-decoration:none">research allowance calculator</a> to compute your individual funding.
+        </p>
+      </div>
+
+      <div style="padding:2rem;background:#fff;border:1px solid #dde5f4;border-radius:14px">
+        <h3 style="font-family:'Montserrat',sans-serif;font-size:1.1rem;font-weight:700;color:#0D1B3E;margin-bottom:1rem;letter-spacing:-0.01em">
+          When Do the Changes Take Effect?
+        </h3>
+        <p style="font-size:0.9rem;color:#5a6e8c;line-height:1.75;margin-bottom:0.85rem">
+          The reforms were implemented in stages. The Growth Opportunities Act, passed by the Bundesrat on March 22, 2024, forms the legal basis:
+        </p>
+        <ul style="margin:0.5rem 0 0.85rem 1.1rem;display:flex;flex-direction:column;gap:0.5rem">
+          <li style="font-size:0.9rem;color:#5a6e8c;line-height:1.7"><strong style="color:#0D1B3E">From fiscal year 2024:</strong> Increase of the assessment base to EUR 12 million and introduction of the SME bonus (35%).</li>
+          <li style="font-size:0.9rem;color:#5a6e8c;line-height:1.7"><strong style="color:#0D1B3E">From fiscal year 2025:</strong> Introduction of the flat 20% overhead surcharge on eligible <a href="/en/forschungszulage-personalkosten.html" style="color:#4DAEE5;text-decoration:none">personnel costs</a>.</li>
+          <li style="font-size:0.9rem;color:#5a6e8c;line-height:1.7"><strong style="color:#0D1B3E">From 2026:</strong> All changes are fully effective. Companies can retroactively apply for fiscal years 2020-2025.</li>
+        </ul>
+      </div>
+
+      <div style="padding:2rem;background:#fff;border:1px solid #dde5f4;border-radius:14px">
+        <h3 style="font-family:'Montserrat',sans-serif;font-size:1.1rem;font-weight:700;color:#0D1B3E;margin-bottom:1rem;letter-spacing:-0.01em">
+          What Should Companies Do Now?
+        </h3>
+        <p style="font-size:0.9rem;color:#5a6e8c;line-height:1.75;margin-bottom:0.85rem">
+          To maximise the benefits of the improved research allowance conditions in 2026, companies should take the following steps:
+        </p>
+        <ol style="margin:0.5rem 0 0.85rem 1.1rem;display:flex;flex-direction:column;gap:0.5rem">
+          <li style="font-size:0.9rem;color:#5a6e8c;line-height:1.7"><strong style="color:#0D1B3E">Check retroactive claims:</strong> If you have not applied for the research allowance for 2020-2025, do so promptly before older tax years become final.</li>
+          <li style="font-size:0.9rem;color:#5a6e8c;line-height:1.7"><strong style="color:#0D1B3E">Clarify SME status:</strong> Verify whether your company meets the SME criteria for the increased 35% rate.</li>
+          <li style="font-size:0.9rem;color:#5a6e8c;line-height:1.7"><strong style="color:#0D1B3E">Optimise <a href="/en/forschungszulage-zeiterfassung.html" style="color:#4DAEE5;text-decoration:none">time tracking</a>:</strong> Proper documentation of R&D activities is the basis for calculating eligible personnel costs.</li>
+          <li style="font-size:0.9rem;color:#5a6e8c;line-height:1.7"><strong style="color:#0D1B3E">Seek expert advice:</strong> The <a href="/en/forschungszulage-antrag.html" style="color:#4DAEE5;text-decoration:none">application process</a> at the BSFZ requires precise presentation of technical novelty and scientific uncertainties.</li>
+          <li style="font-size:0.9rem;color:#5a6e8c;line-height:1.7"><strong style="color:#0D1B3E">Involve your <a href="/en/forschungszulage-steuerberater.html" style="color:#4DAEE5;text-decoration:none">tax advisor</a>:</strong> The research allowance is claimed through the tax return and must be properly <a href="/en/forschungszulage-buchen.html" style="color:#4DAEE5;text-decoration:none">accounted for</a>.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ═══════════════════════ SECTION 6: FAQ ═══════════════════════ -->
 <section style="padding:5rem 0">
   <div class="max-w-3xl mx-auto px-4 sm:px-6">
@@ -920,7 +978,7 @@
     <div class="card-z1" style="background:#fff;border-radius:16px;border:1px solid #dde5f4;padding:0 2rem;overflow:hidden">
       <!-- FAQ 1 -->
       <div class="faq-item">
-        <button class="faq-btn" onclick="this.parentElement.classList.toggle('open')">
+        <button class="faq-btn" aria-expanded="false" onclick="this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',this.parentElement.classList.contains('open'))" aria-expanded="false">
           When do the new rules apply?
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
         </button>
@@ -933,7 +991,7 @@
 
       <!-- FAQ 2 -->
       <div class="faq-item">
-        <button class="faq-btn" onclick="this.parentElement.classList.toggle('open')">
+        <button class="faq-btn" aria-expanded="false" onclick="this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',this.parentElement.classList.contains('open'))" aria-expanded="false">
           Can I retroactively apply for the 35% SME rate?
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
         </button>
@@ -946,7 +1004,7 @@
 
       <!-- FAQ 3 -->
       <div class="faq-item">
-        <button class="faq-btn" onclick="this.parentElement.classList.toggle('open')">
+        <button class="faq-btn" aria-expanded="false" onclick="this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',this.parentElement.classList.contains('open'))" aria-expanded="false">
           What counts as an SME under the FZulG?
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
         </button>
@@ -959,7 +1017,7 @@
 
       <!-- FAQ 4 -->
       <div class="faq-item">
-        <button class="faq-btn" onclick="this.parentElement.classList.toggle('open')">
+        <button class="faq-btn" aria-expanded="false" onclick="this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',this.parentElement.classList.contains('open'))" aria-expanded="false">
           How is the overhead surcharge calculated?
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
         </button>
@@ -972,7 +1030,7 @@
 
       <!-- FAQ 5 -->
       <div class="faq-item">
-        <button class="faq-btn" onclick="this.parentElement.classList.toggle('open')">
+        <button class="faq-btn" aria-expanded="false" onclick="this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',this.parentElement.classList.contains('open'))" aria-expanded="false">
           Can large enterprises also benefit from the SME bonus?
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
         </button>
@@ -1033,6 +1091,17 @@
   </div>
 </section>
 
+
+    <!-- internal-links-added -->
+    <div style="margin-top:2.5rem;margin-bottom:2rem;padding:1.5rem;background:#f5f8fe;border:1px solid #dde5f4;border-radius:12px">
+      <h3 style="font-family:'Montserrat',sans-serif;font-size:0.95rem;font-weight:700;color:#0D1B3E;margin-bottom:0.75rem">Related Articles</h3>
+      <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.5rem">
+      <li><a href="/en/forschungszulage.html" style="color:#4DAEE5;text-decoration:none;transition:color 0.14s ease">Complete Guide to the Research Allowance</a></li>
+      <li><a href="/en/forschungszulage-rechner.html" style="color:#4DAEE5;text-decoration:none;transition:color 0.14s ease">Calculate Your Funding</a></li>
+      <li><a href="/en/forschungszulage-personalkosten.html" style="color:#4DAEE5;text-decoration:none;transition:color 0.14s ease">Personnel Costs Guide</a></li>
+      <li><a href="/en/forschungszulage-hoehe.html" style="color:#4DAEE5;text-decoration:none;transition:color 0.14s ease">Funding Amount</a></li>
+      </ul>
+    </div>
 </main>
 
 <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
@@ -1040,8 +1109,8 @@
   <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12">
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
       <div class="lg:col-span-2">
-        <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto;margin-bottom:1rem" />
-        <p style="font-size:0.82rem;color:rgba(195,215,245,0.38);line-height:1.72;max-width:320px">
+        <img width="180" height="72" src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto;margin-bottom:1rem" />
+        <p style="font-size:0.82rem;color:rgba(195,215,245,0.55);line-height:1.72;max-width:320px">
           NOVARIS Consulting is your specialized full-service partner for the government
           R&D Tax Credit under the FZulG – success-based, transparent and risk-free.
         </p>
@@ -1049,20 +1118,20 @@
       <div>
         <div style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.75rem;letter-spacing:0.09em;text-transform:uppercase;color:rgba(195,215,245,0.3);margin-bottom:1rem">Navigation</div>
         <div style="display:flex;flex-direction:column;gap:0.55rem">
-          <a href="/en/#r-and-d-tax-credit" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">The R&D Tax Credit</a>
-          <a href="/en/#process"       style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Process</a>
-          <a href="/en/#benefits"      style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Benefits</a>
-          <a href="/en/#faq"           style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">FAQ</a>
-          <a href="/en/#contact"       style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Contact</a>
+          <a href="/en/#r-and-d-tax-credit" style="font-size:0.82rem;color:rgba(195,215,245,0.65);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">The R&D Tax Credit</a>
+          <a href="/en/#process"       style="font-size:0.82rem;color:rgba(195,215,245,0.65);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Process</a>
+          <a href="/en/#benefits"      style="font-size:0.82rem;color:rgba(195,215,245,0.65);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Benefits</a>
+          <a href="/en/#faq"           style="font-size:0.82rem;color:rgba(195,215,245,0.65);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">FAQ</a>
+          <a href="/en/#contact"       style="font-size:0.82rem;color:rgba(195,215,245,0.65);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Contact</a>
         </div>
       </div>
       <div>
         <div style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.75rem;letter-spacing:0.09em;text-transform:uppercase;color:rgba(195,215,245,0.3);margin-bottom:1rem">Legal</div>
         <div style="display:flex;flex-direction:column;gap:0.55rem">
-          <a href="/en/impressum.html"  style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Legal Notice</a>
-          <a href="/en/datenschutz.html" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Privacy Policy</a>
-          <a href="/en/agb.html"        style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Terms & Conditions</a>
-          <a href="javascript:void(0)" onclick="CookieConsent.reset();CookieConsent.request(function(){});" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Cookie Settings</a>
+          <a href="/en/impressum.html"  style="font-size:0.82rem;color:rgba(195,215,245,0.65);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Legal Notice</a>
+          <a href="/en/datenschutz.html" style="font-size:0.82rem;color:rgba(195,215,245,0.65);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Privacy Policy</a>
+          <a href="/en/agb.html"        style="font-size:0.82rem;color:rgba(195,215,245,0.65);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Terms & Conditions</a>
+          <a href="javascript:void(0)" onclick="CookieConsent.reset();CookieConsent.request(function(){});" style="font-size:0.82rem;color:rgba(195,215,245,0.65);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Cookie Settings</a>
         </div>
       </div>
     </div>

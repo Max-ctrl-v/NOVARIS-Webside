@@ -50,56 +50,33 @@
   }
   </script>
 
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Forschungszulage Erfolge: Praxisbeispiele aus der Beratung",
+    "description": "Wie Unternehmen aus Chemietechnik, Maschinenbau und Engineering bis zu 1,2 Mio. EUR Förderung gesichert haben.",
+    "author": {"@type": "Organization", "name": "NOVARIS Consulting", "url": "https://novaris-consulting.com"},
+    "publisher": {"@type": "Organization", "name": "NOVARIS Consulting", "logo": {"@type": "ImageObject", "url": "https://novaris-consulting.com/brand_assets/og-image.png"}},
+    "image": {"@type": "ImageObject", "url": "https://novaris-consulting.com/brand_assets/og-image.png", "width": 1200, "height": 630},
+    "datePublished": "2026-01-15",
+    "dateModified": "2026-03-10",
+    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://novaris-consulting.com/erfolge.html"}
+  }
+  </script>
+
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/cookie-consent.css" />
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            display: ['Montserrat', 'sans-serif'],
-            body:    ['Inter', 'sans-serif'],
-          },
-          colors: {
-            navy: {
-              950: '#04091a',
-              900: '#0D1B3E',
-              800: '#122244',
-              700: '#1A3462',
-              600: '#1E4080',
-              500: '#1E56B5',
-              400: '#3A7FD4',
-              300: '#4DAEE5',
-              200: '#7ECEF5',
-              100: '#C2E8FB',
-              50:  '#EBF6FE',
-            },
-            surface: {
-              base:     '#ffffff',
-              raised:   '#f5f8fe',
-              elevated: '#edf2fb',
-              floating: '#ffffff',
-              border:   '#dde5f4',
-            },
-          },
-          spacing: {
-            '18': '4.5rem',
-            '22': '5.5rem',
-            '26': '6.5rem',
-            '30': '7.5rem',
-          },
-        },
-      },
-    };
-  </script>
+  <link rel="stylesheet" href="/styles.min.css">
+  <link rel="preload" href="https://fonts.gstatic.com/s/montserrat/v29/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hiA.woff2" as="font" type="font/woff2" crossorigin>
 
-  <style>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/cookie-consent.css" />
+<style>
     /* ═══════════════════════════════════════
        RESET & BASE
     ═══════════════════════════════════════ */
@@ -230,7 +207,7 @@
     .lang-btn {
       padding: 0.28rem 0.62rem; border: none; background: transparent; cursor: pointer;
       font-family: 'Inter', sans-serif; font-size: 0.72rem; font-weight: 600;
-      color: rgba(195,215,245,0.45); transition: color 0.14s ease, background 0.14s ease;
+      color: rgba(195,215,245,0.65); transition: color 0.14s ease, background 0.14s ease;
     }
     .lang-btn:hover { color: rgba(195,215,245,0.8); }
     .lang-btn.active { color: #fff; background: rgba(255,255,255,0.12); }
@@ -424,6 +401,7 @@
   </style>
 </head>
 <body>
+<a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[9999] focus:bg-navy-500 focus:text-white focus:px-4 focus:py-2 focus:rounded-lg">Zum Inhalt springen</a>
 
 <!-- ══════════════════════════════════════════════
      NAV
@@ -435,7 +413,7 @@
     <a href="/" aria-label="NOVARIS Consulting"
        style="text-decoration:none;flex-shrink:0;display:flex;align-items:center;transition:opacity 0.15s ease"
        class="hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-navy-300">
-      <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto" />
+      <img width="180" height="72" src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" width="250" height="72" style="height:72px;width:auto" />
     </a>
 
     <nav class="hidden lg:flex items-center gap-0.5">
@@ -548,7 +526,7 @@
   </div>
 </header>
 
-<main>
+<main id="main-content">
 
 <!-- ══════════════════════════════════════════════
      HERO
@@ -588,6 +566,8 @@
       <p style="font-size:1.05rem;color:rgba(195,215,245,0.80);max-width:620px;margin:0 auto 2rem;line-height:1.7">
         Echte Ergebnisse aus der Beratungspraxis: Wie wir Unternehmen zu signifikanten Forschungszulagen verholfen haben.
       </p>
+    <p class="text-sm text-gray-500">Von NOVARIS Consulting – FZulG-Experten</p>
+    <p class="text-sm text-gray-500 mt-2">Stand: März 2026</p>
     </div>
   </div>
 </section>
@@ -1096,6 +1076,16 @@
   </div>
 </section>
 
+
+    <!-- internal-links-added -->
+    <div style="margin-top:2.5rem;margin-bottom:2rem;padding:1.5rem;background:#f5f8fe;border:1px solid #dde5f4;border-radius:12px">
+      <h3 style="font-family:'Montserrat',sans-serif;font-size:0.95rem;font-weight:700;color:#0D1B3E;margin-bottom:0.75rem">Weiterführende Artikel</h3>
+      <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.5rem">
+      <li><a href="/forschungszulage.html" style="color:#4DAEE5;text-decoration:none;transition:color 0.14s ease">Forschungszulage: Der komplette Leitfaden</a></li>
+      <li><a href="/forschungszulage-antrag.html" style="color:#4DAEE5;text-decoration:none;transition:color 0.14s ease">Forschungszulage beantragen</a></li>
+      <li><a href="/forschungszulage-rechner.html" style="color:#4DAEE5;text-decoration:none;transition:color 0.14s ease">Förderung berechnen</a></li>
+      </ul>
+    </div>
 </main>
 
 
@@ -1107,8 +1097,8 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
 
       <div class="lg:col-span-2">
-        <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto;margin-bottom:1rem" />
-        <p style="font-size:0.82rem;color:rgba(195,215,245,0.38);line-height:1.72;max-width:320px">
+        <img width="180" height="72" src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto;margin-bottom:1rem" />
+        <p style="font-size:0.82rem;color:rgba(195,215,245,0.55);line-height:1.72;max-width:320px">
           NOVARIS Consulting ist Ihr spezialisierter Full-Service-Partner fuer die staatliche
           Forschungszulage nach dem FZulG &ndash; erfolgsbasiert, transparent und ohne Risiko.
         </p>
@@ -1117,21 +1107,21 @@
       <div>
         <div style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.75rem;letter-spacing:0.09em;text-transform:uppercase;color:rgba(195,215,245,0.3);margin-bottom:1rem">Navigation</div>
         <div style="display:flex;flex-direction:column;gap:0.55rem">
-          <a href="/#was-ist-fzulg" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Das FZulG</a>
-          <a href="/#prozess"       style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Prozess</a>
-          <a href="/#vorteile"      style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Vorteile</a>
-          <a href="/#faq"           style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">FAQ</a>
-          <a href="/#kontakt"       style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Kontakt</a>
+          <a href="/#was-ist-fzulg" style="font-size:0.82rem;color:rgba(195,215,245,0.65);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Das FZulG</a>
+          <a href="/#prozess"       style="font-size:0.82rem;color:rgba(195,215,245,0.65);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Prozess</a>
+          <a href="/#vorteile"      style="font-size:0.82rem;color:rgba(195,215,245,0.65);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Vorteile</a>
+          <a href="/#faq"           style="font-size:0.82rem;color:rgba(195,215,245,0.65);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">FAQ</a>
+          <a href="/#kontakt"       style="font-size:0.82rem;color:rgba(195,215,245,0.65);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Kontakt</a>
         </div>
       </div>
 
       <div>
         <div style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.75rem;letter-spacing:0.09em;text-transform:uppercase;color:rgba(195,215,245,0.3);margin-bottom:1rem">Rechtliches</div>
         <div style="display:flex;flex-direction:column;gap:0.55rem">
-          <a href="/impressum.html" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Impressum</a>
-          <a href="/datenschutz.html" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Datenschutz</a>
-          <a href="/agb.html" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">AGB</a>
-          <a href="javascript:void(0)" onclick="CookieConsent.reset();CookieConsent.request(function(){});" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Cookie-Einstellungen</a>
+          <a href="/impressum.html" style="font-size:0.82rem;color:rgba(195,215,245,0.65);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Impressum</a>
+          <a href="/datenschutz.html" style="font-size:0.82rem;color:rgba(195,215,245,0.65);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Datenschutz</a>
+          <a href="/agb.html" style="font-size:0.82rem;color:rgba(195,215,245,0.65);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">AGB</a>
+          <a href="javascript:void(0)" onclick="CookieConsent.reset();CookieConsent.request(function(){});" style="font-size:0.82rem;color:rgba(195,215,245,0.65);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Cookie-Einstellungen</a>
         </div>
       </div>
     </div>

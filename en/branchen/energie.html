@@ -27,11 +27,12 @@
     <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/styles.min.css">
+  <link rel="preload" href="https://fonts.gstatic.com/s/montserrat/v29/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hiA.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <script>tailwind.config={theme:{extend:{fontFamily:{display:['Montserrat','sans-serif'],body:['Inter','sans-serif']}}}};</script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/cookie-consent.css" />
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;font-size:16px}body{font-family:'Inter',sans-serif;background:#fff;color:#0D1B3E;-webkit-font-smoothing:antialiased;overflow-x:hidden}h1,h2,h3,h4{font-family:'Montserrat',sans-serif;letter-spacing:-0.03em;line-height:1.13}
@@ -103,13 +104,50 @@
 {"@type":"Question","name":"Welche Cleantech-Projekte qualifizieren sich?","acceptedAnswer":{"@type":"Answer","text":"Förderfähig sind neue Verfahren zur CO2-Reduktion, innovative Recyclingsysteme, Smart-Grid-Technologien, neuartige Wärmepumpen-Konzepte und die Entwicklung von Energieeffizienz-Lösungen mit technischer Neuheit."}}
 ]}
   </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://novaris-consulting.com/en/"},
+    {"@type": "ListItem", "position": 2, "name": "Industries", "item": "https://novaris-consulting.com/en/#branchen"},
+    {"@type": "ListItem", "position": 3, "name": "Energy & Cleantech", "item": "https://novaris-consulting.com/en/branchen/energie.html"}
+  ]
+}
+  </script>
+
+  <!-- Article Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "R&D Tax Credit Energy & Cleantech 2026 | NOVARIS Consulting",
+    "description": "Energy and cleantech companies can reclaim up to 25% of their R&amp;D costs. Solar, battery storage, smart grid and hydrogen - NOVARIS shows what is eligible.",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://novaris-consulting.com/brand_assets/og-image.png",
+      "width": 1200,
+      "height": 630
+    },
+    "author": { "@type": "Organization", "name": "NOVARIS Consulting", "url": "https://novaris-consulting.com" },
+    "publisher": { "@type": "Organization", "name": "NOVARIS Consulting", "url": "https://novaris-consulting.com", "logo": { "@type": "ImageObject", "url": "https://novaris-consulting.com/brand_assets/Logo V5-light.svg" } },
+    "datePublished": "2026-02-15",
+    "dateModified": "2026-03-10",
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://novaris-consulting.com/en/branchen/energie.html" }
+  }
+  </script>
 </head>
 <body>
+<a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[9999] focus:bg-white focus:text-[#1E56B5] focus:px-4 focus:py-2 focus:rounded-lg focus:shadow-lg focus:font-semibold">Skip to content</a>
 
+<p class="text-sm" style="color:#94a3b8">Updated: March 2026 &middot; By NOVARIS Consulting &ndash; FZulG Experts</p>
+
+<!-- NAV -->
 <header id="nav" class="fixed inset-x-0 top-0 z-50 nav-blur" style="background:rgba(4,9,26,0.85);border-bottom:1px solid rgba(255,255,255,0.07)">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between gap-4" style="height:68px">
     <a href="../../en/" aria-label="NOVARIS Consulting" class="hover:opacity-90" style="text-decoration:none;flex-shrink:0;display:flex;align-items:center;transition:opacity 0.15s ease">
-      <img src="../../brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto" />
+      <img src="../../brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto" width="180" height="72" />
     </a>
     <nav class="hidden lg:flex items-center gap-0.5">
       <a href="../../en/index.html#was-ist-fzulg" class="nav-link" data-t="nav.fzulg">The FZulG Act</a>
@@ -338,6 +376,55 @@
   </div>
 </section>
 
+
+<!-- CHALLENGES -->
+<section class="bg-white py-16 sm:py-20">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-10 reveal">
+      <div class="badge mb-4">Challenges</div>
+      <h2 class="text-2xl sm:text-3xl font-black" style="color:#0D1B3E">Common Challenges in Energy & Cleantech FZulG Applications</h2>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:1.5rem" class="reveal" style="transition-delay:0.05s">
+      <div style="background:var(--bg-card);border:1px solid rgba(30,86,181,0.09);border-radius:16px;padding:1.5rem 1.75rem;box-shadow:0 2px 12px rgba(30,86,181,0.06)">
+        <div style="display:flex;align-items:flex-start;gap:0.85rem">
+          <div class="check-dot" style="background:linear-gradient(135deg,#E8A317,#F5C842);margin-top:2px;flex-shrink:0"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01"/></svg></div>
+          <div>
+            <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.95rem;color:#0D1B3E;margin-bottom:0.4rem">Pilot and demonstration plants: R&D or market launch?</h3>
+            <p style="font-size:0.85rem;color:#5a6e8c;line-height:1.72">In the energy sector, the boundary between pilot plants (eligible) and commercial demonstration plants (not eligible) is particularly relevant. What matters is whether the facility primarily serves knowledge generation or is already operated commercially. Read our <a href="/en/forschungszulage.html" style="color:#1E56B5;text-decoration:underline">FZulG guide</a> for the demarcation criteria.</p>
+          </div>
+        </div>
+      </div>
+      <div style="background:var(--bg-card);border:1px solid rgba(30,86,181,0.09);border-radius:16px;padding:1.5rem 1.75rem;box-shadow:0 2px 12px rgba(30,86,181,0.06)">
+        <div style="display:flex;align-items:flex-start;gap:0.85rem">
+          <div class="check-dot" style="background:linear-gradient(135deg,#E8A317,#F5C842);margin-top:2px;flex-shrink:0"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01"/></svg></div>
+          <div>
+            <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.95rem;color:#0D1B3E;margin-bottom:0.4rem">Documentation in long-term field tests</h3>
+            <p style="font-size:0.85rem;color:#5a6e8c;line-height:1.72">Energy technologies often require years of field testing (wind turbines, solar systems, storage technologies). R&D documentation must be maintained consistently throughout the entire test period. Our <a href="/en/forschungszulage-antrag.html" style="color:#1E56B5;text-decoration:underline">application service</a> helps with structured long-term documentation.</p>
+          </div>
+        </div>
+      </div>
+      <div style="background:var(--bg-card);border:1px solid rgba(30,86,181,0.09);border-radius:16px;padding:1.5rem 1.75rem;box-shadow:0 2px 12px rgba(30,86,181,0.06)">
+        <div style="display:flex;align-items:flex-start;gap:0.85rem">
+          <div class="check-dot" style="background:linear-gradient(135deg,#E8A317,#F5C842);margin-top:2px;flex-shrink:0"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01"/></svg></div>
+          <div>
+            <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.95rem;color:#0D1B3E;margin-bottom:0.4rem">Demarcation in publicly co-funded projects</h3>
+            <p style="font-size:0.85rem;color:#5a6e8c;line-height:1.72">Many energy projects already receive BMWi, BMBF or EU funding. The research allowance can be applied for additionally, but double funding of the same costs is excluded. Use our <a href="/en/forschungszulage-rechner.html" style="color:#1E56B5;text-decoration:underline">calculator</a> for calculating after deducting other grants.</p>
+          </div>
+        </div>
+      </div>
+      <div style="background:var(--bg-card);border:1px solid rgba(30,86,181,0.09);border-radius:16px;padding:1.5rem 1.75rem;box-shadow:0 2px 12px rgba(30,86,181,0.06)">
+        <div style="display:flex;align-items:flex-start;gap:0.85rem">
+          <div class="check-dot" style="background:linear-gradient(135deg,#E8A317,#F5C842);margin-top:2px;flex-shrink:0"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01"/></svg></div>
+          <div>
+            <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.95rem;color:#0D1B3E;margin-bottom:0.4rem">Correctly classifying hydrogen and Power-to-X projects</h3>
+            <p style="font-size:0.85rem;color:#5a6e8c;line-height:1.72">Green hydrogen and Power-to-X are highly topical R&D fields. Development of new electrolysis technologies, storage concepts or catalysts is typically eligible. The <a href="/en/branchen/bauindustrie.html" style="color:#1E56B5;text-decoration:underline">construction industry</a> often benefits from complementary energy projects.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- FAQ -->
 <section class="bg-white py-16 sm:py-20">
   <div class="max-w-3xl mx-auto px-4 sm:px-6">
@@ -346,21 +433,43 @@
       <h2 class="text-2xl sm:text-3xl font-black" style="color:#0D1B3E" data-t="faq.h2">Frequently Asked Questions</h2>
     </div>
     <div class="reveal" style="transition-delay:0.05s">
-      <div class="faq-wrap"><button class="faq-btn" onclick="toggleFaq(this)"><span data-t="faq1.q">Can the FZulG be combined with other energy funding programmes?</span><span class="faq-icon">+</span></button>
+      <div class="faq-wrap"><button class="faq-btn" aria-expanded="false" onclick="toggleFaq(this)"><span data-t="faq1.q">Can the FZulG be combined with other energy funding programmes?</span><span class="faq-icon">+</span></button>
         <div class="faq-body"><div class="faq-content" data-t="faq1.a">Yes, in principle a combination with other funding programmes is possible. However, the anti-cumulation rule applies: total funding must not exceed certain ceilings (de minimis, GBER). NOVARIS evaluates the optimal combination and ensures all programmes run alongside each other in a legally compliant manner.</div></div>
       </div>
     </div>
     <div class="reveal" style="transition-delay:0.1s">
-      <div class="faq-wrap"><button class="faq-btn" onclick="toggleFaq(this)"><span data-t="faq2.q">Are pilot plants and demonstrators eligible for funding?</span><span class="faq-icon">+</span></button>
+      <div class="faq-wrap"><button class="faq-btn" aria-expanded="false" onclick="toggleFaq(this)"><span data-t="faq2.q">Are pilot plants and demonstrators eligible for funding?</span><span class="faq-icon">+</span></button>
         <div class="faq-body"><div class="faq-content" data-t="faq2.a">Yes, provided the pilot plant serves experimental development and does not already constitute commercial series production. A pilot project to validate a new storage concept at MW scale can be fully eligible – what matters is the technical objective of gaining new knowledge.</div></div>
       </div>
     </div>
     <div class="reveal" style="transition-delay:0.15s">
-      <div class="faq-wrap"><button class="faq-btn" onclick="toggleFaq(this)"><span data-t="faq3.q">Does the FZulG apply to hydrogen and Power-to-X projects?</span><span class="faq-icon">+</span></button>
+      <div class="faq-wrap"><button class="faq-btn" aria-expanded="false" onclick="toggleFaq(this)"><span data-t="faq3.q">Does the FZulG apply to hydrogen and Power-to-X projects?</span><span class="faq-icon">+</span></button>
         <div class="faq-body"><div class="faq-content" data-t="faq3.a">Yes. Hydrogen electrolysis, methanation (Power-to-Gas), synthetic fuels and fuel cell systems are – to the extent technical uncertainty exists – typically eligible R&D activities. NOVARIS has successfully guided several hydrogen start-ups through the BSFZ process.</div></div>
       </div>
     </div>
   </div>
+    <div class="reveal" style="transition-delay:0.2s">
+      <div class="faq-wrap">
+        <button class="faq-btn" aria-expanded="false" onclick="toggleFaq(this)">
+          <span>Are development projects for battery storage technologies eligible?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-body">
+          <div class="faq-content">Yes, development of new battery chemistries, cell designs or battery management systems is typically fully eligible. Optimising charge/discharge cycles and researching new electrode materials also qualify. Personnel costs of all engineers and scientists involved in the research project can be claimed.</div>
+        </div>
+      </div>
+    </div>
+    <div class="reveal" style="transition-delay:0.2s">
+      <div class="faq-wrap">
+        <button class="faq-btn" aria-expanded="false" onclick="toggleFaq(this)">
+          <span>Can wind energy innovations like novel rotor blade designs be funded?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-body">
+          <div class="faq-content">Yes, developing new aerodynamic profiles, composite materials or intelligent pitch systems for wind turbines is classic experimental development. Research into offshore foundation concepts or novel tower structures also falls under the research allowance. Field tests on prototypes are likewise eligible.</div>
+        </div>
+      </div>
+    </div>
 </section>
 
 
@@ -399,15 +508,15 @@
 <!-- FOOTER -->
 <footer style="background:#04091a;border-top:1px solid rgba(255,255,255,0.07);padding:2.5rem 0">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-    <a href="../../en/" style="text-decoration:none;display:flex;align-items:center"><img src="../../brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:52px;width:auto" /></a>
+    <a href="../../en/" style="text-decoration:none;display:flex;align-items:center"><img src="../../brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:52px;width:auto" width="130" height="52" /></a>
     <div style="display:flex;gap:1.5rem;flex-wrap:wrap;justify-content:center">
-      <a href="../../en/index.html#was-ist-fzulg" style="color:rgba(195,215,245,0.45);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.45)'" data-t="footer.fzulg">The FZulG Act</a>
-      <a href="../../en/index.html#branchen" style="color:rgba(195,215,245,0.45);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.45)'" data-t="footer.branchen">Industries</a>
-      <a href="../../en/index.html#prozess" style="color:rgba(195,215,245,0.45);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.45)'" data-t="footer.prozess">Process</a>
-      <a href="../../en/index.html#kontakt" style="color:rgba(195,215,245,0.45);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.45)'" data-t="footer.kontakt">Contact</a>
-      <a href="../../en/impressum.html" style="color:rgba(195,215,245,0.45);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.45)'">Legal Notice</a>
-      <a href="../../en/datenschutz.html" style="color:rgba(195,215,245,0.45);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.45)'" data-t="footer.datenschutz">Privacy Policy</a>
-      <a href="javascript:void(0)" onclick="CookieConsent.reset();CookieConsent.request(function(){});" style="color:rgba(195,215,245,0.45);font-size:0.82rem;text-decoration:none;transition:color 0.15s" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.45)'" data-t="foot.cookies">Cookie Settings</a>
+      <a href="../../en/index.html#was-ist-fzulg" style="color:rgba(195,215,245,0.65);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.65)'" data-t="footer.fzulg">The FZulG Act</a>
+      <a href="../../en/index.html#branchen" style="color:rgba(195,215,245,0.65);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.65)'" data-t="footer.branchen">Industries</a>
+      <a href="../../en/index.html#prozess" style="color:rgba(195,215,245,0.65);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.65)'" data-t="footer.prozess">Process</a>
+      <a href="../../en/index.html#kontakt" style="color:rgba(195,215,245,0.65);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.65)'" data-t="footer.kontakt">Contact</a>
+      <a href="../../en/impressum.html" style="color:rgba(195,215,245,0.65);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.65)'">Legal Notice</a>
+      <a href="../../en/datenschutz.html" style="color:rgba(195,215,245,0.65);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.65)'" data-t="footer.datenschutz">Privacy Policy</a>
+      <a href="javascript:void(0)" onclick="CookieConsent.reset();CookieConsent.request(function(){});" style="color:rgba(195,215,245,0.65);font-size:0.82rem;text-decoration:none;transition:color 0.15s" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.65)'" data-t="foot.cookies">Cookie Settings</a>
     </div>
     <p style="color:rgba(195,215,245,0.28);font-size:0.75rem" data-t="footer.copy">© 2026 NOVARIS Consulting GmbH</p>
   </div>
@@ -419,7 +528,7 @@
   function _updateDarkBtn(){var dark=document.documentElement.classList.contains('dark');var moon=document.getElementById('icon-moon');var sun=document.getElementById('icon-sun');var moonM=document.getElementById('icon-moon-mob');var sunM=document.getElementById('icon-sun-mob');if(moon)moon.style.display=dark?'none':'block';if(sun)sun.style.display=dark?'block':'none';if(moonM)moonM.style.display=dark?'none':'block';if(sunM)sunM.style.display=dark?'block':'none';}
   window.addEventListener('DOMContentLoaded',_updateDarkBtn);
   function toggleMob(){var m=document.getElementById('mob-menu');var open=m.classList.toggle('open');document.getElementById('ham-btn').setAttribute('aria-expanded',open)}document.querySelectorAll('.nav-dropdown-wrap').forEach(function(w){var t=w.querySelector('.nav-dropdown-trigger');if(!t)return;w.addEventListener('mouseenter',function(){t.setAttribute('aria-expanded','true')});w.addEventListener('mouseleave',function(){t.setAttribute('aria-expanded','false')})})
-  function toggleFaq(btn){var wrap=btn.closest('.faq-wrap');wrap.classList.toggle('open')}
+  function toggleFaq(btn){var wrap=btn.closest('.faq-wrap');wrap.classList.toggle('open');btn.setAttribute('aria-expanded',wrap.classList.contains('open'))}
   (function(){var els=document.querySelectorAll('.reveal');var io=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}});},{threshold:0.1});els.forEach(function(el){if(el.getBoundingClientRect().top<window.innerHeight){el.classList.add('visible')}else{io.observe(el)}});})();
 
   // ── i18n ──
@@ -612,7 +721,7 @@
   }
   (function(){ var s = localStorage.getItem('lang'); if (s && s !== 'de') setLang(s); })();
 </script>
-<script src="/scroll-animations.js"></script>
+<script src="/scroll-animations.js" defer></script>
 <script src="/cookie-consent.js" defer></script>
 </body>
 </html>
