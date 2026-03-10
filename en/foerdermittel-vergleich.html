@@ -103,15 +103,54 @@
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-  <link rel="stylesheet" href="/styles.min.css">
-  <link rel="preload" href="https://fonts.gstatic.com/s/montserrat/v29/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hiA.woff2" as="font" type="font/woff2" crossorigin>
-
-<link rel="preconnect" href="https://fonts.googleapis.com" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/cookie-consent.css" />
-<style>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Montserrat', 'sans-serif'],
+            body:    ['Inter', 'sans-serif'],
+          },
+          colors: {
+            navy: {
+              950: '#04091a',
+              900: '#0D1B3E',
+              800: '#122244',
+              700: '#1A3462',
+              600: '#1E4080',
+              500: '#1E56B5',
+              400: '#3A7FD4',
+              300: '#4DAEE5',
+              200: '#7ECEF5',
+              100: '#C2E8FB',
+              50:  '#EBF6FE',
+            },
+            surface: {
+              base:     '#ffffff',
+              raised:   '#f5f8fe',
+              elevated: '#edf2fb',
+              floating: '#ffffff',
+              border:   '#dde5f4',
+            },
+          },
+          spacing: {
+            '18': '4.5rem',
+            '22': '5.5rem',
+            '26': '6.5rem',
+            '30': '7.5rem',
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; font-size: 16px; }
     body {
@@ -404,32 +443,8 @@
     .lang-btn:hover { color: rgba(255,255,255,0.85); }
     .lang-divider { width: 1px; height: 16px; background: rgba(255,255,255,0.12); flex-shrink: 0; }
   </style>
-
-  <!-- Article Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "R&D Funding Comparison 2026: R&D Tax Credit vs. ZIM vs. KMU-innovativ | NOVARIS",
-    "description": "R&D Funding Programs Compared: R&D Tax Credit (FZulG), ZIM, KMU-innovativ & BMBF programs. Which program fits? Get free advice now.",
-    "image": {
-      "@type": "ImageObject",
-      "url": "https://novaris-consulting.com/brand_assets/og-image.png",
-      "width": 1200,
-      "height": 630
-    },
-    "author": { "@type": "Organization", "name": "NOVARIS Consulting", "url": "https://novaris-consulting.com" },
-    "publisher": { "@type": "Organization", "name": "NOVARIS Consulting", "url": "https://novaris-consulting.com", "logo": { "@type": "ImageObject", "url": "https://novaris-consulting.com/brand_assets/Logo V5-light.svg" } },
-    "datePublished": "2026-02-15",
-    "dateModified": "2026-03-10",
-    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://novaris-consulting.com/en/foerdermittel-vergleich.html" }
-  }
-  </script>
 </head>
 <body>
-<a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[9999] focus:bg-white focus:text-[#1E56B5] focus:px-4 focus:py-2 focus:rounded-lg focus:shadow-lg focus:font-semibold">Skip to content</a>
-
-<p class="text-sm" style="color:#94a3b8">Updated: March 2026 &middot; By NOVARIS Consulting &ndash; FZulG Experts</p>
 
 <!-- NAV -->
 <header id="nav" class="fixed inset-x-0 top-0 z-50 nav-blur transition-shadow duration-300"
@@ -438,7 +453,7 @@
     <a href="/en/" aria-label="NOVARIS Consulting"
        style="text-decoration:none;flex-shrink:0;display:flex;align-items:center;transition:opacity 0.15s ease"
        class="hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-navy-300">
-      <img width="180" height="72" src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto" />
+      <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto" />
     </a>
 
     <nav class="hidden lg:flex items-center gap-0.5">
@@ -537,7 +552,7 @@
   <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center relative" style="z-index:3">
     <!-- Breadcrumb -->
     <nav aria-label="Breadcrumb" style="margin-bottom:1.5rem">
-      <ol class="flex items-center justify-center gap-2" style="font-size:0.78rem;color:rgba(195,215,245,0.65)">
+      <ol class="flex items-center justify-center gap-2" style="font-size:0.78rem;color:rgba(195,215,245,0.45)">
         <li><a href="/" style="color:rgba(195,215,245,0.55);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Home</a></li>
         <li><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="opacity:0.4"><polyline points="9 18 15 12 9 6"/></svg></li>
         <li style="color:rgba(195,215,245,0.7)">Funding Comparison</li>
@@ -553,8 +568,6 @@
     <p style="font-size:1.05rem;color:rgba(195,215,245,0.65);max-width:640px;margin:0 auto 2.5rem;font-weight:400;line-height:1.75">
       R&D Tax Credit, ZIM, KMU-innovativ and more: Find the optimal funding for your research and development projects.
     </p>
-    <p class="text-sm text-gray-500">By NOVARIS Consulting – FZulG Experts</p>
-    <p class="text-sm text-gray-500 mt-2">Last updated: March 2026</p>
 
     <div class="flex flex-wrap justify-center gap-4">
       <a href="#vergleichstabelle" class="btn-primary">
@@ -1031,7 +1044,7 @@
     <div class="flex flex-col gap-3">
       <!-- FAQ 1 -->
       <div class="faq-wrap">
-        <button class="faq-btn" aria-expanded="false" onclick="toggleFaq(this)" aria-expanded="false">
+        <button class="faq-btn" onclick="toggleFaq(this)" aria-expanded="false">
           <span>Can I apply for the R&D Tax Credit and ZIM simultaneously?</span>
           <span class="faq-icon">+</span>
         </button>
@@ -1044,7 +1057,7 @@
 
       <!-- FAQ 2 -->
       <div class="faq-wrap">
-        <button class="faq-btn" aria-expanded="false" onclick="toggleFaq(this)" aria-expanded="false">
+        <button class="faq-btn" onclick="toggleFaq(this)" aria-expanded="false">
           <span>Which program has the highest funding rate?</span>
           <span class="faq-icon">+</span>
         </button>
@@ -1057,7 +1070,7 @@
 
       <!-- FAQ 3 -->
       <div class="faq-wrap">
-        <button class="faq-btn" aria-expanded="false" onclick="toggleFaq(this)" aria-expanded="false">
+        <button class="faq-btn" onclick="toggleFaq(this)" aria-expanded="false">
           <span>Is there funding for large enterprises?</span>
           <span class="faq-icon">+</span>
         </button>
@@ -1070,7 +1083,7 @@
 
       <!-- FAQ 4 -->
       <div class="faq-wrap">
-        <button class="faq-btn" aria-expanded="false" onclick="toggleFaq(this)" aria-expanded="false">
+        <button class="faq-btn" onclick="toggleFaq(this)" aria-expanded="false">
           <span>How do I find the right funding program?</span>
           <span class="faq-icon">+</span>
         </button>
@@ -1083,7 +1096,7 @@
 
       <!-- FAQ 5 -->
       <div class="faq-wrap">
-        <button class="faq-btn" aria-expanded="false" onclick="toggleFaq(this)" aria-expanded="false">
+        <button class="faq-btn" onclick="toggleFaq(this)" aria-expanded="false">
           <span>Can NOVARIS advise on multiple programs simultaneously?</span>
           <span class="faq-icon">+</span>
         </button>
@@ -1154,8 +1167,8 @@
   <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12">
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
       <div class="lg:col-span-2">
-        <img width="180" height="72" src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto;margin-bottom:1rem" />
-        <p style="font-size:0.82rem;color:rgba(195,215,245,0.55);line-height:1.72;max-width:320px">
+        <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto;margin-bottom:1rem" />
+        <p style="font-size:0.82rem;color:rgba(195,215,245,0.38);line-height:1.72;max-width:320px">
           NOVARIS Consulting is your specialized full-service partner for the government
           R&D Tax Credit under the FZulG – success-based, transparent and risk-free.
         </p>
@@ -1163,19 +1176,19 @@
       <div>
         <div style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.75rem;letter-spacing:0.09em;text-transform:uppercase;color:rgba(195,215,245,0.3);margin-bottom:1rem">Navigation</div>
         <div style="display:flex;flex-direction:column;gap:0.55rem">
-          <a href="/" style="font-size:0.82rem;color:rgba(195,215,245,0.65);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Home</a>
-          <a href="/en/forschungszulage.html" style="font-size:0.82rem;color:rgba(195,215,245,0.65);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">R&D Tax Credit</a>
-          <a href="/forschungszulage-rechner.html" style="font-size:0.82rem;color:rgba(195,215,245,0.65);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Calculator</a>
-          <a href="/en/foerdermittel-vergleich.html" style="font-size:0.82rem;color:rgba(195,215,245,0.65);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Funding Comparison</a>
-          <a href="/en/#contact" style="font-size:0.82rem;color:rgba(195,215,245,0.65);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Contact</a>
+          <a href="/" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Home</a>
+          <a href="/en/forschungszulage.html" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">R&D Tax Credit</a>
+          <a href="/forschungszulage-rechner.html" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Calculator</a>
+          <a href="/en/foerdermittel-vergleich.html" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Funding Comparison</a>
+          <a href="/en/#contact" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Contact</a>
         </div>
       </div>
       <div>
         <div style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.75rem;letter-spacing:0.09em;text-transform:uppercase;color:rgba(195,215,245,0.3);margin-bottom:1rem">Legal</div>
         <div style="display:flex;flex-direction:column;gap:0.55rem">
-          <a href="/en/impressum.html" style="font-size:0.82rem;color:rgba(195,215,245,0.65);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Legal Notice</a>
-          <a href="/en/datenschutz.html" style="font-size:0.82rem;color:rgba(195,215,245,0.65);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Privacy Policy</a>
-          <a href="/en/agb.html" style="font-size:0.82rem;color:rgba(195,215,245,0.65);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Terms & Conditions</a>
+          <a href="/en/impressum.html" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Legal Notice</a>
+          <a href="/en/datenschutz.html" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Privacy Policy</a>
+          <a href="/en/agb.html" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Terms & Conditions</a>
         </div>
       </div>
     </div>

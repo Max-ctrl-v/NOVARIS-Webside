@@ -26,12 +26,11 @@
     <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-  <link rel="stylesheet" href="/styles.min.css">
-  <link rel="preload" href="https://fonts.gstatic.com/s/montserrat/v29/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hiA.woff2" as="font" type="font/woff2" crossorigin>
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <script>tailwind.config={theme:{extend:{fontFamily:{display:['Montserrat','sans-serif'],body:['Inter','sans-serif']}}}};</script>
   <link rel="stylesheet" href="/cookie-consent.css" />
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -119,51 +118,14 @@
 {"@type":"Question","name":"Wie dokumentiere ich F&E in der Medizintechnik korrekt?","acceptedAnswer":{"@type":"Answer","text":"Entscheidend ist eine getrennte Zeiterfassung für F&E-Tätigkeiten, eine klare Abgrenzung von Routinetests und Qualitätssicherung sowie eine nachvollziehbare Dokumentation der technischen Unsicherheiten und des systematischen Vorgehens."}}
 ]}
   </script>
-
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://novaris-consulting.com/en/"},
-    {"@type": "ListItem", "position": 2, "name": "Industries", "item": "https://novaris-consulting.com/en/#branchen"},
-    {"@type": "ListItem", "position": 3, "name": "Medical Technology", "item": "https://novaris-consulting.com/en/branchen/medizintechnik.html"}
-  ]
-}
-  </script>
-
-  <!-- Article Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "R&D Tax Credit for Medical Technology 2026 – Secure R&D Funding | NOVARIS",
-    "description": "Medical technology companies can reclaim up to 25% of their R&D costs. NOVARIS shows which projects in active medical devices, AI diagnostics and in-vitro diagnostics are eligible for the German R&D tax credit.",
-    "image": {
-      "@type": "ImageObject",
-      "url": "https://novaris-consulting.com/brand_assets/og-image.png",
-      "width": 1200,
-      "height": 630
-    },
-    "author": { "@type": "Organization", "name": "NOVARIS Consulting", "url": "https://novaris-consulting.com" },
-    "publisher": { "@type": "Organization", "name": "NOVARIS Consulting", "url": "https://novaris-consulting.com", "logo": { "@type": "ImageObject", "url": "https://novaris-consulting.com/brand_assets/Logo V5-light.svg" } },
-    "datePublished": "2026-02-15",
-    "dateModified": "2026-03-10",
-    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://novaris-consulting.com/en/branchen/medizintechnik.html" }
-  }
-  </script>
 </head>
 <body>
-<a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[9999] focus:bg-white focus:text-[#1E56B5] focus:px-4 focus:py-2 focus:rounded-lg focus:shadow-lg focus:font-semibold">Skip to content</a>
-
-
-<p class="text-sm" style="color:#94a3b8">Updated: March 2026 &middot; By NOVARIS Consulting &ndash; FZulG Experts</p>
 
 <!-- NAV -->
 <header id="nav" class="fixed inset-x-0 top-0 z-50 nav-blur" style="background:rgba(4,9,26,0.85);border-bottom:1px solid rgba(255,255,255,0.07)">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between gap-4" style="height:68px">
     <a href="../../en/" aria-label="NOVARIS Consulting" class="hover:opacity-90" style="text-decoration:none;flex-shrink:0;display:flex;align-items:center;transition:opacity 0.15s ease">
-      <img src="../../brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto" width="180" height="72" />
+      <img src="../../brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto" />
     </a>
     <nav class="hidden lg:flex items-center gap-0.5">
       <a href="../../en/index.html#was-ist-fzulg" class="nav-link" data-t="nav-fzulg">The FZulG</a>
@@ -274,8 +236,6 @@
           <span class="stat-pill"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span data-t="pill-2">Eligible before MDR approval</span></span>
           <span class="stat-pill"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span data-t="pill-3">Retroactive to 2020</span></span>
         </div>
-        <p class="text-sm text-gray-500 mt-4">Last updated: March 10, 2026</p>
-        <p class="text-sm text-gray-500">By NOVARIS Consulting – Industry Experts</p>
         <div class="au d4 flex flex-wrap gap-3">
           <a href="../index.html#kontakt" class="btn-primary" style="padding:0.95rem 2.25rem;font-size:0.95rem">
             <span data-t="hero-btn">Check eligibility</span>
@@ -421,100 +381,29 @@
   </div>
 </section>
 
-
-<!-- CHALLENGES -->
-<section class="bg-white py-16 sm:py-20">
-  <div class="max-w-4xl mx-auto px-4 sm:px-6">
-    <div class="text-center mb-10 reveal">
-      <div class="badge mb-4">Challenges</div>
-      <h2 class="text-2xl sm:text-3xl font-black" style="color:#0D1B3E">Common Challenges in Medical Technology FZulG Applications</h2>
-    </div>
-    <div style="display:flex;flex-direction:column;gap:1.5rem" class="reveal" style="transition-delay:0.05s">
-      <div style="background:var(--bg-card);border:1px solid rgba(30,86,181,0.09);border-radius:16px;padding:1.5rem 1.75rem;box-shadow:0 2px 12px rgba(30,86,181,0.06)">
-        <div style="display:flex;align-items:flex-start;gap:0.85rem">
-          <div class="check-dot" style="background:linear-gradient(135deg,#E8A317,#F5C842);margin-top:2px;flex-shrink:0"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01"/></svg></div>
-          <div>
-            <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.95rem;color:#0D1B3E;margin-bottom:0.4rem">Regulatory development (MDR) vs. eligible R&D</h3>
-            <p style="font-size:0.85rem;color:#5a6e8c;line-height:1.72">The EU Medical Device Regulation requires extensive documentation and testing. Not all regulatory activities qualify as R&D – but developing new test methods or solving technical challenges for MDR compliance can be eligible. Our <a href="/en/forschungszulage.html" style="color:#1E56B5;text-decoration:underline">FZulG guide</a> explains the demarcation.</p>
-          </div>
-        </div>
-      </div>
-      <div style="background:var(--bg-card);border:1px solid rgba(30,86,181,0.09);border-radius:16px;padding:1.5rem 1.75rem;box-shadow:0 2px 12px rgba(30,86,181,0.06)">
-        <div style="display:flex;align-items:flex-start;gap:0.85rem">
-          <div class="check-dot" style="background:linear-gradient(135deg,#E8A317,#F5C842);margin-top:2px;flex-shrink:0"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01"/></svg></div>
-          <div>
-            <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.95rem;color:#0D1B3E;margin-bottom:0.4rem">Documentation for Class III products</h3>
-            <p style="font-size:0.85rem;color:#5a6e8c;line-height:1.72">High-risk Class III medical devices are subject to particularly strict requirements. R&D documentation must be clearly separated from regulatory documentation, even when both are created in parallel. Use our <a href="/en/forschungszulage-antrag.html" style="color:#1E56B5;text-decoration:underline">application support</a> for correct preparation.</p>
-          </div>
-        </div>
-      </div>
-      <div style="background:var(--bg-card);border:1px solid rgba(30,86,181,0.09);border-radius:16px;padding:1.5rem 1.75rem;box-shadow:0 2px 12px rgba(30,86,181,0.06)">
-        <div style="display:flex;align-items:flex-start;gap:0.85rem">
-          <div class="check-dot" style="background:linear-gradient(135deg,#E8A317,#F5C842);margin-top:2px;flex-shrink:0"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01"/></svg></div>
-          <div>
-            <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.95rem;color:#0D1B3E;margin-bottom:0.4rem">Clinical evaluation as R&D evidence</h3>
-            <p style="font-size:0.85rem;color:#5a6e8c;line-height:1.72">Clinical evaluations and performance studies can have R&D character when they generate new insights about efficacy or safety. Pure literature reviews for conformity assessment do not count as R&D. The parallels to the <a href="/en/branchen/pharma.html" style="color:#1E56B5;text-decoration:underline">pharma sector</a> are evident.</p>
-          </div>
-        </div>
-      </div>
-      <div style="background:var(--bg-card);border:1px solid rgba(30,86,181,0.09);border-radius:16px;padding:1.5rem 1.75rem;box-shadow:0 2px 12px rgba(30,86,181,0.06)">
-        <div style="display:flex;align-items:flex-start;gap:0.85rem">
-          <div class="check-dot" style="background:linear-gradient(135deg,#E8A317,#F5C842);margin-top:2px;flex-shrink:0"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01"/></svg></div>
-          <div>
-            <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.95rem;color:#0D1B3E;margin-bottom:0.4rem">Classifying Software as a Medical Device (SaMD)</h3>
-            <p style="font-size:0.85rem;color:#5a6e8c;line-height:1.72">Software as a Medical Device is a growing field with its own regulatory framework. Developing AI-powered diagnostic software or digital therapeutics combines challenges from <a href="/en/branchen/software-it.html" style="color:#1E56B5;text-decoration:underline">IT</a> and medical technology. Calculate your funding potential with our <a href="/en/forschungszulage-rechner.html" style="color:#1E56B5;text-decoration:underline">calculator</a>.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- FAQ -->
 <section class="bg-white py-16 sm:py-20">
   <div class="max-w-3xl mx-auto px-4 sm:px-6">
     <div class="text-center mb-10 reveal"><div class="badge mb-4" data-t="faq-badge">FAQ</div><h2 class="text-2xl sm:text-3xl font-black" data-t="faq-h2" style="color:#0D1B3E">Frequently Asked Questions</h2></div>
     <div class="reveal" style="transition-delay:0.05s">
       <div class="faq-wrap">
-        <button class="faq-btn" aria-expanded="false" onclick="toggleFaq(this)"><span data-t="faq1-q">Are MDR/IVDR approval activities eligible under the FZulG?</span><span class="faq-icon">+</span></button>
+        <button class="faq-btn" onclick="toggleFaq(this)"><span data-t="faq1-q">Are MDR/IVDR approval activities eligible under the FZulG?</span><span class="faq-icon">+</span></button>
         <div class="faq-body"><div data-t="faq1-a" class="faq-content">Pure regulatory activities – such as creating technical documentation, notified body communication or post-market surveillance – are not eligible. However, the preceding R&amp;D phase where new technical solutions are developed is fully eligible. NOVARIS precisely delineates R&amp;D activities from regulatory tasks to maximise your claim.</div></div>
       </div>
     </div>
     <div class="reveal" style="transition-delay:0.1s">
       <div class="faq-wrap">
-        <button class="faq-btn" aria-expanded="false" onclick="toggleFaq(this)"><span data-t="faq2-q">Can clinical evaluation studies be classified as R&amp;D?</span><span class="faq-icon">+</span></button>
+        <button class="faq-btn" onclick="toggleFaq(this)"><span data-t="faq2-q">Can clinical evaluation studies be classified as R&amp;D?</span><span class="faq-icon">+</span></button>
         <div class="faq-body"><div data-t="faq2-a" class="faq-content">Clinical studies primarily aimed at gaining knowledge about a new mechanism of action or technology can qualify as experimental development under the FZulG. Studies conducted exclusively to demonstrate safety and performance for CE marking face higher hurdles. A clear delineation is key – NOVARIS builds a robust case with the BAFA.</div></div>
       </div>
     </div>
     <div class="reveal" style="transition-delay:0.15s">
       <div class="faq-wrap">
-        <button class="faq-btn" aria-expanded="false" onclick="toggleFaq(this)"><span data-t="faq3-q">Is AI software as a medical device (SaMD) fully eligible?</span><span class="faq-icon">+</span></button>
+        <button class="faq-btn" onclick="toggleFaq(this)"><span data-t="faq3-q">Is AI software as a medical device (SaMD) fully eligible?</span><span class="faq-icon">+</span></button>
         <div class="faq-body"><div data-t="faq3-a" class="faq-content">Yes, SaMD is one of the fastest growing categories in FZulG funding. Algorithm development, model training, validation and clinical evaluation of the AI component are eligible, provided they demonstrate scientific novelty and technical uncertainty. Regulatory classification under MDR Annex VIII does not directly affect eligibility.</div></div>
       </div>
     </div>
   </div>
-    <div class="reveal" style="transition-delay:0.2s">
-      <div class="faq-wrap">
-        <button class="faq-btn" aria-expanded="false" onclick="toggleFaq(this)">
-          <span>Is the development of AI diagnostic software as a medical device eligible?</span>
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-body">
-          <div class="faq-content">Yes, Software as a Medical Device (SaMD) is a particularly promising area for the research allowance. Development of algorithms for image recognition in radiology, AI-powered pathology systems or digital biomarker platforms typically meet all FZulG criteria. Both algorithm development and validation with clinical data are eligible.</div>
-        </div>
-      </div>
-    </div>
-    <div class="reveal" style="transition-delay:0.2s">
-      <div class="faq-wrap">
-        <button class="faq-btn" aria-expanded="false" onclick="toggleFaq(this)">
-          <span>Can biocompatibility tests and material research be funded?</span>
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-body">
-          <div class="faq-content">Yes, researching and testing new biomaterials, coatings or implants is a classic R&D field. Biocompatibility tests according to ISO 10993 can be eligible when they generate new insights rather than merely repeating standard tests. Personnel costs of material and test engineers are fully claimable.</div>
-        </div>
-      </div>
-    </div>
 </section>
 
 
@@ -553,15 +442,15 @@
 <!-- FOOTER -->
 <footer style="background:#04091a;border-top:1px solid rgba(255,255,255,0.07);padding:2.5rem 0">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-    <a href="../" style="text-decoration:none;display:flex;align-items:center"><img src="../brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:52px;width:auto" width="130" height="52" /></a>
+    <a href="../" style="text-decoration:none;display:flex;align-items:center"><img src="../brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:52px;width:auto" /></a>
     <div style="display:flex;gap:1.5rem;flex-wrap:wrap;justify-content:center">
-      <a href="../index.html#was-ist-fzulg" data-t="footer-fzulg" style="color:rgba(195,215,245,0.65);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.65)'">Das FZulG</a>
-      <a href="../../en/index.html#branchen" data-t="footer-branchen" style="color:rgba(195,215,245,0.65);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.65)'">Branchen</a>
-      <a href="../index.html#prozess" data-t="footer-prozess" style="color:rgba(195,215,245,0.65);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.65)'">Prozess</a>
-      <a href="../index.html#kontakt" data-t="footer-kontakt" style="color:rgba(195,215,245,0.65);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.65)'">Kontakt</a>
-      <a href="../../impressum.html" style="color:rgba(195,215,245,0.65);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.65)'">Legal Notice</a>
-      <a href="../../datenschutz.html" style="color:rgba(195,215,245,0.65);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.65)'" data-t="footer-datenschutz">Privacy Policy</a>
-      <a href="javascript:void(0)" onclick="CookieConsent.reset();CookieConsent.request(function(){});" style="color:rgba(195,215,245,0.65);font-size:0.82rem;text-decoration:none;transition:color 0.15s" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.65)'" data-t="foot.cookies">Cookie Settings</a>
+      <a href="../index.html#was-ist-fzulg" data-t="footer-fzulg" style="color:rgba(195,215,245,0.45);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.45)'">Das FZulG</a>
+      <a href="../../en/index.html#branchen" data-t="footer-branchen" style="color:rgba(195,215,245,0.45);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.45)'">Branchen</a>
+      <a href="../index.html#prozess" data-t="footer-prozess" style="color:rgba(195,215,245,0.45);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.45)'">Prozess</a>
+      <a href="../index.html#kontakt" data-t="footer-kontakt" style="color:rgba(195,215,245,0.45);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.45)'">Kontakt</a>
+      <a href="../../impressum.html" style="color:rgba(195,215,245,0.45);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.45)'">Legal Notice</a>
+      <a href="../../datenschutz.html" style="color:rgba(195,215,245,0.45);font-size:0.82rem;text-decoration:none" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.45)'" data-t="footer-datenschutz">Privacy Policy</a>
+      <a href="javascript:void(0)" onclick="CookieConsent.reset();CookieConsent.request(function(){});" style="color:rgba(195,215,245,0.45);font-size:0.82rem;text-decoration:none;transition:color 0.15s" onmouseover="this.style.color='rgba(195,215,245,0.85)'" onmouseout="this.style.color='rgba(195,215,245,0.45)'" data-t="foot.cookies">Cookie Settings</a>
     </div>
     <p style="color:rgba(195,215,245,0.28);font-size:0.75rem">© 2026 NOVARIS Consulting GmbH</p>
   </div>
@@ -755,10 +644,10 @@
   function _updateDarkBtn(){var dark=document.documentElement.classList.contains('dark');var moon=document.getElementById('icon-moon');var sun=document.getElementById('icon-sun');var moonM=document.getElementById('icon-moon-mob');var sunM=document.getElementById('icon-sun-mob');if(moon)moon.style.display=dark?'none':'block';if(sun)sun.style.display=dark?'block':'none';if(moonM)moonM.style.display=dark?'none':'block';if(sunM)sunM.style.display=dark?'block':'none';}
   window.addEventListener('DOMContentLoaded',_updateDarkBtn);
   function toggleMob(){var m=document.getElementById('mob-menu');var open=m.classList.toggle('open');document.getElementById('ham-btn').setAttribute('aria-expanded',open)}document.querySelectorAll('.nav-dropdown-wrap').forEach(function(w){var t=w.querySelector('.nav-dropdown-trigger');if(!t)return;w.addEventListener('mouseenter',function(){t.setAttribute('aria-expanded','true')});w.addEventListener('mouseleave',function(){t.setAttribute('aria-expanded','false')})})
-  function toggleFaq(btn){var wrap=btn.closest('.faq-wrap');wrap.classList.toggle('open');btn.setAttribute('aria-expanded',wrap.classList.contains('open'))}
+  function toggleFaq(btn){var wrap=btn.closest('.faq-wrap');wrap.classList.toggle('open')}
   (function(){var els=document.querySelectorAll('.reveal');var io=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}});},{threshold:0.1});els.forEach(function(el){if(el.getBoundingClientRect().top<window.innerHeight){el.classList.add('visible')}else{io.observe(el)}});})();
 </script>
-<script src="/scroll-animations.js" defer></script>
+<script src="/scroll-animations.js"></script>
 <script src="/cookie-consent.js" defer></script>
 </body>
 </html>

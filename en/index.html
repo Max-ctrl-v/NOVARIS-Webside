@@ -43,15 +43,9 @@
     },
     "serviceType": ["Research Allowance Consulting", "FZulG Application", "BSFZ Certification", "R&D Tax Incentive Advisory"],
     "knowsAbout": ["Research Allowance", "FZulG", "Forschungszulagengesetz", "BSFZ", "R&D Funding Germany"],
-    "priceRange": "Performance-based",
-    "telephone": "+49-XXX-XXXXXXX",
-    "address": {
-      "@type": "PostalAddress",
-      "addressCountry": "DE"
-    }
+    "priceRange": "Performance-based"
   }
   </script>
-  <!-- TODO: Replace +49-XXX-XXXXXXX with real phone number -->
 
   <!-- Structured Data: FAQ (matches actual FAQ section on page) -->
   <script type="application/ld+json">
@@ -124,13 +118,53 @@
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-  <link rel="stylesheet" href="/styles.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preload" href="https://fonts.gstatic.com/s/montserrat/v29/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hiA.woff2" as="font" type="font/woff2" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/cookie-consent.css" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Montserrat', 'sans-serif'],
+            body:    ['Inter', 'sans-serif'],
+          },
+          colors: {
+            // ── Brand scale derived from logo navy + cobalt ──
+            navy: {
+              950: '#04091a',
+              900: '#0D1B3E',
+              800: '#122244',
+              700: '#1A3462',
+              600: '#1E4080',
+              500: '#1E56B5',
+              400: '#3A7FD4',
+              300: '#4DAEE5',
+              200: '#7ECEF5',
+              100: '#C2E8FB',
+              50:  '#EBF6FE',
+            },
+            // ── Surface tokens ──
+            surface: {
+              base:     '#ffffff',
+              raised:   '#f5f8fe',
+              elevated: '#edf2fb',
+              floating: '#ffffff',
+              border:   '#dde5f4',
+            },
+          },
+          spacing: {
+            '18': '4.5rem',
+            '22': '5.5rem',
+            '26': '6.5rem',
+            '30': '7.5rem',
+          },
+        },
+      },
+    };
+  </script>
 
   <style>
     /* ═══════════════════════════════════════
@@ -648,7 +682,7 @@
     ═══════════════════════════════════════ */
     #mob-menu { max-height: 0; overflow: hidden; opacity: 0;
       transition: max-height 0.3s cubic-bezier(0.16,1,0.3,1), opacity 0.22s ease; }
-    #mob-menu.open { max-height: 800px; opacity: 1; }
+    #mob-menu.open { max-height: 380px; opacity: 1; }
 
     /* ═══════════════════════════════════════
        ENTRANCE ANIMATIONS
@@ -826,8 +860,7 @@
     .nav-dropdown-wrap::after { content: ''; position: absolute; top: 100%; left: 0; right: 0; height: 14px; }
     .nav-dropdown-trigger { display: flex; align-items: center; gap: 2px; }
     .dd-caret { transition: transform 0.22s cubic-bezier(0.16,1,0.3,1); opacity: 0.5; flex-shrink: 0; }
-    .nav-dropdown-wrap:hover .dd-caret,
-    .nav-dropdown-wrap.dropdown-open .dd-caret { transform: rotate(180deg); }
+    .nav-dropdown-wrap:hover .dd-caret { transform: rotate(180deg); }
     .nav-dropdown {
       position: absolute; top: calc(100% + 10px); left: 50%;
       transform: translateX(-50%) translateY(-8px);
@@ -851,8 +884,7 @@
       border-radius: 2px 0 0 0;
     }
     .nav-dropdown-wrap:hover .nav-dropdown,
-    .nav-dropdown-wrap:focus-within .nav-dropdown,
-    .nav-dropdown-wrap.dropdown-open .nav-dropdown {
+    .nav-dropdown-wrap:focus-within .nav-dropdown {
       opacity: 1; visibility: visible; pointer-events: auto;
       transform: translateX(-50%) translateY(0);
       transition: opacity 0.18s ease, transform 0.22s cubic-bezier(0.16,1,0.3,1), visibility 0s;
@@ -916,13 +948,11 @@
       "contactType": "customer service",
       "email": "info@novaris-consulting.de",
       "availableLanguage": ["German", "English"]
-    },
-    "sameAs": ["https://www.linkedin.com/company/novaris-consulting"]
+    }
   }
   </script>
 </head>
 <body>
-<a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[9999] focus:bg-white focus:text-[#1E56B5] focus:px-4 focus:py-2 focus:rounded-lg focus:shadow-lg focus:font-semibold">Skip to content</a>
 
 <!-- ══════════════════════════════════════════════
      NAV
@@ -942,7 +972,7 @@
       <a href="#was-ist-fzulg" class="nav-link" data-t="nav.fzulg">The FZulG</a>
       <a href="#warum-wir" class="nav-link" data-t="nav.warum">Our Strengths</a>
       <div class="nav-dropdown-wrap">
-        <a href="#branchen" class="nav-link nav-dropdown-trigger" data-t="nav.branchen" aria-haspopup="true" aria-expanded="false" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.closest('.nav-dropdown-wrap').classList.toggle('dropdown-open')}">
+        <a href="#branchen" class="nav-link nav-dropdown-trigger" data-t="nav.branchen" aria-haspopup="true" aria-expanded="false">
           Industries
           <svg class="dd-caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
         </a>
@@ -1026,18 +1056,6 @@
       <a href="#was-ist-fzulg" class="nav-link py-2.5" onclick="toggleMob()" data-t="nav.fzulg">The FZulG</a>
       <a href="#warum-wir"     class="nav-link py-2.5" onclick="toggleMob()" data-t="nav.warum">Our Strengths</a>
       <a href="#branchen"      class="nav-link py-2.5" onclick="toggleMob()" data-t="nav.branchen">Industries</a>
-      <!-- Mobile Branchen sub-links -->
-      <div style="padding-left:1rem;display:flex;flex-direction:column;gap:0.15rem">
-        <a href="/en/branchen/software-it.html" class="nav-link py-1.5" style="font-size:0.8rem" onclick="toggleMob()">Software &amp; IT</a>
-        <a href="/en/branchen/maschinenbau.html" class="nav-link py-1.5" style="font-size:0.8rem" onclick="toggleMob()">Mechanical Engineering</a>
-        <a href="/en/branchen/pharma.html" class="nav-link py-1.5" style="font-size:0.8rem" onclick="toggleMob()">Pharma &amp; Life Sciences</a>
-        <a href="/en/branchen/automotive.html" class="nav-link py-1.5" style="font-size:0.8rem" onclick="toggleMob()">Automotive &amp; Mobility</a>
-        <a href="/en/branchen/medizintechnik.html" class="nav-link py-1.5" style="font-size:0.8rem" onclick="toggleMob()">Medical Technology</a>
-        <a href="/en/branchen/energie.html" class="nav-link py-1.5" style="font-size:0.8rem" onclick="toggleMob()">Energy &amp; Cleantech</a>
-        <a href="/en/branchen/luft-raumfahrt.html" class="nav-link py-1.5" style="font-size:0.8rem" onclick="toggleMob()">Aerospace &amp; Aviation</a>
-        <a href="/en/branchen/agrar-foodtech.html" class="nav-link py-1.5" style="font-size:0.8rem" onclick="toggleMob()">Agrar &amp; Foodtech</a>
-        <a href="/en/branchen/bauindustrie.html" class="nav-link py-1.5" style="font-size:0.8rem" onclick="toggleMob()">Construction Industry</a>
-      </div>
       <a href="#prozess"       class="nav-link py-2.5" onclick="toggleMob()" data-t="nav.prozess">Process</a>
       <a href="#vorteile"      class="nav-link py-2.5" onclick="toggleMob()" data-t="nav.vorteile">Benefits</a>
       <a href="#faq"           class="nav-link py-2.5" onclick="toggleMob()" data-t="nav.faq">FAQ</a>
@@ -1064,10 +1082,6 @@
 </header>
 
 <main id="main-content">
-<div class="max-w-7xl mx-auto px-4 sm:px-6" style="padding-top:80px">
-  <p class="text-sm text-gray-500 mt-2">Last updated: March 2026</p>
-  <p class="text-sm text-gray-500">By NOVARIS Consulting – FZulG Experts</p>
-</div>
 
 <!-- ══════════════════════════════════════════════
      HERO
@@ -1724,12 +1738,46 @@
 </section>
 
 
+<!-- ══════════════════════════════════════════════
+     CLIENT LOGO TICKER
+══════════════════════════════════════════════ -->
+<section id="kunden" class="bg-white py-16 sm:py-20" style="border-top:1px solid #edf2fb;display:none">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 mb-10 text-center">
+    <div class="badge mb-4" data-t="clients.badge">Our Clients</div>
+    <h2 class="text-3xl sm:text-4xl font-black mb-3" style="color:#0D1B3E" data-t="clients.h2">
+      Companies that trust NOVARIS
+    </h2>
+    <p style="color:#5a6e8c;font-size:0.9rem" data-t="clients.sub">Successful FZulG applications from 9+ industries.</p>
+  </div>
 
+  <div class="ticker-wrap py-3">
+    <div class="ticker-track">
+      <!-- 10 company chips × duplicated for seamless loop -->
+      <div class="logo-chip"><div class="logo-chip-abbr">TW</div><div class="logo-chip-name">TechWerk GmbH</div></div>
+      <div class="logo-chip"><div class="logo-chip-abbr">BN</div><div class="logo-chip-name">BioNova AG</div></div>
+      <div class="logo-chip"><div class="logo-chip-abbr">AV</div><div class="logo-chip-name">AutoVision KG</div></div>
+      <div class="logo-chip"><div class="logo-chip-abbr">MS</div><div class="logo-chip-name">MedSys GmbH</div></div>
+      <div class="logo-chip"><div class="logo-chip-abbr">CP</div><div class="logo-chip-name">ChemPlant AG</div></div>
+      <div class="logo-chip"><div class="logo-chip-abbr">SL</div><div class="logo-chip-name">SkyLogic GmbH</div></div>
+      <div class="logo-chip"><div class="logo-chip-abbr">GP</div><div class="logo-chip-name">GreenPower AG</div></div>
+      <div class="logo-chip"><div class="logo-chip-abbr">BT</div><div class="logo-chip-name">BuildTech KG</div></div>
+      <div class="logo-chip"><div class="logo-chip-abbr">DM</div><div class="logo-chip-name">DataMind GmbH</div></div>
+      <div class="logo-chip"><div class="logo-chip-abbr">FF</div><div class="logo-chip-name">FarmFuture AG</div></div>
+      <!-- Duplicate for seamless loop -->
+      <div class="logo-chip"><div class="logo-chip-abbr">TW</div><div class="logo-chip-name">TechWerk GmbH</div></div>
+      <div class="logo-chip"><div class="logo-chip-abbr">BN</div><div class="logo-chip-name">BioNova AG</div></div>
+      <div class="logo-chip"><div class="logo-chip-abbr">AV</div><div class="logo-chip-name">AutoVision KG</div></div>
+      <div class="logo-chip"><div class="logo-chip-abbr">MS</div><div class="logo-chip-name">MedSys GmbH</div></div>
+      <div class="logo-chip"><div class="logo-chip-abbr">CP</div><div class="logo-chip-name">ChemPlant AG</div></div>
+      <div class="logo-chip"><div class="logo-chip-abbr">SL</div><div class="logo-chip-name">SkyLogic GmbH</div></div>
+      <div class="logo-chip"><div class="logo-chip-abbr">GP</div><div class="logo-chip-name">GreenPower AG</div></div>
+      <div class="logo-chip"><div class="logo-chip-abbr">BT</div><div class="logo-chip-name">BuildTech KG</div></div>
+      <div class="logo-chip"><div class="logo-chip-abbr">DM</div><div class="logo-chip-name">DataMind GmbH</div></div>
+      <div class="logo-chip"><div class="logo-chip-abbr">FF</div><div class="logo-chip-name">FarmFuture AG</div></div>
+    </div>
+  </div>
+</section>
 
-<!-- Third-party review placeholder -->
-<div class="text-center py-4">
-  <p class="text-sm text-gray-500">&#9733;&#9733;&#9733;&#9733;&#9733; Reviews on <a href="#" class="underline">Google</a> and <a href="#" class="underline">ProvenExpert</a></p>
-</div>
 
 <!-- ══════════════════════════════════════════════
      FAQ
@@ -1843,7 +1891,7 @@
             </div>
             <div style="flex:1;min-width:0">
               <p style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.95rem;color:#fff;margin:0" data-t="kontakt.ev1.title">FZulG Initial Consultation</p>
-              <p style="font-size:0.75rem;color:rgba(195,215,245,0.65);margin:0.15rem 0 0" data-t="kontakt.ev1.time">30 min · Video call</p>
+              <p style="font-size:0.75rem;color:rgba(195,215,245,0.45);margin:0.15rem 0 0" data-t="kontakt.ev1.time">30 min · Video call</p>
               <p style="font-size:0.78rem;color:rgba(195,215,245,0.58);margin:0.4rem 0 0;line-height:1.55" data-t="kontakt.ev1.desc">Together we check if your R&amp;D projects are eligible and estimate your reimbursement potential.</p>
             </div>
             <svg style="flex-shrink:0;margin-top:14px" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(195,215,245,0.4)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
@@ -1856,7 +1904,7 @@
             </div>
             <div style="flex:1;min-width:0">
               <p style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.95rem;color:#fff;margin:0" data-t="kontakt.ev2.title">Getting to Know the FZulG</p>
-              <p style="font-size:0.75rem;color:rgba(195,215,245,0.65);margin:0.15rem 0 0" data-t="kontakt.ev2.time">60 min · Video call</p>
+              <p style="font-size:0.75rem;color:rgba(195,215,245,0.45);margin:0.15rem 0 0" data-t="kontakt.ev2.time">60 min · Video call</p>
               <p style="font-size:0.78rem;color:rgba(195,215,245,0.58);margin:0.4rem 0 0;line-height:1.55" data-t="kontakt.ev2.desc">Detailed analysis of your research projects with a concrete funding strategy and next steps.</p>
             </div>
             <svg style="flex-shrink:0;margin-top:14px" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(195,215,245,0.4)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
@@ -1925,43 +1973,42 @@
 
       <div class="lg:col-span-2">
         <img src="/brand_assets/Logo V5-light.svg" alt="NOVARIS Consulting" style="height:72px;width:auto;margin-bottom:1rem" />
-        <p style="font-size:0.82rem;color:rgba(195,215,245,0.65);line-height:1.72;max-width:320px" data-t="footer.desc">
+        <p style="font-size:0.82rem;color:rgba(195,215,245,0.38);line-height:1.72;max-width:320px" data-t="footer.desc">
           NOVARIS Consulting is your specialized full-service partner for the German
           R&amp;D Tax Credit under the FZulG – performance-based, transparent, and risk-free.
         </p>
-        <p class="text-sm" style="color:rgba(195,215,245,0.65)">Tel: +49 (0) XXX XXXXXXX</p>
       </div>
 
       <div>
         <div style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.75rem;letter-spacing:0.09em;text-transform:uppercase;color:rgba(195,215,245,0.3);margin-bottom:1rem" data-t="footer.nav.heading">Navigation</div>
         <div style="display:flex;flex-direction:column;gap:0.55rem">
-          <a href="#was-ist-fzulg" style="font-size:0.82rem;color:rgba(195,215,245,0.65);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white" data-t="footer.nav.fzulg">The FZulG</a>
-          <a href="#prozess"       style="font-size:0.82rem;color:rgba(195,215,245,0.65);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white" data-t="footer.nav.prozess">Process</a>
-          <a href="#vorteile"      style="font-size:0.82rem;color:rgba(195,215,245,0.65);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white" data-t="footer.nav.vorteile">Benefits</a>
-          <a href="#faq"           style="font-size:0.82rem;color:rgba(195,215,245,0.65);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white" data-t="footer.nav.faq">FAQ</a>
-          <a href="#kontakt"       style="font-size:0.82rem;color:rgba(195,215,245,0.65);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white" data-t="footer.nav.kontakt">Contact</a>
+          <a href="#was-ist-fzulg" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white" data-t="footer.nav.fzulg">The FZulG</a>
+          <a href="#prozess"       style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white" data-t="footer.nav.prozess">Process</a>
+          <a href="#vorteile"      style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white" data-t="footer.nav.vorteile">Benefits</a>
+          <a href="#faq"           style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white" data-t="footer.nav.faq">FAQ</a>
+          <a href="#kontakt"       style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white" data-t="footer.nav.kontakt">Contact</a>
         </div>
       </div>
 
       <div>
         <div style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.75rem;letter-spacing:0.09em;text-transform:uppercase;color:rgba(195,215,245,0.3);margin-bottom:1rem">Resources</div>
         <div style="display:flex;flex-direction:column;gap:0.55rem">
-          <a href="/en/forschungszulage.html" style="font-size:0.82rem;color:rgba(195,215,245,0.65);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">FZulG Guide</a>
-          <a href="/en/forschungszulage-rechner.html" style="font-size:0.82rem;color:rgba(195,215,245,0.65);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Funding Calculator</a>
-          <a href="/en/forschungszulage-antrag.html" style="font-size:0.82rem;color:rgba(195,215,245,0.65);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Apply Now</a>
-          <a href="/en/forschungszulage-check.html" style="font-size:0.82rem;color:rgba(195,215,245,0.65);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Eligibility Check</a>
-          <a href="/foerdermittel-vergleich.html" style="font-size:0.82rem;color:rgba(195,215,245,0.65);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Funding Comparison</a>
-          <a href="/erfolge.html" style="font-size:0.82rem;color:rgba(195,215,245,0.65);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Case Studies</a>
+          <a href="/en/forschungszulage.html" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">FZulG Guide</a>
+          <a href="/en/forschungszulage-rechner.html" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Funding Calculator</a>
+          <a href="/en/forschungszulage-antrag.html" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Apply Now</a>
+          <a href="/en/forschungszulage-check.html" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Eligibility Check</a>
+          <a href="/foerdermittel-vergleich.html" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Funding Comparison</a>
+          <a href="/erfolge.html" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white">Case Studies</a>
         </div>
       </div>
 
       <div>
         <div style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.75rem;letter-spacing:0.09em;text-transform:uppercase;color:rgba(195,215,245,0.3);margin-bottom:1rem" data-t="footer.legal.heading">Rechtliches</div>
         <div style="display:flex;flex-direction:column;gap:0.55rem">
-          <a href="/impressum.html" style="font-size:0.82rem;color:rgba(195,215,245,0.65);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white" data-t="footer.legal.impressum">Impressum</a>
-          <a href="/datenschutz.html" style="font-size:0.82rem;color:rgba(195,215,245,0.65);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white" data-t="footer.legal.datenschutz">Datenschutz</a>
-          <a href="/agb.html" style="font-size:0.82rem;color:rgba(195,215,245,0.65);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white" data-t="footer.legal.agb">AGB</a>
-          <a href="javascript:void(0)" onclick="CookieConsent.reset();CookieConsent.request(function(){});" style="font-size:0.82rem;color:rgba(195,215,245,0.65);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white" data-t="footer.legal.cookies">Cookie-Einstellungen</a>
+          <a href="/impressum.html" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white" data-t="footer.legal.impressum">Impressum</a>
+          <a href="/datenschutz.html" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white" data-t="footer.legal.datenschutz">Datenschutz</a>
+          <a href="/agb.html" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white" data-t="footer.legal.agb">AGB</a>
+          <a href="javascript:void(0)" onclick="CookieConsent.reset();CookieConsent.request(function(){});" style="font-size:0.82rem;color:rgba(195,215,245,0.48);text-decoration:none;transition:color 0.14s ease" class="hover:!text-white" data-t="footer.legal.cookies">Cookie-Einstellungen</a>
         </div>
       </div>
     </div>
@@ -2553,23 +2600,21 @@
     _currentLang = lang;
     localStorage.setItem('lang', lang);
     const t = T[lang];
-    requestAnimationFrame(() => {
-      document.querySelectorAll('[data-t]').forEach(el => {
-        const val = t[el.getAttribute('data-t')];
-        if (val !== undefined) el.innerHTML = val;
-      });
-      // Update desktop toggle
-      const de = document.getElementById('lang-de');
-      const en = document.getElementById('lang-en');
-      if (de) { de.classList.toggle('active', lang === 'de'); }
-      if (en) { en.classList.toggle('active', lang === 'en'); }
-      // Update mobile toggle
-      const dem = document.getElementById('lang-de-mob');
-      const enm = document.getElementById('lang-en-mob');
-      if (dem) { dem.classList.toggle('active', lang === 'de'); }
-      if (enm) { enm.classList.toggle('active', lang === 'en'); }
-      document.documentElement.lang = lang;
+    document.querySelectorAll('[data-t]').forEach(el => {
+      const val = t[el.getAttribute('data-t')];
+      if (val !== undefined) el.innerHTML = val;
     });
+    // Update desktop toggle
+    const de = document.getElementById('lang-de');
+    const en = document.getElementById('lang-en');
+    if (de) { de.classList.toggle('active', lang === 'de'); }
+    if (en) { en.classList.toggle('active', lang === 'en'); }
+    // Update mobile toggle
+    const dem = document.getElementById('lang-de-mob');
+    const enm = document.getElementById('lang-en-mob');
+    if (dem) { dem.classList.toggle('active', lang === 'de'); }
+    if (enm) { enm.classList.toggle('active', lang === 'en'); }
+    document.documentElement.lang = lang;
   }
 
   // Restore saved language on load
