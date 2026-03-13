@@ -1,74 +1,424 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Main Pages -->
-  <url><loc>https://novaris-consulting.com/</loc><lastmod>2026-03-13</lastmod></url>
-  <url><loc>https://novaris-consulting.com/forschungszulage.html</loc><lastmod>2026-03-13</lastmod></url>
-  <url><loc>https://novaris-consulting.com/forschungszulage-rechner.html</loc><lastmod>2026-03-13</lastmod></url>
-
-  <!-- New Content Pages -->
-  <url><loc>https://novaris-consulting.com/forschungszulage-antrag.html</loc><lastmod>2026-03-13</lastmod></url>
-  <url><loc>https://novaris-consulting.com/forschungszulage-check.html</loc><lastmod>2026-03-13</lastmod></url>
-  <url><loc>https://novaris-consulting.com/forschungszulage-2026.html</loc><lastmod>2026-03-13</lastmod></url>
-  <url><loc>https://novaris-consulting.com/foerdermittel-vergleich.html</loc><lastmod>2026-03-13</lastmod></url>
-  <url><loc>https://novaris-consulting.com/erfolge.html</loc><lastmod>2026-03-13</lastmod></url>
-
-  <!-- Branchen Pages -->
-  <url><loc>https://novaris-consulting.com/branchen/software-it.html</loc><lastmod>2026-03-13</lastmod></url>
-  <url><loc>https://novaris-consulting.com/branchen/maschinenbau.html</loc><lastmod>2026-03-13</lastmod></url>
-  <url><loc>https://novaris-consulting.com/branchen/medizintechnik.html</loc><lastmod>2026-03-13</lastmod></url>
-  <url><loc>https://novaris-consulting.com/branchen/pharma.html</loc><lastmod>2026-03-13</lastmod></url>
-  <url><loc>https://novaris-consulting.com/branchen/automotive.html</loc><lastmod>2026-03-13</lastmod></url>
-  <url><loc>https://novaris-consulting.com/branchen/energie.html</loc><lastmod>2026-03-13</lastmod></url>
-  <url><loc>https://novaris-consulting.com/branchen/luft-raumfahrt.html</loc><lastmod>2026-03-13</lastmod></url>
-  <url><loc>https://novaris-consulting.com/branchen/bauindustrie.html</loc><lastmod>2026-03-13</lastmod></url>
-  <url><loc>https://novaris-consulting.com/branchen/agrar-foodtech.html</loc><lastmod>2026-03-13</lastmod></url>
-
-  <!-- SEO Content Pages (not in navigation) -->
-  <url><loc>https://novaris-consulting.com/forschungszulage-zeiterfassung.html</loc><lastmod>2026-03-13</lastmod></url>
-  <url><loc>https://novaris-consulting.com/forschungszulage-steuerberater.html</loc><lastmod>2026-03-13</lastmod></url>
-  <url><loc>https://novaris-consulting.com/bsfz-ablehnung-widerspruch.html</loc><lastmod>2026-03-13</lastmod></url>
-  <url><loc>https://novaris-consulting.com/forschungszulage-gmbh-einzelunternehmen.html</loc><lastmod>2026-03-13</lastmod></url>
-  <url><loc>https://novaris-consulting.com/forschungszulage-auftragsforschung.html</loc><lastmod>2026-03-13</lastmod></url>
-  <url><loc>https://novaris-consulting.com/forschungszulage-rueckwirkend.html</loc><lastmod>2026-03-13</lastmod></url>
-  <url><loc>https://novaris-consulting.com/forschungszulage-buchen.html</loc><lastmod>2026-03-13</lastmod></url>
-  <url><loc>https://novaris-consulting.com/forschungszulage-personalkosten.html</loc><lastmod>2026-03-13</lastmod></url>
-  <url><loc>https://novaris-consulting.com/forschungszulage-auszahlung.html</loc><lastmod>2026-03-13</lastmod></url>
-  <url><loc>https://novaris-consulting.com/forschungszulage-koerperschaftsteuer.html</loc><lastmod>2026-03-13</lastmod></url>
-  <url><loc>https://novaris-consulting.com/forschungszulage-hoehe.html</loc><lastmod>2026-03-13</lastmod></url>
-  <url><loc>https://novaris-consulting.com/forschungszulage-sachkosten.html</loc><lastmod>2026-03-13</lastmod></url>
-  <url><loc>https://novaris-consulting.com/forschungszulage-eigenleistungen.html</loc><lastmod>2026-03-13</lastmod></url>
-
-  <!-- Legal Pages -->
-
-  <!-- English Pages -->
-  <url><loc>https://novaris-consulting.com/en/</loc><lastmod>2026-03-13</lastmod></url>
-  <url><loc>https://novaris-consulting.com/en/forschungszulage.html</loc><lastmod>2026-03-13</lastmod></url>
-  <url><loc>https://novaris-consulting.com/en/forschungszulage-rechner.html</loc><lastmod>2026-03-13</lastmod></url>
-  <url><loc>https://novaris-consulting.com/en/forschungszulage-antrag.html</loc><lastmod>2026-03-13</lastmod></url>
-  <url><loc>https://novaris-consulting.com/en/forschungszulage-check.html</loc><lastmod>2026-03-13</lastmod></url>
-  <url><loc>https://novaris-consulting.com/en/forschungszulage-2026.html</loc><lastmod>2026-03-13</lastmod></url>
-  <url><loc>https://novaris-consulting.com/en/foerdermittel-vergleich.html</loc><lastmod>2026-03-13</lastmod></url>
-  <url><loc>https://novaris-consulting.com/en/erfolge.html</loc><lastmod>2026-03-13</lastmod></url>
-  <url><loc>https://novaris-consulting.com/en/forschungszulage-buchen.html</loc><lastmod>2026-03-13</lastmod></url>
-  <url><loc>https://novaris-consulting.com/en/forschungszulage-personalkosten.html</loc><lastmod>2026-03-13</lastmod></url>
-  <url><loc>https://novaris-consulting.com/en/forschungszulage-auszahlung.html</loc><lastmod>2026-03-13</lastmod></url>
-  <url><loc>https://novaris-consulting.com/en/forschungszulage-koerperschaftsteuer.html</loc><lastmod>2026-03-13</lastmod></url>
-  <url><loc>https://novaris-consulting.com/en/forschungszulage-hoehe.html</loc><lastmod>2026-03-13</lastmod></url>
-  <url><loc>https://novaris-consulting.com/en/forschungszulage-sachkosten.html</loc><lastmod>2026-03-13</lastmod></url>
-  <url><loc>https://novaris-consulting.com/en/forschungszulage-eigenleistungen.html</loc><lastmod>2026-03-13</lastmod></url>
-  <url><loc>https://novaris-consulting.com/en/forschungszulage-rueckwirkend.html</loc><lastmod>2026-03-13</lastmod></url>
-  <url><loc>https://novaris-consulting.com/en/forschungszulage-zeiterfassung.html</loc><lastmod>2026-03-13</lastmod></url>
-  <url><loc>https://novaris-consulting.com/en/forschungszulage-steuerberater.html</loc><lastmod>2026-03-13</lastmod></url>
-  <url><loc>https://novaris-consulting.com/en/bsfz-ablehnung-widerspruch.html</loc><lastmod>2026-03-13</lastmod></url>
-  <url><loc>https://novaris-consulting.com/en/forschungszulage-gmbh-einzelunternehmen.html</loc><lastmod>2026-03-13</lastmod></url>
-  <url><loc>https://novaris-consulting.com/en/forschungszulage-auftragsforschung.html</loc><lastmod>2026-03-13</lastmod></url>
-  <url><loc>https://novaris-consulting.com/en/branchen/software-it.html</loc><lastmod>2026-03-13</lastmod></url>
-  <url><loc>https://novaris-consulting.com/en/branchen/maschinenbau.html</loc><lastmod>2026-03-13</lastmod></url>
-  <url><loc>https://novaris-consulting.com/en/branchen/medizintechnik.html</loc><lastmod>2026-03-13</lastmod></url>
-  <url><loc>https://novaris-consulting.com/en/branchen/pharma.html</loc><lastmod>2026-03-13</lastmod></url>
-  <url><loc>https://novaris-consulting.com/en/branchen/automotive.html</loc><lastmod>2026-03-13</lastmod></url>
-  <url><loc>https://novaris-consulting.com/en/branchen/energie.html</loc><lastmod>2026-03-13</lastmod></url>
-  <url><loc>https://novaris-consulting.com/en/branchen/luft-raumfahrt.html</loc><lastmod>2026-03-13</lastmod></url>
-  <url><loc>https://novaris-consulting.com/en/branchen/bauindustrie.html</loc><lastmod>2026-03-13</lastmod></url>
-  <url><loc>https://novaris-consulting.com/en/branchen/agrar-foodtech.html</loc><lastmod>2026-03-13</lastmod></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://novaris-consulting.com/</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/" />
+  </url>
+  <url>
+    <loc>https://novaris-consulting.com/en/</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/" />
+  </url>
+  <url>
+    <loc>https://novaris-consulting.com/forschungszulage.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/forschungszulage.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/forschungszulage.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/forschungszulage.html" />
+  </url>
+  <url>
+    <loc>https://novaris-consulting.com/en/forschungszulage.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/forschungszulage.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/forschungszulage.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/forschungszulage.html" />
+  </url>
+  <url>
+    <loc>https://novaris-consulting.com/forschungszulage-rechner.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/forschungszulage-rechner.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/forschungszulage-rechner.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/forschungszulage-rechner.html" />
+  </url>
+  <url>
+    <loc>https://novaris-consulting.com/en/forschungszulage-rechner.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/forschungszulage-rechner.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/forschungszulage-rechner.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/forschungszulage-rechner.html" />
+  </url>
+  <url>
+    <loc>https://novaris-consulting.com/forschungszulage-antrag.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/forschungszulage-antrag.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/forschungszulage-antrag.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/forschungszulage-antrag.html" />
+  </url>
+  <url>
+    <loc>https://novaris-consulting.com/en/forschungszulage-antrag.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/forschungszulage-antrag.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/forschungszulage-antrag.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/forschungszulage-antrag.html" />
+  </url>
+  <url>
+    <loc>https://novaris-consulting.com/forschungszulage-check.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/forschungszulage-check.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/forschungszulage-check.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/forschungszulage-check.html" />
+  </url>
+  <url>
+    <loc>https://novaris-consulting.com/en/forschungszulage-check.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/forschungszulage-check.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/forschungszulage-check.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/forschungszulage-check.html" />
+  </url>
+  <url>
+    <loc>https://novaris-consulting.com/forschungszulage-2026.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/forschungszulage-2026.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/forschungszulage-2026.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/forschungszulage-2026.html" />
+  </url>
+  <url>
+    <loc>https://novaris-consulting.com/en/forschungszulage-2026.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/forschungszulage-2026.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/forschungszulage-2026.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/forschungszulage-2026.html" />
+  </url>
+  <url>
+    <loc>https://novaris-consulting.com/foerdermittel-vergleich.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/foerdermittel-vergleich.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/foerdermittel-vergleich.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/foerdermittel-vergleich.html" />
+  </url>
+  <url>
+    <loc>https://novaris-consulting.com/en/foerdermittel-vergleich.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/foerdermittel-vergleich.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/foerdermittel-vergleich.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/foerdermittel-vergleich.html" />
+  </url>
+  <url>
+    <loc>https://novaris-consulting.com/erfolge.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/erfolge.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/erfolge.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/erfolge.html" />
+  </url>
+  <url>
+    <loc>https://novaris-consulting.com/en/erfolge.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/erfolge.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/erfolge.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/erfolge.html" />
+  </url>
+  <url>
+    <loc>https://novaris-consulting.com/forschungszulage-zeiterfassung.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/forschungszulage-zeiterfassung.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/forschungszulage-zeiterfassung.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/forschungszulage-zeiterfassung.html" />
+  </url>
+  <url>
+    <loc>https://novaris-consulting.com/en/forschungszulage-zeiterfassung.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/forschungszulage-zeiterfassung.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/forschungszulage-zeiterfassung.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/forschungszulage-zeiterfassung.html" />
+  </url>
+  <url>
+    <loc>https://novaris-consulting.com/forschungszulage-steuerberater.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/forschungszulage-steuerberater.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/forschungszulage-steuerberater.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/forschungszulage-steuerberater.html" />
+  </url>
+  <url>
+    <loc>https://novaris-consulting.com/en/forschungszulage-steuerberater.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/forschungszulage-steuerberater.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/forschungszulage-steuerberater.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/forschungszulage-steuerberater.html" />
+  </url>
+  <url>
+    <loc>https://novaris-consulting.com/bsfz-ablehnung-widerspruch.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/bsfz-ablehnung-widerspruch.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/bsfz-ablehnung-widerspruch.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/bsfz-ablehnung-widerspruch.html" />
+  </url>
+  <url>
+    <loc>https://novaris-consulting.com/en/bsfz-ablehnung-widerspruch.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/bsfz-ablehnung-widerspruch.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/bsfz-ablehnung-widerspruch.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/bsfz-ablehnung-widerspruch.html" />
+  </url>
+  <url>
+    <loc>https://novaris-consulting.com/forschungszulage-gmbh-einzelunternehmen.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/forschungszulage-gmbh-einzelunternehmen.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/forschungszulage-gmbh-einzelunternehmen.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/forschungszulage-gmbh-einzelunternehmen.html" />
+  </url>
+  <url>
+    <loc>https://novaris-consulting.com/en/forschungszulage-gmbh-einzelunternehmen.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/forschungszulage-gmbh-einzelunternehmen.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/forschungszulage-gmbh-einzelunternehmen.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/forschungszulage-gmbh-einzelunternehmen.html" />
+  </url>
+  <url>
+    <loc>https://novaris-consulting.com/forschungszulage-auftragsforschung.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/forschungszulage-auftragsforschung.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/forschungszulage-auftragsforschung.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/forschungszulage-auftragsforschung.html" />
+  </url>
+  <url>
+    <loc>https://novaris-consulting.com/en/forschungszulage-auftragsforschung.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/forschungszulage-auftragsforschung.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/forschungszulage-auftragsforschung.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/forschungszulage-auftragsforschung.html" />
+  </url>
+  <url>
+    <loc>https://novaris-consulting.com/forschungszulage-rueckwirkend.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/forschungszulage-rueckwirkend.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/forschungszulage-rueckwirkend.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/forschungszulage-rueckwirkend.html" />
+  </url>
+  <url>
+    <loc>https://novaris-consulting.com/en/forschungszulage-rueckwirkend.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/forschungszulage-rueckwirkend.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/forschungszulage-rueckwirkend.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/forschungszulage-rueckwirkend.html" />
+  </url>
+  <url>
+    <loc>https://novaris-consulting.com/forschungszulage-buchen.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/forschungszulage-buchen.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/forschungszulage-buchen.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/forschungszulage-buchen.html" />
+  </url>
+  <url>
+    <loc>https://novaris-consulting.com/en/forschungszulage-buchen.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/forschungszulage-buchen.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/forschungszulage-buchen.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/forschungszulage-buchen.html" />
+  </url>
+  <url>
+    <loc>https://novaris-consulting.com/forschungszulage-personalkosten.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/forschungszulage-personalkosten.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/forschungszulage-personalkosten.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/forschungszulage-personalkosten.html" />
+  </url>
+  <url>
+    <loc>https://novaris-consulting.com/en/forschungszulage-personalkosten.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/forschungszulage-personalkosten.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/forschungszulage-personalkosten.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/forschungszulage-personalkosten.html" />
+  </url>
+  <url>
+    <loc>https://novaris-consulting.com/forschungszulage-auszahlung.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/forschungszulage-auszahlung.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/forschungszulage-auszahlung.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/forschungszulage-auszahlung.html" />
+  </url>
+  <url>
+    <loc>https://novaris-consulting.com/en/forschungszulage-auszahlung.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/forschungszulage-auszahlung.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/forschungszulage-auszahlung.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/forschungszulage-auszahlung.html" />
+  </url>
+  <url>
+    <loc>https://novaris-consulting.com/forschungszulage-koerperschaftsteuer.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/forschungszulage-koerperschaftsteuer.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/forschungszulage-koerperschaftsteuer.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/forschungszulage-koerperschaftsteuer.html" />
+  </url>
+  <url>
+    <loc>https://novaris-consulting.com/en/forschungszulage-koerperschaftsteuer.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/forschungszulage-koerperschaftsteuer.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/forschungszulage-koerperschaftsteuer.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/forschungszulage-koerperschaftsteuer.html" />
+  </url>
+  <url>
+    <loc>https://novaris-consulting.com/forschungszulage-hoehe.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/forschungszulage-hoehe.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/forschungszulage-hoehe.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/forschungszulage-hoehe.html" />
+  </url>
+  <url>
+    <loc>https://novaris-consulting.com/en/forschungszulage-hoehe.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/forschungszulage-hoehe.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/forschungszulage-hoehe.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/forschungszulage-hoehe.html" />
+  </url>
+  <url>
+    <loc>https://novaris-consulting.com/forschungszulage-sachkosten.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/forschungszulage-sachkosten.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/forschungszulage-sachkosten.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/forschungszulage-sachkosten.html" />
+  </url>
+  <url>
+    <loc>https://novaris-consulting.com/en/forschungszulage-sachkosten.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/forschungszulage-sachkosten.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/forschungszulage-sachkosten.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/forschungszulage-sachkosten.html" />
+  </url>
+  <url>
+    <loc>https://novaris-consulting.com/forschungszulage-eigenleistungen.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/forschungszulage-eigenleistungen.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/forschungszulage-eigenleistungen.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/forschungszulage-eigenleistungen.html" />
+  </url>
+  <url>
+    <loc>https://novaris-consulting.com/en/forschungszulage-eigenleistungen.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/forschungszulage-eigenleistungen.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/forschungszulage-eigenleistungen.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/forschungszulage-eigenleistungen.html" />
+  </url>
+  <url>
+    <loc>https://novaris-consulting.com/branchen/software-it.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/branchen/software-it.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/branchen/software-it.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/branchen/software-it.html" />
+  </url>
+  <url>
+    <loc>https://novaris-consulting.com/en/branchen/software-it.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/branchen/software-it.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/branchen/software-it.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/branchen/software-it.html" />
+  </url>
+  <url>
+    <loc>https://novaris-consulting.com/branchen/maschinenbau.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/branchen/maschinenbau.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/branchen/maschinenbau.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/branchen/maschinenbau.html" />
+  </url>
+  <url>
+    <loc>https://novaris-consulting.com/en/branchen/maschinenbau.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/branchen/maschinenbau.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/branchen/maschinenbau.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/branchen/maschinenbau.html" />
+  </url>
+  <url>
+    <loc>https://novaris-consulting.com/branchen/medizintechnik.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/branchen/medizintechnik.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/branchen/medizintechnik.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/branchen/medizintechnik.html" />
+  </url>
+  <url>
+    <loc>https://novaris-consulting.com/en/branchen/medizintechnik.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/branchen/medizintechnik.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/branchen/medizintechnik.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/branchen/medizintechnik.html" />
+  </url>
+  <url>
+    <loc>https://novaris-consulting.com/branchen/pharma.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/branchen/pharma.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/branchen/pharma.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/branchen/pharma.html" />
+  </url>
+  <url>
+    <loc>https://novaris-consulting.com/en/branchen/pharma.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/branchen/pharma.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/branchen/pharma.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/branchen/pharma.html" />
+  </url>
+  <url>
+    <loc>https://novaris-consulting.com/branchen/automotive.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/branchen/automotive.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/branchen/automotive.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/branchen/automotive.html" />
+  </url>
+  <url>
+    <loc>https://novaris-consulting.com/en/branchen/automotive.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/branchen/automotive.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/branchen/automotive.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/branchen/automotive.html" />
+  </url>
+  <url>
+    <loc>https://novaris-consulting.com/branchen/energie.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/branchen/energie.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/branchen/energie.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/branchen/energie.html" />
+  </url>
+  <url>
+    <loc>https://novaris-consulting.com/en/branchen/energie.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/branchen/energie.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/branchen/energie.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/branchen/energie.html" />
+  </url>
+  <url>
+    <loc>https://novaris-consulting.com/branchen/luft-raumfahrt.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/branchen/luft-raumfahrt.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/branchen/luft-raumfahrt.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/branchen/luft-raumfahrt.html" />
+  </url>
+  <url>
+    <loc>https://novaris-consulting.com/en/branchen/luft-raumfahrt.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/branchen/luft-raumfahrt.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/branchen/luft-raumfahrt.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/branchen/luft-raumfahrt.html" />
+  </url>
+  <url>
+    <loc>https://novaris-consulting.com/branchen/bauindustrie.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/branchen/bauindustrie.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/branchen/bauindustrie.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/branchen/bauindustrie.html" />
+  </url>
+  <url>
+    <loc>https://novaris-consulting.com/en/branchen/bauindustrie.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/branchen/bauindustrie.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/branchen/bauindustrie.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/branchen/bauindustrie.html" />
+  </url>
+  <url>
+    <loc>https://novaris-consulting.com/branchen/agrar-foodtech.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/branchen/agrar-foodtech.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/branchen/agrar-foodtech.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/branchen/agrar-foodtech.html" />
+  </url>
+  <url>
+    <loc>https://novaris-consulting.com/en/branchen/agrar-foodtech.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novaris-consulting.com/branchen/agrar-foodtech.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://novaris-consulting.com/en/branchen/agrar-foodtech.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://novaris-consulting.com/branchen/agrar-foodtech.html" />
+  </url>
 </urlset>

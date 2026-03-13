@@ -25,11 +25,11 @@
         },
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'self'; script-src 'self' 'unsafe-inline' https://app.cal.com https://cal.com https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://app.cal.com https://cal.com https://cdn.tailwindcss.com; font-src 'self' https://cal.com https://app.cal.com; img-src 'self' https://app.cal.com https://cal.com https://www.google-analytics.com https://www.googletagmanager.com https://placehold.co data:; connect-src 'self' https://app.cal.com https://cal.com https://www.google-analytics.com https://region1.google-analytics.com https://www.googletagmanager.com; frame-src https://app.cal.com https://cal.com; object-src 'none'; worker-src 'none'; manifest-src 'self'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests"
+          "value": "default-src 'self'; script-src 'self' https://app.cal.com https://cal.com https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://app.cal.com https://cal.com; font-src 'self' https://cal.com https://app.cal.com; img-src 'self' https://app.cal.com https://cal.com https://www.google-analytics.com https://www.googletagmanager.com https://placehold.co data:; connect-src 'self' https://app.cal.com https://cal.com https://www.google-analytics.com https://region1.google-analytics.com https://www.googletagmanager.com; frame-src https://app.cal.com https://cal.com; object-src 'none'; worker-src 'none'; manifest-src 'self'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests"
         },
         {
           "key": "Content-Security-Policy-Report-Only",
-          "value": "default-src 'self'; script-src 'self' https://app.cal.com https://cal.com https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://app.cal.com https://cal.com https://cdn.tailwindcss.com; font-src 'self' https://cal.com https://app.cal.com; img-src 'self' https://app.cal.com https://cal.com https://www.google-analytics.com https://www.googletagmanager.com https://placehold.co data:; connect-src 'self' https://app.cal.com https://cal.com https://www.google-analytics.com https://region1.google-analytics.com https://www.googletagmanager.com; frame-src https://app.cal.com https://cal.com; base-uri 'self'; form-action 'self'"
+          "value": "default-src 'self'; script-src 'self' https://app.cal.com https://cal.com https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://app.cal.com https://cal.com; font-src 'self' https://cal.com https://app.cal.com; img-src 'self' https://app.cal.com https://cal.com https://www.google-analytics.com https://www.googletagmanager.com https://placehold.co data:; connect-src 'self' https://app.cal.com https://cal.com https://www.google-analytics.com https://region1.google-analytics.com https://www.googletagmanager.com; frame-src https://app.cal.com https://cal.com; base-uri 'self'; form-action 'self'"
         },
         {
           "key": "X-DNS-Prefetch-Control",
@@ -53,6 +53,268 @@
           "value": "public, max-age=31536000, immutable"
         }
       ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/forschungszulage",
+      "destination": "/forschungszulage.html"
+    },
+    {
+      "source": "/forschungszulage-rechner",
+      "destination": "/forschungszulage-rechner.html"
+    },
+    {
+      "source": "/forschungszulage-antrag",
+      "destination": "/forschungszulage-antrag.html"
+    },
+    {
+      "source": "/forschungszulage-check",
+      "destination": "/forschungszulage-check.html"
+    },
+    {
+      "source": "/forschungszulage-2026",
+      "destination": "/forschungszulage-2026.html"
+    },
+    {
+      "source": "/foerdermittel-vergleich",
+      "destination": "/foerdermittel-vergleich.html"
+    },
+    {
+      "source": "/erfolge",
+      "destination": "/erfolge.html"
+    },
+    {
+      "source": "/impressum",
+      "destination": "/impressum.html"
+    },
+    {
+      "source": "/datenschutz",
+      "destination": "/datenschutz.html"
+    },
+    {
+      "source": "/agb",
+      "destination": "/agb.html"
+    },
+    {
+      "source": "/forschungszulage-steuerberater",
+      "destination": "/forschungszulage-steuerberater.html"
+    },
+    {
+      "source": "/forschungszulage-zeiterfassung",
+      "destination": "/forschungszulage-zeiterfassung.html"
+    },
+    {
+      "source": "/forschungszulage-personalkosten",
+      "destination": "/forschungszulage-personalkosten.html"
+    },
+    {
+      "source": "/forschungszulage-sachkosten",
+      "destination": "/forschungszulage-sachkosten.html"
+    },
+    {
+      "source": "/forschungszulage-eigenleistungen",
+      "destination": "/forschungszulage-eigenleistungen.html"
+    },
+    {
+      "source": "/forschungszulage-hoehe",
+      "destination": "/forschungszulage-hoehe.html"
+    },
+    {
+      "source": "/forschungszulage-koerperschaftsteuer",
+      "destination": "/forschungszulage-koerperschaftsteuer.html"
+    },
+    {
+      "source": "/forschungszulage-buchen",
+      "destination": "/forschungszulage-buchen.html"
+    },
+    {
+      "source": "/forschungszulage-auszahlung",
+      "destination": "/forschungszulage-auszahlung.html"
+    },
+    {
+      "source": "/forschungszulage-rueckwirkend",
+      "destination": "/forschungszulage-rueckwirkend.html"
+    },
+    {
+      "source": "/forschungszulage-auftragsforschung",
+      "destination": "/forschungszulage-auftragsforschung.html"
+    },
+    {
+      "source": "/forschungszulage-gmbh-einzelunternehmen",
+      "destination": "/forschungszulage-gmbh-einzelunternehmen.html"
+    },
+    {
+      "source": "/bsfz-ablehnung-widerspruch",
+      "destination": "/bsfz-ablehnung-widerspruch.html"
+    },
+    {
+      "source": "/en/forschungszulage",
+      "destination": "/en/forschungszulage.html"
+    },
+    {
+      "source": "/en/forschungszulage-rechner",
+      "destination": "/en/forschungszulage-rechner.html"
+    },
+    {
+      "source": "/en/forschungszulage-antrag",
+      "destination": "/en/forschungszulage-antrag.html"
+    },
+    {
+      "source": "/en/forschungszulage-check",
+      "destination": "/en/forschungszulage-check.html"
+    },
+    {
+      "source": "/en/forschungszulage-2026",
+      "destination": "/en/forschungszulage-2026.html"
+    },
+    {
+      "source": "/en/foerdermittel-vergleich",
+      "destination": "/en/foerdermittel-vergleich.html"
+    },
+    {
+      "source": "/en/erfolge",
+      "destination": "/en/erfolge.html"
+    },
+    {
+      "source": "/en/impressum",
+      "destination": "/en/impressum.html"
+    },
+    {
+      "source": "/en/datenschutz",
+      "destination": "/en/datenschutz.html"
+    },
+    {
+      "source": "/en/agb",
+      "destination": "/en/agb.html"
+    },
+    {
+      "source": "/en/forschungszulage-steuerberater",
+      "destination": "/en/forschungszulage-steuerberater.html"
+    },
+    {
+      "source": "/en/forschungszulage-zeiterfassung",
+      "destination": "/en/forschungszulage-zeiterfassung.html"
+    },
+    {
+      "source": "/en/forschungszulage-personalkosten",
+      "destination": "/en/forschungszulage-personalkosten.html"
+    },
+    {
+      "source": "/en/forschungszulage-sachkosten",
+      "destination": "/en/forschungszulage-sachkosten.html"
+    },
+    {
+      "source": "/en/forschungszulage-eigenleistungen",
+      "destination": "/en/forschungszulage-eigenleistungen.html"
+    },
+    {
+      "source": "/en/forschungszulage-hoehe",
+      "destination": "/en/forschungszulage-hoehe.html"
+    },
+    {
+      "source": "/en/forschungszulage-koerperschaftsteuer",
+      "destination": "/en/forschungszulage-koerperschaftsteuer.html"
+    },
+    {
+      "source": "/en/forschungszulage-buchen",
+      "destination": "/en/forschungszulage-buchen.html"
+    },
+    {
+      "source": "/en/forschungszulage-auszahlung",
+      "destination": "/en/forschungszulage-auszahlung.html"
+    },
+    {
+      "source": "/en/forschungszulage-rueckwirkend",
+      "destination": "/en/forschungszulage-rueckwirkend.html"
+    },
+    {
+      "source": "/en/forschungszulage-auftragsforschung",
+      "destination": "/en/forschungszulage-auftragsforschung.html"
+    },
+    {
+      "source": "/en/forschungszulage-gmbh-einzelunternehmen",
+      "destination": "/en/forschungszulage-gmbh-einzelunternehmen.html"
+    },
+    {
+      "source": "/en/bsfz-ablehnung-widerspruch",
+      "destination": "/en/bsfz-ablehnung-widerspruch.html"
+    },
+    {
+      "source": "/en",
+      "destination": "/en/index.html"
+    },
+    {
+      "source": "/branchen/software-it",
+      "destination": "/branchen/software-it.html"
+    },
+    {
+      "source": "/branchen/maschinenbau",
+      "destination": "/branchen/maschinenbau.html"
+    },
+    {
+      "source": "/branchen/medizintechnik",
+      "destination": "/branchen/medizintechnik.html"
+    },
+    {
+      "source": "/branchen/pharma",
+      "destination": "/branchen/pharma.html"
+    },
+    {
+      "source": "/branchen/automotive",
+      "destination": "/branchen/automotive.html"
+    },
+    {
+      "source": "/branchen/energie",
+      "destination": "/branchen/energie.html"
+    },
+    {
+      "source": "/branchen/luft-raumfahrt",
+      "destination": "/branchen/luft-raumfahrt.html"
+    },
+    {
+      "source": "/branchen/bauindustrie",
+      "destination": "/branchen/bauindustrie.html"
+    },
+    {
+      "source": "/branchen/agrar-foodtech",
+      "destination": "/branchen/agrar-foodtech.html"
+    },
+    {
+      "source": "/en/branchen/software-it",
+      "destination": "/en/branchen/software-it.html"
+    },
+    {
+      "source": "/en/branchen/maschinenbau",
+      "destination": "/en/branchen/maschinenbau.html"
+    },
+    {
+      "source": "/en/branchen/medizintechnik",
+      "destination": "/en/branchen/medizintechnik.html"
+    },
+    {
+      "source": "/en/branchen/pharma",
+      "destination": "/en/branchen/pharma.html"
+    },
+    {
+      "source": "/en/branchen/automotive",
+      "destination": "/en/branchen/automotive.html"
+    },
+    {
+      "source": "/en/branchen/energie",
+      "destination": "/en/branchen/energie.html"
+    },
+    {
+      "source": "/en/branchen/luft-raumfahrt",
+      "destination": "/en/branchen/luft-raumfahrt.html"
+    },
+    {
+      "source": "/en/branchen/bauindustrie",
+      "destination": "/en/branchen/bauindustrie.html"
+    },
+    {
+      "source": "/en/branchen/agrar-foodtech",
+      "destination": "/en/branchen/agrar-foodtech.html"
     }
   ]
 }
