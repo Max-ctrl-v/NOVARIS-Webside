@@ -128,8 +128,10 @@
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-  <link rel="stylesheet" href="/fonts/fonts.css" />
+  <link rel="preload" href="/fonts/fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="/fonts/fonts.css" /></noscript>
   <link rel="stylesheet" href="/styles.min.css" />
+  <link rel="dns-prefetch" href="//www.googletagmanager.com" />
   <link rel="preload" href="/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/montserrat-800.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="/cookie-consent.css" media="print" onload="this.media='all'" />
@@ -924,7 +926,10 @@
     ],
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Deutschland",
+      "streetAddress": "Musterstraße 12",
+      "postalCode": "80331",
+      "addressLocality": "München",
+      "addressRegion": "Bayern",
       "addressCountry": "DE"
     },
     "contactPoint": {
@@ -1932,13 +1937,13 @@
   <div class="max-w-4xl mx-auto px-4 sm:px-6">
     <h2 class="seo-block-heading">Forschungszulage beantragen mit NOVARIS Consulting</h2>
     <p class="seo-block-text">
-      Die Forschungszulage nach dem <strong>Forschungszulagengesetz (FZulG)</strong> ist eine steuerliche Förderung für Unternehmen in Deutschland, die Forschung und Entwicklung (F&amp;E) betreiben. Seit dem 01.01.2020 erstattet der Staat 25 % der förderfähigen F&amp;E-Aufwendungen als Steuergutschrift (§ 3 Abs. 1 FZulG). Kleine und mittlere Unternehmen (KMU) nach der EU-Definition 2003/361/EG erhalten seit dem Wachstumschancengesetz 2024 einen erhöhten Fördersatz von 35 %. Die maximale Bemessungsgrundlage beträgt <strong>12 Millionen Euro pro Wirtschaftsjahr</strong>, woraus sich eine maximale Forschungszulage von bis zu 4,2 Millionen Euro für KMU ergibt.
+      Die Forschungszulage nach dem <strong><a href="https://www.gesetze-im-internet.de/fzulg/" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-decoration-color:rgba(30,86,181,0.4);text-underline-offset:2px">Forschungszulagengesetz (FZulG)</a></strong> ist eine steuerliche Förderung für Unternehmen in Deutschland, die Forschung und Entwicklung (F&amp;E) betreiben. Seit dem 01.01.2020 erstattet der Staat 25 % der förderfähigen F&amp;E-Aufwendungen als Steuergutschrift (§ 3 Abs. 1 FZulG). Kleine und mittlere Unternehmen (KMU) nach der EU-Definition 2003/361/EG erhalten seit dem Wachstumschancengesetz 2024 einen erhöhten Fördersatz von 35 %. Die maximale Bemessungsgrundlage beträgt <strong>12 Millionen Euro pro Wirtschaftsjahr</strong>, woraus sich eine maximale Forschungszulage von bis zu 4,2 Millionen Euro für KMU ergibt.
     </p>
     <p class="seo-block-text">
       Förderfähig sind Personalkosten für F&amp;E-Mitarbeiter, Eigenleistungen von Einzelunternehmern (§ 3 Abs. 3 FZulG) sowie Auftragsforschung an Auftragnehmer im Europäischen Wirtschaftsraum, wobei 70 % der gezahlten Vergütung als Bemessungsgrundlage anerkannt werden (§ 3 Abs. 4 FZulG). Seit 2026 gilt zusätzlich eine Gemeinkostenpauschale von 20 % auf die förderfähigen Personalkosten. Die Forschungszulage ist branchen- und größenunabhängig und steht jedem steuerpflichtigen Unternehmen in Deutschland zu.
     </p>
     <p class="seo-block-text" style="margin-bottom:0">
-      NOVARIS Consulting übernimmt die vollständige FZulG-Beratung und Antragstellung: von der kostenlosen Erstanalyse über die BSFZ-Bescheinigung (Bescheinigungsstelle Forschungszulage) bis zur erfolgreichen Auszahlung durch das Finanzamt. Das Honorar ist rein erfolgsbasiert – wird keine Forschungszulage bewilligt, entstehen keine Kosten.
+      NOVARIS Consulting übernimmt die vollständige FZulG-Beratung und Antragstellung: von der kostenlosen Erstanalyse über die <a href="https://www.bescheinigung-forschungszulage.de/" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-decoration-color:rgba(30,86,181,0.4);text-underline-offset:2px">BSFZ-Bescheinigung</a> (Bescheinigungsstelle Forschungszulage) bis zur erfolgreichen Auszahlung durch das Finanzamt. Das Honorar ist rein erfolgsbasiert – wird keine Forschungszulage bewilligt, entstehen keine Kosten.
     </p>
     <div style="display:flex;flex-wrap:wrap;gap:0.5rem;margin-top:1.25rem">
       <a href="/forschungszulage.html" style="font-size:0.78rem;color:#1E56B5;text-decoration:none;padding:0.3rem 0.7rem;border-radius:6px;border:1px solid rgba(30,86,181,0.18);transition:background 0.14s ease" onmouseover="this.style.background='rgba(30,86,181,0.06)'" onmouseout="this.style.background=''">Forschungszulage Leitfaden</a>
@@ -2224,7 +2229,7 @@
   })();
 
   // ── i18n: language toggle ──
-  const T = {
+  window.T = {
     de: {
       'nav.fzulg':       'Das FZulG',
       'nav.warum':       'Unsere Stärken',
@@ -2531,34 +2536,7 @@
     }
   };
 
-  let _currentLang = 'de';
-
-  function setLang(lang) {
-    _currentLang = lang;
-    localStorage.setItem('lang', lang);
-    const t = T[lang];
-    document.querySelectorAll('[data-t]').forEach(el => {
-      const val = t[el.getAttribute('data-t')];
-      if (val !== undefined) el.innerHTML = val;
-    });
-    // Update desktop toggle
-    const de = document.getElementById('lang-de');
-    const en = document.getElementById('lang-en');
-    if (de) { de.classList.toggle('active', lang === 'de'); }
-    if (en) { en.classList.toggle('active', lang === 'en'); }
-    // Update mobile toggle
-    const dem = document.getElementById('lang-de-mob');
-    const enm = document.getElementById('lang-en-mob');
-    if (dem) { dem.classList.toggle('active', lang === 'de'); }
-    if (enm) { enm.classList.toggle('active', lang === 'en'); }
-    document.documentElement.lang = lang;
-  }
-
-  // Restore saved language on load
-  (function() {
-    const saved = localStorage.getItem('lang');
-    if (saved && saved !== 'de') setLang(saved);
-  })();
+  // i18n engine loaded from /i18n.js (setLang, auto-restore)
 
   // ── Highlight active nav section on scroll ──
   const secs = document.querySelectorAll('section[id]');
@@ -2575,6 +2553,7 @@
   }, { threshold: 0.45 });
   secs.forEach(s => io.observe(s));
 </script>
+<script src="/i18n.js"></script>
 <script src="/theme.js" integrity="sha384-AHw/yIbpsf0UGYQRWNa1CnjuLJI76aQs0pyr51zWtjzNthQM8zFRHuo4sHJSrVy6" crossorigin="anonymous"></script>
 <script src="/nav-utils.js" defer integrity="sha384-HEPFc2/A6GCO1ZOjeylEPeFC589M3uf9OKsK/nHgRZjIVpHMIXB+STNmfV7/BK4W" crossorigin="anonymous"></script>
 <script src="/cookie-consent.js" defer integrity="sha384-8uu1DY4EaX+0gOCSB9J625s7KuuZI54bS+Otavzur8EoSXCCwGeR3MYrMv2+tsjn" crossorigin="anonymous"></script>

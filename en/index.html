@@ -128,8 +128,10 @@
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-  <link rel="stylesheet" href="/fonts/fonts.css" />
+  <link rel="preload" href="/fonts/fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="/fonts/fonts.css" /></noscript>
   <link rel="stylesheet" href="/styles.min.css" />
+  <link rel="dns-prefetch" href="//www.googletagmanager.com" />
   <link rel="preload" href="/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/montserrat-800.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="/cookie-consent.css" media="print" onload="this.media='all'" />
@@ -924,7 +926,10 @@
     ],
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Deutschland",
+      "streetAddress": "Musterstraße 12",
+      "postalCode": "80331",
+      "addressLocality": "München",
+      "addressRegion": "Bayern",
       "addressCountry": "DE"
     },
     "contactPoint": {
@@ -1945,13 +1950,13 @@
   <div class="max-w-4xl mx-auto px-4 sm:px-6">
     <h2 class="seo-block-heading">Apply for the Research Allowance with NOVARIS Consulting</h2>
     <p class="seo-block-text">
-      The <strong>Research Allowance</strong> under the <strong>Research Allowance Act (FZulG)</strong> is a tax incentive for companies in Germany that conduct research and development (R&amp;D). Since 01.01.2020, the German government refunds 25% of eligible R&amp;D expenditures as a tax credit (§ 3 para. 1 FZulG). Small and medium-sized enterprises (SMEs) as defined by EU Recommendation 2003/361/EC receive an increased rate of 35% since the Growth Opportunities Act (Wachstumschancengesetz) 2024. The maximum annual assessment basis is <strong>EUR 12 million per fiscal year</strong>, resulting in a maximum Research Allowance of up to EUR 4.2 million for SMEs.
+      The <strong>Research Allowance</strong> under the <strong><a href="https://www.gesetze-im-internet.de/fzulg/" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-decoration-color:rgba(30,86,181,0.4);text-underline-offset:2px">Research Allowance Act (FZulG)</a></strong> is a tax incentive for companies in Germany that conduct research and development (R&amp;D). Since 01.01.2020, the German government refunds 25% of eligible R&amp;D expenditures as a tax credit (§ 3 para. 1 FZulG). Small and medium-sized enterprises (SMEs) as defined by EU Recommendation 2003/361/EC receive an increased rate of 35% since the Growth Opportunities Act (Wachstumschancengesetz) 2024. The maximum annual assessment basis is <strong>EUR 12 million per fiscal year</strong>, resulting in a maximum Research Allowance of up to EUR 4.2 million for SMEs.
     </p>
     <p class="seo-block-text">
       Eligible expenditures include personnel costs for R&amp;D employees, self-employment income of sole proprietors (§ 3 para. 3 FZulG), and contract research to contractors in the European Economic Area, where 70% of the remuneration paid is recognised as the assessment basis (§ 3 para. 4 FZulG). Since 2026, an additional overhead flat rate of 20% on eligible personnel costs applies. The Research Allowance is available to all taxable companies in Germany regardless of industry, size, or profitability.
     </p>
     <p class="seo-block-text" style="margin-bottom:0">
-      NOVARIS Consulting handles the complete FZulG consulting and application process: from the free initial analysis through the BSFZ certification (Research Allowance Certification Office) to the successful payout by the tax office. Our fee is purely performance-based – if no Research Allowance is granted, no costs arise.
+      NOVARIS Consulting handles the complete FZulG consulting and application process: from the free initial analysis through the <a href="https://www.bescheinigung-forschungszulage.de/" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-decoration-color:rgba(30,86,181,0.4);text-underline-offset:2px">BSFZ certification</a> (Research Allowance Certification Office) to the successful payout by the tax office. Our fee is purely performance-based – if no Research Allowance is granted, no costs arise.
     </p>
     <div style="display:flex;flex-wrap:wrap;gap:0.5rem;margin-top:1.25rem">
       <a href="/en/forschungszulage.html" style="font-size:0.78rem;color:#1E56B5;text-decoration:none;padding:0.3rem 0.7rem;border-radius:6px;border:1px solid rgba(30,86,181,0.18);transition:background 0.14s ease" onmouseover="this.style.background='rgba(30,86,181,0.06)'" onmouseout="this.style.background=''">Research Allowance Guide</a>
@@ -2237,7 +2242,7 @@
   })();
 
   // ── i18n: language toggle ──
-  const T = {
+  window.T = {
     de: {
       'nav.fzulg':       'Das FZulG',
       'nav.warum':       'Unsere Stärken',
@@ -2544,35 +2549,7 @@
     }
   };
 
-  let _currentLang = 'en';
-
-  function setLang(lang) {
-    _currentLang = lang;
-    localStorage.setItem('lang', lang);
-    const t = T[lang];
-    document.querySelectorAll('[data-t]').forEach(el => {
-      const val = t[el.getAttribute('data-t')];
-      if (val !== undefined) el.innerHTML = val;
-    });
-    // Update desktop toggle
-    const de = document.getElementById('lang-de');
-    const en = document.getElementById('lang-en');
-    if (de) { de.classList.toggle('active', lang === 'de'); }
-    if (en) { en.classList.toggle('active', lang === 'en'); }
-    // Update mobile toggle
-    const dem = document.getElementById('lang-de-mob');
-    const enm = document.getElementById('lang-en-mob');
-    if (dem) { dem.classList.toggle('active', lang === 'de'); }
-    if (enm) { enm.classList.toggle('active', lang === 'en'); }
-    document.documentElement.lang = lang;
-  }
-
-  // Restore saved language on load
-  (function() {
-    const saved = localStorage.getItem('lang');
-    if (saved && saved !== 'en') setLang(saved);
-    else setLang('en');
-  })();
+  // i18n engine loaded from /i18n.js (setLang, auto-restore)
 
   // ── Highlight active nav section on scroll ──
   const secs = document.querySelectorAll('section[id]');
@@ -2589,6 +2566,7 @@
   }, { threshold: 0.45 });
   secs.forEach(s => io.observe(s));
 </script>
+<script src="/i18n.js"></script>
 <script src="/theme.js" integrity="sha384-AHw/yIbpsf0UGYQRWNa1CnjuLJI76aQs0pyr51zWtjzNthQM8zFRHuo4sHJSrVy6" crossorigin="anonymous"></script>
 <script src="/nav-utils.js" defer integrity="sha384-HEPFc2/A6GCO1ZOjeylEPeFC589M3uf9OKsK/nHgRZjIVpHMIXB+STNmfV7/BK4W" crossorigin="anonymous"></script>
 <script src="/cookie-consent.js" defer integrity="sha384-8uu1DY4EaX+0gOCSB9J625s7KuuZI54bS+Otavzur8EoSXCCwGeR3MYrMv2+tsjn" crossorigin="anonymous"></script>

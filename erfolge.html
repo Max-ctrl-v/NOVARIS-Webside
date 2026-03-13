@@ -55,7 +55,8 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="preload" href="/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/montserrat-800.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="stylesheet" href="/fonts/fonts.css" />
+  <link rel="preload" href="/fonts/fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="/fonts/fonts.css" /></noscript>
   <link rel="stylesheet" href="/styles.min.css" />
   <link rel="stylesheet" href="/cookie-consent.css" media="print" onload="this.media='all'" />
   <noscript><link rel="stylesheet" href="/cookie-consent.css" /></noscript>
@@ -1228,26 +1229,8 @@
   })();
 
 // ── Language (stub) ──
-  function setLang(lang) {
-    document.querySelectorAll('.lang-btn').forEach(function(b) {
-      b.classList.toggle('active', b.textContent.trim() === lang.toUpperCase());
-    });
-  }
 
-
-  (function() {
-    var els = document.querySelectorAll('.fade-up');
-    if (!els.length) return;
-    var obs = new IntersectionObserver(function(entries) {
-      entries.forEach(function(e) {
-        if (e.isIntersecting) {
-          e.target.classList.add('visible');
-          obs.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-    els.forEach(function(el) { obs.observe(el); });
-  })();
+  // i18n engine loaded from /i18n.js
 </script>
 
 </body>
