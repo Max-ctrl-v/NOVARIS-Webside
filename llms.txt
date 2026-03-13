@@ -57,9 +57,42 @@ Die Forschungszulage nach dem Forschungszulagengesetz (FZulG) ist eine steuerlic
 
 - [Homepage (EN)](https://novaris-consulting.com/en/)
 - [Research Allowance Guide (EN)](https://novaris-consulting.com/en/forschungszulage.html)
+- [Research Allowance Application (EN)](https://novaris-consulting.com/en/forschungszulage-antrag.html)
+- [Research Allowance Calculator (EN)](https://novaris-consulting.com/en/forschungszulage-rechner.html)
+- [Eligibility Check (EN)](https://novaris-consulting.com/en/forschungszulage-check.html)
+- [Research Allowance Amount (EN)](https://novaris-consulting.com/en/forschungszulage-hoehe.html)
+- [Personnel Costs (EN)](https://novaris-consulting.com/en/forschungszulage-personalkosten.html)
+- [Material Costs (EN)](https://novaris-consulting.com/en/forschungszulage-sachkosten.html)
+- [Contract Research (EN)](https://novaris-consulting.com/en/forschungszulage-auftragsforschung.html)
+- [Self-Employment Income (EN)](https://novaris-consulting.com/en/forschungszulage-eigenleistungen.html)
+- [Retroactive Claims (EN)](https://novaris-consulting.com/en/forschungszulage-rueckwirkend.html)
+- [Payout Process (EN)](https://novaris-consulting.com/en/forschungszulage-auszahlung.html)
+- [Accounting & Booking (EN)](https://novaris-consulting.com/en/forschungszulage-buchen.html)
+- [Corporate Tax (EN)](https://novaris-consulting.com/en/forschungszulage-koerperschaftsteuer.html)
+- [Tax Advisor Guide (EN)](https://novaris-consulting.com/en/forschungszulage-steuerberater.html)
+- [Time Tracking (EN)](https://novaris-consulting.com/en/forschungszulage-zeiterfassung.html)
+- [GmbH & Sole Proprietor (EN)](https://novaris-consulting.com/en/forschungszulage-gmbh-einzelunternehmen.html)
+- [Updates 2026 (EN)](https://novaris-consulting.com/en/forschungszulage-2026.html)
+- [BSFZ Rejection & Appeal (EN)](https://novaris-consulting.com/en/bsfz-ablehnung-widerspruch.html)
+- [Funding Comparison (EN)](https://novaris-consulting.com/en/foerdermittel-vergleich.html)
+- [Case Studies (EN)](https://novaris-consulting.com/en/erfolge.html)
+- [Software & IT (EN)](https://novaris-consulting.com/en/branchen/software-it.html)
+- [Mechanical Engineering (EN)](https://novaris-consulting.com/en/branchen/maschinenbau.html)
+- [Pharma (EN)](https://novaris-consulting.com/en/branchen/pharma.html)
+- [Automotive (EN)](https://novaris-consulting.com/en/branchen/automotive.html)
+- [Medical Technology (EN)](https://novaris-consulting.com/en/branchen/medizintechnik.html)
+- [Energy (EN)](https://novaris-consulting.com/en/branchen/energie.html)
+- [Aerospace (EN)](https://novaris-consulting.com/en/branchen/luft-raumfahrt.html)
+- [Agri & Foodtech (EN)](https://novaris-consulting.com/en/branchen/agrar-foodtech.html)
+- [Construction (EN)](https://novaris-consulting.com/en/branchen/bauindustrie.html)
+
+## Rechtliche Grundlagen
+
+Die Forschungszulage basiert auf dem Forschungszulagengesetz (FZulG), in Kraft seit 01.01.2020. Wesentliche Änderungen erfolgten durch das Wachstumschancengesetz 2024: Erhöhung des KMU-Fördersatzes von 25 % auf 35 %, Einführung der 20 % Gemeinkostenpauschale, Anhebung der Bemessungsgrundlage auf 12 Mio. EUR.
 
 ## Kontakt
 
 - Website: https://novaris-consulting.com
+- E-Mail: info@novaris-consulting.de
 - LinkedIn: https://www.linkedin.com/company/novaris-consulting
 - Standort: Deutschland
