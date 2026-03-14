@@ -573,6 +573,14 @@
     html.dark [style*="border-bottom:1px solid #dde5f4"]{border-color:var(--bdr)!important}
     html.dark [style*="border-top:1px solid #edf2fb"]{border-color:rgba(77,174,229,0.10)!important}
     html.dark .bg-white{background:var(--bg-card)!important}
+    html.dark .card-z2{background:var(--bg-card)!important;border-color:var(--bdr)!important}
+    html.dark .card-z2 h3{color:#e8f0fa!important}
+    html.dark .card-z2 p{color:#8aaac8!important}
+    html.dark .card-z2 strong{color:#c8daf0!important}
+    html.dark .card-z1{background:var(--bg-card)!important;border-color:var(--bdr)!important}
+    html.dark .card-z1 h3{color:#e8f0fa!important}
+    html.dark .card-z1 p{color:#8aaac8!important}
+    html.dark .card-z1 strong{color:#c8daf0!important}
   </style>
   <link rel="stylesheet" href="/page-transition.css" media="print" onload="this.media='all'" />
   <noscript><link rel="stylesheet" href="/page-transition.css" /></noscript>
@@ -593,6 +601,7 @@
   </script>
 </head>
 <body>
+<script src="/theme.js"></script>
 
 <!-- ═══════════════════════ NAV ═══════════════════════ -->
 <header id="nav" class="fixed inset-x-0 top-0 z-50 nav-blur"
@@ -617,6 +626,14 @@
         <div class="lang-divider"></div>
         <a href="/en/forschungszulage-2026.html" class="lang-btn" style="text-decoration:none;">EN</a>
       </div>
+      <button id="dark-toggle" onclick="toggleDark()" aria-label="Toggle dark mode"
+        class="hidden sm:flex" style="width:32px;height:32px;border-radius:8px;border:1px solid rgba(255,255,255,0.12);
+               background:rgba(255,255,255,0.07);cursor:pointer;align-items:center;
+               justify-content:center;color:rgba(255,255,255,0.7);
+               transition:background 0.15s ease,color 0.15s ease">
+        <svg id="icon-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg id="icon-sun"  width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
       <a href="/#kontakt" class="btn-primary hidden sm:inline-flex" style="padding:0.55rem 1.35rem;font-size:0.83rem">
         Kostenlos prüfen
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
@@ -661,9 +678,9 @@
     </div>
   </div>
 </section>
-<section style="padding:2rem 0 0;background:#ffffff">
+<section style="padding:2rem 0 0;background:var(--bg-base, #ffffff)">
   <div class="max-w-4xl mx-auto px-4 sm:px-6">
-  
+
     <!-- AI-optimized TL;DR summary -->
     <div class="tldr-summary" id="auf-einen-blick" style="background:var(--bg-raised, #f5f8fe);border:1px solid var(--bdr, #dde5f4);border-left:4px solid #1E56B5;border-radius:0 12px 12px 0;padding:1.25rem 1.5rem;font-size:0.88rem;color:var(--clr-b, #5a6e8c);line-height:1.7;margin-bottom:2rem">
       <div style="font-family:'Montserrat',sans-serif;font-size:0.82rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#1E56B5;margin-bottom:0.6rem;display:flex;align-items:center;gap:0.5rem">
@@ -1479,7 +1496,6 @@
   </div>
 </footer>
 
-<script src="/theme.js"></script>
 <script src="/nav-utils.js" defer></script>
 <script src="/cookie-consent.js" defer></script>
 <script src="/analytics.js" defer></script>
